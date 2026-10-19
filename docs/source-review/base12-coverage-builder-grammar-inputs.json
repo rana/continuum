@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-artifact-text-closeout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/15.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/16.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/17.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/18.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/19.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/20.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/21.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/22.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/23.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/24.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/25.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/26.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/27.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/28.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/29.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/30.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/31.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/32.b12s"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/16.b12s",
+      "bytes": 13,
+      "git_blob_sha": "856e9b429ccbbee33817906f2c45cffc17100e1f",
+      "sha256": "3f9632f02df5f4467c097e34655ffd50623fde9348a214fa03846e16104c74f8",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/17.b12s",
+      "bytes": 16,
+      "git_blob_sha": "79dccd9e0dcd3a156c2807da740ec569532d2a1d",
+      "sha256": "23848e399bcfc7f9912a1d5fc2aa1267e816dc0b1e32f1297381c07a0439a4fc",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/18.b12s",
+      "bytes": 21,
+      "git_blob_sha": "7c8c8c3aaa936f1e008b6b0696af06291c75417a",
+      "sha256": "ccb16b1ca8c2d8df6068b8ea0c3039050c2d8f077319fb54612a49fa097e61a1",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/19.b12s",
+      "bytes": 30,
+      "git_blob_sha": "5bf6dad86b3e90224164be4a264f2550418d46ae",
+      "sha256": "54529b4196e1514b599c71db9fa397ba8799747c55ca036b096aeab238a48668",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/20.b12s",
+      "bytes": 29,
+      "git_blob_sha": "6201890aa7d241941fd67c0bf65eef19b7e00cb3",
+      "sha256": "e0f3cecdb9be6af66d341475cce089a67221e5d86b3de2363819c4311b3fa362",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/21.b12s",
+      "bytes": 28,
+      "git_blob_sha": "5c8f3d11d943098866631506113dad44fa7930e4",
+      "sha256": "cfa9764177ea5081313e8e6949d216b5a6dce6b074b4ced844be6494b5bc298e",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/22.b12s",
+      "bytes": 32,
+      "git_blob_sha": "9d841a1788ac28748f7bd0068bef6638d7601c0b",
+      "sha256": "c6116ce5219abdbf510c85dde1594d661696691af78e1d88a7d70d0f8a76dcc4",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/23.b12s",
+      "bytes": 17,
+      "git_blob_sha": "fbdab140db8e014249f82c5e7b23e104cc55170d",
+      "sha256": "1b7da9cd88d3e9493303a5f8633f86f9104800e51e1e80401210822fc70fb5d6",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/24.b12s",
+      "bytes": 25,
+      "git_blob_sha": "56c1d9e3a7f5a955aa204d5bdfbc6297232f68f4",
+      "sha256": "527dd6f84e26c353f20b6e84458ca7a49d476d2a8c61997da96e864742859727",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/25.b12s",
+      "bytes": 19,
+      "git_blob_sha": "2429ad9eb36d475f79f0ab506fc6d451882538ff",
+      "sha256": "c0111e134a9d272764ad11039d558c19c7e292b91d9d588779af08e0ce08f19f",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/26.b12s",
+      "bytes": 36,
+      "git_blob_sha": "2f50700fb2d969cf8774e2a81f9d8db5540e131d",
+      "sha256": "c8f6a097f898ac0a8c5dc2634bd8811c56f1d3d9c5a2958021369d6ece6b582f",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/27.b12s",
+      "bytes": 24,
+      "git_blob_sha": "2bed62d1385770e66a9b4192aa701d58d0ce2172",
+      "sha256": "13533d66723cad6bd63f0b90ca510f346068d5df8e074b8cbb94ff96d39bb9d4",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/28.b12s",
+      "bytes": 18,
+      "git_blob_sha": "e3a72eaeed01b207a103e4532601576f7ce7600d",
+      "sha256": "b39fcd98dd4ebf3c7f9d6521e52ae174b5b4330d11acbc41f6432148b34bcab9",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/29.b12s",
+      "bytes": 18,
+      "git_blob_sha": "bca425b457079c035f80011ee9d03ed85a616afe",
+      "sha256": "bd4954515e1584c8a0d9fb36e6e565ce5babb51a31d9d5fd1f5f22f0c7aa1bc9",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/30.b12s",
+      "bytes": 28,
+      "git_blob_sha": "de3b1cf6ebf25941586fcea0d78c0625cc6f52c4",
+      "sha256": "bc82781f47682e4f806bd8cfe400d8ceaafcc86d9b79cc4a2da4472411a2ef4e",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/31.b12s",
+      "bytes": 31,
+      "git_blob_sha": "a803b8ce5441544bd54442df380635c0840215db",
+      "sha256": "ae4daad8b2dd05fe836196ca686e2e50e8ace97495a3defc02ce26b672070907",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/32.b12s",
+      "bytes": 16,
+      "git_blob_sha": "062c0e72ce481d4ca1f83a27fa5cc2c14e921755",
+      "sha256": "93cc2cf3f957a7effbb6a9ac9c649d5f7353f33d231bb80ea90132bb1cc575fd",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-grammar-boundary-fixture-bytes",
+      "reading_representation": "lossless_byte_repr_including_non_UTF8_and_controls",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 17,
+      "unique_blobs": 17,
+      "bytes": 401
+    },
+    "cumulative_direct_read": {
+      "paths": 551,
+      "unique_blobs": 551,
+      "bytes": 4883117
+    },
+    "additional_identical_blob_paths": 79,
+    "alias_distinct_blobs": 28,
+    "semantic_covered_paths_including_aliases": 630,
+    "remaining_paths_without_full_semantic_read_or_alias": 4963,
+    "remaining_distinct_blobs_without_full_semantic_read": 3878,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 18,
+    "this_review_verified_bytes": 401,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All18 fixture byte sequences fully inspected:17 nonempty sources/401 bytes receive semantic credit; the empty input receives only mechanical identity credit.",
+    "Exact source bytes bind case lengths,LF-based physical-line accounting, checksums and sixteen literal materializer entries; accepted cases use bounded literal source derivation.",
+    "NUL,CR,non-UTF8 and comment-control bytes remain unchanged; Unicode replacement/newline normalization was not used to establish source identity.",
+    "Original lexical source counts describe authored statements, not actual parser progress;16 rejected and2 accepted statuses remain frozen expectations and matching saved metadata.",
+    "Two96-byte expected maps reconstructed from literal records match declarations; no raw result map acquired, ELF emitted or candidate invoked.",
+    "Mechanical empty-file credit does not become semantic reading for every empty alias in the pinned tree.",
+    "No upstream import/materializer execution,native emission/execution,model invocation,live scan,workstation activation or upstream acceptance occurred."
+  ],
+  "review_report": "base12-builder-grammar-inputs.md",
+  "mechanical_custody_files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/15.b12s",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_credit": false,
+      "classification": "empty_source_mechanical_identity"
+    }
+  ],
+  "repeated_identical_payload_reads": []
+}

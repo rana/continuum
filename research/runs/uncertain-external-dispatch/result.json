@@ -1,0 +1,76 @@
+{
+  "first_discriminating_counterexample_by_enumeration": {
+    "always_hold": {
+      "durable_exact_idempotency": false,
+      "evidence": "verified_never_sent",
+      "exact_request_identity": true,
+      "mutant_action": "hold_and_reconcile",
+      "reason": "first_send_unavailable",
+      "upstream_http_200": false,
+      "validated_output": false,
+      "worst_case_effects": 0
+    },
+    "blind_retry_unknown": {
+      "durable_exact_idempotency": false,
+      "evidence": "outcome_unknown",
+      "exact_request_identity": true,
+      "mutant_action": "exact_replay",
+      "reason": "duplicate_possible",
+      "upstream_http_200": false,
+      "validated_output": false,
+      "worst_case_effects": 2
+    },
+    "effect_equals_usable_output": {
+      "durable_exact_idempotency": false,
+      "evidence": "authoritative_effect_found",
+      "exact_request_identity": true,
+      "mutant_action": "use_validated_output",
+      "reason": "unbound_or_missing_output",
+      "upstream_http_200": false,
+      "validated_output": false,
+      "worst_case_effects": 1
+    },
+    "http_200_equals_valid_output": {
+      "durable_exact_idempotency": false,
+      "evidence": "outcome_unknown",
+      "exact_request_identity": true,
+      "mutant_action": "use_validated_output",
+      "reason": "unbound_or_missing_output",
+      "upstream_http_200": true,
+      "validated_output": false,
+      "worst_case_effects": 1
+    },
+    "ignore_changed_request_identity": {
+      "durable_exact_idempotency": false,
+      "evidence": "verified_never_sent",
+      "exact_request_identity": false,
+      "mutant_action": "exact_replay",
+      "reason": "changed_operation_identity",
+      "upstream_http_200": false,
+      "validated_output": false,
+      "worst_case_effects": 1
+    },
+    "retry_point_in_time_absence": {
+      "durable_exact_idempotency": false,
+      "evidence": "point_in_time_not_found",
+      "exact_request_identity": true,
+      "mutant_action": "exact_replay",
+      "reason": "duplicate_possible",
+      "upstream_http_200": false,
+      "validated_output": false,
+      "worst_case_effects": 2
+    }
+  },
+  "mutants_rejected": 6,
+  "mutants_tested": 6,
+  "oracle_failures": 0,
+  "schema": "continuum.uncertain_dispatch_model.v1",
+  "synthetic_cases": 96,
+  "world_assumptions": [
+    "single original send",
+    "inflight send can commit after not-found",
+    "authentic request-bound finality and effect-found signals",
+    "idempotency is a verified provider guarantee if enabled",
+    "validated output is separately bound to the effect and request"
+  ]
+}

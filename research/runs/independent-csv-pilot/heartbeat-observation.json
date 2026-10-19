@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-10-19T06:01:42.329498+00:00",
+  "kind": "heartbeat",
+  "id": "continue-continuum",
+  "status": "ACTIVE",
+  "interval_minutes": 1,
+  "destination": "current local Continuum chat",
+  "creation_confirmed": true,
+  "saved_configuration_verified": true,
+  "unattended_run_observed": false,
+  "earlier_hourly_cloud_task": "Historically recorded; current status and cancellation not verified through this app. Heartbeat prompt requires remote work/ownership reconciliation.",
+  "limits": "A saved recurrence is not evidence of an unattended completed unit. Local execution requires computer/app running."
+}

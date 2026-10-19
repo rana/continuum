@@ -25,3 +25,7 @@ jobs:
         run: |
           cargo build --locked
           python3 -m unittest discover -s tools -p 'test_project_checkpoint.py'
+      - name: Check independent CSV continuation result
+        run: |
+          python3 -m unittest discover -s examples/csv_inspector -p 'test_*.py' -v
+          python3 research/runs/independent-csv-pilot/verify_requirement.py examples/csv_inspector/inspect_csv.py > "$RUNNER_TEMP/csv-oracle.json"

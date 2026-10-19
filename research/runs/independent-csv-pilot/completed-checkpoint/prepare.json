@@ -1,0 +1,14 @@
+{
+  "schema": "continuum.prepare_context.v1",
+  "work_state": "sha256:9ae1ec9754fccc490a1991e6270f673f53e2fbeb06346894f51139b395637778",
+  "max_bytes": 8192,
+  "anchor": {
+    "acceptor": "project-checkpoint",
+    "target": "work",
+    "expected": {
+      "generation": 1,
+      "root": "sha256:de02b6ec41e4a7d0641185473e4881d0051a64b0c28b056131f9b7ed74246876"
+    },
+    "work_state_path": "work-state.json"
+  }
+}

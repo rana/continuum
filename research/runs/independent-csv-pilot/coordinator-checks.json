@@ -1,0 +1,28 @@
+{
+  "preserved_baseline_tests": [
+    "test_exact_empty_cells_and_quoted_records",
+    "test_header_only",
+    "test_invalid_inputs_fail_without_partial_report",
+    "test_whitespace_and_na_are_present"
+  ],
+  "total_tests": 11,
+  "added_tests": 7,
+  "returned_files_applied_without_edits": true,
+  "samples": [
+    {
+      "options": [],
+      "stdout": "{\"rows\": 3, \"columns\": [{\"name\": \"city\", \"present\": 3, \"missing\": 0}, {\"name\": \"temperature\", \"present\": 2, \"missing\": 1}, {\"name\": \"note\", \"present\": 2, \"missing\": 1}]}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "options": [
+        "--missing-value",
+        "NA"
+      ],
+      "stdout": "{\"rows\": 3, \"columns\": [{\"name\": \"city\", \"present\": 3, \"missing\": 0}, {\"name\": \"temperature\", \"present\": 1, \"missing\": 2}, {\"name\": \"note\", \"present\": 2, \"missing\": 1}]}\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  ]
+}

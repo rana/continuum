@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "python3",
+    "tools/project_checkpoint.py",
+    "--repository",
+    "/tmp/continuum-csv-pilot-replay",
+    "--revision",
+    "ea13152a150f3fac9ce16d8b9e6b3b6d3c364601",
+    "--binary",
+    "../pilots/csv-checkpoint/runtime/continuum",
+    "--work-state",
+    "research/runs/independent-csv-pilot/checkpoint/authored-work-state.json",
+    "--build-provenance",
+    "research/runs/independent-csv-pilot/build-provenance.json",
+    "--output",
+    "/tmp/continuum-csv-pilot-replayed-checkpoint",
+    "--max-bytes",
+    "8192"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"checkpoint\": \"/tmp/continuum-csv-pilot-replayed-checkpoint/checkpoint.json\",\n  \"context_pack\": \"sha256:0adb97bc8ac8d6401e3ce27e1eb098d90570c8f4c5ddfe2bd379f72e417337ba\"\n}\n",
+  "stderr": "",
+  "elapsed_seconds": 0.10685376805486158,
+  "git_bundle_clone_log": "Cloning into '/tmp/continuum-csv-pilot-replay'...\n",
+  "same_source_inventory_and_snapshot": true,
+  "same_context_pack": true,
+  "context_pack": "sha256:0adb97bc8ac8d6401e3ce27e1eb098d90570c8f4c5ddfe2bd379f72e417337ba",
+  "scope": "Fresh clone of retained independent-source bundle; new disposable store and unchanged authored state/provenance. This is deterministic reconstruction, not another model continuation."
+}

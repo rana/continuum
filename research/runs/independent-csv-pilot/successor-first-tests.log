@@ -1,0 +1,16 @@
+test_default_report_shape_and_counts_unchanged (test_inspect_csv.CsvTests.test_default_report_shape_and_counts_unchanged) ... ok
+test_duplicate_options_do_not_double_count (test_inspect_csv.CsvTests.test_duplicate_options_do_not_double_count) ... ok
+test_empty_option_adds_nothing_beyond_default (test_inspect_csv.CsvTests.test_empty_option_adds_nothing_beyond_default) ... ok
+test_exact_empty_cells_and_quoted_records (test_inspect_csv.CsvTests.test_exact_empty_cells_and_quoted_records) ... ok
+test_header_only (test_inspect_csv.CsvTests.test_header_only) ... ok
+test_invalid_inputs_fail_without_partial_report (test_inspect_csv.CsvTests.test_invalid_inputs_fail_without_partial_report) ... ok
+test_invalid_inputs_still_fail_with_options (test_inspect_csv.CsvTests.test_invalid_inputs_still_fail_with_options) ... ok
+test_listed_token_matches_exactly_without_trimming_or_case_folding (test_inspect_csv.CsvTests.test_listed_token_matches_exactly_without_trimming_or_case_folding) ... ok
+test_multiple_tokens_each_add_missing_values (test_inspect_csv.CsvTests.test_multiple_tokens_each_add_missing_values) ... ok
+test_tokens_match_parsed_quoted_cells_not_header (test_inspect_csv.CsvTests.test_tokens_match_parsed_quoted_cells_not_header) ... ok
+test_whitespace_and_na_are_present (test_inspect_csv.CsvTests.test_whitespace_and_na_are_present) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.934s
+
+OK

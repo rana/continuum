@@ -1,0 +1,57 @@
+{
+  "anchor": {
+    "acceptor": "project-checkpoint",
+    "expected": {
+      "generation": 1,
+      "root": "sha256:8595f62d72e0eda9696145a47601c754ff8535b9d45de210c4af954ecdfc4f91"
+    },
+    "target": "work",
+    "work_state_path": "work-state.json"
+  },
+  "budget_method": "utf8_bytes_including_newlines",
+  "handoff_id": "csv-requirement-handoff",
+  "included": [
+    {
+      "id": "csv-pilot-work",
+      "kind": "work_state",
+      "reason": "work_identity"
+    },
+    {
+      "id": "csv-goal",
+      "kind": "objective",
+      "reason": "objective_and_constraints"
+    },
+    {
+      "id": "csv-policy",
+      "kind": "decision",
+      "reason": "active_decision"
+    },
+    {
+      "id": "csv-retrieval",
+      "kind": "uncertainty",
+      "reason": "unresolved_uncertainty"
+    },
+    {
+      "id": "csv-requirement-handoff",
+      "kind": "handoff",
+      "reason": "offered_handoff"
+    }
+  ],
+  "limits": [
+    "Authored claims are unverified; current action authority and external-effect truth are not established.",
+    "Conditional guidance assumes the authored dispatch state is accurate; this store is not an external dispatch ledger.",
+    "Only this WorkState's declared records and direct object references are checked; source files are not materialized.",
+    "Whole records only; unrequired historical decisions may be omitted; no truncation or token estimate.",
+    "Head freshness is observed once; later effects need action-time authority and expected-head checks.",
+    "Context acknowledgements check references, not authenticated authorship, delivery, understanding, acceptance, or completion."
+  ],
+  "max_bytes": 8192,
+  "omitted": [],
+  "rendered": "sha256:f5dc87cdcbbeac52485e38e7d3b733970a5d427da5ec4b000ea6776dc454933a",
+  "rendered_bytes": 3737,
+  "schema": "continuum.context_pack.v1",
+  "selector_revision": "continuum.whole_records.v1",
+  "source_snapshot": "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491",
+  "work_state": "sha256:0e32dc56e75951d2821add7c7d3da2e8f39e2df41fee3dd6faf4d6bfb8dfd073",
+  "work_state_id": "csv-pilot-work"
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "Coordinator-transcribed observation from actual tool result",
+  "argv": [
+    "python3",
+    "tools/project_checkpoint.py",
+    "--repository",
+    "../pilots/csv-source",
+    "--binary",
+    "target/debug/continuum",
+    "--work-state",
+    "../pilots/csv-evidence/completed-work-state.json",
+    "--build-provenance",
+    "../pilots/csv-evidence/build-provenance.json",
+    "--output",
+    "../pilots/csv-completed-checkpoint",
+    "--max-bytes",
+    "8192"
+  ],
+  "returncode": 1,
+  "stderr": "checkpoint failed: build provenance binary digest does not match executable\n",
+  "measured_digest": "81dd3a7e25c3d00714f42e127ae114118001720148eb5719110e79fa98a22eb9",
+  "later_build_output_digest": "ed84c74a02253ea74b9cd52124ee5010772b2b99411e255bdfa427c636bf6ac9",
+  "correction": "Used the already-retained measured binary from csv-checkpoint/runtime/continuum, with unchanged provenance. No output existed from the failed preflight."
+}

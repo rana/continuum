@@ -1,0 +1,5 @@
+{
+  "retrieval_call_wall_ms": 11205,
+  "implementation_call_wall_ms": 68301,
+  "scope": "Coordinator-measured tool-call wall latency. Not time-to-action, total upkeep, billing cost or a controlled comparison."
+}

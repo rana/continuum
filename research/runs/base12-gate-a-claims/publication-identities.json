@@ -1,0 +1,20 @@
+{
+  "source_baseline": "2aadf2409753c388500f3120dd12934baf30919d",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-claims.md",
+      "bytes": 6117,
+      "sha256": "1bca00810db8d9823041d74a1263774116865cf6f0d70e56b004a47f8713d2b5"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-claims.json",
+      "bytes": 5472,
+      "sha256": "c831f4779c5e4800a46ae3ab0c08ec64373fe8ed3e5f674f4e1af4f67cc4110c"
+    },
+    {
+      "path": "research/runs/base12-gate-a-claims/validation.json",
+      "bytes": 6423,
+      "sha256": "f0ba4b567b39ecb0c57a27ed03e024f0ece498cd39cbd7004d8a5ebec6b93f2c"
+    }
+  ]
+}

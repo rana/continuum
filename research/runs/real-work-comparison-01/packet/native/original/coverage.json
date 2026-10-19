@@ -1,0 +1,57 @@
+{
+  "anchor": {
+    "acceptor": "project-checkpoint",
+    "expected": {
+      "generation": 1,
+      "root": "sha256:3c8a0499502657ecb488ffb4ddbdbea2a5361268b585bfeea9202c091ed72792"
+    },
+    "target": "work",
+    "work_state_path": "work-state.json"
+  },
+  "budget_method": "utf8_bytes_including_newlines",
+  "handoff_id": "resume-read-investigation",
+  "included": [
+    {
+      "id": "read-availability-recovery",
+      "kind": "work_state",
+      "reason": "work_identity"
+    },
+    {
+      "id": "read-availability",
+      "kind": "objective",
+      "reason": "objective_and_constraints"
+    },
+    {
+      "id": "opening-route",
+      "kind": "decision",
+      "reason": "active_decision"
+    },
+    {
+      "id": "current-state",
+      "kind": "uncertainty",
+      "reason": "unresolved_uncertainty"
+    },
+    {
+      "id": "resume-read-investigation",
+      "kind": "handoff",
+      "reason": "offered_handoff"
+    }
+  ],
+  "limits": [
+    "Authored claims are unverified; current action authority and external-effect truth are not established.",
+    "Conditional guidance assumes the authored dispatch state is accurate; this store is not an external dispatch ledger.",
+    "Only this WorkState's declared records and direct object references are checked; source files are not materialized.",
+    "Whole records only; unrequired historical decisions may be omitted; no truncation or token estimate.",
+    "Head freshness is observed once; later effects need action-time authority and expected-head checks.",
+    "Context acknowledgements check references, not authenticated authorship, delivery, understanding, acceptance, or completion."
+  ],
+  "max_bytes": 8192,
+  "omitted": [],
+  "rendered": "sha256:0edf5cc55f7918740d45b916a7fcfa6d6de8f80b1b015dcd2f280fe74dc565dd",
+  "rendered_bytes": 2814,
+  "schema": "continuum.context_pack.v1",
+  "selector_revision": "continuum.whole_records.v1",
+  "source_snapshot": "sha256:f6a491fe77c6a38e986d938be907e1de46a038e6882a6e55ed15c0a53def832f",
+  "work_state": "sha256:cb63e53ee52900f4a92e8c7e59255052c7e943ff91661c7249c54a7f8b4fa702",
+  "work_state_id": "read-availability-recovery"
+}

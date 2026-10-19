@@ -1,0 +1,25 @@
+{
+  "type": "snapshot",
+  "entries": [
+    {
+      "path": "after/src/store.rs",
+      "blob": "sha256:8221cca6ea4c83c59dc3445781e4635da0672284dbe03523659c6db8ab26766f"
+    },
+    {
+      "path": "after/src/main.rs",
+      "blob": "sha256:a7b09fdbffceb0a8fc6133eeeea241c8c417a240eb7a1c639d3c48dcb539fea6"
+    },
+    {
+      "path": "after/examples/probe_reader_reservation.rs",
+      "blob": "sha256:570130111941e45d0fa2d257869a086bbfe9b4c3dbd32c62687c7e9a93927bda"
+    },
+    {
+      "path": "after/report.md",
+      "blob": "sha256:bf22eb1b2e44bc9af3b2057ecb61c975bcb3cffbc1caa3a1a2a633a954fa00dd"
+    },
+    {
+      "path": "after/result.json",
+      "blob": "sha256:945fa5e3eb8e64f335a10dc42c4aa0b03de4fe4e681cceea3d22ca1d1ceed116"
+    }
+  ]
+}

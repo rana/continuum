@@ -1,0 +1,10 @@
+{
+  "acceptor": "project-checkpoint",
+  "target": "work",
+  "operation_id": "recorded-source-update",
+  "expected": {
+    "generation": 1,
+    "root": "sha256:3c8a0499502657ecb488ffb4ddbdbea2a5361268b585bfeea9202c091ed72792"
+  },
+  "candidate": "sha256:bfd3a67e558c7b22ee45ca716a8238ceda2e05a19f6dda1417d9df4c9bbbc19c"
+}

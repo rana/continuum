@@ -1,0 +1,6 @@
+{
+  "binary_sha256": "eb68d686807b73b2b386fe6b9b4d3a4e2784ff4561e429c8587fccd876e97d3e",
+  "source_commit": "8e388b6f65c53aea6915829f7f336a69f6e29aef",
+  "build_command": "cargo build --locked",
+  "note": "Caller supplies executable; build command is declared provenance, not performed by this preparer. Adapter binds measured bytes, not build truth."
+}

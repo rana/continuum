@@ -1,0 +1,13 @@
+{
+  "files": [
+    "evidence/before/src/store.rs",
+    "evidence/before/src/main.rs",
+    "evidence/before/examples/probe_reader_reservation.rs",
+    "evidence/before/report.md",
+    "evidence/before/result.json"
+  ],
+  "current_accepted_state": "native/original/work-state.json",
+  "source_pins": "source-pins.json",
+  "common_observation": "case-01/common-observation.json",
+  "verification_record": "case-01/C-verification.json"
+}

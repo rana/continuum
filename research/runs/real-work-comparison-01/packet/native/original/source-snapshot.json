@@ -1,0 +1,25 @@
+{
+  "type": "snapshot",
+  "entries": [
+    {
+      "path": "before/examples/probe_reader_reservation.rs",
+      "blob": "sha256:111b5ca1017a7ee8a95dca0d9968a77a5b65a96e16d830760ef07029b6414559"
+    },
+    {
+      "path": "before/report.md",
+      "blob": "sha256:e625c33a459e95bb25630aeef13bf387d64f72c937caf693a8ad408734fbecb8"
+    },
+    {
+      "path": "before/result.json",
+      "blob": "sha256:f4524dbd6bed0372affb5078b0de2173815c196235bea51809cbc3e1cd6e480c"
+    },
+    {
+      "path": "before/src/main.rs",
+      "blob": "sha256:7f1d190b3c8ff386b1a22105e639a19e36bb6dc9b6f8907182a2481897da592a"
+    },
+    {
+      "path": "before/src/store.rs",
+      "blob": "sha256:8c94542cae718d3cf217288fef6bed5a85d9d266b844f2b552b9089979875615"
+    }
+  ]
+}

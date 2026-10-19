@@ -191,6 +191,8 @@ The [codec-lineage return](source-review/base12-codec-lineage.md) preserves same
 
 The [consumer-claims return](source-review/base12-consumer-claims.md) recovers a prospective protocol and later saved-evidence summaries without conflating their dates. It separates dictionary freeze from permitted validation adaptation, integrity reads from numerical scoring, and audit entries from independent trials. Summary arithmetic and count categories agree; raw score/overlap evidence remains unread. Continuum should carry each claim with its comparison, exposure boundary and check unit.
 
+The [consumer-source return](source-review/base12-consumer-source.md) confirms the qualified freeze/exposure sequence, one-byte dictionary charging and complete block/container cost units. It also traces native arm work before a late external-reference gate and final result, so absent final output would not establish absent effects. Continuum should recover intermediate evidence before repeating an attempt. All forty declared lineage payloads reconcile; historical execution and the late-failure path were not reproduced.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

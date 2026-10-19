@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "source_baseline": "61d049bfc14177c53ab74260e0547a9461fda093",
+  "depends_on_publication_pr": 111,
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 5,
+  "verified_source_bytes": 48794,
+  "full_source_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 48794,
+  "literal_caller_exact_body_relation": true,
+  "caller_prefix_bytes": 84,
+  "caller_suffix_bytes": 3,
+  "caller_wrapper_bytes": 87,
+  "capture_and_literal_author_and_preparation_hashes_match": true,
+  "two_manifest_hash_pins_agree_with_metadata": true,
+  "capture_module_has_top_level_effects": true,
+  "upstream_control_not_imported_or_called": true,
+  "fork_sites": 1,
+  "execve_sites": 1,
+  "only_exec_target_is_fixed_monitor_argv": true,
+  "parent_group_ownership_precedes_grant": true,
+  "child_barrier_precedes_exec": true,
+  "all_kill_sites_guard_unreaped_identity": true,
+  "wait4_and_reaped_update_inside_blocked_signal_region": true,
+  "terminal_wait_uses_WNOWAIT": true,
+  "aggregate_CPU_uses_SELF_plus_single_wait4": true,
+  "RUSAGE_CHILDREN_not_double_counted": true,
+  "CPU_samples_require_finite_nonnegative_and_ceil": true,
+  "per_process_limits_match_proposal": {
+    "RLIMIT_AS": 268435456,
+    "RLIMIT_CPU": 2,
+    "RLIMIT_FSIZE": 8388608,
+    "RLIMIT_CORE": 0
+  },
+  "affinity_check_before_reservation_before_fork": true,
+  "exclusive_receipt_mode": 384,
+  "receipt_close_not_retried_in_source": true,
+  "final_success_tail": [
+    "publish provisional OUTCOME",
+    "inclusive totals check",
+    "outside process exit0"
+  ],
+  "three_comparison_sites": [
+    {
+      "code_offset": 1659,
+      "immediate_offset": 1661,
+      "immediate_bytes": 8,
+      "old_value": 4259840,
+      "new_value": 5242880,
+      "historical_listing_text_matches": true
+    },
+    {
+      "code_offset": 1676,
+      "immediate_offset": 1678,
+      "immediate_bytes": 8,
+      "old_value": 4259840,
+      "new_value": 5242880,
+      "historical_listing_text_matches": true
+    },
+    {
+      "code_offset": 1710,
+      "immediate_offset": 1712,
+      "immediate_bytes": 8,
+      "old_value": 4096,
+      "new_value": 10555392,
+      "historical_listing_text_matches": true
+    }
+  ],
+  "listing_check_generated_no_native_code_bytes": true,
+  "dependency_manifest_census_claims": {
+    "checked_identity_rows": 1325,
+    "stdlib_superset_files": 1196,
+    "ELF_superset_objects": 92,
+    "frozen_files": 30,
+    "payloads_not_yet_reviewed": true
+  },
+  "historical_mode_correction_claim_not_yet_verified": true,
+  "old_control_full_diff_not_checked_here": true,
+  "upstream_imported_or_executed": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "new_model_invocation": false,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five complete files/48794 bytes read; literal caller is exactly the complete capture plus87 wrapper bytes.",
+    "All syntax checks inspect source only; capture has top-level effects and is never imported,called or run.",
+    "One fork/exec site,parent group-before-grant,unreaped cleanup,masked reap update and single wait4 CPU summand match source claims; no process tree,containment or failure behavior was executed.",
+    "Final OUTCOME publication precedes inclusive totals and exit0; source ordering supports outside-terminal requirement without supplying a new success result.",
+    "Three fixed comparison sites match held historical listing text and source predictions; no new or old native binary was acquired or reconstructed.",
+    "Dependency1325-row/1196-stdlib/92-ELF census and historical preparation-mode/review-binding corrections remain authored claims pending their source records.",
+    "No new inference,upstream import/execution,native acquisition/emission/execution,workstation activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/FROZEN_INPUTS.json",
+      "bytes": 15371,
+      "intended_review": "complete frozen-input/environment/inspection and saved correction metadata; no execution or private raw publication"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/ENVIRONMENT.json",
+      "bytes": 934,
+      "intended_review": "complete frozen-input/environment/inspection and saved correction metadata; no execution or private raw publication"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/INSPECTION_TOOLS.json",
+      "bytes": 1214,
+      "intended_review": "complete frozen-input/environment/inspection and saved correction metadata; no execution or private raw publication"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/PREPARATION_CORRECTION.json",
+      "bytes": 2663,
+      "intended_review": "complete frozen-input/environment/inspection and saved correction metadata; no execution or private raw publication"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/REVIEW_BINDING_CORRECTION.json",
+      "bytes": 692,
+      "intended_review": "complete frozen-input/environment/inspection and saved correction metadata; no execution or private raw publication"
+    }
+  ],
+  "next_scope_bytes": 20874,
+  "next_program_unit": "Reconcile current owned-authority target and code owners; audit existing model branches; select bounded finite-oracle/disposable-journal construction without changing retained stores.",
+  "source_followup_not_current_program_priority": true,
+  "new_design_reconciliation": {
+    "primary_proposal_pr": 112,
+    "design_branch_head": "c7e3f4811592c8beec53e427b5526e897c3361b3",
+    "other_owned_authority_proposal_head": "9b5fe5bc4389cc2654465c13786009ca1c26f1bc",
+    "source_review_owner_preserved": true,
+    "reference_SQLite_backend_not_replaced": true,
+    "older_owned_journal_ref": "94f439ca3a011316bf660ba879f5993815cd7866",
+    "older_owned_recovery_ref": "c4ed182a2d5c5c94dc9ff35a4d4318d40506edea",
+    "those_refs_have_no_commits_ahead_of_observed_main": true,
+    "no_worker_inactivity_claim": true,
+    "no_worker_contact_or_acceptance": true
+  },
+  "public_contribution_checks": [
+    "five complete payloads and lossless literal-body-wrapper identity passed",
+    "source-only fork/exec,barrier/cleanup,masked reap and CPU formula checks passed",
+    "source resource/receipt order and three historical listing comparisons passed without native reconstruction",
+    "coverage,new design/owner frontier,source followup,links,privacy and publication hashes passed"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "61d049bfc14177c53ab74260e0547a9461fda093",
+  "files": [
+    {
+      "path": "docs/source-review/base12-decoder-profile-build-preparation-control.md",
+      "bytes": 6901,
+      "sha256": "2ac251e351b8f0b7fed987cd3054b1c91a4d9b3c9c53fd2eed7a30406ae71715"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-decoder-profile-build-preparation-control.json",
+      "bytes": 6239,
+      "sha256": "0a21f72ba6623f108c58e349081946d33413a2fab491dbd4848b828fc9899d6f"
+    },
+    {
+      "path": "research/runs/base12-decoder-profile-build-preparation-control/validation.json",
+      "bytes": 6921,
+      "sha256": "2f67c0b04c838c9a156f3491f6ead7e6f95220dbe005e9d72fc9e33b4e71fde2"
+    }
+  ]
+}

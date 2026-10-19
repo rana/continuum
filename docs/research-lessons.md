@@ -341,6 +341,8 @@ The [decoder-profile source-packet closure](source-review/base12-decoder-profile
 
 The [build-preparation foundation](source-review/base12-decoder-profile-build-preparation-foundation.md) recovers a missing exact publication cut and upgrades a count-only preservation assertion to full historical Git metadata joins. It also separates saved markers from later unsaved checks: when final acceptance runs after receipt publication, the outside completion observation remains necessary. A proposal's detailed resource/process rules do not prove their implementation or execution.
 
+The [complete proposed capture/caller](source-review/base12-decoder-profile-build-preparation-control.md) binds a literal command to exact source while keeping the control inert during review. Source placement can establish that group ownership precedes grant, accounting avoids a repeated child summand and final checks follow marker publication. It cannot supply actual containment, dependency use or outside completion; unreviewed correction and census records remain dependencies rather than accepted facts.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -243,6 +243,8 @@ The [Gate-A receipts return](source-review/base12-gate-a-receipts.md) closes a c
 
 The [Gate-A controller return](source-review/base12-gate-a-controller.md) distinguishes atomic attempt reservation from durable execution state and binds completion markers to their actual source predicates. An explicit native-valid/Python-reject fixture also shows why a checkpoint must preserve oracle exceptions rather than compress them into blanket agreement. No historical execution was repeated.
 
+The [Gate-A producer return](source-review/base12-gate-a-producer.md) reconstructs an omitted case table from held manifest fields and binds its exact frozen digest without reopening its historical path or regenerating fixtures. That supports a useful continuation pattern: keep reconstructibility, content identity, historical location access and executed effects separate. Static inspection and arithmetic checks retain their narrower scope.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "native_objects_compared": 7,
+  "exact_replays": 3,
+  "cut_generation": 2,
+  "later_live_generation": 3,
+  "schema_compared": true,
+  "new_execution": false
+}

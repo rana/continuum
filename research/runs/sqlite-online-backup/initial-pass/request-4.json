@@ -1,0 +1,10 @@
+{
+  "acceptor": "demo",
+  "candidate": "sha256:fbcc5463e22064a243671a01c16f1742c2eef5608316d34d07e80ea99d9be0ac",
+  "expected": {
+    "generation": 1,
+    "root": "sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da"
+  },
+  "operation_id": "agent-b",
+  "target": "main"
+}

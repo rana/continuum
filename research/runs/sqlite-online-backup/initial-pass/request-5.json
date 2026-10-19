@@ -1,0 +1,7 @@
+{
+  "acceptor": "demo",
+  "candidate": "sha256:fbba497467405f9864c7e604b4e2eba2ab84ba4ecc46ce8cc83bdafaca03af9f",
+  "expected": null,
+  "operation_id": "initial",
+  "target": "main"
+}

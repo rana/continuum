@@ -1,0 +1,75 @@
+{
+  "application_id": 1129270868,
+  "user_version": 1,
+  "schema": [
+    [
+      "index",
+      "events_target",
+      "events",
+      "CREATE INDEX events_target ON events(acceptor,target,sequence)"
+    ],
+    [
+      "index",
+      "sqlite_autoindex_events_1",
+      "events",
+      null
+    ],
+    [
+      "index",
+      "sqlite_autoindex_heads_1",
+      "heads",
+      null
+    ],
+    [
+      "index",
+      "sqlite_autoindex_objects_1",
+      "objects",
+      null
+    ],
+    [
+      "table",
+      "events",
+      "events",
+      "CREATE TABLE events (\n    sequence INTEGER PRIMARY KEY,\n    acceptor TEXT NOT NULL,\n    target TEXT NOT NULL,\n    operation_id TEXT NOT NULL,\n    request BLOB NOT NULL,\n    receipt TEXT NOT NULL,\n    UNIQUE (acceptor,operation_id)\n) STRICT"
+    ],
+    [
+      "table",
+      "heads",
+      "heads",
+      "CREATE TABLE heads (\n    acceptor TEXT NOT NULL,\n    target TEXT NOT NULL,\n    root TEXT NOT NULL REFERENCES objects(id),\n    generation INTEGER NOT NULL CHECK (generation > 0),\n    PRIMARY KEY (acceptor,target)\n) STRICT"
+    ],
+    [
+      "table",
+      "objects",
+      "objects",
+      "CREATE TABLE objects (\n    id TEXT PRIMARY KEY NOT NULL,\n    canonical BLOB NOT NULL\n) STRICT"
+    ],
+    [
+      "trigger",
+      "events_no_delete",
+      "events",
+      "CREATE TRIGGER events_no_delete BEFORE DELETE ON events BEGIN SELECT RAISE(ABORT,'append-only event'); END"
+    ],
+    [
+      "trigger",
+      "events_no_update",
+      "events",
+      "CREATE TRIGGER events_no_update BEFORE UPDATE ON events BEGIN SELECT RAISE(ABORT,'append-only event'); END"
+    ],
+    [
+      "trigger",
+      "objects_no_delete",
+      "objects",
+      "CREATE TRIGGER objects_no_delete BEFORE DELETE ON objects BEGIN SELECT RAISE(ABORT,'immutable object'); END"
+    ],
+    [
+      "trigger",
+      "objects_no_update",
+      "objects",
+      "CREATE TRIGGER objects_no_update BEFORE UPDATE ON objects BEGIN SELECT RAISE(ABORT,'immutable object'); END"
+    ]
+  ],
+  "objects": [],
+  "heads": [],
+  "events": []
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "2db38d7726f5b9ed16f52cda232fe527f114f134",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-records.md",
+      "bytes": 5738,
+      "sha256": "a00c4573ce79fbd5dad024a75db9dc526003dc2aba19c7bfc83a8e54d0bd793a"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-records.json",
+      "bytes": 5518,
+      "sha256": "598be281e7d521264a3b49f9bbc247d7313d5868fac0dc5b5428e903f0848e05"
+    },
+    {
+      "path": "research/runs/base12-gate-a-records/validation.json",
+      "bytes": 13816,
+      "sha256": "0933c79b368d86078a9707055dd8f23bc7334aefe3be4e3a0eb5d61ae48d86f8"
+    }
+  ]
+}

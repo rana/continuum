@@ -237,6 +237,8 @@ The [packet semantic closeout](source-review/base12-packet-semantic-closeout.md)
 
 The [Gate-A claims return](source-review/base12-gate-a-claims.md) preserves native application, build path and controller as separate milestones. It also distinguishes wire grammar from an oracle runtime safeguard, explicit verdict rows from control-flow evidence, and atomic publication from power-loss durability. Continuum should retain those contract and observation boundaries when reusing a pass. No native artifact was acquired or executed.
 
+The [Gate-A records return](source-review/base12-gate-a-records.md) traces an actual-exit summary field to expected values, matching log text and output predicates rather than treating the label as independent telemetry. A later same-named syscall alone also cannot identify a retry of the same operation. Continuum should preserve field derivations, call identity and separate reviewer scope. No saved auditor or native code was run.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

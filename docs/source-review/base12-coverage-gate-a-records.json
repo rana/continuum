@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-claims.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/RESULT.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/PRESERVATION.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/audit_saved_execution.py",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/FREEZE.sha256",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/retained-identities.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/RESULT.json",
+      "bytes": 20580,
+      "git_blob_sha": "14e3a20fd3a9cb082f19ea69f46bf2ba05917324",
+      "sha256": "cc0535a14f02c2e4ae50f7af449dea3fb8ca000409f5677e4b03323eed6089ca",
+      "lines": 646,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-raw-result-preservation-and-audit-predicates",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/PRESERVATION.json",
+      "bytes": 6331,
+      "git_blob_sha": "795d621e06f7504ec2e9d868fcf2617e8baad874",
+      "sha256": "58d627ae6bc3accdc1c829eb7f91b971e58766456f0bfd968b2ba9a9160c8e15",
+      "lines": 144,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-raw-result-preservation-and-audit-predicates",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/audit_saved_execution.py",
+      "bytes": 7443,
+      "git_blob_sha": "c8fd9b0caa2cf32fdc87a163acadedf13752a2b2",
+      "sha256": "6674feaa84062581243185075084de1ee2e31680090aff0d9c8fbdb14e978cbb",
+      "lines": 71,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-raw-result-preservation-and-audit-predicates",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/FREEZE.sha256",
+      "bytes": 1830,
+      "git_blob_sha": "3a2888e2e0c85f8cf2d7ca0431de6fc28f2d95e2",
+      "sha256": "a6b562eba1c1591f2930cddddc56c8696cad5ab1176f74e8a35123fe4ba687d6",
+      "lines": 10,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-raw-result-preservation-and-audit-predicates",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/retained-identities.json",
+      "bytes": 646,
+      "git_blob_sha": "5d3b075fc7947d6e3b21b6f5b96087ecdccf0887",
+      "sha256": "887c7fe4c8e1ce930b6ad3148109cbac77b930611191438114dfa16c0739b820",
+      "lines": 17,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-raw-result-preservation-and-audit-predicates",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 36830
+    },
+    "cumulative_direct_read": {
+      "paths": 406,
+      "unique_blobs": 406,
+      "bytes": 3246056
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 458,
+    "remaining_paths_without_full_semantic_read_or_alias": 5135,
+    "remaining_distinct_blobs_without_full_semantic_read": 4023,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 36830,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five text payloads fully read; one Python auditor syntax/AST inspected without import or execution.",
+    "Raw RESULT fields reconcile saved audit assertions; native outputs, fixtures, full traces and historical private source paths were not reopened here.",
+    "Auditor actual_exit fields are constructed after expected/actual text membership and filesystem predicates, not an independent parsed process census.",
+    "Auditor retry predicate uses the next same-named syscall and a nonnegative result; prose reviewer additional argument checks retain separate scope.",
+    "Auditor reads saved output/trace bytes and writes RESULT.json; no child execution is apparent in this source, but it is not an immutable receipt-only reader.",
+    "Preservation has 22 allowlisted entries: two payloads now bound and 20 still unacquired in this unit; independent review binds separately.",
+    "Freeze has ten entries/nine digest values; only the already held seed payload is bound, while native ELF and other freeze-input payloads remain unacquired here.",
+    "Retained data/header/archive identities remain metadata, not acquired signal bytes or fresh cmp/hash observations.",
+    "No historical execution, raw trace/signal/executable acquisition, benchmark, new inference or authority activation occurred."
+  ],
+  "review_report": "base12-gate-a-records.md"
+}

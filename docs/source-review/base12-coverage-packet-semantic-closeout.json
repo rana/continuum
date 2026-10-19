@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-historical-packet-notes.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/read-receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/proposals/collaboration/dot-bridge/from-dot/dot-20261016-pr13-audit-documentation-reconciliation.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/official-license-receipt.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/read-receipt.json",
+      "bytes": 1327,
+      "git_blob_sha": "09d38e501a598a497f8521030df62b3e46dc9000",
+      "sha256": "906cc4342be86485ca2349fec48c95ab4da2a14d71e1b24b4bd2ccc67570837e",
+      "lines": 28,
+      "semantic_review": "full_direct_read",
+      "review_lane": "packet-documentation-proposal-and-declared-license-provenance",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/proposals/collaboration/dot-bridge/from-dot/dot-20261016-pr13-audit-documentation-reconciliation.md",
+      "bytes": 4528,
+      "git_blob_sha": "c45ac3f6a1d96a2f016fff1a1c2a364a70c118f1",
+      "sha256": "9dcb6fd1117e643dda31399cddcfa85b777e146f00930116b2f6757a58e8e87a",
+      "lines": 31,
+      "semantic_review": "full_direct_read",
+      "review_lane": "packet-documentation-proposal-and-declared-license-provenance",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/official-license-receipt.json",
+      "bytes": 647,
+      "git_blob_sha": "60cea6ff6c214a2fef95aed0d1f77b44403c1ed7",
+      "sha256": "e9d2dc8a514403774e9c2fc33f18600ebce4b3fa93f2c7eafedf4d9e642ad04d",
+      "lines": 13,
+      "semantic_review": "full_direct_read",
+      "review_lane": "packet-documentation-proposal-and-declared-license-provenance",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 6502
+    },
+    "cumulative_direct_read": {
+      "paths": 396,
+      "unique_blobs": 396,
+      "bytes": 3180585
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 448,
+    "remaining_paths_without_full_semantic_read_or_alias": 5145,
+    "remaining_distinct_blobs_without_full_semantic_read": 4033,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 6502,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three retained texts fully read; every nonempty packet member now has a full reading or an established nonempty identical-blob reading.",
+    "All eleven empty streams remain mechanical checks; no semantic credit is assigned by their shared empty blob.",
+    "Documentation retrieval method and original commit provenance are authored claims; four actual snapshot blobs match acquired bytes without re-fetching the original commit.",
+    "The reconciliation text is a local historical draft, not itself a posted/accepted message, documentation edit or new implementation assignment.",
+    "Later parent/private publication records remain separately attributed; current reading grants no historical or workstation authority.",
+    "The license receipt records a URL, attribution, label, length and digest; the referenced 35324-byte page payload was not acquired, rehashed or legally evaluated here.",
+    "Packet reading/custody does not authenticate scientific claims, establish independent execution or complete whole-repository reading.",
+    "No model invocation, original signal access, source execution, external messaging or new service/scheduler activation occurred."
+  ],
+  "review_report": "base12-packet-semantic-closeout.md",
+  "packet_coverage": {
+    "pinned_member_paths": 127,
+    "pinned_member_path_bytes": 1319940,
+    "nonempty_member_paths": 116,
+    "nonempty_distinct_blobs": 114,
+    "direct_semantic_read_paths": 112,
+    "previous_identical_blob_read_alias_paths": 4,
+    "mechanical_empty_stream_paths": 11,
+    "nonempty_paths_without_semantic_read_or_alias": 0,
+    "all_member_bytes_custodied_in_prior_archive_check": true,
+    "whole_upstream_repository_semantic_read_complete": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "830f497e45c953a48e042c0812bdad9ea9e4a8c6",
+  "files": [
+    {
+      "path": "docs/source-review/base12-packet-semantic-closeout.md",
+      "bytes": 5108,
+      "sha256": "27c629a9cef0a05a8e59004c5bf341dc09d27459dbe4d6196a55ac94e757e067"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-packet-semantic-closeout.json",
+      "bytes": 5262,
+      "sha256": "47b257585edfc90679a8496d5614d590c762e5c8fbc106bb575c4829edc8cd84"
+    },
+    {
+      "path": "research/runs/base12-packet-semantic-closeout/validation.json",
+      "bytes": 6446,
+      "sha256": "b87ed2d2875f5c07cc6df28c52635c93e3cd73779fdb8ab4513afc4abf39afc0"
+    }
+  ]
+}

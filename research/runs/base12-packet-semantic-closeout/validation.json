@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "source_baseline": "830f497e45c953a48e042c0812bdad9ea9e4a8c6",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 3,
+  "verified_source_bytes": 6502,
+  "documentation_four_snapshot_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/collaboration/dot-bridge/to-dot/gpt-20261016-documentation-continuity.md",
+      "bytes": 2614,
+      "git_blob_sha": "96bf753a31bccd87c3d7bab4dae90a7ae0ed8d61",
+      "sha256": "e801f05117f5fc0902becc0650f7d29e4db5b9dd20fef6a5f3e86d1cde237e70",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/CURRENT.md",
+      "bytes": 10373,
+      "git_blob_sha": "2a946ad10c5b0a33d7a2da9561d9158181f4616b",
+      "sha256": "b2be72e1646bf5c8d2163196d7038c7556a364b7473de8a45163776b9eb05566",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/LEARNING_LEDGER.md",
+      "bytes": 18925,
+      "git_blob_sha": "5429ec98272272b81437784a9cc5a35ab95da23d",
+      "sha256": "5eac327b39c6ea3876c7a9738605d4680c877acafc25356801b12176b2d7406c",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/PRESERVATION.md",
+      "bytes": 6259,
+      "git_blob_sha": "64958dfc7a4d5eca43dc77ae2d5c1c19a515491b",
+      "sha256": "9e0e36079323de6440302b7f26716e4bda1e6c29a470aca3dc413a103a24e293",
+      "matched": true
+    }
+  ],
+  "documentation_revision_matches_closeout": true,
+  "documentation_urls_match_declared_revision_and_paths": true,
+  "proposal_three_audit_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/learning-native-audit-v1.json",
+      "bytes": 4429,
+      "sha256": "1e3cb37d5e4a7e23eee838295291531ddc3613531a8ee92e119252549df32dc4",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/independent-full-accounting-audit-v1.json",
+      "bytes": 19297,
+      "sha256": "c4083c41d719018480bc5693420ac714092805c2e2cc7a667b644829c55dd56e",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/post-run-verification-v1.json",
+      "bytes": 6038,
+      "sha256": "03ff118194fdfb9de599cad0c55e4d70e0d8085080ca79545526f1aa77c3ead0",
+      "matched": true
+    }
+  ],
+  "proposal_four_totals_and_three_savings_match_prior_verified_arithmetic": true,
+  "proposal_is_authored_local_draft": true,
+  "proposal_posted_or_accepted_by_this_review": false,
+  "license_receipt_URLs_equal": true,
+  "license_receipt_remote_revisions_match_stage_records": true,
+  "license_page_declared_bytes": 35324,
+  "license_page_payload_acquired": false,
+  "license_legal_evaluation_performed": false,
+  "packet_coverage": {
+    "pinned_member_paths": 127,
+    "pinned_member_path_bytes": 1319940,
+    "nonempty_member_paths": 116,
+    "nonempty_distinct_blobs": 114,
+    "direct_semantic_read_paths": 112,
+    "previous_identical_blob_read_alias_paths": 4,
+    "mechanical_empty_stream_paths": 11,
+    "nonempty_paths_without_semantic_read_or_alias": 0,
+    "all_member_bytes_custodied_in_prior_archive_check": true,
+    "whole_upstream_repository_semantic_read_complete": false
+  },
+  "source_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three retained texts fully read; every nonempty packet member now has a full reading or an established nonempty identical-blob reading.",
+    "All eleven empty streams remain mechanical checks; no semantic credit is assigned by their shared empty blob.",
+    "Documentation retrieval method and original commit provenance are authored claims; four actual snapshot blobs match acquired bytes without re-fetching the original commit.",
+    "The reconciliation text is a local historical draft, not itself a posted/accepted message, documentation edit or new implementation assignment.",
+    "Later parent/private publication records remain separately attributed; current reading grants no historical or workstation authority.",
+    "The license receipt records a URL, attribution, label, length and digest; the referenced 35324-byte page payload was not acquired, rehashed or legally evaluated here.",
+    "Packet reading/custody does not authenticate scientific claims, establish independent execution or complete whole-repository reading.",
+    "No model invocation, original signal access, source execution, external messaging or new service/scheduler activation occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/README.md",
+      "bytes": 7231,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/CONTRACT.md",
+      "bytes": 7353,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/README.md",
+      "bytes": 5614,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/INDEPENDENT_RESULT_REVIEW.md",
+      "bytes": 6006,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/CLEARANCE.md",
+      "bytes": 2437,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 28641,
+  "public_contribution_checks": [
+    "three exact source identities, four snapshot blobs and three audit bindings passed",
+    "proposal totals/coefficients and scoped draft/license declarations checked",
+    "complete packet census distinguishes direct readings, aliases and mechanical empties",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

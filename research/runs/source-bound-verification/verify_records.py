@@ -27,6 +27,11 @@ def main():
     receipt = load('verification-receipt.json')
     request_bytes = gzip.decompress((ROOT / 'verification-request.json.gz').read_bytes())
     assert receipt['request_sha256'] == hashlib.sha256(request_bytes).hexdigest()
+    logs = [json.loads(line) for line in gzip.decompress((ROOT / 'native-log.jsonl.gz').read_bytes()).decode().splitlines()]
+    fetched = {json.loads(item['stdout'])['id']: json.loads(item['stdout'])
+               for item in logs if item['argv'][1] == 'get'}
+    assert bytes(fetched[load('result.json')['request']]['object']['bytes']) == request_bytes
+    assert bytes(fetched[load('result.json')['receipt']]['object']['bytes']) == gzip.decompress((ROOT / 'verification-receipt.json.gz').read_bytes())
     assert receipt['operation_id'] == request['operation_id']
     assert receipt['source_snapshot'] == request['source_snapshot'] == load('result.json')['source_snapshot']
     assert receipt['passed'] and receipt['source_unchanged_after_checks']

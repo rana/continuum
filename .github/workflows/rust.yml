@@ -46,3 +46,8 @@ jobs:
           python3 research/runs/checkpoint-object-import/reproduce.py --binary target/debug/continuum --build-provenance "$RUNNER_TEMP/checkpoint-build.json" --output "$RUNNER_TEMP/recorded-attempt-reconstruction"
       - name: Verify fresh-receiver evidence without new inference
         run: python3 research/runs/recorded-attempt-receiver/verify_records.py
+      - name: Capture source-bound verification and failed worker evidence
+        run: |
+          python3 research/runs/source-bound-verification/verify_records.py
+          python3 research/runs/source-bound-verification/capture.py --binary target/debug/continuum --build-provenance "$RUNNER_TEMP/checkpoint-build.json" --output "$RUNNER_TEMP/source-bound-verification"
+          python3 research/runs/source-bound-verification/check_failure_capture.py --binary target/debug/continuum --build-provenance "$RUNNER_TEMP/checkpoint-build.json" --output "$RUNNER_TEMP/source-bound-failure"

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-capacity-inputs.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/02.b12s"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/02.b12s",
+      "bytes": 3614,
+      "git_blob_sha": "c44a6b71c7fe31fbe3b3e3159ffe1f9c35ae5547",
+      "sha256": "1e6b201da0a06933d6dfb5a0194f2813acfce36c1bd6dc76d5a0d2b685c74351",
+      "lines": 312,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-all-vector-fixture-and-source-corpus-closeout",
+      "reading_representation": "complete_source_and_exact_literal_vector_composition",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 3614
+    },
+    "cumulative_direct_read": {
+      "paths": 578,
+      "unique_blobs": 578,
+      "bytes": 5039589
+    },
+    "additional_identical_blob_paths": 79,
+    "alias_distinct_blobs": 28,
+    "semantic_covered_paths_including_aliases": 657,
+    "remaining_paths_without_full_semantic_read_or_alias": 4936,
+    "remaining_distinct_blobs_without_full_semantic_read": 3851,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 3614,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "One complete3614-byte source read and reconstructed exactly from held literal vector statements, unique target names and padding.",
+    "All73 nonrelocating and14 concrete relocation cases bind source; four abstract range witnesses are not source program cases.",
+    "Fourteen signed displacement fields bind renamed labels;122 CLD padding instructions preserve vector-relative offsets.",
+    "All61 nonempty fixture source paths have full semantic reading or identical-blob credit; empty input15 remains mechanical only.",
+    "Expected224-row map literal matches identity; streaming supplied code bytes is not native artifact acquisition, assembly or execution.",
+    "Saved successful status and output identities remain historical metadata relations; no fresh native behavior or executable-safety claim.",
+    "Fixture layouts/maps/native outputs and whole-repository reading retain gaps; no model invocation, live scan, activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-builder-source-corpus-closeout.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

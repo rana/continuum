@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "source_baseline": "82354c23af60522be69207a29df787654965fb26",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 3614,
+  "full_source_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 3614,
+  "complete_source_reconstruction_exact": true,
+  "nonrelocating_vectors": 73,
+  "concrete_relocation_vectors": 14,
+  "abstract_range_witnesses_not_source_cases": 4,
+  "instructions": 209,
+  "padding_instructions": 122,
+  "labels": 15,
+  "source_lines": 312,
+  "code_bytes": 538,
+  "streamed_literal_code_sha256": "e7abcb5c73d340e805be164aa924a4d7b8758276d06bf97266835b5b1f0a1179",
+  "expected_map_identity": {
+    "records": 224,
+    "bytes": 7200,
+    "sha256": "4d1572b66d8ca4db7a24c694dbe253a8b4e6d615a7d6a5e2b31252407f478111",
+    "matches": true
+  },
+  "all_source_manifest_checksum_and_saved_case_relations_match": true,
+  "all_renamed_target_displacements_match": true,
+  "relocation_checks": [
+    {
+      "witness": "jalways_forward",
+      "target": "v00_jalways_forward",
+      "patch_file_offset": 4433,
+      "displacement": 11
+    },
+    {
+      "witness": "jz_forward",
+      "target": "v01_jz_forward",
+      "patch_file_offset": 4450,
+      "displacement": 10
+    },
+    {
+      "witness": "jnz_forward",
+      "target": "v02_jnz_forward",
+      "patch_file_offset": 4466,
+      "displacement": 10
+    },
+    {
+      "witness": "jb_forward",
+      "target": "v03_jb_forward",
+      "patch_file_offset": 4482,
+      "displacement": 10
+    },
+    {
+      "witness": "jae_forward",
+      "target": "v04_jae_forward",
+      "patch_file_offset": 4498,
+      "displacement": 10
+    },
+    {
+      "witness": "ja_forward",
+      "target": "v05_ja_forward",
+      "patch_file_offset": 4514,
+      "displacement": 10
+    },
+    {
+      "witness": "js_forward",
+      "target": "v06_js_forward",
+      "patch_file_offset": 4530,
+      "displacement": 10
+    },
+    {
+      "witness": "jns_forward",
+      "target": "v07_jns_forward",
+      "patch_file_offset": 4546,
+      "displacement": 10
+    },
+    {
+      "witness": "jle_forward",
+      "target": "v08_jle_forward",
+      "patch_file_offset": 4562,
+      "displacement": 10
+    },
+    {
+      "witness": "call_forward",
+      "target": "v09_call_forward",
+      "patch_file_offset": 4577,
+      "displacement": 11
+    },
+    {
+      "witness": "jnz_backward",
+      "target": "v10_jnz_backward",
+      "patch_file_offset": 4604,
+      "displacement": -16
+    },
+    {
+      "witness": "call_backward",
+      "target": "v11_call_backward",
+      "patch_file_offset": 4619,
+      "displacement": -15
+    },
+    {
+      "witness": "jump_self",
+      "target": "v12_jump_self",
+      "patch_file_offset": 4624,
+      "displacement": -5
+    },
+    {
+      "witness": "jz_zero",
+      "target": "v13_jz_zero",
+      "patch_file_offset": 4630,
+      "displacement": 0
+    }
+  ],
+  "witness_source_locations": [
+    {
+      "witness": "imm_zero",
+      "source_line": 4,
+      "file_offset": 4096,
+      "bytes": 10
+    },
+    {
+      "witness": "imm_upper_reg",
+      "source_line": 6,
+      "file_offset": 4106,
+      "bytes": 10
+    },
+    {
+      "witness": "imm_signed_min",
+      "source_line": 8,
+      "file_offset": 4116,
+      "bytes": 10
+    },
+    {
+      "witness": "imm_unsigned_max",
+      "source_line": 10,
+      "file_offset": 4126,
+      "bytes": 10
+    },
+    {
+      "witness": "imm_unsigned_high_bit",
+      "source_line": 12,
+      "file_offset": 4136,
+      "bytes": 10
+    },
+    {
+      "witness": "imm_endian_pattern",
+      "source_line": 14,
+      "file_offset": 4146,
+      "bytes": 10
+    },
+    {
+      "witness": "imm_negative_zero",
+      "source_line": 16,
+      "file_offset": 4156,
+      "bytes": 10
+    },
+    {
+      "witness": "imm_leading_zero",
+      "source_line": 18,
+      "file_offset": 4166,
+      "bytes": 10
+    },
+    {
+      "witness": "mov_low_low",
+      "source_line": 20,
+      "file_offset": 4176,
+      "bytes": 3
+    },
+    {
+      "witness": "mov_high_dest",
+      "source_line": 22,
+      "file_offset": 4179,
+      "bytes": 3
+    },
+    {
+      "witness": "mov_high_src",
+      "source_line": 24,
+      "file_offset": 4182,
+      "bytes": 3
+    },
+    {
+      "witness": "mov_high_both",
+      "source_line": 26,
+      "file_offset": 4185,
+      "bytes": 3
+    },
+    {
+      "witness": "mov_rsp_r12",
+      "source_line": 28,
+      "file_offset": 4188,
+      "bytes": 3
+    },
+    {
+      "witness": "add_register",
+      "source_line": 30,
+      "file_offset": 4191,
+      "bytes": 3
+    },
+    {
+      "witness": "sub_register",
+      "source_line": 32,
+      "file_offset": 4194,
+      "bytes": 3
+    },
+    {
+      "witness": "and_register",
+      "source_line": 34,
+      "file_offset": 4197,
+      "bytes": 3
+    },
+    {
+      "witness": "cmp_register",
+      "source_line": 36,
+      "file_offset": 4200,
+      "bytes": 3
+    },
+    {
+      "witness": "test_register",
+      "source_line": 38,
+      "file_offset": 4203,
+      "bytes": 3
+    },
+    {
+      "witness": "add_i8_min",
+      "source_line": 40,
+      "file_offset": 4206,
+      "bytes": 4
+    },
+    {
+      "witness": "add_i8_negative",
+      "source_line": 42,
+      "file_offset": 4210,
+      "bytes": 4
+    },
+    {
+      "witness": "add_i8_max",
+      "source_line": 44,
+      "file_offset": 4214,
+      "bytes": 4
+    },
+    {
+      "witness": "add_i8_zero",
+      "source_line": 46,
+      "file_offset": 4218,
+      "bytes": 4
+    },
+    {
+      "witness": "and_i8_min",
+      "source_line": 48,
+      "file_offset": 4222,
+      "bytes": 4
+    },
+    {
+      "witness": "and_i8_negative",
+      "source_line": 50,
+      "file_offset": 4226,
+      "bytes": 4
+    },
+    {
+      "witness": "and_i8_max",
+      "source_line": 52,
+      "file_offset": 4230,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_simple",
+      "source_line": 54,
+      "file_offset": 4234,
+      "bytes": 3
+    },
+    {
+      "witness": "load64_rsp",
+      "source_line": 56,
+      "file_offset": 4237,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_r12",
+      "source_line": 58,
+      "file_offset": 4241,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_rbp_zero",
+      "source_line": 60,
+      "file_offset": 4245,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_r13_zero",
+      "source_line": 62,
+      "file_offset": 4249,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_r13_negative_zero",
+      "source_line": 64,
+      "file_offset": 4253,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_disp8_min",
+      "source_line": 66,
+      "file_offset": 4257,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_disp8_max",
+      "source_line": 68,
+      "file_offset": 4261,
+      "bytes": 4
+    },
+    {
+      "witness": "load64_disp32_negative_edge",
+      "source_line": 70,
+      "file_offset": 4265,
+      "bytes": 7
+    },
+    {
+      "witness": "load64_disp32_positive_edge",
+      "source_line": 72,
+      "file_offset": 4272,
+      "bytes": 7
+    },
+    {
+      "witness": "load64_disp32_min",
+      "source_line": 74,
+      "file_offset": 4279,
+      "bytes": 7
+    },
+    {
+      "witness": "load64_disp32_max",
+      "source_line": 76,
+      "file_offset": 4286,
+      "bytes": 7
+    },
+    {
+      "witness": "load64_rsp_disp8",
+      "source_line": 78,
+      "file_offset": 4293,
+      "bytes": 5
+    },
+    {
+      "witness": "load64_r12_disp32",
+      "source_line": 80,
+      "file_offset": 4298,
+      "bytes": 8
+    },
+    {
+      "witness": "load32_no_rex",
+      "source_line": 82,
+      "file_offset": 4306,
+      "bytes": 2
+    },
+    {
+      "witness": "load32_high_dest",
+      "source_line": 84,
+      "file_offset": 4308,
+      "bytes": 3
+    },
+    {
+      "witness": "load32_high_base",
+      "source_line": 86,
+      "file_offset": 4311,
+      "bytes": 3
+    },
+    {
+      "witness": "load32_high_both_sib",
+      "source_line": 88,
+      "file_offset": 4314,
+      "bytes": 4
+    },
+    {
+      "witness": "load32_rbp_zero",
+      "source_line": 90,
+      "file_offset": 4318,
+      "bytes": 3
+    },
+    {
+      "witness": "load32_r13_zero",
+      "source_line": 92,
+      "file_offset": 4321,
+      "bytes": 4
+    },
+    {
+      "witness": "load8_rsp",
+      "source_line": 94,
+      "file_offset": 4325,
+      "bytes": 5
+    },
+    {
+      "witness": "load8_r13",
+      "source_line": 96,
+      "file_offset": 4330,
+      "bytes": 5
+    },
+    {
+      "witness": "load8_disp32",
+      "source_line": 98,
+      "file_offset": 4335,
+      "bytes": 9
+    },
+    {
+      "witness": "store64_rsp",
+      "source_line": 100,
+      "file_offset": 4344,
+      "bytes": 4
+    },
+    {
+      "witness": "store64_r12",
+      "source_line": 102,
+      "file_offset": 4348,
+      "bytes": 4
+    },
+    {
+      "witness": "store64_rbp_zero",
+      "source_line": 104,
+      "file_offset": 4352,
+      "bytes": 4
+    },
+    {
+      "witness": "store64_disp8_min",
+      "source_line": 106,
+      "file_offset": 4356,
+      "bytes": 4
+    },
+    {
+      "witness": "store64_disp8_max",
+      "source_line": 108,
+      "file_offset": 4360,
+      "bytes": 4
+    },
+    {
+      "witness": "store64_disp32_negative_edge",
+      "source_line": 110,
+      "file_offset": 4364,
+      "bytes": 7
+    },
+    {
+      "witness": "store64_disp32_positive_edge",
+      "source_line": 112,
+      "file_offset": 4371,
+      "bytes": 7
+    },
+    {
+      "witness": "store32_simple",
+      "source_line": 114,
+      "file_offset": 4378,
+      "bytes": 2
+    },
+    {
+      "witness": "store32_r12_high_src",
+      "source_line": 116,
+      "file_offset": 4380,
+      "bytes": 4
+    },
+    {
+      "witness": "store32_rbp_high_src",
+      "source_line": 118,
+      "file_offset": 4384,
+      "bytes": 4
+    },
+    {
+      "witness": "imul_low",
+      "source_line": 120,
+      "file_offset": 4388,
+      "bytes": 4
+    },
+    {
+      "witness": "imul_high",
+      "source_line": 122,
+      "file_offset": 4392,
+      "bytes": 4
+    },
+    {
+      "witness": "neg_low",
+      "source_line": 124,
+      "file_offset": 4396,
+      "bytes": 3
+    },
+    {
+      "witness": "neg_high",
+      "source_line": 126,
+      "file_offset": 4399,
+      "bytes": 3
+    },
+    {
+      "witness": "inc_low",
+      "source_line": 128,
+      "file_offset": 4402,
+      "bytes": 3
+    },
+    {
+      "witness": "inc_high",
+      "source_line": 130,
+      "file_offset": 4405,
+      "bytes": 3
+    },
+    {
+      "witness": "dec_low",
+      "source_line": 132,
+      "file_offset": 4408,
+      "bytes": 3
+    },
+    {
+      "witness": "dec_high",
+      "source_line": 134,
+      "file_offset": 4411,
+      "bytes": 3
+    },
+    {
+      "witness": "shr_zero",
+      "source_line": 136,
+      "file_offset": 4414,
+      "bytes": 4
+    },
+    {
+      "witness": "shr_one",
+      "source_line": 138,
+      "file_offset": 4418,
+      "bytes": 4
+    },
+    {
+      "witness": "shr_max",
+      "source_line": 140,
+      "file_offset": 4422,
+      "bytes": 4
+    },
+    {
+      "witness": "cld",
+      "source_line": 142,
+      "file_offset": 4426,
+      "bytes": 1
+    },
+    {
+      "witness": "syscall",
+      "source_line": 144,
+      "file_offset": 4427,
+      "bytes": 2
+    },
+    {
+      "witness": "ud2",
+      "source_line": 146,
+      "file_offset": 4429,
+      "bytes": 2
+    },
+    {
+      "witness": "ret",
+      "source_line": 148,
+      "file_offset": 4431,
+      "bytes": 1
+    },
+    {
+      "witness": "jalways_forward",
+      "source_line": 150,
+      "file_offset": 4432,
+      "bytes": 5
+    },
+    {
+      "witness": "jz_forward",
+      "source_line": 164,
+      "file_offset": 4448,
+      "bytes": 6
+    },
+    {
+      "witness": "jnz_forward",
+      "source_line": 177,
+      "file_offset": 4464,
+      "bytes": 6
+    },
+    {
+      "witness": "jb_forward",
+      "source_line": 190,
+      "file_offset": 4480,
+      "bytes": 6
+    },
+    {
+      "witness": "jae_forward",
+      "source_line": 203,
+      "file_offset": 4496,
+      "bytes": 6
+    },
+    {
+      "witness": "ja_forward",
+      "source_line": 216,
+      "file_offset": 4512,
+      "bytes": 6
+    },
+    {
+      "witness": "js_forward",
+      "source_line": 229,
+      "file_offset": 4528,
+      "bytes": 6
+    },
+    {
+      "witness": "jns_forward",
+      "source_line": 242,
+      "file_offset": 4544,
+      "bytes": 6
+    },
+    {
+      "witness": "jle_forward",
+      "source_line": 255,
+      "file_offset": 4560,
+      "bytes": 6
+    },
+    {
+      "witness": "call_forward",
+      "source_line": 268,
+      "file_offset": 4576,
+      "bytes": 5
+    },
+    {
+      "witness": "jnz_backward",
+      "source_line": 293,
+      "file_offset": 4602,
+      "bytes": 6
+    },
+    {
+      "witness": "call_backward",
+      "source_line": 306,
+      "file_offset": 4618,
+      "bytes": 5
+    },
+    {
+      "witness": "jump_self",
+      "source_line": 309,
+      "file_offset": 4623,
+      "bytes": 5
+    },
+    {
+      "witness": "jz_zero",
+      "source_line": 311,
+      "file_offset": 4628,
+      "bytes": 6
+    }
+  ],
+  "source_corpus": {
+    "paths": 62,
+    "path_bytes": 166612,
+    "nonempty_paths": 61,
+    "all_nonempty_paths_have_full_read_or_identical_blob_credit": true,
+    "empty_paths": 1,
+    "empty_path_classification": "mechanical_only",
+    "nonempty_distinct_blobs": 47
+  },
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "One complete3614-byte source read and reconstructed exactly from held literal vector statements, unique target names and padding.",
+    "All73 nonrelocating and14 concrete relocation cases bind source; four abstract range witnesses are not source program cases.",
+    "Fourteen signed displacement fields bind renamed labels;122 CLD padding instructions preserve vector-relative offsets.",
+    "All61 nonempty fixture source paths have full semantic reading or identical-blob credit; empty input15 remains mechanical only.",
+    "Expected224-row map literal matches identity; streaming supplied code bytes is not native artifact acquisition, assembly or execution.",
+    "Saved successful status and output identities remain historical metadata relations; no fresh native behavior or executable-safety claim.",
+    "Fixture layouts/maps/native outputs and whole-repository reading retain gaps; no model invocation, live scan, activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.layout.json",
+      "bytes": 27040,
+      "intended_review": "complete_expected_layout_and_join_vector_source_offsets_without_execution"
+    }
+  ],
+  "next_scope_bytes": 27040,
+  "public_contribution_checks": [
+    "exact complete source reconstruction and all87 concrete witness placements passed",
+    "all14 renamed-target displacement fields and224-row expected map identity passed",
+    "all62 source paths reconciled with empty-file scope retained",
+    "source/saved metadata, coverage, links, privacy and git diff --check passed"
+  ]
+}

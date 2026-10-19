@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "source_baseline": "4c21bd5a5e1b2634a4500bc1968e8a2f1f5ead70",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 16,
+  "verified_source_bytes": 530,
+  "full_text_paths_read": 16,
+  "new_semantic_files": 16,
+  "new_semantic_bytes": 530,
+  "all_literal_source_bytes_lengths_digests_and_lines_match": true,
+  "all_authored_counts_and_saved_case_metadata_match": true,
+  "original_finite_numeric_grammar_verdicts_match": true,
+  "accepted_case_ids": [
+    "33",
+    "35",
+    "37",
+    "39",
+    "41",
+    "43",
+    "45"
+  ],
+  "declared_acceptance_cases": 7,
+  "declared_rejection_cases": 9,
+  "value_normalization_counterexamples": [
+    {
+      "case": "47",
+      "token": "-0",
+      "normalized_value": 0,
+      "value_only_accepts": true,
+      "grammar_and_frozen_expectation_reject": true
+    },
+    {
+      "case": "48",
+      "token": "+1",
+      "normalized_value": 1,
+      "value_only_accepts": true,
+      "grammar_and_frozen_expectation_reject": true
+    }
+  ],
+  "accepted_literal_encoding_field_checks": 7,
+  "expected_map_literal_identity_checks": 7,
+  "expected_map_digest_group_sizes": [
+    2,
+    2,
+    3
+  ],
+  "case_checks": [
+    {
+      "case": "33",
+      "source_bytes": 41,
+      "operation": "imm",
+      "lexical_negative": false,
+      "expected_acceptance": true,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": true
+    },
+    {
+      "case": "34",
+      "source_bytes": 41,
+      "operation": "imm",
+      "lexical_negative": false,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "35",
+      "source_bytes": 42,
+      "operation": "imm",
+      "lexical_negative": true,
+      "expected_acceptance": true,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": true
+    },
+    {
+      "case": "36",
+      "source_bytes": 42,
+      "operation": "imm",
+      "lexical_negative": true,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "37",
+      "source_bytes": 39,
+      "operation": "load64",
+      "lexical_negative": true,
+      "expected_acceptance": true,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": true
+    },
+    {
+      "case": "38",
+      "source_bytes": 39,
+      "operation": "load64",
+      "lexical_negative": true,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "39",
+      "source_bytes": 38,
+      "operation": "load64",
+      "lexical_negative": false,
+      "expected_acceptance": true,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": true
+    },
+    {
+      "case": "40",
+      "source_bytes": 38,
+      "operation": "load64",
+      "lexical_negative": false,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "41",
+      "source_bytes": 29,
+      "operation": "add_i8",
+      "lexical_negative": true,
+      "expected_acceptance": true,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": true
+    },
+    {
+      "case": "42",
+      "source_bytes": 29,
+      "operation": "add_i8",
+      "lexical_negative": true,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "43",
+      "source_bytes": 28,
+      "operation": "and_i8",
+      "lexical_negative": false,
+      "expected_acceptance": true,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": true
+    },
+    {
+      "case": "44",
+      "source_bytes": 28,
+      "operation": "and_i8",
+      "lexical_negative": false,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "45",
+      "source_bytes": 24,
+      "operation": "shr",
+      "lexical_negative": false,
+      "expected_acceptance": true,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": true
+    },
+    {
+      "case": "46",
+      "source_bytes": 24,
+      "operation": "shr",
+      "lexical_negative": false,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "47",
+      "source_bytes": 24,
+      "operation": "shr",
+      "lexical_negative": true,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    },
+    {
+      "case": "48",
+      "source_bytes": 24,
+      "operation": "imm",
+      "lexical_negative": false,
+      "expected_acceptance": false,
+      "source_and_saved_metadata_bind": true,
+      "accepted_byte_field_and_map_checked": false
+    }
+  ],
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All sixteen complete source files/530 bytes fully read and bound to literal endpoint statements, frozen hashes/lengths/line counts and saved result metadata.",
+    "Original finite numeric comparison preserves lexical sign/prefix rules; seven accepted and nine rejected verdicts agree with frozen expectations, without invoking the native parser.",
+    "Value-only normalization wrongly accepts shift negative-zero and plus-prefixed immediate in this finite set; these are specified grammar distinctions, not newly observed native failures.",
+    "Seven literal encoding field checks and expected-map reconstructions pass; no candidate encoder, actual output map or complete expected ELF was acquired/generated/executed.",
+    "Three repeated expected-map digests group seven distinct code expectations by identical source-line/span structure; map content identity is not code identity.",
+    "Source length/count/expected status relations are authored/frozen metadata checks, not observed parser progress or runtime safety.",
+    "No upstream import/materializer execution,native emission/execution,model invocation,live scan,workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/05.b12s",
+      "bytes": 65536,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/06.b12s",
+      "bytes": 65537,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/07.b12s",
+      "bytes": 5398,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/08.b12s",
+      "bytes": 5402,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/09.b12s",
+      "bytes": 1306,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/10.b12s",
+      "bytes": 1317,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/11.b12s",
+      "bytes": 3853,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/12.b12s",
+      "bytes": 3868,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/13.b12s",
+      "bytes": 55,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/14.b12s",
+      "bytes": 56,
+      "intended_review": "complete_capacity_boundary_fixture_source_without_execution"
+    }
+  ],
+  "next_scope_bytes": 152328,
+  "public_contribution_checks": [
+    "all16 exact source identities and literal numeric statements bind",
+    "finite grammar/range verdicts match seven accepted and nine rejected expectations",
+    "value-only negative-zero and plus-prefix counterexamples retained",
+    "seven encoding fields, seven map identities and all saved metadata relations agree",
+    "coverage, next scope, links, privacy and git diff --check passed"
+  ]
+}

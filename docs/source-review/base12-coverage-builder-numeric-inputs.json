@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-grammar-inputs.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/33.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/34.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/35.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/36.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/37.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/38.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/39.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/40.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/41.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/42.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/43.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/44.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/45.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/46.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/47.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/48.b12s"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/33.b12s",
+      "bytes": 41,
+      "git_blob_sha": "4a2d7183f0047df4e60af1f61514b7e332357738",
+      "sha256": "fb6354463e33fb2e57cb4fa6c7bc3f4d3a72b803b8fb5bc11150ebbf2962ee89",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/34.b12s",
+      "bytes": 41,
+      "git_blob_sha": "4149e136b318a4561e9799473dcc320e65b82724",
+      "sha256": "0d9ba36564e55f0864a7d39fb7672199c52bed7582add7187bb1062897203324",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/35.b12s",
+      "bytes": 42,
+      "git_blob_sha": "f70a956dbf18841e0e3a3d18532ba06887dcd661",
+      "sha256": "a68c28fdb2c7c1cfc9559462a4f964039303afdce5d66eb1b132ae6617c132a4",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/36.b12s",
+      "bytes": 42,
+      "git_blob_sha": "c6fce44ab8b48956851af854d5561f4b5502318a",
+      "sha256": "80773fe95adc1af6fd7859ef7df061dab41bb0c512d333297b0554eb6cffd30f",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/37.b12s",
+      "bytes": 39,
+      "git_blob_sha": "e97ebc30ea91dd4f0f9e57e850aae8d49e8fab23",
+      "sha256": "63a515eafb519c33886d9eae01a32d91562ce0ff77c87f72e0dfeeb2815f0ddb",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/38.b12s",
+      "bytes": 39,
+      "git_blob_sha": "3f63b267ebafd342ed5a55056e68133f623ca1f9",
+      "sha256": "b73440d23bc44c18724c27ddb0b190768cec0a1e2c84e08fea3c3560ff75cfc3",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/39.b12s",
+      "bytes": 38,
+      "git_blob_sha": "10ed0c7901c920040a69d59bbdb675994065f1f7",
+      "sha256": "bf54b12fc40489d1dbb6a80714808c7b30c3887f0505ee3e5f57173bb31d5899",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/40.b12s",
+      "bytes": 38,
+      "git_blob_sha": "34dac99f1cf7fc1e3fdccb7d8892edc749b3c25c",
+      "sha256": "35555473ebd3b8edbfb3482c270c7b8849f07c5d933b7c2fe102a05a0232efff",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/41.b12s",
+      "bytes": 29,
+      "git_blob_sha": "cf4f7e13631d79f5af0c515fabb85613ee1f38da",
+      "sha256": "56aa5132504b143793b2b03204ee9ecca3e78ba87dff4fd1456e5c5125e55731",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/42.b12s",
+      "bytes": 29,
+      "git_blob_sha": "3e67416d8bff857f4a4af02ebf650d26100104de",
+      "sha256": "494dbb581395a67de3e7dc52a513d2e0de7e43ab120ab887aaa22088f5e65468",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/43.b12s",
+      "bytes": 28,
+      "git_blob_sha": "f0930f0a4208e903887c452ec2313c94b47c9df9",
+      "sha256": "eb3f91e225f9fee07c247311b9884c498fa0b545d79ae94b6c59ddc8991e88ce",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/44.b12s",
+      "bytes": 28,
+      "git_blob_sha": "d4ee20ab1c8bd2a7c6535c94b7f38a9b77de0ff8",
+      "sha256": "4d3e01256fe75e92561f1b1cb8c1bbf1b78d412efb92892de03438ce189d9e07",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/45.b12s",
+      "bytes": 24,
+      "git_blob_sha": "759f9d7d0d7b51338d667086f5be2c3c9b3bb776",
+      "sha256": "594547e331bfa5ce3a0593c61497837455ff61706069d0d9f24696bc83c6c8ce",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/46.b12s",
+      "bytes": 24,
+      "git_blob_sha": "4e0d2548fe0f376a9c2ba2e169baa7aa245a2e0f",
+      "sha256": "88d5875aa3029a09d35cf925f2c7546c15ebf2e3c2f88a0ff5d81d90e6ee9c8c",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/47.b12s",
+      "bytes": 24,
+      "git_blob_sha": "6c1f4bc9633191e6e0abc071429421921c52fef8",
+      "sha256": "0dfba9ccdaa989195531f8881e0c22e15feb2b10e17b0e56f1c1a7620b8c64e4",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/48.b12s",
+      "bytes": 24,
+      "git_blob_sha": "ae903534315395010feaac24161da8fd92034638",
+      "sha256": "17990ca919833dc850c1462eb7817c1c9c72b4a6afb79c7965fad818911c6750",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-numeric-endpoint-fixture-sources",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 16,
+      "unique_blobs": 16,
+      "bytes": 530
+    },
+    "cumulative_direct_read": {
+      "paths": 567,
+      "unique_blobs": 567,
+      "bytes": 4883647
+    },
+    "additional_identical_blob_paths": 79,
+    "alias_distinct_blobs": 28,
+    "semantic_covered_paths_including_aliases": 646,
+    "remaining_paths_without_full_semantic_read_or_alias": 4947,
+    "remaining_distinct_blobs_without_full_semantic_read": 3862,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 16,
+    "this_review_verified_bytes": 530,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All sixteen complete source files/530 bytes fully read and bound to literal endpoint statements, frozen hashes/lengths/line counts and saved result metadata.",
+    "Original finite numeric comparison preserves lexical sign/prefix rules; seven accepted and nine rejected verdicts agree with frozen expectations, without invoking the native parser.",
+    "Value-only normalization wrongly accepts shift negative-zero and plus-prefixed immediate in this finite set; these are specified grammar distinctions, not newly observed native failures.",
+    "Seven literal encoding field checks and expected-map reconstructions pass; no candidate encoder, actual output map or complete expected ELF was acquired/generated/executed.",
+    "Three repeated expected-map digests group seven distinct code expectations by identical source-line/span structure; map content identity is not code identity.",
+    "Source length/count/expected status relations are authored/frozen metadata checks, not observed parser progress or runtime safety.",
+    "No upstream import/materializer execution,native emission/execution,model invocation,live scan,workstation activation or upstream acceptance occurred."
+  ],
+  "review_report": "base12-builder-numeric-inputs.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

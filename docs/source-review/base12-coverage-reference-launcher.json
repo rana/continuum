@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-reference-decoder.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/execution/execution-receipt.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/decoder-attempt.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/launcher-freeze.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/parent-clearance.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/post-run-verification.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/source-receipt.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/run_decoder_once.py",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/launcher-review.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/execution/execution-receipt.json",
+      "bytes": 4117,
+      "git_blob_sha": "3364d1ecc5342e2320661074a6e7f6ad1477a0b7",
+      "sha256": "4fcf2a60ff068ba35519b8ce4d3bd5470a20ed7048bc3772b2dcececf9129c98",
+      "lines": 119,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/decoder-attempt.json",
+      "bytes": 2728,
+      "git_blob_sha": "d61c2265c9265548cf9ed87f10de3e68e8ba4ab9",
+      "sha256": "3c5bb38608548a7761910b6e2011bf7652b575a589776b2cf97506e5c0254b4c",
+      "lines": 71,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/launcher-freeze.json",
+      "bytes": 440,
+      "git_blob_sha": "63e9774844f34e4592b41d7c1a8253055a349be6",
+      "sha256": "b1b5184a1d67df5236a3007cd0c8b3716652860bd1cbac3985af81536b5f4a96",
+      "lines": 8,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/parent-clearance.json",
+      "bytes": 737,
+      "git_blob_sha": "a46d1db5cf22194360fa80b03f39a77437a50305",
+      "sha256": "e9b8b3273ce7f514491c3a26726aa6e8d4e0c9ec7ff8caa76f6de76bfa816ac9",
+      "lines": 12,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/post-run-verification.json",
+      "bytes": 864,
+      "git_blob_sha": "57dc2b7042f606afc764bf532eff90a1d0aa334d",
+      "sha256": "0ab30d13e8f12f650e02b6d187cb043e5ddb0779ab81409f9b9f29ecfb704b80",
+      "lines": 25,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/source-receipt.json",
+      "bytes": 516,
+      "git_blob_sha": "258f7ba44e916fc5a098747c21436d765b8e7e7f",
+      "sha256": "3381679a177fb14106395837e95a9ec99b71bc99cfc53c5f359e4eed71b3f4d1",
+      "lines": 12,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/run_decoder_once.py",
+      "bytes": 7774,
+      "git_blob_sha": "cb5ab023fb5b18a9e822679f4394ebb27a1fb29c",
+      "sha256": "60ab0c238630e5e6b080bc1d65c7b31a433f266b867e55f4b5b9083f2eb93900",
+      "lines": 170,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "ast_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/launcher-review.md",
+      "bytes": 6096,
+      "git_blob_sha": "c678d6a770434592fa892378795937bc96e2174d",
+      "sha256": "11d4a800e7adb6566c00423e61686fa4c119140a24d9df5fc2e9aabbb78c29bf",
+      "lines": 33,
+      "semantic_review": "full_direct_read",
+      "review_lane": "reference-decoder-launcher-and-receipts",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 8,
+      "unique_blobs": 8,
+      "bytes": 23272
+    },
+    "cumulative_direct_read": {
+      "paths": 266,
+      "unique_blobs": 266,
+      "bytes": 1747612
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 315,
+    "remaining_paths_without_full_semantic_read_or_alias": 5278,
+    "remaining_distinct_blobs_without_full_semantic_read": 4163,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 8,
+    "this_review_verified_bytes": 23272,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Eight texts fully read; launcher parsed without execution.",
+    "Timeout correction and effect ordering are source observations, not dynamic deadline/failure tests.",
+    "Receipt agreement is saved-data consistency, not authentication or reproduced decoding.",
+    "Path identity checks require stable trusted paths; supervisor cleanup is not external fencing or power-loss protection.",
+    "Output permissions are recorded before chmod; postrun mode is a later observation."
+  ],
+  "review_report": "base12-reference-launcher.md"
+}

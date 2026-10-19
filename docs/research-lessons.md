@@ -173,6 +173,8 @@ The [stage-A execution-receipt review](source-review/base12-stage-a-execution.md
 
 The [stage-A launcher review](source-review/base12-stage-a-launcher.md) ties those receipts to source that consumes an exclusive fsynced attempt marker before launch. Its timeout cleanup depends on the live controller, and assertion-based admission depends on the helper's invocation mode. A corrected manifest binding still has trusted-path assumptions. Seven files were read without running helpers; no historical enforcement or failure schedule was reproduced.
 
+The [complete stage-A result review](source-review/base12-stage-a-result.md) reconciles all 318 block rows and shows why a raw block-payload fallback does not bound the whole container by its literal frame: subframe headers remain charged. Encode counters also exclude other work, and smaller stored bytes coexist with slower saved timing observations. Continuum budgets and benefit claims need the complete closure and exact counter/measurement scope. No binary archive or codec was re-executed here.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

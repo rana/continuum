@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-launcher.json",
+  "selected_scope": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/",
+    "files": [
+      "review/RESULT.md",
+      "review/result-static-verification.md",
+      "run/RESULTS.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/RESULT.md",
+      "git_blob_sha": "800b1e70a90b1338a25d44913ce5d70084e92804",
+      "bytes": 11184,
+      "sha256": "6c8a65c0f758538a983200b8fa756c62795cbae01e1cbaaf892407621347d1f2",
+      "lines": 89,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-complete-result-and-saved-review",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/result-static-verification.md",
+      "git_blob_sha": "f2919538a86470e0b44130c5d1435ba25d892423",
+      "bytes": 8091,
+      "sha256": "6eb724453805eab621a8dc4a2d6385a0bf75bce6a689449bc74447a349d026f9",
+      "lines": 77,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-complete-result-and-saved-review",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/RESULTS.json",
+      "git_blob_sha": "83f0a9c42adba0f0ac3fbb8f0dc8c1a543300cab",
+      "bytes": 48198,
+      "sha256": "0ff509aca796b3beff69c91290442b3eb721a0f6a0d6370cec4abbb20f2e2b64",
+      "lines": 2334,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-complete-result-and-saved-review",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_unique_keys_complete_value_preserving_table_read"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 67473
+    },
+    "cumulative_direct_read": {
+      "paths": 240,
+      "unique_blobs": 240,
+      "bytes": 1619101
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 289,
+    "remaining_paths_without_full_semantic_read_or_alias": 5304,
+    "remaining_distinct_blobs_without_full_semantic_read": 4189,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 67473,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Two reports fully read; complete JSON values read with all 318 block rows through a value-preserving table; unique keys verified.",
+    "No source module, codec, compressor, dataset acquisition, native code or model was executed.",
+    "Private original/reconstructed payloads, binary archives and live executable mappings were not retrieved or verified.",
+    "Numeric consistency is not fresh empirical reproduction, authentication or comparative throughput evidence.",
+    "Manifest checks remain partial; one additional report path is verified by identical pinned Git blob."
+  ],
+  "review_report": "base12-stage-a-result.md"
+}

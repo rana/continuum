@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-instruction-listing.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.disassembly.txt"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.disassembly.txt",
+      "bytes": 118160,
+      "git_blob_sha": "33cd1887276a3004fea35a5ee532994a9e92ea11",
+      "sha256": "965b3665c9fc1fe8ba741bdab7ab8707155bb71e700654df565ed9c624ae4f08",
+      "lines": 1596,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-saved-external-disassembly",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 118160
+    },
+    "cumulative_direct_read": {
+      "paths": 531,
+      "unique_blobs": 531,
+      "bytes": 4635961
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 608,
+    "remaining_paths_without_full_semantic_read_or_alias": 4985,
+    "remaining_distinct_blobs_without_full_semantic_read": 3898,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 118160,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete seven-line header and all 1589 address/byte/decoded-text rows fully read, including572 distinct annotations; exact text reconstruction passed.",
+    "All row boundaries and bytes agree with listing, and original representation conversion handles operand order, widths, sign spelling and branch aliases.",
+    "Saved file-format binary and synthetic .data display describe raw code input; they do not establish ELF section permissions or a full ELF decode.",
+    "The record is retained external decoding, not a newly invoked disassembler, authenticated tool-execution receipt or independent behavior experiment.",
+    "Fifteen syscall opcode rows omit numbers; seven distinct listing annotations collapse to one decoded mnemonic, so number binding needs preceding instructions.",
+    "Code identities agree with the listing and pinned code blob; full ELF bytes and historical exclusive six-change claim remain separate dependencies.",
+    "No upstream import, native artifact emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "review_report": "base12-builder-saved-disassembly.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

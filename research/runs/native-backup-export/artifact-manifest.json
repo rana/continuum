@@ -1,0 +1,35 @@
+{
+  "schema": "continuum.pilot_artifacts.v1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6513,
+      "sha256": "78eca78c4f8bdff2c892fd999e8a94d0c5590b43bbbffa81d230d6ed191659c3"
+    },
+    {
+      "path": "claude-request.json",
+      "bytes": 16929,
+      "sha256": "63aa6cf44eaafc849562b4e72e314fb8d5ce63f26e99f6cffa7ceb64d14b8e54"
+    },
+    {
+      "path": "claude-response.json",
+      "bytes": 9019,
+      "sha256": "82323cc969d9c64ac9764437842c9f56b2935682e4fcbd0fc56d0b2bc2a4310c"
+    },
+    {
+      "path": "smoke-native-log.json",
+      "bytes": 6300,
+      "sha256": "9cb104e80ba3a97d66d6a9d4fecbfa60c78c3da7e85afdfda1b73f6524341687"
+    },
+    {
+      "path": "smoke-result.json",
+      "bytes": 786,
+      "sha256": "2141e2d1150bdef7d03fea454d696ff452d2f276562ad64a2b7558588ffe1fae"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1340,
+      "sha256": "f3b3f04ee1fea2f459f2cd60864934b2097414c354fc06ae97939adcac8fe917"
+    }
+  ]
+}

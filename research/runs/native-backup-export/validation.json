@@ -1,0 +1,33 @@
+{
+  "source_baseline": "65e6b368beef93e654fc327d56bee7a65206f09f",
+  "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)",
+  "source_files": {
+    "Cargo.toml": "24d16daf952d92700d2fae63f646a3823c2a297c9d7411d32648784e35a92e52",
+    "Cargo.lock": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb",
+    "src/backup.rs": "788adf1594472dd67d864ade6968693af594f0eedb2cd35e33a3de0e56002039",
+    "src/lib.rs": "14b13b7983a153363f8950db0d53b0d8fcd9691b1924f3e3ebb3a47393b6c0ca",
+    "src/main.rs": "85f9a790d01d7aac7704a3e79e1d21114aa2e5e3a93a7eeb7c3f358cf84eb004",
+    "src/store.rs": "6938727a6ffbbf7b453280a7c98c65e46c04d4cb6046155e9996b6ac456569ef",
+    "tests/backup_export.rs": "05a4628c4478052ec21d03201d223d996634bda71abbd22589ecf9280d33783f"
+  },
+  "observed_commands": [
+    {
+      "command": "cargo test --locked --all-features -j 4",
+      "exit_code": 0,
+      "scenario_tests": 25
+    },
+    {
+      "command": "cargo clippy --locked --all-targets --all-features -j 4 -- -D warnings",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo fmt --all -- --check",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo build --locked -j 4",
+      "exit_code": 0
+    }
+  ],
+  "scope": "Coordinator observation of executed commands. Hosted CI provides its separate logs. Process exits are not physical power loss."
+}

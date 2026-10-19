@@ -34,6 +34,8 @@ Use a fresh output directory. This is a reproducible correctness example, not a 
 
 Use a fresh local database path for a fresh demo. The CLI help describes individual operations. SQLite WAL databases belong on a local filesystem; multi-host replication is a future protocol, not a shared database file on a network mount.
 
+The [native backup export](docs/operations/backup.md) publishes a same-schema local snapshot to a new file on supported Unix filesystems, with no destination overwrite and explicit lost-reply handling.
+
 For a committed project and an authored WorkState, the [disposable checkpoint adapter](docs/operations/project-checkpoint.md) retains source, context coverage, and build provenance through the existing CLI.
 
 ## Read the design

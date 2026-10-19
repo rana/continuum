@@ -28,7 +28,7 @@ The [owned-storage research decision](docs/decisions/0002-owned-storage-research
 
 ## Validation
 
-The current Rust code passes formatting, strict Clippy, and 20 scenario tests: nine context cases, nine invariants, and two child-process recovery cases. Recovery was checked immediately before commit and after commit before acknowledgement. The coordinating agent independently reran these checks after the implementation was frozen.
+The current Rust code passes formatting, strict Clippy, and 25 scenario tests: nine context cases, nine invariants, two acceptance child-process recovery cases and five native backup cases (including four process-exit publication boundaries). Recovery was checked immediately before commit and after commit before acknowledgement. The coordinating agent independently reran these checks after the implementation was frozen.
 
 The checks establish the specified local process-failure behavior. They do not establish physical power-loss durability, authenticated multi-user operation, semantic evidence truth, replication correctness, or comparative high-load performance.
 
@@ -70,7 +70,9 @@ A [bounded receipt-view continuation](research/runs/bounded-receipt-view/README.
 
 A [SQLite online-backup experiment](research/runs/sqlite-online-backup/README.md) now restored a pinned generation-2 cut with all seven objects and three exact historical receipts while a separate native writer committed generation 3 between page-copy steps. Schema, rows, native object checks and retries matched; a main-file-only control retained the schema but lost WAL-held rows. Retrying the post-cut operation failed because its candidate was outside the restore. This is completed-copy behavior with the same native binary/schema, not crash-safe publication or a newest-history recovery guarantee.
 
-Next practical unit: a narrow native same-schema backup export with a consistent source cut, no destination overwrite, staged publication and process-interruption checks. Keep in-place restore and migration out of that first command. Reconcile remote ownership before overlapping implementation; the owned-storage finite model remains its separate research lane. Stores are still disposable and full backup/upgrade guarantees remain open. No recipient has accepted this next unit. Stop expanding the CSV chain absent a new requirement.
+The [native backup export](research/runs/native-backup-export/README.md) now implements a same-schema pinned cut, private staging, SQLite validation, file/directory sync and atomic no-overwrite linking on supported Unix filesystems. Five backup tests include ordinary failure cleanup, competing publishers and four process-exit boundaries; the default-build CLI smoke preserved exact retry behavior. Actual review identified the staging hard-link alias, now unlinked/synced before success and explicitly documented at the remaining crash gap. The returned review was truncated and is retained as partial. No power-loss, in-place restore or migration guarantee is established.
+
+Next practical unit: export the actual retained source-bound checkpoint store, restore a copy and compare native context/anchor and historical receipt behavior without new inference. Reconcile remote ownership; the owned-storage finite model remains its separate research lane. Stores are still disposable and full backup/upgrade guarantees remain open. No recipient has accepted this next unit. Stop expanding the CSV feature chain absent a new requirement.
 
 Controlled context-history scaling remains a follow-up when use identifies the need. Keep mandatory facts, byte budget, environment, omission coverage, and expected outcomes explicit. If the selected unit's execution capability is unavailable, advance the next bounded source-review group from the coverage ledgers instead of writing another unchanged status recap.
 

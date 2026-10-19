@@ -1,0 +1,20 @@
+{
+  "source_baseline": "c6448e09998a4e2679eb72b9e0fe8a592c6760b3",
+  "files": [
+    {
+      "path": "docs/source-review/base12-envelope-fixture.md",
+      "bytes": 5584,
+      "sha256": "1b69278b4b1ac6026829096c0a3d8f6ff39d159864683cf0c4bf0624ab9e1297"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-envelope-fixture.json",
+      "bytes": 14280,
+      "sha256": "a899ab0c3bc0cd1dcb072e923e8cb3c72fec4e320f746a723255956be6dbd699"
+    },
+    {
+      "path": "research/runs/base12-envelope-fixture/validation.json",
+      "bytes": 5305,
+      "sha256": "59ba5d898d32fe980edbd5c7e8d5840e3ac47a8f9137350475b5460793abf2b3"
+    }
+  ]
+}

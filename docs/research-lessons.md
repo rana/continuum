@@ -205,6 +205,8 @@ The [accounting-input return](source-review/base12-accounting-inputs.md) closes 
 
 The [envelope-control return](source-review/base12-envelope-controls.md) distinguishes pre-exec release gating and retained process identity from durable dispatch. Saved self-check titles are compared with actual predicates and terminal reasons: a CPU SIGKILL is consistent with the named kernel-limit scenario but does not demonstrate aggregate early-stop coverage or uniquely identify its cause. Continuum should retain branch exposure and dependencies beside a verdict; no upstream test ran.
 
+The [envelope-fixture return](source-review/base12-envelope-fixture.md) binds emitted-state dependencies without replaying expired host assertions. Short self-check journals each show no descendants while terminal inventories retain later observations. Continuum evidence views should preserve selection scope so omission does not become an absence claim. PID-only joins and mechanical empty-stream custody remain narrower than full process identity and semantic reading. No upstream test ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

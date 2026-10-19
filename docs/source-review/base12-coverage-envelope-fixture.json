@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-envelope-controls.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/envelope_fixture.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/accounting.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/stdout.txt",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/stderr.txt",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/accounting.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/stdout.txt",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/stderr.txt",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/accounting.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/stdout.txt",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/stderr.txt"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/envelope_fixture.py",
+      "bytes": 1351,
+      "git_blob_sha": "e49643775f0d632b4891a47745d60ae7473b547a",
+      "sha256": "e379619e164a105939fe63c3f4ebc79ff5f7040bb990cb73d3601b630e11d720",
+      "lines": 40,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/accounting.jsonl",
+      "bytes": 209,
+      "git_blob_sha": "5591fb0ad515e0997ebba45802d137f385b977bb",
+      "sha256": "fea573b6556177722ed62d7e30141f13eec18185827a8288b8e6332942d42e80",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/effective-before-exec.json",
+      "bytes": 225,
+      "git_blob_sha": "93c1651cfb0f15300d7c9cc45009361ace252e1e",
+      "sha256": "fba5efbabf48fdb11c05181e3ba0f2999bcc6cab3d1142334d0a433185107530",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/invocation.json",
+      "bytes": 746,
+      "git_blob_sha": "e5a2df306eea72cc6e6d75f0a2bb890bcc73dcb1",
+      "sha256": "5c39c5b602ec87bd36d05bc144b6652f9ed55dd10fb50ec3dd1485d8a8843a16",
+      "lines": 26,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/accounting.jsonl",
+      "bytes": 206,
+      "git_blob_sha": "b3fa26fdcd3aed17b05fc5fd98566493303d2fa2",
+      "sha256": "64510836ecb16b5e869dbd7e319e75b2c6d9b96eb50dd2daeaf75d58fec36181",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/effective-before-exec.json",
+      "bytes": 224,
+      "git_blob_sha": "a0ca47e1ee80d9de617202f2f4cd625031dd8447",
+      "sha256": "793c8d7790f703004042ad0f27c4617f176bbf3a286b989c674d189fdd46af22",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/invocation.json",
+      "bytes": 756,
+      "git_blob_sha": "72efcf0d36e58cbcb0b7ee0a8d6cfe7153351866",
+      "sha256": "a1cf7f83d77a061aa6e7a3df4dd239cea0be5a0550a0b72fc71b4889334901c6",
+      "lines": 26,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/stdout.txt",
+      "bytes": 520,
+      "git_blob_sha": "c03f0ecc437026e690b37a5621a75ea3274e59a4",
+      "sha256": "ac43c5a6472244689ed803f2c3487476031b993933abd18ea6e289f7bdc12320",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/accounting.jsonl",
+      "bytes": 206,
+      "git_blob_sha": "86a526db52225c46e71758e295108744f3d058b6",
+      "sha256": "78f528c5f6fdf54b52d513ef224b0634e4cef892390f3a8b320b03a8230ddc83",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/effective-before-exec.json",
+      "bytes": 224,
+      "git_blob_sha": "cee89e23c70e375af33f560c4f74f14752142dcc",
+      "sha256": "4b42276ef66cf9d075c396d9bb29d59e84ea0f5faf831ad89636b61f2bc12a1f",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/invocation.json",
+      "bytes": 751,
+      "git_blob_sha": "729b0bc85c23782563479432afe1de8518e7ca88",
+      "sha256": "c3b492f89ac2885e1a4fc3355d019c16a97002fcf743c95129205a435acfc09e",
+      "lines": 26,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/stdout.txt",
+      "bytes": 143,
+      "git_blob_sha": "0676cae51e65fc5f402f4ddd8bf895e3d40e2c70",
+      "sha256": "6e13194b02736895c03df3f6b38b8e67304f7be8fa7ecc2dab5741cb7b612c00",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "envelope-fixture-and-selfcheck-dependencies",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_or_JSONL_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 12,
+      "unique_blobs": 12,
+      "bytes": 5561
+    },
+    "mechanical_empty_payload_custody": {
+      "paths": 4,
+      "unique_blobs": 1,
+      "bytes": 0,
+      "adds_semantic_coverage": false
+    },
+    "cumulative_direct_read": {
+      "paths": 330,
+      "unique_blobs": 330,
+      "bytes": 2299616
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 381,
+    "remaining_paths_without_full_semantic_read_or_alias": 5212,
+    "remaining_distinct_blobs_without_full_semantic_read": 4099,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 16,
+    "this_review_verified_bytes": 5561,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Twelve nonempty texts fully read; four empty streams verified mechanically and excluded from semantic coverage and global empty-blob alias promotion.",
+    "Saved inheritance output now satisfies data assertions, but no upstream test or live process-absence assertion was rerun.",
+    "Fixture intent and hashes do not uniquely authenticate historical signal causes or cover aggregate early-stop.",
+    "Stdout exposes child PIDs without start times; the child join is PID-set agreement, not complete process-identity binding.",
+    "One journal row per case is a subset of monitor samples; zero logged descendants/ticks does not imply no later work.",
+    "Checker source itself is not hash-attested by the summary; no new execution or source provenance authentication is claimed."
+  ],
+  "review_report": "base12-envelope-fixture.md",
+  "mechanical_custody_files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/stdout.txt",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "mechanical_empty_payload_only",
+      "adds_semantic_coverage": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/stderr.txt",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "mechanical_empty_payload_only",
+      "adds_semantic_coverage": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/stderr.txt",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "mechanical_empty_payload_only",
+      "adds_semantic_coverage": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/stderr.txt",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "mechanical_empty_payload_only",
+      "adds_semantic_coverage": false
+    }
+  ]
+}

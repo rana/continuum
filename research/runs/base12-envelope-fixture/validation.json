@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "source_baseline": "c6448e09998a4e2679eb72b9e0fe8a592c6760b3",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_paths": 16,
+  "verified_source_bytes": 5561,
+  "fully_read_nonempty_texts": 12,
+  "mechanical_empty_payloads": 4,
+  "empty_payloads_add_semantic_readings": false,
+  "fixture_full_text_and_AST_read": true,
+  "fixture_digest_matches_summary": true,
+  "fixture_modes_inspected": [
+    "child",
+    "cpu",
+    "inheritance",
+    "sleep",
+    "timeout"
+  ],
+  "case_controls": [
+    {
+      "case": "cpu",
+      "invocation_equals_terminal_limits": true,
+      "effective_controls_match": true,
+      "journal_rows": 1,
+      "logged_descendants": 0,
+      "terminal_sampled_descendants": 0,
+      "monitor_sample_count": 20,
+      "journal_elapsed_seconds": 0.00231982699983746,
+      "journal_upper_cpu_seconds": 0.020169433000110076,
+      "journal_root_own_and_reaped_ticks_zero": true,
+      "terminal_cpu_seconds": 0.9998729999999999,
+      "root_journal_identity_matches_effective": true
+    },
+    {
+      "case": "inheritance",
+      "invocation_equals_terminal_limits": true,
+      "effective_controls_match": true,
+      "journal_rows": 1,
+      "logged_descendants": 0,
+      "terminal_sampled_descendants": 3,
+      "monitor_sample_count": 13,
+      "journal_elapsed_seconds": 0.0021498139999494015,
+      "journal_upper_cpu_seconds": 0.02018002299998443,
+      "journal_root_own_and_reaped_ticks_zero": true,
+      "terminal_cpu_seconds": 0.43594299999999997,
+      "root_journal_identity_matches_effective": true
+    },
+    {
+      "case": "timeout",
+      "invocation_equals_terminal_limits": true,
+      "effective_controls_match": true,
+      "journal_rows": 1,
+      "logged_descendants": 0,
+      "terminal_sampled_descendants": 1,
+      "monitor_sample_count": 10,
+      "journal_elapsed_seconds": 0.0021470379999755096,
+      "journal_upper_cpu_seconds": 0.02019030299995393,
+      "journal_root_own_and_reaped_ticks_zero": true,
+      "terminal_cpu_seconds": 0.031535999999999995,
+      "root_journal_identity_matches_effective": true
+    }
+  ],
+  "inheritance_emitted_state_count": 4,
+  "inheritance_three_child_PIDs_match_sampled_PID_set": true,
+  "inheritance_stdout_has_start_times": false,
+  "inheritance_all_emitted_control_and_session_fields_match": true,
+  "inheritance_recorded_reaped_child_cpu_seconds": 0.41463099999999997,
+  "inheritance_reaped_cpu_exceeds_fixture_minimum": true,
+  "terminal_and_sample_max_satisfy_checker_data_assertions": true,
+  "timeout_printed_parent_and_child_PIDs_match_wait4_set": true,
+  "timeout_both_recorded_wait4_exitcodes_SIGKILL": true,
+  "all_three_stderr_payloads_empty": true,
+  "cpu_stdout_payload_empty": true,
+  "live_process_absence_assertions_rechecked": false,
+  "upstream_programs_executed": false,
+  "aggregate_cpu_early_stop_observed": false,
+  "cpu_signal_cause_uniquely_authenticated": false,
+  "checker_source_hash_attested_by_summary": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Twelve nonempty texts fully read; four empty streams verified mechanically and excluded from semantic coverage and global empty-blob alias promotion.",
+    "Saved inheritance output now satisfies data assertions, but no upstream test or live process-absence assertion was rerun.",
+    "Fixture intent and hashes do not uniquely authenticate historical signal causes or cover aggregate early-stop.",
+    "Stdout exposes child PIDs without start times; the child join is PID-set agreement, not complete process-identity binding.",
+    "One journal row per case is a subset of monitor samples; zero logged descendants/ticks does not imply no later work.",
+    "Checker source itself is not hash-attested by the summary; no new execution or source provenance authentication is claimed."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/audit-closeout-v1.json",
+      "bytes": 6862
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/post-run-verification-v1.json",
+      "bytes": 6038
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/reconnection-history-v1.json",
+      "bytes": 3570
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/stage-clearance.json",
+      "bytes": 1234
+    }
+  ],
+  "next_scope_bytes": 17704,
+  "public_contribution_checks": [
+    "source syntax, duplicate-key checked JSON/JSONL and four empty payload checks passed",
+    "fixture digest, emitted controls, saved invocation/effective/journal and PID-set comparisons checked",
+    "coverage arithmetic keeps empty payload custody separate",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

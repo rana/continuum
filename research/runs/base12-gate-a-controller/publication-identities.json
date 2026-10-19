@@ -1,0 +1,20 @@
+{
+  "source_baseline": "87b3c0950f8bab9c2ea94a8dd88fd23ef275eeab",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-controller.md",
+      "bytes": 6398,
+      "sha256": "0884b042eb706a08705aa2ecafc20d5b520c46e679cc37f81b467fe397fa6e48"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-controller.json",
+      "bytes": 3989,
+      "sha256": "d56c3e80d2b5f67a1dcf50537b414fd43ab47ae49fe4c717f2714369284ea892"
+    },
+    {
+      "path": "research/runs/base12-gate-a-controller/validation.json",
+      "bytes": 5384,
+      "sha256": "161b13c3c893ed1df808a9edbd9385f5d5099925707b5eac24fdf8f30c71f1d9"
+    }
+  ]
+}

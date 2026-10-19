@@ -241,6 +241,8 @@ The [Gate-A records return](source-review/base12-gate-a-records.md) traces an ac
 
 The [Gate-A receipts return](source-review/base12-gate-a-receipts.md) closes a complete preservation manifest without promoting log, control-flow or toolchain assumptions into independent telemetry. Equal hashes across several tool paths establish repeated content declarations, not independent implementations or held binaries. Continuum should preserve those dependencies alongside a complete custody result. No historical code or batch was run.
 
+The [Gate-A controller return](source-review/base12-gate-a-controller.md) distinguishes atomic attempt reservation from durable execution state and binds completion markers to their actual source predicates. An explicit native-valid/Python-reject fixture also shows why a checkpoint must preserve oracle exceptions rather than compress them into blanket agreement. No historical execution was repeated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

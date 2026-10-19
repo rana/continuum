@@ -1,0 +1,20 @@
+{
+  "source_baseline": "96d63a033b60b8b043ba824f11bb81150f801695",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-fixture-boundary-closeout.md",
+      "bytes": 4887,
+      "sha256": "6d820d4f56b914ac8fb6ffada71f593d449596df4ea30471e7cdaa813723ea85"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-fixture-boundary-closeout.json",
+      "bytes": 3355,
+      "sha256": "9bf6e5b54ac0eea2fa92e9ec4f6b180b30d64c7d19177a1e42dfe184af804e2e"
+    },
+    {
+      "path": "research/runs/base12-builder-fixture-boundary-closeout/validation.json",
+      "bytes": 63556,
+      "sha256": "6e78b9c0f9052d6d3aa318a3af700c9751d8e79e4f8f70cb475a8bd98c5ee4a7"
+    }
+  ]
+}

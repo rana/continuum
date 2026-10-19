@@ -327,6 +327,8 @@ The [acquired small map bytes](source-review/base12-builder-small-maps.md) direc
 
 The [expected-map corpus closeout](source-review/base12-builder-map-corpus-closeout.md) classifies valid metadata, collision sentinels and empty reservations separately. Parser rejection can be the correct interpretation of a failure-output fixture. Identical empty map bytes accompany different companion files and failure declarations; byte identity leaves execution history unresolved, and mechanical custody does not become global semantic credit.
 
+The [complete fixture evidence inventory](source-review/base12-builder-fixture-boundary-closeout.md) makes local closeouts accountable to a residual inventory. An ELF-named output slot can contain sentinel text; pinned empty identity differs from acquisition of an empty path. Preserve reviewed content, mechanical custody, unacquired declarations and native payload gaps separately so completed metadata layers do not become whole-fixture or runtime completion claims.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

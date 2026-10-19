@@ -1,0 +1,1356 @@
+{
+  "schema_version": 1,
+  "source_baseline": "96d63a033b60b8b043ba824f11bb81150f801695",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 25,
+  "full_sentinel_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 25,
+  "sentinel_literal_setup_expected_and_saved_metadata_match": true,
+  "case49_declared_rc": 73,
+  "case49_map_absent": true,
+  "case49_publication_invalid": true,
+  "all155_payload_paths_and_case_references_join_tree_and_checksum": true,
+  "fixture_corpus": {
+    "payload_paths": 155,
+    "payload_bytes": 573119,
+    "distinct_payload_blobs": 95,
+    "nonempty_paths_with_full_read_or_alias": 123,
+    "nonempty_distinct_blobs_with_full_read_or_alias": 78,
+    "mechanical_empty_paths_held": 3,
+    "empty_paths_declared_unacquired": 2,
+    "native_or_ELF_prefix_paths_unreviewed": 27,
+    "native_or_ELF_prefix_distinct_blobs_unreviewed": 16,
+    "native_or_ELF_prefix_bytes_unreviewed": 116602,
+    "manifest_paths_fully_read": 3,
+    "all_fixture_paths": 158,
+    "all_fixture_bytes": 729210,
+    "role_classification_counts": {
+      "elf_slot": {
+        "native_or_ELF_prefix_payload_unreviewed": 27,
+        "full_read_or_identical_blob": 1,
+        "empty_identity_declared_path_unacquired": 2
+      },
+      "layout": {
+        "full_read_or_identical_blob": 32
+      },
+      "map": {
+        "full_read_or_identical_blob": 27,
+        "mechanical_empty_path_held": 2
+      },
+      "source": {
+        "full_read_or_identical_blob": 61,
+        "mechanical_empty_path_held": 1
+      },
+      "collision_sentinel": {
+        "full_read_or_identical_blob": 2
+      }
+    },
+    "role_bytes": {
+      "elf_slot": 116627,
+      "layout": 213453,
+      "map": 76377,
+      "source": 166612,
+      "collision_sentinel": 50
+    }
+  },
+  "fixture_payload_inventory": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.elf",
+      "bytes": 6930,
+      "git_blob_sha": "ca3aaf877d6efa8c2d79e2c5308a826f309f27ba",
+      "sha256": "12fd50a2fa3ff18a1b615557246cbcdb13dc93214f075dba238be34f7f40e543",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.layout.json",
+      "bytes": 45963,
+      "git_blob_sha": "46ea90748643ed2a51d364bbb1dd8c69de1be51a",
+      "sha256": "5e434b2498e1225d398929f01b8cabb51a9da70f40915d04dd2cb948c6e11a77",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.map",
+      "bytes": 16608,
+      "git_blob_sha": "b14c2869f13c62fd3c2852459a9049d421680369",
+      "sha256": "48a4f80ab464ccfee23f7bd69df03dc5e40cd5e9ad2dfdbedeac94cea2332c4d",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.elf",
+      "bytes": 4634,
+      "git_blob_sha": "ed466ca3d0b6e50485c21401e0452b8660223b79",
+      "sha256": "0464ee6d8faf6bc6166bc3a6d141b453f6a1e47f073fe40056e038a29ac08217",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.layout.json",
+      "bytes": 27040,
+      "git_blob_sha": "1b723a61c5c0cf66422c4e1e79f1cd3f4f6f7efe",
+      "sha256": "b9b10e0df79aa2be567e8d4f6c531acb8fdef2630b47e148bbeb4d5508432348",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.map",
+      "bytes": 7200,
+      "git_blob_sha": "b5ca4f5cdf6fc9bedfda8ed96e0f3567979230bb",
+      "sha256": "4d1572b66d8ca4db7a24c694dbe253a8b4e6d615a7d6a5e2b31252407f478111",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.elf",
+      "bytes": 4154,
+      "git_blob_sha": "56fcafb0174bff6227c61615be8f3c6d91b9e690",
+      "sha256": "30b0f857faedd8900c8c724b2e117781b1a3f9be93efde357814d9d5587600c3",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.layout.json",
+      "bytes": 1756,
+      "git_blob_sha": "dbdbd6c64c293e2399d3f71137edce2c967d95f0",
+      "sha256": "15a5efd7ac4fd5bfdc5b447346dd8e3d750942dbcce7f4b15b88e186133ea4ae",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.map",
+      "bytes": 416,
+      "git_blob_sha": "7414170bbb4c42b71dd26bae2fd681d38a8a9a14",
+      "sha256": "c7803799095199253c422bfcfd0501998ffa98ade9aa3ea3a64376e6a5e7aefa",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.elf",
+      "bytes": 4097,
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.layout.json",
+      "bytes": 691,
+      "git_blob_sha": "06d45870be83e9f14e3b9ef6fa43785888d6adab",
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.map",
+      "bytes": 96,
+      "git_blob_sha": "d5a74e59012478f37fc1a30241e79d9706416e7f",
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.elf",
+      "bytes": 5120,
+      "git_blob_sha": "3fd6332bf4a99c6e6bd5f9e43dc704c13d17c4ab",
+      "sha256": "a72ef0fdfc63ff2955307c4bf7832ae4ec0d28364c322ea16744f2a726ed6258",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.layout.json",
+      "bytes": 65928,
+      "git_blob_sha": "f8c4cc845c7275f4c1f9127dff280acd686da037",
+      "sha256": "282599d930877f24d37a23e2ab2b84377a80b2a350945c8a767192a69407218f",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.map",
+      "bytes": 36896,
+      "git_blob_sha": "5354352e8dcaf42f2da541223f19f5c61db651fb",
+      "sha256": "e2d2e30ac0d6c03d30d0b6686e471c94ba9506ea3b677f790beafbfb16c4a287",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.elf",
+      "bytes": 4097,
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.layout.json",
+      "bytes": 9502,
+      "git_blob_sha": "2289b36184fc914322f9b465511ae5534fe276cd",
+      "sha256": "546ea0bf6e4d6cf9a7ac3d8015334f706475f4b40f0e745ccefbb3a7e4d5e4c2",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.map",
+      "bytes": 4160,
+      "git_blob_sha": "59c94c638565f12a910232184878cf6e0b11c758",
+      "sha256": "f42492a6380df1d4073f66c343d69e8a5f0c7297c439c27ee9c4e97eee2a7358",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.elf",
+      "bytes": 5376,
+      "git_blob_sha": "589077b3c08fc1fa5cc9853ce9bb754ab650ead4",
+      "sha256": "e82248a44973eb4f8c99ff7ce0d46ba43b90a7575655f1a6271ebbe2f33d1f1e",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.layout.json",
+      "bytes": 42054,
+      "git_blob_sha": "7e70f1071e5638ec6c47b80708ea7e8493215ba5",
+      "sha256": "88573c21e46682f6d345dccecf707eaf30b32756ae4740ee078eb3d3309e76d4",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.map",
+      "bytes": 8256,
+      "git_blob_sha": "5daf39d9c599f165488ccba7fa225a921cbb2cf6",
+      "sha256": "93fc878c82ba7f3d946e72087edd8d8a8860e20967f5a7feabdab6a0d93eb3d7",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.elf",
+      "bytes": 4097,
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.layout.json",
+      "bytes": 788,
+      "git_blob_sha": "1b5e47c636b7e7350dded66200aa56c22c293e58",
+      "sha256": "ef299d157f367f4c75901e96239e03d95e9943a511d443e3f6dbb250b240a3b1",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.map",
+      "bytes": 128,
+      "git_blob_sha": "99be6911838664a36cc8d8bda53f685195c86c29",
+      "sha256": "59d6ac9a169c840d349a6ed202c4d1d18f63695f70f4bb6d23284e1d8815a0af",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.elf",
+      "bytes": 4106,
+      "git_blob_sha": "45e7405c6fdf4fef7257ae1a0bb0cb3e70845c7d",
+      "sha256": "8b12b28fac8b344ae96c7a8a4930c1269715d5c59f91a65f8eb2da4f01f7a1b7",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.layout.json",
+      "bytes": 711,
+      "git_blob_sha": "b16d4f7468688af7f21ad4b1696e7fdca6ea838b",
+      "sha256": "41d051f4f5641474802b5de63f1136f562c3ceef6a1a5775529a26f0d2130e9f",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.map",
+      "bytes": 96,
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.elf",
+      "bytes": 4097,
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.layout.json",
+      "bytes": 691,
+      "git_blob_sha": "06d45870be83e9f14e3b9ef6fa43785888d6adab",
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.map",
+      "bytes": 96,
+      "git_blob_sha": "d5a74e59012478f37fc1a30241e79d9706416e7f",
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.elf",
+      "bytes": 4106,
+      "git_blob_sha": "106597037488b206ca373a1668c0de798a93a0b9",
+      "sha256": "8e8e8bc8c2b377ecf6c1934cd8171e2249b24ee7fd2ab681f1f13c80386cc71e",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.layout.json",
+      "bytes": 711,
+      "git_blob_sha": "a50ff242f16d43e3402b567ae670355b7ba28842",
+      "sha256": "26f0c1296ce741dba453f8e5955ac54cca42981ccabf1069909a753e6a3a07f0",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.map",
+      "bytes": 96,
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.elf",
+      "bytes": 4106,
+      "git_blob_sha": "cd954174a9e1e76373c347ad3c0c1066916cadd2",
+      "sha256": "ee10bea8f55dca18448f744567e0d3ea8704b1bd77aa22c64f41cf27d72c73bb",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.layout.json",
+      "bytes": 711,
+      "git_blob_sha": "267143ae5a0749cccb6f496894fe41107794316c",
+      "sha256": "e9d9828e9c2ead453f2fe6b829ee94ccab3c25aab6e27d3f3193087d0c7116fe",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.map",
+      "bytes": 96,
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.elf",
+      "bytes": 4103,
+      "git_blob_sha": "e83abf407b8398a1df5bba0f84263710f09d22ff",
+      "sha256": "a2211e69a1465cc364638c80634c3670e5aebfe8e95938d4ad18f17a3338d17b",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.layout.json",
+      "bytes": 703,
+      "git_blob_sha": "719ffbc567344491795ab6d136dbafedf6a7956f",
+      "sha256": "a1afee113def7d64fdfe0d950f8d116b32c8310120c1386415365fd426968b59",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.map",
+      "bytes": 96,
+      "git_blob_sha": "1948430814c60e8639f8182160ee20316317fafc",
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.elf",
+      "bytes": 4103,
+      "git_blob_sha": "2daec19a669a680975bb7aee63c75f6fd5c6e22d",
+      "sha256": "97e4adb5e9df8f8af90ef6462a95020e264e9d9cce6a70bd5f84552a63780f7c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.layout.json",
+      "bytes": 703,
+      "git_blob_sha": "c309f497d1189f761db204ebc14434be50020da8",
+      "sha256": "3bcd3fdd40d2ac03ebc6bba9d6020a9eb5493d5e22509308f0152b788b1e8d44",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.map",
+      "bytes": 96,
+      "git_blob_sha": "1948430814c60e8639f8182160ee20316317fafc",
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.elf",
+      "bytes": 4100,
+      "git_blob_sha": "16de2b911b3041a011809a7d379dc29f6f3b863e",
+      "sha256": "d53e9c2cb5957760db939df93349f16da415d3119989ed6272117f84f200613b",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.layout.json",
+      "bytes": 697,
+      "git_blob_sha": "5c638b429e25e127d7150d490aaa9a60e6707f6a",
+      "sha256": "cbd16205e4d423064dfbe003b3d27c25b3efe79e599cb38354f097a1b82f0cb3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.map",
+      "bytes": 96,
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.elf",
+      "bytes": 4100,
+      "git_blob_sha": "296783a833788ba9783f6fb7ae5e997fa8128000",
+      "sha256": "a1619a954a1f09b653cdc741742f5dbdc3344b55a503cb2b69dbaf42f1688637",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.layout.json",
+      "bytes": 697,
+      "git_blob_sha": "9e282a73509dccd027c5867706ab85d1b0dbe61c",
+      "sha256": "9bac01512fd33fe4285ff5d23f59e1a49d4d671fae4d2931ffea3a28499381bd",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.map",
+      "bytes": 96,
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.elf",
+      "bytes": 4100,
+      "git_blob_sha": "37b6c6441292b566362b746de9c35ba72d1ae421",
+      "sha256": "ae3cbd16d93613e239b9aa9b189c3b4c12ab17ed8f60044a65c3082a07c788bc",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.layout.json",
+      "bytes": 697,
+      "git_blob_sha": "c7445aec5e189186b1cf41539be9d5982a2337ab",
+      "sha256": "eb36117e5bd3ec5c5c825830d9f029faca5040c927cd2c59dff8d8a8c6d375db",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.map",
+      "bytes": 96,
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.elf",
+      "bytes": 25,
+      "git_blob_sha": "91b7ce395c46712f3bd894f6a6f133dc652e8415",
+      "sha256": "26e9f2ba5bf7e560452c5c5a373e09eb47daa4833ecc8c352e1859d8ddf50fe5",
+      "role": "elf_slot",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.elf",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "elf_slot",
+      "classification": "empty_identity_declared_path_unacquired"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.map",
+      "bytes": 25,
+      "git_blob_sha": "9a6d8386a2b65986588728c7035ce792fa7b3c8f",
+      "sha256": "6e8b74df8442e1766456d22957ca17dd1b5aae07a6f015b3516d2b987fa9c47c",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/53.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.elf",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "elf_slot",
+      "classification": "empty_identity_declared_path_unacquired"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.map",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "map",
+      "classification": "mechanical_empty_path_held"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.elf",
+      "bytes": 4096,
+      "git_blob_sha": "a24b139d6bad608f13a1803ce6b373d2846ad127",
+      "sha256": "75c8d2b3e9761105ede89e8c87a1409974846bd6547539791522c8c3bc97ffd8",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.map",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "map",
+      "classification": "mechanical_empty_path_held"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/61.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.elf",
+      "bytes": 4120,
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "role": "elf_slot",
+      "classification": "native_or_ELF_prefix_payload_unreviewed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "role": "layout",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "role": "map",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/01.b12s",
+      "bytes": 7463,
+      "git_blob_sha": "70fb133b2fd33b8d7aec72973c3317268cb46d8a",
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/02.b12s",
+      "bytes": 3614,
+      "git_blob_sha": "c44a6b71c7fe31fbe3b3e3159ffe1f9c35ae5547",
+      "sha256": "1e6b201da0a06933d6dfb5a0194f2813acfce36c1bd6dc76d5a0d2b685c74351",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/03.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/04.b12s",
+      "bytes": 206,
+      "git_blob_sha": "b4042593c3921f2e49016582c638cfd166fee8b3",
+      "sha256": "d013c9f79eb65d91f329d0f1375bd5683321a7867143067242a3b526778c86a5",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/05.b12s",
+      "bytes": 65536,
+      "git_blob_sha": "a8e441fdcfdd695846d34b6cf1d51bd59312f77a",
+      "sha256": "9f62e5a0a49e41c1ccd1026f730a36a31d18e959e3b4f0572065d3f4db613ca5",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/06.b12s",
+      "bytes": 65537,
+      "git_blob_sha": "2641aeb1f0d834e02e9cee8f2d0c6e00884ef95d",
+      "sha256": "ea2f2ee06bb50424c16ecfb8477d8992615e6167b07db5ea365cdceb3809a668",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/07.b12s",
+      "bytes": 5398,
+      "git_blob_sha": "c92636b50073b1327a8c7aba3b0e0d1f2cfd5cf1",
+      "sha256": "055c80251575880a9e832f8654ddcff9bc44a149f9161dd817b33d5cf3feb334",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/08.b12s",
+      "bytes": 5402,
+      "git_blob_sha": "18bbdfa4ba939f9f374bde42b0d588c110c815e6",
+      "sha256": "f59e3e9b9af274b0fd219b5d924307892a2a095b8273885e87666916c5d4986d",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/09.b12s",
+      "bytes": 1306,
+      "git_blob_sha": "768d6180f2c449a82bcc9196c1852daadb44f0da",
+      "sha256": "9c067d3e672123bfcef3cd6d17aedc38b6df056746d11981abeeb2472d0a1376",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/10.b12s",
+      "bytes": 1317,
+      "git_blob_sha": "77f578b736d257e47f2b00ce0092dcf2fdc0fca3",
+      "sha256": "1d7f645acd101be04901d473704b97cbf296885f619032ebb6e541f40627391e",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/11.b12s",
+      "bytes": 3853,
+      "git_blob_sha": "282f964ccbf972a2f61166982bfa4b5a603f013e",
+      "sha256": "04c517717d25230d4379ef16491ecf85d6373229954f4d56f26ff6187b2fdce5",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/12.b12s",
+      "bytes": 3868,
+      "git_blob_sha": "d4acb9863067305f7cf4751cbdce0cc8a461b728",
+      "sha256": "576c9778f711651a28272077f419d84b4dee5f8e464e436bcb222535551416fe",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/13.b12s",
+      "bytes": 55,
+      "git_blob_sha": "9b1142c2d39ccbe335e45d1bafa044be9a55599c",
+      "sha256": "8c3974f0933803c0f6bead40f6a46f037366f8d6d60086023180f28595b248e1",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/14.b12s",
+      "bytes": 56,
+      "git_blob_sha": "5eddcfc0bab9c95301d71e6e8e948a9a3a1d5acf",
+      "sha256": "94a5e0a27c839ae152ed47568d0323f219b40c9fed29c0f785d76f167eb0feb1",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/15.b12s",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "source",
+      "classification": "mechanical_empty_path_held"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/16.b12s",
+      "bytes": 13,
+      "git_blob_sha": "856e9b429ccbbee33817906f2c45cffc17100e1f",
+      "sha256": "3f9632f02df5f4467c097e34655ffd50623fde9348a214fa03846e16104c74f8",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/17.b12s",
+      "bytes": 16,
+      "git_blob_sha": "79dccd9e0dcd3a156c2807da740ec569532d2a1d",
+      "sha256": "23848e399bcfc7f9912a1d5fc2aa1267e816dc0b1e32f1297381c07a0439a4fc",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/18.b12s",
+      "bytes": 21,
+      "git_blob_sha": "7c8c8c3aaa936f1e008b6b0696af06291c75417a",
+      "sha256": "ccb16b1ca8c2d8df6068b8ea0c3039050c2d8f077319fb54612a49fa097e61a1",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/19.b12s",
+      "bytes": 30,
+      "git_blob_sha": "5bf6dad86b3e90224164be4a264f2550418d46ae",
+      "sha256": "54529b4196e1514b599c71db9fa397ba8799747c55ca036b096aeab238a48668",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/20.b12s",
+      "bytes": 29,
+      "git_blob_sha": "6201890aa7d241941fd67c0bf65eef19b7e00cb3",
+      "sha256": "e0f3cecdb9be6af66d341475cce089a67221e5d86b3de2363819c4311b3fa362",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/21.b12s",
+      "bytes": 28,
+      "git_blob_sha": "5c8f3d11d943098866631506113dad44fa7930e4",
+      "sha256": "cfa9764177ea5081313e8e6949d216b5a6dce6b074b4ced844be6494b5bc298e",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/22.b12s",
+      "bytes": 32,
+      "git_blob_sha": "9d841a1788ac28748f7bd0068bef6638d7601c0b",
+      "sha256": "c6116ce5219abdbf510c85dde1594d661696691af78e1d88a7d70d0f8a76dcc4",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/23.b12s",
+      "bytes": 17,
+      "git_blob_sha": "fbdab140db8e014249f82c5e7b23e104cc55170d",
+      "sha256": "1b7da9cd88d3e9493303a5f8633f86f9104800e51e1e80401210822fc70fb5d6",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/24.b12s",
+      "bytes": 25,
+      "git_blob_sha": "56c1d9e3a7f5a955aa204d5bdfbc6297232f68f4",
+      "sha256": "527dd6f84e26c353f20b6e84458ca7a49d476d2a8c61997da96e864742859727",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/25.b12s",
+      "bytes": 19,
+      "git_blob_sha": "2429ad9eb36d475f79f0ab506fc6d451882538ff",
+      "sha256": "c0111e134a9d272764ad11039d558c19c7e292b91d9d588779af08e0ce08f19f",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/26.b12s",
+      "bytes": 36,
+      "git_blob_sha": "2f50700fb2d969cf8774e2a81f9d8db5540e131d",
+      "sha256": "c8f6a097f898ac0a8c5dc2634bd8811c56f1d3d9c5a2958021369d6ece6b582f",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/27.b12s",
+      "bytes": 24,
+      "git_blob_sha": "2bed62d1385770e66a9b4192aa701d58d0ce2172",
+      "sha256": "13533d66723cad6bd63f0b90ca510f346068d5df8e074b8cbb94ff96d39bb9d4",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/28.b12s",
+      "bytes": 18,
+      "git_blob_sha": "e3a72eaeed01b207a103e4532601576f7ce7600d",
+      "sha256": "b39fcd98dd4ebf3c7f9d6521e52ae174b5b4330d11acbc41f6432148b34bcab9",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/29.b12s",
+      "bytes": 18,
+      "git_blob_sha": "bca425b457079c035f80011ee9d03ed85a616afe",
+      "sha256": "bd4954515e1584c8a0d9fb36e6e565ce5babb51a31d9d5fd1f5f22f0c7aa1bc9",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/30.b12s",
+      "bytes": 28,
+      "git_blob_sha": "de3b1cf6ebf25941586fcea0d78c0625cc6f52c4",
+      "sha256": "bc82781f47682e4f806bd8cfe400d8ceaafcc86d9b79cc4a2da4472411a2ef4e",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/31.b12s",
+      "bytes": 31,
+      "git_blob_sha": "a803b8ce5441544bd54442df380635c0840215db",
+      "sha256": "ae4daad8b2dd05fe836196ca686e2e50e8ace97495a3defc02ce26b672070907",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/32.b12s",
+      "bytes": 16,
+      "git_blob_sha": "062c0e72ce481d4ca1f83a27fa5cc2c14e921755",
+      "sha256": "93cc2cf3f957a7effbb6a9ac9c649d5f7353f33d231bb80ea90132bb1cc575fd",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/33.b12s",
+      "bytes": 41,
+      "git_blob_sha": "4a2d7183f0047df4e60af1f61514b7e332357738",
+      "sha256": "fb6354463e33fb2e57cb4fa6c7bc3f4d3a72b803b8fb5bc11150ebbf2962ee89",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/34.b12s",
+      "bytes": 41,
+      "git_blob_sha": "4149e136b318a4561e9799473dcc320e65b82724",
+      "sha256": "0d9ba36564e55f0864a7d39fb7672199c52bed7582add7187bb1062897203324",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/35.b12s",
+      "bytes": 42,
+      "git_blob_sha": "f70a956dbf18841e0e3a3d18532ba06887dcd661",
+      "sha256": "a68c28fdb2c7c1cfc9559462a4f964039303afdce5d66eb1b132ae6617c132a4",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/36.b12s",
+      "bytes": 42,
+      "git_blob_sha": "c6fce44ab8b48956851af854d5561f4b5502318a",
+      "sha256": "80773fe95adc1af6fd7859ef7df061dab41bb0c512d333297b0554eb6cffd30f",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/37.b12s",
+      "bytes": 39,
+      "git_blob_sha": "e97ebc30ea91dd4f0f9e57e850aae8d49e8fab23",
+      "sha256": "63a515eafb519c33886d9eae01a32d91562ce0ff77c87f72e0dfeeb2815f0ddb",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/38.b12s",
+      "bytes": 39,
+      "git_blob_sha": "3f63b267ebafd342ed5a55056e68133f623ca1f9",
+      "sha256": "b73440d23bc44c18724c27ddb0b190768cec0a1e2c84e08fea3c3560ff75cfc3",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/39.b12s",
+      "bytes": 38,
+      "git_blob_sha": "10ed0c7901c920040a69d59bbdb675994065f1f7",
+      "sha256": "bf54b12fc40489d1dbb6a80714808c7b30c3887f0505ee3e5f57173bb31d5899",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/40.b12s",
+      "bytes": 38,
+      "git_blob_sha": "34dac99f1cf7fc1e3fdccb7d8892edc749b3c25c",
+      "sha256": "35555473ebd3b8edbfb3482c270c7b8849f07c5d933b7c2fe102a05a0232efff",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/41.b12s",
+      "bytes": 29,
+      "git_blob_sha": "cf4f7e13631d79f5af0c515fabb85613ee1f38da",
+      "sha256": "56aa5132504b143793b2b03204ee9ecca3e78ba87dff4fd1456e5c5125e55731",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/42.b12s",
+      "bytes": 29,
+      "git_blob_sha": "3e67416d8bff857f4a4af02ebf650d26100104de",
+      "sha256": "494dbb581395a67de3e7dc52a513d2e0de7e43ab120ab887aaa22088f5e65468",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/43.b12s",
+      "bytes": 28,
+      "git_blob_sha": "f0930f0a4208e903887c452ec2313c94b47c9df9",
+      "sha256": "eb3f91e225f9fee07c247311b9884c498fa0b545d79ae94b6c59ddc8991e88ce",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/44.b12s",
+      "bytes": 28,
+      "git_blob_sha": "d4ee20ab1c8bd2a7c6535c94b7f38a9b77de0ff8",
+      "sha256": "4d3e01256fe75e92561f1b1cb8c1bbf1b78d412efb92892de03438ce189d9e07",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/45.b12s",
+      "bytes": 24,
+      "git_blob_sha": "759f9d7d0d7b51338d667086f5be2c3c9b3bb776",
+      "sha256": "594547e331bfa5ce3a0593c61497837455ff61706069d0d9f24696bc83c6c8ce",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/46.b12s",
+      "bytes": 24,
+      "git_blob_sha": "4e0d2548fe0f376a9c2ba2e169baa7aa245a2e0f",
+      "sha256": "88d5875aa3029a09d35cf925f2c7546c15ebf2e3c2f88a0ff5d81d90e6ee9c8c",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/47.b12s",
+      "bytes": 24,
+      "git_blob_sha": "6c1f4bc9633191e6e0abc071429421921c52fef8",
+      "sha256": "0dfba9ccdaa989195531f8881e0c22e15feb2b10e17b0e56f1c1a7620b8c64e4",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/48.b12s",
+      "bytes": 24,
+      "git_blob_sha": "ae903534315395010feaac24161da8fd92034638",
+      "sha256": "17990ca919833dc850c1462eb7817c1c9c72b4a6afb79c7965fad818911c6750",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/49.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/50.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/53-target.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/54.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/55.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/56.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/57.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/58.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/59.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/60.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/61.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/62.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/63.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/64.b12s",
+      "bytes": 138,
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "role": "source",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/49.bin",
+      "bytes": 25,
+      "git_blob_sha": "91b7ce395c46712f3bd894f6a6f133dc652e8415",
+      "sha256": "26e9f2ba5bf7e560452c5c5a373e09eb47daa4833ecc8c352e1859d8ddf50fe5",
+      "role": "collision_sentinel",
+      "classification": "full_read_or_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/50.bin",
+      "bytes": 25,
+      "git_blob_sha": "9a6d8386a2b65986588728c7035ce792fa7b3c8f",
+      "sha256": "6e8b74df8442e1766456d22957ca17dd1b5aae07a6f015b3516d2b987fa9c47c",
+      "role": "collision_sentinel",
+      "classification": "full_read_or_identical_blob"
+    }
+  ],
+  "new_identical_blob_alias_paths": [
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.elf"
+  ],
+  "whole_fixture_payload_reading_complete": false,
+  "private_source_or_payloads_in_publication": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Final25-byte collision sentinel fully read and bound to materializer literal, setup and expected-output declarations; case49 saved failure metadata agrees.",
+    "Expected49.elf is byte-identical sentinel content, not a native ELF acquisition or proof that a native artifact was read.",
+    "All155 payload paths and every declared source/layout/output/collision reference join pinned tree/checksum metadata; three manifest paths complete the158-path fixture inventory.",
+    "123 nonempty payload paths have full reading/alias credit; three empty paths are mechanically held and two empty ELF-slot paths remain declared/unacquired.",
+    "Twenty-seven native/ELF-prefix payload paths/16 distinct blobs/116602 bytes remain unreviewed; file identity declarations and byte-size inventory do not supply payload custody or runtime verification.",
+    "Whole fixture payload reading remains incomplete; source/layout/map subcorpus closeouts must not be promoted into native output or whole-repository completion.",
+    "No native ELF/code acquisition,upstream import/materializer execution,native emission/execution,model invocation,live scan,activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "bytes": 3393,
+      "intended_review": "complete_related_decoder_output_profile_foundation_and_source_change_boundary_join_held_contract_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OWNERSHIP.json",
+      "bytes": 4084,
+      "intended_review": "complete_related_decoder_output_profile_foundation_and_source_change_boundary_join_held_contract_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OPEN.md",
+      "bytes": 1304,
+      "intended_review": "complete_related_decoder_output_profile_foundation_and_source_change_boundary_join_held_contract_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/MANIFEST.json",
+      "bytes": 4007,
+      "intended_review": "complete_related_decoder_output_profile_foundation_and_source_change_boundary_join_held_contract_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SOURCE.diff",
+      "bytes": 850,
+      "intended_review": "complete_related_decoder_output_profile_foundation_and_source_change_boundary_join_held_contract_without_execution"
+    }
+  ],
+  "next_scope_bytes": 13638,
+  "public_contribution_checks": [
+    "complete final sentinel bytes bind materializer,setup,expected and saved metadata",
+    "all155 payload references and158-path fixture inventory reconcile",
+    "reviewed content,mechanical held empties,unacquired empty declarations and27 native gaps remain distinct",
+    "coverage,next disjoint profile scope,links,privacy and git diff --check passed"
+  ]
+}

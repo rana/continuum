@@ -1,10 +1,10 @@
 {
-  "scope": "Exact public run projection, excluding this manifest. Repeated runtime/import/source outputs omitted as described in README.",
+  "scope": "Exact public run projection excluding this manifest. Duplicates omitted and lossless compression described in README.",
   "files": [
     {
       "path": "README.md",
-      "bytes": 8791,
-      "sha256": "6408dfcca4b5bdc3edf6467b031111dae8d12e0c7aad7dadc54f644c374d6b65"
+      "bytes": 9209,
+      "sha256": "288ae026e641e657929c7c21d1dee7fb7e761213c22d2b85a6146a87c3dadcce"
     },
     {
       "path": "adapter-tests.log",
@@ -97,14 +97,16 @@
       "sha256": "3683959047ff4dd755e679283fbd290834787e9e7ebf53c78234e7698e8ab79e"
     },
     {
-      "path": "import-objects.json",
-      "bytes": 603139,
-      "sha256": "d5872821d9663d5d9a069601b5cb7b94dd332d1670919692308b3568de8864d6"
+      "path": "import-objects.json.gz",
+      "bytes": 26396,
+      "sha256": "fa38d002665916310a40a046d6cf6b5cfc245ba833be98d3722bee0fce318b7e",
+      "decompressed_sha256": "d5872821d9663d5d9a069601b5cb7b94dd332d1670919692308b3568de8864d6"
     },
     {
       "path": "native-seed-log.jsonl.gz",
       "bytes": 117262,
-      "sha256": "a151b363f02c6000eceaa23b36d7314eae65fbb08d7aa0d8e0742dd272852adc"
+      "sha256": "a151b363f02c6000eceaa23b36d7314eae65fbb08d7aa0d8e0742dd272852adc",
+      "decompressed_sha256": "b7c8248e6e5731cb0a3dff95e7d047725edac6934988e0be0dbe2a5e66f2f376"
     },
     {
       "path": "reconstructed/accept.json",

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "source_baseline": "a18549a95ec6f6a8632bff0581efb2be64596d87",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 53163,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 53163,
+  "complete_json_roundtrip_exact": true,
+  "labels_fully_read": 163,
+  "patches_fully_read": 479,
+  "globals_fully_read": 33,
+  "buffers_fully_read": 7,
+  "all_patch_displacements_and_bounds_match": true,
+  "all_patch_fields_disjoint": true,
+  "patch_direction_counts": {
+    "positive": 375,
+    "negative": 102,
+    "zero": 2
+  },
+  "patch_displacement_min": -7250,
+  "patch_displacement_max": 7601,
+  "distinct_patch_targets": 162,
+  "all_labels_distinct_and_inside_code": true,
+  "source_constant_and_global_name_bindings": true,
+  "build_static_and_saved_review_declarations_match": true,
+  "all_eight_memory_intervals_match_static_record": true,
+  "declared_owned_rw_bytes": 155648,
+  "declared_interval_bytes": 137785,
+  "declared_interval_slack_bytes": 17863,
+  "candidate_binary_acquired": false,
+  "actual_patched_bytes_verified": false,
+  "upstream_source_imported": false,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete layout text fully read: eleven top-level fields, 163 labels, 479 patches, 33 globals and seven buffers; exact JSON byte roundtrip passed.",
+    "All relocation displacement, range and disjoint-field checks are arithmetic over saved metadata; actual opcode/field bytes remain unverified until listing or binary custody.",
+    "Source constants and literal name declarations were inspected with an original restricted AST reader; no upstream import, builder call or native emission occurred.",
+    "Build/static/review digest agreement binds declarations, not a fresh hash of an acquired candidate binary.",
+    "Buffer capacities and interval slack do not establish runtime occupancy, maximum stack depth or whole-process resource use.",
+    "Instruction count remains a cross-record declaration; this unit does not independently count decoded instructions.",
+    "No new execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.instructions.txt",
+      "bytes": 75436,
+      "intended_review": "complete_saved_instruction_listing_without_execution"
+    }
+  ],
+  "next_scope_bytes": 75436,
+  "public_contribution_checks": [
+    "pinned layout identity and complete exact JSON roundtrip passed",
+    "all 479 displacement formulas, field bounds and disjointness checks passed",
+    "all 163 label addresses and source-declared global/buffer relations passed",
+    "build/static/review declarations and eight memory intervals agree",
+    "coverage, links, privacy exclusion and git diff --check passed"
+  ]
+}

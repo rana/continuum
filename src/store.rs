@@ -3,8 +3,8 @@ use rusqlite::{Connection, OptionalExtension, TransactionBehavior, params};
 use serde::{Deserialize, Serialize};
 use std::{collections::BTreeSet, path::Path, time::Duration};
 
-const APPLICATION_ID: i64 = 0x434f4e54;
-const DATABASE_VERSION: i64 = 1;
+pub(crate) const APPLICATION_ID: i64 = 0x434f4e54;
+pub(crate) const DATABASE_VERSION: i64 = 1;
 
 #[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -73,7 +73,7 @@ pub struct Acceptance {
 }
 
 pub struct Store {
-    connection: Connection,
+    pub(crate) connection: Connection,
 }
 
 impl Store {
@@ -331,7 +331,7 @@ fn require_kind(connection: &Connection, id: ObjectId, expected: &'static str) -
     Ok(())
 }
 
-fn failpoint(_name: &str) {
+pub(crate) fn failpoint(_name: &str) {
     #[cfg(feature = "fault-injection")]
     if std::env::var("CONTINUUM_FAILPOINT").as_deref() == Ok(_name) {
         // exit bypasses Rust destructors: SQLite must recover without a clean

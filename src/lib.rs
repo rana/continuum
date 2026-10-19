@@ -4,10 +4,12 @@
 //! names are namespaces, not authenticated identities. Recorded evidence is a
 //! caller's declaration, not a trusted verification result.
 
+mod backup;
 pub mod context;
 mod object;
 mod store;
 
+pub use backup::BackupExport;
 pub use object::{
     EvidenceOutcome, FORMAT_VERSION, MAX_OBJECT_BYTES, Object, ObjectId, SnapshotEntry,
 };
@@ -30,6 +32,8 @@ pub enum Error {
     OperationConflict,
     #[error("unsupported database: {0}")]
     UnsupportedDatabase(String),
+    #[error("filesystem error: {0}")]
+    Io(#[from] std::io::Error),
     #[error("database error: {0}")]
     Database(#[from] rusqlite::Error),
     #[error("record encoding error: {0}")]

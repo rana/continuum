@@ -1,0 +1,23 @@
+{
+  "binary_sha256": "3c2abb54cc10ec18dff7d1dc7bc3785965e2ddfb26520f0de79b0c637987ec9a",
+  "build_command": "cargo build --locked -j 4",
+  "report": {
+    "database_version": 1,
+    "events": 3,
+    "file_bytes": 32768,
+    "file_sha256": "395b074f0902f788054dc60795767bf595cdb284ff4bd1e6626582ca8cab718d",
+    "last_sequence": 3,
+    "objects": 7,
+    "sqlite_version": "3.53.2"
+  },
+  "restored_head": {
+    "generation": 2,
+    "root": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00"
+  },
+  "historical_retry_exact": true,
+  "overwrite_refused": {
+    "error": "invalid input: backup destination or SQLite sidecar already exists"
+  },
+  "published_bytes_unchanged": true,
+  "scope": "Default-feature local CLI smoke; database artifacts kept outside Git."
+}

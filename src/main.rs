@@ -8,6 +8,7 @@ type CliResult<T> = Result<T, Box<dyn Error>>;
 
 const HELP: &str = "Continuum experimental native core
   continuum init DB
+  continuum backup DB NEW_FILE
   continuum blob DB FILE
   continuum put DB OBJECT.json
   continuum get DB OBJECT_ID
@@ -57,7 +58,8 @@ fn run(args: &[String]) -> CliResult<Value> {
     };
     let required_args = match command.as_str() {
         "init" | "demo" => 0,
-        "blob"
+        "backup"
+        | "blob"
         | "put"
         | "get"
         | "accept"
@@ -79,6 +81,7 @@ fn run(args: &[String]) -> CliResult<Value> {
     let mut store = Store::open(database)?;
     match (command.as_str(), rest) {
         ("init", []) => Ok(json!({"database": database, "schema_version": 1})),
+        ("backup", [path]) => Ok(json!(store.backup_export(path)?)),
         ("blob", [path]) => {
             let mut bytes = Vec::new();
             fs::File::open(path)?

@@ -1,0 +1,67 @@
+[
+  {
+    "argv": [
+      "/home/rana/Documents/ChatGPT/Continuum/repository/target/debug/continuum",
+      "init",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/source.db"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"database\": \"/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/source.db\",\n  \"schema_version\": 1\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/home/rana/Documents/ChatGPT/Continuum/repository/target/debug/continuum",
+      "demo",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/source.db"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"advanced\": {\n    \"receipt\": {\n      \"observed\": {\n        \"generation\": 1,\n        \"root\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\"\n      },\n      \"outcome\": \"accepted\",\n      \"request\": {\n        \"acceptor\": \"demo\",\n        \"candidate\": \"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\",\n        \"expected\": {\n          \"generation\": 1,\n          \"root\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\"\n        },\n        \"operation_id\": \"agent-a\",\n        \"target\": \"main\"\n      },\n      \"resulting\": {\n        \"generation\": 2,\n        \"root\": \"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\"\n      },\n      \"sequence\": 2\n    },\n    \"replayed\": false\n  },\n  \"current_head\": {\n    \"generation\": 2,\n    \"root\": \"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\"\n  },\n  \"demonstration\": \"immutable objects, stale-head rejection, durable retry after head movement\",\n  \"events\": 3,\n  \"initial\": {\n    \"receipt\": {\n      \"observed\": null,\n      \"outcome\": \"accepted\",\n      \"request\": {\n        \"acceptor\": \"demo\",\n        \"candidate\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\",\n        \"expected\": null,\n        \"operation_id\": \"initial\",\n        \"target\": \"main\"\n      },\n      \"resulting\": {\n        \"generation\": 1,\n        \"root\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\"\n      },\n      \"sequence\": 1\n    },\n    \"replayed\": false\n  },\n  \"replayed_original\": {\n    \"receipt\": {\n      \"observed\": null,\n      \"outcome\": \"accepted\",\n      \"request\": {\n        \"acceptor\": \"demo\",\n        \"candidate\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\",\n        \"expected\": null,\n        \"operation_id\": \"initial\",\n        \"target\": \"main\"\n      },\n      \"resulting\": {\n        \"generation\": 1,\n        \"root\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\"\n      },\n      \"sequence\": 1\n    },\n    \"replayed\": true\n  },\n  \"stale_proposal\": {\n    \"receipt\": {\n      \"observed\": {\n        \"generation\": 2,\n        \"root\": \"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\"\n      },\n      \"outcome\": \"precondition_failed\",\n      \"request\": {\n        \"acceptor\": \"demo\",\n        \"candidate\": \"sha256:fbcc5463e22064a243671a01c16f1742c2eef5608316d34d07e80ea99d9be0ac\",\n        \"expected\": {\n          \"generation\": 1,\n          \"root\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\"\n        },\n        \"operation_id\": \"agent-b\",\n        \"target\": \"main\"\n      },\n      \"resulting\": {\n        \"generation\": 2,\n        \"root\": \"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\"\n      },\n      \"sequence\": 3\n    },\n    \"replayed\": false\n  },\n  \"untrusted_evidence\": \"sha256:4568336d847f05e11ef48c212f8f4e09315e5afc220ad2dd656d1d595369ad46\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/home/rana/Documents/ChatGPT/Continuum/repository/target/debug/continuum",
+      "backup",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/source.db",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/export.db"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"database_version\": 1,\n  \"events\": 3,\n  \"file_bytes\": 32768,\n  \"file_sha256\": \"395b074f0902f788054dc60795767bf595cdb284ff4bd1e6626582ca8cab718d\",\n  \"last_sequence\": 3,\n  \"objects\": 7,\n  \"sqlite_version\": \"3.53.2\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/home/rana/Documents/ChatGPT/Continuum/repository/target/debug/continuum",
+      "head",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/restored.db",
+      "demo",
+      "main"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"generation\": 2,\n  \"root\": \"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/home/rana/Documents/ChatGPT/Continuum/repository/target/debug/continuum",
+      "accept",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/restored.db",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/initial-request.json"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"receipt\": {\n    \"observed\": null,\n    \"outcome\": \"accepted\",\n    \"request\": {\n      \"acceptor\": \"demo\",\n      \"candidate\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\",\n      \"expected\": null,\n      \"operation_id\": \"initial\",\n      \"target\": \"main\"\n    },\n    \"resulting\": {\n      \"generation\": 1,\n      \"root\": \"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\"\n    },\n    \"sequence\": 1\n  },\n  \"replayed\": true\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/home/rana/Documents/ChatGPT/Continuum/repository/target/debug/continuum",
+      "backup",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/source.db",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/native-backup-export-1/export.db"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\":\"invalid input: backup destination or SQLite sidecar already exists\"}\n"
+  }
+]

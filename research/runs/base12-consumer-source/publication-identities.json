@@ -1,0 +1,20 @@
+{
+  "source_baseline": "2f2380000ff6f7cf45682aaeb7dd362357158736",
+  "files": [
+    {
+      "path": "docs/source-review/base12-consumer-source.md",
+      "bytes": 6051,
+      "sha256": "baef3def7f6e5cdfb1238acc9644621a7dfbc3abecd9b8973948445091886f33"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-consumer-source.json",
+      "bytes": 6884,
+      "sha256": "3ce557a1fcc27340cbb13288b2e9446170e5cd60baedf8bd49c052a50b3dd8b6"
+    },
+    {
+      "path": "research/runs/base12-consumer-source/validation.json",
+      "bytes": 16118,
+      "sha256": "e68a598df672faa1dee59f6047cddeeb2a199fe6692fa00d698fdb3e9bfeabcd"
+    }
+  ]
+}

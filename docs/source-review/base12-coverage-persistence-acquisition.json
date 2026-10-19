@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-audit-closeout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_saved_persistence.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-outcome-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/receipt.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_saved_persistence.py",
+      "bytes": 5589,
+      "git_blob_sha": "aac5301f4cdbfd1ef41aff49ef6807c0072d9736",
+      "sha256": "0e86dea0a6f465e72c39c7b6e8b7ab6bbc010f6ccbed010b2c233cb9e3b5081a",
+      "lines": 92,
+      "semantic_review": "full_direct_read",
+      "review_lane": "persistence-audit-and-partial-acquisition",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-outcome-v1.json",
+      "bytes": 27648,
+      "git_blob_sha": "67edaa6338d98eeb8946e255d759a9580e030c70",
+      "sha256": "9958b272f8bba9a2da465e3a45765cc19145fc9581d51ba53b78d79b54a1067f",
+      "lines": 824,
+      "semantic_review": "full_direct_read",
+      "review_lane": "persistence-audit-and-partial-acquisition",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/receipt.json",
+      "bytes": 1837,
+      "git_blob_sha": "27b4659f0ebd29239d305ae3b890bef7a0cd1862",
+      "sha256": "20e1ec2169e3fd4f9b0910c3842c8702487f4fd43f34c1713167293654440e61",
+      "lines": 59,
+      "semantic_review": "full_direct_read",
+      "review_lane": "persistence-audit-and-partial-acquisition",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 35074
+    },
+    "cumulative_direct_read": {
+      "paths": 337,
+      "unique_blobs": 337,
+      "bytes": 2352394
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 388,
+    "remaining_paths_without_full_semantic_read_or_alias": 5205,
+    "remaining_distinct_blobs_without_full_semantic_read": 4092,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 35074,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Persistence audit source digest and all seven closeout receipt payloads now bind, without executing the audit.",
+    "Initial44 and remaining36 inventories exactly partition later80 rows; publisher and payload content were not freshly attested.",
+    "Incomplete transport does not imply no effect; later continuation remains a separate historical authorization and outcome.",
+    "Low CPU relative to wall time does not identify the transport bottleneck or historical failure cause.",
+    "Only one of six acquisition-envelope artifact digests binds to an acquired payload here; other envelope logs remain unacquired.",
+    "No historical acquisition, scientific program, output rehash, live filesystem audit or model call was repeated."
+  ],
+  "review_report": "base12-persistence-acquisition.md"
+}

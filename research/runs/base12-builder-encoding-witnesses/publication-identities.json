@@ -1,0 +1,20 @@
+{
+  "source_baseline": "2efcfaedd7c2ee9fab3fde1ab0ec303da70eaee9",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-encoding-witnesses.md",
+      "bytes": 5692,
+      "sha256": "77ab9841176e0e088abaec2b64d54d42af74b88be4d4f9acc4df58a5864daa28"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-encoding-witnesses.json",
+      "bytes": 4871,
+      "sha256": "6ede1c4ef4eb30108f772a4294fdf4e7bc9254d91e2d4c33d0fbe9f029152d17"
+    },
+    {
+      "path": "research/runs/base12-builder-encoding-witnesses/validation.json",
+      "bytes": 4437,
+      "sha256": "57b9ce63833be6945efc9e62fa809c6e02beebe8781c155f68b171f2ff702e78"
+    }
+  ]
+}

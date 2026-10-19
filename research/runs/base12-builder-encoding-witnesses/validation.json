@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2efcfaedd7c2ee9fab3fde1ab0ec303da70eaee9",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 4,
+  "verified_source_bytes": 29588,
+  "full_text_paths_read": 4,
+  "new_semantic_files": 4,
+  "new_semantic_bytes": 29588,
+  "encoding_vectors": 73,
+  "unique_encoding_vector_ids": 73,
+  "nonrelocating_forms": 23,
+  "all_expected_lengths_and_bounded_encoding_fields_match_contract": true,
+  "concrete_relocation_vectors": 14,
+  "abstract_range_vectors": 4,
+  "all_displacement_endpoints_and_patch_bytes_match": true,
+  "predicted_program_checks": [
+    {
+      "source_name": "exit17.b12asm",
+      "code_bytes": 24,
+      "map_records": 5,
+      "map_bytes": 192,
+      "code_and_map_digest_match": true,
+      "predicted_exit": 17,
+      "program_executed": false
+    },
+    {
+      "source_name": "branch42.b12asm",
+      "code_bytes": 58,
+      "map_records": 12,
+      "map_bytes": 416,
+      "code_and_map_digest_match": true,
+      "predicted_exit": 42,
+      "program_executed": false
+    }
+  ],
+  "program_source_hashes_newly_verified": false,
+  "all_six_correction_metadata_offsets_and_increments_reconcile": true,
+  "actual_binary_diff_or_ELF_acquired": false,
+  "recorded_syscall_sites": 15,
+  "recorded_syscall_set_matches_source": true,
+  "recorded_buffer_intervals_nonoverlap": true,
+  "held_bootstrap_and_contract_pins_match": true,
+  "native_builder_or_program_executed": false,
+  "no_candidate_ELF_or_builder_output_emitted": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Four complete JSON records read; original bounded field decoding and arithmetic only, without assembling or executing programs.",
+    "Seventy-three expected snippets decode consistently with retained contract fields; this is not new candidate encoding, exhaustive x86 validation or fresh external-manual verification.",
+    "Fourteen concrete and four abstract rel32 cases reconcile; abstract endpoints are not reachable source programs under admitted size limits.",
+    "Code/map byte buffers reconstructed only from authored literal expectations to verify identities; no ELF or native-builder output generated.",
+    "Program source hashes remain declarations until the two tiny source texts are acquired; predicted exits are not observed behavior.",
+    "Six R1/R2 displacement rows and fifteen syscall-site declarations reconcile internally; no ELF/disassembly payload or binary diff newly verified.",
+    "Saved structural booleans and finite witness expectations retain historical scope and confer no execution authority."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/contract-cases.json",
+      "bytes": 21758,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/historical-comparison.json",
+      "bytes": 8798,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SHA256SUMS",
+      "bytes": 864,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/exit17.b12asm",
+      "bytes": 138,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/branch42.b12asm",
+      "bytes": 206,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 31764,
+  "public_contribution_checks": [
+    "four pinned identities and complete witness JSON readings passed",
+    "73 vector lengths and bounded contract encoding fields reconcile",
+    "14 concrete and four abstract displacements/range bytes match",
+    "both literal code/map identities, contiguous record spans and relocations reconcile",
+    "six correction metadata offsets, fifteen syscall sites and buffer arithmetic agree",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

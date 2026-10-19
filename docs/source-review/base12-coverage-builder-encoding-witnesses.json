@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-static-review.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/witnesses/encoding-vectors.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/witnesses/relocation-vectors.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/witnesses/program-expectations.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/witnesses/r2-static-observations.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/encoding-vectors.json",
+      "bytes": 15052,
+      "git_blob_sha": "3703a2a985a840b55e546f0a64f16cfb03979e87",
+      "sha256": "387d904dec24c976512cff187749e021e253b4bc3535cc43bb742dc7bfb48930",
+      "lines": 518,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-finite-encoding-and-relocation-witness-data",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/relocation-vectors.json",
+      "bytes": 5341,
+      "git_blob_sha": "c43ff3198a8244ee6c3063b40e56f6881be11a09",
+      "sha256": "d97b15509b1b0dd768668aeccac97a5587ecc191b706bf82c289678509ab66b3",
+      "lines": 179,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-finite-encoding-and-relocation-witness-data",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/program-expectations.json",
+      "bytes": 4238,
+      "git_blob_sha": "2528fcb8354c383d4186b0ce8f0d72e8ec925841",
+      "sha256": "ecdf2200ba3b49acacdfe1390b5f5598c23254d77b444388096ecb5283435231",
+      "lines": 170,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-finite-encoding-and-relocation-witness-data",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/r2-static-observations.json",
+      "bytes": 4957,
+      "git_blob_sha": "19cbd5791513e8d056ac0f30ad91fd56137e32e1",
+      "sha256": "901748c67e1436b76cb1627b5b05705c18c2f4cec531d75e057e7b42e744d880",
+      "lines": 229,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-finite-encoding-and-relocation-witness-data",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 29588
+    },
+    "cumulative_direct_read": {
+      "paths": 483,
+      "unique_blobs": 483,
+      "bytes": 3683240
+    },
+    "additional_identical_blob_paths": 53,
+    "alias_distinct_blobs": 23,
+    "semantic_covered_paths_including_aliases": 536,
+    "remaining_paths_without_full_semantic_read_or_alias": 5057,
+    "remaining_distinct_blobs_without_full_semantic_read": 3946,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 29588,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Four complete JSON records read; original bounded field decoding and arithmetic only, without assembling or executing programs.",
+    "Seventy-three expected snippets decode consistently with retained contract fields; this is not new candidate encoding, exhaustive x86 validation or fresh external-manual verification.",
+    "Fourteen concrete and four abstract rel32 cases reconcile; abstract endpoints are not reachable source programs under admitted size limits.",
+    "Code/map byte buffers reconstructed only from authored literal expectations to verify identities; no ELF or native-builder output generated.",
+    "Program source hashes remain declarations until the two tiny source texts are acquired; predicted exits are not observed behavior.",
+    "Six R1/R2 displacement rows and fifteen syscall-site declarations reconcile internally; no ELF/disassembly payload or binary diff newly verified.",
+    "Saved structural booleans and finite witness expectations retain historical scope and confer no execution authority."
+  ],
+  "review_report": "base12-builder-encoding-witnesses.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

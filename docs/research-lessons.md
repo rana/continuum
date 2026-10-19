@@ -265,6 +265,8 @@ The [builder source return](source-review/base12-builder-source-boundary.md) tra
 
 The [builder static-review return](source-review/base12-builder-static-review.md) preserves a concrete argv defect missed by structural inspection and found through source review. Correct bytes, boundaries and patches do not establish intended argument semantics. Hand-derived expectations, internal saved-layout consistency and later execution should remain separate evidence classes, with deliberately redundant guards identified honestly.
 
+The [builder encoding-witness return](source-review/base12-builder-encoding-witnesses.md) verifies exact finite expectation identities without converting them into execution evidence. Concrete relocation examples, unreachable abstract endpoints, predicted program exits and saved binary observations serve different roles. A continuation should retain each role so later actual results can be compared without rewriting the history of the prediction.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

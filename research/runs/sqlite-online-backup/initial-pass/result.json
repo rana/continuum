@@ -1,0 +1,113 @@
+{
+  "schema": "continuum.sqlite_backup_experiment.v1",
+  "binary": "/home/rana/Documents/ChatGPT/Continuum/pilots/csv-checkpoint/runtime/continuum",
+  "binary_sha256": "81dd3a7e25c3d00714f42e127ae114118001720148eb5719110e79fa98a22eb9",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "sqlite": "3.46.1",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "source_wal_bytes_before_backup": 107152,
+  "main_only_copy_head": null,
+  "pinned_head": {
+    "generation": 2,
+    "root": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00"
+  },
+  "restored_head": {
+    "generation": 2,
+    "root": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00"
+  },
+  "live_head_after_backup": {
+    "generation": 3,
+    "root": "sha256:fbba497467405f9864c7e604b4e2eba2ab84ba4ecc46ce8cc83bdafaca03af9f"
+  },
+  "cut_objects": 7,
+  "cut_events": 3,
+  "live_objects": 9,
+  "live_events": 4,
+  "backup_steps": 8,
+  "writer_committed_between_steps": true,
+  "restored_integrity_check": [
+    [
+      "ok"
+    ]
+  ],
+  "restored_foreign_key_check": [],
+  "restored_sha256_before_native_open": "1f9bfb4160eb8ee715ce7b759094b15d62b79d26a192741da1ee23f470648880",
+  "exact_replays": [
+    {
+      "receipt": {
+        "observed": null,
+        "outcome": "accepted",
+        "request": {
+          "acceptor": "demo",
+          "candidate": "sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da",
+          "expected": null,
+          "operation_id": "initial",
+          "target": "main"
+        },
+        "resulting": {
+          "generation": 1,
+          "root": "sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da"
+        },
+        "sequence": 1
+      },
+      "replayed": true
+    },
+    {
+      "receipt": {
+        "observed": {
+          "generation": 1,
+          "root": "sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da"
+        },
+        "outcome": "accepted",
+        "request": {
+          "acceptor": "demo",
+          "candidate": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00",
+          "expected": {
+            "generation": 1,
+            "root": "sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da"
+          },
+          "operation_id": "agent-a",
+          "target": "main"
+        },
+        "resulting": {
+          "generation": 2,
+          "root": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00"
+        },
+        "sequence": 2
+      },
+      "replayed": true
+    },
+    {
+      "receipt": {
+        "observed": {
+          "generation": 2,
+          "root": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00"
+        },
+        "outcome": "precondition_failed",
+        "request": {
+          "acceptor": "demo",
+          "candidate": "sha256:fbcc5463e22064a243671a01c16f1742c2eef5608316d34d07e80ea99d9be0ac",
+          "expected": {
+            "generation": 1,
+            "root": "sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da"
+          },
+          "operation_id": "agent-b",
+          "target": "main"
+        },
+        "resulting": {
+          "generation": 2,
+          "root": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00"
+        },
+        "sequence": 3
+      },
+      "replayed": true
+    }
+  ],
+  "operation_conflict_error": {
+    "error": "operation ID was already used for a different request"
+  },
+  "late_receipt_absent_from_restore": true,
+  "late_blob_absent_from_restore": true,
+  "restored_inventory_unchanged_after_retries": true,
+  "scope": "Completed local backup, pinned cut and same-version restore; no crash/publication/upgrade/power-loss guarantee."
+}

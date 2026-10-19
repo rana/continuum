@@ -1,0 +1,17 @@
+{
+  "source_commit": "4fc43550866a2794c1bdd492a4b1a79b0883faa4",
+  "captured_after_execution_utc": "2026-10-19T07:00:49.739991+00:00",
+  "final_command": [
+    "python3",
+    "research/runs/sqlite-online-backup/run.py",
+    "--binary",
+    "../pilots/csv-checkpoint/runtime/continuum",
+    "--output",
+    "../pilots/sqlite-online-backup-final"
+  ],
+  "final_run_script_sha256": "cdd0c2f479ce4571426310d61cfc5005c6a10c485d079996871d1210393c0051",
+  "initial_run": "initial-pass",
+  "pre-review-schema-refinement": "observed",
+  "review-revised-run": "final",
+  "scope": "Projection excludes transient databases and WAL/SHM files; rows, source inputs, native stdout/stderr and backup progress retained."
+}

@@ -1,0 +1,10 @@
+{
+  "acceptor": "demo",
+  "target": "main",
+  "operation_id": "after-backup-cut",
+  "expected": {
+    "generation": 2,
+    "root": "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00"
+  },
+  "candidate": "sha256:fbba497467405f9864c7e604b4e2eba2ab84ba4ecc46ce8cc83bdafaca03af9f"
+}

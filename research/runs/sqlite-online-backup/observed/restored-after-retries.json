@@ -1,0 +1,136 @@
+{
+  "application_id": 1129270868,
+  "user_version": 1,
+  "schema": [
+    [
+      "index",
+      "events_target",
+      "events",
+      "CREATE INDEX events_target ON events(acceptor,target,sequence)"
+    ],
+    [
+      "index",
+      "sqlite_autoindex_events_1",
+      "events",
+      null
+    ],
+    [
+      "index",
+      "sqlite_autoindex_heads_1",
+      "heads",
+      null
+    ],
+    [
+      "index",
+      "sqlite_autoindex_objects_1",
+      "objects",
+      null
+    ],
+    [
+      "table",
+      "events",
+      "events",
+      "CREATE TABLE events (\n    sequence INTEGER PRIMARY KEY,\n    acceptor TEXT NOT NULL,\n    target TEXT NOT NULL,\n    operation_id TEXT NOT NULL,\n    request BLOB NOT NULL,\n    receipt TEXT NOT NULL,\n    UNIQUE (acceptor,operation_id)\n) STRICT"
+    ],
+    [
+      "table",
+      "heads",
+      "heads",
+      "CREATE TABLE heads (\n    acceptor TEXT NOT NULL,\n    target TEXT NOT NULL,\n    root TEXT NOT NULL REFERENCES objects(id),\n    generation INTEGER NOT NULL CHECK (generation > 0),\n    PRIMARY KEY (acceptor,target)\n) STRICT"
+    ],
+    [
+      "table",
+      "objects",
+      "objects",
+      "CREATE TABLE objects (\n    id TEXT PRIMARY KEY NOT NULL,\n    canonical BLOB NOT NULL\n) STRICT"
+    ],
+    [
+      "trigger",
+      "events_no_delete",
+      "events",
+      "CREATE TRIGGER events_no_delete BEFORE DELETE ON events BEGIN SELECT RAISE(ABORT,'append-only event'); END"
+    ],
+    [
+      "trigger",
+      "events_no_update",
+      "events",
+      "CREATE TRIGGER events_no_update BEFORE UPDATE ON events BEGIN SELECT RAISE(ABORT,'append-only event'); END"
+    ],
+    [
+      "trigger",
+      "objects_no_delete",
+      "objects",
+      "CREATE TRIGGER objects_no_delete BEFORE DELETE ON objects BEGIN SELECT RAISE(ABORT,'immutable object'); END"
+    ],
+    [
+      "trigger",
+      "objects_no_update",
+      "objects",
+      "CREATE TRIGGER objects_no_update BEFORE UPDATE ON objects BEGIN SELECT RAISE(ABORT,'immutable object'); END"
+    ]
+  ],
+  "objects": [
+    [
+      "sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da",
+      "636F6E74696E75756D2E6F626A65637400000102000000010000000968656C6C6F2E7478747F20EF2D93CA7C8EFECCAEA5FF2E66AAD6BF88D8355E390D3A543E011C7E9838"
+    ],
+    [
+      "sha256:4568336d847f05e11ef48c212f8f4e09315e5afc220ad2dd656d1d595369ad46",
+      "636F6E74696E75756D2E6F626A65637400000103313D381A4AB0CB9F968C23D3BA9FFF544B32BB41D2D429D84935FC831F7410DA000000003444656D6F6E7374726174696F6E206465636C61726174696F6E206F6E6C793B206E6F20766572696669657220657865637574656400"
+    ],
+    [
+      "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00",
+      "636F6E74696E75756D2E6F626A65637400000102000000010000000968656C6C6F2E7478747808FD8EEB849AC7FACD9DBB7FEF0EC39304B1FED0D7D3BD2DB9AF3C66410CCE"
+    ],
+    [
+      "sha256:7808fd8eeb849ac7facd9dbb7fef0ec39304b1fed0d7d3bd2db9af3c66410cce",
+      "636F6E74696E75756D2E6F626A656374000001010000000E68656C6C6F2C206167656E74730A"
+    ],
+    [
+      "sha256:7f20ef2d93ca7c8efeccaea5ff2e66aad6bf88d8355e390d3a543e011c7e9838",
+      "636F6E74696E75756D2E6F626A656374000001010000000668656C6C6F0A"
+    ],
+    [
+      "sha256:bc9803555d5a6194886186d7ee86bf4e7228fb8665cf3cc9515d8f31284f091a",
+      "636F6E74696E75756D2E6F626A656374000001010000001468656C6C6F2C20776F726B73746174696F6E730A"
+    ],
+    [
+      "sha256:fbcc5463e22064a243671a01c16f1742c2eef5608316d34d07e80ea99d9be0ac",
+      "636F6E74696E75756D2E6F626A65637400000102000000010000000968656C6C6F2E747874BC9803555D5A6194886186D7EE86BF4E7228FB8665CF3CC9515D8F31284F091A"
+    ]
+  ],
+  "heads": [
+    [
+      "demo",
+      "main",
+      "sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00",
+      2
+    ]
+  ],
+  "events": [
+    [
+      1,
+      "demo",
+      "main",
+      "initial",
+      "636F6E74696E75756D2E6163636570740000010000000464656D6F000000046D61696E00000007696E697469616C00313D381A4AB0CB9F968C23D3BA9FFF544B32BB41D2D429D84935FC831F7410DA",
+      "{\"sequence\":1,\"request\":{\"acceptor\":\"demo\",\"target\":\"main\",\"operation_id\":\"initial\",\"expected\":null,\"candidate\":\"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\"},\"outcome\":\"accepted\",\"observed\":null,\"resulting\":{\"root\":\"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\",\"generation\":1}}"
+    ],
+    [
+      2,
+      "demo",
+      "main",
+      "agent-a",
+      "636F6E74696E75756D2E6163636570740000010000000464656D6F000000046D61696E000000076167656E742D6101313D381A4AB0CB9F968C23D3BA9FFF544B32BB41D2D429D84935FC831F7410DA000000000000000167B22A376C51515EBAB7FD7073426595AE066F079736969EB17CEA1B4BA72B00",
+      "{\"sequence\":2,\"request\":{\"acceptor\":\"demo\",\"target\":\"main\",\"operation_id\":\"agent-a\",\"expected\":{\"root\":\"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\",\"generation\":1},\"candidate\":\"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\"},\"outcome\":\"accepted\",\"observed\":{\"root\":\"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\",\"generation\":1},\"resulting\":{\"root\":\"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\",\"generation\":2}}"
+    ],
+    [
+      3,
+      "demo",
+      "main",
+      "agent-b",
+      "636F6E74696E75756D2E6163636570740000010000000464656D6F000000046D61696E000000076167656E742D6201313D381A4AB0CB9F968C23D3BA9FFF544B32BB41D2D429D84935FC831F7410DA0000000000000001FBCC5463E22064A243671A01C16F1742C2EEF5608316D34D07E80EA99D9BE0AC",
+      "{\"sequence\":3,\"request\":{\"acceptor\":\"demo\",\"target\":\"main\",\"operation_id\":\"agent-b\",\"expected\":{\"root\":\"sha256:313d381a4ab0cb9f968c23d3ba9fff544b32bb41d2d429d84935fc831f7410da\",\"generation\":1},\"candidate\":\"sha256:fbcc5463e22064a243671a01c16f1742c2eef5608316d34d07e80ea99d9be0ac\"},\"outcome\":\"precondition_failed\",\"observed\":{\"root\":\"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\",\"generation\":2},\"resulting\":{\"root\":\"sha256:67b22a376c51515ebab7fd7073426595ae066f079736969eb17cea1b4ba72b00\",\"generation\":2}}"
+    ]
+  ]
+}

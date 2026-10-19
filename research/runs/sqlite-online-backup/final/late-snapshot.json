@@ -1,0 +1,9 @@
+{
+  "type": "snapshot",
+  "entries": [
+    {
+      "path": "late.txt",
+      "blob": "sha256:e04282ab8d2ef68656c16106f71bbc56559e72a11474bafbe9622d55ce93b2b7"
+    }
+  ]
+}

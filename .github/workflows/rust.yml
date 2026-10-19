@@ -53,3 +53,7 @@ jobs:
           python3 research/runs/source-bound-verification/check_failure_capture.py --binary target/debug/continuum --build-provenance "$RUNNER_TEMP/checkpoint-build.json" --output "$RUNNER_TEMP/source-bound-failure"
       - name: Verify bounded receipt projection and receiver exposure
         run: python3 research/runs/bounded-receipt-view/verify_records.py
+      - name: Check pinned SQLite online backup and restore
+        run: |
+          python3 research/runs/sqlite-online-backup/verify_records.py
+          python3 research/runs/sqlite-online-backup/run.py --binary target/debug/continuum --output "$RUNNER_TEMP/sqlite-online-backup"

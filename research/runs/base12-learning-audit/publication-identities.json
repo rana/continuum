@@ -1,0 +1,20 @@
+{
+  "source_baseline": "8ff1b908accffe68c23a89396b8faa4c69f4e991",
+  "files": [
+    {
+      "path": "docs/source-review/base12-learning-audit.md",
+      "bytes": 5369,
+      "sha256": "f7335e798c26f156424179b2b87e756412df09372faab2a26d24d830ec9312e2"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-learning-audit.json",
+      "bytes": 4290,
+      "sha256": "67e60f7a7e0ae6fd0dad836062b3e4321c94bbc8b3ab0ccf9e21db4cb51b60e0"
+    },
+    {
+      "path": "research/runs/base12-learning-audit/validation.json",
+      "bytes": 4445,
+      "sha256": "4c69a4faf5edff328d8c718b32c5cb2f49867bbfc50f61631fba2fa02dab1944"
+    }
+  ]
+}

@@ -195,6 +195,8 @@ The [consumer-source return](source-review/base12-consumer-source.md) confirms t
 
 The [consumer-records return](source-review/base12-consumer-records.md) resolves local selector ordinals through each arm dictionary: equal numbers can name different models, and equal models can use different numbers. Continuum projections should retain the defining dictionary and parent artifact. Saved accounting, counters and identities reconcile; repeated result/stdout and intake copies add no independent observation. Waveform costs, greedy replay and native generation remain unperformed.
 
+The [learning-audit return](source-review/base12-learning-audit.md) inspects the actual saved-data acceptance predicate and keeps one missing input explicit despite a historical pass. It distinguishes full candidate-table bounds from selected raw-fallback bounds, and compares forty recorded encoders with a larger synthetic configuration set without inferring missing decoder observations. Continuum should preserve audit input closure, scope and quantity type alongside verdicts. No audit, greedy replay or native program ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

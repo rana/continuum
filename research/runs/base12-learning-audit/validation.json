@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "source_baseline": "8ff1b908accffe68c23a89396b8faa4c69f4e991",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 3,
+  "verified_source_bytes": 29899,
+  "python_full_text_read_and_syntax_parsed": 1,
+  "json_full_text_read_and_duplicate_key_checked": 2,
+  "audit_source_hash_matches_receipt": true,
+  "audit_input_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/pre-run.json",
+      "declared_bytes": 716,
+      "declared_sha256": "4f33ca9e7368037019f4cb4dc1031beb5375e9dd07ac30387e78440d58afda24",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/model-freeze.json",
+      "declared_bytes": 368,
+      "declared_sha256": "0cd89b68bb518591ff7db012ce10adee81c0f251b131f56e0dd735ea380e5266",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/learned.json",
+      "declared_bytes": 677,
+      "declared_sha256": "6b3044efde002522f970c7f09f6f2204ad93fb21eb89e187ab4fb6f9338652f8",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/training-costs.json",
+      "declared_bytes": 205827,
+      "declared_sha256": "0cfe8e344975eb508d0e7dcc3f1be04beb285f8cf2ec1b47f28d94ed3b9884ca",
+      "payload_acquired": false,
+      "matched": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/overlap.json",
+      "declared_bytes": 266,
+      "declared_sha256": "23eb17161e607786fd3c71cac442cfbe66582867e256288feb8e81415b678108",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/checks.json",
+      "declared_bytes": 13748,
+      "declared_sha256": "3c229b2223572db04b3e7aab30126c4139f7f3bec41993fcb7de5f8c29ae3134",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/RESULTS.json",
+      "declared_bytes": 17237,
+      "declared_sha256": "e9dc55450019ccfffeb76e318efdd1b6e09e19a5cd7e75ac7b88e179c160884a",
+      "payload_acquired": true,
+      "matched": true
+    }
+  ],
+  "synthetic_identity_rows_read": 84,
+  "synthetic_expected_configuration_set_matches": true,
+  "recorded_encoder_identities_match_synthetic": 40,
+  "recorded_encoder_bytes": 7472,
+  "synthetic_source_hashes_match_acquired_bytes": true,
+  "original_and_executor_synthetic_count_categories_match": true,
+  "original_and_executor_elapsed_and_platform_differ": true,
+  "audit_saved_training_summaries_agree": true,
+  "predictive_block_cost_bounds": {
+    "full_block_samples": 4096,
+    "partition_samples": 256,
+    "partition_count": 16,
+    "selector_length_bytes": 3,
+    "minimum_partition_bytes": 33,
+    "minimum_predictive_block_bytes": 531,
+    "escape_partition_bytes": 417,
+    "maximum_predictive_block_bytes": 6675,
+    "raw_block_bytes": 6147,
+    "reported_observed_min": 1799,
+    "reported_observed_max": 6670
+  },
+  "training_cost_rows_acquired": false,
+  "greedy_selection_independently_replayed": false,
+  "audit_script_executed": false,
+  "native_code_executed_or_regenerated": false,
+  "no_upstream_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/training-costs.json",
+      "bytes": 205827
+    }
+  ],
+  "next_scope_bytes": 205827,
+  "public_contribution_checks": [
+    "JSON parsing, coverage and input-binding arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "record_kind": "continuation_setup_observation",
+  "observed_at": "2026-10-19 05:33:33 UTC",
+  "repository": "https://github.com/rana/continuum",
+  "manual_unit_publication": {
+    "commit": "8e400c1946838be4e601261ae35c3cc81750c042",
+    "ci_run": "https://github.com/rana/continuum/actions/runs/39204429362",
+    "conclusion": "success",
+    "workload_record": "research/runs/release-baseline-2026-10-19/provenance.json"
+  },
+  "scheduler": {
+    "creation_success": true,
+    "title": "Advance Continuum",
+    "is_enabled": true,
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Los_Angeles:20261018T224500\nRRULE:FREQ=HOURLY\nEND:VEVENT",
+    "timing_mode": "flexible_schedule",
+    "timezone": "America/Los_Angeles",
+    "updated_at": "2026-10-19T05:29:22.445370+00:00",
+    "next_run_time": null,
+    "last_run_time": null,
+    "model_setting_exposed": false
+  },
+  "verified_capabilities": [
+    "GitHub repository read/write",
+    "Task-executor Rust compilation and execution",
+    "Actual supplied-context Claude collaborator"
+  ],
+  "not_established": [
+    "Completed unattended Continuum run",
+    "A Continuum worker or installation on the user workstation",
+    "A callable direct Dot/Codex dispatch route",
+    "A selected Sol model for this scheduled task"
+  ],
+  "source_of_truth": "The scheduler service is authoritative for its current task state; this is a dated observation of a successful creation response. No schedule ID is published.",
+  "note": "Other projects' responsibilities were not modified. The first unattended run should retain its actual contribution and validation evidence."
+}

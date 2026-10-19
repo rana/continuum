@@ -40,7 +40,11 @@ Choose further machinery from observed needs. The first prototype does not yet i
 
 ## Select the next useful unit
 
-Start from current priorities and actual ownership. The present next question is how context preparation and selection behave as retained history grows, with mandatory facts, byte budget, omission coverage, and expected outcomes held explicit. Read the existing workload and context APIs, define a bounded comparison, implement only what that comparison needs, execute it, and preserve the result and limitations. Do not optimize storage before identifying the relevant cost.
+Start from current priorities and actual ownership. Rana's latest direction is to learn the product's design by actually using it. Read `docs/experiments/real-use-pilot.md`. The first consumer is Continuum's own development; a small independent public example follows to expose assumptions that only fit this project.
+
+The next useful implementation is a small repeatable project-checkpoint entry point using the existing CLI: exact source, authored WorkState, prepared context with coverage, and build/run provenance. Use it in one real successor handoff, recording what the receiver needed, what was missing or unused, extra retrieval, and actual consequence. Keep the first store disposable unless the preservation/upgrade path is ready. A workstation installation must be observed on the actual host. For persistent use, separate binary and data, identify exact builds, reject unsupported store formats, and test consistent SQLite backup/restore; copying only the main file of an active WAL database is insufficient.
+
+Context-history scaling remains a useful follow-up: hold mandatory facts, byte budget, omission coverage, environment, and expected outcomes explicit. Choose it when actual use identifies the relevant need. Do not optimize storage before identifying the relevant cost.
 
 If newer evidence makes a different unit more useful, explain the choice and proceed. If execution is unavailable, advance an actionable source-review, derivation, or design unit instead. Genuine negative findings and clarified constraints count as progress. Repeated unchanged recaps do not.
 

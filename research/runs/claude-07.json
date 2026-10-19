@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "record_kind": "recorded_model_execution",
+  "attempt_id": "design-claude-07",
+  "recorded_at": "2026-10-19 05:33:33 UTC",
+  "started_at": {
+    "current_time": "2026-10-19 05:26:21 UTC"
+  },
+  "finished_at": {
+    "current_time": "2026-10-19 05:26:50 UTC"
+  },
+  "executor": {
+    "vendor": "anthropic",
+    "service": "aws-bedrock",
+    "adapter": "claude-collaborator",
+    "revision": null
+  },
+  "requested": {
+    "model_selector": "opus",
+    "settings": {
+      "effort": "medium"
+    }
+  },
+  "observed": {
+    "status": "OK",
+    "text": "# First Real-Use Trial for Continuum: Design Recommendation\n\n**Status:** These are recommendations only. Nothing below has been deployed. Workstation installation, Codex dispatch and the hourly continuation have not been verified.\n\n## What you're reaching for\n\nYou want a **practice ground**. Continuum should become a tool you think *with*, so that using it shows what it should become. Underneath that is a question no defect test can answer: *does this actually make continuation easier, or does it add paperwork?* You also want room to experiment without endangering Base12 or Prime Radiant.\n\n## Where it runs\n\n- **Now:** run it in the Chat executor, with GitHub as the durable exchange point. This already works.\n- **Later, on the workstation:** admit it only after three things exist:\n  - a pinned release binary,\n  - a project data directory kept separate from that binary,\n  - a backup step that runs before every upgrade.\n\n  Installing from a moving source checkout is not acceptable.\n\n## Consumers\n\n1. **First: Continuum itself.**\n   - It's public, already has handoffs, and every Chat↔Codex transition becomes a real test.\n   - Risk: self-reference can hide awkwardness, because we already know the tool.\n2. **Second: a small, independent, public CLI project in a sandbox** (e.g., a unit or date normalizer).\n   - Its owner and vocabulary differ from Continuum's, which exposes assumptions that only fit Continuum.\n3. **Base12 / Prime Radiant: deferred.**\n   - Bring them in only after the trial, with their owners' consent, and with private sources staying private.\n\n## Updating without losing evidence\n\n- **Version stamping:** stamp each binary with its commit, build hash and supported store schema. Every receipt records the engine version that wrote it.\n- **No silent migration:** a binary refuses to open a store with an unknown schema. A schema change means exporting to a new store alongside the old one, never altering it in place.\n- **Backup before upgrade:** before swapping binaries, copy the SQLite file with a checksum into an archive.\n- **Rollback:** restore the previous binary and its matching store file together.\n- **Old binaries kept:** retain previous release binaries so historical verification can be rerun exactly.\n\n## Bounded trial\n\n**Scope:** about 10 real handoffs or two weeks, whichever comes first.\n\n**Per handoff, record one short note in `trials/` on GitHub:**\n- What the receiver needed but the pack lacked.\n- What the pack included that went unused.\n- Questions the receiver asked that the pack should have answered.\n- Minutes spent on Continuum upkeep versus actual work.\n- Whether anything was trusted only because the CLI trusts the caller.\n\n**Beyond defects, watch for:**\n- Workarounds.\n- Steps people skip.\n- Places where WorkState's shape feels forced.\n- Whether whole-record byte-bounded selection is the right unit.\n\n**Decision rule at the end:**\n- If packs are routinely supplemented by hand, or upkeep regularly rivals work time, change the design before adding anything new.\n- If neither happens, keep the current design and add the second consumer.\n\n## Concept that use may reveal\n\n**Gap records.** Today, dispatch states are claims written by the sender. The receiver could instead record a small \"needed X, didn't have it\" entry linked to the pack it received. Gap records would:\n- turn context selection from a fixed rule into something that learns from observed use,\n- begin to separate *observed* outcomes from *authored* ones.\n\nTest this manually in the trial notes first. Only build it into the engine if the notes show a pattern.\n\n## Next Codex unit (small, no new platform)\n\n1. Version stamping, plus a check that refuses unknown store schemas.\n2. A backup-before-upgrade script and a rollback procedure.\n3. A `trials/` note template and README.\n4. Optionally, ingest trial notes as EvidenceRecords. This should require no new engine semantics.",
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 1415,
+      "output_tokens": 2232,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none",
+    "image_count": 0,
+    "images": []
+  },
+  "inputs": {
+    "request_record_ref": "docs/collaboration/requests/claude-07.json",
+    "source_exposure": "Full latest real-use user transcription and supplied coordinator summaries of current public implementation, evidence, access limits and candidate consumers. No direct source or workstation access.",
+    "prior_exchange_supplied": false
+  },
+  "status": "completed",
+  "output_ref": "docs/collaboration/2026-10-19-claude-07.md",
+  "limitations": [
+    "Supplied-text design consultation, not independent execution or deployment.",
+    "Reported model/usage metadata is not independently verified.",
+    "No hidden reasoning retained.",
+    "Coordinator corrections on SQLite backups, build identity and existing authorization appear in the collaboration README."
+  ]
+}

@@ -85,6 +85,8 @@ Actual Claude reviews contribute another perspective at consequential decisions.
 
 ## The longer vision
 
+The [real-use pilot](experiments/real-use-pilot.md) makes Continuum itself the first consumer, followed by a small independent example. Its purpose is to discover useful design changes through actual handoffs, including missing context, awkward record shapes, unused material, and upkeep cost. A persistent workstation pilot needs exact build identity and a tested data-preservation path; current executor use is not a workstation deployment.
+
 The next useful progression is to show better continuation on real work: a fresh session recovers the correct next action; an interrupted external attempt can be reconciled; another host receives exact artifacts and accepted responsibility; changed assumptions identify the decisions worth revisiting. Each step needs its own working mechanism and evidence.
 
 Further out, an agent could ask for the smallest sufficient context for one decision, compare alternative investigations without merging them prematurely, reuse an observation only within its valid scope, and re-evaluate selected work when a new model or tool changes what is possible. A release could retain exact artifacts, compatibility, evidence, and accepted scope while development continues in other streams.

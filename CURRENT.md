@@ -15,7 +15,7 @@ Continuum is a native work and evidence engine for continuing AI engineering. Th
 - Local SQLite expected-root/generation acceptance, operation identity binding, durable retries, and receipt queries.
 - Four agent-guided protocols: Progress Brief, Holographic Walk, Research Record, Bounded Research Loop.
 - Versioned digest-pinned registry, protocol schemas and fixtures, and a proposed execution-metadata schema.
-- Six further actual Claude Opus 5.5 exchanges, with supplied-input custody, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the fifth and sixth review unattended work and the Base12 continuity pattern. Private cross-project context in those latest requests is explicitly redacted from the public projections and retained privately. The original briefs also retain their historical exchanges.
+- Seven further actual Claude Opus 5.5 exchanges, with supplied-input custody, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the fifth and sixth review unattended work and the Base12 continuity pattern; the seventh selects a real-use pilot. Private cross-project context in requests five and six is explicitly redacted from the public projections and retained privately. The original briefs also retain their historical exchanges.
 - Exact WorkState records, bounded whole-record context selection, retained rendered packs, historical and current-anchor verification, and explicit handoff acknowledgement-reference checks.
 - A reproducible context example using independently started CLI processes.
 - One actual fresh Claude continuation from an 8,321-byte pack, with an exact model-authored acknowledgement whose references passed native verification.
@@ -53,7 +53,9 @@ The first [GitHub Actions run](https://github.com/rana/continuum/actions/runs/39
 
 ## Next useful unit
 
-The first release workload is complete. Next, measure how context preparation and selection change with a controlled growth in retained history, keeping the mandatory facts, byte budget, environment, and correctness expectations explicit. Preserve raw results and actual omission coverage before changing the storage engine. If that unit's execution capability is unavailable, advance the next bounded source-review group from the coverage ledgers instead of writing another unchanged status recap.
+The first release workload is complete. The user's latest direction prioritizes learning the design through actual use. Next, follow the [real-use pilot](docs/experiments/real-use-pilot.md): implement a small repeatable project checkpoint using the existing CLI, then observe one genuine successor handoff on Continuum's own development. Record the context actually supplied, extra retrieval, missing or unused material, useful outcomes, and upkeep. Keep the initial store disposable unless its preservation/upgrade contract is ready. No ongoing adoption study or workstation installation has yet been completed.
+
+Controlled context-history scaling remains a follow-up when use identifies the need. Keep mandatory facts, byte budget, environment, omission coverage, and expected outcomes explicit. If the selected unit's execution capability is unavailable, advance the next bounded source-review group from the coverage ledgers instead of writing another unchanged status recap.
 
 The [fresh-model trial](research/continuation-trial/README.md) is complete. The full upstream reading request and a controlled model-performance comparison remain open.
 
@@ -61,6 +63,8 @@ Before adding a remote executor or model runner, specify durable dispatch and un
 
 ## Continuation setup
 
-The operating method and first manual unit are prepared and verified locally. A recurring Continuum task is being configured separately; this checkpoint does not yet establish a completed unattended run. Read the task's actual execution history before claiming that it has run.
+The operating method, complete Codex handoff, orientation, workload, and raw observations were published in `8e400c1946838be4e601261ae35c3cc81750c042`. Its [GitHub CI run](https://github.com/rana/continuum/actions/runs/39204429362) passed, including the new workload smoke invocation.
+
+The recurring **Advance Continuum** task was confirmed created and enabled at 2026-10-19 05:29:22 UTC. It requests hourly flexible scheduling in `America/Los_Angeles`, with a start anchor of 2026-10-18 22:45. The creation response provided no precise next-run timestamp and no completed run. The [setup observation](research/runs/continuation-setup-2026-10-19.json) preserves that distinction. Read actual task history before claiming unattended progress. This is the single Continuum continuation responsibility; it is not a 15-minute recurring timer.
 
 GitHub read/write and the supplied-context Claude collaborator were verified in this session. No direct Dot dispatch or user-workstation Continuum worker was verified. A ready startup prompt is available in the operating document. Existing responsibilities for other projects are separate and were not changed.

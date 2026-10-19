@@ -1,6 +1,6 @@
 # Actual Claude collaboration
 
-The initial historical briefs contain earlier preserved Claude exchanges. This directory records six further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC.
+The initial historical briefs contain earlier preserved Claude exchanges. This directory records seven further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC.
 
 | Exchange | Actual exposure | Result |
 |---|---|---|
@@ -10,10 +10,13 @@ The initial historical briefs contain earlier preserved Claude exchanges. This d
 | [4](2026-10-19-claude-04.md) | Only an 8,321-byte native context rendering for the real project plus a short task request; no prior exchange or source objects | Recovered reported completion, renewed publication authorization, pending authentication, and a bounded next step; supplied an acknowledgement that passed native reference checks |
 | [5](2026-10-19-claude-05.md) | Full latest user request for unattended progress, verified project/runtime facts, candidate operating model | Favored useful bounded units, explicit schedule/run/progress evidence, and a release workload; ownership and timing claims needed correction |
 | [6](2026-10-19-claude-06.md) | Full timer request and Base12 follow-up, recovered workflow/model recommendations, actual setup observations, and coordinator corrections | Favored repository Research Deltas and decision-point review; correctly distinguished continuity from execution, but understated the active chat's capabilities |
+| [7](2026-10-19-claude-07.md) | Full user real-use request, current public implementation and measurement summary, runtime limits, candidate consumers | Chose Continuum itself first, a small independent project second, and observations of context gaps; backup and upgrade advice required correction |
 
 The [user wording](2026-10-19-user-brief.md), exact supplied [first request](requests/claude-01.json), [second request](requests/claude-02.json), [third request](requests/claude-03.json), [fourth request](requests/claude-04.json), and [execution metadata](../../research/runs/) are retained. Responses are unedited except for surrounding provenance notes. Claude had no direct filesystem, browser, or repository tools in these exchanges.
 
 The [fifth](requests/claude-05.json) and [sixth](requests/claude-06.json) public request files are explicitly redacted projections because their supplied context included private operating state from another project. Exact request fields and actual responses are retained in the owner's private `Continuum_Continuation_Private_Checkpoint.json`. The public projections preserve request digests and state their encoding; they are not represented as complete reproducers. The complete visible responses and returned metadata remain in this repository.
+
+The [seventh request](requests/claude-07.json) is retained in full; it supplies current public project facts and the complete user request for learning by using the software.
 
 ## Adopted design contributions
 
@@ -74,4 +77,15 @@ Retained corrections:
 4. Lack of a separate Dot/Codex dispatch tool does not imply that a code-capable research session can only summarize. This coordinating session actually implemented, built, tested, and measured a contribution through its available executor and GitHub connection. Future runs must establish their own capabilities; no unattended implementation is inferred merely from the saved schedule.
 5. Inability to set a scheduled task's model to Sol does not demote its engineering judgment or make it authoritative. Evaluate all model output through its evidence. The actual scheduler interface did not expose a model-setting argument.
 6. Repository continuity, a saved schedule, an observed scheduled run, a meaningful research result, and successful CI are distinct facts. A useful derivation or negative finding need not be code to count as progress; passing CI alone does not prove the result's meaning.
+
+## Real-use pilot corrections
+
+Exchange seven usefully frames the project as a tool to think with, selects self-use and an independent consumer, and proposes recording what the receiver needed but could not find. The [pilot](../experiments/real-use-pilot.md) adopts that direction with these corrections:
+
+- A live SQLite WAL store cannot be backed up reliably by copying only the main database file. Use a supported consistent backup mechanism, check its completion, and exercise recovery on a separate destination. The [SQLite backup API](https://www.sqlite.org/backup.html) and [WAL documentation](https://www.sqlite.org/wal.html) establish the relevant boundary.
+- A source build is acceptable when its exact inputs, toolchain, command, and executable are identified. A moving branch name alone is insufficient provenance. No new release ceremony is required for a disposable local trial.
+- Binary version, store schema, object codec, and context schema are distinct compatibility surfaces. The proposed installation and migration behavior is not already implemented. Put build metadata in a trial manifest initially; changing core receipts requires an explicit compatible contract.
+- Restoring an older store can discard accepted work created after that backup. Keep both histories when testing a candidate and reconcile before any destructive data rollback. Software rollback alone does not require erasing later evidence.
+- Existing user authorization remains in effect. Coordinate a later Base12/Prime contribution with its actual current owner and scope without inventing another blanket permission gate.
+- The first few handoffs are an early design-learning checkpoint. They are not a statistical quality estimate or an arbitrary end to continuing development. Administrative upkeep and missing context should be observed before adding a new native gap-record type.
 

@@ -46,6 +46,7 @@ jobs:
       - run: python3 ../../runs/owned-journal-review-01/verify.py
       - run: python3 ../../runs/owned-fence-review-01/verify.py
       - run: python3 ../cli-cost/verify.py
+      - run: python3 ../cli-cost-persistent/verify.py
       - name: Check finite semantic oracle against the SQLite reference
         run: |
           cargo build --manifest-path ../../../Cargo.toml --locked

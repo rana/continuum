@@ -1,0 +1,14 @@
+{
+  "observed_date": "2026-10-19",
+  "probe_source_commit": "e03cca27bb81c4dd018f22a3ff1cea5dfa43f617",
+  "temporary_parent_selection": "new disposable directory on the checkout filesystem via TMPDIR",
+  "findmnt_fstype": "ext4",
+  "statfs_type": "ext2/ext3",
+  "physical_device_or_power_loss_qualified": false,
+  "earlier_result_sha256": "2fc3bc2df0b6687c21435f877d7d000d7653a7cb9bb26bd2c01bdf2b3798d826",
+  "filesystem_repeat_result_sha256": "6c35c28d7dff6c666d20e18aa545b1ad76928daabc31465d3e63c315a08eb3e5",
+  "completed_attempts_this_unit": 1,
+  "new_provider_invocations": 0,
+  "cache_or_cpu_isolation": false,
+  "raw_private_mount_paths_retained": false
+}

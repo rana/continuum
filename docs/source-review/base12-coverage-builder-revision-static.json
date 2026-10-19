@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-migration-records.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/bootstrap.source.py",
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/STATIC_CHECK.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/STATIC_CHECK.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.readelf.txt"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/bootstrap.source.py",
+      "bytes": 24663,
+      "git_blob_sha": "858ec8e528dac3368e59a20d1bdc02e88aac9c2b",
+      "sha256": "bf4a268210ea8987594b34a3525953b06ab61cc3547c822f94717807849a71c1",
+      "lines": 393,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-revision-source-and-saved-structural-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/STATIC_CHECK.json",
+      "bytes": 2123,
+      "git_blob_sha": "70cfea3bd3e34f17fb3f4d410d188a218d2c5b04",
+      "sha256": "9249889bba33143d7206755eccc19d95f76016103c412ca8ef8e24a32c9b782d",
+      "lines": 126,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-revision-source-and-saved-structural-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/STATIC_CHECK.json",
+      "bytes": 2123,
+      "git_blob_sha": "7773d533cc8b81db43e94d418b6feb378a1b66cf",
+      "sha256": "36bed47cd36b406ccaccf397d06e22e0fb06423cee2fd59ef501dd6c6592b5fe",
+      "lines": 126,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-revision-source-and-saved-structural-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.readelf.txt",
+      "bytes": 1534,
+      "git_blob_sha": "3758c19b93ccb095a06f277be83b7ee3cfcebd62",
+      "sha256": "9f7713be741e49a1f98c46a537e4b540afb727ae9a0d7a389bee1b0147151cee",
+      "lines": 30,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-revision-source-and-saved-structural-records",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 30443
+    },
+    "cumulative_direct_read": {
+      "paths": 502,
+      "unique_blobs": 502,
+      "bytes": 3835991
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 579,
+    "remaining_paths_without_full_semantic_read_or_alias": 5014,
+    "remaining_distinct_blobs_without_full_semantic_read": 3927,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 30443,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Four complete texts read, including all R1 bootstrap source; syntax and structural AST comparison only, without importing or emitting code.",
+    "Source correction covers six expanded argument-load sites plus a separate bootstrap source-snapshot write; actual binary six-byte diff remains unverified here.",
+    "Both revisions retain identical structural PASS observations apart from source/ELF digest fields; these checks did not distinguish the recorded argv defect.",
+    "Saved syscall/buffer/readelf fields reconcile internally and with held metadata; no native ELF/disassembly payload or external inspection tool newly ran.",
+    "Identical readelf content establishes no code identity; source-only status remains a historical checkpoint, not current execution state."
+  ],
+  "review_report": "base12-builder-revision-static.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

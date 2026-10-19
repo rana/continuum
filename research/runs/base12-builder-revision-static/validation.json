@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "source_baseline": "084f16fbb68ce03c3842eaa0d6c837c283012721",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 4,
+  "verified_source_bytes": 30443,
+  "full_text_paths_read": 4,
+  "new_semantic_files": 4,
+  "new_semantic_bytes": 30443,
+  "both_source_AST_parse": true,
+  "changed_top_level_functions": [
+    "builder",
+    "main"
+  ],
+  "argument_source_corrections": [
+    {
+      "kind": "validation_loop",
+      "old": [
+        8,
+        16,
+        24
+      ],
+      "new": [
+        16,
+        24,
+        32
+      ],
+      "expanded_load_sites": 3
+    },
+    {
+      "kind": "argument_load",
+      "register": "RDX",
+      "old": 16,
+      "new": 24,
+      "expanded_load_sites": 1
+    },
+    {
+      "kind": "argument_load",
+      "register": "RDX",
+      "old": 24,
+      "new": 32,
+      "expanded_load_sites": 1
+    },
+    {
+      "kind": "argument_load",
+      "register": "RDI",
+      "old": 8,
+      "new": 16,
+      "expanded_load_sites": 1
+    }
+  ],
+  "expanded_argument_load_sites": 6,
+  "source_snapshot_write_added": true,
+  "all_other_source_AST_equal": true,
+  "static_record_changed_fields": [
+    "bootstrap_sha256",
+    "elf_sha256"
+  ],
+  "both_static_PASS": true,
+  "static_syscall_sites": 15,
+  "static_syscall_numbers": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    60,
+    74
+  ],
+  "static_buffer_intervals": 8,
+  "all_saved_metadata_reconciles": true,
+  "saved_readelf_segments": [
+    {
+      "type": "LOAD",
+      "offset": 0,
+      "va": 4194304,
+      "pa": 4194304,
+      "file_bytes": 13740,
+      "memory_bytes": 13740,
+      "flags": "R E",
+      "alignment": 4096
+    },
+    {
+      "type": "LOAD",
+      "offset": 0,
+      "va": 4325376,
+      "pa": 4325376,
+      "file_bytes": 0,
+      "memory_bytes": 155648,
+      "flags": "RW",
+      "alignment": 4096
+    },
+    {
+      "type": "GNU_STACK",
+      "offset": 0,
+      "va": 0,
+      "pa": 0,
+      "file_bytes": 0,
+      "memory_bytes": 0,
+      "flags": "RW",
+      "alignment": 16
+    }
+  ],
+  "identical_readelf_blob_for_both_revisions": true,
+  "actual_binary_diff_verified": false,
+  "candidate_binary_acquired": false,
+  "upstream_source_imported": false,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "check_corrections": [
+    "Initial AST normalizer also selected an unrelated zero-padding loop with the same literal offsets; constrained the correction to its validate_path role before comparison.",
+    "Selected next scope initially included already read CASE_MATRIX/ENVELOPE; replaced them with unread CONTROL_REVIEW after ledger identity check."
+  ],
+  "limits": [
+    "Four complete texts read, including all R1 bootstrap source; syntax and structural AST comparison only, without importing or emitting code.",
+    "Source correction covers six expanded argument-load sites plus a separate bootstrap source-snapshot write; actual binary six-byte diff remains unverified here.",
+    "Both revisions retain identical structural PASS observations apart from source/ELF digest fields; these checks did not distinguish the recorded argv defect.",
+    "Saved syscall/buffer/readelf fields reconcile internally and with held metadata; no native ELF/disassembly payload or external inspection tool newly ran.",
+    "Identical readelf content establishes no code identity; source-only status remains a historical checkpoint, not current execution state."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/README.md",
+      "bytes": 3833,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PREPARATION.json",
+      "bytes": 3950,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PROVENANCE.json",
+      "bytes": 826,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/REVIEW_REQUEST.md",
+      "bytes": 4012,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CONTROL_REVIEW.md",
+      "bytes": 7966,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 20587,
+  "public_contribution_checks": [
+    "four pinned identities and complete text readings passed",
+    "both source ASTs parse and complete source comparison isolates intended corrections",
+    "six expanded argument-load sites and separate snapshot write reconcile",
+    "both static records, fifteen syscall sites, eight intervals and saved readelf fields agree",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

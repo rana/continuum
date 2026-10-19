@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-next-experiments.json",
+  "selected_scope": "research/owned-stack/2026-10-15/lossless-corpus-nomination/",
+  "scope_adjustment": "After reading the three direct-child preservation files, expanded to four originals and exact archive mapping to inspect the actual nomination. No corpus acquisition or execution.",
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/PROVENANCE.json",
+      "git_blob_sha": "32d0c918c3d60e2d185d5f6958ee6d8e0442b5e4",
+      "bytes": 2865,
+      "sha256": "397bb90f8fce06f400ee661b78b4391225702e9140cb43214d6986521b7185ba",
+      "lines": 62,
+      "semantic_review": "full_direct_read",
+      "review_lane": "corpus-nomination-and-preservation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/README.md",
+      "git_blob_sha": "4519d5ba4273531ee5e5a4256659d7b77540da52",
+      "bytes": 3253,
+      "sha256": "09c401ad45142efa22df138fd39d8948cfafcb6a9e617d6d3d30885046f9d642",
+      "lines": 19,
+      "semantic_review": "full_direct_read",
+      "review_lane": "corpus-nomination-and-preservation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/SHA256SUMS.installed.txt",
+      "git_blob_sha": "1e6d774f81184375808505e8b6c6bd96327e5bf0",
+      "bytes": 1234,
+      "sha256": "64d63749f7b3c0559e9f350992e92aa75475afa170d4169efb4a2b03e3bd7fce",
+      "lines": 8,
+      "semantic_review": "full_direct_read",
+      "review_lane": "corpus-nomination-and-preservation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/SHA256SUMS.txt",
+      "git_blob_sha": "2acb901902b821b487a83795d56dc2505e2635fc",
+      "bytes": 294,
+      "sha256": "c0bb29ac169fb3246a6a539436ea2be8b295825c27400eaf65f4ee3ad9b3b73a",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "corpus-nomination-and-preservation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/claude-20261015-corpus-review.md",
+      "git_blob_sha": "381edf02f1081122b4fd29d62ed66c0adaf521c9",
+      "bytes": 14980,
+      "sha256": "291dfe899fb2f8b32b5557559681710ed2368182d6ef59426c095734f28412ee",
+      "lines": 142,
+      "semantic_review": "full_direct_read",
+      "review_lane": "corpus-nomination-and-preservation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/dot-20261015-lossless-corpus-nomination.md",
+      "git_blob_sha": "47d9fb3ea427ac23b9670f19b7119c39e102abf8",
+      "bytes": 7966,
+      "sha256": "b4add4133290740a936b53a01dc44fc764db8fddfb26831ead80989fdae8b81b",
+      "lines": 58,
+      "semantic_review": "full_direct_read",
+      "review_lane": "corpus-nomination-and-preservation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/source-inventory.md",
+      "git_blob_sha": "29836ccc906cadf2c01b960f22d742979e697714",
+      "bytes": 10382,
+      "sha256": "3274cf3c6778eae13ad9f9ccfe05d89ca99a8e90d7f123318d89516f25db77a0",
+      "lines": 111,
+      "semantic_review": "full_direct_read",
+      "review_lane": "corpus-nomination-and-preservation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    }
+  ],
+  "mechanical_only_files": [
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/archives/lossless-corpus-nomination.tar.xz",
+      "git_blob_sha": "03040cad276670da4a0195145639f5eb0110586e",
+      "bytes": 11940,
+      "sha256": "8e85b887609d84f20d93a1356ada1675ce6b021a7edff91e2479e7c33bdcd411",
+      "semantic_review": "not_semantically_reviewed",
+      "programmatic_inspection": {
+        "method": "tar_xz_read_from_verified_memory_bytes_without_extraction_or_execution",
+        "regular_members": 4
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 7,
+      "unique_blobs": 7,
+      "bytes": 40974
+    },
+    "cumulative_direct_read": {
+      "paths": 208,
+      "unique_blobs": 208,
+      "bytes": 1435046
+    },
+    "additional_identical_blob_paths": 48,
+    "alias_distinct_blobs": 18,
+    "semantic_covered_paths_including_aliases": 256,
+    "remaining_paths_without_full_semantic_read_or_alias": 5337,
+    "remaining_distinct_blobs_without_full_semantic_read": 4221,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 8,
+    "this_review_verified_bytes": 52914,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Seven texts fully read; one binary archive mechanically inspected, not promoted to a distinct semantic reading.",
+    "Eight installed-manifest entries checked: seven acquired payloads and one pinned identical-blob alias.",
+    "Private source, transcript, library identifiers and operational payloads are not published.",
+    "No waveform/header payload, corpus release, codec, benchmark, model or upstream code was acquired or executed in this unit.",
+    "Dataset claims and historical model metadata are attributed preserved source; external sources and model serving logs were not independently reverified."
+  ],
+  "review_report": "base12-corpus-preservation.md"
+}

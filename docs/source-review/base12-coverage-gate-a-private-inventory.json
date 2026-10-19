@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-result-acceptance.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/PRIVATE_INVENTORY.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/PRIVATE_INVENTORY.json",
+      "bytes": 59438,
+      "git_blob_sha": "05fcd8008d3635bcb15eabc00025e245a52741de",
+      "sha256": "404b0d803756873aeea10d42b45739be22f6f07084c5c9bbd6cd4d525d69fa57",
+      "lines": 1847,
+      "semantic_review": "full_field_preserving_view_read_with_exact_byte_roundtrip",
+      "review_lane": "gate-a-private-inventory-metadata",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 59438
+    },
+    "cumulative_direct_read": {
+      "paths": 452,
+      "unique_blobs": 452,
+      "bytes": 3501864
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 504,
+    "remaining_paths_without_full_semantic_read_or_alias": 5089,
+    "remaining_distinct_blobs_without_full_semantic_read": 3977,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 59438,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All header fields, 61 digest values and 368 ordered rows read through a field-preserving view; full original JSON byte roundtrip passed.",
+    "The 352 expected output-related metadata paths match exactly, not an observed current filesystem inventory.",
+    "Eighty-four synthetic/EINTR output hash declarations and retained pair agree with earlier metadata; named output payloads remain unacquired.",
+    "Forty-four entry-receipt hashes match some exact expected NUL-delimited permutation; no raw entry receipt was opened and no live lstat/absence checked.",
+    "Seventy-nine staging rows declare empty bytes; twelve trace digests match summaries, without reading raw traces or testing injection behavior.",
+    "Fifteen root receipt copies bind held bytes; raw process list remains omitted and no process-identity attribution is inferred.",
+    "Gate-A metadata/source review is scoped: one empty stream is mechanical, two instruction texts and two binary artifacts remain without semantic credit.",
+    "No original audit, native/controller code, model invocation or named private payload executed/acquired; no raw inventory or operational root published."
+  ],
+  "review_report": "base12-gate-a-private-inventory.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

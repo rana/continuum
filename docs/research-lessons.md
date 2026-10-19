@@ -253,6 +253,8 @@ The [Gate-A envelope-review return](source-review/base12-gate-a-envelope-review.
 
 The [Gate-A result-acceptance return](source-review/base12-gate-a-result-acceptance.md) binds six preserved review payloads while retaining the remote audit’s reliance on frozen control flow and separate on-host trace/filesystem observations. Accepted evidence can be reusable without becoming authenticated telemetry or renewed execution authority. A qualified transient-process description remains qualified rather than becoming causal attribution.
 
+The [Gate-A inventory return](source-review/base12-gate-a-private-inventory.md) fully reconciles saved output metadata through an exact reconstructible view while preserving missing-payload, live-filesystem and on-host observation dependencies. A complete expected path/hash set can support accepted evidence without becoming current absence, file-type or syscall-behavior proof.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

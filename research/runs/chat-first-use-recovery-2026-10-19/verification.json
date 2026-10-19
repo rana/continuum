@@ -1,0 +1,65 @@
+{
+  "schema": "continuum.chat_evidence_recovery.v1",
+  "observed_at_utc": "2026-10-19T06:13:48.147942+00:00",
+  "owner": "current Chat session; publication and reconciliation only",
+  "executor": "current task Linux container, not Rana workstation",
+  "remote_base_commit": "6f2a11465bc610276495de636c85071e2424d1c9",
+  "prior_experimental_commit": "1fe2e359b63c7289fa4f99698e165c836adc6582",
+  "archive": {
+    "name": "Continuum_First_Use_Pilot_Research_2026-10-19.zip",
+    "sha256": "d558cd0ffd2eadbed8b48fb071c44bb8e9327d5f5eaa2c5f1dc083b6c013c6b8"
+  },
+  "artifact_map": [
+    {
+      "archive_member": "Continuum_First_Use_Research_Delta_2026-10-19.md",
+      "published_relative_path": "original-research-delta.md",
+      "bytes": 5213,
+      "sha256": "aed4da2d52db289980861eba7fab58687bb05175340706c0743143f6a44c2a1b",
+      "git_blob_sha1": "cd46249245feb2d928d8c5c330ab7ff80bd02166",
+      "exact_bytes_preserved": true
+    },
+    {
+      "archive_member": "verify_checkpoint_sources.py",
+      "published_relative_path": "examples/verify_checkpoint_sources.py",
+      "bytes": 4477,
+      "sha256": "4886ccf232e0f17baba94c9b3fe18e3536d840b21f5371eff7391e6412149d6d",
+      "git_blob_sha1": "4abd1a40953980edbe59b5ccf9343fb9580c5d7a",
+      "exact_bytes_preserved": true
+    },
+    {
+      "archive_member": "test_checkpoint_source_comparison.py",
+      "published_relative_path": "tests/test_checkpoint_source_comparison.py",
+      "bytes": 3046,
+      "sha256": "785a203cd85cd88b467c2eb63667539b99d9e37bc0fddc9be6b573edf790c4ff",
+      "git_blob_sha1": "6a6fb049441a5871addbdb1bc6ea94a225e0ceef",
+      "exact_bytes_preserved": true
+    }
+  ],
+  "verification": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "cwd": "research/runs/chat-first-use-recovery-2026-10-19",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_changed_source_is_detected (test_checkpoint_source_comparison.CheckpointSourceComparisonTests.test_changed_source_is_detected) ... ok\ntest_duplicate_source_is_rejected (test_checkpoint_source_comparison.CheckpointSourceComparisonTests.test_duplicate_source_is_rejected) ... ok\ntest_matching_source (test_checkpoint_source_comparison.CheckpointSourceComparisonTests.test_matching_source) ... ok\ntest_parent_traversal_is_rejected (test_checkpoint_source_comparison.CheckpointSourceComparisonTests.test_parent_traversal_is_rejected) ... ok\ntest_symlink_source_is_not_followed (test_checkpoint_source_comparison.CheckpointSourceComparisonTests.test_symlink_source_is_not_followed) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 5.388s\n\nOK\n",
+    "fixtures": "synthetic selected-source reports only"
+  },
+  "limits": [
+    "No Rust CLI or GitHub CI execution was performed in this local verification.",
+    "No Codex or Dot dispatch or acknowledgement was observed.",
+    "Original prior-run Claude input, visible response and returned metadata were not present in recovered attachments; original summary is not a substitute.",
+    "Container git clone failed with DNS resolution error; repository access/publication uses the connected GitHub tool.",
+    "Historical comparator uses the exploratory report schema, not the current project-checkpoint adapter contract."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "continuum.checkpoint_backup_use.v1",
+  "binary_sha256": "3c2abb54cc10ec18dff7d1dc7bc3785965e2ddfb26520f0de79b0c637987ec9a",
+  "checkpoint_source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "context_pack": "sha256:4cf78c9e2ee123e7ab1ed1b971491054179e3e0478f99aa7b2be7b64ae6df688",
+  "rendered_bytes": 5420,
+  "rendered_sha256": "4dfa2a3e2075cc200991613bd811ec2642a3a0b6beb50d3c308f29bf934558c7",
+  "backup_report": {
+    "database_version": 1,
+    "events": 1,
+    "file_bytes": 204800,
+    "file_sha256": "2bb952c29c604283a81e902b7797ace593bec791fee01675f99665e69858065c",
+    "last_sequence": 1,
+    "objects": 17,
+    "sqlite_version": "3.53.2"
+  },
+  "source_head": {
+    "generation": 1,
+    "root": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373"
+  },
+  "restored_head_after_probe": {
+    "generation": 2,
+    "root": "sha256:ac85434ed36c2585d5ce86b426c176c635715f69683adac68dc572fc0847544d"
+  },
+  "original_acceptance_receipt": {
+    "observed": null,
+    "outcome": "accepted",
+    "request": {
+      "acceptor": "project-checkpoint",
+      "candidate": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373",
+      "expected": null,
+      "operation_id": "initial-checkpoint",
+      "target": "work"
+    },
+    "resulting": {
+      "generation": 1,
+      "root": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373"
+    },
+    "sequence": 1
+  },
+  "original_retry_before_and_after_probe": {
+    "receipt": {
+      "observed": null,
+      "outcome": "accepted",
+      "request": {
+        "acceptor": "project-checkpoint",
+        "candidate": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373",
+        "expected": null,
+        "operation_id": "initial-checkpoint",
+        "target": "work"
+      },
+      "resulting": {
+        "generation": 1,
+        "root": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373"
+      },
+      "sequence": 1
+    },
+    "replayed": true
+  },
+  "objects_compared": [
+    {
+      "id": "sha256:012c05c16cc40f26716ca25d809cdb4dd5325d60e39c9abdaf0c4796e97197ba",
+      "kind": "blob",
+      "get_envelope_sha256": "e7f729bf2ea2f5638ff031eb6f462d6df150a4fd65bdcbe3ad386d6e89222131"
+    },
+    {
+      "id": "sha256:0390f8359e8838764d4ab8a392360087b5558d750d714b3ee2895aac42075191",
+      "kind": "blob",
+      "get_envelope_sha256": "6e4459460cdf8ff0e44cff776b1d7e56aeaa60ee31c66b199f43554ab60510f8"
+    },
+    {
+      "id": "sha256:05709906745226db8cafc9eb6b427b905e2d657d16dba8e91f1a8630859dd3f5",
+      "kind": "blob",
+      "get_envelope_sha256": "2110b919deb941f14830cb6e77e8861977fd7569ff53b90f312b69056c1822c8"
+    },
+    {
+      "id": "sha256:260b8cac2a2634acba84fbfa5c0b0616e99219ccb62f1c1dcae0f3708e18a538",
+      "kind": "blob",
+      "get_envelope_sha256": "309cd0a580aedab286b85efc1a58c096244889c20ce8d76315dbb2ef3a72492f"
+    },
+    {
+      "id": "sha256:4cf78c9e2ee123e7ab1ed1b971491054179e3e0478f99aa7b2be7b64ae6df688",
+      "kind": "blob",
+      "get_envelope_sha256": "5d69a70e2f5b200a0f14020f75e0510f5fcdb7fb8b598d3096a9add625ad6315"
+    },
+    {
+      "id": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+      "kind": "snapshot",
+      "get_envelope_sha256": "2122b2560e0f2c1cbf2d4ef3b36f49b26f5132caa032054822328549507be517"
+    },
+    {
+      "id": "sha256:6157b34a7685e19b62df6c18924137ea67b7beab1b57cd7696d1190a22416a75",
+      "kind": "blob",
+      "get_envelope_sha256": "3eb838ce9f76bfeddd2ca711362cbc0af529dc3b356fe2ba31722374120ee91b"
+    },
+    {
+      "id": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373",
+      "kind": "snapshot",
+      "get_envelope_sha256": "3c4faddda96b053ef50bec36c23549477aa0c9b217a3ce24913c3cbaddba9d80"
+    },
+    {
+      "id": "sha256:7691505969a264f43f1e079ba2532d7ab16e126b6da07fd1be53ce1e5dde605c",
+      "kind": "blob",
+      "get_envelope_sha256": "8cdcfb666c57338a7fde43c6f6031e9804ebf7fffa6849e564d7afa20e67bf21"
+    },
+    {
+      "id": "sha256:7ace13ec5c61121ca65c38cb35ced0fd4ab758ecda35d6bfbfda463c513c2fab",
+      "kind": "blob",
+      "get_envelope_sha256": "49fc10929d28c160c23d41240a02215a846f4c5663501cf4ba29da604437262d"
+    },
+    {
+      "id": "sha256:86b3465ad7081f99e7163a9abc31c9b60d9f8884decc74a4ee7da76119204077",
+      "kind": "blob",
+      "get_envelope_sha256": "6eb48d22b778e050dc31fa3ebe1d0715787f528e9e7e6c7453c3ed636b067297"
+    },
+    {
+      "id": "sha256:947cf469f0d2662e942e5edf01d1bea2920926452bfb143dec99d1f100063f02",
+      "kind": "blob",
+      "get_envelope_sha256": "64cc397d319d84676f827a53e9fe4041bee248d19b8d2a8ec02d665085794f17"
+    },
+    {
+      "id": "sha256:a154770b60c56750d76dcb2b2d0ce8cb378caf9e55077ea267d8b12a8655d234",
+      "kind": "blob",
+      "get_envelope_sha256": "708e96b6e248f372716d93b46038f2d20aee4421ad5975783e35549202e0ec3d"
+    },
+    {
+      "id": "sha256:a1c15fd80f97e53c7cbadeb3e1f13ad811360ad767fbd2ecf61d9d5c45e940a9",
+      "kind": "blob",
+      "get_envelope_sha256": "18fa10ded2fec4eb2b5062681c7cbf78eae821b18d13f65b431f310e07bedc80"
+    },
+    {
+      "id": "sha256:a75d9b86792a9b8289599052e766a2658a0cb41093f8ab278ba0cd65d30c8648",
+      "kind": "blob",
+      "get_envelope_sha256": "f3fbc7c16d118ad7bc7de49e98313355f2c8d25b8a66858acdba45e270014adb"
+    },
+    {
+      "id": "sha256:f8bda67df65bc7d64684d01750c14e68c964a6678ace575ac232908c292945e1",
+      "kind": "blob",
+      "get_envelope_sha256": "817725b74daad755b70684d12c2c082850c7afbf897e7206431361deb4db528f"
+    },
+    {
+      "id": "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491",
+      "kind": "snapshot",
+      "get_envelope_sha256": "1d743851dd6875e41915f5a15f9264ccb602c116a20380ffc750be975aeaaa8c"
+    }
+  ],
+  "restored_verification": {
+    "action_authority_verified": false,
+    "context_pack": "sha256:4cf78c9e2ee123e7ab1ed1b971491054179e3e0478f99aa7b2be7b64ae6df688",
+    "exact_projection_verified": true,
+    "freshness": {
+      "observed": {
+        "generation": 1,
+        "root": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373"
+      },
+      "status": "matches_at_observation"
+    },
+    "rendered_bytes": 5420
+  },
+  "historical_verification_after_probe": {
+    "action_authority_verified": false,
+    "context_pack": "sha256:4cf78c9e2ee123e7ab1ed1b971491054179e3e0478f99aa7b2be7b64ae6df688",
+    "exact_projection_verified": true,
+    "freshness": {
+      "observed": {
+        "generation": 2,
+        "root": "sha256:ac85434ed36c2585d5ce86b426c176c635715f69683adac68dc572fc0847544d"
+      },
+      "status": "stale_at_observation"
+    },
+    "rendered_bytes": 5420
+  },
+  "current_verification_error_after_probe": {
+    "error": "invalid input: context has no matching current anchor at observation; historical verification remains available"
+  },
+  "source_logical_inventory_unchanged": true,
+  "published_export_bytes_unchanged": true,
+  "new_inference": false,
+  "new_csv_execution": false,
+  "scope": "Backup-use validation; only the disposable restored working copy was advanced. No worker activation or semantic receipt authentication."
+}

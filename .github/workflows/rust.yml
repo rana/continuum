@@ -57,3 +57,7 @@ jobs:
         run: |
           python3 research/runs/sqlite-online-backup/verify_records.py
           python3 research/runs/sqlite-online-backup/run.py --binary target/debug/continuum --output "$RUNNER_TEMP/sqlite-online-backup"
+      - name: Validate native backup of a real checkpoint
+        run: |
+          python3 research/runs/checkpoint-backup-use/verify_records.py
+          python3 research/runs/checkpoint-backup-use/run.py --binary target/debug/continuum --checkpoint "$RUNNER_TEMP/source-bound-verification/checkpoint" --output "$RUNNER_TEMP/checkpoint-backup-use"

@@ -1,0 +1,9 @@
+{
+  "type": "snapshot",
+  "entries": [
+    {
+      "path": "probe.txt",
+      "blob": "sha256:54d38972e58c80a760902c142932608923721efa01584310e0ab8e64b26f6708"
+    }
+  ]
+}

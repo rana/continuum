@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "source_baseline": "29818e223b056fede867c28d9a4f7bfd804d7851",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 25544,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 25544,
+  "all_six_held_dependency_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/emit.py",
+      "bytes": 25043,
+      "sha256": "91c3b77bce952eca137509aa4ee9029ed96df42c27065c5b7e28fa487156a253",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/WIRE.md",
+      "bytes": 1877,
+      "sha256": "8eda125db6fd6f275146e2a186bb665b6170f2681cdbb97616d99079d6023a3c",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/codec.py",
+      "bytes": 9208,
+      "sha256": "3cbd016e38a306ed9cb4cfb38eebb61a431c4b4a91cc1b014794921b5fa0d158",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/native_signal.py",
+      "bytes": 3719,
+      "sha256": "f686d91bbae2d220ad1e05d243afa6a9fe05177655568ffeda56dfba4e34131d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/source/reference_decode.py",
+      "bytes": 7753,
+      "sha256": "e1a36de5335407be19fa8aa6bb95a84503033a9d5379519d728fe05ce3ffae74",
+      "matched": true
+    }
+  ],
+  "source_seed_build_static_pins_match": true,
+  "declared_ELF_sha256": "bfb03f7b9a5fb0e639668da233d6d8bfaf25d76fef076bca888680f60c59ece7",
+  "declared_ELF_bytes": 22066,
+  "declared_code_bytes": 17970,
+  "declared_instructions": 5288,
+  "declared_BSS_bytes": 10555392,
+  "global_offsets": 54,
+  "all_global_offsets_match_previous_source_derived_allocation": true,
+  "declared_labels": 94,
+  "labels_have_unique_addresses_inside_declared_code": true,
+  "rel32_patches": 198,
+  "all_displacement_formulas_resolve_to_declared_labels": true,
+  "patch_fields_distinct_ordered_nonoverlapping_and_inside_declared_file": true,
+  "all_displacements_signed_32bit": true,
+  "declared_RX_end_to_RW_base_gap_bytes": 1026510,
+  "retained_readelf_fixed_header_fields_match_source_and_layout": true,
+  "preexecution_metadata_state_distinguished_from_later_execution": true,
+  "ELF_payload_acquired": false,
+  "instruction_listing_or_disassembly_acquired": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five complete metadata texts read, including every global, label and patch row.",
+    "Six dependency payload pins match held exact bytes; declared historical commit IDs are not freshly verified commit-tree provenance.",
+    "All region offsets and BSS match earlier source-derived arithmetic, and all 198 displacement formulas match declared labels; no instruction bytes or starts newly checked.",
+    "Readelf and static reports are retained observations; ELF hash, instruction count and header claims do not become fresh artifact custody or reexecution.",
+    "Pre-execution NONE/NOT EXECUTED fields describe an earlier stage and do not negate later saved execution receipts.",
+    "No upstream inspector, emitter, readelf, objdump, native artifact or new model invocation was run; no raw private source or executable published."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/REVIEWER.md",
+      "bytes": 10513,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/REVIEW_REQUEST.md",
+      "bytes": 9611,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-review.md",
+      "bytes": 8691,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-static-verification.json",
+      "bytes": 802,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 29617,
+  "public_contribution_checks": [
+    "five pinned blob identities and complete JSON/text reading passed",
+    "six held dependency payload hashes and source/build/static declarations match",
+    "all 54 allocation offsets match prior source-derived arithmetic",
+    "198 displacement formulas, field extents and 94 label ranges passed",
+    "retained readelf header/size fields reconcile with source and layout",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

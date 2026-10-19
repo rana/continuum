@@ -1,0 +1,26 @@
+{
+  "retrievals": [
+    {
+      "round": 1,
+      "bytes": 54259,
+      "native_objects": 4
+    },
+    {
+      "round": 2,
+      "bytes": 5077,
+      "native_objects": 2
+    },
+    {
+      "round": 3,
+      "bytes": 9773,
+      "native_objects": 3
+    }
+  ],
+  "exact_source_matches": [
+    "README.md",
+    "inspect_csv.py",
+    "test_inspect_csv.py"
+  ],
+  "fresh_csv_tests": false,
+  "new_inference": false
+}

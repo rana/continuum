@@ -1,0 +1,13 @@
+{
+  "payload_sha256": "be29f3ff08400dc49382a679a0753d8df4a336ef84fceee41c92502eff3b58c6",
+  "payload_bytes": 5077,
+  "native_object_ids": [
+    "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+    "sha256:7ace13ec5c61121ca65c38cb35ced0fd4ab758ecda35d6bfbfda463c513c2fab"
+  ],
+  "sidecars": [
+    "research/runs/independent-csv-pilot/verify_requirement.py",
+    "research/runs/recorded-attempt-receiver/reconstructed-oracle-input.csv"
+  ],
+  "bound_checked": true
+}

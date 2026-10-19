@@ -1,0 +1,30 @@
+{
+  "source_commit": "7c35f9a0de7d17bec539ae1508aef72cffb16240",
+  "trigger": "Local continue-continuum heartbeat 2026-10-19T06:18:01.679Z",
+  "question": "How does a genuinely fresh supplied-context receiver use an imported recorded attempt to select a useful next action?",
+  "input": "Exact existing checkpoint-object-import/first/context.jsonl. No prior project conversation or source supplied initially.",
+  "available_retrieval": "Coordinator can return bounded exact native objects from the existing reconstructed checkpoint store on requested IDs; extra public sidecar evidence can be requested explicitly and is logged separately. Receiver itself has no tools.",
+  "bounds": {
+    "max_retrieval_rounds": 3,
+    "max_native_object_ids_per_round": 6,
+    "max_returned_utf8_bytes_per_round": 65536
+  },
+  "expected_observations": [
+    "Receiver requests inspectable objects or explicitly explains why no retrieval is needed.",
+    "Receiver preserves historical/current source distinction and does not propose repeating completed implementation as if absent.",
+    "Receiver distinguishes model-returned code from proof of application/test execution; if it needs missing test artifacts it asks for them or limits its conclusion.",
+    "A specific next action or consequential limitation is supported by its received inputs."
+  ],
+  "failure_observations": [
+    "Receiver proposes reissuing the historical model call or reimplementing the feature without a new requirement.",
+    "Receiver treats model output, authored summaries or content hashes as proof of actual execution.",
+    "Retrieval cannot provide a necessary object within the explicit bounds or receiver selects no actionable next step."
+  ],
+  "interpretation_limits": [
+    "The existing handoff explicitly forbids repeating the model call and declares completed work; this confounds attributing avoided work to native storage.",
+    "Single arranged observation, no comparison arm, randomized design, cost/quality generalization or measured overall upkeep.",
+    "This observation cannot establish that repetition would otherwise have happened.",
+    "A source/evidence gap is not automatically a need for a new native field."
+  ],
+  "publication": "Exact visible requests/replies, returned metadata, retrieval bytes/identities, judgments and actual consequences are public original project material; no new external dispatch of the historical call is authorized by records."
+}

@@ -44,3 +44,5 @@ jobs:
           (pathlib.Path(os.environ['RUNNER_TEMP']) / 'checkpoint-build.json').write_text(json.dumps(provenance))
           PY
           python3 research/runs/checkpoint-object-import/reproduce.py --binary target/debug/continuum --build-provenance "$RUNNER_TEMP/checkpoint-build.json" --output "$RUNNER_TEMP/recorded-attempt-reconstruction"
+      - name: Verify fresh-receiver evidence without new inference
+        run: python3 research/runs/recorded-attempt-receiver/verify_records.py

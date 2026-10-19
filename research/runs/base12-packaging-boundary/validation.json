@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "source_baseline": "54612c91fe6bf6585ee9c6c1473c1cc717a9e629",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 3,
+  "verified_source_bytes": 18148,
+  "python_full_text_read_and_syntax_parsed": 3,
+  "metadata_seven_receipt_pin_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/learning-native-audit-v1.json",
+      "bytes": 4429,
+      "sha256": "1e3cb37d5e4a7e23eee838295291531ddc3613531a8ee92e119252549df32dc4",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/independent-full-accounting-audit-v1.json",
+      "bytes": 19297,
+      "sha256": "c4083c41d719018480bc5693420ac714092805c2e2cc7a667b644829c55dd56e",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/post-run-verification-v1.json",
+      "bytes": 6038,
+      "sha256": "03ff118194fdfb9de599cad0c55e4d70e0d8085080ca79545526f1aa77c3ead0",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-outcome-v1.json",
+      "bytes": 27648,
+      "sha256": "9958b272f8bba9a2da465e3a45765cc19145fc9581d51ba53b78d79b54a1067f",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/recovery-outcome-v1.json",
+      "bytes": 15080,
+      "sha256": "b67753eded81cf3eb8297adc696ded96af2c901518ce90c566cece82a276ae5f",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "bytes": 2048,
+      "sha256": "fbcca657434ebf6348416afd5453498d716f65b3ac6767f6773bfbade8149ba3",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/payload-file-evidence-v1.json",
+      "bytes": 1783,
+      "sha256": "f5b5cedaf451beb22265e00070a7065bb2068374b0283810848c5ee59d102763",
+      "matched": true
+    }
+  ],
+  "all_seven_metadata_pins_match_saved_closeout": true,
+  "metadata_authored_event_literals_equal_saved_history": true,
+  "metadata_authored_scope_literals_equal_saved_history": true,
+  "source_control_line_anchors": {
+    "builder": {
+      "stage_bytes": 90,
+      "retain_staged_bytes": 93,
+      "derive_manifest_from_staged_bytes": 94,
+      "open_final_ZIP": 99,
+      "write_staged_member": 107,
+      "sync_ZIP": 109,
+      "verify_after_ZIP_write": 110,
+      "write_verification_record": 111
+    },
+    "metadata": {
+      "write_authored_history": 91,
+      "write_summary_later": 113
+    },
+    "verifier": {
+      "read_external_allowlist": 33,
+      "check_member_names": 46,
+      "check_member_type": 50,
+      "check_member_size": 55,
+      "read_member": 56,
+      "report_ZIP_path_digest": 87,
+      "report_allowlist_path_digest": 88
+    }
+  },
+  "builder_manifest_and_ZIP_use_same_staged_bytes": true,
+  "builder_file_sync_precedes_readback_verification": true,
+  "builder_readback_precedes_verification_record": true,
+  "builder_source_category_composition": {
+    "guide_and_summary": 2,
+    "frozen_sources": 14,
+    "execution_controls": 5,
+    "audit_logic": 3,
+    "packaging": 3,
+    "historical_notes": 9,
+    "run_json": 7,
+    "input_intake": 1,
+    "standalone_receipts": 21,
+    "wrapper_receipt_files": 54,
+    "documentation": 5,
+    "draft_proposal": 1,
+    "allowlist": 1
+  },
+  "builder_declared_content_members": 126,
+  "manifest_excludes_itself_by_construction": true,
+  "verifier_member_metadata_checks_precede_member_read": true,
+  "verifier_extract_calls": 0,
+  "verifier_duplicate_JSON_key_rejection": true,
+  "verifier_nonfinite_JSON_constant_rejection": false,
+  "verifier_member_byte_cap": 2000000,
+  "verifier_total_byte_cap_independently_enforced": false,
+  "verifier_final_ZIP_and_allowlist_digests_use_path_rereads": true,
+  "source_fsync_call_counts": {
+    "builder": 2,
+    "metadata": 1,
+    "verifier": 0
+  },
+  "atomic_multiartifact_publication_established": false,
+  "directory_sync_established": false,
+  "controlled_path_race_experiment_performed": false,
+  "packaging_code_executed": false,
+  "ZIP_bytes_acquired": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three packaging scripts are fully read and syntax-parsed; none was imported or executed.",
+    "Builder reuses staged bytes for manifest and ZIP; initial path checks and reads still assume stable trusted source paths.",
+    "Verifier checks ZIP metadata before member reads and does not extract files, but final ZIP/allowlist digests reread paths and assume their stability.",
+    "Per-member two-million-byte cap is not an independent total packet resource budget; exact membership depends on the supplied allowlist.",
+    "File fsync and exclusive creates do not establish atomic publication of ZIP, spec, verification record, sidecar and directory entries.",
+    "Metadata preparer pins receipt bytes but constructs retrospective event claims as authored literals, not fresh host observations.",
+    "Manifest, allowlist and ZIP payload custody remain unverified until the selected next unit."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/MANIFEST.json",
+      "bytes": 23127,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packet-allowlist-v1.json",
+      "bytes": 28234,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/pr13-audited-review-20261016.zip",
+      "bytes": 309057,
+      "intended_review": "mechanical_archive_custody_only"
+    }
+  ],
+  "next_scope_bytes": 360418,
+  "next_scope_full_text_files": 2,
+  "next_scope_semantic_bytes": 51361,
+  "next_scope_mechanical_archive_bytes": 309057,
+  "public_contribution_checks": [
+    "source syntax, seven receipt pins and authored-history literal comparisons passed",
+    "source ordering, category arithmetic and separate semantic/mechanical next scope checked",
+    "JSON/coverage arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

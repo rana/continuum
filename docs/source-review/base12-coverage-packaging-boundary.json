@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-parent-checker.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/build_review_packet.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/prepare_review_metadata.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/verify_review_packet.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/build_review_packet.py",
+      "bytes": 6699,
+      "git_blob_sha": "017642cba867e488ca5f2f86e412c7ceed175d6d",
+      "sha256": "86b45171a9491951d03f205afc804facaa58b573bb8c1adb32bf7c34cfc4b03a",
+      "lines": 118,
+      "semantic_review": "full_direct_read",
+      "review_lane": "packaging-stage-and-verification-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution; literal_receipt_pin_and_authored_history_comparison"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/prepare_review_metadata.py",
+      "bytes": 7092,
+      "git_blob_sha": "07485406977a0be55a008e3e11e061222b09d324",
+      "sha256": "71354db25f88cf4a299d9ae293f9fb9db8b63d8ecc68ba0cffbe785df838e3c2",
+      "lines": 122,
+      "semantic_review": "full_direct_read",
+      "review_lane": "packaging-stage-and-verification-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution; literal_receipt_pin_and_authored_history_comparison"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/verify_review_packet.py",
+      "bytes": 4357,
+      "git_blob_sha": "530dc11b59bf2347996c3df77dddd3d547d8fac1",
+      "sha256": "bd5502ccf2f8ce7092623dec468860b10c03a8e1de52d41abebf2450c2cb296a",
+      "lines": 101,
+      "semantic_review": "full_direct_read",
+      "review_lane": "packaging-stage-and-verification-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution; literal_receipt_pin_and_authored_history_comparison"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 18148
+    },
+    "cumulative_direct_read": {
+      "paths": 350,
+      "unique_blobs": 350,
+      "bytes": 2480717
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 402,
+    "remaining_paths_without_full_semantic_read_or_alias": 5191,
+    "remaining_distinct_blobs_without_full_semantic_read": 4079,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 18148,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three packaging scripts are fully read and syntax-parsed; none was imported or executed.",
+    "Builder reuses staged bytes for manifest and ZIP; initial path checks and reads still assume stable trusted source paths.",
+    "Verifier checks ZIP metadata before member reads and does not extract files, but final ZIP/allowlist digests reread paths and assume their stability.",
+    "Per-member two-million-byte cap is not an independent total packet resource budget; exact membership depends on the supplied allowlist.",
+    "File fsync and exclusive creates do not establish atomic publication of ZIP, spec, verification record, sidecar and directory entries.",
+    "Metadata preparer pins receipt bytes but constructs retrospective event claims as authored literals, not fresh host observations.",
+    "Manifest, allowlist and ZIP payload custody remain unverified until the selected next unit."
+  ],
+  "review_report": "base12-packaging-boundary.md"
+}

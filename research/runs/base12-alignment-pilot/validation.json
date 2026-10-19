@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2d196ae709301c1d77df388a3b1083497d8df33b",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 11,
+  "verified_source_bytes": 45984,
+  "utf8_decoded": 11,
+  "markdown_full_text_read": 5,
+  "python_ast_parsed_without_import": 4,
+  "json_parsed": 2,
+  "saved_result_source_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/learner.py",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/bundle.py",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/tasks.py",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/run_pilot.py",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/PROTOCOL.md",
+      "matched": true
+    }
+  ],
+  "saved_arithmetic": {
+    "sum_assertions": 15960,
+    "scalar_points": 7191,
+    "nearest_points": 7191,
+    "each_histogram_sum": 2397,
+    "compiled_candidates": 4458,
+    "source_evaluations": 17832
+  },
+  "import_order_observation": {
+    "file": "research/owned-stack/2026-10-15/alignment-pilot/run_pilot.py",
+    "top_level_imports": [
+      {
+        "module": "codegen",
+        "line": 11
+      },
+      {
+        "module": "runtime",
+        "line": 12
+      },
+      {
+        "module": "isa",
+        "line": 13
+      },
+      {
+        "module": "learner",
+        "line": 14
+      },
+      {
+        "module": "bundle",
+        "line": 15
+      }
+    ],
+    "main_definition_line": 53,
+    "backend_digest_gate_line": 58,
+    "executed": false
+  },
+  "raw_decision_rows_acquired": false,
+  "inherited_backend_newly_audited": false,
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "path": "research/owned-stack/2026-10-15/next-experiments/",
+    "files": 5,
+    "bytes": 25474
+  }
+}

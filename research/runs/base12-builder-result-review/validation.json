@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "source_baseline": "9811d81057969ad4c898ee6d553a338e99a9916b",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 22441,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 22441,
+  "reported_literal_submissions": 1,
+  "reported_builder_calls": 64,
+  "reported_tiny_calls": 2,
+  "reported_runner_executions": 0,
+  "all_reported_histograms_match_case_expectations": true,
+  "source_manifest_payload_bindings": 4,
+  "exact_command_bytes": 3740,
+  "exact_command_identity_binds": true,
+  "candidate_identity_matches_build_declaration_only": true,
+  "checksum_entries": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/EVIDENCE_PROVENANCE.json",
+      "sha256": "f3115884e25b4ef8e5b7167d074cdd6314570f4adb7c388586f405803ee6f0fd",
+      "bytes": 2699,
+      "status": "held_text_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_ATTEMPT_MANIFEST.json",
+      "sha256": "9e372164f839a723ea75798447ea52751db25d8a7de37c33e01541afb67ef704",
+      "bytes": 99153,
+      "status": "unheld_derived_metadata_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_RESULT_REVIEW.md",
+      "sha256": "bd707bf56bccaea097571e35ca34eae46cc8d7565696fedc30bce5e862a45206",
+      "bytes": 9382,
+      "status": "held_text_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_SAVED_REVIEW.json",
+      "sha256": "4d06bde15fd677bacd9b24031703b3530f930a38a2729044e3e3882bba27da05",
+      "bytes": 52312,
+      "status": "unheld_derived_metadata_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/README.md",
+      "sha256": "5dfdd803fa9bfcb9ff4b66c5fcf45bcceca4d024ff55721b244d54c9acb66ebf",
+      "bytes": 5584,
+      "status": "held_text_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/RESULT.json",
+      "sha256": "7d9930d31bf64fbb0d63a20d09ab0e8e2df14d345fc2e1a0ee21bcb3aba28506",
+      "bytes": 4240,
+      "status": "held_text_bytes_bind"
+    }
+  ],
+  "private_provenance_files": 10,
+  "held_review_copy_identity_binds": true,
+  "terminal_capture_identity_is_declaration_only": true,
+  "reported_terminal_exit": 0,
+  "persisted_prepublication_CPU_upper_ns": 1511651000,
+  "persisted_prepublication_wall_ns": 3218761569,
+  "reported_outer_wait4_CPU_ns": 1337576000,
+  "derived_caller_CPU_remainder_ns": 174075000,
+  "final_numeric_sample_unsaved": true,
+  "final_checks_terminal_attestation_reported": true,
+  "reported_final_tree": {
+    "regular_files": 495,
+    "regular_bytes": 531729,
+    "directories": 135,
+    "symlinks": 1
+  },
+  "tree_receipt_addition_arithmetic_matches": true,
+  "reported_vanished_scan_entries": 1,
+  "reported_live_unresolved_or_survivors": 0,
+  "parent_acceptance_pending_at_checkpoint": true,
+  "raw_private_evidence_acquired": false,
+  "new_batch_execution": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five complete saved summary/review/provenance texts read; one historical cleared batch is reported, not newly executed or freshly verified from raw private payloads here.",
+    "Four source/manifest payloads and exact 3740-byte command bind; candidate ELF remains an unheld identity declaration matching its build record.",
+    "Result histograms, tiny outcomes, fault counts and selected accounting/tree arithmetic agree with prior expectations and saved review; raw statuses/traces remain private/unacquired.",
+    "Submission/terminal observation timestamps are not runtime duration; persisted numeric accounting is prepublication, final numeric sample unsaved and terminal exit is a reported attestation.",
+    "Separate reviewer reports raw byte/trace checks from fuller access; current payload gap must not be projected backward onto that review.",
+    "Six checksum entries include four held text payloads and two unread derived records; ten private provenance files are not ten newly acquired receipts.",
+    "Parent result acceptance remains pending at this captured checkpoint; consumed clearance/attempt gives no replay authority or present ownership state."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_SAVED_REVIEW.json",
+      "bytes": 52312,
+      "intended_review": "complete_derived_saved_result_metadata_without_execution"
+    }
+  ],
+  "next_scope_bytes": 52312,
+  "public_contribution_checks": [
+    "five pinned identities and complete saved-text readings passed",
+    "reported histograms and finite outcomes agree with frozen cases",
+    "four held source/manifest pins and exact command identity bind",
+    "six checksum and ten provenance declarations retain distinct custody classes",
+    "prepublication CPU arithmetic and two-receipt final-tree increase reconcile",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

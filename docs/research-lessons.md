@@ -287,6 +287,8 @@ The [complete case-expectation review](source-review/base12-builder-case-expecta
 
 The [planned-command review](source-review/base12-builder-planned-commands.md) checks every argument/environment/stream/status/counter field against case semantics. Direct tracing matters for occurrence scope, and the child-only file-limit exception must not constrain parent logs. Empty environment and inherited-limit declarations are useful projections rather than complete process images or aggregate accounting proof. Case semantics, proposed argv and observed dispatch remain separate records; a correct reconstructed plan does not authorize replay after an uncertain outcome.
 
+The [builder saved-result review](source-review/base12-builder-result-review.md) retains reported actual execution, independent saved-evidence review and parent acceptance as separate stages. Source/command hashes bind preparation to the summary without substituting for private raw traces. Prepublication accounting remains a persisted numeric sample; terminal exit attests a later final check without supplying its unsaved numeric value. Two final receipt sizes explain the inventory increase. Earlier zero-execution documents keep their historical scope rather than being rewritten after the later cleared batch.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "source_baseline": "142190581e11c8a22cc7acda5f14c781296b1e78",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 4,
+  "verified_source_bytes": 37621,
+  "new_full_text_paths_read": 3,
+  "new_semantic_files": 3,
+  "new_semantic_bytes": 30664,
+  "recovered_already_credited_contract": {
+    "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+    "bytes": 6957,
+    "git_blob_sha": "d876f5183f478dd97b1999004d3c98eba2029346",
+    "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+    "semantic_credit": "already_read_identical_blob",
+    "context_payload_recovered": true
+  },
+  "bootstrap_AST_parse": true,
+  "upstream_code_imported_or_executed": false,
+  "source_and_held_seed_payload_pins_match": true,
+  "all_33_dispatch_names_and_five_profile_fields_match_B1_record": true,
+  "source_guard_lines": {
+    "instruction_count": 210,
+    "label_count": 204,
+    "relocation_count": 342,
+    "map_count": 348,
+    "output_byte": 315,
+    "input_overflow_probe": 94
+  },
+  "regions": [
+    {
+      "name": "tokens",
+      "offset": 1024,
+      "bytes": 128
+    },
+    {
+      "name": "stat",
+      "offset": 2048,
+      "bytes": 144
+    },
+    {
+      "name": "input",
+      "offset": 4096,
+      "bytes": 65537
+    },
+    {
+      "name": "output",
+      "offset": 73728,
+      "bytes": 16384
+    },
+    {
+      "name": "map",
+      "offset": 90112,
+      "bytes": 36896
+    },
+    {
+      "name": "labels",
+      "offset": 131072,
+      "bytes": 6144
+    },
+    {
+      "name": "relocations",
+      "offset": 139264,
+      "bytes": 12288
+    }
+  ],
+  "allocation_nonoverlap_and_BSS_bounds_pass": true,
+  "source_size_limit": 65536,
+  "source_overflow_probe_bytes": 65537,
+  "instruction_limit": 1024,
+  "label_limit": 128,
+  "relocation_limit": 256,
+  "ELF_limit": 16384,
+  "derived_code_limit": 12288,
+  "map_record_limit": 1152,
+  "derived_map_byte_limit": 36896,
+  "source_syscall_literals": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    60,
+    74
+  ],
+  "parse_and_resolve_precede_output_reservations": true,
+  "output_pair_atomicity_claimed": false,
+  "consumer_behavior_or_execution_safety_verified": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three new texts fully read and bootstrap AST-parsed; already credited contract payload recovered/read as context without new semantic credit.",
+    "Source-level guards, dispatch/header fields, syscall literals and allocation arithmetic inspected; no emitted builder, consumer or boundary/failure test executed.",
+    "Python imports the pinned seed for bootstrap; native parser/encoder is constructed as code, not implemented by importing a historical consumer.",
+    "Bounded source/encoding does not prove emitted consumer behavior or make arbitrary consumer programs safe to execute; builder never executes its output.",
+    "Two output reservations are sequential and nontransactional; failures preserve empty/partial files, with no pair rename or directory fsync claim.",
+    "Dated source-only/never-executed metadata is historical; later accepted execution remains a separate evidence lane.",
+    "Eight B1 summary limits now have source-level derivations/guards, not fresh runtime enforcement measurements or full opcode correctness proof."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/inspect_static.py",
+      "bytes": 4615,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DESIGN_REVIEW.md",
+      "bytes": 7109,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CORRECTIONS.md",
+      "bytes": 1220,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/README.md",
+      "bytes": 5864,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SOURCE_REVIEW.md",
+      "bytes": 8501,
+      "intended_review": "full_text_read_without_import_or_execution"
+    }
+  ],
+  "next_scope_bytes": 27309,
+  "public_contribution_checks": [
+    "three new pinned identities plus recovered already credited contract match",
+    "bootstrap AST, seed/source pins and 33 dispatch/five profile fields match",
+    "six source guard locations, memory regions and count/byte arithmetic reconcile",
+    "seven runtime syscall literals and parse/resolve-before-reserve ordering checked",
+    "publication/consumer/historical-stage limits retained without runtime claims",
+    "coverage, repeat-context credit, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

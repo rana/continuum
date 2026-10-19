@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-decoder-b1-inspection-closeout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "research/owned-stack/2026-10-16/native-builder-slice/DEPENDENCIES.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/README.md"
+    ],
+    "recovered_context": [
+      "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "bytes": 24741,
+      "git_blob_sha": "df50fc2ab6c29d9edfba5fd386b57b5df1270890",
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "lines": 394,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-bootstrap-and-bound-enforcement",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DEPENDENCIES.json",
+      "bytes": 1737,
+      "git_blob_sha": "dd1deb7672f4c8bdfb0e0e5d65a275e63905b319",
+      "sha256": "394731bbfb37e08162abe598f4b5e3fca83933215115ea194465d0d5edc64730",
+      "lines": 51,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-bootstrap-and-bound-enforcement",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/README.md",
+      "bytes": 4186,
+      "git_blob_sha": "7db7906814a0663492dbafc5fabab68084429810",
+      "sha256": "82ed3be29f12c62dc5d84c3196a529e0237e2d1704aeac57c56c3700b284aa22",
+      "lines": 26,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-bootstrap-and-bound-enforcement",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 30664
+    },
+    "cumulative_direct_read": {
+      "paths": 474,
+      "unique_blobs": 474,
+      "bytes": 3626343
+    },
+    "additional_identical_blob_paths": 53,
+    "alias_distinct_blobs": 23,
+    "semantic_covered_paths_including_aliases": 527,
+    "remaining_paths_without_full_semantic_read_or_alias": 5066,
+    "remaining_distinct_blobs_without_full_semantic_read": 3955,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 37621,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three new texts fully read and bootstrap AST-parsed; already credited contract payload recovered/read as context without new semantic credit.",
+    "Source-level guards, dispatch/header fields, syscall literals and allocation arithmetic inspected; no emitted builder, consumer or boundary/failure test executed.",
+    "Python imports the pinned seed for bootstrap; native parser/encoder is constructed as code, not implemented by importing a historical consumer.",
+    "Bounded source/encoding does not prove emitted consumer behavior or make arbitrary consumer programs safe to execute; builder never executes its output.",
+    "Two output reservations are sequential and nontransactional; failures preserve empty/partial files, with no pair rename or directory fsync claim.",
+    "Dated source-only/never-executed metadata is historical; later accepted execution remains a separate evidence lane.",
+    "Eight B1 summary limits now have source-level derivations/guards, not fresh runtime enforcement measurements or full opcode correctness proof."
+  ],
+  "review_report": "base12-builder-source-boundary.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "bytes": 6957,
+      "git_blob_sha": "d876f5183f478dd97b1999004d3c98eba2029346",
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+      "semantic_credit": "already_read_identical_blob",
+      "context_payload_recovered": true
+    }
+  ]
+}

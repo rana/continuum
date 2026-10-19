@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-vector-layout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.layout.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.layout.json",
+      "bytes": 894,
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "lines": 53,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.layout.json",
+      "bytes": 1756,
+      "git_blob_sha": "dbdbd6c64c293e2399d3f71137edce2c967d95f0",
+      "sha256": "15a5efd7ac4fd5bfdc5b447346dd8e3d750942dbcce7f4b15b88e186133ea4ae",
+      "lines": 114,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.layout.json",
+      "bytes": 691,
+      "git_blob_sha": "06d45870be83e9f14e3b9ef6fa43785888d6adab",
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.layout.json",
+      "bytes": 9502,
+      "git_blob_sha": "2289b36184fc914322f9b465511ae5534fe276cd",
+      "sha256": "546ea0bf6e4d6cf9a7ac3d8015334f706475f4b40f0e745ccefbb3a7e4d5e4c2",
+      "lines": 924,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.layout.json",
+      "bytes": 788,
+      "git_blob_sha": "1b5e47c636b7e7350dded66200aa56c22c293e58",
+      "sha256": "ef299d157f367f4c75901e96239e03d95e9943a511d443e3f6dbb250b240a3b1",
+      "lines": 42,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.layout.json",
+      "bytes": 711,
+      "git_blob_sha": "b16d4f7468688af7f21ad4b1696e7fdca6ea838b",
+      "sha256": "41d051f4f5641474802b5de63f1136f562c3ceef6a1a5775529a26f0d2130e9f",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.layout.json",
+      "bytes": 711,
+      "git_blob_sha": "a50ff242f16d43e3402b567ae670355b7ba28842",
+      "sha256": "26f0c1296ce741dba453f8e5955ac54cca42981ccabf1069909a753e6a3a07f0",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.layout.json",
+      "bytes": 711,
+      "git_blob_sha": "267143ae5a0749cccb6f496894fe41107794316c",
+      "sha256": "e9d9828e9c2ead453f2fe6b829ee94ccab3c25aab6e27d3f3193087d0c7116fe",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.layout.json",
+      "bytes": 703,
+      "git_blob_sha": "719ffbc567344491795ab6d136dbafedf6a7956f",
+      "sha256": "a1afee113def7d64fdfe0d950f8d116b32c8310120c1386415365fd426968b59",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.layout.json",
+      "bytes": 703,
+      "git_blob_sha": "c309f497d1189f761db204ebc14434be50020da8",
+      "sha256": "3bcd3fdd40d2ac03ebc6bba9d6020a9eb5493d5e22509308f0152b788b1e8d44",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.layout.json",
+      "bytes": 697,
+      "git_blob_sha": "5c638b429e25e127d7150d490aaa9a60e6707f6a",
+      "sha256": "cbd16205e4d423064dfbe003b3d27c25b3efe79e599cb38354f097a1b82f0cb3",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.layout.json",
+      "bytes": 697,
+      "git_blob_sha": "9e282a73509dccd027c5867706ab85d1b0dbe61c",
+      "sha256": "9bac01512fd33fe4285ff5d23f59e1a49d4d671fae4d2931ffea3a28499381bd",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.layout.json",
+      "bytes": 697,
+      "git_blob_sha": "c7445aec5e189186b1cf41539be9d5982a2337ab",
+      "sha256": "eb36117e5bd3ec5c5c825830d9f029faca5040c927cd2c59dff8d8a8c6d375db",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-expected-layouts",
+      "reading_representation": "complete_json_all_fields_and_exact_source_witness_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 13,
+      "unique_blobs": 13,
+      "bytes": 19261
+    },
+    "cumulative_direct_read": {
+      "paths": 592,
+      "unique_blobs": 592,
+      "bytes": 5085890
+    },
+    "additional_identical_blob_paths": 94,
+    "alias_distinct_blobs": 30,
+    "semantic_covered_paths_including_aliases": 686,
+    "remaining_paths_without_full_semantic_read_or_alias": 4907,
+    "remaining_distinct_blobs_without_full_semantic_read": 3837,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 14,
+    "this_review_verified_bytes": 19952,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Fourteen complete layouts/19952 path bytes read;13 distinct blobs/19261 bytes gain new semantic credit, with input32 layout an exact repeat of05.",
+    "All13 top-level fields per layout reconstruct exactly; source positions, code/map literals, labels, patches and frozen manifest/saved-case metadata agree.",
+    "Identical source-result metadata can cover distinct source bytes and test contexts: long comment versus absent final LF is one observed pair.",
+    "Fourteen further layout paths share the tiny03 blob; content identity does not equate publication outcome, resource fault or runtime setup.",
+    "Expected-map identity groups preserve source-position structure, not code identity;128 unique labels may occupy one shared address.",
+    "ELF digests remain manifest declarations; no raw map/ELF acquisition, upstream import/materializer execution,native emission/execution,model call,live scan,activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-builder-small-layouts.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.layout.json",
+      "bytes": 691,
+      "git_blob_sha": "06d45870be83e9f14e3b9ef6fa43785888d6adab",
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "classification": "complete_repeat_read_identical_blob_no_new_semantic_blob_credit"
+    }
+  ]
+}

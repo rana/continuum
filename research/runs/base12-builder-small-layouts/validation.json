@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "source_baseline": "307fc2e82e664412f77ba6b58c8c2bd723c5fc1d",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 14,
+  "verified_source_bytes": 19952,
+  "full_source_paths_read": 14,
+  "new_semantic_files": 13,
+  "new_semantic_bytes": 19261,
+  "repeated_identical_payload_paths": 1,
+  "complete_json_reconstructions": 14,
+  "all13_fields_source_and_witness_joins_match": true,
+  "all_saved_case_metadata_relations_match": true,
+  "case_checks": [
+    {
+      "case": "03",
+      "layout_bytes": 894,
+      "source_bytes": 138,
+      "instructions": 4,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 5,
+      "code_bytes": 24,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "04",
+      "layout_bytes": 1756,
+      "source_bytes": 206,
+      "instructions": 9,
+      "labels": 3,
+      "relocations": 2,
+      "map_rows": 12,
+      "code_bytes": 58,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "05",
+      "layout_bytes": 691,
+      "source_bytes": 65536,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 1,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "09",
+      "layout_bytes": 9502,
+      "source_bytes": 1306,
+      "instructions": 1,
+      "labels": 128,
+      "relocations": 0,
+      "map_rows": 129,
+      "code_bytes": 1,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "13",
+      "layout_bytes": 788,
+      "source_bytes": 55,
+      "instructions": 1,
+      "labels": 2,
+      "relocations": 0,
+      "map_rows": 3,
+      "code_bytes": 1,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "31",
+      "layout_bytes": 711,
+      "source_bytes": 31,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 10,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "32",
+      "layout_bytes": 691,
+      "source_bytes": 16,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 1,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "33",
+      "layout_bytes": 711,
+      "source_bytes": 41,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 10,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "35",
+      "layout_bytes": 711,
+      "source_bytes": 42,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 10,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "37",
+      "layout_bytes": 703,
+      "source_bytes": 39,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 7,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "39",
+      "layout_bytes": 703,
+      "source_bytes": 38,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 7,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "41",
+      "layout_bytes": 697,
+      "source_bytes": 29,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 4,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "43",
+      "layout_bytes": 697,
+      "source_bytes": 28,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 4,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    },
+    {
+      "case": "45",
+      "layout_bytes": 697,
+      "source_bytes": 24,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "map_rows": 2,
+      "code_bytes": 4,
+      "all13_fields_reconstruct_exactly": true,
+      "all_source_and_saved_metadata_relations_match": true
+    }
+  ],
+  "identical_layout_cases_with_distinct_sources": [
+    "05",
+    "32"
+  ],
+  "maximum_labels_at_single_address": 128,
+  "relocation_field_checks": 2,
+  "new_identical_layout_alias_paths": [
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/53.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/61.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.layout.json",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.layout.json"
+  ],
+  "alias_case_metadata_checks": [
+    {
+      "case": "32",
+      "expected_rc": 0,
+      "expected_publication_valid": true,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "49",
+      "expected_rc": 73,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "50",
+      "expected_rc": 73,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "53",
+      "expected_rc": 66,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "54",
+      "expected_rc": 0,
+      "expected_publication_valid": true,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "55",
+      "expected_rc": 0,
+      "expected_publication_valid": true,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "56",
+      "expected_rc": 0,
+      "expected_publication_valid": true,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "57",
+      "expected_rc": 74,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "58",
+      "expected_rc": 74,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "59",
+      "expected_rc": 74,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "60",
+      "expected_rc": -25,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "61",
+      "expected_rc": 66,
+      "expected_publication_valid": false,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "62",
+      "expected_rc": 0,
+      "expected_publication_valid": true,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "63",
+      "expected_rc": 0,
+      "expected_publication_valid": true,
+      "identical_layout_identity_matches": true
+    },
+    {
+      "case": "64",
+      "expected_rc": 0,
+      "expected_publication_valid": true,
+      "identical_layout_identity_matches": true
+    }
+  ],
+  "source_alias_recovered_without_new_path_acquisition": [
+    "03",
+    "04"
+  ],
+  "expected_map_groups": [
+    [
+      "03"
+    ],
+    [
+      "04"
+    ],
+    [
+      "05",
+      "32"
+    ],
+    [
+      "09"
+    ],
+    [
+      "13"
+    ],
+    [
+      "31",
+      "33",
+      "35"
+    ],
+    [
+      "37",
+      "39"
+    ],
+    [
+      "41",
+      "43",
+      "45"
+    ]
+  ],
+  "literal_code_groups": [
+    [
+      "03"
+    ],
+    [
+      "04"
+    ],
+    [
+      "05",
+      "09",
+      "13",
+      "32"
+    ],
+    [
+      "31"
+    ],
+    [
+      "33"
+    ],
+    [
+      "35"
+    ],
+    [
+      "37"
+    ],
+    [
+      "39"
+    ],
+    [
+      "41"
+    ],
+    [
+      "43"
+    ],
+    [
+      "45"
+    ]
+  ],
+  "elf_digest_source": "frozen_manifest_not_recomputed",
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Fourteen complete layouts/19952 path bytes read;13 distinct blobs/19261 bytes gain new semantic credit, with input32 layout an exact repeat of05.",
+    "All13 top-level fields per layout reconstruct exactly; source positions, code/map literals, labels, patches and frozen manifest/saved-case metadata agree.",
+    "Identical source-result metadata can cover distinct source bytes and test contexts: long comment versus absent final LF is one observed pair.",
+    "Fourteen further layout paths share the tiny03 blob; content identity does not equate publication outcome, resource fault or runtime setup.",
+    "Expected-map identity groups preserve source-position structure, not code identity;128 unique labels may occupy one shared address.",
+    "ELF digests remain manifest declarations; no raw map/ELF acquisition, upstream import/materializer execution,native emission/execution,model call,live scan,activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.layout.json",
+      "bytes": 65928,
+      "intended_review": "complete_capacity_layouts_through_lossless_repeated_structure_and_source_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.layout.json",
+      "bytes": 42054,
+      "intended_review": "complete_capacity_layouts_through_lossless_repeated_structure_and_source_joins_without_execution"
+    }
+  ],
+  "next_scope_bytes": 107982,
+  "public_contribution_checks": [
+    "fourteen complete13-field layout reconstructions and source/witness joins passed",
+    "two rich patch fields and all map/code literal identities passed",
+    "thirteen new blobs, one repeat and fifteen layout alias paths reconcile",
+    "source/fault contexts, ELF declaration scope, coverage, links, privacy and git diff --check passed"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "fbc5590f7d80bd82d6495b012f3d237109b1fba3",
+  "files": [
+    {
+      "path": "docs/source-review/base12-synthetic-fixture-controls.md",
+      "bytes": 5276,
+      "sha256": "aff438045e64bf08de209f8f0d71feca10f20d02c7486ad519a71e2108cb0aac"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-synthetic-fixture-controls.json",
+      "bytes": 9187,
+      "sha256": "c9a67e0576b5ce1fc8afc375b72f00d7a1e4402e22e23df2ccc23042b6a275fd"
+    },
+    {
+      "path": "research/runs/base12-synthetic-fixture-controls/validation.json",
+      "bytes": 8488,
+      "sha256": "d4bd5f864ad0342593c1c87464a4ba418a5079c6c23c1b2c49c8bc7159d94443"
+    }
+  ]
+}

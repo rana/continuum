@@ -229,6 +229,8 @@ The [recovery/intake accounting return](source-review/base12-recovery-intake-acc
 
 The [initial-acquisition accounting return](source-review/base12-initial-acquisition-accounting.md) binds all 1,677 retained timeout rows while preserving cleanup, stop reason and task success as distinct facts. A conservative sampled maximum may be above final exit CPU in one attempt and below it in another because margins and timing boundaries differ. Continuum should validate definitions before imposing numerical ordering or retrying an incomplete external effect. No acquisition was repeated.
 
+The [synthetic/fixture controls return](source-review/base12-synthetic-fixture-controls.md) binds saved test counts and outputs to source identities and distinct execution profiles. Equal numeric PIDs do not join attempts, and no sampled descendants does not exclude in-process generated code. Continuum should preserve revision, exposure, control profile and historical stage when reusing a gate. Neither suite was repeated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

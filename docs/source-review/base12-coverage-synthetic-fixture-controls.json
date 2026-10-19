@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-initial-acquisition-accounting.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/pre-synthetic-gate.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-verification.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/accounting.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/stdout.txt",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/accounting.jsonl"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/pre-synthetic-gate.json",
+      "bytes": 640,
+      "git_blob_sha": "18883e0b7fa271912f4a3355f5c41a1aff577b9e",
+      "sha256": "d463fffd91f7a3e36fdc325f9480a02df6024fe16dbd4dde89f4c3a1c3883068",
+      "lines": 17,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-verification.json",
+      "bytes": 1575,
+      "git_blob_sha": "d99f780495a8dc855e279f5957fc934ce61945db",
+      "sha256": "d6f40c35683574c3f87d507fa706eb0de0196455b2f25ada63fe5a194cec40d4",
+      "lines": 48,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/invocation.json",
+      "bytes": 1002,
+      "git_blob_sha": "e98a8e312eef44bf4e51569cdd453f647a906d71",
+      "sha256": "e96a7798d603e0bdee103f2cc1e37a8e18625fa02a2409d0259c98807eaa7b9d",
+      "lines": 30,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/effective-before-exec.json",
+      "bytes": 226,
+      "git_blob_sha": "47b9e5a225c185ae656d2f40d70844c2b97d9ada",
+      "sha256": "3216660945d54edf0a4a3151d6a4194658f3481ee46609a610858cf08f5a341f",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/receipt.json",
+      "bytes": 1825,
+      "git_blob_sha": "5efe5a5cc6d43e6b3b110b861033f2ede1bf20ae",
+      "sha256": "300f8a73ae826b236762a6c1137d5dc0d15d34afe91c0727e7469406abdbecf1",
+      "lines": 58,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/accounting.jsonl",
+      "bytes": 206,
+      "git_blob_sha": "ad74f75a2931eadfc20ccab212746f2f1f4ed59e",
+      "sha256": "21124cec86103b1272f1a85e6f33126146836f0747eb2b0d969fb9f9c057b8bc",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/stdout.txt",
+      "bytes": 24,
+      "git_blob_sha": "d806067789b283749b5ac245e63d2fba276d5ffe",
+      "sha256": "2d14bff2fe80cf6dcaf535f5c82dc857d8af6e2c749f2ed3f92c0370b70512c7",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/invocation.json",
+      "bytes": 775,
+      "git_blob_sha": "72b42e1a376b6a4bb7a725e8d411445c3a83bc1f",
+      "sha256": "ff64b07aa1eaf48f0a07715ec7e7bbbec7258b2dca25311bcf98fff4d7116744",
+      "lines": 28,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/effective-before-exec.json",
+      "bytes": 224,
+      "git_blob_sha": "d50c6d1a09d6fda16c209bcef94277193b49c63d",
+      "sha256": "4e98d289ff27b84e7d28b256fc1709acbaa92bc38afce2f7b0c3eb8855839300",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/accounting.jsonl",
+      "bytes": 206,
+      "git_blob_sha": "27a83320b9beaab477ab2a1770b7769f1057325e",
+      "sha256": "89012de9d49b341d0eeb6efd9ca213f86d712c13b8dd94571f7094630ccf16f5",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "synthetic-and-fixture-control-profiles",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 10,
+      "unique_blobs": 10,
+      "bytes": 6703
+    },
+    "cumulative_direct_read": {
+      "paths": 384,
+      "unique_blobs": 384,
+      "bytes": 3118427
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 436,
+    "remaining_paths_without_full_semantic_read_or_alias": 5157,
+    "remaining_distinct_blobs_without_full_semantic_read": 4045,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 10,
+    "this_review_verified_bytes": 6703,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Ten retained texts fully read without executing either suite.",
+    "One authored synthetic invocation count is scoped to its preserved attempt, not a global host-wide exactly-once guarantee.",
+    "Five artifact and three source payload bindings verify custody, not authenticated execution or independent correctness of numerical results.",
+    "No sampled descendants does not mean no in-process generated machine code executed.",
+    "One early journal row in each suite cannot reconstruct the monitor or final wait4 accounting.",
+    "Identical numeric PIDs across saved attempts do not establish common process identity or a shared host/namespace.",
+    "Gate empty/held/archive/source-state fields and observed remote revisions are historical authored stage claims, not present-state queries or renewed authorization.",
+    "No current binary inspection, model call, waveform access, fixture replay, numerical experiment or workstation activation occurred."
+  ],
+  "review_report": "base12-synthetic-fixture-controls.md"
+}

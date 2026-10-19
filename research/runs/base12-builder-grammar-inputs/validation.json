@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "source_baseline": "533fca0d1bf13c14865fda524a85cac278aabbd2",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 18,
+  "verified_source_bytes": 401,
+  "nonempty_source_paths_fully_read": 17,
+  "mechanically_checked_empty_paths": 1,
+  "new_semantic_files": 17,
+  "new_semantic_bytes": 401,
+  "all_source_lengths_digests_and_LF_line_metadata_match": true,
+  "all16_literal_invalid_sources_match_materializer": true,
+  "both_accepted_boundary_sources_match_bounded_derivation": true,
+  "all_lexical_authored_source_counts_match": true,
+  "all18_saved_case_metadata_relations_match": true,
+  "declared_rejection_cases": 16,
+  "declared_acceptance_cases": 2,
+  "control_byte_cases": [
+    "27",
+    "28",
+    "29",
+    "30"
+  ],
+  "non_UTF8_source_case": "29",
+  "missing_final_LF_case": "32",
+  "LF_count_is_not_physical_line_count": true,
+  "expected_map_literal_checks": [
+    {
+      "case": "31",
+      "map_bytes": 96,
+      "expected_map_identity_reconstructed": true
+    },
+    {
+      "case": "32",
+      "map_bytes": 96,
+      "expected_map_identity_reconstructed": true
+    }
+  ],
+  "case_checks": [
+    {
+      "case": "15",
+      "bytes": 0,
+      "lf_bytes": 0,
+      "physical_lines": 0,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "16",
+      "bytes": 13,
+      "lf_bytes": 1,
+      "physical_lines": 1,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "17",
+      "bytes": 16,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "18",
+      "bytes": 21,
+      "lf_bytes": 3,
+      "physical_lines": 3,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "19",
+      "bytes": 30,
+      "lf_bytes": 3,
+      "physical_lines": 3,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "20",
+      "bytes": 29,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "21",
+      "bytes": 28,
+      "lf_bytes": 3,
+      "physical_lines": 3,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "22",
+      "bytes": 32,
+      "lf_bytes": 3,
+      "physical_lines": 3,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "23",
+      "bytes": 17,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "24",
+      "bytes": 25,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "25",
+      "bytes": 19,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "26",
+      "bytes": 36,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "27",
+      "bytes": 24,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "28",
+      "bytes": 18,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "29",
+      "bytes": 18,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "30",
+      "bytes": 28,
+      "lf_bytes": 3,
+      "physical_lines": 3,
+      "declared_rc": 65,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "31",
+      "bytes": 31,
+      "lf_bytes": 2,
+      "physical_lines": 2,
+      "declared_rc": 0,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    },
+    {
+      "case": "32",
+      "bytes": 16,
+      "lf_bytes": 1,
+      "physical_lines": 2,
+      "declared_rc": 0,
+      "source_literal_or_bounded_derivation_matches": true,
+      "saved_result_metadata_matches": true
+    }
+  ],
+  "empty_source_receives_no_semantic_credit": true,
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All18 fixture byte sequences fully inspected:17 nonempty sources/401 bytes receive semantic credit; the empty input receives only mechanical identity credit.",
+    "Exact source bytes bind case lengths,LF-based physical-line accounting, checksums and sixteen literal materializer entries; accepted cases use bounded literal source derivation.",
+    "NUL,CR,non-UTF8 and comment-control bytes remain unchanged; Unicode replacement/newline normalization was not used to establish source identity.",
+    "Original lexical source counts describe authored statements, not actual parser progress;16 rejected and2 accepted statuses remain frozen expectations and matching saved metadata.",
+    "Two96-byte expected maps reconstructed from literal records match declarations; no raw result map acquired, ELF emitted or candidate invoked.",
+    "Mechanical empty-file credit does not become semantic reading for every empty alias in the pinned tree.",
+    "No upstream import/materializer execution,native emission/execution,model invocation,live scan,workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/33.b12s",
+      "bytes": 41,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/34.b12s",
+      "bytes": 41,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/35.b12s",
+      "bytes": 42,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/36.b12s",
+      "bytes": 42,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/37.b12s",
+      "bytes": 39,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/38.b12s",
+      "bytes": 39,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/39.b12s",
+      "bytes": 38,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/40.b12s",
+      "bytes": 38,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/41.b12s",
+      "bytes": 29,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/42.b12s",
+      "bytes": 29,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/43.b12s",
+      "bytes": 28,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/44.b12s",
+      "bytes": 28,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/45.b12s",
+      "bytes": 24,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/46.b12s",
+      "bytes": 24,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/47.b12s",
+      "bytes": 24,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/48.b12s",
+      "bytes": 24,
+      "intended_review": "complete_numeric_endpoint_fixture_source_without_execution"
+    }
+  ],
+  "next_scope_bytes": 530,
+  "public_contribution_checks": [
+    "all18 exact byte identities and LF/physical-line relations passed",
+    "sixteen literal invalid sources and two bounded accepted derivations match",
+    "authored source counts, eighteen saved case relations and two map identities reconcile",
+    "seventeen semantic source readings and one mechanical empty classification remain separate",
+    "coverage, next scope, links, privacy and git diff --check passed"
+  ]
+}

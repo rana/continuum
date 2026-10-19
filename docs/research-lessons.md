@@ -305,6 +305,8 @@ The [complete historical layout](source-review/base12-builder-historical-layout.
 
 The [builder artifact-text closeout](source-review/base12-builder-artifact-text-closeout.md) audits an exact corpus boundary: fourteen artifact texts and all 68 non-fixture/non-native-artifact builder text paths are covered, while fixture/native/raw-evidence classes remain explicit. A scoped closeout lets a successor reuse completed static work and select an uncovered group without inheriting a whole-repository or runtime-verification claim.
 
+The [exact grammar-boundary inputs](source-review/base12-builder-grammar-inputs.md) include invalid UTF-8, NUL/CR/control bytes, an accepted adjacent comment and an accepted missing final LF. Decoding with replacement or normalizing input can erase the condition a fixture tests. Preserve raw-byte identity and transformation scope; count LF bytes separately from physical lines, and classify an empty source mechanically without manufacturing semantic-reading credit.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

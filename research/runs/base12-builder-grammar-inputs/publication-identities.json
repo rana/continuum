@@ -1,0 +1,20 @@
+{
+  "source_baseline": "533fca0d1bf13c14865fda524a85cac278aabbd2",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-grammar-inputs.md",
+      "bytes": 5617,
+      "sha256": "8e9f577eb2cf2339333e53c037185f5c249d956fbd3602f0a87100a9bee31bf9"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-grammar-inputs.json",
+      "bytes": 14469,
+      "sha256": "80afdf13e876b643bb58b4389e09697d4b1192a2475c56851f00c7d357bbe05c"
+    },
+    {
+      "path": "research/runs/base12-builder-grammar-inputs/validation.json",
+      "bytes": 10913,
+      "sha256": "49d493e6089ed189040041ad6e7b041e5b2c629b7e45752cc08af8d8f37949cb"
+    }
+  ]
+}

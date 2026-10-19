@@ -1,0 +1,30 @@
+{
+  "schema": "continuum.serial_capture_validation.v1",
+  "dependency_pr": 109,
+  "dependency_head": "d5017db8fe8014d64bf739e4b3d38aeb322c39da",
+  "recorder_source_commit": "4a92237",
+  "command": "python3 -m unittest discover -s research/runs/real-work-comparison-01 -p 'test_*.py' -v",
+  "exit_code": 0,
+  "bridge_tests": 10,
+  "serial_capture_tests": 7,
+  "provider_payloads": "synthetic test doubles only",
+  "real_receiver_invocations": 0,
+  "real_scorer_invocations": 0,
+  "properties": [
+    "exact frozen bytes and exclusive submission marker",
+    "unknown/partial/malformed outcome retained with no next invocation",
+    "visible retrieval transcript carried into next request",
+    "different retained outcome refused",
+    "known local result can recover transition without inference"
+  ],
+  "limitations": [
+    "serial local use only",
+    "no cross-process fence, authentication or provider idempotency",
+    "no crash-atomic record-set or power-loss guarantee",
+    "caller capture interval includes tool and filesystem overhead"
+  ],
+  "code_sha256": {
+    "cell.py": "77a1500e821ebd4ba1ab704b86eedb1f3111823d10350f4a5380879d288b1e8d",
+    "test_cell.py": "45362d5f51f1a28b72b1d3b15bc752c44f736cc00ce5548ecd0f44f67b78ef59"
+  }
+}

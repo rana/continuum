@@ -1,0 +1,5 @@
+PASS: exclusive initialization, independent reopen and writer contention
+PASS: four process exits; complete published images recover; ambiguous tails/pending refuse; injected sync uncertainty poisons handle
+PASS: 265 missing/corrupt/cut/old-boundary controls; refused images unchanged
+LIMIT: coherent rollback of journal plus matching older boundary is undetectable; fault model must exclude loss of successful synced history
+COUNTS {'clean_reopens': 6, 'interrupted': 4, 'corruption_refusals': 265}

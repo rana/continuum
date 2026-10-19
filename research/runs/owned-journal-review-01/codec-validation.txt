@@ -1,0 +1,8 @@
+running 5 tests
+test tests::reencoding_guard_catches_a_deliberately_tolerant_decoder_mutant ... ok
+test tests::frame_boundary_is_not_acknowledgement_history ... ok
+test tests::every_nonboundary_cut_and_every_single_byte_flip_refuses ... ok
+test tests::bounded_length_and_reordered_records_refuse ... ok
+canonical property: 2380 finite sequences, three prefix cuts each
+test tests::bounded_canonical_sequences_and_truncations_roundtrip ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s

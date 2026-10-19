@@ -1,0 +1,7 @@
+{
+  "request_sha256": "16f8ee01a30d1752d7659f6158bdc611386bd34263836131f9727d247c12d1a0",
+  "request_bytes": 10459,
+  "archive_sha256": "fbed4f897bc152b0cfad68c7364f81f703805dd6d31e962f0946ea54e71349df",
+  "fresh_restore_original_receipt": true,
+  "actual_provider_attempts": 0
+}

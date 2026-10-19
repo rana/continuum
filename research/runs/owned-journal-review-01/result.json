@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-19T16:35:02.447239+00:00",
+  "attempts": 1,
+  "actual_model": "claude-opus-5-5",
+  "configured_effort": "medium",
+  "usage": {
+    "input_tokens": 10173,
+    "output_tokens": 5982,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "stop_reason": "end_turn",
+  "truncated": false,
+  "review_established_concrete_source_flaw": false,
+  "codec_source_not_supplied": true,
+  "codec_guard_added": true,
+  "finite_canonical_sequences": 2380,
+  "prefix_cuts_per_sequence": 3,
+  "tolerant_decoder_mutant_refused": true,
+  "current_codec_counterexample_found": false,
+  "live_kernel_writeback_failure_executed": false,
+  "persistent_error_quarantine_implemented": false,
+  "scope": "Source review plus bounded codec checks; no retained-data adoption or kernel/device durability qualification",
+  "primary_sources": [
+    {
+      "url": "https://cdn.kernel.org/doc/html/latest/core-api/errseq.html",
+      "observed": "2026-10-19",
+      "scope": "Seen errors need not be reported to new subscribers"
+    },
+    {
+      "url": "https://www.postgresql.org/message-id/E1gObRa-00028l-KU@gemulon.postgresql.org",
+      "published": "2018-11-19",
+      "observed": "2026-10-19",
+      "scope": "Project commit explaining why retrying fsync after writeback failure can lose data"
+    }
+  ]
+}

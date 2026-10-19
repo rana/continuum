@@ -1,0 +1,189 @@
+{
+  "scope": "single-threaded Linux libc interposition; not kernel EIO, power-loss or persistence reordering",
+  "binary_sha256": "699cf82fe853e832fb097d0f4cd337c9d7aca13626b3860936b041bbe1cc052d",
+  "before": {
+    "binary_sha256": "3b3ec2bb9ee703de51ab218bb9ed4ae00a4da475b47dd2d40bc5c57cf92c4377",
+    "uncertain_commit_calls": [
+      {
+        "index": 1,
+        "returned": 0,
+        "errno": 0,
+        "resource": "journal"
+      },
+      {
+        "index": 2,
+        "returned": 0,
+        "errno": 0,
+        "resource": "boundary.pending"
+      },
+      {
+        "index": 3,
+        "returned": -1,
+        "errno": 5,
+        "resource": "directory"
+      }
+    ],
+    "retry_calls": [],
+    "retry_acknowledged_without_new_barrier": true
+  },
+  "after": {
+    "uncertain_commit_calls": [
+      {
+        "index": 1,
+        "returned": 0,
+        "errno": 0,
+        "resource": "journal"
+      },
+      {
+        "index": 2,
+        "returned": 0,
+        "errno": 0,
+        "resource": "boundary"
+      },
+      {
+        "index": 3,
+        "returned": 0,
+        "errno": 0,
+        "resource": "directory"
+      },
+      {
+        "index": 4,
+        "returned": 0,
+        "errno": 0,
+        "resource": "parent"
+      },
+      {
+        "index": 5,
+        "returned": 0,
+        "errno": 0,
+        "resource": "journal"
+      },
+      {
+        "index": 6,
+        "returned": 0,
+        "errno": 0,
+        "resource": "boundary.pending"
+      },
+      {
+        "index": 7,
+        "returned": -1,
+        "errno": 5,
+        "resource": "directory"
+      }
+    ],
+    "startup_failures": [
+      {
+        "fail_at": 1,
+        "refused_without_acknowledgement": true,
+        "calls": [
+          {
+            "index": 1,
+            "returned": -1,
+            "errno": 5,
+            "resource": "journal"
+          }
+        ]
+      },
+      {
+        "fail_at": 2,
+        "refused_without_acknowledgement": true,
+        "calls": [
+          {
+            "index": 1,
+            "returned": 0,
+            "errno": 0,
+            "resource": "journal"
+          },
+          {
+            "index": 2,
+            "returned": -1,
+            "errno": 5,
+            "resource": "boundary"
+          }
+        ]
+      },
+      {
+        "fail_at": 3,
+        "refused_without_acknowledgement": true,
+        "calls": [
+          {
+            "index": 1,
+            "returned": 0,
+            "errno": 0,
+            "resource": "journal"
+          },
+          {
+            "index": 2,
+            "returned": 0,
+            "errno": 0,
+            "resource": "boundary"
+          },
+          {
+            "index": 3,
+            "returned": -1,
+            "errno": 5,
+            "resource": "directory"
+          }
+        ]
+      },
+      {
+        "fail_at": 4,
+        "refused_without_acknowledgement": true,
+        "calls": [
+          {
+            "index": 1,
+            "returned": 0,
+            "errno": 0,
+            "resource": "journal"
+          },
+          {
+            "index": 2,
+            "returned": 0,
+            "errno": 0,
+            "resource": "boundary"
+          },
+          {
+            "index": 3,
+            "returned": 0,
+            "errno": 0,
+            "resource": "directory"
+          },
+          {
+            "index": 4,
+            "returned": -1,
+            "errno": 5,
+            "resource": "parent"
+          }
+        ]
+      }
+    ],
+    "retry_success_calls": [
+      {
+        "index": 1,
+        "returned": 0,
+        "errno": 0,
+        "resource": "journal"
+      },
+      {
+        "index": 2,
+        "returned": 0,
+        "errno": 0,
+        "resource": "boundary"
+      },
+      {
+        "index": 3,
+        "returned": 0,
+        "errno": 0,
+        "resource": "directory"
+      },
+      {
+        "index": 4,
+        "returned": 0,
+        "errno": 0,
+        "resource": "parent"
+      }
+    ],
+    "exact_historical_receipt": true,
+    "journal_bytes_unchanged": true
+  }
+}

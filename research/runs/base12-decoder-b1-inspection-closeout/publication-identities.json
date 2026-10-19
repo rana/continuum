@@ -1,0 +1,20 @@
+{
+  "source_baseline": "850b5f2ba68e5771243f49a8377ffba31e5f8883",
+  "files": [
+    {
+      "path": "docs/source-review/base12-decoder-b1-inspection-closeout.md",
+      "bytes": 5826,
+      "sha256": "ac0834bacbe02efb66de2d3dddaa8da24bde34cece8b2f2e3ba516a3aa4ec255"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-decoder-b1-inspection-closeout.json",
+      "bytes": 7739,
+      "sha256": "7a53a649a0a062f23d59fd21f9ada20b8a7652e4fbc12b3c7ba382e91d0fa679"
+    },
+    {
+      "path": "research/runs/base12-decoder-b1-inspection-closeout/validation.json",
+      "bytes": 7928,
+      "sha256": "f264fed2825f225cad4103e4cd63dda6a5a8b54c3931db269e780f4781782697"
+    }
+  ]
+}

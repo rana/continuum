@@ -1,0 +1,22 @@
+{
+  "source_baseline": "01a961508f90eda4b0202381659a0f08e3873471",
+  "files": [
+    {
+      "path": "docs/source-review/base12-signal-readiness.md",
+      "bytes": 6221,
+      "sha256": "87a11d04e91ccc30656ae95426a6546d01f7926f4fc9a8d4f047ee04c1b2c5ca"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-signal-readiness.json",
+      "bytes": 4827,
+      "sha256": "1847262d21ba8530b894ab6494f8fa2cdb4f3ce2208232c0c1a07624720fd2bf"
+    },
+    {
+      "path": "research/runs/base12-signal-readiness/validation.json",
+      "bytes": 872,
+      "sha256": "d26e420633fb9f5cb4b49781c6c7528caca75dac2a8e98240e983bf5b826b30f"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

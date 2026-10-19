@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-native-reset.json",
+  "selected_scope": "research/owned-stack/2026-10-15/signal-learning-readiness/",
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/signal-learning-readiness/CONCURRENT_UPDATE.md",
+      "git_blob_sha": "b74caba903ea3d9e35d291dd9aa880c33dae1cb2",
+      "bytes": 1587,
+      "sha256": "51b79b518de1647a89c8b4deda7df4fde597029ae7fdda55d8afc333600ae748",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "signal-learning-readiness-and-comparison-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/signal-learning-readiness/COST_BOUND.md",
+      "git_blob_sha": "c1af229228abab376fb83eeab2a8a71fec8af4c0",
+      "bytes": 4472,
+      "sha256": "7daea9362a8f6d6acf3a3f8249b8f18e02f99ec5d12ec918296a2e2313f65368",
+      "lines": 54,
+      "semantic_review": "full_direct_read",
+      "review_lane": "signal-learning-readiness-and-comparison-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/signal-learning-readiness/README.md",
+      "git_blob_sha": "34ac62dbd5f23c8c6cc049562699be9b49d32d1d",
+      "bytes": 4915,
+      "sha256": "299a563be2eb167ab779675e3eeee1c25f14dda4edb0c3a723b9bf68a04b7ee6",
+      "lines": 38,
+      "semantic_review": "full_direct_read",
+      "review_lane": "signal-learning-readiness-and-comparison-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/signal-learning-readiness/REVIEW_AND_ALIGNMENT.md",
+      "git_blob_sha": "190748b1724c13fb838914f6a2c415cd57f2a3ca",
+      "bytes": 3374,
+      "sha256": "09522c359b5bc6460cf967844ad06e4b05adaed1f23cfde0afeba8600623303c",
+      "lines": 27,
+      "semantic_review": "full_direct_read",
+      "review_lane": "signal-learning-readiness-and-comparison-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/signal-learning-readiness/SOURCE_REVIEW.md",
+      "git_blob_sha": "1eff1db6acca61e789bc017592c1ee484849206b",
+      "bytes": 5726,
+      "sha256": "f06a48e0f033938dbc87dfd6ef0d16b1556fc33d5c10de472636b8a0ca7607b3",
+      "lines": 45,
+      "semantic_review": "full_direct_read",
+      "review_lane": "signal-learning-readiness-and-comparison-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 20074
+    },
+    "cumulative_direct_read": {
+      "paths": 182,
+      "unique_blobs": 182,
+      "bytes": 1302576
+    },
+    "additional_identical_blob_paths": 47,
+    "alias_distinct_blobs": 17,
+    "semantic_covered_paths_including_aliases": 229,
+    "remaining_paths_without_full_semantic_read_or_alias": 5364,
+    "remaining_distinct_blobs_without_full_semantic_read": 4247,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 20074,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All five selected documents were fully read; aliases are not separately read.",
+    "Private source and historical user/model/worker messages are not published.",
+    "No upstream learner, decoder, dataset, benchmark or model consultation was executed.",
+    "Underlying PR13 implementation and linked historical execution attachments were not newly reviewed in this unit.",
+    "The size bound is conditional on the documented candidate inclusion, serialization and choice-independent context; no fresh payload sizes or speedups were measured.",
+    "Historical coordination is not current worker acceptance or execution authority."
+  ],
+  "review_report": "base12-signal-readiness.md"
+}

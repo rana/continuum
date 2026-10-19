@@ -131,6 +131,12 @@ The [native-boundary review](source-review/base12-native-reset.md) separates com
 
 The source also distinguishes resident-kernel, whole-operation, launch, build/cache and device timing. Continuum's in-process workload, CLI reservation probe and complete checkpoint attempts retain their own boundaries; they do not compose into a general speed claim. Historical integration notes can preserve original packets while appending narrower outcomes and consumed clearances. Those notes are navigation for a successor, not fresh authorization to repeat external effects. This unit read six pinned files and checked four manifest bindings; it performed no upstream execution or new consultation.
 
+### 11. Benefit claims need an accounting unit and matched alternatives
+
+The [signal-readiness review](source-review/base12-signal-readiness.md) records a conditional upper bound: when a full predictor family contains the learned subset, framing is identical and future context is choice-independent, the subset's size advantage is bounded by omitted dictionary overhead. In the documented one-stream case, four learned entries versus 35 permit at most 31 bytes of advantage over the full family. The implementation was not newly audited here. This is not a general AI-context theorem: representations can change future decisions and costs.
+
+Shared computation can support paired output comparisons while preventing independent per-arm timing claims. An older codec with different history, framing and adaptation is not a matched baseline. For future Continuum studies, declare task exposure, candidate relationships, cost boundaries and readiness checks before scored work. A prerequisite failure after validation exposure is retained attempt evidence; later installation does not erase it. Historical coordination with an existing owner also does not authorize a second execution queue.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

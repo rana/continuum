@@ -6,9 +6,9 @@ The architecture lessons are in [research-lessons.md](../research-lessons.md). T
 
 ## Latest additive checkpoint
 
-The [native-boundary review](base12-native-reset.md) fully reads six additional distinct files / 25,430 bytes and checks four original-file manifest bindings without upstream execution. Cumulative semantic coverage is **177 distinct blobs / 1,282,502 bytes**, plus **47 byte-identical alias paths**. The [latest ledger](base12-coverage-native-reset.json) retains identities and the remaining **5,369 paths / 4,252 distinct blobs**. It separates runtime, build and self-rebuild milestones and preserves measurement and historical-authority boundaries. The earlier global acquisition aggregate remains historical because its complete private overlap index was not recovered.
+The [signal-readiness review](base12-signal-readiness.md) fully reads five additional distinct documents / 20,074 bytes without upstream execution. Cumulative semantic coverage is **182 distinct blobs / 1,302,576 bytes**, plus **47 byte-identical alias paths**. The [latest ledger](base12-coverage-signal-readiness.json) retains exact identities and the remaining **5,364 paths / 4,247 distinct blobs**. Its lessons concern a conditional dictionary-overhead bound, matched comparison arms, shared work and readiness before scored exposure. The earlier global acquisition aggregate remains historical because its complete private overlap index was not recovered.
 
-The preceding [decision-gate review](base12-decision-gate.md) added ten distinct full readings and nine manifest checks, reaching 171 directly read blobs. Its conditional path-reopen custody limitation remains source-derived, not an observed archive failure.
+The preceding [native-boundary review](base12-native-reset.md) added six full readings and four original-file manifest checks, reaching 177 blobs; it separates runtime, build and self-rebuild milestones. The earlier [decision-gate review](base12-decision-gate.md) added ten full readings and nine manifest checks, reaching 171 blobs. Its conditional path-reopen limitation remains source-derived, not an observed archive failure.
 
 ## Later completed review groups
 

@@ -267,6 +267,8 @@ The [builder static-review return](source-review/base12-builder-static-review.md
 
 The [builder encoding-witness return](source-review/base12-builder-encoding-witnesses.md) verifies exact finite expectation identities without converting them into execution evidence. Concrete relocation examples, unreachable abstract endpoints, predicted program exits and saved binary observations serve different roles. A continuation should retain each role so later actual results can be compared without rewriting the history of the prediction.
 
+The [builder contract-witness review](source-review/base12-builder-contract-witnesses.md) binds the tiny source texts to their predicted maps and closes the eleven-file witness directory. A declarative contract check agrees with all 63 saved admission verdicts, while nine larger recipes remain arithmetic-only. Accepted syntax can still name code end or omit termination. Twenty-nine saved byte comparisons and four relocation calculations agree internally, but the historical ELF/listing/layout remain unheld. Exclusive output reservation, successful pair completion and crash durability stay separate; none was freshly exercised. Identical source aliases improve coverage accounting without adding independent observations.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

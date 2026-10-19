@@ -1,0 +1,20 @@
+{
+  "source_baseline": "97804f36ca631e70fdfa466d8375c8c54a5b8a37",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-contract-witnesses.md",
+      "bytes": 5743,
+      "sha256": "efefa3d633241119864ea5b8465d416be16ab0ea09c50ef98219049d6045127e"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-contract-witnesses.json",
+      "bytes": 5280,
+      "sha256": "cbb733d3e64b753ce8c8486b90429acc3bf21e84890881c5bf5ce3058c5d3b64"
+    },
+    {
+      "path": "research/runs/base12-builder-contract-witnesses/validation.json",
+      "bytes": 4571,
+      "sha256": "37cf9d8ef27c769796591171aaf3c31cf5cd1debb86cc1f5b12833a0e98847a8"
+    }
+  ]
+}

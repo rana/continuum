@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "source_baseline": "97804f36ca631e70fdfa466d8375c8c54a5b8a37",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 31764,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 31764,
+  "unique_contract_cases": 63,
+  "expected_accept_cases": 23,
+  "original_declarative_admission_matches_all_63_expectations": true,
+  "native_parser_or_encoder_executed": false,
+  "bounded_recipe_arithmetic_checks": 9,
+  "expanded_recipe_inputs_generated": false,
+  "publication_expectations_read": 10,
+  "publication_IO_experiments_performed": false,
+  "program_source_bindings": [
+    {
+      "source_name": "exit17.b12asm",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "physical_statement_lines_match_map": true,
+      "admission_expected": true,
+      "execution_observed": false
+    },
+    {
+      "source_name": "branch42.b12asm",
+      "bytes": 206,
+      "sha256": "d013c9f79eb65d91f329d0f1375bd5683321a7867143067242a3b526778c86a5",
+      "physical_statement_lines_match_map": true,
+      "admission_expected": true,
+      "execution_observed": false
+    }
+  ],
+  "all_ten_witness_checksums_bind": true,
+  "selected_historical_byte_pairs": 29,
+  "selected_historical_relocation_arithmetic_checks": 4,
+  "recorded_all_109_patch_consistency_is_not_fresh_independent_validation": true,
+  "historical_consumer_payloads_acquired": false,
+  "witness_directory_paths": 11,
+  "witness_directory_bytes": 75717,
+  "all_witness_paths_fully_read": true,
+  "no_native_program_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five texts fully read; all eleven witness-directory files now semantically read and ten checksum payloads bind.",
+    "Original declarative admission check agrees with 63 saved source verdicts; it is not native parsing, encoding, output IO or safe program execution.",
+    "Nine recipes checked by length/count arithmetic only; no expanded fixtures or boundary programs generated.",
+    "Two actual tiny source hashes and physical source/map lines bind prior predictions; exits remain unobserved.",
+    "Twenty-nine saved expected/observed pairs and four selected relocation calculations agree internally; original historical ELF/listing/layout not newly acquired or compared.",
+    "All-109-patch result is explicitly saved-layout consistency, not independently rederived semantic labels or observed behavior.",
+    "Ten publication expectations retain successful-IO and trusted-input assumptions; no filesystem failure or interrupted-pair test ran."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/migrate_runner.py",
+      "bytes": 3321,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/runner.b12s",
+      "bytes": 7463,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CHECKPOINT.json",
+      "bytes": 3228,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OWNER.json",
+      "bytes": 1022,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OPEN.md",
+      "bytes": 2138,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/TEST_PROPOSAL.md",
+      "bytes": 5623,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 22795,
+  "public_contribution_checks": [
+    "five pinned identities and complete text readings passed",
+    "63 declarative admission verdicts and nine unexpanded recipe calculations agree",
+    "both tiny source hashes and physical map lines bind prior predictions",
+    "ten witness checksums bind all named files",
+    "29 saved byte pairs and four selected relocation calculations reconcile",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

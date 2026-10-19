@@ -1,0 +1,20 @@
+{
+  "source_baseline": "86722fc449a9ce229b934b77d73301dd4d34a451",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-small-maps.md",
+      "bytes": 4939,
+      "sha256": "67d6b9b1b187de9b1652452a848d533e42c0495044c0bb793f7e1bced1798916"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-small-maps.json",
+      "bytes": 9534,
+      "sha256": "b85aebb4eb3aa5faec376eff1982d3f5668ee05b8444cf61579085a1b1fdf72c"
+    },
+    {
+      "path": "research/runs/base12-builder-small-maps/validation.json",
+      "bytes": 9488,
+      "sha256": "ccf8171df99da8577d094bf89991bf7e42a2b1c8cff80c13d26804dfbe8b26a8"
+    }
+  ]
+}

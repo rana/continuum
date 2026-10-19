@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-map-metadata.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.map"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.map",
+      "bytes": 96,
+      "git_blob_sha": "d5a74e59012478f37fc1a30241e79d9706416e7f",
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.map",
+      "bytes": 4160,
+      "git_blob_sha": "59c94c638565f12a910232184878cf6e0b11c758",
+      "sha256": "f42492a6380df1d4073f66c343d69e8a5f0c7297c439c27ee9c4e97eee2a7358",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.map",
+      "bytes": 128,
+      "git_blob_sha": "99be6911838664a36cc8d8bda53f685195c86c29",
+      "sha256": "59d6ac9a169c840d349a6ed202c4d1d18f63695f70f4bb6d23284e1d8815a0af",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.map",
+      "bytes": 96,
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.map",
+      "bytes": 96,
+      "git_blob_sha": "1948430814c60e8639f8182160ee20316317fafc",
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.map",
+      "bytes": 96,
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-small-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 6,
+      "unique_blobs": 6,
+      "bytes": 4672
+    },
+    "cumulative_direct_read": {
+      "paths": 604,
+      "unique_blobs": 604,
+      "bytes": 5252315
+    },
+    "additional_identical_blob_paths": 112,
+    "alias_distinct_blobs": 36,
+    "semantic_covered_paths_including_aliases": 716,
+    "remaining_paths_without_full_semantic_read_or_alias": 4877,
+    "remaining_distinct_blobs_without_full_semantic_read": 3825,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 12,
+    "this_review_verified_bytes": 5248,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Twelve complete binary map paths/5248 bytes read; six new distinct blobs/4672 bytes and six exact repeat reads are separately classified.",
+    "All152 records decode and roundtrip exactly; all fields and checksum/manifest/saved metadata match held layouts.",
+    "Three map identity groups contain different code digests:31/33/35,37/39 and41/43/45. Map equality does not identify instruction contents.",
+    "Four cases share code identity while their maps retain different label/line structure; identical05/32 maps retain different source conditions.",
+    "The existing bounded reader is unchanged; this unit adds acquired-data observations, not another synthetic test or fresh runtime invocation.",
+    "Remaining expected map paths include one25-byte sentinel and two empty files; their failure-path metadata must not be coerced into a valid-map reading or granted blanket semantic empty-blob credit.",
+    "No native ELF/code acquisition,upstream import/materializer execution,native emission/execution,model call,live scan,activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-builder-small-maps.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.map",
+      "bytes": 96,
+      "git_blob_sha": "d5a74e59012478f37fc1a30241e79d9706416e7f",
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "classification": "complete_repeat_read_identical_blob_no_new_semantic_blob_credit"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.map",
+      "bytes": 96,
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "classification": "complete_repeat_read_identical_blob_no_new_semantic_blob_credit"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.map",
+      "bytes": 96,
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "classification": "complete_repeat_read_identical_blob_no_new_semantic_blob_credit"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.map",
+      "bytes": 96,
+      "git_blob_sha": "1948430814c60e8639f8182160ee20316317fafc",
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "classification": "complete_repeat_read_identical_blob_no_new_semantic_blob_credit"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.map",
+      "bytes": 96,
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "classification": "complete_repeat_read_identical_blob_no_new_semantic_blob_credit"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.map",
+      "bytes": 96,
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "classification": "complete_repeat_read_identical_blob_no_new_semantic_blob_credit"
+    }
+  ]
+}

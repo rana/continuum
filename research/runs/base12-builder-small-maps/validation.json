@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "source_baseline": "86722fc449a9ce229b934b77d73301dd4d34a451",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 12,
+  "verified_source_bytes": 5248,
+  "full_binary_metadata_paths_read": 12,
+  "new_semantic_files": 6,
+  "new_semantic_bytes": 4672,
+  "repeated_identical_payload_paths": 6,
+  "total_map_records": 152,
+  "all_fields_decode_roundtrip_and_match_held_layout": true,
+  "case_checks": [
+    {
+      "case": "05",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 1,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "09",
+      "map_bytes": 4160,
+      "header_version": 1,
+      "map_rows": 129,
+      "code_bytes": 1,
+      "instruction_rows": 1,
+      "label_rows": 128,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "13",
+      "map_bytes": 128,
+      "header_version": 1,
+      "map_rows": 3,
+      "code_bytes": 1,
+      "instruction_rows": 1,
+      "label_rows": 2,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "31",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 10,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "32",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 1,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "33",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 10,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "35",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 10,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "37",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 7,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "39",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 7,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "41",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 4,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "43",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 4,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "45",
+      "map_bytes": 96,
+      "header_version": 1,
+      "map_rows": 2,
+      "code_bytes": 4,
+      "instruction_rows": 1,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    }
+  ],
+  "map_identity_groups": [
+    [
+      "05",
+      "32"
+    ],
+    [
+      "09"
+    ],
+    [
+      "13"
+    ],
+    [
+      "31",
+      "33",
+      "35"
+    ],
+    [
+      "37",
+      "39"
+    ],
+    [
+      "41",
+      "43",
+      "45"
+    ]
+  ],
+  "literal_code_identity_groups": [
+    [
+      "05",
+      "09",
+      "13",
+      "32"
+    ],
+    [
+      "31"
+    ],
+    [
+      "33"
+    ],
+    [
+      "35"
+    ],
+    [
+      "37"
+    ],
+    [
+      "39"
+    ],
+    [
+      "41"
+    ],
+    [
+      "43"
+    ],
+    [
+      "45"
+    ]
+  ],
+  "code_identity_counts_per_map_group": [
+    1,
+    1,
+    1,
+    2,
+    3,
+    3
+  ],
+  "new_identical_blob_alias_paths": [
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.map"
+  ],
+  "reader": "research/runs/base12-builder-map-metadata/map_metadata.py",
+  "reader_sha256": "dc4c7fecb047170fdc37e26a34fed6d0a534e6fb190a8bfb5491a1882b6db9d7",
+  "reader_unchanged_from_source_baseline": true,
+  "private_source_or_map_payloads_in_publication": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Twelve complete binary map paths/5248 bytes read; six new distinct blobs/4672 bytes and six exact repeat reads are separately classified.",
+    "All152 records decode and roundtrip exactly; all fields and checksum/manifest/saved metadata match held layouts.",
+    "Three map identity groups contain different code digests:31/33/35,37/39 and41/43/45. Map equality does not identify instruction contents.",
+    "Four cases share code identity while their maps retain different label/line structure; identical05/32 maps retain different source conditions.",
+    "The existing bounded reader is unchanged; this unit adds acquired-data observations, not another synthetic test or fresh runtime invocation.",
+    "Remaining expected map paths include one25-byte sentinel and two empty files; their failure-path metadata must not be coerced into a valid-map reading or granted blanket semantic empty-blob credit.",
+    "No native ELF/code acquisition,upstream import/materializer execution,native emission/execution,model call,live scan,activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.map",
+      "bytes": 16608,
+      "intended_review": "complete_remaining_expected_map_metadata_and_distinguish_valid_records_sentinel_and_mechanical_empty_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.map",
+      "bytes": 36896,
+      "intended_review": "complete_remaining_expected_map_metadata_and_distinguish_valid_records_sentinel_and_mechanical_empty_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.map",
+      "bytes": 8256,
+      "intended_review": "complete_remaining_expected_map_metadata_and_distinguish_valid_records_sentinel_and_mechanical_empty_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.map",
+      "bytes": 25,
+      "intended_review": "complete_remaining_expected_map_metadata_and_distinguish_valid_records_sentinel_and_mechanical_empty_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.map",
+      "bytes": 0,
+      "intended_review": "complete_remaining_expected_map_metadata_and_distinguish_valid_records_sentinel_and_mechanical_empty_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.map",
+      "bytes": 0,
+      "intended_review": "complete_remaining_expected_map_metadata_and_distinguish_valid_records_sentinel_and_mechanical_empty_without_native_execution"
+    }
+  ],
+  "next_scope_bytes": 61785,
+  "public_contribution_checks": [
+    "twelve complete maps decode all152 records and round-trip exactly",
+    "all layout/manifest/saved metadata joins pass; map and code identity groups remain distinct",
+    "six new blobs and six repeats reconcile with unchanged reader identity",
+    "exceptional output next scope, coverage, links, privacy and git diff --check passed"
+  ]
+}

@@ -323,6 +323,8 @@ The [expected-layout corpus closeout](source-review/base12-builder-layout-corpus
 
 The [exact binary metadata maps](source-review/base12-builder-map-metadata.md) distinguish a predicted digest from acquired expected bytes, a structural field check and an observed native output. Retain the identities absent from the representation: a map cannot establish label names, code content or invocation acceptance. Reproducible bounded decoding closes one layer without silently closing the others.
 
+The [acquired small map bytes](source-review/base12-builder-small-maps.md) directly substantiate map-shape equivalence while retaining different code identities and source conditions. Strengthening custody of one representation does not add identities absent from that representation. Failure-output sentinels and empty files also need their own reading classifications instead of being treated as malformed successful maps.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

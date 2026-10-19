@@ -233,6 +233,8 @@ The [synthetic/fixture controls return](source-review/base12-synthetic-fixture-c
 
 The [historical packet-notes return](source-review/base12-historical-packet-notes.md) finds that several later confirmed qualifications were already explicit in the original audit plans. Preserve attribution rather than turning confirmation into novelty. Keep prospective commands, superseded alternatives, adopted controls and executed outcomes distinct; a retained historical instruction is source material, not renewed authority. No historical action was replayed.
 
+The [packet semantic closeout](source-review/base12-packet-semantic-closeout.md) completes reading of every nonempty member of one retained packet while leaving whole-repository coverage incomplete. Direct readings, aliases, mechanical empties, authored drafts, recipient acceptance and external-page declarations remain different states. Continuum should preserve a scoped completion census without promoting provenance metadata or an accurate proposal into observed external effects. No historical action was replayed.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

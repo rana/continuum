@@ -1,0 +1,39 @@
+{
+  "source_baseline": "cedade61fbc377519dce68829679c954399bc854",
+  "source_files": {
+    "src/store.rs": "21c741ce3f2d726ea1ae116cc6b6f4ce76e04fb7268ca1bd3913dfab9de92a7d",
+    "src/main.rs": "488dd1bced5b2c8810392abf118b511c3faf59326100d7c1aeddaf34716ab172",
+    "tests/read_only.rs": "e435c250d7d0fc9b358cda57ee8a49f3b6cce6c47e3d9711a4b7a9c168bc505b",
+    "examples/probe_reader_reservation.rs": "b96d2f8e76af4d2b92a9faea9e0c609d7c911fca01df6139aaa9b4e2fd02c273",
+    "Cargo.toml": "24d16daf952d92700d2fae63f646a3823c2a297c9d7411d32648784e35a92e52",
+    "Cargo.lock": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb"
+  },
+  "binary_sha256": "eb68d686807b73b2b386fe6b9b4d3a4e2784ff4561e429c8587fccd876e97d3e",
+  "probe_binary_sha256": "19468a3e1bff6b05cb16402fcdb2d64de1a7e1270c809a418ab0c1e59b6efc21",
+  "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)",
+  "observed_commands": [
+    {
+      "command": "cargo test --locked --all-features -j 4",
+      "exit_code": 0,
+      "integration_tests": 30,
+      "snapshot_loss_unit_tests": 1
+    },
+    {
+      "command": "cargo clippy --locked --all-targets --all-features -j 4 -- -D warnings",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo fmt --all -- --check",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo build --locked -j 4",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo run --locked --example probe_reader_reservation -- --binary target/debug/continuum --directory ../pilots/read-only-store-2",
+      "exit_code": 0
+    }
+  ],
+  "permission_case": "Executed as uid1000; denied-directory assertions enforced. Privileged test processes conditionally report that limit."
+}

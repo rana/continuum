@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "**Likely real defect: the pin can silently end.** SQLite rolls back an open transaction automatically after some errors, including `SQLITE_FULL`, `SQLITE_IOERR`, `SQLITE_NOMEM` and certain `SQLITE_BUSY` cases. After that, later reads on the same handle run in autocommit and see newer commits. The docstring promises a snapshot \"until this handle is dropped,\" but that no longer holds. There is a second path: if a mutation method's error handling issues `ROLLBACK` after its failed `BEGIN IMMEDIATE`, that ends the pinned read transaction too. That is a real defect, not a documented restriction. A fix would be to check `connection.is_autocommit()` before each read, or to return an error or poison the handle once the pin is lost. None of the five tests exercise a read after a failed statement.\n\n**Lifetime hazard the tests miss (direction reversed):** The tests check that reads succeed while a writer holds `BEGIN IMMEDIATE`. They do not check that writers can commit while a reader holds its pin.\n- **DELETE-journal databases:** the held SHARED lock blocks writer commits. Writers hit `SQLITE_BUSY` after their timeout.\n- **WAL databases:** a long-lived handle prevents checkpoints from resetting the WAL, so it grows without bound.\n\nThis is acceptable for short-lived CLI processes but undocumented for library callers.\n\n**Validation gap:** Only `application_id` and `user_version` are checked. A truncated or schema-damaged file can pass validation and fail later with a raw SQL error instead of `UnsupportedDatabase`.\n\n**WAL sidecars:** The `-shm` creation is documented. There is no defect there."
+    }
+  ],
+  "structuredContent": {
+    "status": "OK",
+    "text": "**Likely real defect: the pin can silently end.** SQLite rolls back an open transaction automatically after some errors, including `SQLITE_FULL`, `SQLITE_IOERR`, `SQLITE_NOMEM` and certain `SQLITE_BUSY` cases. After that, later reads on the same handle run in autocommit and see newer commits. The docstring promises a snapshot \"until this handle is dropped,\" but that no longer holds. There is a second path: if a mutation method's error handling issues `ROLLBACK` after its failed `BEGIN IMMEDIATE`, that ends the pinned read transaction too. That is a real defect, not a documented restriction. A fix would be to check `connection.is_autocommit()` before each read, or to return an error or poison the handle once the pin is lost. None of the five tests exercise a read after a failed statement.\n\n**Lifetime hazard the tests miss (direction reversed):** The tests check that reads succeed while a writer holds `BEGIN IMMEDIATE`. They do not check that writers can commit while a reader holds its pin.\n- **DELETE-journal databases:** the held SHARED lock blocks writer commits. Writers hit `SQLITE_BUSY` after their timeout.\n- **WAL databases:** a long-lived handle prevents checkpoints from resetting the WAL, so it grows without bound.\n\nThis is acceptable for short-lived CLI processes but undocumented for library callers.\n\n**Validation gap:** Only `application_id` and `user_version` are checked. A truncated or schema-damaged file can pass validation and fail later with a raw SQL error instead of `UnsupportedDatabase`.\n\n**WAL sidecars:** The `-shm` creation is documented. There is no defect there.",
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "low",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 1378,
+      "output_tokens": 1804,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none",
+    "image_count": 0,
+    "images": []
+  },
+  "isError": false
+}

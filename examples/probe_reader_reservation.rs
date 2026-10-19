@@ -109,11 +109,10 @@ fn main() -> Result<(), Box<dyn Error>> {
         .iter()
         .map(|(name, args)| invoke(&binary, &db, name, args))
         .collect::<Result<_, _>>()?;
-    for result in &held {
-        assert_eq!(result["returncode"], 1);
-        assert_eq!(result["stdout"], "");
-        let error: Value = serde_json::from_str(result["stderr"].as_str().unwrap())?;
-        assert_eq!(error["error"], "database error: database is locked");
+    for (before, result) in baseline.iter().zip(&held) {
+        assert_eq!(result["returncode"], 0);
+        assert_eq!(result["stdout"], before["stdout"]);
+        assert_eq!(result["stderr"], "");
     }
     let transaction_open_after = !writer.is_autocommit();
     writer.execute_batch("ROLLBACK")?;
@@ -133,7 +132,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         "read_only_control":{"root":observed.0,"generation":observed.1,"receipt":serde_json::from_str::<Value>(&stored_receipt)?,
             "canonical_object_bytes":object_bytes,"elapsed_seconds":control_seconds,"flags":"SQLITE_OPEN_READ_ONLY"},
         "logical_history_unchanged":true,
-        "scope":"Three sequential native CLI commands, one held writer reservation, same-build SQLite read-only control. No throughput/capacity or read-only Store implementation claim."});
+        "scope":"Three sequential native CLI commands, one held writer reservation, same-build SQLite read-only control. Read-only CLI implementation comparison to retained baseline; no throughput/capacity claim."});
     fs::write(
         directory.join("result.json"),
         serde_json::to_vec_pretty(&result)?,

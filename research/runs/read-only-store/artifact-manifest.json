@@ -1,0 +1,45 @@
+{
+  "schema": "continuum.pilot_artifacts.v1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6438,
+      "sha256": "aa9d88d45a63e799908c581a1dedd5f457e0d33859ff6cce44871758c97557de"
+    },
+    {
+      "path": "claude-request.json",
+      "bytes": 3454,
+      "sha256": "7dffc8ba2109ead951d9b5092a6ae52551423f27b223804432963df05f6d3f21"
+    },
+    {
+      "path": "claude-response.json",
+      "bytes": 3865,
+      "sha256": "94d5bb77c446312bb976c6cd05904cd284a85e1ad0e64dfff32c67dc000617ad"
+    },
+    {
+      "path": "pre-review-result.json",
+      "bytes": 7776,
+      "sha256": "a42caaa0dec1b8fa35276a7919cb821c18acf319035ffd18a06ef601938bc7fb"
+    },
+    {
+      "path": "result.json",
+      "bytes": 7778,
+      "sha256": "cf7661eb68de45cd1957700110ad3ac38dc2fabb80d7b8e311bd6fba18ce016b"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1677,
+      "sha256": "8903257f6e3d670e8bea3eaa096f716bc81f99162f54c06a59242df640224c61"
+    },
+    {
+      "path": "verification-result.json",
+      "bytes": 136,
+      "sha256": "c20b389ba1d6d02c1a06c4ed4feac6e233e30204f071c5c03c9f9e62229be6ec"
+    },
+    {
+      "path": "verify_records.py",
+      "bytes": 1532,
+      "sha256": "a3bcee601472be2fe3c78ad8f37fd89bba728f7a349cd71d36d3d9326556eee5"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Read-only command snapshots
+
+`get`, `head`, `receipt`, `events`, `inspect-context`, `verify-context`, `verify-current-context` and `verify-handoff` open an existing database read-only. They do not initialize an empty file or acquire the writer reservation used by normal initialization. Missing, empty, unrelated and unsupported-version databases are rejected. Native object and context checks remain in force; opening is an identity/version check, not a whole-database integrity audit.
+
+Library callers can use `Store::open_existing_read_only(path)`. It opens with SQLite read-only flags and pins one deferred read transaction during identity/version validation. All reads through that handle observe that snapshot, including head, receipt and context freshness queries. Reopen to observe later commits. If SQLite has ended the transaction after an error, later reads fail with `read-only snapshot lost; reopen the store` rather than silently reading a new snapshot. There is no writable fallback.
+
+Keep library read handles short-lived. A pinned WAL reader can retain old WAL history and impede checkpoint reset; a rollback-journal reader can block writer commits. A read result is a point-in-time observation, not action authority, a lock on future state or proof that a source writer has stopped. Mutation and backup methods are unsupported on the read-only handle. Writable `Store::open` and CLI init/demo, mutations, context preparation/acknowledgement and backup retain their existing opening path.
+
+Read-only does not mean SQLite can always operate without shared bookkeeping. A WAL needing recovery may require creating or accessing `-shm`. With adequate directory access this can occur without changing the main database. Without that access, opening can fail; the CLI reports the database error and does not retry writable. Do not delete sidecars of a live store to make it readable. Standalone exported DELETE-journal databases can be read without changing their main file or switching them into WAL mode.
+
+The [implementation run](../../research/runs/read-only-store/README.md) retains the before/after reservation probe, validation and actual review corrections. The [historical baseline](../../research/runs/read-writer-reservation/README.md) remains evidence of the prior behavior, not a throughput benchmark.

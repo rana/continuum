@@ -1,5 +1,5 @@
 use crate::{Error, Object, ObjectId, Result, object::append_bytes};
-use rusqlite::{Connection, OptionalExtension, TransactionBehavior, params};
+use rusqlite::{Connection, OpenFlags, OptionalExtension, TransactionBehavior, params};
 use serde::{Deserialize, Serialize};
 use std::{collections::BTreeSet, path::Path, time::Duration};
 
@@ -74,9 +74,36 @@ pub struct Acceptance {
 
 pub struct Store {
     pub(crate) connection: Connection,
+    read_snapshot: bool,
 }
 
 impl Store {
+    /// Opens only an existing supported database, without initialization or a
+    /// writer reservation. Reads share a snapshot pinned during validation until
+    /// this handle is dropped (or reads fail if the pin is lost); reopen to
+    /// observe later commits. Keep handles short-lived: WAL history is retained,
+    /// and rollback-journal readers can block writer commits. SQLite may need
+    /// WAL shared-memory bookkeeping access. No writable fallback is attempted.
+    /// Mutation/backup methods on this pinned read-only handle are unsupported.
+    pub fn open_existing_read_only(path: impl AsRef<Path>) -> Result<Self> {
+        let connection = Connection::open_with_flags(path, OpenFlags::SQLITE_OPEN_READ_ONLY)?;
+        connection.busy_timeout(Duration::from_secs(5))?;
+        connection.execute_batch("BEGIN DEFERRED")?;
+        // Keep validation and all subsequent reads in one read transaction.
+        let application: i64 =
+            connection.pragma_query_value(None, "application_id", |r| r.get(0))?;
+        let version: i64 = connection.pragma_query_value(None, "user_version", |r| r.get(0))?;
+        if application != APPLICATION_ID || version != DATABASE_VERSION {
+            return Err(Error::UnsupportedDatabase(format!(
+                "application={application}, version={version}"
+            )));
+        }
+        Ok(Self {
+            connection,
+            read_snapshot: true,
+        })
+    }
+
     /// Opens or creates a local database. WAL + FULL synchronization provide
     /// SQLite's durability guarantees, subject to OS/filesystem/device behavior.
     pub fn open(path: impl AsRef<Path>) -> Result<Self> {
@@ -119,7 +146,10 @@ impl Store {
                 ));
             }
         }
-        Ok(Self { connection })
+        Ok(Self {
+            connection,
+            read_snapshot: false,
+        })
     }
 
     pub fn put(&mut self, object: &Object) -> Result<ObjectId> {
@@ -168,17 +198,29 @@ impl Store {
         Ok(id)
     }
 
+    fn require_read_snapshot(&self) -> Result<()> {
+        if self.read_snapshot && self.connection.is_autocommit() {
+            return Err(Error::Invalid(
+                "read-only snapshot lost; reopen the store".into(),
+            ));
+        }
+        Ok(())
+    }
+
     pub fn get(&self, id: ObjectId) -> Result<Object> {
+        self.require_read_snapshot()?;
         load_object(&self.connection, id)
     }
 
     pub fn head(&self, acceptor: &str, target: &str) -> Result<Option<Head>> {
+        self.require_read_snapshot()?;
         validate_name(acceptor)?;
         validate_name(target)?;
         read_head(&self.connection, acceptor, target)
     }
 
     pub fn receipt(&self, acceptor: &str, operation_id: &str) -> Result<Option<Receipt>> {
+        self.require_read_snapshot()?;
         validate_name(acceptor)?;
         validate_name(operation_id)?;
         let value: Option<String> = self
@@ -195,6 +237,7 @@ impl Store {
     }
 
     pub fn events(&self, acceptor: &str, target: &str) -> Result<Vec<Receipt>> {
+        self.require_read_snapshot()?;
         validate_name(acceptor)?;
         validate_name(target)?;
         let mut statement = self.connection.prepare(
@@ -367,3 +410,59 @@ CREATE TRIGGER objects_no_delete BEFORE DELETE ON objects BEGIN SELECT RAISE(ABO
 CREATE TRIGGER events_no_update BEFORE UPDATE ON events BEGIN SELECT RAISE(ABORT,'append-only event'); END;
 CREATE TRIGGER events_no_delete BEFORE DELETE ON events BEGIN SELECT RAISE(ABORT,'append-only event'); END;
 ";
+
+#[cfg(test)]
+mod read_snapshot_tests {
+    use super::*;
+
+    #[test]
+    fn lost_read_transaction_fails_closed_instead_of_observing_new_snapshot() {
+        let dir = tempfile::tempdir().unwrap();
+        let path = dir.path().join("work.db");
+        let mut writer = Store::open(&path).unwrap();
+        let blob = writer
+            .put(&Object::Blob {
+                bytes: b"guard".to_vec(),
+            })
+            .unwrap();
+        let root = writer
+            .put(&Object::Snapshot {
+                entries: vec![crate::SnapshotEntry {
+                    path: "x".into(),
+                    blob,
+                }],
+            })
+            .unwrap();
+        let request = AcceptRequest {
+            acceptor: "local".into(),
+            target: "main".into(),
+            operation_id: "one".into(),
+            expected: None,
+            candidate: root,
+        };
+        let first = writer.accept(&request).unwrap().receipt;
+        let reader = Store::open_existing_read_only(&path).unwrap();
+        // Simulate transaction loss directly; this is not an injected disk fault.
+        reader.connection.execute_batch("ROLLBACK").unwrap();
+        writer
+            .accept(&AcceptRequest {
+                operation_id: "two".into(),
+                expected: first.resulting,
+                ..request
+            })
+            .unwrap();
+        for error in [
+            reader.get(blob).unwrap_err(),
+            reader.head("local", "main").unwrap_err(),
+            reader.receipt("local", "two").unwrap_err(),
+            reader.events("local", "main").unwrap_err(),
+        ] {
+            assert!(error.to_string().contains("read-only snapshot lost"));
+        }
+        let reopened = Store::open_existing_read_only(&path).unwrap();
+        assert_eq!(
+            reopened.head("local", "main").unwrap().unwrap().generation,
+            2
+        );
+    }
+}

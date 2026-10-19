@@ -78,7 +78,22 @@ fn run(args: &[String]) -> CliResult<Value> {
     if !matches!(command.as_str(), "init" | "demo") && !std::path::Path::new(database).is_file() {
         return Err("database does not exist; run continuum init first".into());
     }
-    let mut store = Store::open(database)?;
+    let read_only = matches!(
+        command.as_str(),
+        "get"
+            | "head"
+            | "receipt"
+            | "events"
+            | "inspect-context"
+            | "verify-context"
+            | "verify-current-context"
+            | "verify-handoff"
+    );
+    let mut store = if read_only {
+        Store::open_existing_read_only(database)?
+    } else {
+        Store::open(database)?
+    };
     match (command.as_str(), rest) {
         ("init", []) => Ok(json!({"database": database, "schema_version": 1})),
         ("backup", [path]) => Ok(json!(store.backup_export(path)?)),

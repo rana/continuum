@@ -1,0 +1,4056 @@
+{
+  "storage_source_commit": "8bc0fc1578fb915f10fedd22ee016bf9c4e9b2df",
+  "base_commit": "ea197d7c37352dbe13585ecf0e2c7fa489a03fe2",
+  "binary_sha256": "4a08fa52fd907e165cf8c3ee5a0596d7d780feb750b9c67f350c5a50cf9fe75c",
+  "binary_bytes": 990720,
+  "build_command": "cargo build --release --locked --manifest-path research/owned-authority/framing/Cargo.toml",
+  "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)",
+  "python": "3.14.4",
+  "kernel": "7.0.0-38-generic",
+  "system": "Linux",
+  "machine": "x86_64",
+  "filesystem": "tmpfs",
+  "timer": "time.perf_counter_ns",
+  "timing_scope": "Uninstrumented full subprocess including launch/capture/recovery/sync/output; input preparation excluded",
+  "sources": [
+    {
+      "path": "research/owned-authority/cli-cost/check.py",
+      "sha256": "6c0dcead80f4a428959175ccccfd3714202efbf138e9593e9cd870056eee5e19",
+      "bytes": 10487
+    },
+    {
+      "path": "research/owned-authority/cli-cost/PLAN.md",
+      "sha256": "e4eba115e10a015d165f3be0dc18552e279059e123d158f980ada09d41303ccf",
+      "bytes": 2577
+    },
+    {
+      "path": "research/owned-authority/recovery-sync/fail_sync.c",
+      "sha256": "df84f3b7f8f4e9bfee913b19c648d0443371380b50e2cc53d2be611e43e284d7",
+      "bytes": 1647
+    },
+    {
+      "path": "research/owned-authority/framing/Cargo.lock",
+      "sha256": "466585ce63c7de609189a434db2090dda97ae855e40229f07cfc39afadddad84",
+      "bytes": 5400
+    },
+    {
+      "path": "src/object.rs",
+      "sha256": "3c97e27383410a004be5d263e61b66d976be6dcc00983f361b64ba37d04d36ad",
+      "bytes": 10446
+    },
+    {
+      "path": "research/owned-authority/framing/src/archive.rs",
+      "sha256": "39c7356d9457f2392d0e2dab6018f80b01d924541cf6390e94ea39091e4b4155",
+      "bytes": 3365
+    },
+    {
+      "path": "research/owned-authority/framing/src/bin/owned-store.rs",
+      "sha256": "6c57b0e3f4223e071b5833e578cdb7a64772aa461b027dff7386804be35b6996",
+      "bytes": 2251
+    },
+    {
+      "path": "research/owned-authority/framing/src/journal.rs",
+      "sha256": "c7f2f343bf5b3bc7c284c69ab8e7303a1806008ca7d83186c46b4a55bb14d4f6",
+      "bytes": 8874
+    },
+    {
+      "path": "research/owned-authority/framing/src/lib.rs",
+      "sha256": "41b3f705a40e04c34c35c63b84e50d3e8542d8b8a6e3f6cc7512b32eef8be125",
+      "bytes": 8091
+    },
+    {
+      "path": "research/owned-authority/framing/src/main.rs",
+      "sha256": "9f674ddea1cc5d63450f26ae85891ef16f50debdbb6b024731af162bc4899d3c",
+      "bytes": 2983
+    },
+    {
+      "path": "research/owned-authority/framing/src/store.rs",
+      "sha256": "242623da68cf884d672e9609864f1f19970b8a3944b3f8891d0e1ab4ae34726e",
+      "bytes": 9888
+    }
+  ],
+  "cells": [
+    {
+      "updates": 1,
+      "repeat": 0,
+      "objects": 2,
+      "accepted_outcomes": 1,
+      "journal_bytes": 1557,
+      "source_blob_bytes": 128,
+      "journal_sha256": "76b1f5e48b6883dbe771f5d6264f5abb9a859f9c2dcb4fb4095591d6bc0162e9",
+      "boundary_sha256": "0a3a736263de7172ae6e0e8a6b37f98199fecd5f3d67beb0d75ad7a0616f4595",
+      "journal_bytes_after_timed_stale": 2430,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 2,
+      "independent_final_outcomes": 3
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "objects": 2,
+      "accepted_outcomes": 1,
+      "journal_bytes": 1557,
+      "source_blob_bytes": 128,
+      "journal_sha256": "76b1f5e48b6883dbe771f5d6264f5abb9a859f9c2dcb4fb4095591d6bc0162e9",
+      "boundary_sha256": "0a3a736263de7172ae6e0e8a6b37f98199fecd5f3d67beb0d75ad7a0616f4595",
+      "journal_bytes_after_timed_stale": 2430,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 2,
+      "independent_final_outcomes": 3
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "objects": 2,
+      "accepted_outcomes": 1,
+      "journal_bytes": 1557,
+      "source_blob_bytes": 128,
+      "journal_sha256": "76b1f5e48b6883dbe771f5d6264f5abb9a859f9c2dcb4fb4095591d6bc0162e9",
+      "boundary_sha256": "0a3a736263de7172ae6e0e8a6b37f98199fecd5f3d67beb0d75ad7a0616f4595",
+      "journal_bytes_after_timed_stale": 2430,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 2,
+      "independent_final_outcomes": 3
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "objects": 32,
+      "accepted_outcomes": 16,
+      "journal_bytes": 30577,
+      "source_blob_bytes": 2048,
+      "journal_sha256": "36a213c425dab505a3bef51cf19bb0789deb4e1837f35eb0905b5ca1930573c2",
+      "boundary_sha256": "a89d94623f0218d33d6b3358c5e48209078a1abdaf0484ddbba527e89603497e",
+      "journal_bytes_after_timed_stale": 31451,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 32,
+      "independent_final_outcomes": 18
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "objects": 32,
+      "accepted_outcomes": 16,
+      "journal_bytes": 30577,
+      "source_blob_bytes": 2048,
+      "journal_sha256": "36a213c425dab505a3bef51cf19bb0789deb4e1837f35eb0905b5ca1930573c2",
+      "boundary_sha256": "a89d94623f0218d33d6b3358c5e48209078a1abdaf0484ddbba527e89603497e",
+      "journal_bytes_after_timed_stale": 31451,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 32,
+      "independent_final_outcomes": 18
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "objects": 32,
+      "accepted_outcomes": 16,
+      "journal_bytes": 30577,
+      "source_blob_bytes": 2048,
+      "journal_sha256": "36a213c425dab505a3bef51cf19bb0789deb4e1837f35eb0905b5ca1930573c2",
+      "boundary_sha256": "a89d94623f0218d33d6b3358c5e48209078a1abdaf0484ddbba527e89603497e",
+      "journal_bytes_after_timed_stale": 31451,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 32,
+      "independent_final_outcomes": 18
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "objects": 128,
+      "accepted_outcomes": 64,
+      "journal_bytes": 127340,
+      "source_blob_bytes": 8192,
+      "journal_sha256": "50fd9bb154f2b2c7c7a6dc3dc2b563339290579266656a807ac6999738a61166",
+      "boundary_sha256": "a666e81912550be75fac1704c197d453416dd842502a6ea10208261581727bc4",
+      "journal_bytes_after_timed_stale": 128216,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 128,
+      "independent_final_outcomes": 66
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "objects": 128,
+      "accepted_outcomes": 64,
+      "journal_bytes": 127340,
+      "source_blob_bytes": 8192,
+      "journal_sha256": "50fd9bb154f2b2c7c7a6dc3dc2b563339290579266656a807ac6999738a61166",
+      "boundary_sha256": "a666e81912550be75fac1704c197d453416dd842502a6ea10208261581727bc4",
+      "journal_bytes_after_timed_stale": 128216,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 128,
+      "independent_final_outcomes": 66
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "objects": 128,
+      "accepted_outcomes": 64,
+      "journal_bytes": 127340,
+      "source_blob_bytes": 8192,
+      "journal_sha256": "50fd9bb154f2b2c7c7a6dc3dc2b563339290579266656a807ac6999738a61166",
+      "boundary_sha256": "a666e81912550be75fac1704c197d453416dd842502a6ea10208261581727bc4",
+      "journal_bytes_after_timed_stale": 128216,
+      "sync_observations": {
+        "get": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "head": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "receipt": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "retry": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "duplicate_put": [
+          "journal",
+          "boundary",
+          "store",
+          "parent"
+        ],
+        "new_stale": [
+          "journal",
+          "boundary",
+          "store",
+          "parent",
+          "WRITE-IN-PROGRESS",
+          "store",
+          "journal",
+          "boundary.pending",
+          "store",
+          "store"
+        ]
+      },
+      "independent_final_objects": 128,
+      "independent_final_outcomes": 66
+    }
+  ],
+  "summaries": [
+    {
+      "updates": 1,
+      "operation": "get",
+      "samples": 24,
+      "median_ns": 1021605.0,
+      "min_ns": 556956,
+      "max_ns": 1314726
+    },
+    {
+      "updates": 1,
+      "operation": "head",
+      "samples": 24,
+      "median_ns": 965097.0,
+      "min_ns": 536096,
+      "max_ns": 1436510
+    },
+    {
+      "updates": 1,
+      "operation": "receipt",
+      "samples": 24,
+      "median_ns": 649338.0,
+      "min_ns": 545925,
+      "max_ns": 1223000
+    },
+    {
+      "updates": 1,
+      "operation": "retry",
+      "samples": 24,
+      "median_ns": 1129482.0,
+      "min_ns": 553289,
+      "max_ns": 1377236
+    },
+    {
+      "updates": 1,
+      "operation": "duplicate_put",
+      "samples": 24,
+      "median_ns": 1006742.0,
+      "min_ns": 550173,
+      "max_ns": 1336589
+    },
+    {
+      "updates": 1,
+      "operation": "new_stale",
+      "samples": 3,
+      "median_ns": 1169929,
+      "min_ns": 622091,
+      "max_ns": 1180840
+    },
+    {
+      "updates": 16,
+      "operation": "get",
+      "samples": 24,
+      "median_ns": 1230876.5,
+      "min_ns": 860898,
+      "max_ns": 1971173
+    },
+    {
+      "updates": 16,
+      "operation": "head",
+      "samples": 24,
+      "median_ns": 1288836.5,
+      "min_ns": 860978,
+      "max_ns": 1836014
+    },
+    {
+      "updates": 16,
+      "operation": "receipt",
+      "samples": 24,
+      "median_ns": 1292008.0,
+      "min_ns": 885264,
+      "max_ns": 1869208
+    },
+    {
+      "updates": 16,
+      "operation": "retry",
+      "samples": 24,
+      "median_ns": 1346933.0,
+      "min_ns": 869093,
+      "max_ns": 1859007
+    },
+    {
+      "updates": 16,
+      "operation": "duplicate_put",
+      "samples": 24,
+      "median_ns": 1316685.0,
+      "min_ns": 883021,
+      "max_ns": 1908562
+    },
+    {
+      "updates": 16,
+      "operation": "new_stale",
+      "samples": 3,
+      "median_ns": 2009036,
+      "min_ns": 1526252,
+      "max_ns": 2037940
+    },
+    {
+      "updates": 64,
+      "operation": "get",
+      "samples": 24,
+      "median_ns": 2443847.0,
+      "min_ns": 1905627,
+      "max_ns": 3283885
+    },
+    {
+      "updates": 64,
+      "operation": "head",
+      "samples": 24,
+      "median_ns": 2469100.0,
+      "min_ns": 1810005,
+      "max_ns": 3114381
+    },
+    {
+      "updates": 64,
+      "operation": "receipt",
+      "samples": 24,
+      "median_ns": 2421790.5,
+      "min_ns": 1854609,
+      "max_ns": 3420045
+    },
+    {
+      "updates": 64,
+      "operation": "retry",
+      "samples": 24,
+      "median_ns": 2475908.5,
+      "min_ns": 2103766,
+      "max_ns": 3111234
+    },
+    {
+      "updates": 64,
+      "operation": "duplicate_put",
+      "samples": 24,
+      "median_ns": 2421995.5,
+      "min_ns": 2016640,
+      "max_ns": 3487976
+    },
+    {
+      "updates": 64,
+      "operation": "new_stale",
+      "samples": 3,
+      "median_ns": 2957109,
+      "min_ns": 2573385,
+      "max_ns": 3050328
+    }
+  ],
+  "samples": [
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 618514,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1436510,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1182773,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1185829,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 664301,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1073515,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1218582,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1178866,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1295259,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1155963,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1179638,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 613173,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 608254,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1082462,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1104774,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1139331,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 621931,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1223000,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 910112,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 771296,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1016305,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1198533,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 662267,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1213734,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1203443,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1147366,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1171031,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 635407,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1243810,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 976909,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 736710,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1001046,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1073866,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 570712,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 574900,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1034320,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 554942,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1188384,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 717334,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1008581,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 0,
+      "operation": "new_stale",
+      "elapsed_ns": 622091,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":2},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1026905,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 656085,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 607162,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1112229,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1162485,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1098993,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1145533,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 644444,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 611891,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 573097,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 578668,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 547498,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 587875,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 582164,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 568599,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 563669,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 552357,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 578608,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 587354,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 550173,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 556956,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1203253,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 607533,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1329264,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 564611,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 730688,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 618384,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 591673,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 556795,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 563008,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 565983,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 536096,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 831442,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 553289,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 569270,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 632059,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 587985,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 545925,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1377236,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1091319,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 1,
+      "operation": "new_stale",
+      "elapsed_ns": 1180840,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":2},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1242027,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1172985,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 654232,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1223782,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1004903,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 783700,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 929148,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 713075,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 999242,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1336589,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1109844,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1228221,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1207661,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1298175,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1156794,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1066992,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1186090,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 631248,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1250734,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1262686,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1205227,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 601791,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 607303,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1146735,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1152676,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 560974,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1184837,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 875606,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1206489,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1182674,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1314726,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1182333,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1222810,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1299236,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1188415,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 642670,
+      "stdout": "{\"bytes\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 610588,
+      "stdout": "{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 565382,
+      "stdout": "{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 567486,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 978804,
+      "stdout": "{\"id\":\"sha256:53667a904ee6d0732738b0b92b2c3d517c24034bcce7e953c1e2073febcf37a7\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 1,
+      "repeat": 2,
+      "operation": "new_stale",
+      "elapsed_ns": 1169929,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":2},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1246587,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 907557,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 913218,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1469211,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1282394,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1168647,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 903800,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1049127,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 939808,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1439254,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 903489,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1382696,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 934459,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1345094,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 934729,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1302854,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1360454,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1833008,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1011105,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1387065,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 956451,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 951080,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 938807,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1588199,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 995275,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 958624,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 916574,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 901936,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1682159,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 997198,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 904251,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1010073,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 920882,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 890635,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1159700,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 1141805,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 1101318,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1389940,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 1622946,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 908509,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 0,
+      "operation": "new_stale",
+      "elapsed_ns": 2009036,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":17},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1175089,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1833530,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1430699,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 916313,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 883021,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1484781,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1269870,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1281142,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1798693,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1350976,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1242798,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1836014,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1437852,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1284128,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1896941,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 919429,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1669876,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1311921,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1485313,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1525791,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 860898,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1423294,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1302874,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1859007,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1392175,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1971173,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1450856,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1362077,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1308915,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1751923,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1354132,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1247888,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1869208,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 1431680,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1273928,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1424126,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1577298,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 1317151,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 894021,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1476856,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 1,
+      "operation": "new_stale",
+      "elapsed_ns": 2037940,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":17},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1915105,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 929760,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1458942,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1266033,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1219694,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1843579,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1384490,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1486645,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1627104,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 940350,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1440587,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 860978,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1450917,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 891627,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1430167,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 960068,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 890585,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 899441,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1592377,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1361345,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1229123,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 906305,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 963013,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1003000,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1469041,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1232630,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1307803,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1171693,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1618377,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 985917,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 967822,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1586096,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 885264,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 869093,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 917966,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 1638576,
+      "stdout": "{\"bytes\":[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1421851,
+      "stdout": "{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 903610,
+      "stdout": "{\"observed\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":{\"generation\":15,\"root\":\"sha256:6e81bf8c95e7c7ae6c1ee25fa9e04b77e18240ce3e366d4a9ad9289efd0a8b78\"},\"operation_id\":\"update-15\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":16}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 1348772,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 1908562,
+      "stdout": "{\"id\":\"sha256:cf94c8518490ce3898ce633a65f1819922c8919472d325d7bbbd2e049222a87d\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 16,
+      "repeat": 2,
+      "operation": "new_stale",
+      "elapsed_ns": 1526252,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":16,\"root\":\"sha256:4e968e23553d2634e862271b440e6259e348975fac7c72cddbda8452b7bb9fbf\"},\"sequence\":17},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2610747,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 2470237,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 2075382,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2103766,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2509573,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2364175,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 2366229,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 2851027,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2648499,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2428678,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2940177,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 2574758,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 2454358,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2964464,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2508350,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2375957,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 2362231,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 2009275,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2431203,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2034143,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2446392,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 2840096,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 2704706,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2544771,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 3477616,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2683486,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 2629703,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 1923942,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2545752,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2315211,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2398010,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 2634953,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 3113138,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2760143,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2016640,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "get",
+      "elapsed_ns": 2847239,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "head",
+      "elapsed_ns": 3114381,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "receipt",
+      "elapsed_ns": 2654410,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "retry",
+      "elapsed_ns": 2450801,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2283530,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 0,
+      "operation": "new_stale",
+      "elapsed_ns": 2573385,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":65},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 2680641,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 2525764,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 2434720,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 2261729,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2282639,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 2215140,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 2268401,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 2281026,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 2290584,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 3294836,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 1905627,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 2562715,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 2447584,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 3066700,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 3158815,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 2748931,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 2467963,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 2408861,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 2374103,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2240879,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 3283885,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 2427335,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 2326824,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 2304861,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2279653,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 2220630,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 1810005,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 3420045,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 2667615,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2414591,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 2339688,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 2282749,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 2345169,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 2889049,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 3379308,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "get",
+      "elapsed_ns": 2665712,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "head",
+      "elapsed_ns": 2433778,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "receipt",
+      "elapsed_ns": 2356410,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "retry",
+      "elapsed_ns": 2278160,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2509142,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 1,
+      "operation": "new_stale",
+      "elapsed_ns": 2957109,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":65},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2375547,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 2784289,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 2717712,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 2493242,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 3487976,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2303559,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 1928571,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 2619092,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 2341091,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2332574,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2441302,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 2738200,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 2514383,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 2458575,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2316904,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2323056,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 2297989,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1924373,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 2454037,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2415313,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2643449,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 2792415,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 3290638,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 2643479,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2359566,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2349877,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 2242111,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 1854609,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 3111234,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2705618,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2484064,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 2477562,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 2393341,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 2277539,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 3177341,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "get",
+      "elapsed_ns": 2469556,
+      "stdout": "{\"bytes\":[63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63],\"type\":\"blob\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "head",
+      "elapsed_ns": 2295794,
+      "stdout": "{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "receipt",
+      "elapsed_ns": 2356229,
+      "stdout": "{\"observed\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":{\"generation\":63,\"root\":\"sha256:4bfa0da83349b28864409d25f3868ccd8b7b1c9aec600edbfaa2ca6f61560341\"},\"operation_id\":\"update-63\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":64}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "retry",
+      "elapsed_ns": 2879030,
+      "stdout": "{\"receipt\":{\"observed\":null,\"outcome\":\"accepted\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\",\"expected\":null,\"operation_id\":\"update-0\",\"target\":\"source\"},\"resulting\":{\"generation\":1,\"root\":\"sha256:c114a318fbb14ce9239828a0cf7ac99c2a132c0fa2249cec6566652be3502122\"},\"sequence\":1},\"replayed\":true}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "duplicate_put",
+      "elapsed_ns": 2592051,
+      "stdout": "{\"id\":\"sha256:58020a2cdb7e55035f7b21fbc0e6273023fdf33cb57b1dcb5cb75785fdec2b92\"}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "updates": 64,
+      "repeat": 2,
+      "operation": "new_stale",
+      "elapsed_ns": 3050328,
+      "stdout": "{\"receipt\":{\"observed\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"outcome\":\"precondition_failed\",\"request\":{\"acceptor\":\"probe\",\"candidate\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\",\"expected\":null,\"operation_id\":\"stale-timed\",\"target\":\"source\"},\"resulting\":{\"generation\":64,\"root\":\"sha256:929554540b9f0cf498e9dcd7e359671ceab933cc1e31786035db602585ed4d66\"},\"sequence\":65},\"replayed\":false}\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 //! Disposable local journal: cooperative one-writer lock and explicit boundary.
 //! No acceptance semantics or qualification for retained work.
-use crate::{decode, encode};
+use crate::{decode_canonical, encode};
 use sha2::{Digest, Sha256};
 use std::{
     fs::{self, File, OpenOptions},
@@ -46,7 +46,7 @@ fn recover(path: &Path) -> io::Result<Vec<Vec<u8>>> {
     if marker != boundary(&image) {
         return Err(invalid("boundary digest mismatch"));
     }
-    decode(&image).map_err(|_| invalid("invalid committed framing"))
+    decode_canonical(&image).map_err(|_| invalid("invalid committed framing"))
 }
 
 pub struct Journal {
@@ -65,7 +65,7 @@ impl Journal {
     /// Install one validated physical image into an exclusively new directory.
     /// RESTORING prevents a partially installed image from opening as a store.
     pub fn install(path: &Path, image: &[u8], fault: &str) -> io::Result<()> {
-        if image.len() as u64 > LIMIT || decode(image).is_err() {
+        if image.len() as u64 > LIMIT || decode_canonical(image).is_err() {
             return Err(invalid("invalid install image"));
         }
         if !["none", "restore-before-ready", "restore-after-ready"].contains(&fault) {

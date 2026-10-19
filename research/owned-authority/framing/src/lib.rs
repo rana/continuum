@@ -17,6 +17,7 @@ pub enum Invalid {
     Sequence,
     Chain,
     Digest,
+    NonCanonical,
 }
 
 /// Exact finite image decoder: no accepted prefix is returned on any bad tail.
@@ -58,6 +59,20 @@ pub fn decode(mut image: &[u8]) -> Result<Vec<Vec<u8>>, Invalid> {
         image = &image[end + 32..];
     }
     Ok(records)
+}
+
+/// Recovery/installation must preserve the exact bytes later used as an append
+/// prefix, even if a future decoder accidentally tolerates alternate framing.
+pub fn decode_canonical(image: &[u8]) -> Result<Vec<Vec<u8>>, Invalid> {
+    let records = decode(image)?;
+    require_reencoding(image, &records)?;
+    Ok(records)
+}
+fn require_reencoding(image: &[u8], records: &[Vec<u8>]) -> Result<(), Invalid> {
+    if encode(records)? != image {
+        return Err(Invalid::NonCanonical);
+    }
+    Ok(())
 }
 
 /// Build a disposable complete image. Sequence here is frame ordinal, NOT the
@@ -102,6 +117,50 @@ pub fn create(path: &std::path::Path, records: &[Vec<u8>]) -> io::Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn bounded_canonical_sequences_and_truncations_roundtrip() {
+        let mut payloads = vec![vec![]];
+        for a in [0, 1, 255] {
+            payloads.push(vec![a]);
+            for b in [0, 1, 255] {
+                payloads.push(vec![a, b]);
+            }
+        }
+        let mut cases = 0;
+        for count in 0..=3 {
+            for mut number in 0..payloads.len().pow(count) {
+                let mut records = Vec::new();
+                for _ in 0..count {
+                    records.push(payloads[number % payloads.len()].clone());
+                    number /= payloads.len();
+                }
+                let image = encode(&records).unwrap();
+                assert_eq!(decode_canonical(&image), Ok(records));
+                for cut in [0, image.len() / 2, image.len().saturating_sub(1)] {
+                    let candidate = &image[..cut];
+                    if let Ok(decoded) = decode(candidate) {
+                        assert_eq!(encode(&decoded).unwrap(), candidate);
+                    }
+                }
+                cases += 1;
+            }
+        }
+        eprintln!("canonical property: {cases} finite sequences, three prefix cuts each");
+    }
+    #[test]
+    fn reencoding_guard_catches_a_deliberately_tolerant_decoder_mutant() {
+        let image = encode(&[b"opaque".to_vec()]).unwrap();
+        let mut padded = image.clone();
+        padded.push(0);
+        // Deliberate mutant accepts/strips padding. Production decode refuses it.
+        let wrongly_accepted = decode(&padded[..padded.len() - 1]).unwrap();
+        assert!(decode(&padded).is_err());
+        assert_eq!(
+            require_reencoding(&padded, &wrongly_accepted),
+            Err(Invalid::NonCanonical)
+        );
+        assert_eq!(require_reencoding(&image, &wrongly_accepted), Ok(()));
+    }
     #[test]
     fn frame_boundary_is_not_acknowledgement_history() {
         let records = vec![

@@ -1,0 +1,324 @@
+{
+  "alphabet": 20,
+  "max_depth": 4,
+  "traces": 168420,
+  "transition_comparisons": 664820,
+  "mutants": {
+    "sequence_only_success": {
+      "trace": [
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": [
+            "A",
+            1
+          ],
+          "acceptor": "local",
+          "target": "main"
+        }
+      ],
+      "difference": {
+        "step": 1,
+        "expected": [
+          {
+            "sequence": 1,
+            "outcome": "precondition_failed",
+            "observed": null,
+            "resulting": null
+          },
+          false
+        ],
+        "actual": [
+          {
+            "sequence": 0,
+            "outcome": "precondition_failed",
+            "observed": null,
+            "resulting": null
+          },
+          false
+        ]
+      }
+    },
+    "retry_uses_current": {
+      "trace": [
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": null,
+          "acceptor": "local",
+          "target": "main"
+        },
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": null,
+          "acceptor": "local",
+          "target": "main"
+        }
+      ],
+      "difference": {
+        "step": 2,
+        "expected": [
+          {
+            "sequence": 1,
+            "outcome": "accepted",
+            "observed": null,
+            "resulting": [
+              "A",
+              1
+            ]
+          },
+          true
+        ],
+        "actual": [
+          {
+            "sequence": 1,
+            "outcome": "accepted",
+            "observed": [
+              "A",
+              1
+            ],
+            "resulting": [
+              "A",
+              1
+            ]
+          },
+          true
+        ]
+      }
+    },
+    "changed_request_ignored": {
+      "trace": [
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": null,
+          "acceptor": "local",
+          "target": "main"
+        },
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": [
+            "A",
+            1
+          ],
+          "acceptor": "local",
+          "target": "main"
+        }
+      ],
+      "difference": {
+        "step": 2,
+        "expected": "conflict",
+        "actual": [
+          {
+            "sequence": 1,
+            "outcome": "accepted",
+            "observed": null,
+            "resulting": [
+              "A",
+              1
+            ]
+          },
+          true
+        ]
+      }
+    },
+    "target_scoped_operation": {
+      "trace": [
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": null,
+          "acceptor": "local",
+          "target": "main"
+        },
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": null,
+          "acceptor": "local",
+          "target": "other"
+        }
+      ],
+      "difference": {
+        "step": 2,
+        "expected": "conflict",
+        "actual": [
+          {
+            "sequence": 2,
+            "outcome": "accepted",
+            "observed": null,
+            "resulting": [
+              "A",
+              1
+            ]
+          },
+          false
+        ]
+      }
+    },
+    "stale_not_retained": {
+      "trace": [
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": [
+            "A",
+            1
+          ],
+          "acceptor": "local",
+          "target": "main"
+        },
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": null,
+          "acceptor": "local",
+          "target": "main"
+        }
+      ],
+      "difference": {
+        "step": 2,
+        "expected": "conflict",
+        "actual": [
+          {
+            "sequence": 2,
+            "outcome": "accepted",
+            "observed": null,
+            "resulting": [
+              "A",
+              1
+            ]
+          },
+          false
+        ]
+      }
+    },
+    "root_only": {
+      "trace": [
+        {
+          "operation": "x",
+          "candidate": "A",
+          "expected": null,
+          "acceptor": "local",
+          "target": "main"
+        },
+        {
+          "operation": "y",
+          "candidate": "A",
+          "expected": [
+            "A",
+            1
+          ],
+          "acceptor": "local",
+          "target": "main"
+        },
+        {
+          "operation": "z",
+          "candidate": "A",
+          "expected": [
+            "A",
+            1
+          ],
+          "acceptor": "local",
+          "target": "main"
+        }
+      ],
+      "difference": {
+        "step": 3,
+        "expected": [
+          {
+            "sequence": 3,
+            "outcome": "precondition_failed",
+            "observed": [
+              "A",
+              2
+            ],
+            "resulting": [
+              "A",
+              2
+            ]
+          },
+          false
+        ],
+        "actual": [
+          {
+            "sequence": 3,
+            "outcome": "accepted",
+            "observed": [
+              "A",
+              2
+            ],
+            "resulting": [
+              "A",
+              3
+            ]
+          },
+          false
+        ]
+      }
+    }
+  },
+  "aba_trace": [
+    {
+      "operation": "a",
+      "candidate": "A",
+      "expected": null,
+      "acceptor": "local",
+      "target": "main"
+    },
+    {
+      "operation": "b",
+      "candidate": "B",
+      "expected": [
+        "A",
+        1
+      ],
+      "acceptor": "local",
+      "target": "main"
+    },
+    {
+      "operation": "c",
+      "candidate": "A",
+      "expected": [
+        "B",
+        2
+      ],
+      "acceptor": "local",
+      "target": "main"
+    },
+    {
+      "operation": "d",
+      "candidate": "B",
+      "expected": [
+        "A",
+        1
+      ],
+      "acceptor": "local",
+      "target": "main"
+    },
+    {
+      "operation": "a",
+      "candidate": "A",
+      "expected": null,
+      "acceptor": "local",
+      "target": "main"
+    },
+    {
+      "operation": "d",
+      "candidate": "B",
+      "expected": [
+        "A",
+        1
+      ],
+      "acceptor": "local",
+      "target": "main"
+    }
+  ],
+  "sqlite": {
+    "traces": 7,
+    "operations": 18,
+    "binary_sha256": "558c6f4462dc44ea86d3b56e017ea22cd66e1eb2902ca58e60fda37cdbb8322d"
+  }
+}

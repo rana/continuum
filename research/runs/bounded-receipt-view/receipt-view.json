@@ -1,0 +1,160 @@
+{
+  "schema": "continuum.csv_receipt_view.pilot.v1",
+  "source": {
+    "native_blob_id": "sha256:a1c15fd80f97e53c7cbadeb3e1f13ad811360ad767fbd2ecf61d9d5c45e940a9",
+    "raw_bytes": 77194,
+    "raw_sha256": "e06fa73aa3d91cb4bdcfa6b1bf668dfae191df8e05f3bfd4356524f8c6c1dcab",
+    "repository_file": "../source-bound-verification/verification-receipt.json.gz"
+  },
+  "selector": "fixed-fields-v1",
+  "budget_bytes": 16384,
+  "selected_json_pointers": {
+    "/schema": "continuum.csv_verification_receipt.v1",
+    "/operation_id": "csv-local-verification-91858169b6424beb9c4cd3e104dcd40f",
+    "/request": "sha256:a154770b60c56750d76dcb2b2d0ce8cb378caf9e55077ea267d8b12a8655d234",
+    "/request_sha256": "59cdb4022614501824178ae49e136ec29d2358b75924e4cf419ac84367a2da83",
+    "/source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+    "/started_utc": "2026-10-19T06:37:36.327756+00:00",
+    "/finished_utc": "2026-10-19T06:37:37.822683+00:00",
+    "/passed": true,
+    "/source_unchanged_after_checks": true,
+    "/scope": "New local CSV observation under the explicit capture hooks; not an authenticated external receipt.",
+    "/stages/0/stage": "tests",
+    "/stages/0/argv": [
+      "/usr/bin/python3",
+      "/home/rana/Documents/ChatGPT/Continuum/repository/research/runs/source-bound-verification/capture.py",
+      "--worker",
+      "tests",
+      "--subject",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/subject",
+      "--worker-output",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/tests"
+    ],
+    "/stages/0/returncode": 0,
+    "/stages/0/worker": {
+      "stage": "tests",
+      "interpreter": {
+        "executable": "/usr/bin/python3",
+        "resolved_executable": "/usr/bin/python3.14",
+        "binary_sha256": "52e0a13e60a981d8c4b6478be2ba5176f69da07948a056bf49cf6f077e30cb41",
+        "version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43"
+      },
+      "check_module_sha256": "94f1a5a8c24ef0a72b9cc4ee460dabb5deb6324528f330cf93233a632b369167",
+      "check_module": "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/subject/test_inspect_csv.py",
+      "capture_driver_sha256": "852b49a20c87a9c424e7b0d76179967c50546fd2d482736f91ae45b7213cde9d",
+      "environment": {
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      },
+      "observed_nonstdlib_modules_after_checks": [
+        {
+          "module": "__main__",
+          "path": "/home/rana/Documents/ChatGPT/Continuum/repository/research/runs/source-bound-verification/capture.py",
+          "sha256": "852b49a20c87a9c424e7b0d76179967c50546fd2d482736f91ae45b7213cde9d"
+        },
+        {
+          "module": "_distutils_hack",
+          "path": "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py",
+          "sha256": "df81e6bcba34ee3e3952f776551fb669143b9490fdd6c4caeb32609f97e985b4"
+        },
+        {
+          "module": "apport_python_hook",
+          "path": "/usr/lib/python3/dist-packages/apport_python_hook.py",
+          "sha256": "d48b4213025b71c4db81bd226977900a593a7baa4d81c3261ce9940ec188f450"
+        },
+        {
+          "module": "captured_csv_checks",
+          "path": "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/subject/test_inspect_csv.py",
+          "sha256": "94f1a5a8c24ef0a72b9cc4ee460dabb5deb6324528f330cf93233a632b369167"
+        },
+        {
+          "module": "sitecustomize",
+          "path": "/etc/python3.14/sitecustomize.py",
+          "sha256": "43d81125d92376b1a69d53a71126a041cc9a18d8080e92dea0a2ae23be138b1e"
+        }
+      ]
+    },
+    "/stages/0/result": {
+      "passed": true,
+      "checks": 11,
+      "child_processes": 28
+    },
+    "/stages/1/stage": "oracle",
+    "/stages/1/argv": [
+      "/usr/bin/python3",
+      "/home/rana/Documents/ChatGPT/Continuum/repository/research/runs/source-bound-verification/capture.py",
+      "--worker",
+      "oracle",
+      "--subject",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/subject",
+      "--worker-output",
+      "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/oracle"
+    ],
+    "/stages/1/returncode": 0,
+    "/stages/1/worker": {
+      "stage": "oracle",
+      "interpreter": {
+        "executable": "/usr/bin/python3",
+        "resolved_executable": "/usr/bin/python3.14",
+        "binary_sha256": "52e0a13e60a981d8c4b6478be2ba5176f69da07948a056bf49cf6f077e30cb41",
+        "version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43"
+      },
+      "check_module_sha256": "85c39607732567b6ecbc1a5478546799323adee53e6534f334285051264e2d59",
+      "check_module": "/home/rana/Documents/ChatGPT/Continuum/repository/research/runs/independent-csv-pilot/verify_requirement.py",
+      "capture_driver_sha256": "852b49a20c87a9c424e7b0d76179967c50546fd2d482736f91ae45b7213cde9d",
+      "environment": {
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      },
+      "observed_nonstdlib_modules_after_checks": [
+        {
+          "module": "__main__",
+          "path": "/home/rana/Documents/ChatGPT/Continuum/repository/research/runs/source-bound-verification/capture.py",
+          "sha256": "852b49a20c87a9c424e7b0d76179967c50546fd2d482736f91ae45b7213cde9d"
+        },
+        {
+          "module": "_distutils_hack",
+          "path": "/usr/lib/python3/dist-packages/_distutils_hack/__init__.py",
+          "sha256": "df81e6bcba34ee3e3952f776551fb669143b9490fdd6c4caeb32609f97e985b4"
+        },
+        {
+          "module": "apport_python_hook",
+          "path": "/usr/lib/python3/dist-packages/apport_python_hook.py",
+          "sha256": "d48b4213025b71c4db81bd226977900a593a7baa4d81c3261ce9940ec188f450"
+        },
+        {
+          "module": "captured_csv_checks",
+          "path": "/home/rana/Documents/ChatGPT/Continuum/repository/research/runs/independent-csv-pilot/verify_requirement.py",
+          "sha256": "85c39607732567b6ecbc1a5478546799323adee53e6534f334285051264e2d59"
+        },
+        {
+          "module": "sitecustomize",
+          "path": "/etc/python3.14/sitecustomize.py",
+          "sha256": "43d81125d92376b1a69d53a71126a041cc9a18d8080e92dea0a2ae23be138b1e"
+        }
+      ]
+    },
+    "/stages/1/result": {
+      "passed": true,
+      "checks": 9,
+      "child_processes": 9
+    }
+  },
+  "omitted_subtrees_json_pointers": [
+    "/stages/0/elapsed_seconds",
+    "/stages/0/stdout",
+    "/stages/0/stderr",
+    "/stages/0/children",
+    "/stages/1/elapsed_seconds",
+    "/stages/1/stdout",
+    "/stages/1/stderr",
+    "/stages/1/children"
+  ],
+  "limits": "Exact selected JSON values; omitted subtrees remain in the original Blob. Custody and local assertions do not authenticate execution or prove portability. No child inputs, outputs or individual assertions are exposed in this view."
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-layout-corpus-closeout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.map"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.map",
+      "bytes": 7200,
+      "git_blob_sha": "b5ca4f5cdf6fc9bedfda8ed96e0f3567979230bb",
+      "sha256": "4d1572b66d8ca4db7a24c694dbe253a8b4e6d615a7d6a5e2b31252407f478111",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.map",
+      "bytes": 192,
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.map",
+      "bytes": 416,
+      "git_blob_sha": "7414170bbb4c42b71dd26bae2fd681d38a8a9a14",
+      "sha256": "c7803799095199253c422bfcfd0501998ffa98ade9aa3ea3a64376e6a5e7aefa",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-binary-map-metadata",
+      "reading_representation": "all_header_and_record_fields_little_endian_decoded_and_exact_binary_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 7808
+    },
+    "cumulative_direct_read": {
+      "paths": 598,
+      "unique_blobs": 598,
+      "bytes": 5247643
+    },
+    "additional_identical_blob_paths": 106,
+    "alias_distinct_blobs": 32,
+    "semantic_covered_paths_including_aliases": 704,
+    "remaining_paths_without_full_semantic_read_or_alias": 4889,
+    "remaining_distinct_blobs_without_full_semantic_read": 3831,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 7808,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three complete binary metadata files/7808 bytes acquired and read; every header and241 record fields decoded with exact roundtrip and held-layout agreement.",
+    "Original bounded public reader validates frozen byte/row/instruction/label/span bounds and little-endian structure; eight synthetic test methods exercise valid endpoints and malformed records.",
+    "The reader does not validate label names, instruction bytes, ELF identity, source-file content, publication status or an actual invocation; these are absent from map data.",
+    "This is custody of expected map metadata, not observation of a fresh native output or reacquisition of private raw execution maps.",
+    "Identical blob aliases gain content-reading credit while runtime/result contexts remain separate.",
+    "No native ELF/code artifact acquisition,upstream import/materializer execution,native emission/execution,model invocation,live scan,activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-builder-map-metadata.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

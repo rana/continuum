@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-consumer-records.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_saved_learning_receipts.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/learning-native-audit-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/checks.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_saved_learning_receipts.py",
+      "bytes": 11722,
+      "git_blob_sha": "1b3193ce0f49791ef561be44bdd8dccf8248764e",
+      "sha256": "af5342ee75b11463b16ae4c567f5a448d5739cc12d0df58e6ee349e6ced32b60",
+      "lines": 183,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-learning-audit-and-synthetic-identities",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_ast_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/learning-native-audit-v1.json",
+      "bytes": 4429,
+      "git_blob_sha": "3aae430b077f203d1538d043d3e5f975c6aa8d6f",
+      "sha256": "1e3cb37d5e4a7e23eee838295291531ddc3613531a8ee92e119252549df32dc4",
+      "lines": 124,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-learning-audit-and-synthetic-identities",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/checks.json",
+      "bytes": 13748,
+      "git_blob_sha": "263bb87a6e077458f8040771574e9e99ec3f2ac6",
+      "sha256": "3c229b2223572db04b3e7aab30126c4139f7f3bec41993fcb7de5f8c29ae3134",
+      "lines": 397,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-learning-audit-and-synthetic-identities",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 29899
+    },
+    "cumulative_direct_read": {
+      "paths": 301,
+      "unique_blobs": 301,
+      "bytes": 1965395
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 352,
+    "remaining_paths_without_full_semantic_read_or_alias": 5241,
+    "remaining_distinct_blobs_without_full_semantic_read": 4128,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 29899,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three texts fully read including all 84 synthetic identity records; no audit or native source executed.",
+    "Six of seven audit inputs match current payloads; training-cost rows remain unacquired and greedy replay is not established by this unit.",
+    "Historical audit source checks saved numerical relations, not waveform-derived cost correctness or external execution envelopes.",
+    "Forty encoder identities match synthetic records; scored-run decoder identities remain absent.",
+    "Synthetic and original authoring records share counts/source pins but are distinct observations/platform/timing records."
+  ],
+  "review_report": "base12-learning-audit.md"
+}

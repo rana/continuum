@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "```json\n{\"retrieve\":[{\"id\":\"sha256:a1c15fd80f97e53c7cbadeb3e1f13ad811360ad767fbd2ecf61d9d5c45e940a9\",\"representation\":\"receipt-view\"}],\"why\":\"Retrieve only the 7136-byte selected-field view of the csv-local-verification receipt. That is well under the 16384-byte limit and avoids the 77194-byte full receipt. I am not retrieving the csv-visible-turn receipt (sha256:947cf469…) because no size or view for it is stated, and it concerns the earlier model reply rather than the execution environment. The view should answer three questions the authored records do not. (1) Which OS, interpreter version and platform were recorded? Nothing in the supplied context says the run was Linux; that comes only from the maintainer's question. (2) Is the observation bound to source_snapshot sha256:5a6627…? That would confirm 'unchanged' refers to the same tool bytes. (3) Does the view's raw digest match the native Blob ID? It cannot show individual assertions or child outputs. My expected conclusion, to be confirmed or corrected after reading the view: the receipt can be reused as evidence only within its recorded source and environment scope. It records that 11 tests and nine oracle cases were observed under documented hooks. It does not authenticate a worker, and I have not executed anything. It cannot establish behavior on Python 3.11 on Windows unless that exact environment is what was recorded. CSV newline/CRLF handling, file encoding defaults and path semantics can differ on Windows, so if the recorded environment differs, shipping on Windows needs a new run there. That run would need separate action-time authority, which this context does not grant. If the recorded environment is the Linux one the maintainer describes, that result need not be rerun to support claims about that same source snapshot on that same environment. It still does not transfer to Windows. Per known-count-correction, I will not reopen the six/seven/eleven test-count history.\"}\n```"
+    }
+  ],
+  "structuredContent": {
+    "status": "OK",
+    "text": "```json\n{\"retrieve\":[{\"id\":\"sha256:a1c15fd80f97e53c7cbadeb3e1f13ad811360ad767fbd2ecf61d9d5c45e940a9\",\"representation\":\"receipt-view\"}],\"why\":\"Retrieve only the 7136-byte selected-field view of the csv-local-verification receipt. That is well under the 16384-byte limit and avoids the 77194-byte full receipt. I am not retrieving the csv-visible-turn receipt (sha256:947cf469…) because no size or view for it is stated, and it concerns the earlier model reply rather than the execution environment. The view should answer three questions the authored records do not. (1) Which OS, interpreter version and platform were recorded? Nothing in the supplied context says the run was Linux; that comes only from the maintainer's question. (2) Is the observation bound to source_snapshot sha256:5a6627…? That would confirm 'unchanged' refers to the same tool bytes. (3) Does the view's raw digest match the native Blob ID? It cannot show individual assertions or child outputs. My expected conclusion, to be confirmed or corrected after reading the view: the receipt can be reused as evidence only within its recorded source and environment scope. It records that 11 tests and nine oracle cases were observed under documented hooks. It does not authenticate a worker, and I have not executed anything. It cannot establish behavior on Python 3.11 on Windows unless that exact environment is what was recorded. CSV newline/CRLF handling, file encoding defaults and path semantics can differ on Windows, so if the recorded environment differs, shipping on Windows needs a new run there. That run would need separate action-time authority, which this context does not grant. If the recorded environment is the Linux one the maintainer describes, that result need not be rerun to support claims about that same source snapshot on that same environment. It still does not transfer to Windows. Per known-count-correction, I will not reopen the six/seven/eleven test-count history.\"}\n```",
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 2989,
+      "output_tokens": 1085,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none",
+    "image_count": 0,
+    "images": []
+  },
+  "isError": false
+}

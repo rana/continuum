@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "source_raw_sha256": "e06fa73aa3d91cb4bdcfa6b1bf668dfae191df8e05f3bfd4356524f8c6c1dcab",
+  "view_bytes": 7136,
+  "original_bytes": 77194,
+  "coverage_subtrees": 28,
+  "corruptions_rejected": 4,
+  "actual_calls": 2,
+  "usage": {
+    "input_tokens": 10883,
+    "output_tokens": 4777
+  },
+  "new_csv_execution": false
+}

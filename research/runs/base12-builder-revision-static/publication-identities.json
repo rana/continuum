@@ -1,0 +1,20 @@
+{
+  "source_baseline": "084f16fbb68ce03c3842eaa0d6c837c283012721",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-revision-static.md",
+      "bytes": 6142,
+      "sha256": "ef26abd81986f37aa58e399f2a70480df48fd6442c74fb54796d88c18e9988cd"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-revision-static.json",
+      "bytes": 4590,
+      "sha256": "9d06485448720e9378658c44dfe8658e8409c4d00ef1290bb9c0c684a1be7b7a"
+    },
+    {
+      "path": "research/runs/base12-builder-revision-static/validation.json",
+      "bytes": 5235,
+      "sha256": "31dde4654ab654bf3df2e412c301239e72a47c2ec7434460a063d45dd02f007f"
+    }
+  ]
+}

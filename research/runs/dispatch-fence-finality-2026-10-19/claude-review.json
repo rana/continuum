@@ -1,0 +1,20 @@
+{
+  "schema": "continuum.actual_claude_review.v1",
+  "request": "Independently examine the *sufficiency* of a proposed replay-admission safety contract for an external AI provider. Identify one concrete counterexample or missing guarantee, or say none under explicit assumptions. Proposed: after an unknown prior send, automatic retry is permitted only when provider atomically returns a same-scope/key/request-digest admission bound to exactly the original effect domain, with no expiry/reuse gap that permits both old and new effects; alternatively an authenticated terminal fence proves all earlier admitted submissions cannot subsequently cause an effect. A prior positive key lookup, TTL statement, or negative status is insufficient. Distinguish single-provider vs downstream side effects, and returned response usability. Provide <=240 words, no vendor claims or execution claims.",
+  "context": "Verified synthetic local evidence (not vendor data): 11 Python unit tests passed in this session for a two-connection SQLite fake provider; (i) positive binding read, first completion, key expiry, then exact retry -> two epochs/effects despite no pending original at expiry; (ii) same-epoch provider-enforced atomic binding -> one effect; (iii) fabricated terminal fence before effect -> one effect; (iv) changing digest within active epoch rejected. Original test fixture and historical review are in a user attachment, not yet in Git. Continuum baseline is Rust+SQLite with local acceptance receipts; no external model runner. Provider APIs, gateway fanout, retention, cancellation and authentication remain unverified. Current public main 4c21bd5a5e1b2634a4500bc1968e8a2f1f5ead70, active source-review work is disjoint.",
+  "actual_model": "claude-opus-5-5",
+  "configured_model": "us.anthropic.claude-opus-5-5",
+  "configured_effort": "medium",
+  "thinking": "adaptive",
+  "usage": {
+    "input_tokens": 670,
+    "output_tokens": 1148,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "stop_reason": "end_turn",
+  "truncated": false,
+  "input_modality": "text-only",
+  "server_memory": "none",
+  "visible_response": "**Counterexample: the terminal-fence branch is insufficient as written.**\n\nThe fence proves that earlier admitted submissions cannot cause an effect *after* the fence. It says nothing about effects that occurred *before* it.\n\nSequence:\n1. The original send is admitted and its effect commits.\n2. The acknowledgement is lost, so the client sees an unknown outcome.\n3. An authenticated terminal fence is issued.\n4. The automatic retry is admitted under a fresh epoch, producing two effects.\n\nSynthetic test (iii) covers only \"fence before effect,\" so it does not exercise this ordering.\n\n**Missing guarantee:** the fence must be outcome-bearing. It should authoritatively report, for the same scope, key and digest, either:\n- \"no earlier submission committed,\" which permits retry, or\n- \"committed,\" which forbids retry and returns or references the outcome.\n\n**Single-provider vs. downstream effects:** Both branches bind only the provider's own effect domain. If an original attempt dispatched downstream work (tool calls, webhooks, gateway fanout) before admission or fencing resolved, provider-level dedup cannot recall it. The contract should either require downstream effects to carry the same key and digest into an idempotent sink, or forbid automatic retry whenever downstream dispatch is possible but unconfirmed.\n\n**Response usability:** A deduplicated admission prevents a second effect but does not guarantee the returned response is the one tied to the committed effect. Generation may be nondeterministic, and the original response may have expired from retention. The contract should state whether a deduplicated retry returns the original response, a reference to it, or an \"effect done, response unavailable\" status that callers must not treat as authoritative.\n\n**Assumptions:** This analysis relies only on the synthetic fake. Provider APIs, retention, cancellation and authentication remain unverified."
+}

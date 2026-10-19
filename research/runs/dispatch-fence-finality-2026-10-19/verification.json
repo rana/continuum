@@ -1,0 +1,36 @@
+{
+  "schema": "continuum.dispatch_fence_oracle_evidence.v1",
+  "source_main_at_orientation": "4c21bd5a5e1b2634a4500bc1968e8a2f1f5ead70",
+  "publication_parent": "82354c23af60522be69207a29df787654965fb26",
+  "executor": "task Linux container; not user's workstation",
+  "python": "3.13.5",
+  "commands": [
+    {
+      "cmd": "python3 -m unittest -v test_fence_oracle.py",
+      "exit": 0,
+      "cases": 7,
+      "summary": "Ran 7 tests in 0.000s; OK"
+    },
+    {
+      "cmd": "python3 fence_oracle.py",
+      "exit": 0,
+      "stdout": "valid_synthetic_worlds=72 blind_fence_false_admissions=21\npost_commit_fence_example: World(prior_provider_effect=True, possible_future_old_effect=False, prior_downstream_effect=False, downstream_idempotent=True, fence_proves_no_future_old_effect=True, fence_report='committed')\nnaive: (2, 0)\nconservative: (1, 0)\n"
+    },
+    {
+      "cmd": "python3 -m unittest -v test_admission_race.py",
+      "exit": 0,
+      "cases": 11,
+      "source": "Recovered previous attachment, separate from this commit"
+    }
+  ],
+  "local_source_sha256": {
+    "fence_oracle.py": "f8a282c122c2ffe7618fdd543bc3c14a05beb7e4a78ab0740d5817a3f8350a11",
+    "test_fence_oracle.py": "0328d70b6ff01d3db5564bea0455ecd185a6f42f6de875948765477c15007e82"
+  },
+  "limits": [
+    "Prior 11-test zip remains attachment-only",
+    "Tests and finite model same author",
+    "No external provider call, actual model dispatch or Codex receipt",
+    "No physical power-loss or downstream real effect claim"
+  ]
+}

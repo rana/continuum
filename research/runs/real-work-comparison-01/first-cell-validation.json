@@ -1,0 +1,71 @@
+{
+  "schema": "continuum.first_calibration_cell_observation.v1",
+  "source_commit": "cc1e9f43206b8039e3f40834e312fa7a52cfdfa5",
+  "release_main": "c474b0dc9e6f4732d22a1c3f2f4da20df415a2cd",
+  "observed": {
+    "tool_invocation_attempts": 1,
+    "accepted_receiver_answers": 0,
+    "observed_retrieval_requests": 0,
+    "rater_calls": 0,
+    "inference_outcome": "unknown",
+    "provider_usage": null,
+    "actual_model": null,
+    "automatic_retries": 0,
+    "initial_request_bytes": 5270,
+    "tool_result_bytes": 378,
+    "caller_interval_seconds": 16.8086002219934,
+    "timing_scope": "Host interval from submission marker through outcome capture, including caller/tool overhead; not model compute time.",
+    "request_sha256": "b94e4b64543b37e46e86d4dc8ff51290e29e136806746695a0f3f31dddd29798",
+    "tool_result_sha256": "3d5424a01f724dc98809f674d70b3298019b0e31c8471a13eb33eb3f3a6b8c72"
+  },
+  "initial_configuration": {
+    "model": "opus",
+    "effort": "medium"
+  },
+  "completed_receiver_observations": 0,
+  "comparison_conclusion": null,
+  "receiver_acceptance_not_established": true,
+  "cell_recorder_local_tests": 7,
+  "bridge_local_tests": 10,
+  "upstream_or_native_executed": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/README.md",
+      "bytes": 2790,
+      "intended_review": "source-only build-preparation foundation; no execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/ENVELOPE.md",
+      "bytes": 6570,
+      "intended_review": "source-only build-preparation foundation; no execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/OWNERSHIP.json",
+      "bytes": 1078,
+      "intended_review": "source-only build-preparation foundation; no execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/OPEN.md",
+      "bytes": 1607,
+      "intended_review": "source-only build-preparation foundation; no execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/PREPARATION.json",
+      "bytes": 5165,
+      "intended_review": "source-only build-preparation foundation; no execution"
+    }
+  ],
+  "next_scope_bytes": 17210,
+  "limits": [
+    "HTTP200/unknown outcome does not prove model processing or failure",
+    "No actual model/usage returned",
+    "No inference retries,follow-up retrieval rounds or scoring calls",
+    "Caller interval is not model compute time",
+    "No direction or adoption conclusion"
+  ],
+  "source_sha256": {
+    "cell.py": "77a1500e821ebd4ba1ab704b86eedb1f3111823d10350f4a5380879d288b1e8d",
+    "bridge.py": "79c2439100da18ebe88a3d83e344407fdaac21585d0425fc424d2c6b29a7a846",
+    "verify_first_cell.py": "6c161317e7d51496d5e26b4a53ba22448ad1a560b945366d39eef25c0a4c3743"
+  }
+}

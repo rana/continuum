@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Bedrock returned an unsupported or malformed response; no model answer was accepted."
+    }
+  ],
+  "structuredContent": {
+    "status": "ERROR",
+    "error_category": "invalid_response",
+    "inference_outcome": "unknown",
+    "upstream_http_status": 200,
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "isError": true
+}

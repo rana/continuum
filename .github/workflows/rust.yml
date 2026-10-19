@@ -70,4 +70,6 @@ jobs:
           python3 research/runs/read-only-store/verify_records.py
           cargo run --locked --example probe_reader_reservation -- --binary target/debug/continuum --directory "$RUNNER_TEMP/read-only-store-probe"
       - name: Check frozen-case retrieval isolation without inference
-        run: python3 -m unittest discover -s research/runs/real-work-comparison-01 -p 'test_bridge.py' -v
+        run: python3 -m unittest discover -s research/runs/real-work-comparison-01 -p 'test_*.py' -v
+      - name: Verify first-cell unknown outcome without inference
+        run: python3 research/runs/real-work-comparison-01/verify_first_cell.py

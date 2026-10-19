@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-decoder-profile-source-packet-closeout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/README.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/ENVELOPE.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/OWNERSHIP.json",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/OPEN.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/PREPARATION.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/README.md",
+      "bytes": 2790,
+      "git_blob_sha": "23c5c2bd854cb23cebd4db1fa914ea98a2dafc2b",
+      "sha256": "4d545c102c7a4cd6210120bbed7aa0938f2fbc0ece7663f251ec5ddb0edcd705",
+      "lines": 13,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-foundation",
+      "reading_representation": "complete_direct_text_and_JSON_read",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/ENVELOPE.md",
+      "bytes": 6570,
+      "git_blob_sha": "f01df2a4f3a866464af5df960c0f6db4b9a18fce",
+      "sha256": "88917ee27a7938a2cd30a04724d374e7f4850d189998187f91bfc0613bd74f3f",
+      "lines": 36,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-foundation",
+      "reading_representation": "complete_direct_text_and_JSON_read",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/OWNERSHIP.json",
+      "bytes": 1078,
+      "git_blob_sha": "ad59215d86fe2e53a065ac202c3369b76658c53d",
+      "sha256": "4855b007dc339b3c054bb835381663e324664f9c53d43cd9cbc83e01bad0f65c",
+      "lines": 23,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-foundation",
+      "reading_representation": "complete_direct_text_and_JSON_read",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/OPEN.md",
+      "bytes": 1607,
+      "git_blob_sha": "09ff50057b79c0150d7e693903857b44a19c21ee",
+      "sha256": "1b2bc52180f6130e412ac16b867bd79bf851fe1fe48b32f1fdc5bf104934a322",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-foundation",
+      "reading_representation": "complete_direct_text_and_JSON_read",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/PREPARATION.json",
+      "bytes": 5165,
+      "git_blob_sha": "774c8f751465f3737833aa5abff1c460fa6038c9",
+      "sha256": "8bb93b8021d82b72cd141ccfd06808f3e79037cb226f22ff67b45bcb92ed4214",
+      "lines": 105,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-foundation",
+      "reading_representation": "complete_direct_text_and_JSON_read",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 17210
+    },
+    "cumulative_direct_read": {
+      "paths": 636,
+      "unique_blobs": 636,
+      "bytes": 5509225
+    },
+    "additional_identical_blob_paths": 115,
+    "alias_distinct_blobs": 39,
+    "semantic_covered_paths_including_aliases": 751,
+    "remaining_paths_without_full_semantic_read_or_alias": 4842,
+    "remaining_distinct_blobs_without_full_semantic_read": 3793,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 17210,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five complete files/17210 bytes read; proposal/control/dependency claims retain their dated preparation scope.",
+    "Fresh nontruncated source-publication tree closes all4208 prior blob,length,mode and membership joins,with exactly24 original source-packet additions; this does not verify current workstation permissions or payload semantics.",
+    "Fresh primary comment records source-only acceptance at exact head; no build or control authorization transfers.",
+    "Four control/command/dependency pin payloads remain unreviewed here; modes and hashes are declarations plus Git metadata,not inspected executable behavior.",
+    "Resource/process/cleanup/final-exit mechanics are proposed source claims,not freshly executed controls or physical containment guarantees.",
+    "No upstream code imported/executed,native artifact acquired/emitted/executed,new inference or activation occurred."
+  ],
+  "review_report": "base12-decoder-profile-build-preparation-foundation.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

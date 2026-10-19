@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "source_baseline": "fbc5590f7d80bd82d6495b012f3d237109b1fba3",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 10,
+  "verified_source_bytes": 6703,
+  "synthetic_artifact_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/checks.json",
+      "bytes": 13748,
+      "sha256": "3c229b2223572db04b3e7aab30126c4139f7f3bec41993fcb7de5f8c29ae3134",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/receipt.json",
+      "bytes": 1825,
+      "sha256": "300f8a73ae826b236762a6c1137d5dc0d15d34afe91c0727e7469406abdbecf1",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/invocation.json",
+      "bytes": 1002,
+      "sha256": "e96a7798d603e0bdee103f2cc1e37a8e18625fa02a2409d0259c98807eaa7b9d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/effective-before-exec.json",
+      "bytes": 226,
+      "sha256": "3216660945d54edf0a4a3151d6a4194658f3481ee46609a610858cf08f5a341f",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/SUMMARY.json",
+      "bytes": 464,
+      "sha256": "daa47ad6f976711c5c190023fa5bbbda64b93e2c784bb1e0e75a68b4b77b2455",
+      "matched": true
+    }
+  ],
+  "synthetic_source_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/codec.py",
+      "bytes": 9524,
+      "sha256": "1c36bdfcef4a4b2a3ad3cb80f2dac7cfb854a8631409c069522deda0ff11cff0",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/native_predict.py",
+      "bytes": 5424,
+      "sha256": "cc7464532355b201995a8b345e1dc44ab4f74380806c0ad892beabb3e0649a94",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/check_codec.py",
+      "bytes": 8659,
+      "sha256": "9b74304d226427a149d6d4b0fd4cc4342eb4c17bfa5de9a8067e7b953fd1f7c5",
+      "matched": true
+    }
+  ],
+  "synthetic_assertion_category_sum": 2052,
+  "synthetic_native_identity_count": 84,
+  "synthetic_rx_mapping_count": 84,
+  "synthetic_authored_invocation_count": 1,
+  "synthetic_inner_elapsed_seconds": 0.7053347320002104,
+  "synthetic_stdout_exact_rounded_projection": true,
+  "synthetic_outer_minus_inner_elapsed_seconds": 0.10656584800017299,
+  "synthetic_verification_effective_limits_equal_payload": true,
+  "synthetic_verification_resource_fields_equal_terminal": true,
+  "profiles": {
+    "synthetic": {
+      "per_process_CPU_seconds": 120,
+      "wall_limit_seconds": 300.0,
+      "aggregate_early_stop_seconds": 120.0,
+      "journal_rows": 1,
+      "monitor_samples": 16,
+      "first_journal_elapsed_seconds": 0.001952249000169104,
+      "first_journal_upper_CPU_seconds": 0.020196272999801295,
+      "monitor_max_upper_CPU_seconds": 0.7604252900002939,
+      "wait4_CPU_seconds": 0.770254,
+      "wall_seconds": 0.8119005800003833,
+      "root_maxrss_kib": 29508
+    },
+    "transport_fixture": {
+      "per_process_CPU_seconds": 30,
+      "wall_limit_seconds": 60.0,
+      "aggregate_early_stop_seconds": 25.0,
+      "journal_rows": 1,
+      "monitor_samples": 4,
+      "first_journal_elapsed_seconds": 0.002204529000664479,
+      "first_journal_upper_CPU_seconds": 0.020180506999640784,
+      "monitor_max_upper_CPU_seconds": 0.14047516399990853,
+      "wait4_CPU_seconds": 0.146621,
+      "wall_seconds": 0.2049406670003009,
+      "root_maxrss_kib": 35288
+    }
+  },
+  "invocations_equal_their_terminal_limits": true,
+  "all_effective_and_journal_root_identities_match": true,
+  "same_numeric_PID_different_start_identities_and_commands": true,
+  "fixture_terminal_digest_matches_local_gate": true,
+  "wrapper_source_digest_matches_all_profiles": true,
+  "pre_synthetic_static_source_count_matches": true,
+  "Zstd_digest_matches_saved_static_declaration": true,
+  "Zstd_binary_payload_acquired": false,
+  "zero_sampled_descendants_does_not_exclude_inprocess_native_execution": true,
+  "pre_gate_remote_revisions_are_historical_declarations": true,
+  "global_exactly_once_execution_established": false,
+  "source_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Ten retained texts fully read without executing either suite.",
+    "One authored synthetic invocation count is scoped to its preserved attempt, not a global host-wide exactly-once guarantee.",
+    "Five artifact and three source payload bindings verify custody, not authenticated execution or independent correctness of numerical results.",
+    "No sampled descendants does not mean no in-process generated machine code executed.",
+    "One early journal row in each suite cannot reconstruct the monitor or final wait4 accounting.",
+    "Identical numeric PIDs across saved attempts do not establish common process identity or a shared host/namespace.",
+    "Gate empty/held/archive/source-state fields and observed remote revisions are historical authored stage claims, not present-state queries or renewed authorization.",
+    "No current binary inspection, model call, waveform access, fixture replay, numerical experiment or workstation activation occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/ACQUISITION-RESULT.md",
+      "bytes": 3326,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/FULL-RUN-LAUNCH.md",
+      "bytes": 3714,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-POST-ACQUISITION-AUDIT.md",
+      "bytes": 4383,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-PREPAREDNESS.md",
+      "bytes": 9972,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-RESULT-AUDIT-CHECKLIST.md",
+      "bytes": 13433,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-TRANSPORT-CONTINUATION-PLAN.md",
+      "bytes": 4420,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/SYNTHETIC-LAUNCH.md",
+      "bytes": 3524,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/SYNTHETIC-RESULT.md",
+      "bytes": 3355,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/envelope-design.md",
+      "bytes": 9529,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 55656,
+  "public_contribution_checks": [
+    "ten exact source identities and five artifact/three source payload bindings passed",
+    "assertion/native counts and rounded stdout projection passed",
+    "both control profiles, effective identities and terminal accounting passed",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

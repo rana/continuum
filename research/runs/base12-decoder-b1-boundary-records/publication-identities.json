@@ -1,0 +1,20 @@
+{
+  "source_baseline": "f61532bcd63f5df92ab6f870903adccbcbf65b67",
+  "files": [
+    {
+      "path": "docs/source-review/base12-decoder-b1-boundary-records.md",
+      "bytes": 5932,
+      "sha256": "f9f22697d8b51dd6b8034481ac329380b0a87627458bafb2d736a02516c966c8"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-decoder-b1-boundary-records.json",
+      "bytes": 5329,
+      "sha256": "8a2e543458fa7f10b22be8cdb20a4613406b83a34c32bf974935518e3d657081"
+    },
+    {
+      "path": "research/runs/base12-decoder-b1-boundary-records/validation.json",
+      "bytes": 15858,
+      "sha256": "9fd97c74fed485230cd221aaad180797782f2d273754613b40bc2147c103cfb3"
+    }
+  ]
+}

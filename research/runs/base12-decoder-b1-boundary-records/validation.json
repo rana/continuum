@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "source_baseline": "f61532bcd63f5df92ab6f870903adccbcbf65b67",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 35527,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 35527,
+  "provenance_pins": 36,
+  "source_check_pins": 33,
+  "all_33_common_pin_records_identical": true,
+  "pin_status": [
+    {
+      "path": "AGENTS.md",
+      "historical_git_blob": "05f933c1421f0ec5cf47e3b09f2a16407b9791b0",
+      "same_blob_at_current_pinned_tree": false,
+      "held_exact_payload": false
+    },
+    {
+      "path": "CURRENT.md",
+      "historical_git_blob": "1be449f92f81fb867d874548c704e52b262e028d",
+      "same_blob_at_current_pinned_tree": false,
+      "held_exact_payload": false
+    },
+    {
+      "path": "README.md",
+      "historical_git_blob": "65945a85788c5f0b593afb3ee402c56e61cf2d86",
+      "same_blob_at_current_pinned_tree": false,
+      "held_exact_payload": false
+    },
+    {
+      "path": "NEXT.md",
+      "historical_git_blob": "374c6f0d66135b9a91249a04666e9ad714b287a8",
+      "same_blob_at_current_pinned_tree": false,
+      "held_exact_payload": false
+    },
+    {
+      "path": "START_HERE_OWNED_STACK.md",
+      "historical_git_blob": "c5e0deef16368693febf6bdd73bde4a1e587026a",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/RESTART.md",
+      "historical_git_blob": "2b0e2874a30d690d6f370aff9c1130141c7e2657",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/map/README.md",
+      "historical_git_blob": "53e9a016692f8aa98d42221a969492d41fcfd380",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/map/topics.tsv",
+      "historical_git_blob": "5390fcc8e38006e0883db94a6ba13cf5cff66419",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/map/edges.tsv",
+      "historical_git_blob": "5fd3fa35c8090c058ad45844218564405e5b1833",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/map/frontier.tsv",
+      "historical_git_blob": "1c12345029be9e3bc64571e017b37e832f1c4a44",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/synthesis/source-return-2026-10-15.md",
+      "historical_git_blob": "be270672af5621fc4b2d55bb06044de4f2794d97",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-research-loop/ORDER_DECISION.md",
+      "historical_git_blob": "b81b48cee1a63fdeef06dc3cb3703069a1e20c18",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-research-loop/implementation-01/ORDER_RECONSIDERATION.md",
+      "historical_git_blob": "2ef4256ac87712ab4221693d6961981218fc34b5",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-research-loop/INVENTORY.json",
+      "historical_git_blob": "dd8a3f9448deedb6df2221239499450e1cbf2c29",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/WIRE.md",
+      "historical_git_blob": "6cd0fa0d661af4f8d7761075fa0f7af73576ce59",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+      "historical_git_blob": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/emit.py",
+      "historical_git_blob": "ce09191364edd55c06ac39e7bba64174919c2f6b",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/CONTRACT.md",
+      "historical_git_blob": "1d1514db8b6d675c72cb7b492ec6389437e6e869",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/DEPENDENCIES.json",
+      "historical_git_blob": "523f3ce201c7a7b41413ede10c526784dc0cccb7",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/OWNER.json",
+      "historical_git_blob": "3fc9310ed29e812136455149f419e8eb355a72e2",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/layout.json",
+      "historical_git_blob": "057dee864974d98e5d17039bd9f43e152b570696",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/instructions.txt",
+      "historical_git_blob": "8b86e20cb57cdde70419f3e3055b0bcfd4911ec4",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/decoder.elf",
+      "historical_git_blob": "39357142f9540e05ee138c1a99723215561034f9",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/build.json",
+      "historical_git_blob": "ac9c23ff0aa163c7fa356866ebae3e434fdb534b",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review.md",
+      "historical_git_blob": "f14ffc66d57904cd74cc4161808e4f63397a131d",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "historical_git_blob": "df50fc2ab6c29d9edfba5fd386b57b5df1270890",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "historical_git_blob": "d876f5183f478dd97b1999004d3c98eba2029346",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DEPENDENCIES.json",
+      "historical_git_blob": "dd1deb7672f4c8bdfb0e0e5d65a275e63905b319",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OWNER.json",
+      "historical_git_blob": "66fd07a8ad54b24e7003498f47dcb82d1ab8a9b6",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.layout.json",
+      "historical_git_blob": "6b95f6ef0b6db8235839467d8b16390a0d1ee564",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.instructions.txt",
+      "historical_git_blob": "dedba3efbc31fe2a832729eb95283210373ba271",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.elf",
+      "historical_git_blob": "c7c0fa6eeb5b79ac8050c92ec85a4bb3d7e84569",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/README.md",
+      "historical_git_blob": "e8ace623a447ce2e1a8fadd55a51dc44e7ec43df",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-research-loop/implementation-01/consumer.b12s",
+      "historical_git_blob": "79f06abf91dae84aef665c9803a0c4500e208901",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-research-loop/implementation-01/CONTRACTS.md",
+      "historical_git_blob": "2924f08e0c9e1402a13886fe5a517d3e07761f27",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/vendor/isa.py",
+      "historical_git_blob": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "same_blob_at_current_pinned_tree": true,
+      "held_exact_payload": false
+    }
+  ],
+  "pins_matching_current_tree_blob_metadata": 32,
+  "pins_matching_held_exact_payload": 9,
+  "historical_blob_revisions_differing": 4,
+  "unheld_pin_payloads": 27,
+  "packet_manifest_entries": 17,
+  "packet_manifest_held_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/CHECKS.json",
+      "bytes": 2277,
+      "sha256": "46f84b376ce96dde5d1e3e690b405758ab69e34c4636715e5a073fdac8c8c10c",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/LAYOUT_SKETCH.md",
+      "bytes": 5854,
+      "sha256": "a186c3079b629299b78c8454b957a117ed6229de9b19e9a38dbd2075432d3a68",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/NEXT_SOURCE.md",
+      "bytes": 3731,
+      "sha256": "525d41ef1811115682042af81ac1eff42642b367e2bac2a0153317392d89f19d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/OPEN.md",
+      "bytes": 1023,
+      "sha256": "31151c7e1859d32e05b526325d06bfc2603cbb3e5c03de1747d5f37574ef0827",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/PROVENANCE.json",
+      "bytes": 13856,
+      "sha256": "4a7f9ff196c0da62b6393eb6c7429c71e52777d1356e7f629bc0221790cd6a10",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/README.md",
+      "bytes": 4195,
+      "sha256": "5a13574f636d71fe33c989cec965b9710fdcba50aef6b503a831abe675c32766",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/REQUIREMENTS.md",
+      "bytes": 10622,
+      "sha256": "768680f68016cf33a6313dacd4994ecde61107afb9f3a7d5b9faff01eca26cd4",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_CHECKS.json",
+      "bytes": 12519,
+      "sha256": "3a174a4c6d939ab8a9f8b876f5b4a46e5b860ec570c294abeffab336c9467a0e",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_RETURN.md",
+      "bytes": 3975,
+      "sha256": "7fdc1381fcafbd0a56f60c2c2de881f4a160ee963031d3d66df944496501f598",
+      "matched": true
+    }
+  ],
+  "decoder_form_global_SHA_data_match_held_metadata": true,
+  "builder_recorded_forms": 33,
+  "builder_recorded_header_fields": 5,
+  "builder_source_read_this_unit": false,
+  "all_16_recorded_relative_links_resolve_in_pinned_tree": true,
+  "corrected_reader_identity_consistent": true,
+  "stopped_reader_failure_not_candidate_defect": true,
+  "reported_consultations_not_reread": true,
+  "primary_text_or_audio_research_performed": false,
+  "historical_scope_and_pending_parent_states_preserved": true,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five complete records read; source pins distinguish full reading, slices and hash-only context.",
+    "Thirty-three common pins match across records; of 36 declared pins, 32 match current pinned tree blob metadata and nine actual held payloads bind; four historical revisions differ and 27 payloads remain unheld.",
+    "Nine of seventeen packet-manifest payloads bind; remaining ownership/review/inspection records selected next, not credited as read.",
+    "Decoder 53-form/54-global and SHA data agree with held metadata; builder 33 forms/five header fields remain recorded inspections rather than fresh builder-source reading.",
+    "Stopped/corrected inspection readers remain unexecuted here; recorded literal-parser failure is not a candidate failure.",
+    "Two consultations are reported by parent delegation without raw exchanges reread; no new consultation, primary-source reread, audio work or performance experiment occurred.",
+    "Historical all-prior-paths-unchanged and pending parent statuses are recorded scope, not current owner acceptance or execution authority."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/INSPECTION.md",
+      "bytes": 3273,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/INSPECTION_CORRECTION.json",
+      "bytes": 633,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/OWNERSHIP.json",
+      "bytes": 3872,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/independent-review/IDENTITIES.json",
+      "bytes": 2645,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/independent-review/REVIEW.md",
+      "bytes": 6697,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/independent-review/SHA256SUMS",
+      "bytes": 158,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/inspection-reader-r1-stopped.py.txt",
+      "bytes": 6951,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/inspection-reader-r2.py.txt",
+      "bytes": 7088,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SHA256SUMS",
+      "bytes": 1546,
+      "intended_review": "full_text_read_without_import_or_execution"
+    }
+  ],
+  "next_scope_bytes": 32863,
+  "public_contribution_checks": [
+    "five pinned blob identities and full record readings passed",
+    "33 common pins match; 36-pin tree/current-payload/historical categories reconcile",
+    "nine of seventeen packet-manifest payload lengths and hashes bind",
+    "decoder form/global/SHA data and corrected-reader identity agree",
+    "sixteen relative targets resolve; exposure/failure/pending-state limits retained",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

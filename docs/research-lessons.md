@@ -257,6 +257,8 @@ The [Gate-A inventory return](source-review/base12-gate-a-private-inventory.md) 
 
 The [decoder B1 boundary return](source-review/base12-decoder-b1-boundary-claims.md) keeps a small fixed-profile prerequisite separate from full decoder fit and native build-path maturity. Value identities do not complete flags/register-safe lowerings, and source-based fixed-cost predictions remain predictions until built. Record the exact obstruction removed and every remaining bound rather than promoting a useful intermediate result into the intended application milestone.
 
+The [B1 source-record return](source-review/base12-decoder-b1-boundary-records.md) preserves an inspection-reader failure, its narrower correction, historical source pins and explicit reading taxonomy. A failed reader is not a candidate failure, and hash-only context or reported consultations are not fresh full reading. Keep those distinctions alongside a successful source-summary checkpoint.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

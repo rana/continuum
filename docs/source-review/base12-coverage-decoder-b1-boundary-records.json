@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-decoder-b1-boundary-claims.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/PROVENANCE.json",
+      "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_CHECKS.json",
+      "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/CHECKS.json",
+      "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/MANIFEST.json",
+      "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_RETURN.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/PROVENANCE.json",
+      "bytes": 13856,
+      "git_blob_sha": "2f5ab10ef20c78539ff7151ec1f152238f60f5f2",
+      "sha256": "4a7f9ff196c0da62b6393eb6c7429c71e52777d1356e7f629bc0221790cd6a10",
+      "lines": 316,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-b1-provenance-and-source-check-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_CHECKS.json",
+      "bytes": 12519,
+      "git_blob_sha": "af37b2cc88587e3a6408fe1c22efb1b1fa175a5b",
+      "sha256": "3a174a4c6d939ab8a9f8b876f5b4a46e5b860ec570c294abeffab336c9467a0e",
+      "lines": 399,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-b1-provenance-and-source-check-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/CHECKS.json",
+      "bytes": 2277,
+      "git_blob_sha": "d6f1f49c6c10eaccc844a56917ca75bac02164ee",
+      "sha256": "46f84b376ce96dde5d1e3e690b405758ab69e34c4636715e5a073fdac8c8c10c",
+      "lines": 89,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-b1-provenance-and-source-check-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/MANIFEST.json",
+      "bytes": 2900,
+      "git_blob_sha": "c8b8a104dc5dcb84a1dd25060be29ec4ed955691",
+      "sha256": "4a1bae254bf565c128c4f2adac573449f4c3292e01fb9d51eadc6f2de67b81fe",
+      "lines": 97,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-b1-provenance-and-source-check-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_RETURN.md",
+      "bytes": 3975,
+      "git_blob_sha": "8364529aac3af9309598e27b959632d66547e574",
+      "sha256": "7fdc1381fcafbd0a56f60c2c2de881f4a160ee963031d3d66df944496501f598",
+      "lines": 15,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-b1-provenance-and-source-check-records",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 35527
+    },
+    "cumulative_direct_read": {
+      "paths": 462,
+      "unique_blobs": 462,
+      "bytes": 3562816
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 514,
+    "remaining_paths_without_full_semantic_read_or_alias": 5079,
+    "remaining_distinct_blobs_without_full_semantic_read": 3967,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 35527,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five complete records read; source pins distinguish full reading, slices and hash-only context.",
+    "Thirty-three common pins match across records; of 36 declared pins, 32 match current pinned tree blob metadata and nine actual held payloads bind; four historical revisions differ and 27 payloads remain unheld.",
+    "Nine of seventeen packet-manifest payloads bind; remaining ownership/review/inspection records selected next, not credited as read.",
+    "Decoder 53-form/54-global and SHA data agree with held metadata; builder 33 forms/five header fields remain recorded inspections rather than fresh builder-source reading.",
+    "Stopped/corrected inspection readers remain unexecuted here; recorded literal-parser failure is not a candidate failure.",
+    "Two consultations are reported by parent delegation without raw exchanges reread; no new consultation, primary-source reread, audio work or performance experiment occurred.",
+    "Historical all-prior-paths-unchanged and pending parent statuses are recorded scope, not current owner acceptance or execution authority."
+  ],
+  "review_report": "base12-decoder-b1-boundary-records.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

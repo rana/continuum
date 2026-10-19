@@ -231,6 +231,8 @@ The [initial-acquisition accounting return](source-review/base12-initial-acquisi
 
 The [synthetic/fixture controls return](source-review/base12-synthetic-fixture-controls.md) binds saved test counts and outputs to source identities and distinct execution profiles. Equal numeric PIDs do not join attempts, and no sampled descendants does not exclude in-process generated code. Continuum should preserve revision, exposure, control profile and historical stage when reusing a gate. Neither suite was repeated.
 
+The [historical packet-notes return](source-review/base12-historical-packet-notes.md) finds that several later confirmed qualifications were already explicit in the original audit plans. Preserve attribution rather than turning confirmation into novelty. Keep prospective commands, superseded alternatives, adopted controls and executed outcomes distinct; a retained historical instruction is source material, not renewed authority. No historical action was replayed.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

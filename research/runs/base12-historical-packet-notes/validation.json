@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "source_baseline": "3a3eaba5cd71a8ed1ea80a2baea2836275c5fb84",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 9,
+  "verified_source_bytes": 55656,
+  "preparedness_ten_source_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/check_codec.py",
+      "bytes": 8659,
+      "sha256": "9b74304d226427a149d6d4b0fd4cc4342eb4c17bfa5de9a8067e7b953fd1f7c5",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/codec.py",
+      "bytes": 9524,
+      "sha256": "1c36bdfcef4a4b2a3ad3cb80f2dac7cfb854a8631409c069522deda0ff11cff0",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/corpus.py",
+      "bytes": 6375,
+      "sha256": "5dbfbed1ad1c6f0159d40639bce2843ff9c84ffb3569b835b03fbc426e8f9908",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/learning.py",
+      "bytes": 2415,
+      "sha256": "ca501b55c0584949a29c3d7f28de4a9f56e70794f9e4143e109ffef68d564d32",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/native_predict.py",
+      "bytes": 5424,
+      "sha256": "cc7464532355b201995a8b345e1dc44ab4f74380806c0ad892beabb3e0649a94",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/run_consumer.py",
+      "bytes": 5692,
+      "sha256": "4e8771bdebc7e24fa470aecd093cec03d1cf2059dc7abe998b8315e99058446a",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/vendor/isa.py",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/vendor/runtime.py",
+      "bytes": 2647,
+      "sha256": "2382f92bc33ca03381490fc95359517b159d4adb27ccc210ba61296227db975f",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/PROTOCOL.md",
+      "bytes": 7472,
+      "sha256": "89cda5aa105a8c814e7ca27590420ee20a0b9c9f70d9bca6508097497d158fc9",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/CHECKS.json",
+      "bytes": 2143,
+      "sha256": "ce852676fab92b69411bb9cb88077d4d418856c38d64e43d7a5d51159783bd6b",
+      "matched": true
+    }
+  ],
+  "historical_seven_artifact_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/receipt.json",
+      "bytes": 1837,
+      "sha256": "20e1ec2169e3fd4f9b0910c3842c8702487f4fd43f34c1713167293654440e61",
+      "document": "ACQUISITION-RESULT.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-outcome-v1.json",
+      "bytes": 27648,
+      "sha256": "9958b272f8bba9a2da465e3a45765cc19145fc9581d51ba53b78d79b54a1067f",
+      "document": "ACQUISITION-RESULT.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/checks.json",
+      "bytes": 13748,
+      "sha256": "3c229b2223572db04b3e7aab30126c4139f7f3bec41993fcb7de5f8c29ae3134",
+      "document": "SYNTHETIC-RESULT.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/receipt.json",
+      "bytes": 1825,
+      "sha256": "300f8a73ae826b236762a6c1137d5dc0d15d34afe91c0727e7469406abdbecf1",
+      "document": "SYNTHETIC-RESULT.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/invocation.json",
+      "bytes": 1002,
+      "sha256": "e96a7798d603e0bdee103f2cc1e37a8e18625fa02a2409d0259c98807eaa7b9d",
+      "document": "SYNTHETIC-RESULT.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/effective-before-exec.json",
+      "bytes": 226,
+      "sha256": "3216660945d54edf0a4a3151d6a4194658f3481ee46609a610858cf08f5a341f",
+      "document": "SYNTHETIC-RESULT.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/SUMMARY.json",
+      "bytes": 464,
+      "sha256": "daa47ad6f976711c5c190023fa5bbbda64b93e2c784bb1e0e75a68b4b77b2455",
+      "document": "SYNTHETIC-RESULT.md",
+      "matched": true
+    }
+  ],
+  "prospective_launch_command_comparisons": {
+    "synthetic": {
+      "worker_argv_equals_retained_invocation": true,
+      "declared_wrapper_limits_match_retained_invocation": true,
+      "descendant_profile_match": true,
+      "prospective_command_is_not_execution_evidence": true
+    },
+    "full": {
+      "worker_argv_equals_retained_invocation": true,
+      "declared_wrapper_limits_match_retained_invocation": true,
+      "descendant_profile_match": true,
+      "prospective_command_is_not_execution_evidence": true
+    }
+  },
+  "authored_arithmetic_recomputed": {
+    "training_contexts": 256,
+    "training_predictor_calls": 10240,
+    "training_candidate_sample_evaluations": 41943040,
+    "distinct_training_context_positions": 1048576,
+    "validation_blocks": 2544,
+    "validation_candidate_calls": 101760,
+    "validation_candidate_sample_evaluations": 416000000,
+    "overlap_validation_starts": 5167240,
+    "raw_record_overhead": 1027,
+    "archive_raw_overhead_without_library": 8227,
+    "literal_overhead": 594,
+    "full_minus_learned_upper_bound_if_L4": 31,
+    "common_decoder_authored_source_bytes": 23985,
+    "unadopted_four_process_allocation_seconds": 1760,
+    "unadopted_nominal_quota_times_duration_seconds": 1620
+  },
+  "post_acquisition_plan_already_qualifies_extra_directory_files": true,
+  "result_checklist_already_qualifies_validation_reads_before_freeze": true,
+  "result_checklist_already_qualifies_greedy_optimality_and_timing": true,
+  "qualifications_attributed_to_original_documents": true,
+  "proposed_transport_header_cap_bytes": 65536,
+  "adopted_transport_header_cap_bytes": 16384,
+  "proposed_transport_operation_timeout_seconds": 60,
+  "adopted_transport_operation_timeout_seconds": 30,
+  "proposed_watchdog_interval_seconds": 0.1,
+  "adopted_watchdog_interval_seconds": 0.05,
+  "proposed_watchdog_example_early_CPU_seconds": 1790,
+  "adopted_full_run_early_CPU_seconds": 1660,
+  "unadopted_alternatives_executed": false,
+  "historical_commands_executed": false,
+  "source_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Nine historical notes fully read as source material; their instructions were not activated.",
+    "The post-acquisition plan and result checklist already state several later confirmed qualifications; these are attributed authored limits, not newly discovered historical oversights.",
+    "Prospective shell blocks were tokenized as text and compared with saved invocations; no command was executed.",
+    "Source/artifact hashes bind acquired payloads but do not authenticate historical authority, all narrative claims, binary execution or directory state.",
+    "Finite arithmetic checks do not regenerate training costs, read waveforms, validate a kernel enforcement guarantee or run any experiment.",
+    "Early transport/polling/cgroup/allocation proposals differ from later adopted controls and are not silently promoted into requirements.",
+    "Original archive unavailability, historical main/PR revisions and platform/tool facilities remain attributed stage claims, not fresh queries.",
+    "No upstream service/worker, network acquisition, model invocation, source execution, security setting or publication permission was activated."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/read-receipt.json",
+      "bytes": 1327,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/proposals/collaboration/dot-bridge/from-dot/dot-20261016-pr13-audit-documentation-reconciliation.md",
+      "bytes": 4528,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/official-license-receipt.json",
+      "bytes": 647,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 6502,
+  "public_contribution_checks": [
+    "nine exact source identities, ten source pins and seven artifact bindings passed",
+    "two prospective launch commands match saved invocation controls without execution",
+    "authored finite arithmetic, proposal/final differences and original qualifications checked",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

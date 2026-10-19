@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-synthetic-fixture-controls.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/ACQUISITION-RESULT.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/FULL-RUN-LAUNCH.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-POST-ACQUISITION-AUDIT.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-PREPAREDNESS.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-RESULT-AUDIT-CHECKLIST.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-TRANSPORT-CONTINUATION-PLAN.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/SYNTHETIC-LAUNCH.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/SYNTHETIC-RESULT.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/envelope-design.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/ACQUISITION-RESULT.md",
+      "bytes": 3326,
+      "git_blob_sha": "56c2af3a9d232f90b51115e153136c25e940d0a6",
+      "sha256": "0d3345416935181b4c43eee6ec73fece01af9a6b8d3aa2e07b6553f732ccd2c9",
+      "lines": 51,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/FULL-RUN-LAUNCH.md",
+      "bytes": 3714,
+      "git_blob_sha": "bbfd2c6b1b26f1c5a44c09c0cf65ce5661283732",
+      "sha256": "b3fb1857bd167a337de77bd8b2ca99b5e80fdc002cd30f49b3bd1b03664fefed",
+      "lines": 58,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-POST-ACQUISITION-AUDIT.md",
+      "bytes": 4383,
+      "git_blob_sha": "3698ad8e7840a7937cb274f311787e4cbd5fd347",
+      "sha256": "f9eda2b80a31d1a0e2877ba9ff8ddebe67c57e055e9e9fadfe5992f7e2f9cede",
+      "lines": 29,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-PREPAREDNESS.md",
+      "bytes": 9972,
+      "git_blob_sha": "969bbd64e29f0fceef9e229be9294c24ee996a7b",
+      "sha256": "5a35c727566289b950c739d55e24f23dd44e0908e5de638755393775c203a1e6",
+      "lines": 144,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-RESULT-AUDIT-CHECKLIST.md",
+      "bytes": 13433,
+      "git_blob_sha": "56060671c702502e27600edc0c28062a9cb09576",
+      "sha256": "9eba419ed7e3521ede14fc9985d800ef050a4a6622c0df7d82fd7aa9bd2d6733",
+      "lines": 86,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/PR13-TRANSPORT-CONTINUATION-PLAN.md",
+      "bytes": 4420,
+      "git_blob_sha": "51e0b37d592ee6c14a38f160f184025bb03c7d7f",
+      "sha256": "c07822d297b2778a0eb4dec9b3544e279676586d5930214f70bd01ed423de140",
+      "lines": 34,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/SYNTHETIC-LAUNCH.md",
+      "bytes": 3524,
+      "git_blob_sha": "b02fbda47cf8ae0a71f7bc23af62357c15831a79",
+      "sha256": "868060a8fa11cce9c18bf4d60911f76b84905c3010b74b62171268457e27a4a1",
+      "lines": 51,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/SYNTHETIC-RESULT.md",
+      "bytes": 3355,
+      "git_blob_sha": "e31d74af7b108eb620909e923f78d52c3ef01fe3",
+      "sha256": "74c9c1aa40745eac08ab76cc78127ed0263f991088ef1ceb087612e9f508c269",
+      "lines": 49,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/historical-notes/envelope-design.md",
+      "bytes": 9529,
+      "git_blob_sha": "fdb0f3ede931e3729b458f16fbf205e153b9df85",
+      "sha256": "cce03949d6d5a83143944963ca70ad9a33c6d3557021a4388c14b52d473d78d9",
+      "lines": 65,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-plans-status-and-original-audit-qualifications",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 9,
+      "unique_blobs": 9,
+      "bytes": 55656
+    },
+    "cumulative_direct_read": {
+      "paths": 393,
+      "unique_blobs": 393,
+      "bytes": 3174083
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 445,
+    "remaining_paths_without_full_semantic_read_or_alias": 5148,
+    "remaining_distinct_blobs_without_full_semantic_read": 4036,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 9,
+    "this_review_verified_bytes": 55656,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Nine historical notes fully read as source material; their instructions were not activated.",
+    "The post-acquisition plan and result checklist already state several later confirmed qualifications; these are attributed authored limits, not newly discovered historical oversights.",
+    "Prospective shell blocks were tokenized as text and compared with saved invocations; no command was executed.",
+    "Source/artifact hashes bind acquired payloads but do not authenticate historical authority, all narrative claims, binary execution or directory state.",
+    "Finite arithmetic checks do not regenerate training costs, read waveforms, validate a kernel enforcement guarantee or run any experiment.",
+    "Early transport/polling/cgroup/allocation proposals differ from later adopted controls and are not silently promoted into requirements.",
+    "Original archive unavailability, historical main/PR revisions and platform/tool facilities remain attributed stage claims, not fresh queries.",
+    "No upstream service/worker, network acquisition, model invocation, source execution, security setting or publication permission was activated."
+  ],
+  "review_report": "base12-historical-packet-notes.md"
+}

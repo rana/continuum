@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "source_baseline": "75574adf1bf22ad7f29f7369689b430105b192cb",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 4,
+  "verified_source_bytes": 15105,
+  "full_UTF8_text_readings": 2,
+  "json_full_text_read_and_duplicate_key_checked": 2,
+  "library_file_bindings_without_operational_identifiers": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/INDEPENDENT-PACKET-REVIEW.md",
+      "version": 0,
+      "declared_bytes": 9512,
+      "declared_sha256": "72cef8dc5ffd59fc5eb420936d90e8d44dde40161ce6693ad386a5e7792198c3",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.py",
+      "version": 0,
+      "declared_bytes": 16925,
+      "declared_sha256": "dad23f00e7c0669b4ac176895da1ccb9b9ff6681a81f529fe938c0419058c7de",
+      "payload_acquired": false,
+      "matched": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.json",
+      "version": 0,
+      "declared_bytes": 39974,
+      "declared_sha256": "f34c8a5524055ec165b2b4a7e8f2c582aaa66220d7c1e52e19e993a2ddf1426c",
+      "payload_acquired": false,
+      "matched": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-zip-check.json",
+      "version": 0,
+      "declared_bytes": 241,
+      "declared_sha256": "31c9187d1320d93f4ed418f5403f2ee2f44f058677e978807a93aebcc6e39ae1",
+      "payload_acquired": true,
+      "matched": true
+    }
+  ],
+  "matched_library_file_bindings": 2,
+  "library_file_binding_count": 4,
+  "local_pending_and_later_technical_review_and_private_grant_are_distinct": true,
+  "later_private_publication_grant_is_retained_authored_statement": true,
+  "earlier_integration_already_records_private_grant": true,
+  "current_runtime_or_native_handoff_acceptance_established": false,
+  "review_reported_structural_checks": {
+    "total": 332,
+    "per_member_type_and_encoding": 254,
+    "other": 78,
+    "complete_check_report_acquired": false
+  },
+  "packet_tree_inventory": {
+    "paths": 127,
+    "path_bytes": 1319940,
+    "payloads_all_read_or_bound": false
+  },
+  "saved_zip_check_declaration": {
+    "bytes": 309057,
+    "sha256": "c6e24c711800f7af6b5454cb457ce277fb45e4900dc3f0a4b079577334a4e966",
+    "members": 127,
+    "extracted_byte_match_reported": true,
+    "CRC_error_reported": null
+  },
+  "zip_bytes_acquired": false,
+  "zip_currently_verified": false,
+  "review_four_archive_totals_and_training_summary_match_saved_results": true,
+  "parent_privacy_review_not_freshly_repeated": true,
+  "transport_guide_declares_proposed_header_cap": 65536,
+  "transport_guide_declares_proposed_socket_seconds": 60,
+  "transport_guide_declares_executed_header_cap": 16384,
+  "transport_guide_declares_executed_socket_seconds": 30,
+  "transport_helper_payload_reviewed": false,
+  "upstream_programs_executed": false,
+  "no_new_model_invocation": true,
+  "historical_authority_activated": false,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Two of four Library file payload identities bind; checker source and complete 332-entry report remain unacquired.",
+    "Retained parent technical review and authored private publication approval are later than the local-pending packet, confirming an integration claim already read earlier.",
+    "Private publication scope is not broad public raw-packet permission, native acceptance or scientific rerun authority.",
+    "ZIP-check fields and pinned-tree inventory agree; no ZIP bytes, CRC or extracted-byte verification were performed here.",
+    "Parent privacy and independence statements retain their saved review scope; this unit is not a new 127-member recursive audit or independent waveform computation.",
+    "The guide distinguishes proposed and executed transport settings; executed helper bytes were not inspected here.",
+    "No upstream checker, packet script, experiment or new model invocation ran; Library operational identifiers are excluded from this public projection."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.py",
+      "bytes": 16925
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.json",
+      "bytes": 39974
+    }
+  ],
+  "next_scope_bytes": 56899,
+  "public_contribution_checks": [
+    "exact source and two review provenance payload bindings passed",
+    "saved number and pinned-tree inventory/count relations passed",
+    "JSON/coverage arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

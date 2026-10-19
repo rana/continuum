@@ -213,6 +213,8 @@ The [persistence/acquisition return](source-review/base12-persistence-acquisitio
 
 The [documentation-continuity return](source-review/base12-documentation-continuity.md) binds four dated views while preserving their distinct roles: current state, authored interpretation, preservation coverage and an offered reconciliation. Claim labels do not prove their contents; later audit knowledge does not retroactively belong to an earlier snapshot. Continuum should retain view revision/exposure and one authoritative home per live fact, with exact history rather than duplicated stale status. No historical instruction was activated.
 
+The [parent-packet return](source-review/base12-parent-packet-review.md) binds later review/provenance records without overwriting an earlier pending snapshot. Technical pass, publication authority, publication and unrelated task acceptance retain separate scopes. A saved policy proposal also differs from the later approved helper revision. Continuum should bind approvals and policy evidence to exact objects/actions, preserving both chronology and missing payloads; no historical authority was activated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

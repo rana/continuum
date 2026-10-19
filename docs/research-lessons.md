@@ -295,6 +295,8 @@ The [complete saved attempt inventory](source-review/base12-builder-attempt-inve
 
 The [complete static builder layout](source-review/base12-builder-static-layout.md) reconciles every relocation formula and writable interval without executing the encoder. A consistent address map does not establish opcode context or the actual patched bytes. Preserve that dependency for the instruction-listing review. Interval slack describes declared layout space; it is neither measured free memory nor a whole-process resource bound.
 
+The [complete saved instruction listing](source-review/base12-builder-instruction-listing.md) connects every layout patch to opcode context, signed bytes and target boundaries, and its streaming bytes match the pinned code-blob identity. This strengthens earlier metadata-only relations without importing the encoder or executing a program. Keep code-segment identity, complete ELF custody, saved external decoding and native behavior as separate claims. Six selected corrected rows also cannot establish that a cross-revision binary difference contains only those changes.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

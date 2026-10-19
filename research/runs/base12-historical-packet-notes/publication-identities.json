@@ -1,0 +1,20 @@
+{
+  "source_baseline": "3a3eaba5cd71a8ed1ea80a2baea2836275c5fb84",
+  "files": [
+    {
+      "path": "docs/source-review/base12-historical-packet-notes.md",
+      "bytes": 5929,
+      "sha256": "db5bc3bf091ec09502df0a1e03c5a28807f14508be59c528150b760db5436a52"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-historical-packet-notes.json",
+      "bytes": 8734,
+      "sha256": "cb36a86457f10f6ee8abcc45d74d8fe9854ca6ddd57ec813911d6860e9523bd7"
+    },
+    {
+      "path": "research/runs/base12-historical-packet-notes/validation.json",
+      "bytes": 10426,
+      "sha256": "7cbff7ddb391e5bdc3e0cb72ee9d06d474801a40408673acc882872ba67b9977"
+    }
+  ]
+}

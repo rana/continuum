@@ -1,0 +1,22 @@
+{
+  "source_baseline": "176c6033bb03a36a42f9b8374dee21c6771ef55f",
+  "files": [
+    {
+      "path": "docs/source-review/base12-decision-gate.md",
+      "bytes": 7581,
+      "sha256": "ce94dee92bf229daad216df3b39329dac8f26957482807b189ad15be7db4f217"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-decision-gate.json",
+      "bytes": 7371,
+      "sha256": "31716e83251ef1b02d8d958e73b412ca2de55064f3419b701cbe3479a75e36f5"
+    },
+    {
+      "path": "research/runs/base12-decision-gate/validation.json",
+      "bytes": 2294,
+      "sha256": "3b61e4d4191798f5341f640a3df763c96edf437efb6a4a5516658163379c3cfd"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

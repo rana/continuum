@@ -1,0 +1,622 @@
+{
+  "binary_sha256": "5f66bb3d22a999657a38d6609cf8f2c5e565ee9825d32d8a257d5dbdb5e13cbf",
+  "scope": "single-threaded Linux fsync interposition, no kernel/device writeback or power-loss experiment",
+  "protocol": 2,
+  "quarantine_cases": [
+    {
+      "fail_at": 5,
+      "calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        },
+        {
+          "index": 5,
+          "returned": -1,
+          "errno": 5,
+          "resource": "WRITE-IN-PROGRESS"
+        }
+      ],
+      "refused_operations": [
+        "receipt",
+        "accept",
+        "export"
+      ],
+      "no_repair_sync_attempted": true,
+      "bytes_preserved": true
+    },
+    {
+      "fail_at": 6,
+      "calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        },
+        {
+          "index": 5,
+          "returned": 0,
+          "errno": 0,
+          "resource": "WRITE-IN-PROGRESS"
+        },
+        {
+          "index": 6,
+          "returned": -1,
+          "errno": 5,
+          "resource": "directory"
+        }
+      ],
+      "refused_operations": [
+        "receipt",
+        "accept",
+        "export"
+      ],
+      "no_repair_sync_attempted": true,
+      "bytes_preserved": true
+    },
+    {
+      "fail_at": 7,
+      "calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        },
+        {
+          "index": 5,
+          "returned": 0,
+          "errno": 0,
+          "resource": "WRITE-IN-PROGRESS"
+        },
+        {
+          "index": 6,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 7,
+          "returned": -1,
+          "errno": 5,
+          "resource": "journal"
+        }
+      ],
+      "refused_operations": [
+        "receipt",
+        "accept",
+        "export"
+      ],
+      "no_repair_sync_attempted": true,
+      "bytes_preserved": true
+    },
+    {
+      "fail_at": 8,
+      "calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        },
+        {
+          "index": 5,
+          "returned": 0,
+          "errno": 0,
+          "resource": "WRITE-IN-PROGRESS"
+        },
+        {
+          "index": 6,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 7,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 8,
+          "returned": -1,
+          "errno": 5,
+          "resource": "boundary.pending"
+        }
+      ],
+      "refused_operations": [
+        "receipt",
+        "accept",
+        "export"
+      ],
+      "no_repair_sync_attempted": true,
+      "bytes_preserved": true
+    },
+    {
+      "fail_at": 9,
+      "calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        },
+        {
+          "index": 5,
+          "returned": 0,
+          "errno": 0,
+          "resource": "WRITE-IN-PROGRESS"
+        },
+        {
+          "index": 6,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 7,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 8,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary.pending"
+        },
+        {
+          "index": 9,
+          "returned": -1,
+          "errno": 5,
+          "resource": "directory"
+        }
+      ],
+      "refused_operations": [
+        "receipt",
+        "accept",
+        "export"
+      ],
+      "no_repair_sync_attempted": true,
+      "bytes_preserved": true
+    }
+  ],
+  "safe_boundary_cases": [
+    {
+      "case": "cleanup_error_after_successful_core_commit",
+      "calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        },
+        {
+          "index": 5,
+          "returned": 0,
+          "errno": 0,
+          "resource": "WRITE-IN-PROGRESS"
+        },
+        {
+          "index": 6,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 7,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 8,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary.pending"
+        },
+        {
+          "index": 9,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 10,
+          "returned": -1,
+          "errno": 5,
+          "resource": "directory"
+        }
+      ],
+      "retry_calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        }
+      ],
+      "exact_original_receipt": true
+    },
+    {
+      "case": "completed_commit_lost_reply",
+      "commit_calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        },
+        {
+          "index": 5,
+          "returned": 0,
+          "errno": 0,
+          "resource": "WRITE-IN-PROGRESS"
+        },
+        {
+          "index": 6,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 7,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 8,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary.pending"
+        },
+        {
+          "index": 9,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 10,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        }
+      ],
+      "startup_failures": [
+        {
+          "fail_at": 1,
+          "calls": [
+            {
+              "index": 1,
+              "returned": -1,
+              "errno": 5,
+              "resource": "journal"
+            }
+          ]
+        },
+        {
+          "fail_at": 2,
+          "calls": [
+            {
+              "index": 1,
+              "returned": 0,
+              "errno": 0,
+              "resource": "journal"
+            },
+            {
+              "index": 2,
+              "returned": -1,
+              "errno": 5,
+              "resource": "boundary"
+            }
+          ]
+        },
+        {
+          "fail_at": 3,
+          "calls": [
+            {
+              "index": 1,
+              "returned": 0,
+              "errno": 0,
+              "resource": "journal"
+            },
+            {
+              "index": 2,
+              "returned": 0,
+              "errno": 0,
+              "resource": "boundary"
+            },
+            {
+              "index": 3,
+              "returned": -1,
+              "errno": 5,
+              "resource": "directory"
+            }
+          ]
+        },
+        {
+          "fail_at": 4,
+          "calls": [
+            {
+              "index": 1,
+              "returned": 0,
+              "errno": 0,
+              "resource": "journal"
+            },
+            {
+              "index": 2,
+              "returned": 0,
+              "errno": 0,
+              "resource": "boundary"
+            },
+            {
+              "index": 3,
+              "returned": 0,
+              "errno": 0,
+              "resource": "directory"
+            },
+            {
+              "index": 4,
+              "returned": -1,
+              "errno": 5,
+              "resource": "parent"
+            }
+          ]
+        }
+      ],
+      "retry_calls": [
+        {
+          "index": 1,
+          "returned": 0,
+          "errno": 0,
+          "resource": "journal"
+        },
+        {
+          "index": 2,
+          "returned": 0,
+          "errno": 0,
+          "resource": "boundary"
+        },
+        {
+          "index": 3,
+          "returned": 0,
+          "errno": 0,
+          "resource": "directory"
+        },
+        {
+          "index": 4,
+          "returned": 0,
+          "errno": 0,
+          "resource": "parent"
+        }
+      ],
+      "exact_original_receipt": true
+    }
+  ],
+  "before": {
+    "binary_sha256": "97e21e5011b9c0e2bae42110195ee7d0a436ab36fc16a72e3c60d7c4fbecc2bf",
+    "uncertain_commit_calls": [
+      {
+        "index": 1,
+        "returned": 0,
+        "errno": 0,
+        "resource": "journal"
+      },
+      {
+        "index": 2,
+        "returned": 0,
+        "errno": 0,
+        "resource": "boundary"
+      },
+      {
+        "index": 3,
+        "returned": 0,
+        "errno": 0,
+        "resource": "directory"
+      },
+      {
+        "index": 4,
+        "returned": 0,
+        "errno": 0,
+        "resource": "parent"
+      },
+      {
+        "index": 5,
+        "returned": 0,
+        "errno": 0,
+        "resource": "journal"
+      },
+      {
+        "index": 6,
+        "returned": 0,
+        "errno": 0,
+        "resource": "boundary.pending"
+      },
+      {
+        "index": 7,
+        "returned": -1,
+        "errno": 5,
+        "resource": "directory"
+      }
+    ],
+    "retry_calls": [
+      {
+        "index": 1,
+        "returned": 0,
+        "errno": 0,
+        "resource": "journal"
+      },
+      {
+        "index": 2,
+        "returned": 0,
+        "errno": 0,
+        "resource": "boundary"
+      },
+      {
+        "index": 3,
+        "returned": 0,
+        "errno": 0,
+        "resource": "directory"
+      },
+      {
+        "index": 4,
+        "returned": 0,
+        "errno": 0,
+        "resource": "parent"
+      }
+    ],
+    "no_persistent_quarantine": true
+  },
+  "explicit_archive_restore_preserves_v1_objects_and_receipt": true,
+  "legacy_image_clean_acknowledged": true,
+  "cross_version_inplace_opens_refused": true
+}

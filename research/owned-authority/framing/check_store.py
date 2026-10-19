@@ -206,8 +206,8 @@ def main():
             frame = struct.pack('<8sIQ32s', b'CTJFR001', len(payload), ordinal, previous) + payload
             previous = hashlib.sha256(b'continuum:journal-frame:v1\0' + frame).digest()
             image += frame + previous
-        marker = b'CTJBD001' + struct.pack('<Q', len(image)) + hashlib.sha256(image).digest()
-        marker += hashlib.sha256(b'continuum:boundary:v1\0' + marker).digest()
+        marker = b'CTJBD002' + struct.pack('<Q', len(image)) + hashlib.sha256(image).digest()
+        marker += hashlib.sha256(b'continuum:boundary:v2\0' + marker).digest()
         (damaged / 'journal').write_bytes(image); (damaged / 'boundary').write_bytes(marker)
         before = files(damaged)
         assert call('head', 'local', 'positive', target=damaged).returncode != 0 and files(damaged) == before

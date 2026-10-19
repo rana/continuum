@@ -16,7 +16,7 @@ Any failure after staging creation leaves evidence for inspection. In particular
 
 Initialization/restore holds a new cooperative lock and creates a `RESTORING` guard before populating files. It writes/synchronizes the exact journal and computed boundary, synchronizes the directory, removes the guard, synchronizes the directory and its parent, then returns. All ordinary journal openings refuse a present guard. A partial install therefore cannot be mistaken for an intentionally shorter store. Failure preserves the directory and guard/artifacts for inspection; no automatic repair/retry follows.
 
-A ready restored directory is an independent authority with the original objects, head and historical accepted/stale receipts. Its subsequent writes do not update the source or archive. Restore is same-version exact-image reproduction, not merge, newest-history recovery, schema upgrade or migration. The CLI's boolean reply is local completion acknowledgement, not authentication or a portable signed export receipt.
+A ready restored directory is an independent authority with the original objects, head and historical accepted/stale receipts. Its subsequent writes do not update the source or archive. Restore preserves the exact journal/event image and installs the current boundary protocol (now version 2) in a fresh directory. This supports explicit transport of earlier image archives, not in-place opening of older boundary metadata. It is not merge, newest-history recovery or a qualified general schema migration. The CLI's boolean reply is local completion acknowledgement, not authentication or a portable signed export receipt.
 
 ## Executed Research Delta — 2026-10-19
 
@@ -42,3 +42,5 @@ python3 research/owned-authority/framing/check_archive.py research/owned-authori
 Next: use this disposable path for one actual continuation of its development, retaining exact source, exposure, recipient response and observed consequence. A qualitative continuation will not establish comparative model benefit or qualify retained-data adoption. Continue contract/fault review, including real I/O errors and availability costs, independently of that use.
 
 The later [actual owned-store successor](../../runs/owned-successor-01/README.md) adds an eleventh missing-closure negative case and a separate two-object positive control. Its exact model patch, coordinator change and execution evidence are retained there; the ten-case validation above remains historical.
+
+The current [version-2 pre-write fence](../prewrite-fence/README.md) blocks exporting quarantined stores. Archive publication now retains its parent descriptor across metadata mutations. Earlier archive bytes and receipt identities remain unchanged; restore creates only a new guarded destination.

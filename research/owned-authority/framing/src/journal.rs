@@ -9,7 +9,7 @@ use std::{
 };
 
 const LIMIT: u64 = 1_048_576;
-const MAGIC: &[u8; 8] = b"CTJBD001";
+const MAGIC: &[u8; 8] = b"CTJBD002";
 
 fn invalid(message: &str) -> io::Error {
     io::Error::new(io::ErrorKind::InvalidData, message)
@@ -19,7 +19,7 @@ fn boundary(image: &[u8]) -> Vec<u8> {
     bytes.extend_from_slice(&(image.len() as u64).to_le_bytes());
     bytes.extend_from_slice(&Sha256::digest(image));
     let checksum = Sha256::new()
-        .chain_update(b"continuum:boundary:v1\0")
+        .chain_update(b"continuum:boundary:v2\0")
         .chain_update(&bytes)
         .finalize();
     bytes.extend_from_slice(&checksum);
@@ -28,6 +28,11 @@ fn boundary(image: &[u8]) -> Vec<u8> {
 
 fn recover(path: &Path) -> io::Result<Vec<Vec<u8>>> {
     // No prefix is exposed on extra bytes, missing bytes or pending publication.
+    if path.join("WRITE-IN-PROGRESS").try_exists()? {
+        return Err(invalid(
+            "unfinished write intent: quarantined; preserve all bytes",
+        ));
+    }
     if path.join("RESTORING").try_exists()? {
         return Err(invalid("incomplete initialization/restore"));
     }
@@ -53,6 +58,7 @@ pub struct Journal {
     // Lock lifetime covers all recovery and mutation, including failed sync.
     _lock: File,
     directory: std::path::PathBuf,
+    directory_handle: File,
     records: Vec<Vec<u8>>,
     poisoned: bool,
 }
@@ -73,19 +79,24 @@ impl Journal {
         }
         let absolute = std::path::absolute(path)?;
         let path = absolute.as_path();
+        let parent_handle = File::open(path.parent().ok_or_else(|| invalid("parent required"))?)?;
         fs::create_dir(path)?;
+        let directory_handle = File::open(path)?;
         let lock = OpenOptions::new()
             .read(true)
             .write(true)
             .create_new(true)
             .open(path.join("lock"))?;
         lock.try_lock().map_err(io::Error::other)?;
+        lock.sync_all()?;
         let restoring = OpenOptions::new()
             .write(true)
             .create_new(true)
             .open(path.join("RESTORING"))?;
         restoring.sync_all()?;
-        File::open(path)?.sync_all()?;
+        directory_handle.sync_all()?;
+        // The new directory entry must be durable before any payload writes.
+        parent_handle.sync_all()?;
         let mut journal = OpenOptions::new()
             .write(true)
             .create_new(true)
@@ -98,13 +109,13 @@ impl Journal {
             .open(path.join("boundary"))?;
         marker.write_all(&boundary(image))?;
         marker.sync_all()?;
-        File::open(path)?.sync_all()?;
+        directory_handle.sync_all()?;
         if fault == "restore-before-ready" {
             std::process::exit(81);
         }
         fs::remove_file(path.join("RESTORING"))?;
-        File::open(path)?.sync_all()?;
-        File::open(path.parent().ok_or_else(|| invalid("parent required"))?)?.sync_all()?;
+        directory_handle.sync_all()?;
+        parent_handle.sync_all()?;
         if fault == "restore-after-ready" {
             std::process::exit(82);
         }
@@ -121,13 +132,14 @@ impl Journal {
             .write(true)
             .open(path.join("lock"))?;
         lock.try_lock().map_err(io::Error::other)?;
+        let directory_handle = File::open(path)?;
         let records = recover(path)?;
-        // Recovery may observe bytes after an earlier uncertain sync. Establish
-        // fresh barriers before exposing cached outcomes or acknowledging an
-        // exact retry; successful rereading alone is not durability evidence.
+        // Version 2 refuses unfinished write intents before reaching here.
+        // Fresh barriers supplement that fence; they never clear it or claim
+        // to repair kernel writeback errors merely because rereading succeeds.
         File::open(path.join("journal"))?.sync_all()?;
         File::open(path.join("boundary"))?.sync_all()?;
-        File::open(path)?.sync_all()?;
+        directory_handle.sync_all()?;
         File::open(
             std::path::absolute(path)?
                 .parent()
@@ -137,6 +149,7 @@ impl Journal {
         Ok(Self {
             _lock: lock,
             directory: path.into(),
+            directory_handle,
             records,
             poisoned: false,
         })
@@ -156,6 +169,7 @@ impl Journal {
         }
         if ![
             "none",
+            "after-intent",
             "after-data",
             "pending",
             "after-commit",
@@ -178,6 +192,18 @@ impl Journal {
         // Every I/O failure from here requires abandoning this handle. No reread
         // can convert uncertain synchronization into a successful acknowledgement.
         self.poisoned = true;
+        // Persist a quarantine fence before touching journal bytes. A restart
+        // cannot treat a later successful fsync as repair of uncertain I/O.
+        let intent = self.directory.join("WRITE-IN-PROGRESS");
+        let guard = OpenOptions::new()
+            .write(true)
+            .create_new(true)
+            .open(&intent)?;
+        guard.sync_all()?;
+        self.directory_handle.sync_all()?;
+        if fault == "after-intent" {
+            std::process::exit(78);
+        }
         let mut file = OpenOptions::new()
             .append(true)
             .open(self.directory.join("journal"))?;
@@ -203,7 +229,11 @@ impl Journal {
         if fault == "after-rename" {
             std::process::exit(77);
         }
-        File::open(&self.directory)?.sync_all()?;
+        self.directory_handle.sync_all()?;
+        // Only a completed data/marker publication permits fence removal.
+        // A failure before here preserves the durable intent across restart.
+        fs::remove_file(&intent)?;
+        self.directory_handle.sync_all()?;
         if fault == "after-commit" {
             std::process::exit(76);
         }

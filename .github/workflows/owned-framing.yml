@@ -40,7 +40,7 @@ jobs:
       - run: python3 check_store.py target/debug/owned-store
       - run: python3 check_archive.py target/debug/owned-store
       - run: python3 ../../runs/owned-successor-01/verify.py --binary target/debug/owned-store
-      - run: python3 ../recovery-sync/check.py --binary target/debug/owned-store
+      - run: python3 ../prewrite-fence/check.py --binary target/debug/owned-store
       - run: python3 ../../runs/owned-journal-review-01/verify.py
       - name: Check finite semantic oracle against the SQLite reference
         run: |

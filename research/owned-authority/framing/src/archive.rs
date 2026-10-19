@@ -58,6 +58,7 @@ pub fn publish(path: &Path, image: &[u8], fault: &str) -> Result<()> {
     let parent = destination
         .parent()
         .ok_or_else(|| bad("export parent required"))?;
+    let parent_handle = File::open(parent)?;
     // Stage within the same parent so hard-link publication cannot cross devices.
     let (stage, mut file) = loop {
         let sequence = STAGE.fetch_add(1, Ordering::Relaxed);
@@ -97,7 +98,7 @@ pub fn publish(path: &Path, image: &[u8], fault: &str) -> Result<()> {
         std::process::exit(84);
     }
     fs::remove_file(&stage)?;
-    File::open(parent)?.sync_all()?;
+    parent_handle.sync_all()?;
     if fault == "export-after-sync" {
         std::process::exit(85);
     }

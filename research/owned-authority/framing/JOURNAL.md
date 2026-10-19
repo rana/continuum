@@ -8,21 +8,25 @@ This is a bounded Unix/local-filesystem laboratory, not storage adopted for reta
 
 A directory contains `lock`, `journal`, and `boundary`. Maximum journal image is 1,048,576 bytes; frame payload remains at most 65,536 bytes. Existing directories are never initialized again. Initialization uses exclusive creation, synchronizes the journal and initial boundary, then the directory and parent. Partial initialization is preserved, not automatically repaired. The caller owns a trusted local directory tree; malicious path replacement, symlinks, remote filesystems and uncooperative writers are outside this prototype's contract.
 
-Boundary encoding is exactly 80 bytes: eight ASCII bytes `CTJBD001`, u64 little-endian journal length, 32-byte SHA-256 of the entire journal image, then SHA-256 of `continuum:boundary:v1` plus NUL plus the preceding 48 marker bytes. Missing boundary is an error even when the journal itself decodes. This checksum does not authenticate metadata or detect a coherently replaced older image.
+Boundary encoding is exactly 80 bytes: eight ASCII bytes `CTJBD002`, u64 little-endian journal length, 32-byte SHA-256 of the entire journal image, then SHA-256 of `continuum:boundary:v2` plus NUL plus the preceding 48 marker bytes. Missing boundary is an error even when the journal itself decodes. This checksum does not authenticate metadata or detect a coherently replaced older image.
 
 Initialization/restore now keeps a `RESTORING` guard until installation is complete; opening refuses that guard. Opening acquires a nonblocking exclusive OS file lock before recovery, held for the handle lifetime. After physical validation it now synchronizes journal, boundary, directory and parent before exposing records; [the recovery-barrier correction](../recovery-sync/README.md) preserves the actual before/after evidence. Contention is an error. Readers currently use the same exclusive ownership: there is no concurrent committed-generation reader optimization. Lock release on process exit was exercised. Replacing the lock inode externally defeats cooperative ownership and is out of scope.
 
-Recovery requires no pending boundary, exactly matching journal length and digest, valid boundary checksum, and valid complete chained framing. It exposes no prefix if any check fails. It never truncates, removes pending files, chooses a shorter boundary, rewrites damaged bytes or converts a reread into a durability acknowledgement. Availability is deliberately sacrificed on ambiguous tails: manual inspection and a later explicitly qualified repair protocol are still needed.
+Recovery requires no `WRITE-IN-PROGRESS` quarantine and no pending boundary, exactly matching journal length and digest, valid boundary checksum, and valid complete chained framing. It exposes no prefix if any check fails. It never truncates, removes pending files, chooses a shorter boundary, rewrites damaged bytes or converts a reread into a durability acknowledgement. Availability is deliberately sacrificed on ambiguous tails: manual inspection and a later explicitly qualified repair protocol are still needed.
 
-Append under that lock:
+Append under that lock (current boundary protocol 2):
 
-1. Validate the next bounded image without I/O. Mark the handle poisoned before starting mutation.
-2. Append exactly the new frame suffix, then `sync_all` the journal.
-3. Exclusively create `boundary.pending`, write the complete next marker, then `sync_all` it.
-4. Rename the pending marker over `boundary`, then `sync_all` the repository directory.
-5. Update the in-memory records and unpoison the handle; only then return success.
+1. Validate the next bounded image without I/O. Mark the handle poisoned before mutation.
+2. Exclusively create `WRITE-IN-PROGRESS`, sync it, then sync the already-open repository directory descriptor before touching journal bytes.
+3. Append exactly the new frame suffix and sync the journal.
+4. Exclusively create `boundary.pending`, write the complete next version-2 marker and sync it.
+5. Rename the pending marker over `boundary` and sync the retained directory descriptor. The core image is now committed under the stated successful-sync assumptions.
+6. Remove the write intent and sync the directory again. Only then update cached records, unpoison and return success.
 
-Any I/O error after mutation begins leaves the handle poisoned. Reads and further writes through it refuse. The path is preserved, and no automatic retry occurs. Dropping/reopening can recover a valid published image without knowing whether a reply was delivered; it does not prove an uncertain earlier sync actually succeeded. An interrupted pending publication or unexplained tail refuses even if an older valid prefix exists.
+Errors leave the handle poisoned and preserve artifacts. A surviving write intent blocks reads, retries, exports and further writes after restart **before** any repair sync is attempted. No API clears it. A failure during fence-clear synchronization occurs only after core data/marker publication succeeded; if the cleared name survives, recovery can use that already committed image, while a reappearing fence refuses. See the [versioned pre-write protocol and traces](../prewrite-fence/README.md).
+
+Repository directory descriptors are kept open across metadata mutations. Installation opens the parent before creating the target, persists RESTORING and the parent entry before payload writes, and removes readiness guards only after data/marker publication. The four startup barriers supplement this protocol; they do not repair or clear uncertain data-write state.
+
 
 ## Declared fault assumptions
 
@@ -56,3 +60,5 @@ These tests establish specific process-exit/locking/integrity-refusal behavior i
 Next: encode original v1 objects and complete acceptance outcomes in this journal, check them against the finite oracle and separate SQLite reference, and recover the original historical receipt after lost reply. Then no-overwrite export/restore and a real investigation continuation. Keep the conservative refusal policy until an independently checked repair/availability design changes it.
 
 The subsequent [startup-barrier correction](../recovery-sync/README.md) closes the reread-only acknowledgement gap found after the actual successor trial. Existing process-exit results above do not establish that stronger failure property by themselves.
+
+Current contract note: the original four-exit observations above describe boundary protocol 1 at their pinned source. Protocol 2 adds a fifth after-intent exit and deliberately changes after-rename recovery to quarantine; [new evidence](../prewrite-fence/README.md) supersedes that recovery policy without rewriting those historical results.

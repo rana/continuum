@@ -46,3 +46,5 @@ Scope remains a disposable one-writer Unix laboratory with bounded images, trust
 Next: review the complete owned-store contract and operating costs, including these startup barriers and fail-closed availability, before expanding the authority surface. Keep the actual successor evidence intact; a distinct small public investigation and independent fault/recovery review remain useful qualification steps.
 
 The subsequent [focused review](../../runs/owned-journal-review-01/README.md) qualifies this result further: fresh successful calls do not establish recovery after real kernel writeback failure. Primary-source evidence supports that failure class. Persistent pre-write error fencing remains the selected next unit; the synthetic before/after observations above remain valid within their declared model.
+
+Historical-runner note: `check.py` and result.json above exercise the boundary-1 barrier-only policy. The [boundary-2 quarantine runner](../prewrite-fence/README.md) now replaces it in current CI, retaining startup failure coverage on a completed safe image while refusing uncertain data/marker writes before any resync attempt.

@@ -335,6 +335,8 @@ The [complete profile bootstrap and author review](source-review/base12-decoder-
 
 The [saved independent profile review](source-review/base12-decoder-profile-independent-review.md) preserves an inspection-reader formatting failure separately from the corrected completion and unchanged candidate. Source-line anchors also need semantic interpretation: the same threshold at a numeric guard does not prove name validation. Bind a PASS to its actual source identities and coverage; count/checksum agreement leaves reader-source and preservation-row claims open until their payloads are read.
 
+The [complete preservation inventory and reader sources](source-review/base12-decoder-profile-preservation-reader.md) separate Git identity/mode equality from historical workstation permissions and current payload custody. A reader can hash files without semantically reviewing them, and sequential exclusive JSON writes do not form an atomic durable record set. Inspect the review machinery and the fields it actually retained before broadening its PASS.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

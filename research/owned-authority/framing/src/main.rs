@@ -5,6 +5,37 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let result: Result<(), String> = (|| {
         match args.get(1).map(String::as_str) {
+            Some("journal-init") if args.len() == 3 => {
+                continuum_journal_framing::journal::Journal::init(Path::new(&args[2]))
+                    .map_err(|e| e.to_string())?;
+            }
+            Some("journal-read") if args.len() == 3 => {
+                let journal =
+                    continuum_journal_framing::journal::Journal::open(Path::new(&args[2]))
+                        .map_err(|e| e.to_string())?;
+                println!(
+                    "{} committed frames",
+                    journal.records().map_err(|e| e.to_string())?.len()
+                );
+            }
+            Some("journal-append") if args.len() == 5 => {
+                let mut journal =
+                    continuum_journal_framing::journal::Journal::open(Path::new(&args[2]))
+                        .map_err(|e| e.to_string())?;
+                let result = journal.append(args[4].as_bytes().to_vec(), &args[3]);
+                if args[3] == "sync-error" {
+                    if result.is_ok()
+                        || journal.records().is_ok()
+                        || journal.append(b"retry".to_vec(), "none").is_ok()
+                    {
+                        return Err("poison guard failed".into());
+                    }
+                    println!("injected uncertainty: reads and writes refused on same handle");
+                } else {
+                    result.map_err(|e| e.to_string())?;
+                    println!("committed");
+                }
+            }
             Some("create") | Some("create-exit-before-reply") if args.len() >= 4 => {
                 let records: Vec<_> = args[3..].iter().map(|s| s.as_bytes().to_vec()).collect();
                 create(Path::new(&args[2]), &records).map_err(|e| e.to_string())?;

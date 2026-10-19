@@ -1,4 +1,6 @@
 //! Disposable framing primitive, not an acceptance engine.
+pub mod journal;
+
 use sha2::{Digest, Sha256};
 use std::io::{self, Write};
 

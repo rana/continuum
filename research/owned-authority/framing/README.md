@@ -21,7 +21,7 @@ Ordinal is a structural counter, **not the global acceptance sequence**. Payload
 
 A whole-frame suffix loss is indistinguishable from an intentionally shorter image. This is deliberately tested, not repaired with an assumed marker. Checksums are accidental-corruption detection, not authenticity. No committed boundary or acknowledgement history can be inferred from a syntactically valid image.
 
-`create` exclusively creates a fresh file, writes its entire image, calls `sync_all`, then returns. Any error preserves the path and returns error; do not automatically repeat against another path after uncertain I/O. Existing files cannot be opened for writing by this API. No append/reopen writer, writer takeover, parent-directory sync, index, export, upgrade, migration, compaction or power-loss guarantee is provided. The CLI is a trusted disposable test interface, not bounded hostile-input service: it reads the supplied file into memory. These limitations preclude adoption as authoritative storage.
+`create` exclusively creates a fresh file, writes its entire image, calls `sync_all`, then returns. Any error preserves the path and returns error; do not automatically repeat against another path after uncertain I/O. Existing files cannot be opened for writing by this API. This original fresh-file API supplies no append/reopen writer, writer takeover, parent-directory sync, index, export, upgrade, migration, compaction or power-loss guarantee. The subsequent [experimental boundary journal](JOURNAL.md) provides a separately scoped append/reopen path with conservative refusal and explicit limits. The CLI is a trusted disposable test interface, not bounded hostile-input service: it reads the supplied file into memory. These limitations preclude adoption as authoritative storage.
 
 ## Reproduce
 
@@ -50,3 +50,5 @@ Finding: frame integrity is useful but insufficient. Losing complete final frame
 Next coherent unit: formulate the finite acceptance oracle independently of journal replay; preserve v1 identity, ABA generations, accepted/stale historical receipts and changed-request rejection; implement a committed-boundary selection protocol with declared uncertain-sync behavior and counterexamples before enabling journal reopening or accepting real work. Then connect one disposable source/failed-approach/accepted-proposal investigation, lost-reply receipt recovery and no-overwrite restore. This slice intentionally does not claim that complete demonstration is done.
 
 The subsequent [finite acceptance oracle](../oracle/README.md) now supplies semantic counterexamples. This framing slice and its original observations are unchanged; commit selection remains unimplemented.
+
+The later [boundary-journal construction](JOURNAL.md) now exercises explicit committed-boundary selection under declared assumptions. No semantic acceptance integration or retained-data adoption is claimed.

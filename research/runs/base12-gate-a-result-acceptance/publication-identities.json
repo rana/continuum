@@ -1,0 +1,20 @@
+{
+  "source_baseline": "e3516dc900ef488bd84fa6286489aca89431e18a",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-result-acceptance.md",
+      "bytes": 5647,
+      "sha256": "d3b5e37fb105ceb9509430921d7040fdb14c0093d74f6cbf8494cdef4a390082"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-result-acceptance.json",
+      "bytes": 5954,
+      "sha256": "9b47521e1e5a5356588a2b2e4c7be285364958bb22054e8d985c6e17d85456af"
+    },
+    {
+      "path": "research/runs/base12-gate-a-result-acceptance/validation.json",
+      "bytes": 6609,
+      "sha256": "208280e009f7f7e77426758839ca72baf10d30c3805f4ccd03c52b006737e850"
+    }
+  ]
+}

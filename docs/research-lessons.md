@@ -333,6 +333,8 @@ The [fixed decoder-output profile foundation](source-review/base12-decoder-profi
 
 The [complete profile bootstrap and author review](source-review/base12-decoder-profile-source-static.md) distinguish a mechanism-backed prediction from an emitted observation. Fixed-width immediate syntax supports unchanged lengths; exact state intervals support bounded layout arithmetic. Neither supplies a new artifact identity or runtime result, and a source-copy alias in a result directory does not accept the surrounding execution record.
 
+The [saved independent profile review](source-review/base12-decoder-profile-independent-review.md) preserves an inspection-reader formatting failure separately from the corrected completion and unchanged candidate. Source-line anchors also need semantic interpretation: the same threshold at a numeric guard does not prove name validation. Bind a PASS to its actual source identities and coverage; count/checksum agreement leaves reader-source and preservation-row claims open until their payloads are read.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

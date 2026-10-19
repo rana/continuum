@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "source_baseline": "abcc26ba7134820387daa4d05e40f08c4bd2862e",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 6,
+  "verified_source_bytes": 17687,
+  "full_source_paths_read": 6,
+  "new_semantic_files": 6,
+  "new_semantic_bytes": 17687,
+  "all_JSON_and_checksum_roundtrips_exact": true,
+  "AST_paths_agree_with_author_after_root_case_normalization": true,
+  "source_derived_header_fields": 27,
+  "source_derived_grammar_forms": 33,
+  "source_derived_owned_regions": 8,
+  "source_bound_anchor_groups": 29,
+  "source_anchor_checks": [
+    {
+      "name": "own_state",
+      "source_lines": [
+        21
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "byte_limits",
+      "source_lines": [
+        23
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "argc",
+      "source_lines": [
+        80
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "path",
+      "source_lines": [
+        191
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "source_stat",
+      "source_lines": [
+        93
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "source_read",
+      "source_lines": [
+        94
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "tokens",
+      "source_lines": [
+        109
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "token_length",
+      "source_lines": [
+        117
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "lines",
+      "source_lines": [
+        129
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "nonempty",
+      "source_lines": [
+        132
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "entry",
+      "source_lines": [
+        138
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "instructions",
+      "source_lines": [
+        210
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "labels",
+      "source_lines": [
+        204
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "relocations",
+      "source_lines": [
+        342
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "map_records",
+      "source_lines": [
+        348
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "output_cursor",
+      "source_lines": [
+        315
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "name_length",
+      "source_lines": [
+        270,
+        289
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "number_length",
+      "source_lines": [
+        270
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "number_pre_mult",
+      "source_lines": [
+        271
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "number_final_digit",
+      "source_lines": [
+        272
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "negative_i64",
+      "source_lines": [
+        277
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "signed_i8_i32",
+      "source_lines": [
+        279
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "shift",
+      "source_lines": [
+        284
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "patch_min",
+      "source_lines": [
+        145
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "patch_end",
+      "source_lines": [
+        146
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "rel32_range",
+      "source_lines": [
+        147
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "own_package",
+      "source_lines": [
+        361
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "input_overcount",
+      "source_lines": [
+        98
+      ],
+      "guard_literal_present": true
+    },
+    {
+      "name": "output_overcount",
+      "source_lines": [
+        354
+      ],
+      "guard_literal_present": true
+    }
+  ],
+  "anchor_scope_qualification": {
+    "anchor_group": "name_length",
+    "numeric_digit_guard_line": 270,
+    "actual_name_guard_line": 289,
+    "shared_threshold_does_not_identify_guard_role": true,
+    "candidate_defect_claimed": false
+  },
+  "input_identity_checks": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "bytes": 24741,
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/bootstrap.source.py",
+      "bytes": 24741,
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/bootstrap.py",
+      "bytes": 24745,
+      "sha256": "890650b8e0543d5ff20c495fcdee8f4e42f5b1f98f54e75d21e08275c33f7dba",
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/vendor/isa.py",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/vendor/isa.py",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SOURCE.diff",
+      "bytes": 850,
+      "sha256": "dc3d48d1c6905e9704c813465cd3be3fac28ba640e58168cc93f2c8db3efb95b",
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "bytes": 6957,
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.layout.json",
+      "bytes": 53163,
+      "sha256": "ddb22e1423b1853b755f90f7703b21a3bf05a5a8f34cb80c27181e9238678cb0",
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/NEXT_SOURCE.md",
+      "bytes": 3731,
+      "sha256": "525d41ef1811115682042af81ac1eff42642b367e2bac2a0153317392d89f19d",
+      "status": "held_exact_path"
+    }
+  ],
+  "input_identity_status_counts": {
+    "held_exact_path": 6,
+    "held_identical_blob": 3
+  },
+  "checksum_checks": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/CHECKS.json",
+      "sha256": "19dab3577700c7f0149a91bc249a7fb34d65f46a7af03b76f0d2616763fe3177",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/IDENTITIES.json",
+      "sha256": "18e38685db7fd1a60e7b0414af82037b3358647a79c4637e95b321b024f52ab1",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PRESERVED_BASE.json",
+      "sha256": "3899107d10c11f7d537fd07ffa976769d118734e7539c9d8f2bb965ad5c22e17",
+      "status": "unheld_payload_checksum_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PROVENANCE.json",
+      "sha256": "c3461a961c2c0ed697e54eec2a6ba643ceccfecd53fa69b5e05c4ea3542755c0",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/READER_CORRECTION.json",
+      "sha256": "d72777619db7be5aa4a16602046ab153bbe55ba541efe0e834e90bfcf926faeb",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/REVIEW.md",
+      "sha256": "bf6d3d4c48cefd22b4aec65ce16c0054a3154f7f5b4f88fad31c2eb300278b7b",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader-r2.py",
+      "sha256": "8c47a293b30bb1a96d98a09bfb1acab27ca4021fe865366ff5f6c17a20f5036c",
+      "status": "unheld_payload_checksum_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader.py",
+      "sha256": "2e69acc124ad3150af6cd57d02ee370730f25a7eef4a9238ba6c561679461955",
+      "status": "unheld_payload_checksum_declaration"
+    }
+  ],
+  "checksum_status_counts": {
+    "held_exact_path_hash_verified": 5,
+    "unheld_payload_checksum_declaration": 3
+  },
+  "reported_reader_exit_codes": [
+    1,
+    0
+  ],
+  "reported_first_reader_outputs": 0,
+  "reported_candidate_changes_and_invocations": 0,
+  "source_diff_matches_four_line_context_not_default_three": true,
+  "actual_reader_source_delta_not_yet_verified": true,
+  "preserved_baseline_count_claim": 230,
+  "pinned_builder_path_count": 230,
+  "preserved_baseline_blobs_and_modes_not_yet_verified_from_full_inventory": true,
+  "review_excludes_new_documentation_and_exact_head_acceptance": true,
+  "upstream_reader_or_candidate_executed": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Six complete files/17687 bytes read; all JSON and eight checksum rows reconstruct exactly.",
+    "All27 fixed header fields,33 forms,eight regions,three AST changes and29 source-anchor groups join held source/author records; one name-length anchor also points to a numeric-digit guard and retains that qualification.",
+    "Nine input pins classify held exact/identical blobs and any unheld declarations explicitly; complete source preservation/mode evidence remains pending baseline inventory reading.",
+    "Records preserve an initial reader exit1 and corrected reader exit0; n=4 versus n=3 reproduces the stated formatting condition,not a new historical tool receipt or proof that reader code changed only that parameter.",
+    "Static PASS binds reviewed source identities and excludes new documentation/exact-head acceptance; it does not establish build output,runtime compatibility,decoder fit or performance.",
+    "No historical reader replay,upstream import,native acquisition/emission/execution,model invocation,live scan,activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PRESERVED_BASE.json",
+      "bytes": 65811,
+      "intended_review": "complete_preserved_baseline_inventory_and_both_inspection_reader_sources_as_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader.py",
+      "bytes": 11072,
+      "intended_review": "complete_preserved_baseline_inventory_and_both_inspection_reader_sources_as_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader-r2.py",
+      "bytes": 11076,
+      "intended_review": "complete_preserved_baseline_inventory_and_both_inspection_reader_sources_as_data_without_execution"
+    }
+  ],
+  "next_scope_bytes": 87959,
+  "public_contribution_checks": [
+    "six complete envelope files and exact JSON/checksum reconstructions passed",
+    "nine held inputs,27 fields,33 forms,eight regions and29 anchor groups bind source",
+    "failed/corrected reader provenance and one overbroad guard label retain scope",
+    "coverage,next baseline/reader scope,links,operational privacy and git diff --check passed"
+  ]
+}

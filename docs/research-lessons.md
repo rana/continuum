@@ -319,6 +319,8 @@ The [complete small expected layouts](source-review/base12-builder-small-layouts
 
 The [complete capacity layouts](source-review/base12-builder-capacity-layouts.md) show how lossless repetition must preserve changing fields. Repeated backward branch statements have distinct relative displacements at every position; instruction and label records jointly determine map capacity. Bounded formulas plus exact whole-file reconstruction retain those distinctions without treating authored expectations as a fresh runtime boundary test.
 
+The [expected-layout corpus closeout](source-review/base12-builder-layout-corpus-closeout.md) closes a static chain from complete source through position records, address conversion, named patches and supplied encoding fields. Keep each representation layer explicit: agreement among authored expectations makes later artifact checks precise, while native artifact custody and observed execution remain separate requirements.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

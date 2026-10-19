@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "source_baseline": "89e790e880240f2a97f1f7217e4ccd703fdbe417",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 45963,
+  "full_source_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 45963,
+  "complete_json_reconstruction_exact": true,
+  "all13_fields_source_and_migration_joins_match": true,
+  "source_fixture_input_resolved_by_identical_held_runner_blob": true,
+  "instruction_field_checks": 471,
+  "nonrelocating_field_checks": 362,
+  "branch_opcode_and_displacement_checks": 109,
+  "source_forms": {
+    "cld": 1,
+    "imm": 127,
+    "store64": 42,
+    "load64": 43,
+    "cmp": 33,
+    "jb": 6,
+    "ja": 8,
+    "mov": 14,
+    "add_i8": 4,
+    "dec": 3,
+    "test": 32,
+    "jz": 19,
+    "jae": 5,
+    "load8": 3,
+    "inc": 2,
+    "jalways": 23,
+    "jnz": 12,
+    "syscall": 20,
+    "js": 10,
+    "jns": 11,
+    "neg": 11,
+    "call": 13,
+    "load32": 4,
+    "and_i8": 2,
+    "shr": 2,
+    "and": 3,
+    "add": 6,
+    "sub": 5,
+    "imul": 1,
+    "jle": 2,
+    "ud2": 1,
+    "ret": 1,
+    "store32": 2
+  },
+  "map_rows": 518,
+  "labels": 47,
+  "relocations": 109,
+  "relocation_directions": {
+    "positive": 91,
+    "negative": 18
+  },
+  "all_record_fields_and_virtual_address_conversions_match_migration": true,
+  "code_bytes": 2834,
+  "code_sha256": "001b3248619e2f32f08269e2068071930b39ff2a09580174710dbf689f2b1200",
+  "expected_map_bytes": 16608,
+  "expected_map_sha256": "48a4f80ab464ccfee23f7bd69df03dc5e40cd5e9ad2dfdbedeac94cea2332c4d",
+  "layout_corpus": {
+    "paths": 32,
+    "distinct_blobs": 17,
+    "path_bytes": 213453,
+    "all_paths_have_full_read_or_identical_blob_credit": true
+  },
+  "elf_digest_source": "frozen_manifest_not_recomputed",
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete45963-byte layout read through lossless compact record projection; all13 fields and entire JSON reconstruct exactly.",
+    "All471 supplied instruction snippets match source-derived widths and finite retained encoding fields;109 branch opcode/displacement fields match named labels.",
+    "All518 map rows,47 labels and109 patches match the independently source-derived migration table, with virtual-address/file-offset conversion explicit.",
+    "All32 expected layout paths now have full reading or identical-blob credit;17 distinct content blobs do not equate source/runtime case identities.",
+    "Literal expected map identity matches; ELF digest remains a manifest declaration, with no raw map/ELF acquisition or native execution.",
+    "Finite encoding checks are scoped to held contract forms and correlated authored data, not a general compiler proof or independent runtime oracle.",
+    "No upstream import/materializer execution,native artifact emission/execution,model invocation,live scan,workstation activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.map",
+      "bytes": 7200,
+      "intended_review": "read_only_binary_map_metadata_decode_all_fields_and_compare_held_layout_without_native_ELF_acquisition_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.map",
+      "bytes": 192,
+      "intended_review": "read_only_binary_map_metadata_decode_all_fields_and_compare_held_layout_without_native_ELF_acquisition_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.map",
+      "bytes": 416,
+      "intended_review": "read_only_binary_map_metadata_decode_all_fields_and_compare_held_layout_without_native_ELF_acquisition_or_execution"
+    }
+  ],
+  "next_scope_bytes": 7808,
+  "public_contribution_checks": [
+    "complete13-field runner JSON and all518 source/migration rows reconstruct exactly",
+    "all471 finite instruction fields,47 labels and109 opcode/displacement fields bind",
+    "all32 layout paths/17 blobs close within static scope; native custody/runtime gaps retained",
+    "coverage, metadata-map next scope, links, privacy and git diff --check passed"
+  ]
+}

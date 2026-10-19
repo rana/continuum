@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "source_baseline": "9ea3b2069a15f221981c915c791ab909c641031e",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 1,
+  "verified_source_bytes": 140815,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 140815,
+  "complete_json_roundtrip_exact": true,
+  "complete_field_projection_checks": true,
+  "builder_case_ids": 64,
+  "tiny_case_ids": 2,
+  "expected_returncode_counts": {
+    "0": 24,
+    "65": 30,
+    "73": 2,
+    "66": 4,
+    "74": 3,
+    "-25": 1
+  },
+  "input_kind_counts": {
+    "regular": 61,
+    "missing": 1,
+    "directory": 1,
+    "symlink": 1
+  },
+  "unique_fixture_references": 155,
+  "referenced_fixture_bytes": 573119,
+  "all_reference_list_digests_and_tree_sizes_match": true,
+  "available_source_byte_line_checks": [
+    "01",
+    "03",
+    "04",
+    "49",
+    "50",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64"
+  ],
+  "all_success_map_sizes_match_record_counts": true,
+  "nonzero_cases_with_full_source_layout": [
+    "49",
+    "50",
+    "53",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61"
+  ],
+  "all_ten_fault_specs_and_qualified_counts_reconcile": true,
+  "both_tiny_source_output_references_and_conditions_reconcile": true,
+  "all_declared_runtime_paths_match_case_templates": true,
+  "full_fixture_accounting_reconciles": true,
+  "no_fixture_payloads_acquired": true,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete 140815-byte JSON read including all 64 cases, both tiny runs, header/provenance and bounds through byte-exact reconstruction and complete checked field projections.",
+    "All155 referenced fixture paths bind list digests/tree sizes, not fresh verification of all payloads. Only available identical source bytes receive line/hash checks.",
+    "Failure rows with a full source layout do not claim parser progress or actual partial-output map records.",
+    "Ten injection specifications and qualified syscall counts reconcile with authored materializer data, not observed instrumentation.",
+    "Both tiny outputs remain conditional on earlier cases, exact copied identity and separate clearance; no general encoding/limit output becomes executable.",
+    "155 payload-file count excludes cases/provenance/checksum metadata; 573119+140815+2204+13072=729210 is pinned-tree accounting."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PLANNED_COMMANDS.json",
+      "bytes": 71425,
+      "intended_review": "complete_command_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 71425,
+  "public_contribution_checks": [
+    "pinned manifest identity and complete JSON/field readings passed",
+    "all 64 builder cases and two tiny references reconcile",
+    "155 reference digests/tree sizes and complete accounting agree",
+    "seventeen held identical source references pass hash/line checks",
+    "success-map arithmetic and ten fault specifications/qualified counts reconcile",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

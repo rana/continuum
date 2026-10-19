@@ -1,0 +1,20 @@
+{
+  "source_baseline": "2bf8c2097a02ef79e7c5a79f8a0e6bc3db5d6579",
+  "files": [
+    {
+      "path": "docs/source-review/base12-documentation-continuity.md",
+      "bytes": 6291,
+      "sha256": "72c024a36b34c9852b15dfa15bbf14dd46a5f27ef01affb1a5a03886ce11c55b"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-documentation-continuity.json",
+      "bytes": 5456,
+      "sha256": "1b6e950216b0c598ffea508e7d84194f3b8761b546f0cbac5f0de9d8e2e447c0"
+    },
+    {
+      "path": "research/runs/base12-documentation-continuity/validation.json",
+      "bytes": 6265,
+      "sha256": "d452843b2460b10b5d4369be5a14cc33467d3ae48d5fc331c5ebee072fa13371"
+    }
+  ]
+}

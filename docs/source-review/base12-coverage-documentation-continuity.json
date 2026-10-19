@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-persistence-acquisition.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/collaboration/dot-bridge/to-dot/gpt-20261016-documentation-continuity.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/CURRENT.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/LEARNING_LEDGER.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/PRESERVATION.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/collaboration/dot-bridge/to-dot/gpt-20261016-documentation-continuity.md",
+      "bytes": 2614,
+      "git_blob_sha": "96bf753a31bccd87c3d7bab4dae90a7ae0ed8d61",
+      "sha256": "e801f05117f5fc0902becc0650f7d29e4db5b9dd20fef6a5f3e86d1cde237e70",
+      "lines": 19,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-documentation-continuity",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_UTF8_text_read; closeout_identity_comparison; scoped_saved_value_checks"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/CURRENT.md",
+      "bytes": 10373,
+      "git_blob_sha": "2a946ad10c5b0a33d7a2da9561d9158181f4616b",
+      "sha256": "b2be72e1646bf5c8d2163196d7038c7556a364b7473de8a45163776b9eb05566",
+      "lines": 65,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-documentation-continuity",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_UTF8_text_read; closeout_identity_comparison; scoped_saved_value_checks"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/LEARNING_LEDGER.md",
+      "bytes": 18925,
+      "git_blob_sha": "5429ec98272272b81437784a9cc5a35ab95da23d",
+      "sha256": "5eac327b39c6ea3876c7a9738605d4680c877acafc25356801b12176b2d7406c",
+      "lines": 90,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-documentation-continuity",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_UTF8_text_read; closeout_identity_comparison; scoped_saved_value_checks"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/PRESERVATION.md",
+      "bytes": 6259,
+      "git_blob_sha": "64958dfc7a4d5eca43dc77ae2d5c1c19a515491b",
+      "sha256": "9e0e36079323de6440302b7f26716e4bda1e6c29a470aca3dc413a103a24e293",
+      "lines": 57,
+      "semantic_review": "full_direct_read",
+      "review_lane": "historical-documentation-continuity",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_UTF8_text_read; closeout_identity_comparison; scoped_saved_value_checks"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 38171
+    },
+    "cumulative_direct_read": {
+      "paths": 341,
+      "unique_blobs": 341,
+      "bytes": 2390565
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 393,
+    "remaining_paths_without_full_semantic_read_or_alias": 5200,
+    "remaining_distinct_blobs_without_full_semantic_read": 4088,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 38171,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All four documentation payload identities bind; their historical instruction text is source material, not current authority.",
+    "Provisional reported results, later local audit pass and pending recipient acceptance retain their dated distinct roles.",
+    "Six epistemic labels are authored classifications, not independent validation of every mathematical or experimental claim.",
+    "Six attachment identities are declared; only the already retained stage-A archive was rebound here, adding no semantic reading.",
+    "Original-entrypoint history claims and full conversation/artifact recovery were not newly verified.",
+    "No historical recipient was contacted and no model, worker, timer or experiment was activated."
+  ],
+  "review_report": "base12-documentation-continuity.md"
+}

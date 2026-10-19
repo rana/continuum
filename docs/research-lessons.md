@@ -315,6 +315,8 @@ The [complete all-vector fixture source](source-review/base12-builder-source-cor
 
 The [complete expected vector layout](source-review/base12-builder-vector-layout.md) preserves names, offsets, source positions and literal fields together. Distinct labels can share an address, and an accepted code-end label need not identify an executable instruction. Exact expectation reconstruction checks internal consistency; a copied ELF digest remains a declaration until the corresponding artifact is verified.
 
+The [complete small expected layouts](source-review/base12-builder-small-layouts.md) distinguish several equivalence relations: different source conditions can share an entire expected layout; different code can share a map shape; different fault cases can share a hypothetical complete source layout. Deduplicate byte content in reading/custody accounting while preserving the source and runtime context needed to interpret it.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

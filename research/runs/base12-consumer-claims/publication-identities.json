@@ -1,0 +1,20 @@
+{
+  "source_baseline": "a482f2a7327114515eba7f78a8325fa928d564f2",
+  "files": [
+    {
+      "path": "docs/source-review/base12-consumer-claims.md",
+      "bytes": 6437,
+      "sha256": "aa12a4445c26a9ed9568953daa5e68a1ac79da141011a11bf6ff466d72546874"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-consumer-claims.json",
+      "bytes": 8057,
+      "sha256": "ee2912630a34a0ed36e23961c77aa5a9d5435b39ea12991aa80e175c303b0235"
+    },
+    {
+      "path": "research/runs/base12-consumer-claims/validation.json",
+      "bytes": 17081,
+      "sha256": "d17ea2ac965f35e838766ce62d71d40e5532c46437a772d40e45c47d882c1ea4"
+    }
+  ]
+}

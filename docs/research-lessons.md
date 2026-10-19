@@ -189,6 +189,8 @@ The [reference-custody return](source-review/base12-reference-custody.md) reconc
 
 The [codec-lineage return](source-review/base12-codec-lineage.md) preserves same-path historical versions with revision, identity, destination and role, while later completion evidence resolves an older offered run. Forty mapped destinations match pinned metadata, but raw custody remains partial and missing attachments/full results remain explicit. Continuum should distinguish tracked-file accounting, attachment recovery and accepted current work; none can stand in for the others. No historical effect was replayed.
 
+The [consumer-claims return](source-review/base12-consumer-claims.md) recovers a prospective protocol and later saved-evidence summaries without conflating their dates. It separates dictionary freeze from permitted validation adaptation, integrity reads from numerical scoring, and audit entries from independent trials. Summary arithmetic and count categories agree; raw score/overlap evidence remains unread. Continuum should carry each claim with its comparison, exposure boundary and check unit.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

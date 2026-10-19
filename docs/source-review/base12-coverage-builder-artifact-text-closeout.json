@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-historical-layout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.disassembly.txt"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.disassembly.txt",
+      "bytes": 118158,
+      "git_blob_sha": "bfcbc0b2ec762b68f57470c38e3df24b2215ef04",
+      "sha256": "f83dc80eb48b157d1a01830fdf42a81d6d3552cb24137606d8e4a70f595c4881",
+      "lines": 1596,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-historical-disassembly-and-text-closeout",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 118158
+    },
+    "cumulative_direct_read": {
+      "paths": 534,
+      "unique_blobs": 534,
+      "bytes": 4882716
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 611,
+    "remaining_paths_without_full_semantic_read_or_alias": 4982,
+    "remaining_distinct_blobs_without_full_semantic_read": 3895,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 118158,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete seven-line R1 header and all1589 address/byte/decoded-text rows fully read through a lossless projection; exact text reconstruction passed.",
+    "All R1 rows match its listing and explicit representation conversion; complete external-record revision comparison reproduces exactly the six prior code-byte changes.",
+    "Fourteen artifact text paths have full reading/identical-blob credit; this is scoped text closure, not acquisition or execution of native files.",
+    "All non-fixture, non-native-artifact paths under the builder prefix have full reading/identical-blob credit; fixture payloads retain explicit remaining classes.",
+    "Raw-binary display remains separate from ELF permissions, and retained decoding remains separate from a fresh authenticated tool invocation or behavioral independence.",
+    "Full ELF header/padding identity and exclusive full-ELF difference remain outside fresh verification; code hash streaming does not add binary semantic-reading credit.",
+    "No upstream import, native emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "review_report": "base12-builder-artifact-text-closeout.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

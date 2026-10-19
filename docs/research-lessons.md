@@ -303,6 +303,8 @@ The [complete builder code-revision comparison](source-review/base12-builder-cod
 
 The [complete historical layout](source-review/base12-builder-historical-layout.md) differs from R2 only in declared artifact hash, despite six changed code bytes. Shared address maps can support reuse of position checks without identifying code or correct argument semantics. Preserve the artifact digest when caching or handing off structural results; an unchanged map must not erase the distinction between the artifacts it describes.
 
+The [builder artifact-text closeout](source-review/base12-builder-artifact-text-closeout.md) audits an exact corpus boundary: fourteen artifact texts and all 68 non-fixture/non-native-artifact builder text paths are covered, while fixture/native/raw-evidence classes remain explicit. A scoped closeout lets a successor reuse completed static work and select an uncovered group without inheriting a whole-repository or runtime-verification claim.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

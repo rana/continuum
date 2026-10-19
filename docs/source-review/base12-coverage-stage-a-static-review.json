@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-result.json",
+  "selected_scope": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/",
+    "files": [
+      "parent-source-review/static-source-review.md",
+      "review/native-static-review.md",
+      "review/packet-verification.json",
+      "review/parent-review-verification.json",
+      "review/wire-static-review.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/static-source-review.md",
+      "git_blob_sha": "34c5d6f75605c2da5718d7103012d78fe0497a02",
+      "bytes": 11620,
+      "sha256": "ac48a5d24832dc59405ded69395759ae8c319f2d4214d02971db05ed311a14a4",
+      "lines": 84,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-static-reviews-and-proof-scope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/native-static-review.md",
+      "git_blob_sha": "92960cc27a77737fe2fa53333df04c5447091842",
+      "bytes": 12751,
+      "sha256": "5cc5165c50565fb861003043f4550cdd5a1fbd96f6360bb933fb833acf16f664",
+      "lines": 80,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-static-reviews-and-proof-scope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/packet-verification.json",
+      "git_blob_sha": "8c11a213a5987216ffe728731ef9045ba75c448b",
+      "bytes": 745,
+      "sha256": "9c5a3d233cf900da6ca2bbcd1383ce472412c5f454c21bfe123dc9cf27a91808",
+      "lines": 28,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-static-reviews-and-proof-scope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/parent-review-verification.json",
+      "git_blob_sha": "c7f14412530b5c768f14a482b3c1f6ff119b94e1",
+      "bytes": 360,
+      "sha256": "c4e852253e14bcc8c932ed0bff9f65e2ea7ab0603b6dfcf20004f4cbb4ab0307",
+      "lines": 10,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-static-reviews-and-proof-scope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/wire-static-review.md",
+      "git_blob_sha": "7ece76a149deaaf432ada7dc642b06db4cec246f",
+      "bytes": 14007,
+      "sha256": "182758828656f3f275b10d15618fb7c7df76736b7cbfa4dd2d6f40cf01366c3c",
+      "lines": 73,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-static-reviews-and-proof-scope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 39483
+    },
+    "cumulative_direct_read": {
+      "paths": 245,
+      "unique_blobs": 245,
+      "bytes": 1658584
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 294,
+    "remaining_paths_without_full_semantic_read_or_alias": 5299,
+    "remaining_distinct_blobs_without_full_semantic_read": 4184,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 39483,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All five documents fully read; wire report reread untruncated after combined-output truncation.",
+    "No native code, module, test, dataset acquisition, model or historical run executed.",
+    "Recomputed integer bounds depend on the documented caller/validation invariants; not machine-code or general API certification.",
+    "Historical reviewer findings and scopes remain attributed and do not grant current execution authority.",
+    "Raw archive verification and complete parent model exchange are not established by these five documents."
+  ],
+  "review_report": "base12-stage-a-static-review.md"
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-documentation-continuity.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/README.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/INDEPENDENT-PACKET-REVIEW.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/LIBRARY_PROVENANCE.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-zip-check.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/README.md",
+      "bytes": 3939,
+      "git_blob_sha": "66a3164785210a48bda4eeca97f9b85e7451a36a",
+      "sha256": "9f1926cac16780b726a8d11e9cfa3fbcf4755df3bfc7089108c6795089ecfa8b",
+      "lines": 23,
+      "semantic_review": "full_direct_read",
+      "review_lane": "parent-packet-review-and-provenance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_UTF8_text_read; scoped_saved-value_comparisons"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/INDEPENDENT-PACKET-REVIEW.md",
+      "bytes": 9512,
+      "git_blob_sha": "fc15a1866916921d9cefe48186c535a5bde466e8",
+      "sha256": "72cef8dc5ffd59fc5eb420936d90e8d44dde40161ce6693ad386a5e7792198c3",
+      "lines": 61,
+      "semantic_review": "full_direct_read",
+      "review_lane": "parent-packet-review-and-provenance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_UTF8_text_read; scoped_saved-value_comparisons"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/LIBRARY_PROVENANCE.json",
+      "bytes": 1413,
+      "git_blob_sha": "a4aa1e1a80092d9bc7150235bece6cfa8fd0ce56",
+      "sha256": "0454788215e47cc7ff473ae7de0b63c5109f07116d9031549dd450651d5a094c",
+      "lines": 36,
+      "semantic_review": "full_direct_read",
+      "review_lane": "parent-packet-review-and-provenance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-zip-check.json",
+      "bytes": 241,
+      "git_blob_sha": "a3ff1af913a63d269fb811e53dd7b55f834976b1",
+      "sha256": "31c9187d1320d93f4ed418f5403f2ee2f44f058677e978807a93aebcc6e39ae1",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "parent-packet-review-and-provenance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 15105
+    },
+    "cumulative_direct_read": {
+      "paths": 345,
+      "unique_blobs": 345,
+      "bytes": 2405670
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 397,
+    "remaining_paths_without_full_semantic_read_or_alias": 5196,
+    "remaining_distinct_blobs_without_full_semantic_read": 4084,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 15105,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Two of four Library file payload identities bind; checker source and complete 332-entry report remain unacquired.",
+    "Retained parent technical review and authored private publication approval are later than the local-pending packet, confirming an integration claim already read earlier.",
+    "Private publication scope is not broad public raw-packet permission, native acceptance or scientific rerun authority.",
+    "ZIP-check fields and pinned-tree inventory agree; no ZIP bytes, CRC or extracted-byte verification were performed here.",
+    "Parent privacy and independence statements retain their saved review scope; this unit is not a new 127-member recursive audit or independent waveform computation.",
+    "The guide distinguishes proposed and executed transport settings; executed helper bytes were not inspected here.",
+    "No upstream checker, packet script, experiment or new model invocation ran; Library operational identifiers are excluded from this public projection."
+  ],
+  "review_report": "base12-parent-packet-review.md"
+}

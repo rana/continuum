@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-decoder-profile-build-preparation-foundation.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/capture.py",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CALLER_COMMAND.txt",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CALLER_INVOCATION.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CONTROL_REVIEW.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/AUTHOR_STATIC_CHECKS.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/capture.py",
+      "bytes": 17739,
+      "git_blob_sha": "b9865cf1607b5036e338e81f9911d024388cb6d8",
+      "sha256": "c5aa46d993077865956afeb793a3e0803b55a496756956fc13a5e5c07bcf8c9f",
+      "lines": 347,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-control",
+      "reading_representation": "complete_source_and_prose_read; literal_caller_lossless_prefix_body_suffix_relation",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CALLER_COMMAND.txt",
+      "bytes": 17826,
+      "git_blob_sha": "24e7104f3699c55264661ae041e91ac167b2ccb7",
+      "sha256": "afdbf3ecf44c7038c06060476e3cfd010fa040845987ab1cd9f48417268bdd47",
+      "lines": 349,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-control",
+      "reading_representation": "complete_source_and_prose_read; literal_caller_lossless_prefix_body_suffix_relation",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CALLER_INVOCATION.md",
+      "bytes": 4504,
+      "git_blob_sha": "683020223034c6ec1d6fa6d452632c5364c005a1",
+      "sha256": "d7a14fc88e3523901b9b1200696e3b1f01b7a466b70608a51ab6d692472ceba2",
+      "lines": 38,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-control",
+      "reading_representation": "complete_source_and_prose_read; literal_caller_lossless_prefix_body_suffix_relation",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CONTROL_REVIEW.md",
+      "bytes": 7330,
+      "git_blob_sha": "e73224b8df89fa3eb92fb51dc90d985394d5fdae",
+      "sha256": "89c2e7322d0942888bc58f0fbd0cd9d8c0e08aaa7d555f760682a86af6eafba1",
+      "lines": 40,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-control",
+      "reading_representation": "complete_source_and_prose_read; literal_caller_lossless_prefix_body_suffix_relation",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/AUTHOR_STATIC_CHECKS.json",
+      "bytes": 1395,
+      "git_blob_sha": "b472c9055333af9bca48a0e92c177c1bc87e5b67",
+      "sha256": "807fe844c2ea29cc1e0e74b8d552209bb5eac4297539e708e1d58d2757604519",
+      "lines": 37,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-build-preparation-control",
+      "reading_representation": "complete_source_and_prose_read; literal_caller_lossless_prefix_body_suffix_relation",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 48794
+    },
+    "cumulative_direct_read": {
+      "paths": 641,
+      "unique_blobs": 641,
+      "bytes": 5558019
+    },
+    "additional_identical_blob_paths": 115,
+    "alias_distinct_blobs": 39,
+    "semantic_covered_paths_including_aliases": 756,
+    "remaining_paths_without_full_semantic_read_or_alias": 4837,
+    "remaining_distinct_blobs_without_full_semantic_read": 3788,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 48794,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five complete files/48794 bytes read; literal caller is exactly the complete capture plus87 wrapper bytes.",
+    "All syntax checks inspect source only; capture has top-level effects and is never imported,called or run.",
+    "One fork/exec site,parent group-before-grant,unreaped cleanup,masked reap update and single wait4 CPU summand match source claims; no process tree,containment or failure behavior was executed.",
+    "Final OUTCOME publication precedes inclusive totals and exit0; source ordering supports outside-terminal requirement without supplying a new success result.",
+    "Three fixed comparison sites match held historical listing text and source predictions; no new or old native binary was acquired or reconstructed.",
+    "Dependency1325-row/1196-stdlib/92-ELF census and historical preparation-mode/review-binding corrections remain authored claims pending their source records.",
+    "No new inference,upstream import/execution,native acquisition/emission/execution,workstation activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-decoder-profile-build-preparation-control.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

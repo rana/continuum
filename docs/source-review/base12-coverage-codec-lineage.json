@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-reference-custody.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/codec-history-lineage/LINEAGE.json",
+      "research/owned-stack/2026-10-16/codec-history-lineage/README.md",
+      "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-record100-run.md",
+      "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/CONTINUATION_REVIEW.md",
+      "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/PRESERVATION.json",
+      "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/README.md",
+      "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/RESULTS-SUMMARY.json",
+      "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/check_reference.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/LINEAGE.json",
+      "bytes": 28640,
+      "git_blob_sha": "8fffffd87fd373c97ca2acdcfbed2814a7f8dcfc",
+      "sha256": "5ca3772a417055a7c3c95cedf7fc3fc59ccd802da971f59ee477c1c387e382bc",
+      "lines": 548,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/README.md",
+      "bytes": 7536,
+      "git_blob_sha": "5de99e1d71f213fc9ce0afbffb57597574d70429",
+      "sha256": "4c63afe00dbc732d1475d71f78032e8926f895c3fee744a1a9304bf841968d8b",
+      "lines": 41,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-record100-run.md",
+      "bytes": 5682,
+      "git_blob_sha": "b91b2278096ef63451f012aaa175aeed1d20bd3c",
+      "sha256": "299f8bcce9536650ba426911a46136c1c7843de1de5b6bf4d5c8b0dcb3f2e279",
+      "lines": 51,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/CONTINUATION_REVIEW.md",
+      "bytes": 4194,
+      "git_blob_sha": "e8f5de5da61ab005177d3c67b3bb5a754ba92073",
+      "sha256": "5412c445297cc82bd6a37c7ad2d598ec5beffa9183a137716bbeb1020d2d7c45",
+      "lines": 29,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/PRESERVATION.json",
+      "bytes": 1694,
+      "git_blob_sha": "e0f8096f1600242fd35d9521e785f2b686313eee",
+      "sha256": "cd367e2e57d45c31bb740fcef4c65ee6cc50d98188a742e5f3604a76fccd83a9",
+      "lines": 39,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/README.md",
+      "bytes": 4168,
+      "git_blob_sha": "1fe47225418919d99a59f16cc69e71a1b40644a6",
+      "sha256": "d7f36a71d0b9c0b07b8f0012138387a2cb4bdf98d25bae466a19a7a032619d20",
+      "lines": 41,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/RESULTS-SUMMARY.json",
+      "bytes": 1130,
+      "git_blob_sha": "7524755e801bf7ffa5b44f43c3b93e0cdf9631d0",
+      "sha256": "3c214794a4679afafae7f577e29c525a55482206f4ef145f9e037c8a342d156f",
+      "lines": 25,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/check_reference.py",
+      "bytes": 7747,
+      "git_blob_sha": "3226e9928a61599fd5d73f956e746a42e9fa51a2",
+      "sha256": "0bf245e7a3b027e04111f95d2d1eb08480b90dbccdaeb721350f9a0059f0b6c8",
+      "lines": 134,
+      "semantic_review": "full_direct_read",
+      "review_lane": "codec-history-lineage",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "ast_parse_without_execution"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 8,
+      "unique_blobs": 8,
+      "bytes": 60791
+    },
+    "cumulative_direct_read": {
+      "paths": 278,
+      "unique_blobs": 278,
+      "bytes": 1822656
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 327,
+    "remaining_paths_without_full_semantic_read_or_alias": 5266,
+    "remaining_distinct_blobs_without_full_semantic_read": 4151,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 8,
+    "this_review_verified_bytes": 60791,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Eight texts fully read; lineage JSON read in full in three contiguous chunks and README reread after combined-output truncation.",
+    "All 40 declared destinations match pinned tree blob/length; only 28 have verified current bytes or aliases.",
+    "Original historical head trees, PR changed-file completeness, merge authority and closure were not independently queried here.",
+    "Full synthetic report and other missing originals remain unrecovered; fixture counts are arithmetic/source inspection, not a rerun.",
+    "Sparse historical source is not a runnable installation or current execution request."
+  ],
+  "review_report": "base12-codec-lineage.md"
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source_baseline": "28b8873fcb5edf55e3facdf2b4002969b61ab55e",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 27309,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 27309,
+  "inspector_AST_parse": true,
+  "inspector_executed": false,
+  "source_contract_seed_digest_references_match_held_payloads": true,
+  "reviewed_ELF_declaration_matches_dependencies": true,
+  "R2_argument_offsets_match_current_source": true,
+  "R1_R2_binary_diff_newly_verified": false,
+  "historical_structural_pass_not_semantic_CLI_proof": true,
+  "declared_max_consumer_instruction_bytes": 10,
+  "derived_max_valid_consumer_ELF_bytes": 14336,
+  "separate_ELF_guard_bytes": 16384,
+  "derived_max_map_bytes": 36896,
+  "bootstrap_internal_patches_declared": 479,
+  "consumer_input_relocation_guard": 256,
+  "historical_runner_fixups_declared": 109,
+  "inspector_external_inspection_tool_calls": 2,
+  "artifact_source_snapshot_binding_and_contiguous_listing_predicates_inspected": true,
+  "syscall_inventory_is_not_full_control_flow_proof": true,
+  "hand_derived_witnesses_not_execution_or_exhaustive_proof": true,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five texts fully read; inspector AST parsed but neither inspector nor bootstrap/seed/native artifact executed.",
+    "Current bootstrap, contract and held identical seed digest references bind; ELF/R1-R2 six-byte diff and witness observations remain historical reviewer evidence, not new binary custody.",
+    "Structural ELF/listing/patch checks did not detect R1 argv semantics; six intended R2 argument accesses agree with current source only.",
+    "Tighter 14336-byte valid-input bound assumes the stated ten-byte largest supported encoding and 1024 instructions; separate 16384 guard is redundant, not a fabricated reachable boundary.",
+    "Inspector hashes artifact source snapshot, checks contiguous listing/ELF/patch/objdump agreement and syscall literal patterns, with full control-flow review still required.",
+    "Finite hand-derived expectations, abstract endpoint arithmetic, historical byte comparison and kernel execution are different evidence classes; raw witness records are selected next.",
+    "Dated no-execution/no-empirical-result fields retain their stage; no repeated authorization, new primary-document verification or new model inference occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/encoding-vectors.json",
+      "bytes": 15052,
+      "intended_review": "full_metadata_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/relocation-vectors.json",
+      "bytes": 5341,
+      "intended_review": "full_metadata_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/program-expectations.json",
+      "bytes": 4238,
+      "intended_review": "full_metadata_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/r2-static-observations.json",
+      "bytes": 4957,
+      "intended_review": "full_metadata_read"
+    }
+  ],
+  "next_scope_bytes": 29588,
+  "public_contribution_checks": [
+    "five pinned identities and complete review/inspector readings passed",
+    "inspector AST parse and source/contract/seed digest references match",
+    "R2 source argv offsets agree with retained correction; no fresh binary-diff claim",
+    "tight valid-input ELF and map arithmetic reconcile with redundant guards",
+    "inspector predicates and distinct witness/patch-count scopes retained",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

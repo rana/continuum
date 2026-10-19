@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-source-boundary.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/inspect_static.py",
+      "research/owned-stack/2026-10-16/native-builder-slice/DESIGN_REVIEW.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/CORRECTIONS.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/witnesses/README.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SOURCE_REVIEW.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/inspect_static.py",
+      "bytes": 4615,
+      "git_blob_sha": "fe619628b6854b28685e781b4d4f274cdb5644c7",
+      "sha256": "5ff70f4a34a918f50113597825b77c27f20fc6499c8ccaeb65a006caccd7ba7d",
+      "lines": 74,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-inspector-correction-and-independent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DESIGN_REVIEW.md",
+      "bytes": 7109,
+      "git_blob_sha": "05dd5321a596a157360b8eba7fac903c99a94bab",
+      "sha256": "1545ec6bbd4a115433fdb7e990a45278f686adc2225acaf58537cec0378c4995",
+      "lines": 39,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-inspector-correction-and-independent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CORRECTIONS.md",
+      "bytes": 1220,
+      "git_blob_sha": "a0de6d5b0bcb6f4dfe3060a4ad4776f893f05873",
+      "sha256": "bc9c2700c6db958d2ce24af65fff84e9230bbeccf7e9d272f63eba256889d501",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-inspector-correction-and-independent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/README.md",
+      "bytes": 5864,
+      "git_blob_sha": "2e3cd6b43f940a647a2f7d888d609edb7aa3491e",
+      "sha256": "220b264d7b6f2fc2dfa2c710571f394aa7996939587675a5f1b4d09ae17cafbb",
+      "lines": 37,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-inspector-correction-and-independent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SOURCE_REVIEW.md",
+      "bytes": 8501,
+      "git_blob_sha": "287dee5819cdeb042e8b56a30ef8a7554ad59f63",
+      "sha256": "150a5b2cd11ff6cfb07be445505ff5f0279c2a1ebef0c09e446ebd7e8484d525",
+      "lines": 44,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-inspector-correction-and-independent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 27309
+    },
+    "cumulative_direct_read": {
+      "paths": 479,
+      "unique_blobs": 479,
+      "bytes": 3653652
+    },
+    "additional_identical_blob_paths": 53,
+    "alias_distinct_blobs": 23,
+    "semantic_covered_paths_including_aliases": 532,
+    "remaining_paths_without_full_semantic_read_or_alias": 5061,
+    "remaining_distinct_blobs_without_full_semantic_read": 3950,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 27309,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five texts fully read; inspector AST parsed but neither inspector nor bootstrap/seed/native artifact executed.",
+    "Current bootstrap, contract and held identical seed digest references bind; ELF/R1-R2 six-byte diff and witness observations remain historical reviewer evidence, not new binary custody.",
+    "Structural ELF/listing/patch checks did not detect R1 argv semantics; six intended R2 argument accesses agree with current source only.",
+    "Tighter 14336-byte valid-input bound assumes the stated ten-byte largest supported encoding and 1024 instructions; separate 16384 guard is redundant, not a fabricated reachable boundary.",
+    "Inspector hashes artifact source snapshot, checks contiguous listing/ELF/patch/objdump agreement and syscall literal patterns, with full control-flow review still required.",
+    "Finite hand-derived expectations, abstract endpoint arithmetic, historical byte comparison and kernel execution are different evidence classes; raw witness records are selected next.",
+    "Dated no-execution/no-empirical-result fields retain their stage; no repeated authorization, new primary-document verification or new model inference occurred."
+  ],
+  "review_report": "base12-builder-static-review.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

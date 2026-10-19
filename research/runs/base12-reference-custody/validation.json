@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "source_baseline": "dbe8d047bbfa61abf81dd825354f946cd0feb607",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 5,
+  "verified_source_bytes": 32141,
+  "markdown_full_text_read": 3,
+  "nonempty_log_full_text_read": 1,
+  "archive": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/original/stage-a-record100-decoder-evidence.tar.xz",
+    "bytes": 17888,
+    "git_blob_sha": "78ec464a85e5f5764effdfa924ae485d7cdce9d9",
+    "sha256": "70a329fcc2131a882bc4c97de29e4746babed67cacf440e3b1e51133e81d65bd",
+    "regular_members": 18,
+    "unpacked_bytes": 61845,
+    "exact_expected_member_set": true,
+    "duplicate_members": false,
+    "nonregular_members": false,
+    "filesystem_extraction": false,
+    "members": [
+      {
+        "path": "DRAFT_REPLY.md",
+        "bytes": 1500,
+        "sha256": "865c483f899cf3fbca3a061d200651fba451f2bfc300d72b355085beec8003bc",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "MANIFEST.json",
+        "bytes": 3138,
+        "sha256": "02c84159af946c8fbf5d4de45c66dcda975f14d51a21fb081f8489d43acb8761",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "README.md",
+        "bytes": 1339,
+        "sha256": "7678984534fa4867d821281cc93c01999bdb7e9e2a841ce11e93b9b3ce7b1cf6",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "RESULT.md",
+        "bytes": 4275,
+        "sha256": "62f2a0d0a826fb3226d14d2947201516e5a42625484256f5da99fe48bb9e06c0",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "execution/execution-receipt.json",
+        "bytes": 4117,
+        "sha256": "4fcf2a60ff068ba35519b8ce4d3bd5470a20ed7048bc3772b2dcececf9129c98",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "execution/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches_installed": true,
+        "installed_method": "pinned_identical_blob_alias"
+      },
+      {
+        "path": "execution/stdout.log",
+        "bytes": 146,
+        "sha256": "f6f99bae1139eecc2a60743108cea58ba2329482ee1616d24fcec36baa27199e",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/decoder-attempt.json",
+        "bytes": 2728,
+        "sha256": "3c5bb38608548a7761910b6e2011bf7652b575a589776b2cf97506e5c0254b4c",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/launcher-freeze.json",
+        "bytes": 440,
+        "sha256": "b1b5184a1d67df5236a3007cd0c8b3716652860bd1cbac3985af81536b5f4a96",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/launcher-review.md",
+        "bytes": 6096,
+        "sha256": "11d4a800e7adb6566c00423e61686fa4c119140a24d9df5fc2e9aabbb78c29bf",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/package-review.md",
+        "bytes": 4781,
+        "sha256": "3f3c30b165732feb8b4bfe1ebadb440e9aa521afbefee7fcdc62cef7ba386edd",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/parent-clearance.json",
+        "bytes": 737,
+        "sha256": "e9b8b3273ce7f514491c3a26726aa6e8d4e0c9ec7ff8caa76f6de76bfa816ac9",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/post-run-verification.json",
+        "bytes": 864,
+        "sha256": "0ab30d13e8f12f650e02b6d187cb043e5ddb0779ab81409f9b9f29ecfb704b80",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/result-review.md",
+        "bytes": 7826,
+        "sha256": "3b014b1fed517e11d4a61f2b4b066521a88b14ab97ca893de3c26a0ded6113ac",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/run_decoder_once.py",
+        "bytes": 7774,
+        "sha256": "60ab0c238630e5e6b080bc1d65c7b31a433f266b867e55f4b5b9083f2eb93900",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/source-receipt.json",
+        "bytes": 516,
+        "sha256": "3381679a177fb14106395837e95a9ec99b71bc99cfc53c5f359e4eed71b3f4d1",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "review/source-review.md",
+        "bytes": 7815,
+        "sha256": "7732f84834d3fa8bc0ed0b6fb05f02023dc71c8ec15f20b1c56231013a23ca09",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      },
+      {
+        "path": "source/reference_decode.py",
+        "bytes": 7753,
+        "sha256": "e1a36de5335407be19fa8aa6bb95a84503033a9d5379519d728fe05ce3ffae74",
+        "matches_installed": true,
+        "installed_method": "acquired_payload"
+      }
+    ]
+  },
+  "staged_review": {
+    "files": 16,
+    "bytes": 53926,
+    "inventory_matches_acquired_bytes": true,
+    "final_additions": [
+      "review/package-review.md",
+      "MANIFEST.json"
+    ]
+  },
+  "stdout": {
+    "bytes": 146,
+    "exact_expected_hash_filename_lines": true,
+    "comparison_source": "execution/execution-receipt.json outputs",
+    "original_signal_payloads_rehashed": false
+  },
+  "reference_evidence_manifest_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "DRAFT_REPLY.md",
+        "bytes": 1500,
+        "sha256": "865c483f899cf3fbca3a061d200651fba451f2bfc300d72b355085beec8003bc",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "README.md",
+        "bytes": 1339,
+        "sha256": "7678984534fa4867d821281cc93c01999bdb7e9e2a841ce11e93b9b3ce7b1cf6",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "RESULT.md",
+        "bytes": 4275,
+        "sha256": "62f2a0d0a826fb3226d14d2947201516e5a42625484256f5da99fe48bb9e06c0",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "execution/execution-receipt.json",
+        "bytes": 4117,
+        "sha256": "4fcf2a60ff068ba35519b8ce4d3bd5470a20ed7048bc3772b2dcececf9129c98",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "execution/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "execution/stdout.log",
+        "bytes": 146,
+        "sha256": "f6f99bae1139eecc2a60743108cea58ba2329482ee1616d24fcec36baa27199e",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/decoder-attempt.json",
+        "bytes": 2728,
+        "sha256": "3c5bb38608548a7761910b6e2011bf7652b575a589776b2cf97506e5c0254b4c",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-freeze.json",
+        "bytes": 440,
+        "sha256": "b1b5184a1d67df5236a3007cd0c8b3716652860bd1cbac3985af81536b5f4a96",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-review.md",
+        "bytes": 6096,
+        "sha256": "11d4a800e7adb6566c00423e61686fa4c119140a24d9df5fc2e9aabbb78c29bf",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/package-review.md",
+        "bytes": 4781,
+        "sha256": "3f3c30b165732feb8b4bfe1ebadb440e9aa521afbefee7fcdc62cef7ba386edd",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-clearance.json",
+        "bytes": 737,
+        "sha256": "e9b8b3273ce7f514491c3a26726aa6e8d4e0c9ec7ff8caa76f6de76bfa816ac9",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/post-run-verification.json",
+        "bytes": 864,
+        "sha256": "0ab30d13e8f12f650e02b6d187cb043e5ddb0779ab81409f9b9f29ecfb704b80",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/result-review.md",
+        "bytes": 7826,
+        "sha256": "3b014b1fed517e11d4a61f2b4b066521a88b14ab97ca893de3c26a0ded6113ac",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/run_decoder_once.py",
+        "bytes": 7774,
+        "sha256": "60ab0c238630e5e6b080bc1d65c7b31a433f266b867e55f4b5b9083f2eb93900",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/source-receipt.json",
+        "bytes": 516,
+        "sha256": "3381679a177fb14106395837e95a9ec99b71bc99cfc53c5f359e4eed71b3f4d1",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/source-review.md",
+        "bytes": 7815,
+        "sha256": "7732f84834d3fa8bc0ed0b6fb05f02023dc71c8ec15f20b1c56231013a23ca09",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "source/reference_decode.py",
+        "bytes": 7753,
+        "sha256": "e1a36de5335407be19fa8aa6bb95a84503033a9d5379519d728fe05ce3ffae74",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": []
+  },
+  "reference_preservation_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "evidence/DRAFT_REPLY.md",
+        "bytes": 1500,
+        "sha256": "865c483f899cf3fbca3a061d200651fba451f2bfc300d72b355085beec8003bc",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/MANIFEST.json",
+        "bytes": 3138,
+        "sha256": "02c84159af946c8fbf5d4de45c66dcda975f14d51a21fb081f8489d43acb8761",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/README.md",
+        "bytes": 1339,
+        "sha256": "7678984534fa4867d821281cc93c01999bdb7e9e2a841ce11e93b9b3ce7b1cf6",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/RESULT.md",
+        "bytes": 4275,
+        "sha256": "62f2a0d0a826fb3226d14d2947201516e5a42625484256f5da99fe48bb9e06c0",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/execution/execution-receipt.json",
+        "bytes": 4117,
+        "sha256": "4fcf2a60ff068ba35519b8ce4d3bd5470a20ed7048bc3772b2dcececf9129c98",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/execution/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "evidence/execution/stdout.log",
+        "bytes": 146,
+        "sha256": "f6f99bae1139eecc2a60743108cea58ba2329482ee1616d24fcec36baa27199e",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/decoder-attempt.json",
+        "bytes": 2728,
+        "sha256": "3c5bb38608548a7761910b6e2011bf7652b575a589776b2cf97506e5c0254b4c",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/launcher-freeze.json",
+        "bytes": 440,
+        "sha256": "b1b5184a1d67df5236a3007cd0c8b3716652860bd1cbac3985af81536b5f4a96",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/launcher-review.md",
+        "bytes": 6096,
+        "sha256": "11d4a800e7adb6566c00423e61686fa4c119140a24d9df5fc2e9aabbb78c29bf",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/package-review.md",
+        "bytes": 4781,
+        "sha256": "3f3c30b165732feb8b4bfe1ebadb440e9aa521afbefee7fcdc62cef7ba386edd",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/parent-clearance.json",
+        "bytes": 737,
+        "sha256": "e9b8b3273ce7f514491c3a26726aa6e8d4e0c9ec7ff8caa76f6de76bfa816ac9",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/post-run-verification.json",
+        "bytes": 864,
+        "sha256": "0ab30d13e8f12f650e02b6d187cb043e5ddb0779ab81409f9b9f29ecfb704b80",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/result-review.md",
+        "bytes": 7826,
+        "sha256": "3b014b1fed517e11d4a61f2b4b066521a88b14ab97ca893de3c26a0ded6113ac",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/run_decoder_once.py",
+        "bytes": 7774,
+        "sha256": "60ab0c238630e5e6b080bc1d65c7b31a433f266b867e55f4b5b9083f2eb93900",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/source-receipt.json",
+        "bytes": 516,
+        "sha256": "3381679a177fb14106395837e95a9ec99b71bc99cfc53c5f359e4eed71b3f4d1",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/source-review.md",
+        "bytes": 7815,
+        "sha256": "7732f84834d3fa8bc0ed0b6fb05f02023dc71c8ec15f20b1c56231013a23ca09",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/source/reference_decode.py",
+        "bytes": 7753,
+        "sha256": "e1a36de5335407be19fa8aa6bb95a84503033a9d5379519d728fe05ce3ffae74",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "original/stage-a-record100-decoder-evidence.tar.xz",
+        "bytes": 17888,
+        "sha256": "70a329fcc2131a882bc4c97de29e4746babed67cacf440e3b1e51133e81d65bd",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": []
+  },
+  "no_upstream_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/LINEAGE.json",
+      "bytes": 28640
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/README.md",
+      "bytes": 7536
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-record100-run.md",
+      "bytes": 5682
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/CONTINUATION_REVIEW.md",
+      "bytes": 4194
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/PRESERVATION.json",
+      "bytes": 1694
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/README.md",
+      "bytes": 4168
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/RESULTS-SUMMARY.json",
+      "bytes": 1130
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/check_reference.py",
+      "bytes": 7747
+    }
+  ],
+  "next_scope_bytes": 60791,
+  "public_contribution_checks": [
+    "JSON parsing, coverage and complete-binding arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "7a77927146e328bb84bc73033dcb69d020328f21",
+  "files": [
+    {
+      "path": "docs/source-review/base12-full-accounting.md",
+      "bytes": 6780,
+      "sha256": "81b673ce0e7bc9389f24492fed8aa86ad09b8d3ebf7ea5e17abcf0ebc9988781"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-full-accounting.json",
+      "bytes": 4984,
+      "sha256": "d779404a229ae5c324ae51e7bf188c455afaeb712b5ba60d649a84c41ea257b5"
+    },
+    {
+      "path": "research/runs/base12-full-accounting/validation.json",
+      "bytes": 12907,
+      "sha256": "951fce5c9a697e19b74a88e7617b89ab8c8b6a06c33e68c2999f30bd85a1f8b3"
+    }
+  ]
+}

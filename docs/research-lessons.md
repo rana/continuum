@@ -199,6 +199,8 @@ The [learning-audit return](source-review/base12-learning-audit.md) inspects the
 
 The [training-cost return](source-review/base12-training-costs.md) closes a missing audit input and separately recovers the saved greedy choices, unique minima and charged savings from a complete cost matrix. Exact JSON reconstruction makes a compact field view accountable. Agreement depends on the saved matrix; it does not regenerate waveform costs or prove global optimality. Continuum should preserve input closure, replay objective and stopping budget as separate claims from measurement provenance.
 
+The [full-accounting return](source-review/base12-full-accounting.md) binds an audit source to its saved verdict while preserving six missing input payloads and the distinction between declarations and current byte checks. Existing qualifications separate polling, per-process limits, root-inclusive CPU and nonaggregate memory. Continuum should retain those quantity scopes and avoid attributing an unexplained timer-sum gap or promoting a historical pass into payload or host attestation. No upstream audit or wrapper ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "source_baseline": "7a77927146e328bb84bc73033dcb69d020328f21",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 4,
+  "verified_source_bytes": 46234,
+  "audit_source_hash_matches_receipt": true,
+  "audit_allowlist_matches_reported_15_inputs": true,
+  "upstream_parser": "ordinary json.loads; no duplicate-key rejection in full-accounting audit",
+  "current_parser_duplicate_key_checked": true,
+  "historical_check_entries_read": 82,
+  "all_historical_check_entries_marked_pass": true,
+  "audit_input_bindings": [
+    {
+      "input": "outputs/run/RESULTS.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/RESULTS.json",
+      "declared_bytes": 17237,
+      "declared_sha256": "e9dc55450019ccfffeb76e318efdd1b6e09e19a5cd7e75ac7b88e179c160884a",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/RESULTS.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "outputs/run/intake.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/intake.json",
+      "declared_bytes": 14000,
+      "declared_sha256": "eaeb87982ec56f74fdae43cecc977b8029e6b3629c0a395657f814d699a02743",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/intake.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "outputs/run/pre-run.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/pre-run.json",
+      "declared_bytes": 716,
+      "declared_sha256": "4f33ca9e7368037019f4cb4dc1031beb5375e9dd07ac30387e78440d58afda24",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/pre-run.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "outputs/run/model-freeze.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/model-freeze.json",
+      "declared_bytes": 368,
+      "declared_sha256": "0cd89b68bb518591ff7db012ce10adee81c0f251b131f56e0dd735ea380e5266",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/model-freeze.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "outputs/run/learned.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/learned.json",
+      "declared_bytes": 677,
+      "declared_sha256": "6b3044efde002522f970c7f09f6f2204ad93fb21eb89e187ab4fb6f9338652f8",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/learned.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "outputs/run/overlap.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/overlap.json",
+      "declared_bytes": 266,
+      "declared_sha256": "23eb17161e607786fd3c71cac442cfbe66582867e256288feb8e81415b678108",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/overlap.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "data/INTAKE.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/input-INTAKE.json",
+      "declared_bytes": 14000,
+      "declared_sha256": "eaeb87982ec56f74fdae43cecc977b8029e6b3629c0a395657f814d699a02743",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/intake.json",
+      "matched": true,
+      "alias_used": true
+    },
+    {
+      "input": "receipts/payload-file-evidence-v1.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/payload-file-evidence-v1.json",
+      "declared_bytes": 1783,
+      "declared_sha256": "f5b5cedaf451beb22265e00070a7065bb2068374b0283810848c5ee59d102763",
+      "payload_binding": null,
+      "matched": false,
+      "alias_used": false
+    },
+    {
+      "input": "receipts/full-envelope-v1/receipt.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "declared_bytes": 2048,
+      "declared_sha256": "fbcca657434ebf6348416afd5453498d716f65b3ac6767f6773bfbade8149ba3",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "receipts/full-envelope-v1/invocation.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/invocation.json",
+      "declared_bytes": 1103,
+      "declared_sha256": "ba24152092a3264f29343f0eae015f9a9dddecbe3998a971934626e2d2bde8ac",
+      "payload_binding": null,
+      "matched": false,
+      "alias_used": false
+    },
+    {
+      "input": "receipts/full-envelope-v1/effective-before-exec.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/effective-before-exec.json",
+      "declared_bytes": 228,
+      "declared_sha256": "bf71c2d435be6aee8e4f9d8503fea28aef3e0b57910a8933a0dc82b1ab90d9a2",
+      "payload_binding": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/effective-before-exec.json",
+      "matched": true,
+      "alias_used": false
+    },
+    {
+      "input": "receipts/full-envelope-v1/accounting.jsonl",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/accounting.jsonl",
+      "declared_bytes": 29084,
+      "declared_sha256": "d26d21a5db217f08b3f8baf90a65af3b3be6c31ffd2de38713b81ac3c16a6459",
+      "payload_binding": null,
+      "matched": false,
+      "alias_used": false
+    },
+    {
+      "input": "receipts/full-launch-gates-v1.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-launch-gates-v1.json",
+      "declared_bytes": 1636,
+      "declared_sha256": "1e8157345d37368004fd6262aeb7d4435c3e8a5318697ec1d7d7f20819e52eac",
+      "payload_binding": null,
+      "matched": false,
+      "alias_used": false
+    },
+    {
+      "input": "receipts/static-preflight.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/static-preflight.json",
+      "declared_bytes": 5787,
+      "declared_sha256": "e8dabf74cb2af2e4b2f3a8cb2be3f4347c2d481d4ea4d2487a05a1d8d2745ff2",
+      "payload_binding": null,
+      "matched": false,
+      "alias_used": false
+    },
+    {
+      "input": "receipts/recovery-outcome-v1.json",
+      "source_path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/recovery-outcome-v1.json",
+      "declared_bytes": 15080,
+      "declared_sha256": "b67753eded81cf3eb8297adc696ded96af2c901518ce90c566cece82a276ae5f",
+      "payload_binding": null,
+      "matched": false,
+      "alias_used": false
+    }
+  ],
+  "matched_input_bindings": 9,
+  "matched_distinct_input_blobs": 8,
+  "source_fixed_pin_bindings": [
+    {
+      "input": "outputs/run/RESULTS.json",
+      "pinned_sha256": "e9dc55450019ccfffeb76e318efdd1b6e09e19a5cd7e75ac7b88e179c160884a",
+      "matches_reported_input": true,
+      "payload_bound": true
+    },
+    {
+      "input": "receipts/full-envelope-v1/receipt.json",
+      "pinned_sha256": "fbcca657434ebf6348416afd5453498d716f65b3ac6767f6773bfbade8149ba3",
+      "matches_reported_input": true,
+      "payload_bound": true
+    },
+    {
+      "input": "receipts/payload-file-evidence-v1.json",
+      "pinned_sha256": "f5b5cedaf451beb22265e00070a7065bb2068374b0283810848c5ee59d102763",
+      "matches_reported_input": true,
+      "payload_bound": false
+    },
+    {
+      "input": "data/INTAKE.json",
+      "pinned_sha256": "eaeb87982ec56f74fdae43cecc977b8029e6b3629c0a395657f814d699a02743",
+      "matches_reported_input": true,
+      "payload_bound": true
+    },
+    {
+      "input": "receipts/full-launch-gates-v1.json",
+      "pinned_sha256": "1e8157345d37368004fd6262aeb7d4435c3e8a5318697ec1d7d7f20819e52eac",
+      "matches_reported_input": true,
+      "payload_bound": false
+    },
+    {
+      "input": "receipts/recovery-outcome-v1.json",
+      "pinned_sha256": "b67753eded81cf3eb8297adc696ded96af2c901518ce90c566cece82a276ae5f",
+      "matches_reported_input": true,
+      "payload_bound": false
+    }
+  ],
+  "terminal_and_effective_limit_fields_agree": true,
+  "resource_summary_matches_terminal_receipt": true,
+  "recorded_resource_arithmetic": {
+    "wall_seconds": 140.68222923899975,
+    "root_inclusive_wait4_cpu_seconds": 140.62883399999998,
+    "conservative_sample_max_cpu_seconds": 140.6304418180006,
+    "termination_to_final_receipt_seconds": 0.00025252100022044033,
+    "monitor_polls": 2782,
+    "reported_journal_rows": 140,
+    "reported_sampled_descendant_count": 2,
+    "wait4_entries": 1,
+    "recorded_maxrss_kib": 134344,
+    "named_stage_seconds_sum": 136.0060872670001,
+    "wall_minus_named_stage_sum_seconds": 4.676141971999641,
+    "stage_gap_attribution": "unassigned; timer scopes do not cover all work and no new measurement was made"
+  },
+  "all_four_arm_totals_and_hash_fields_match_saved_RESULTS": true,
+  "all_eight_paired_rows_and_five_charged_comparisons_recomputed": true,
+  "raw_fallback_framing_arithmetic": {
+    "record_header_bytes": 73,
+    "blocks_per_channel": 159,
+    "channels": 2,
+    "raw_block_header_bytes": 3,
+    "per_record_raw_overhead": 1027,
+    "validation_records": 8,
+    "global_fixed_header_bytes": 11,
+    "whole_fixed_archive_raw_overhead": 8227,
+    "literal_overhead": 594
+  },
+  "upstream_audit_executed": false,
+  "accounting_journal_acquired": false,
+  "wrapper_source_inspected": false,
+  "payloads_attested_or_decoded": false,
+  "live_resource_measurement": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Nine of fifteen audit input bindings match acquired payloads, including one explicit intake alias; six input payloads remain unacquired.",
+    "Eighty-two passed checks are historical record entries, not a new upstream audit execution or independent trials.",
+    "Source/report already qualify per-process limits, polling, root-inclusive wait4, nonaggregate memory and missing payload attestation.",
+    "No live host measurement, wrapper inspection/execution, journal replay, signal decoding or inference occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/payload-file-evidence-v1.json",
+      "bytes": 1783
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/invocation.json",
+      "bytes": 1103
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/accounting.jsonl",
+      "bytes": 29084
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-launch-gates-v1.json",
+      "bytes": 1636
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/static-preflight.json",
+      "bytes": 5787
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/recovery-outcome-v1.json",
+      "bytes": 15080
+    }
+  ],
+  "next_scope_bytes": 54473,
+  "public_contribution_checks": [
+    "JSON parsing, coverage and input-binding arithmetic passed",
+    "saved terminal/effective fields, resource summaries, arm/paired/charge and framing arithmetic checked",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

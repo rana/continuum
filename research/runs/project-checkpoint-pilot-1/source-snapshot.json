@@ -1,0 +1,497 @@
+{
+  "type": "snapshot",
+  "entries": [
+    {
+      "path": ".github/workflows/rust.yml",
+      "blob": "sha256:294f2cb50caa9bb738a1410791ef65e0d3128c4490d5bc86060bf7eeb138e8cf"
+    },
+    {
+      "path": ".gitignore",
+      "blob": "sha256:4f61e568540c64458d8195f54c6cff31433b0e58c598a37021c7a31c7bf56d91"
+    },
+    {
+      "path": "AGENTS.md",
+      "blob": "sha256:e7222cf1ca468da6066239a28227d6ffe92a47db0273fc4bc1e43153f085813e"
+    },
+    {
+      "path": "CODEX_HANDOFF.md",
+      "blob": "sha256:344881403026cb53317185b81bfa315b1bc076e99c7c1692fba8022735a51032"
+    },
+    {
+      "path": "CURRENT.md",
+      "blob": "sha256:0554a66a8dfdad25263df3df359184c13727586cb38bf39bc5e74b9728801907"
+    },
+    {
+      "path": "Cargo.lock",
+      "blob": "sha256:13e70b32b2da1b3f06a09e742970035a1d04a359bd2a29a88a4f5c0ffe2441f4"
+    },
+    {
+      "path": "Cargo.toml",
+      "blob": "sha256:76dbcb257fc0cc1ccf46c156a06afd1c4cb83a17c3a3a33ef8d6ba4799618f94"
+    },
+    {
+      "path": "LICENSE",
+      "blob": "sha256:21e4cde58314d0c5d40be699d4ece9d959c1d063461a94c2240b5741194352b5"
+    },
+    {
+      "path": "MISSION.md",
+      "blob": "sha256:cd93742b4613c5473000820d7bcaef6da0337721cb7377c65be84ca3e7a79757"
+    },
+    {
+      "path": "README.md",
+      "blob": "sha256:2fe02e8603bdae664d3121d32b2104876660094640096c1d164643eac986250d"
+    },
+    {
+      "path": "ROADMAP.md",
+      "blob": "sha256:3992f0dc801f2415a1825a8f4ee5c3fb46f52c2e96d5d19480016e750ce6a6a8"
+    },
+    {
+      "path": "docs/architecture/context-handoff-v1.md",
+      "blob": "sha256:8f0208e420b22c53f93d835951a52d32270b0dce99d1218fffd0abfa344f1ec6"
+    },
+    {
+      "path": "docs/architecture/coordination.md",
+      "blob": "sha256:dac1cd076da57746efc498839d0f3e0fd1eded8828514710d4b6084617060963"
+    },
+    {
+      "path": "docs/architecture/execution-and-context.md",
+      "blob": "sha256:1f480e68fe2ed58a3ac193353687c3e14864c8f5bb4785d600d5cc1e9b53d272"
+    },
+    {
+      "path": "docs/architecture/object-format-v1.md",
+      "blob": "sha256:521eb4da6f1e5377cfd58a2c89a675b26fbeb7363b6830f982b73f3863574bfd"
+    },
+    {
+      "path": "docs/architecture/overview.md",
+      "blob": "sha256:22986b22bc09b57b1623cc3214e443c8f2c3ac6d0b84ca348e605cacb92384c8"
+    },
+    {
+      "path": "docs/architecture/protocols.md",
+      "blob": "sha256:6d143fd97f0a5c22b45b468aff2932047b62acc721ca1c308c7aa8f63c106033"
+    },
+    {
+      "path": "docs/architecture/publication-and-capacity.md",
+      "blob": "sha256:3d0d2a083a9192da7804bcacac1eec57e223783c6d4420be08d8ecbcc4cdf18a"
+    },
+    {
+      "path": "docs/architecture/representation-experiment.md",
+      "blob": "sha256:44303678d5df00155fd6437bd5521ddc8d5abcab42a97e5d278585a95f99bd84"
+    },
+    {
+      "path": "docs/borrowed-ideas.md",
+      "blob": "sha256:eb03274fd145331f7fc4c0a9f7274747cd5b1a0618bea8b63d3cb5f5dc5336ad"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-claude-01.md",
+      "blob": "sha256:d5bdb5139d25f41260368241ae64379ee8fe653cf01bd3e9531e0de44ce41ffb"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-claude-02.md",
+      "blob": "sha256:3c524593b666e2009d45554afa2c42fb4e8c31ae772db4808775b3d8e2d580fe"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-claude-03.md",
+      "blob": "sha256:e177a19a90f73cdddf133ca8f2ce53a4d884ae42c69ed72614cc85bb72ce72a8"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-claude-04.md",
+      "blob": "sha256:d034a9f785be9771236f9bfc2ca44159af648184674cc37fa2979f0874b6f10b"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-claude-05.md",
+      "blob": "sha256:0694864965c58642a798ffa1610649e9a88765db345a4dd27f0ef8ff8aa08514"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-claude-06.md",
+      "blob": "sha256:c2da63258743ac94ac2565a8f7effde00ad3833112fee3a8ebad6254da0df3ab"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-claude-07.md",
+      "blob": "sha256:925c5c76428cb204def45e6057acd0775f25a8c47473ef431185fe587806c246"
+    },
+    {
+      "path": "docs/collaboration/2026-10-19-user-brief.md",
+      "blob": "sha256:133e06854070af6e1b348df8eaca97976708854d936c884ad6db9f001a000548"
+    },
+    {
+      "path": "docs/collaboration/README.md",
+      "blob": "sha256:db1072846172204fa69212bc789cae8b4f0088fc785decd497a42fa036341b0b"
+    },
+    {
+      "path": "docs/collaboration/base12-rust-reply.md",
+      "blob": "sha256:1756117cb4b3130c9c5ab1e1b41f23ec37da348c75580f5deb45450cd8b2778b"
+    },
+    {
+      "path": "docs/collaboration/requests/claude-01.json",
+      "blob": "sha256:1ffb3ac8966da4f843ecdd68b2eb765c98ebb1769e5ad304fe5bbfd7fc511fc4"
+    },
+    {
+      "path": "docs/collaboration/requests/claude-02.json",
+      "blob": "sha256:24f8d72300b93597e6dead9f1f7b56f04be3aa9b96b584b02d817de37b4aad9e"
+    },
+    {
+      "path": "docs/collaboration/requests/claude-03.json",
+      "blob": "sha256:fedfda0376eb0b817386978204ffce6f9c1fad6e66ac82b87b26e5770b1eaede"
+    },
+    {
+      "path": "docs/collaboration/requests/claude-04.json",
+      "blob": "sha256:6fe488ed10ffd99a03cd0c32fc403e3c7fb2f94842ec960ce7ede02bef0c2a12"
+    },
+    {
+      "path": "docs/collaboration/requests/claude-05.json",
+      "blob": "sha256:02ad1e06e948282ca240d0a86f29b64fdee42eb760d1d9322ae894a2001d5e6d"
+    },
+    {
+      "path": "docs/collaboration/requests/claude-06.json",
+      "blob": "sha256:5cbd84c56ad6b475499ffe331a3c3d30056d3d2ec1a0d4f69bd46643f91e4293"
+    },
+    {
+      "path": "docs/collaboration/requests/claude-07.json",
+      "blob": "sha256:c329228debbf07304321a6aa73a962357ee8f6419765d7c189ed61c19b1168d5"
+    },
+    {
+      "path": "docs/decisions/0001-native-core.md",
+      "blob": "sha256:6dc754be260884c94f3801840d99a2257aa68cbbd0a6d15c989bc6c38ca22ef3"
+    },
+    {
+      "path": "docs/experiments/real-use-pilot.md",
+      "blob": "sha256:341e4d7823bad3a1df2796b4c4d57784a3a6b7d5877984c2be5f25588e77ee07"
+    },
+    {
+      "path": "docs/experiments/release-baseline.md",
+      "blob": "sha256:9da887541d492b94ddc91959e157094e637b134d90bb7eb09d20a3e358ebf138"
+    },
+    {
+      "path": "docs/history/01-scion-assessment.md",
+      "blob": "sha256:064c6824e1c802e05858f88d582c53038b59992ced7af7c433e9ba737d6c2a7e"
+    },
+    {
+      "path": "docs/history/02-agentic-vision.md",
+      "blob": "sha256:f33732196db7909779edafe4f626553e48cb9c59f635998ad0280cbf916f9b5c"
+    },
+    {
+      "path": "docs/history/README.md",
+      "blob": "sha256:8cf2b62c7c970a46c6d6a483783d0b630239ec2d3870266a3e5b7382f2d1c87e"
+    },
+    {
+      "path": "docs/history/conversion-provenance.json",
+      "blob": "sha256:56c40095ed1b459432fdfc487712252f49fb4343c102ec5ae4e8a2d3c7be19ea"
+    },
+    {
+      "path": "docs/landscape.md",
+      "blob": "sha256:80bd5dbbc1e032c4a627de7b8354391e0c883f9ec976ba6bbbbba7b359751ed2"
+    },
+    {
+      "path": "docs/operations/continuation.md",
+      "blob": "sha256:35ac133298e66c3c6da9d7500c367a8ff5dc7d4c28849f41186b0833fe3765a9"
+    },
+    {
+      "path": "docs/operations/project-checkpoint.md",
+      "blob": "sha256:0eac77eed7a2f39c5af3fbeeecaedb1ceadd006989d7879b6fd5e316f1b7f2c4"
+    },
+    {
+      "path": "docs/orientation.md",
+      "blob": "sha256:7b9ca952d694fea76bfb0500dce97982b8940e7343382bd64d46303d25be6219"
+    },
+    {
+      "path": "docs/research-lessons.md",
+      "blob": "sha256:07c4185d4900523249f9053d39623309d3b1f67eb9439a9b61572e1dc0de19c6"
+    },
+    {
+      "path": "docs/source-review/README.md",
+      "blob": "sha256:d2092d6c09fbc11ecc78f48b4c23a453cbb40cb9c2d2425a9253902844e7a943"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-extended.json",
+      "blob": "sha256:a038e5048a26213917d84fa32fc6b56cc40503dc3961854227aa5e3615b8034e"
+    },
+    {
+      "path": "docs/source-review/base12-coverage.json",
+      "blob": "sha256:3fa608ea99ad3381e3deed05ef458651ed8d474c41118331e04e1414378c868f"
+    },
+    {
+      "path": "docs/source-review/base12-followup.md",
+      "blob": "sha256:8aa08974bf66b58c1e324957f4da486ce0ddb07a3e8c7d32ad2f1962300b2770"
+    },
+    {
+      "path": "docs/source-review/base12-research-loop.md",
+      "blob": "sha256:03aee09d2f25829bd2507a420bf567ddfe36c500ba83c8c0f8c759a0282e092f"
+    },
+    {
+      "path": "docs/source-review/prime-audits.md",
+      "blob": "sha256:661a843fd195134b55ef39ff253929183bccefa8666aea499a242a04d63a69a6"
+    },
+    {
+      "path": "docs/source-review/prime-followup.md",
+      "blob": "sha256:9fdf36cfc37d8d5af6a631ac03fe05088e9bfc4dbf4b1a0fc15c1963a2749221"
+    },
+    {
+      "path": "examples/context_handoff.py",
+      "blob": "sha256:9292b8b0288ee2101d00e0481a936335ba3dc00778891b08e40c95bf9a687dc7"
+    },
+    {
+      "path": "examples/measure_workloads.rs",
+      "blob": "sha256:4ada461a718aead4eb2b1b462d286ed1ee000958b295e2bc6eb6e9b3de00ebd8"
+    },
+    {
+      "path": "protocols/README.md",
+      "blob": "sha256:3b7f3774757e911dea21a535afdea1bb56a0ad712f09d81e8fd8fdad78a5ff09"
+    },
+    {
+      "path": "protocols/bounded-research-loop.md",
+      "blob": "sha256:3cd63147dbef7bc4e877d9acfd9408bf7629648d6d3817c628588ec5841800f0"
+    },
+    {
+      "path": "protocols/examples/README.md",
+      "blob": "sha256:9ad3ef08666679e696249202fef7ed55fe429d14835f74578c5aaf3687dbc990"
+    },
+    {
+      "path": "protocols/examples/walk-not-needed.invocation.json",
+      "blob": "sha256:9e5a042cacfcae00796810202e8ad527243160e6370a930e5dd04450120142be"
+    },
+    {
+      "path": "protocols/examples/walk-not-needed.receipt.json",
+      "blob": "sha256:c528175dc3850d241608d49e32b20fa9424d06feef92bdd534123014847c279b"
+    },
+    {
+      "path": "protocols/holographic-walk.md",
+      "blob": "sha256:7f3e6ace8bf357912e3403c70705b1d14e854036283169b854b0b2b6a7598c02"
+    },
+    {
+      "path": "protocols/progress-brief.md",
+      "blob": "sha256:c11fa2a654b3ba30b53fecde4cd356c626a8eb04946ef5c404dc1ca62a7abd11"
+    },
+    {
+      "path": "protocols/registry.json",
+      "blob": "sha256:feb476ab49b8de3f2a94d02193b4705b0e63331804e6b71eccfa6c2a927cc579"
+    },
+    {
+      "path": "protocols/research-record.md",
+      "blob": "sha256:a597658143c92d78b25f974110f424f294a296ed4932bb3c9f167262fea18d84"
+    },
+    {
+      "path": "research/README.md",
+      "blob": "sha256:2f6ce44e532ab133bb7ad371307fce7b4cc2713d08445c4c867ee1ace87db8a8"
+    },
+    {
+      "path": "research/continuation-trial/README.md",
+      "blob": "sha256:9886508154017aa55c5e475a9bda6951d34894ba2f129f37259f4e6059f15f6c"
+    },
+    {
+      "path": "research/continuation-trial/accept.json",
+      "blob": "sha256:6d34ed97814f6abc650a031509a3f2f56da8320524402093563a715aa9dc45e5"
+    },
+    {
+      "path": "research/continuation-trial/acknowledgement-result.json",
+      "blob": "sha256:630a3f89040434faf9f5094265b66e9c2444da72f29a9edd6e4285f207d2fde2"
+    },
+    {
+      "path": "research/continuation-trial/acknowledgement-verification.json",
+      "blob": "sha256:630a3f89040434faf9f5094265b66e9c2444da72f29a9edd6e4285f207d2fde2"
+    },
+    {
+      "path": "research/continuation-trial/acknowledgement.json",
+      "blob": "sha256:e92192b61674445a628011c32ed4f16e826eb3814530eb4b99ec7196bd485685"
+    },
+    {
+      "path": "research/continuation-trial/assessment.json",
+      "blob": "sha256:f081cb86027d9100197cb00eb49980e8bfca2e94fa32925db31320496f9ee32d"
+    },
+    {
+      "path": "research/continuation-trial/checks-request.json",
+      "blob": "sha256:9c3caf1bf988f60cff5ea32e4a8f6b0a9b9c3b3fc97c637698c0a8bbbd5b342b"
+    },
+    {
+      "path": "research/continuation-trial/cli-observations.json",
+      "blob": "sha256:cbfa72b831e532eb2922b67cb22f36c0315b4d303a1177883a3e8dd347b79e0e"
+    },
+    {
+      "path": "research/continuation-trial/context.jsonl",
+      "blob": "sha256:caecac16fd8cf69e71605e4d524b198947f758e2a89b227286770fa8d2abac5b"
+    },
+    {
+      "path": "research/continuation-trial/manifest.json",
+      "blob": "sha256:ba0287a497499720c25f752b5033ea9231277a88c42728791e3a32bec6a41dc0"
+    },
+    {
+      "path": "research/continuation-trial/prepare.json",
+      "blob": "sha256:7c98d1d5b469d3fd3ab19cd925649564381bc81e658cc063fcb1c72423fe3bd4"
+    },
+    {
+      "path": "research/continuation-trial/prepared.json",
+      "blob": "sha256:0c537605d00fbfe8b408c18a87e0c1a94ff81a4d848e24ef8d0168b32e651086"
+    },
+    {
+      "path": "research/continuation-trial/repository-request.json",
+      "blob": "sha256:ed2d0237603abd5f67ab14d6fac25b974acdd22e058f214b0185f879ee3a4f67"
+    },
+    {
+      "path": "research/continuation-trial/source-index.json",
+      "blob": "sha256:e2160bc33eb8f2c64c4d1fd7fa0977f23005c47c924724c4ef50d91f9bcdac49"
+    },
+    {
+      "path": "research/continuation-trial/source-snapshot.json",
+      "blob": "sha256:c78ab92bc1ecd16b69d5aeba250abee03f1baa209ed008104ebe530c0e2b9e0e"
+    },
+    {
+      "path": "research/continuation-trial/state-snapshot.json",
+      "blob": "sha256:3b1a0161a9024e22e298794d025d26b877f3f347730630321d98a65c638df88c"
+    },
+    {
+      "path": "research/continuation-trial/trial-metadata.json",
+      "blob": "sha256:80c92f1c9d716f2daf7814c2bcbe2d50c20e9ebb3b0f3d6e32f3acc98bcc21ea"
+    },
+    {
+      "path": "research/continuation-trial/verification.json",
+      "blob": "sha256:6e7d97a04f7b1fe1b05648dad1df1797d91e8606cc2494a364c1e8bd9767c1e9"
+    },
+    {
+      "path": "research/continuation-trial/work-state.json",
+      "blob": "sha256:425e38e8b58e4b5207921b30a3cc17b5eabeba4c9f0feddbd742aec92b33089d"
+    },
+    {
+      "path": "research/publication/source-commit-map.json",
+      "blob": "sha256:0ed204cdc725e00847e0765fe01802607411c7ed5f46c4fc0252aa841de03a46"
+    },
+    {
+      "path": "research/runs/artifact-verification.json",
+      "blob": "sha256:31fbec8dcddf06bca2c36c80c7b3e846ef1fcce6bfd0ad99a402c2102e6cb12e"
+    },
+    {
+      "path": "research/runs/claude-01.json",
+      "blob": "sha256:1255d4707aa8d5c4cd77c4fe01acb4a1edd6c0363724665afa3ad9b11e27e052"
+    },
+    {
+      "path": "research/runs/claude-02.json",
+      "blob": "sha256:ee68fab8a4f1e52cdfe20e82a2a33a63611c8530c2714682f7a92116b74e4376"
+    },
+    {
+      "path": "research/runs/claude-03.json",
+      "blob": "sha256:f711f2fde7b5353ab1cce65c2201902c07c2459127cc213260da3d403cbda66f"
+    },
+    {
+      "path": "research/runs/claude-04-response.json",
+      "blob": "sha256:918a28817c16083ff8c16cb8471651d355877348e98e1fdd147ebb046ddb085a"
+    },
+    {
+      "path": "research/runs/claude-04.json",
+      "blob": "sha256:8088bc1fa16a80d3eaf72fa6a6ba1ea2af5745766c03a58b0279e592e4a47e56"
+    },
+    {
+      "path": "research/runs/claude-05-response.json",
+      "blob": "sha256:6dbef637dfdf0e264a04e65755b7fa6b418b201aeb5b263e62371641fc8558b5"
+    },
+    {
+      "path": "research/runs/claude-05.json",
+      "blob": "sha256:afad2ed50d80e6af1066de9ae337eca6a9b195b29ae363335e29dbe993865475"
+    },
+    {
+      "path": "research/runs/claude-06-response.json",
+      "blob": "sha256:e48c490471e776261875cdb66b42e0f5fca0844972b41e803d1eea7c83950700"
+    },
+    {
+      "path": "research/runs/claude-06.json",
+      "blob": "sha256:8ef2263f68543b2c0a3ed5b2441ca842ad7889c9fc0fe514bc3f37ea9aea014c"
+    },
+    {
+      "path": "research/runs/claude-07.json",
+      "blob": "sha256:10556d09b70bf9bc178f22e8ef2e6a116ad17e29397889d11fe40708afe68287"
+    },
+    {
+      "path": "research/runs/context-example.json",
+      "blob": "sha256:255079de3da0923c1731667574098b7ec8b75d689290b4f5efa3157c227922ef"
+    },
+    {
+      "path": "research/runs/context-verification.json",
+      "blob": "sha256:f892e691c9646fd23786d74ad503ffe9eff30a271945236c8f618ca5d6701be8"
+    },
+    {
+      "path": "research/runs/continuation-setup-2026-10-19.json",
+      "blob": "sha256:946bb4754869db7d812978b8e9b348da2085713d10506d95dd945d329efe18d2"
+    },
+    {
+      "path": "research/runs/foundation-verification.json",
+      "blob": "sha256:22ba88470d9e0d80ab37edaa0a3564559fa1aa5da6d0363efad88c39f6fa37ee"
+    },
+    {
+      "path": "research/runs/release-baseline-2026-10-19/README.md",
+      "blob": "sha256:eab648a55800166a7f6eb9ce604aa14d9a6901936a9a25170032c46d663671c5"
+    },
+    {
+      "path": "research/runs/release-baseline-2026-10-19/provenance.json",
+      "blob": "sha256:b07ea3f8254cf673988ff59ea4ff49565069b389f56258aa23c2aef543cbcf88"
+    },
+    {
+      "path": "research/runs/release-baseline-2026-10-19/run-01.json",
+      "blob": "sha256:4bdb06e65fdae5790ca68748e15722e2f91d5394d8a42b4edc392e007bf16ce0"
+    },
+    {
+      "path": "research/runs/release-baseline-2026-10-19/run-02.json",
+      "blob": "sha256:49aa6ab19a8c7f08119a1ee009841afd9bf1dd30a7fbe6aad5d0ddd88c03f611"
+    },
+    {
+      "path": "research/runs/release-baseline-2026-10-19/run-03.json",
+      "blob": "sha256:5d58cb3d07a47fa9592f270aa3e2f8d5227e501568fa6a1c90bc99117cf2448c"
+    },
+    {
+      "path": "schemas/context.schema.json",
+      "blob": "sha256:e5183496b6cb0fa374c59b02259174833844b2420d83c79f911f2edc66d10e5c"
+    },
+    {
+      "path": "schemas/execution-record.schema.json",
+      "blob": "sha256:8af0bcfecc1fce7a7b9576ca0ce0f62a675aa5a3037fcbec2e5abf3565506eb0"
+    },
+    {
+      "path": "schemas/protocol-invocation.schema.json",
+      "blob": "sha256:ca72bfeb94344ba7135d95444919945eb92f509defc288db6dd5465a213e6960"
+    },
+    {
+      "path": "schemas/protocol-receipt.schema.json",
+      "blob": "sha256:00e5e6b2383837ebca8020b250f1ff253b6f5d08526742f9da139de78c26c834"
+    },
+    {
+      "path": "schemas/protocol-registry.schema.json",
+      "blob": "sha256:aaffb867f7eb14eca9720f36b0ef51de4c49e297856fe70e0c7cf82cf99de57f"
+    },
+    {
+      "path": "src/context.rs",
+      "blob": "sha256:42b2977a668518e07b4b7bf63788e21bef914bc5fb59ae5318658b4ed4ef86c2"
+    },
+    {
+      "path": "src/lib.rs",
+      "blob": "sha256:89aa611b980652e103ddb5893760cd37195b79a8b8fc558597f3d259027b8fe5"
+    },
+    {
+      "path": "src/main.rs",
+      "blob": "sha256:c2eca00e6dde8fd272d2eda39f8852f4d217f7ce789738707d1e8a598ddf4514"
+    },
+    {
+      "path": "src/object.rs",
+      "blob": "sha256:f0558ca8cd59c5ce14102360aa5fbd8006147b1b77c8ef820a226dcfef704085"
+    },
+    {
+      "path": "src/store.rs",
+      "blob": "sha256:10d3b6ae0383ba0076bae518116ee106a62245b200974a2858ae2e12c4ca750e"
+    },
+    {
+      "path": "tests/context_handoff.rs",
+      "blob": "sha256:ddb39da5a90f1c1155d5b165098a69cebc408221e7a24dcca0f770b75d18905e"
+    },
+    {
+      "path": "tests/crash_recovery.rs",
+      "blob": "sha256:b5ba919e6e8b79e180775da209096088ded2f1276c8a78d0c843054cf1e5ec03"
+    },
+    {
+      "path": "tests/invariants.rs",
+      "blob": "sha256:6c68eb6bc70185019010a1c81b2983ea98646ec19f8a63e7dd31e651e3d5410a"
+    },
+    {
+      "path": "tools/project_checkpoint.py",
+      "blob": "sha256:406866ab6da4b7ddc6dafe6eb08535105c3d260239518305f16fedada36d7bc2"
+    },
+    {
+      "path": "tools/test_project_checkpoint.py",
+      "blob": "sha256:d976889434559a37a7f2532ed04f8ac140eeca8dd3aa14a14c618feff28eb623"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "action_authority_verified": false,
+  "context_pack": "sha256:e68b00bdb83e04eca6029b0e515a83cb43262222d5371bea29d7cdc2316824f9",
+  "exact_projection_verified": true,
+  "freshness": {
+    "observed": {
+      "generation": 1,
+      "root": "sha256:efe72d17ac33832e735b6dfbb54d8eae406f58eb9dc7a5d102e1048defb3c9da"
+    },
+    "status": "matches_at_observation"
+  },
+  "rendered_bytes": 3140
+}

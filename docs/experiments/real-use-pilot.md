@@ -1,6 +1,6 @@
 # Learn the design by using Continuum
 
-Status: selected next research direction, not a completed adoption study or workstation deployment. This plan follows the user's 2026-10-19 UTC request to discover design improvements through actual use, and [Claude exchange 7](../collaboration/2026-10-19-claude-07.md).
+Status: first checkpoint adapter and one actual successor review completed; [evidence and limits](../../research/runs/project-checkpoint-pilot-1/README.md). Continuing pilot, not a completed adoption study or workstation deployment. This plan follows the user's 2026-10-19 UTC request to discover design improvements through actual use, and [Claude exchange 7](../collaboration/2026-10-19-claude-07.md).
 
 ## Question
 

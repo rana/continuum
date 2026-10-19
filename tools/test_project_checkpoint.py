@@ -83,6 +83,23 @@ class CheckpointTests(unittest.TestCase):
                 output = self.run_checkpoint(name="alias", extra=("--revision", commit), succeeds=False)
                 self.assertFalse(output.exists())
 
+    def test_original_binary_replacement_does_not_change_later_invocations(self):
+        # The wrapper replaces its original path during init. Reopening that path
+        # for the next CLI command would fail, while the retained executable works.
+        wrapper = self.root / "replaceable-continuum"
+        code = ("#!/usr/bin/env python3\nimport os, sys\nfrom pathlib import Path\n"
+                f"if sys.argv[1] == 'init': Path({str(wrapper)!r}).write_bytes(b'replaced')\n"
+                f"os.execv({str(BINARY)!r}, [{str(BINARY)!r}, *sys.argv[1:]])\n")
+        wrapper.write_text(code)
+        wrapper.chmod(0o700)
+        digest = hashlib.sha256(wrapper.read_bytes()).hexdigest()
+        self.provenance.write_text(json.dumps({"binary_sha256": digest}))
+        output = self.run_checkpoint(extra=("--binary", str(wrapper)))
+        self.assertEqual(wrapper.read_bytes(), b"replaced")
+        self.assertEqual(hashlib.sha256((output / "runtime" / wrapper.name).read_bytes()).hexdigest(),
+                         digest)
+        self.assertTrue((output / "checkpoint.json").exists())
+
     def test_symlink_rejected_before_output(self):
         (self.repo / "link").symlink_to("binary data")
         self.git("add", ".")

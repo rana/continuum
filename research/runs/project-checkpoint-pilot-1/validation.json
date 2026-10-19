@@ -1,0 +1,25 @@
+{
+  "source_commit": "caf78807cb0175de58603fa7e329f8634d2114a4",
+  "environment": "Linux executor; local checkout /tmp/continuum-run-20261018; not asserted to be user workstation",
+  "observed_commands": [
+    {
+      "command": "cargo fmt --all -- --check",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo clippy --locked --all-targets --all-features -- -D warnings",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo test --locked --all-features",
+      "exit_code": 0,
+      "scenario_tests_passed": 20
+    },
+    {
+      "command": "python3 -m unittest discover -s tools -p 'test_project_checkpoint.py'",
+      "exit_code": 0,
+      "tests_passed": 4
+    }
+  ],
+  "evidence_scope": "Coordinator observations of tool results; these checks predate receiver feedback. Raw initial build log retained; full test stdout was visible in session but not saved to file."
+}

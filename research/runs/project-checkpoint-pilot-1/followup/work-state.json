@@ -1,0 +1,41 @@
+{
+  "schema": "continuum.work_state.v1",
+  "id": "checkpoint-pilot-1-followup",
+  "source_snapshot": "sha256:43e399f14546a3158cd258498813bbbee1ec903af507e6b15de6ac0a77ca9570",
+  "objective": {
+    "id": "pilot-objective",
+    "statement": "Validate the corrected adapter after the actual successor review exposed filesystem aliases and executable replacement.",
+    "done_when": "A fresh corrected checkpoint passes native current-context verification and adapter integration checks.",
+    "constraints": [
+      "Review only this public project. Do not claim code execution or repository access: receiver has supplied text only.",
+      "Distinguish context sufficient to select an action from source needed to perform that action.",
+      "Adapter fixes are committed in 97f5bd1. This follow-up pack is a validation artifact; no second receiver is claimed."
+    ]
+  },
+  "attempts": [],
+  "decisions": [
+    {
+      "id": "disposable-store",
+      "state": "active",
+      "statement": "Use a fresh disposable store and committed regular Git source. Native core remains independent of Git.",
+      "basis_attempt_ids": [],
+      "reopen_when": "Observed use requires retained store upgrades or a broader source representation."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "custody-gap",
+      "question": "Does the adapter lose a decision-relevant artifact or misrepresent provenance under plausible inputs?",
+      "why_it_matters": "A completed checkpoint should enable useful continuation without concealing what was captured."
+    }
+  ],
+  "handoff": {
+    "id": "pilot-followup-offer",
+    "from_worker": "codex-coordinator",
+    "to_worker": "claude-supplied-context",
+    "scope": "A future worker can inspect the follow-up result. No recipient has accepted this offered record.",
+    "required_decision_ids": [
+      "disposable-store"
+    ]
+  }
+}

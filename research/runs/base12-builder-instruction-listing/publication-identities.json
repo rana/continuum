@@ -1,0 +1,20 @@
+{
+  "source_baseline": "005cfb654605cd2efa7ef1df50d8be751f499b0b",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-instruction-listing.md",
+      "bytes": 5715,
+      "sha256": "1d5ed4b82c0377cd6a179ac4d6db404b2fa5a06b764444b6676da2ebc8210b03"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-instruction-listing.json",
+      "bytes": 3174,
+      "sha256": "1c146e4399e5ae74887525321400b4205f6e64617d1442adc56eac51c0eb39bd"
+    },
+    {
+      "path": "research/runs/base12-builder-instruction-listing/validation.json",
+      "bytes": 3488,
+      "sha256": "dd0fee6219e342a3b967d0bdd5f43ca93ccfc1fb277f12e633ea54b45e57768a"
+    }
+  ]
+}

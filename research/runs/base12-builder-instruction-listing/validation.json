@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "source_baseline": "005cfb654605cd2efa7ef1df50d8be751f499b0b",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 75436,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 75436,
+  "complete_listing_roundtrip_exact": true,
+  "full_listing_rows_read": 1589,
+  "distinct_annotations_read": 578,
+  "all_declared_instruction_fields_checked": true,
+  "all_offsets_contiguous": true,
+  "code_bytes_in_listing": 9644,
+  "listing_code_sha256": "f1ed3e878d6beaba79c9317147ecace63f8bb2e6e9c2ea811a27fd6be2f6dd96",
+  "listing_code_git_blob_sha": "1914a0c1346316de7439349d4d0b36b68c590b86",
+  "pinned_binary_code_identity_matches_listing_hash": true,
+  "code_binary_file_acquired": false,
+  "all_479_patch_bytes_opcodes_targets_and_order_match": true,
+  "all_163_labels_are_listing_boundaries": true,
+  "all_15_syscall_sites_and_preceding_immediates_match": true,
+  "all_six_R2_correction_witness_bytes_match": true,
+  "targeted_mutations_rejected": [
+    "rel32-byte",
+    "branch-opcode",
+    "target-annotation",
+    "immediate-value",
+    "memory-displacement",
+    "operand-width",
+    "register-field",
+    "syscall-opcode"
+  ],
+  "full_candidate_ELF_hash_newly_verified": false,
+  "external_disassembler_invoked": false,
+  "upstream_source_imported": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All 1589 listing rows and 578 distinct annotations fully read through a lossless byte/offset/annotation projection; exact text reconstruction passed.",
+    "Original finite field reader checks the declared instruction families and rejects eight targeted mutations; it is not a general x86 decoder or exhaustive execution proof.",
+    "Streaming concatenation of listed byte fields matches the pinned code-blob length and Git identity without acquiring its binary file or emitting an artifact.",
+    "Listing-derived code identity is evidence for the code segment, not a fresh full ELF hash, external disassembly or native execution.",
+    "All 479 patch fields and 163 label boundaries bind layout, and 15 syscall sites bind saved static metadata; syscalls were not invoked.",
+    "Six listed R2 argument-load bytes match prior witness data; the actual R1-to-R2 binary difference remains unverified until historical bytes are compared.",
+    "No upstream import, native artifact emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.disassembly.txt",
+      "bytes": 118160,
+      "intended_review": "complete_saved_external_disassembly_without_execution"
+    }
+  ],
+  "next_scope_bytes": 118160,
+  "public_contribution_checks": [
+    "pinned listing identity and complete exact text reconstruction passed",
+    "all 1589 rows pass finite declared instruction-field checks and continuity",
+    "all479 patch fields,163 label boundaries and15 syscall sites bind saved metadata",
+    "streaming code bytes match pinned code-blob identity; eight targeted mutations rejected",
+    "six R2 correction witnesses, coverage, links, privacy and git diff --check passed"
+  ]
+}

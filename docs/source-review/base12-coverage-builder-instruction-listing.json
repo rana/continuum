@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-static-layout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.instructions.txt"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.instructions.txt",
+      "bytes": 75436,
+      "git_blob_sha": "dedba3efbc31fe2a832729eb95283210373ba271",
+      "sha256": "01977a73bf4c3f4b9fb01567a34dc40b29925f4315263f65c64c324c370795a7",
+      "lines": 1589,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-saved-instruction-listing",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 75436
+    },
+    "cumulative_direct_read": {
+      "paths": 530,
+      "unique_blobs": 530,
+      "bytes": 4517801
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 607,
+    "remaining_paths_without_full_semantic_read_or_alias": 4986,
+    "remaining_distinct_blobs_without_full_semantic_read": 3899,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 75436,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All 1589 listing rows and 578 distinct annotations fully read through a lossless byte/offset/annotation projection; exact text reconstruction passed.",
+    "Original finite field reader checks the declared instruction families and rejects eight targeted mutations; it is not a general x86 decoder or exhaustive execution proof.",
+    "Streaming concatenation of listed byte fields matches the pinned code-blob length and Git identity without acquiring its binary file or emitting an artifact.",
+    "Listing-derived code identity is evidence for the code segment, not a fresh full ELF hash, external disassembly or native execution.",
+    "All 479 patch fields and 163 label boundaries bind layout, and 15 syscall sites bind saved static metadata; syscalls were not invoked.",
+    "Six listed R2 argument-load bytes match prior witness data; the actual R1-to-R2 binary difference remains unverified until historical bytes are compared.",
+    "No upstream import, native artifact emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "review_report": "base12-builder-instruction-listing.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

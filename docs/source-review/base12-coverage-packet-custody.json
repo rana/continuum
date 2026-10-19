@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-packaging-boundary.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/MANIFEST.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packet-allowlist-v1.json"
+    ],
+    "mechanical_archive": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/pr13-audited-review-20261016.zip"
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/MANIFEST.json",
+      "bytes": 23127,
+      "git_blob_sha": "8d6b97fddb1a180b315ed618f9450424d205fc33",
+      "sha256": "2ac4be9055c7aee5c2d7f552fc9148aca609ba30ca0d1b5195d49b0e22aeb3ba",
+      "lines": 643,
+      "semantic_review": "full_direct_read",
+      "review_lane": "manifest-allowlist-and-separate-archive-custody",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packet-allowlist-v1.json",
+      "bytes": 28234,
+      "git_blob_sha": "35a5f729b7097d6dcfacd791df003204d0b9a5ca",
+      "sha256": "fdecebf34ff103e956b79bd7fb7b6ccccc018a4f2ecb22e72d3f382dd06dc5c1",
+      "lines": 636,
+      "semantic_review": "full_direct_read",
+      "review_lane": "manifest-allowlist-and-separate-archive-custody",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 2,
+      "unique_blobs": 2,
+      "bytes": 51361
+    },
+    "cumulative_direct_read": {
+      "paths": 352,
+      "unique_blobs": 352,
+      "bytes": 2532078
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 404,
+    "remaining_paths_without_full_semantic_read_or_alias": 5189,
+    "remaining_distinct_blobs_without_full_semantic_read": 4077,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 360418,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Only the manifest and allowlist receive new full semantic-reading credit.",
+    "Archive members were mechanically checked, parsed and privately cached without importing or executing packaged code.",
+    "Exact byte custody establishes agreement among this pinned tree, manifest and retained ZIP; it does not authenticate upstream claims, publication authority, original signal bytes or historical execution.",
+    "Source fields in the allowlist declare historical layout mappings; original source-path availability was not tested.",
+    "No new complete semantic privacy review or arbitrary-archive extractor evaluation is claimed.",
+    "No syscall crash, path replacement, provider or workstation activation experiment ran.",
+    "Global acquisition overlap remains unknown; the historical aggregate is unchanged."
+  ],
+  "review_report": "base12-packet-custody.md",
+  "mechanical_custody_files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/pr13-audited-review-20261016.zip",
+      "bytes": 309057,
+      "git_blob_sha": "bc5a837784d76dde92743573dce673e449693594",
+      "sha256": "c6e24c711800f7af6b5454cb457ce277fb45e4900dc3f0a4b079577334a4e966",
+      "semantic_credit": false
+    }
+  ]
+}

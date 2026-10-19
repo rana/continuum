@@ -1,0 +1,20 @@
+{
+  "source_baseline": "f3ea807a2f941c415549bbdd83c6c9208b9688cd",
+  "files": [
+    {
+      "path": "docs/source-review/base12-packet-custody.md",
+      "bytes": 5196,
+      "sha256": "e9875a557fa00d68dc9a85450a5142e9258cc60fa4b5344292b7fb4cf1d02c4e"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-packet-custody.json",
+      "bytes": 3982,
+      "sha256": "11549830b12c9841d771ecd00ab29e8d3e301a5f74582dd0d81d52cdadd764e4"
+    },
+    {
+      "path": "research/runs/base12-packet-custody/validation.json",
+      "bytes": 10216,
+      "sha256": "8be4dc83a049ad646adba39124b91f293d1bbea4e1192129ce664318553a9453"
+    }
+  ]
+}

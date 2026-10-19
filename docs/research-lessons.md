@@ -219,6 +219,8 @@ The [parent-checker return](source-review/base12-parent-checker.md) reads every 
 
 The [packaging-boundary return](source-review/base12-packaging-boundary.md) distinguishes staged member bytes from later path digests, file fsync from atomic publication of a set, and pinned receipts from authored historical claims. Continuum should bind each check and receipt to its consumed representation while preserving partial-output recovery states. No packaging code or failure experiment ran.
 
+The [packet-custody return](source-review/base12-packet-custody.md) binds a retained archive digest and member inspection to one consumed byte buffer, with pinned total size and membership checked before decompression. All 127 member identities agree, but 44 nonempty packet files remain semantically unread. Continuum should track byte custody, structural parsing and semantic review as separate evidence rather than letting automated acquisition inflate comprehension. No packaged code or historical effect ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

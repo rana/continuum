@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "source_baseline": "1d224c4bb5af225cab30d3c2690c11f3f2615e03",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 1,
+  "verified_source_bytes": 59438,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 59438,
+  "lossless_view": {
+    "bytes": 22317,
+    "rows": 368,
+    "digest_dictionary_entries": 61,
+    "header_fields": 3,
+    "all_fields_read": true,
+    "exact_original_JSON_roundtrip": true,
+    "raw_view_published": false
+  },
+  "unique_inventory_paths": 368,
+  "expected_output_related_paths": 352,
+  "exact_expected_output_path_set_match": true,
+  "root_receipt_paths": 16,
+  "held_root_receipt_bindings": [
+    {
+      "receipt_name": "OUTCOME",
+      "bytes": 68,
+      "matched": true
+    },
+    {
+      "receipt_name": "STARTED",
+      "bytes": 58,
+      "matched": true
+    },
+    {
+      "receipt_name": "boot-id",
+      "bytes": 37,
+      "matched": true
+    },
+    {
+      "receipt_name": "driver.exit",
+      "bytes": 14,
+      "matched": true
+    },
+    {
+      "receipt_name": "exit",
+      "bytes": 39,
+      "matched": true
+    },
+    {
+      "receipt_name": "freeze.sha256",
+      "bytes": 65,
+      "matched": true
+    },
+    {
+      "receipt_name": "group-scan.exit",
+      "bytes": 18,
+      "matched": true
+    },
+    {
+      "receipt_name": "group.identity",
+      "bytes": 38,
+      "matched": true
+    },
+    {
+      "receipt_name": "pid-namespace",
+      "bytes": 17,
+      "matched": true
+    },
+    {
+      "receipt_name": "resources",
+      "bytes": 1041,
+      "matched": true
+    },
+    {
+      "receipt_name": "stderr.log",
+      "bytes": 0,
+      "matched": true
+    },
+    {
+      "receipt_name": "stdout.log",
+      "bytes": 4400,
+      "matched": true
+    },
+    {
+      "receipt_name": "survivors",
+      "bytes": 68,
+      "matched": true
+    },
+    {
+      "receipt_name": "survivors.stderr",
+      "bytes": 49,
+      "matched": true
+    },
+    {
+      "receipt_name": "tools.sha256",
+      "bytes": 490,
+      "matched": true
+    }
+  ],
+  "omitted_process_list_bytes": 4325,
+  "matrix_output_hash_declarations_matched": 72,
+  "EINTR_output_hash_declarations_matched": 12,
+  "retained_pair_length_and_digest_declarations_match": true,
+  "all_44_entry_receipt_hashes_match_expected_name_permutation": true,
+  "all_79_staging_receipts_declare_empty": true,
+  "all_12_trace_digest_declarations_match_RESULT": true,
+  "all_130_matrix_stdout_stderr_declare_empty": true,
+  "collision_sentinel_length_and_digest_match": true,
+  "gate_a_prefix_paths": 61,
+  "gate_a_remaining_without_semantic_credit": [
+    "artifact-r2/code.bin",
+    "artifact-r2/decoder.elf",
+    "artifact-r2/disassembly.txt",
+    "artifact-r2/instructions.txt",
+    "execution-01/receipts/stderr.log"
+  ],
+  "gate_a_remaining_mechanical_empty_streams": 1,
+  "gate_a_remaining_instruction_texts": 2,
+  "gate_a_unacquired_binary_artifacts": 2,
+  "current_filesystem_or_raw_payload_state_checked": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All header fields, 61 digest values and 368 ordered rows read through a field-preserving view; full original JSON byte roundtrip passed.",
+    "The 352 expected output-related metadata paths match exactly, not an observed current filesystem inventory.",
+    "Eighty-four synthetic/EINTR output hash declarations and retained pair agree with earlier metadata; named output payloads remain unacquired.",
+    "Forty-four entry-receipt hashes match some exact expected NUL-delimited permutation; no raw entry receipt was opened and no live lstat/absence checked.",
+    "Seventy-nine staging rows declare empty bytes; twelve trace digests match summaries, without reading raw traces or testing injection behavior.",
+    "Fifteen root receipt copies bind held bytes; raw process list remains omitted and no process-identity attribution is inferred.",
+    "Gate-A metadata/source review is scoped: one empty stream is mechanical, two instruction texts and two binary artifacts remain without semantic credit.",
+    "No original audit, native/controller code, model invocation or named private payload executed/acquired; no raw inventory or operational root published."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/README.md",
+      "bytes": 4195,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/REQUIREMENTS.md",
+      "bytes": 10622,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/LAYOUT_SKETCH.md",
+      "bytes": 5854,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/NEXT_SOURCE.md",
+      "bytes": 3731,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/OPEN.md",
+      "bytes": 1023,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 25425,
+  "public_contribution_checks": [
+    "one pinned blob identity and all-field exact reconstructible reading passed",
+    "368 unique paths and exact 352 output-related path set reconcile",
+    "84 synthetic/EINTR output hashes, retained pair and twelve trace declarations match",
+    "44 entry-receipt permutations, 79 empty staging and 130 empty matrix streams reconcile",
+    "fifteen held root receipt payloads bind; process-list and live-state limits retained",
+    "coverage, Gate-A gap census, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

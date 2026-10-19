@@ -1,0 +1,20 @@
+{
+  "source_baseline": "1d224c4bb5af225cab30d3c2690c11f3f2615e03",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-private-inventory.md",
+      "bytes": 5165,
+      "sha256": "266f90cb86f0c82611f02faf0be4e91fed235efa4f6f4cd05121ca3b85277771"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-private-inventory.json",
+      "bytes": 3276,
+      "sha256": "944f1e9e8a324c36541a02de97c83039116d3b07a5178cb0c0bf2f60d376d6dc"
+    },
+    {
+      "path": "research/runs/base12-gate-a-private-inventory/validation.json",
+      "bytes": 5958,
+      "sha256": "0a44626c9289dce49728bb1eae6bedcf5b9e01d8756e3c704482bba16cf0c46b"
+    }
+  ]
+}

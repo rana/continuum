@@ -1,0 +1,20 @@
+{
+  "source_baseline": "fc1cd3c7d46c51232752533adbc4a9d1b5ce09b8",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-fixture-derivation.md",
+      "bytes": 6314,
+      "sha256": "f17c0c06ce7a1da51987ff0660960027f37c3fc3600252d8dd981a82f3cc9a34"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-fixture-derivation.json",
+      "bytes": 4812,
+      "sha256": "274bd3a4206b8b1852eaa52cecc11aa44f8bd5bdc2c7b8941219a943ad2e0188"
+    },
+    {
+      "path": "research/runs/base12-builder-fixture-derivation/validation.json",
+      "bytes": 8103,
+      "sha256": "4e0881f46c56b60d5878dc7f6df452d2b77a95680452411e0b61018a548ea331"
+    }
+  ]
+}

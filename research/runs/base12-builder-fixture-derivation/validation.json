@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "source_baseline": "fc1cd3c7d46c51232752533adbc4a9d1b5ce09b8",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 4,
+  "verified_source_bytes": 54576,
+  "full_text_paths_read": 4,
+  "new_semantic_files": 4,
+  "new_semantic_bytes": 54576,
+  "materializer_AST_parses": true,
+  "imports": [
+    "hashlib",
+    "json",
+    "pathlib",
+    "re",
+    "struct"
+  ],
+  "generator_review_manifest_pins_bind": true,
+  "provenance_input_checks": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "bytes": 6957,
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+      "status": "held_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/encoding-vectors.json",
+      "bytes": 15052,
+      "sha256": "387d904dec24c976512cff187749e021e253b4bc3535cc43bb742dc7bfb48930",
+      "status": "held_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/relocation-vectors.json",
+      "bytes": 5341,
+      "sha256": "d97b15509b1b0dd768668aeccac97a5587ecc191b706bf82c289678509ab66b3",
+      "status": "held_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/program-expectations.json",
+      "bytes": 4238,
+      "sha256": "ecdf2200ba3b49acacdfe1390b5f5598c23254d77b444388096ecb5283435231",
+      "status": "held_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-launch-controller/artifact-r1/runner.elf",
+      "bytes": 6930,
+      "sha256": "12fd50a2fa3ff18a1b615557246cbcdb13dc93214f075dba238be34f7f40e543",
+      "status": "historical_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-launch-controller/artifact-r1/runner.instructions.txt",
+      "bytes": 22128,
+      "sha256": "70eedb2f88240091f90369d500cdcbaeb882a08fcca48c0f549ae972d9061141",
+      "status": "historical_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-launch-controller/artifact-r1/runner.layout.json",
+      "bytes": 11973,
+      "sha256": "3f0518ae1556870f0d4f6e2619303feb28b55a7078ebb19ae601b3d857839f89",
+      "status": "historical_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/runner.b12s",
+      "bytes": 7463,
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+      "status": "held_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/exit17.b12asm",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "status": "held_bytes_bind"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/branch42.b12asm",
+      "bytes": 206,
+      "sha256": "d013c9f79eb65d91f329d0f1375bd5683321a7867143067242a3b526778c86a5",
+      "status": "held_bytes_bind"
+    }
+  ],
+  "literal_fault_specs": [
+    {
+      "case": 54,
+      "syscall": "read",
+      "error": "EINTR",
+      "ordinal": 1,
+      "semantic_target": "first input read",
+      "retry_return": "positive",
+      "expected_returncode": 0
+    },
+    {
+      "case": 55,
+      "syscall": "write",
+      "error": "EINTR",
+      "ordinal": 1,
+      "semantic_target": "first ELF write",
+      "retry_return": "positive",
+      "expected_returncode": 0
+    },
+    {
+      "case": 56,
+      "syscall": "fsync",
+      "error": "EINTR",
+      "ordinal": 1,
+      "semantic_target": "ELF fsync",
+      "retry_return": "zero",
+      "expected_returncode": 0
+    },
+    {
+      "case": 57,
+      "syscall": "write",
+      "error": "EIO",
+      "ordinal": 1,
+      "semantic_target": "first ELF write",
+      "retry_return": null,
+      "expected_returncode": 74
+    },
+    {
+      "case": 58,
+      "syscall": "fsync",
+      "error": "EIO",
+      "ordinal": 1,
+      "semantic_target": "ELF fsync",
+      "retry_return": null,
+      "expected_returncode": 74
+    },
+    {
+      "case": 59,
+      "syscall": "close",
+      "error": "EIO",
+      "ordinal": 2,
+      "semantic_target": "ELF output close after its fsync, before map fsync",
+      "retry_return": null,
+      "expected_returncode": 74
+    },
+    {
+      "case": 61,
+      "syscall": "close",
+      "error": "EIO",
+      "ordinal": 1,
+      "semantic_target": "input close after EOF, before parsing",
+      "retry_return": null,
+      "expected_returncode": 66
+    },
+    {
+      "case": 62,
+      "syscall": "fstat",
+      "error": "EINTR",
+      "ordinal": 1,
+      "semantic_target": "input fstat",
+      "retry_return": "zero",
+      "expected_returncode": 0
+    },
+    {
+      "case": 63,
+      "syscall": "open",
+      "error": "EINTR",
+      "ordinal": 1,
+      "semantic_target": "input open",
+      "retry_return": "nonnegative_fd",
+      "expected_returncode": 0
+    },
+    {
+      "case": 64,
+      "syscall": "open",
+      "error": "EINTR",
+      "ordinal": 2,
+      "semantic_target": "first ELF output reservation after input closed",
+      "retry_return": "nonnegative_fd",
+      "expected_returncode": 0
+    }
+  ],
+  "EINTR_specs": 6,
+  "EIO_specs": 4,
+  "literal_invalid_case_ids": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "numeric_endpoint_cases": 16,
+  "valid_endpoint_byte_fields_checked": 7,
+  "fixture_manifest_roundtrip_exact": true,
+  "fixture_manifest_members": 157,
+  "fixture_tree_bytes": 729210,
+  "fixture_maxima": {
+    "source": 65537,
+    "elf": 6930,
+    "map": 36896,
+    "layout": 65928
+  },
+  "fixture_members_match_packet_and_tree": true,
+  "guard_count_arithmetic_consistent": true,
+  "derivation_precedes_individual_exclusive_writes": true,
+  "fixture_file_modes_not_reobserved": true,
+  "materializer_imported_or_executed": false,
+  "candidate_binary_acquired": false,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Four texts fully read; materializer syntax/AST and literal data checked without import or execution.",
+    "Seven provenance inputs bind held bytes; historical ELF/listing/layout remain unheld dependencies.",
+    "Complete 157-member fixture list agrees with packet/tree; 729210 bytes and maxima are pinned-tree accounting, not fresh filesystem or runtime observations.",
+    "Ten literal fault specifications, sixteen invalid inputs and sixteen numeric endpoints are authored cases, not observed parser/instrumentation progress.",
+    "Seven valid endpoint byte fields reconcile arithmetically; no candidate/independent assembler or full expected ELF was generated.",
+    "Individual exclusive fixture writes follow derivation but lack atomic directory publication; no materializer or candidate control ran here.",
+    "Reported close-EIO suppresses the syscall and does not establish successful close; partial-write case remains untraced signal/prefix inference."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/cases.json",
+      "bytes": 140815,
+      "intended_review": "complete_case_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 140815,
+  "public_contribution_checks": [
+    "four pinned identities and complete text/list readings passed",
+    "materializer AST and generator/review/manifest pins reconcile without import",
+    "seven held provenance inputs bind while three historical payload gaps remain explicit",
+    "ten fault specs, sixteen malformed sources and seven valid endpoint byte fields checked",
+    "complete fixture list, pinned-tree totals/maxima and guard arithmetic reconcile",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

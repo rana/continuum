@@ -1,0 +1,20 @@
+{
+  "source_baseline": "53c6e8f70b4c45fb1f9a079b96c182f1fac38109",
+  "files": [
+    {
+      "path": "docs/source-review/base12-recovery-intake-accounting.md",
+      "bytes": 6374,
+      "sha256": "de586a3d3e43d0a6425bcba5a6e376f7db183f4051b7ff1b262c32692362a4dd"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-recovery-intake-accounting.json",
+      "bytes": 8399,
+      "sha256": "ab87285ecfe4cea3d3fb6860e4ff4c7665dde4976e7665035b870a4a541a801d"
+    },
+    {
+      "path": "research/runs/base12-recovery-intake-accounting/validation.json",
+      "bytes": 5080,
+      "sha256": "c40acbc7b8d1a23ba96e4caa83172a353b9e25ccb4372e2d1651ffaea850d12d"
+    }
+  ]
+}

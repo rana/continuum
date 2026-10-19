@@ -225,6 +225,8 @@ The [transport-controls return](source-review/base12-transport-controls.md) dist
 
 The [transport-recovery return](source-review/base12-transport-recovery.md) reconciles all 36 file states and 72 journal events while separating append order, worker timestamps and socket effects. Operation timeout, file deadline and inner/outer elapsed boundaries answer different questions. Continuum should retain those boundaries and avoid inferring global exactly-once behavior or a bottleneck from one consistent successful record. No transfer was replayed.
 
+The [recovery/intake accounting return](source-review/base12-recovery-intake-accounting.md) separates sparse journal rows, unlogged monitor samples, instantaneous guard estimates, running maxima and exit CPU. A falling bound margin does not imply falling cumulative work. Intake test-lock output describes allowed accesses rather than proving directory-wide absence. Continuum should type each observation by its boundary and coverage; no historical operation was replayed.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

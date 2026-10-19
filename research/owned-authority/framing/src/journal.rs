@@ -122,6 +122,18 @@ impl Journal {
             .open(path.join("lock"))?;
         lock.try_lock().map_err(io::Error::other)?;
         let records = recover(path)?;
+        // Recovery may observe bytes after an earlier uncertain sync. Establish
+        // fresh barriers before exposing cached outcomes or acknowledging an
+        // exact retry; successful rereading alone is not durability evidence.
+        File::open(path.join("journal"))?.sync_all()?;
+        File::open(path.join("boundary"))?.sync_all()?;
+        File::open(path)?.sync_all()?;
+        File::open(
+            std::path::absolute(path)?
+                .parent()
+                .ok_or_else(|| invalid("parent required"))?,
+        )?
+        .sync_all()?;
         Ok(Self {
             _lock: lock,
             directory: path.into(),

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "b41344b4ff79044768b060ee614806bd334a2cb3",
+  "files": [
+    {
+      "path": "docs/source-review/base12-training-costs.md",
+      "bytes": 4710,
+      "sha256": "489e32448a9c77bee9be4efd2592619a19fe09f7542bdc50246635c6e4c61d68"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-training-costs.json",
+      "bytes": 2749,
+      "sha256": "12cc0a792748fad1392b976edf3ba479d7f877c247e365bb3a2a159de4c0c0cb"
+    },
+    {
+      "path": "research/runs/base12-training-costs/validation.json",
+      "bytes": 18703,
+      "sha256": "aef19fc7dff0e0b41939a5d6579267da0e719c92ca42efedeead5de4b84b30c5"
+    }
+  ]
+}

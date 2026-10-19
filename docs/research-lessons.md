@@ -197,6 +197,8 @@ The [consumer-records return](source-review/base12-consumer-records.md) resolves
 
 The [learning-audit return](source-review/base12-learning-audit.md) inspects the actual saved-data acceptance predicate and keeps one missing input explicit despite a historical pass. It distinguishes full candidate-table bounds from selected raw-fallback bounds, and compares forty recorded encoders with a larger synthetic configuration set without inferring missing decoder observations. Continuum should preserve audit input closure, scope and quantity type alongside verdicts. No audit, greedy replay or native program ran.
 
+The [training-cost return](source-review/base12-training-costs.md) closes a missing audit input and separately recovers the saved greedy choices, unique minima and charged savings from a complete cost matrix. Exact JSON reconstruction makes a compact field view accountable. Agreement depends on the saved matrix; it does not regenerate waveform costs or prove global optimality. Continuum should preserve input closure, replay objective and stopping budget as separate claims from measurement provenance.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

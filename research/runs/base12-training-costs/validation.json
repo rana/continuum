@@ -1,0 +1,732 @@
+{
+  "schema_version": 1,
+  "source_baseline": "b41344b4ff79044768b060ee614806bd334a2cb3",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 1,
+  "verified_source_bytes": 205827,
+  "full_field_view": {
+    "rows": 256,
+    "predictive_cost_values": 10240,
+    "raw_cost_constant": 6147,
+    "view_bytes": 55581,
+    "view_sha256": "ff8b45777e880cce5c2e8a2dc70bc7a907398a233e37fd2c8aaf02b0081117b5",
+    "reconstructed_JSON_exact_byte_match": true,
+    "read_chunks": [
+      "000-063",
+      "064-127",
+      "128-191",
+      "192-255"
+    ]
+  },
+  "training_exposure_order_matches_literal_corpus_TRAIN": true,
+  "audit_input_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/pre-run.json",
+      "declared_bytes": 716,
+      "declared_sha256": "4f33ca9e7368037019f4cb4dc1031beb5375e9dd07ac30387e78440d58afda24",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/model-freeze.json",
+      "declared_bytes": 368,
+      "declared_sha256": "0cd89b68bb518591ff7db012ce10adee81c0f251b131f56e0dd735ea380e5266",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/learned.json",
+      "declared_bytes": 677,
+      "declared_sha256": "6b3044efde002522f970c7f09f6f2204ad93fb21eb89e187ab4fb6f9338652f8",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/training-costs.json",
+      "declared_bytes": 205827,
+      "declared_sha256": "0cfe8e344975eb508d0e7dcc3f1be04beb285f8cf2ec1b47f28d94ed3b9884ca",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/overlap.json",
+      "declared_bytes": 266,
+      "declared_sha256": "23eb17161e607786fd3c71cac442cfbe66582867e256288feb8e81415b678108",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/checks.json",
+      "declared_bytes": 13748,
+      "declared_sha256": "3c229b2223572db04b3e7aab30126c4139f7f3bec41993fcb7de5f8c29ae3134",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/RESULTS.json",
+      "declared_bytes": 17237,
+      "declared_sha256": "e9dc55450019ccfffeb76e318efdd1b6e09e19a5cd7e75ac7b88e179c160884a",
+      "payload_acquired": true,
+      "matched": true
+    }
+  ],
+  "all_seven_audit_input_payloads_bound": true,
+  "model_freeze_cost_digest_matches": true,
+  "observed_predictive_cost_min": 1799,
+  "observed_predictive_cost_max": 6670,
+  "saved_value_replay": {
+    "method": "fresh set-objective totals from full matrix, including one byte per dictionary entry; minimum total then ascending coefficient",
+    "coefficients": [
+      10,
+      5,
+      8,
+      7
+    ],
+    "events": [
+      {
+        "coefficient": 10,
+        "net_training_bytes_saved": 8980,
+        "ties": [
+          10
+        ]
+      },
+      {
+        "coefficient": 5,
+        "net_training_bytes_saved": 1781,
+        "ties": [
+          5
+        ]
+      },
+      {
+        "coefficient": 8,
+        "net_training_bytes_saved": 518,
+        "ties": [
+          8
+        ]
+      },
+      {
+        "coefficient": 7,
+        "net_training_bytes_saved": 70,
+        "ties": [
+          7
+        ]
+      }
+    ],
+    "candidate_rankings": [
+      {
+        "slot": 1,
+        "candidates": [
+          {
+            "coefficient": 10,
+            "total_bytes": 545283
+          },
+          {
+            "coefficient": 8,
+            "total_bytes": 545540
+          },
+          {
+            "coefficient": 9,
+            "total_bytes": 546436
+          },
+          {
+            "coefficient": 7,
+            "total_bytes": 546739
+          },
+          {
+            "coefficient": 6,
+            "total_bytes": 547795
+          },
+          {
+            "coefficient": 5,
+            "total_bytes": 548699
+          },
+          {
+            "coefficient": 4,
+            "total_bytes": 550127
+          },
+          {
+            "coefficient": 3,
+            "total_bytes": 551375
+          },
+          {
+            "coefficient": 11,
+            "total_bytes": 552507
+          },
+          {
+            "coefficient": 2,
+            "total_bytes": 552551
+          },
+          {
+            "coefficient": 1,
+            "total_bytes": 553683
+          },
+          {
+            "coefficient": -12,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -11,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -10,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -9,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -8,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -7,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -6,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -5,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -4,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -3,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -2,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": -1,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 13,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 14,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 15,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 16,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 17,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 18,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 19,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 20,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 21,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 22,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 23,
+            "total_bytes": 554264
+          },
+          {
+            "coefficient": 24,
+            "total_bytes": 554264
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "candidates": [
+          {
+            "coefficient": 5,
+            "total_bytes": 543502
+          },
+          {
+            "coefficient": 7,
+            "total_bytes": 543515
+          },
+          {
+            "coefficient": 6,
+            "total_bytes": 543526
+          },
+          {
+            "coefficient": 8,
+            "total_bytes": 543563
+          },
+          {
+            "coefficient": 4,
+            "total_bytes": 543986
+          },
+          {
+            "coefficient": 3,
+            "total_bytes": 544461
+          },
+          {
+            "coefficient": 9,
+            "total_bytes": 544794
+          },
+          {
+            "coefficient": 2,
+            "total_bytes": 544857
+          },
+          {
+            "coefficient": 1,
+            "total_bytes": 545110
+          },
+          {
+            "coefficient": 11,
+            "total_bytes": 545254
+          },
+          {
+            "coefficient": -12,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -11,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -10,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -9,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -8,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -7,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -6,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -5,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -4,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -3,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -2,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": -1,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 13,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 14,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 15,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 16,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 17,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 18,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 19,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 20,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 21,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 22,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 23,
+            "total_bytes": 545284
+          },
+          {
+            "coefficient": 24,
+            "total_bytes": 545284
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "candidates": [
+          {
+            "coefficient": 8,
+            "total_bytes": 542984
+          },
+          {
+            "coefficient": 7,
+            "total_bytes": 543147
+          },
+          {
+            "coefficient": 6,
+            "total_bytes": 543319
+          },
+          {
+            "coefficient": 9,
+            "total_bytes": 543404
+          },
+          {
+            "coefficient": 3,
+            "total_bytes": 543452
+          },
+          {
+            "coefficient": 2,
+            "total_bytes": 543457
+          },
+          {
+            "coefficient": 11,
+            "total_bytes": 543473
+          },
+          {
+            "coefficient": 1,
+            "total_bytes": 543480
+          },
+          {
+            "coefficient": 4,
+            "total_bytes": 543487
+          },
+          {
+            "coefficient": -12,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -11,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -10,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -9,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -8,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -7,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -6,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -5,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -4,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -3,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -2,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": -1,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 13,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 14,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 15,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 16,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 17,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 18,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 19,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 20,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 21,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 22,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 23,
+            "total_bytes": 543503
+          },
+          {
+            "coefficient": 24,
+            "total_bytes": 543503
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "candidates": [
+          {
+            "coefficient": 7,
+            "total_bytes": 542914
+          },
+          {
+            "coefficient": 6,
+            "total_bytes": 542915
+          },
+          {
+            "coefficient": 3,
+            "total_bytes": 542934
+          },
+          {
+            "coefficient": 2,
+            "total_bytes": 542939
+          },
+          {
+            "coefficient": 11,
+            "total_bytes": 542955
+          },
+          {
+            "coefficient": 1,
+            "total_bytes": 542962
+          },
+          {
+            "coefficient": 4,
+            "total_bytes": 542969
+          },
+          {
+            "coefficient": 9,
+            "total_bytes": 542983
+          },
+          {
+            "coefficient": -12,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -11,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -10,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -9,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -8,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -7,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -6,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -5,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -4,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -3,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -2,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": -1,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 13,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 14,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 15,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 16,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 17,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 18,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 19,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 20,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 21,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 22,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 23,
+            "total_bytes": 542985
+          },
+          {
+            "coefficient": 24,
+            "total_bytes": 542985
+          }
+        ]
+      }
+    ],
+    "baseline_block_bytes": 554263,
+    "chosen_block_bytes": 542910,
+    "dictionary_bytes": 4,
+    "total_after_dictionary": 542914,
+    "net_training_bytes_saved": 11349,
+    "maximum_slots": 4,
+    "stopped_at_slot_budget": true,
+    "matches_recorded_learner_and_audit": true
+  },
+  "saved_native_call_arithmetic": {
+    "rows": 256,
+    "candidates_per_row": 40,
+    "reported_calls": 10240,
+    "samples_per_block": 4096,
+    "reported_sample_evaluations": 41943040,
+    "unique_training_sample_positions": 1048576
+  },
+  "waveform_costs_recomputed": false,
+  "global_optimum_claimed": false,
+  "upstream_code_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All rows inspected through a field-preserving view with exact original JSON byte roundtrip; raw JSON layout was not read verbatim.",
+    "Separate greedy replay uses saved costs, without regenerating waveform costs or executing upstream code.",
+    "Agreement with a saved learner is not independent data provenance or proof of global dictionary optimality.",
+    "No native program, signal decoder, audit script or new model invocation ran."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_pr13_saved_results.py",
+      "bytes": 24661
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/independent-full-accounting-audit-v1.json",
+      "bytes": 19297
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "bytes": 2048
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/effective-before-exec.json",
+      "bytes": 228
+    }
+  ],
+  "next_scope_bytes": 46234,
+  "public_contribution_checks": [
+    "JSON parsing, coverage and input-binding arithmetic passed",
+    "saved-value decision events and all candidate totals checked",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

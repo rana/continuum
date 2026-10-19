@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-learning-audit.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/training-costs.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/training-costs.json",
+      "bytes": 205827,
+      "git_blob_sha": "d946f9549965b419b127513a6df197fe0e9848fd",
+      "sha256": "0cfe8e344975eb508d0e7dcc3f1be04beb285f8cf2ec1b47f28d94ed3b9884ca",
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-training-costs",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "complete_field_preserving_table_view_read_in_four_contiguous_64_row_chunks; exact_original_JSON_byte_roundtrip; separate_set_objective_calculation",
+        "rows": 256,
+        "predictive_cost_values": 10240,
+        "raw_cost_constant": 6147
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 205827
+    },
+    "cumulative_direct_read": {
+      "paths": 302,
+      "unique_blobs": 302,
+      "bytes": 2171222
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 353,
+    "remaining_paths_without_full_semantic_read_or_alias": 5240,
+    "remaining_distinct_blobs_without_full_semantic_read": 4127,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 205827,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All rows inspected through a field-preserving view with exact original JSON byte roundtrip; raw JSON layout was not read verbatim.",
+    "Separate greedy replay uses saved costs, without regenerating waveform costs or executing upstream code.",
+    "Agreement with a saved learner is not independent data provenance or proof of global dictionary optimality.",
+    "No native program, signal decoder, audit script or new model invocation ran."
+  ],
+  "review_report": "base12-training-costs.md"
+}

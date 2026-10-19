@@ -63,6 +63,8 @@ jobs:
           python3 research/runs/checkpoint-backup-use/run.py --binary target/debug/continuum --checkpoint "$RUNNER_TEMP/source-bound-verification/checkpoint" --output "$RUNNER_TEMP/checkpoint-backup-use"
       - name: Verify read-reservation baseline evidence
         run: python3 research/runs/read-writer-reservation/verify_records.py
+      - name: Check bounded map metadata reader with synthetic records
+        run: python3 -m unittest discover -s research/runs/base12-builder-map-metadata -p 'test_*.py' -v
       - name: Check read-only snapshot availability
         run: |
           python3 research/runs/read-only-store/verify_records.py

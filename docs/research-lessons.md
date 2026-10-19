@@ -321,6 +321,8 @@ The [complete capacity layouts](source-review/base12-builder-capacity-layouts.md
 
 The [expected-layout corpus closeout](source-review/base12-builder-layout-corpus-closeout.md) closes a static chain from complete source through position records, address conversion, named patches and supplied encoding fields. Keep each representation layer explicit: agreement among authored expectations makes later artifact checks precise, while native artifact custody and observed execution remain separate requirements.
 
+The [exact binary metadata maps](source-review/base12-builder-map-metadata.md) distinguish a predicted digest from acquired expected bytes, a structural field check and an observed native output. Retain the identities absent from the representation: a map cannot establish label names, code content or invocation acceptance. Reproducible bounded decoding closes one layer without silently closing the others.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

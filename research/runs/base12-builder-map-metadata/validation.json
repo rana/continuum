@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "source_baseline": "92742c5f4196cb48d387d3ce590e6653f73f6f56",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 3,
+  "verified_source_bytes": 7808,
+  "full_binary_metadata_paths_read": 3,
+  "new_semantic_files": 3,
+  "new_semantic_bytes": 7808,
+  "total_map_records": 241,
+  "all_fields_decode_roundtrip_and_match_held_layout": true,
+  "case_checks": [
+    {
+      "case": "02",
+      "map_bytes": 7200,
+      "header_version": 1,
+      "map_rows": 224,
+      "code_bytes": 538,
+      "instruction_rows": 209,
+      "label_rows": 15,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "03",
+      "map_bytes": 192,
+      "header_version": 1,
+      "map_rows": 5,
+      "code_bytes": 24,
+      "instruction_rows": 4,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "04",
+      "map_bytes": 416,
+      "header_version": 1,
+      "map_rows": 12,
+      "code_bytes": 58,
+      "instruction_rows": 9,
+      "label_rows": 3,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    }
+  ],
+  "new_identical_blob_alias_paths": [
+    "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/correctness-preparation-01/fixtures/expected/C01.map",
+    "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/correctness-result-01/raw/cases/C01/output/result.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.map",
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.map",
+    "research/owned-stack/2026-10-17/native-builder-decoder-word32-correctness-prep-01/fixtures/P04.map",
+    "research/owned-stack/2026-10-17/native-builder-decoder-word32-correctness-result-01/raw/cases/P04/output/result.map"
+  ],
+  "reader": "map_metadata.py",
+  "reader_synthetic_test_methods": 8,
+  "reader_test_command": "python3 -m unittest discover -s research/runs/base12-builder-map-metadata -p 'test_*.py' -v",
+  "hosted_tests_use_only_synthetic_public_records": true,
+  "private_source_or_map_payloads_in_publication": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three complete binary metadata files/7808 bytes acquired and read; every header and241 record fields decoded with exact roundtrip and held-layout agreement.",
+    "Original bounded public reader validates frozen byte/row/instruction/label/span bounds and little-endian structure; eight synthetic test methods exercise valid endpoints and malformed records.",
+    "The reader does not validate label names, instruction bytes, ELF identity, source-file content, publication status or an actual invocation; these are absent from map data.",
+    "This is custody of expected map metadata, not observation of a fresh native output or reacquisition of private raw execution maps.",
+    "Identical blob aliases gain content-reading credit while runtime/result contexts remain separate.",
+    "No native ELF/code artifact acquisition,upstream import/materializer execution,native emission/execution,model invocation,live scan,activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.map",
+      "bytes": 4160,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.map",
+      "bytes": 128,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.map",
+      "bytes": 96,
+      "intended_review": "complete_small_binary_map_metadata_and_distinguish_repeated_map_shape_from_code_identity_without_native_execution"
+    }
+  ],
+  "next_scope_bytes": 5248,
+  "public_contribution_checks": [
+    "three acquired maps decode all241 records and round-trip exactly",
+    "every field joins held layouts, manifests and saved metadata",
+    "eight synthetic test methods pass; hosted CI uses no private payload",
+    "expected metadata custody, alias contexts, coverage, links, privacy and git diff --check passed"
+  ]
+}

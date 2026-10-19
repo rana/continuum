@@ -1,0 +1,35 @@
+{
+  "source_baseline": "92742c5f4196cb48d387d3ce590e6653f73f6f56",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-map-metadata.md",
+      "bytes": 5349,
+      "sha256": "b706a7d29bdbc2e49c34d852fd5570046e04e9e3bdd96f09592f61861e901c3a"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-map-metadata.json",
+      "bytes": 4485,
+      "sha256": "5a64dd14617fa619e38de1125543eed9c8d091421b5a350fcc8fd40cd7f77f18"
+    },
+    {
+      "path": "research/runs/base12-builder-map-metadata/validation.json",
+      "bytes": 8176,
+      "sha256": "919eea8572f8e57348632ad01a453491bcddf93bc1d8ee854d9a31d0fb5dd640"
+    },
+    {
+      "path": "research/runs/base12-builder-map-metadata/map_metadata.py",
+      "bytes": 2547,
+      "sha256": "dc4c7fecb047170fdc37e26a34fed6d0a534e6fb190a8bfb5491a1882b6db9d7"
+    },
+    {
+      "path": "research/runs/base12-builder-map-metadata/test_map_metadata.py",
+      "bytes": 3156,
+      "sha256": "f6a61917649e7dd6ec5d0ac42f550ac3dfc3b186becf657f3da383ed768f635c"
+    },
+    {
+      "path": ".github/workflows/rust.yml",
+      "bytes": 4217,
+      "sha256": "953796bd0553a6fc0d5400c4cf9da8e90b9cf0b3cfc67efcce9e66ebc8904f63"
+    }
+  ]
+}

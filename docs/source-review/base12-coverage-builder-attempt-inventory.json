@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-saved-case-records.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_ATTEMPT_MANIFEST.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_ATTEMPT_MANIFEST.json",
+      "bytes": 99153,
+      "git_blob_sha": "bb010399a7847fb248b79ba9552d37968406d262",
+      "sha256": "9e372164f839a723ea75798447ea52751db25d8a7de37c33e01541afb67ef704",
+      "lines": 3617,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-saved-attempt-inventory",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 99153
+    },
+    "cumulative_direct_read": {
+      "paths": 528,
+      "unique_blobs": 528,
+      "bytes": 4389202
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 605,
+    "remaining_paths_without_full_semantic_read_or_alias": 4988,
+    "remaining_distinct_blobs_without_full_semantic_read": 3901,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 99153,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All495 regular-file records,135 directory paths,one symlink and213 distinct digest values fully read; exact JSON roundtrip passed.",
+    "Complete expected-path-set join compares saved metadata, not the actual private filesystem.",
+    "Directory records contain paths only; this inventory cannot independently establish directory modes or freshness.",
+    "492 regular-file modes are0600; only candidate and two tiny copies declare0700. Modes do not prove execution.",
+    "All seven execution-directory texts are fully read; raw traces, invocation/observation files, receipts and native payloads remain unacquired.",
+    "Packet reading closure is scoped to seven repository texts, not whole builder lane, raw-evidence custody, batch acceptance or whole repository.",
+    "No upstream execution/import, live scan, new model invocation or acceptance occurred."
+  ],
+  "review_report": "base12-builder-attempt-inventory.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

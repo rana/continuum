@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2006f3bbf9c1b2a650dc6d2fd29a6fc8da4a5074",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 99153,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 99153,
+  "complete_json_roundtrip_exact": true,
+  "inventory_regular_files": 495,
+  "inventory_regular_bytes": 531729,
+  "inventory_directories": 135,
+  "inventory_symlinks": 1,
+  "distinct_regular_file_digest_declarations": 213,
+  "complete_path_partition": {
+    "root_receipts": 21,
+    "candidate": 1,
+    "streams": 132,
+    "invocations": 66,
+    "observations": 66,
+    "verdicts": 66,
+    "sources": 62,
+    "outputs": 59,
+    "tiny_programs": 2,
+    "traces": 10,
+    "injection_proofs": 10
+  },
+  "all_case_output_source_and_observation_metadata_joins": true,
+  "all_ten_trace_and_proof_digest_joins": true,
+  "all_21_root_receipt_metadata_joins": true,
+  "exact_directory_and_symlink_topology": true,
+  "regular_mode_counts": {
+    "0600": 492,
+    "0700": 3
+  },
+  "held_derived_copy_provenance_bindings": 3,
+  "execution_packet_full_text_paths": 7,
+  "execution_packet_full_text_bytes": 173906,
+  "raw_private_evidence_acquired": false,
+  "new_execution_or_live_scan": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All495 regular-file records,135 directory paths,one symlink and213 distinct digest values fully read; exact JSON roundtrip passed.",
+    "Complete expected-path-set join compares saved metadata, not the actual private filesystem.",
+    "Directory records contain paths only; this inventory cannot independently establish directory modes or freshness.",
+    "492 regular-file modes are0600; only candidate and two tiny copies declare0700. Modes do not prove execution.",
+    "All seven execution-directory texts are fully read; raw traces, invocation/observation files, receipts and native payloads remain unacquired.",
+    "Packet reading closure is scoped to seven repository texts, not whole builder lane, raw-evidence custody, batch acceptance or whole repository.",
+    "No upstream execution/import, live scan, new model invocation or acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.layout.json",
+      "bytes": 53163,
+      "intended_review": "complete_static_builder_layout_without_execution"
+    }
+  ],
+  "next_scope_bytes": 53163,
+  "public_contribution_checks": [
+    "pinned inventory and exact complete JSON roundtrip passed",
+    "complete 495-path partition and all source/output/observation/invocation metadata joins passed",
+    "ten trace/proof and21 root receipt joins passed",
+    "exact directory/symlink topology and regular modes passed",
+    "three derived-copy bindings and seven-text packet closure passed",
+    "coverage, links, private identifier exclusion and git diff --check passed"
+  ]
+}

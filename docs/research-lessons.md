@@ -263,6 +263,8 @@ The [B1 inspection closeout](source-review/base12-decoder-b1-inspection-closeout
 
 The [builder source return](source-review/base12-builder-source-boundary.md) traces literal summary limits to actual source guards and preserves the output contract: parse/resolve before reservation, but no atomic ELF/map pair after reservation. File presence is not completion; a full-looking pair still needs the success observation. Native runtime, native construction and consumer behavior also remain separate claims.
 
+The [builder static-review return](source-review/base12-builder-static-review.md) preserves a concrete argv defect missed by structural inspection and found through source review. Correct bytes, boundaries and patches do not establish intended argument semantics. Hand-derived expectations, internal saved-layout consistency and later execution should remain separate evidence classes, with deliberately redundant guards identified honestly.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

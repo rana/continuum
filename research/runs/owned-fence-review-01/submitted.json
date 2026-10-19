@@ -1,0 +1,7 @@
+{
+  "started_at": "2026-10-19T16:47:57.158738+00:00",
+  "request_sha256": "933e597de2f477d6c925760dd85015e95bde998b4cadabdd51cdc68104904293",
+  "state": "may_be_submitted",
+  "authorized_attempts": 1,
+  "policy": "no automatic retry on unknown outcome"
+}

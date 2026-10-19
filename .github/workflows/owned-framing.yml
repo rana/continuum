@@ -5,6 +5,7 @@ on:
       - 'research/owned-authority/**'
       - 'research/runs/owned-successor-01/**'
       - 'research/runs/owned-journal-review-01/**'
+      - 'research/runs/owned-fence-review-01/**'
       - 'src/**'
       - 'Cargo.toml'
       - 'Cargo.lock'
@@ -14,6 +15,7 @@ on:
       - 'research/owned-authority/**'
       - 'research/runs/owned-successor-01/**'
       - 'research/runs/owned-journal-review-01/**'
+      - 'research/runs/owned-fence-review-01/**'
       - 'src/**'
       - 'Cargo.toml'
       - 'Cargo.lock'
@@ -42,6 +44,7 @@ jobs:
       - run: python3 ../../runs/owned-successor-01/verify.py --binary target/debug/owned-store
       - run: python3 ../prewrite-fence/check.py --binary target/debug/owned-store
       - run: python3 ../../runs/owned-journal-review-01/verify.py
+      - run: python3 ../../runs/owned-fence-review-01/verify.py
       - name: Check finite semantic oracle against the SQLite reference
         run: |
           cargo build --manifest-path ../../../Cargo.toml --locked

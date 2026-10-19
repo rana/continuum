@@ -1,0 +1,17 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Bedrock exhausted the output token allowance before producing a visible answer. No automatic retry was attempted."
+    }
+  ],
+  "structuredContent": {
+    "status": "ERROR",
+    "error_category": "output_budget_exhausted",
+    "inference_outcome": "unknown",
+    "upstream_http_status": 200,
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "isError": true
+}
+

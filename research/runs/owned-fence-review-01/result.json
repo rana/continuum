@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-19T16:50:08.890311+00:00",
+  "attempts": 1,
+  "status": "ERROR",
+  "error_category": "output_budget_exhausted",
+  "inference_outcome": "unknown",
+  "upstream_http_status": 200,
+  "error_code": "INVALID_ARGUMENT",
+  "visible_answer_received": false,
+  "actual_model": null,
+  "usage": null,
+  "retry_attempted": false,
+  "protocol_changed_in_response": false,
+  "scope": "Exact source exposure and controlled provider error only; no review conclusion, execution finding or independent confirmation."
+}

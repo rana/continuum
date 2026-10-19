@@ -4,6 +4,10 @@ This directory records what was actually inspected while designing Continuum. It
 
 The architecture lessons are in [research-lessons.md](../research-lessons.md). The [initial Base12 ledger](base12-coverage.json) preserves the original 88-file checkpoint; the [extended cumulative ledger](base12-coverage-extended.json) records 161 directly read distinct blobs. They contain aggregate coverage, reviewed source paths, content identities, byte counts, and review status. The complete private-tree inventory is retained separately; it is not needed in the public implementation.
 
+## Latest additive checkpoint
+
+The [decision-gate review](base12-decision-gate.md) fully reads ten additional distinct files / 30,638 bytes and checks nine internal manifest bindings without executing upstream code. Cumulative semantic coverage is now **171 distinct blobs / 1,257,072 bytes**, plus **47 byte-identical alias paths**. The [new ledger](base12-coverage-decision-gate.json) retains exact identities and the remaining **5,375 paths / 4,258 distinct blobs**. Its source-derived path-reopen custody limitation is conditional, not an observed archive failure. The earlier global acquisition aggregate is retained as historical because its full private overlap index was not recovered.
+
 ## Later completed review groups
 
 The [rounded-operation and native-launch follow-up](base12-followup.md) adds 47 new semantic readings; the [immediate native research-loop review](base12-research-loop.md) adds 26. Together with the initial 88, this gives 161 distinct fully read blobs, totaling 1,226,434 bytes. Another 46 paths contain byte-identical content. Exact local acquisition now covers 539 paths, 530 distinct blobs, and 4,536,603 bytes across paths. These cumulative counts were reconciled against the pinned tree and local byte identities.

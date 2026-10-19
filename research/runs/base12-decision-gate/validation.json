@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "source_baseline": "176c6033bb03a36a42f9b8374dee21c6771ef55f",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; raw decoded bytes checked using Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 10,
+  "verified_source_bytes": 30638,
+  "utf8_decoded": 10,
+  "python_ast_parsed_without_import": 2,
+  "json_parsed": 3,
+  "markdown_full_text_read": 5,
+  "manifest_bindings": [
+    {
+      "path": "DECISION_BOUNDARY.md",
+      "bytes": 4376,
+      "sha256": "ed4c25a0760798be7d44149ff3e7373b2aa5a015b7627ad80c1af2aa81891862",
+      "matched": true
+    },
+    {
+      "path": "DOT_REQUEST.md",
+      "bytes": 2951,
+      "sha256": "599cbdfcac6e712ebcf98fb52bfc7ad09b094d560d0198426e79db4fcf14b02f",
+      "matched": true
+    },
+    {
+      "path": "NEXT_DECISION.md",
+      "bytes": 4884,
+      "sha256": "8c7524cb50dbd8c02b4474b5fa2315ee88050c261e3ab3db10eac116880e8610",
+      "matched": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 4059,
+      "sha256": "f4d963cccb6b40567c24329437ee7fb8016a97b8b1c4df49a8f935fadf519b26",
+      "matched": true
+    },
+    {
+      "path": "REVIEW_AND_ALIGNMENT.md",
+      "bytes": 4431,
+      "sha256": "bf933c136824c15835dac9219da49cc42bb7dceb2d119626affba257c602026d",
+      "matched": true
+    },
+    {
+      "path": "archive-integrity.json",
+      "bytes": 776,
+      "sha256": "f0c67a06a1dc33cfbcb4ea4fccd91d91336618d206b4c64a8b3c25c164db6c5d",
+      "matched": true
+    },
+    {
+      "path": "check_witness.py",
+      "bytes": 3765,
+      "sha256": "f16e2eac5b549db222d9f6d179e831a18efb6c02bd404a1a3100b6122c0d7b47",
+      "matched": true
+    },
+    {
+      "path": "verify_archive.py",
+      "bytes": 2805,
+      "sha256": "5b29692c44d83062e5782639f332cb5a7e017cd8c0d073ec443e7dada4e4bc64",
+      "matched": true
+    },
+    {
+      "path": "witness-result.json",
+      "bytes": 1416,
+      "sha256": "95869bb35a4314bebc8a86283cc1a07937afc524440157ec7c5e8714226b170e",
+      "matched": true
+    }
+  ],
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false
+}

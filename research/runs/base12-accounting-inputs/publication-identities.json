@@ -1,0 +1,20 @@
+{
+  "source_baseline": "2fdf6ef74bdffbd4452dd9591204286c48c0dc92",
+  "files": [
+    {
+      "path": "docs/source-review/base12-accounting-inputs.md",
+      "bytes": 6425,
+      "sha256": "043f81324c295071719c1ee10245178db69dc0b1d5cedd35e2aeced3a10cf0e9"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-accounting-inputs.json",
+      "bytes": 6590,
+      "sha256": "de19cff21638063a825ed93c40f0d69752b9bc65a57406f1fd9143e658826009"
+    },
+    {
+      "path": "research/runs/base12-accounting-inputs/validation.json",
+      "bytes": 22653,
+      "sha256": "38ccbbfecff928f0d4e0bb766fdf4be3a19d9d1ac58bd3387cce00882b578c3d"
+    }
+  ]
+}

@@ -247,6 +247,8 @@ The [Gate-A producer return](source-review/base12-gate-a-producer.md) reconstruc
 
 The [Gate-A artifact-records return](source-review/base12-gate-a-artifact-records.md) separates six exact dependency bindings and complete layout arithmetic from retained inspector/readelf declarations. Earlier NOT EXECUTED metadata and later execution receipts describe different stages; a continuation should preserve their chronology rather than overwrite one with a global status. Executable custody remains a separate gap.
 
+The [Gate-A decoder-review return](source-review/base12-gate-a-decoder-review.md) shows why approval must retain exact reviewed identities and conditions. An unchanged decoder can keep a static recommendation while revised launch controls require separate acceptance. Historical parent byte verification also remains distinct from this session’s missing executable custody; current access limits should not be projected backward onto a different reviewer.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

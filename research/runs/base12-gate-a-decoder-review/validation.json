@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "source_baseline": "9d919edfc5e3dd38b3563f80b570afc1430ce346",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 4,
+  "verified_source_bytes": 29617,
+  "full_text_paths_read": 4,
+  "new_semantic_files": 4,
+  "new_semantic_bytes": 29617,
+  "all_seven_held_request_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/emit.py",
+      "bytes": 25043,
+      "sha256": "91c3b77bce952eca137509aa4ee9029ed96df42c27065c5b7e28fa487156a253",
+      "digest_present_in_request": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures.py",
+      "bytes": 8771,
+      "sha256": "2644ad68295ea294c26ea422f265c596444a352cd3c291e031f0b1ab1b2b040a",
+      "digest_present_in_request": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures-manifest.json",
+      "bytes": 27851,
+      "sha256": "53fb3d3b7d6ed435febaaec481a297304408ef1348eb4851e8310d92165c7ccb",
+      "digest_present_in_request": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "bytes": 6241,
+      "sha256": "1ca8e5d8c618e444fd5873112786eaecf35b6788d2189c3ec7772a686360acd6",
+      "digest_present_in_request": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "bytes": 6051,
+      "sha256": "7a0ea68a9343b96171a658f842de86b597b3acb4b5bb7fdd99136a2b5e876b6d",
+      "digest_present_in_request": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/FREEZE.sha256",
+      "bytes": 1830,
+      "sha256": "a6b562eba1c1591f2930cddddc56c8696cad5ab1176f74e8a35123fe4ba687d6",
+      "digest_present_in_request": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "digest_present_in_request": true
+    }
+  ],
+  "reconstructed_TSV_digest_present_in_request": true,
+  "unheld_ELF_digest_present_in_request_and_reviews": true,
+  "three_superseded_control_identities": [
+    {
+      "item": "run-cases.sh",
+      "older_sha256": "5c45a115b46b6d255731a65a5a5daf8ed768d57beddd43f80404786e248e535e",
+      "current_sha256": "1ca8e5d8c618e444fd5873112786eaecf35b6788d2189c3ec7772a686360acd6"
+    },
+    {
+      "item": "launch-once.sh",
+      "older_sha256": "81885d24517493dd4e36ae8e938cedc0b3b79cd9c4d7f44cbeb8bbcc3f94ab1a",
+      "current_sha256": "7a0ea68a9343b96171a658f842de86b597b3acb4b5bb7fdd99136a2b5e876b6d"
+    },
+    {
+      "item": "FREEZE.sha256",
+      "older_sha256": "66b11be4cc6d89a04e1a6a35335ccaef97aa82dc840ef799dd9013ab24400806",
+      "current_sha256": "a6b562eba1c1591f2930cddddc56c8696cad5ab1176f74e8a35123fe4ba687d6"
+    }
+  ],
+  "delegated_review_older_TERM_KILL_description_distinguished_from_current_direct_KILL": true,
+  "old_conditional_margin_seconds": 18,
+  "current_conditional_margin_seconds": 20,
+  "both_margins_OS_scheduling_dependent": true,
+  "parent_static_counts_and_source_artifact_declarations_match": true,
+  "parent_static_program_headers_match_source_and_layout": true,
+  "parent_review_reports_historical_actual_byte_and_disassembly_verification": true,
+  "current_ELF_or_disassembly_payload_acquired": false,
+  "parent_decoder_recommendation_is_not_execution_authorization": true,
+  "positive_short_IO_dynamic_coverage_claimed": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Four full texts read: delegated review, revised request, parent decoder review and saved static-verification JSON.",
+    "Seven held request payloads bind; TSV is independently reconstructed and ELF remains a declaration without current payload custody.",
+    "Delegated review names three superseded control/freeze hashes and a different timeout escalation; no approval transfer across those identities.",
+    "Parent review reports historical actual-byte Library verification and independent disassembly; this is retained reviewer evidence, not new artifact acquisition or tool execution.",
+    "Decoder static recommendation explicitly defers launcher/budget/oracle/retained-data clearance; no new authorization or recipient acceptance is inferred.",
+    "Positive short IO remains static-only; finite tests are not exhaustive proof; prior reviewer qualifications are attributed rather than newly discovered.",
+    "No upstream execution, new model invocation or private raw source/operational identifier/executable publication occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/ENVELOPE_REVIEW.md",
+      "bytes": 8962,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/ENVELOPE_REVISION.md",
+      "bytes": 3970,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/envelope-static-check.json",
+      "bytes": 1290,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/envelope-review-original.md",
+      "bytes": 12242,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/envelope-review-revised.md",
+      "bytes": 10677,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 37141,
+  "public_contribution_checks": [
+    "four pinned blob identities and complete text/JSON reading passed",
+    "seven held request payload digests and reconstructed TSV declaration bind",
+    "three superseded control identities distinguished from revised request",
+    "parent static counts and all program headers match held metadata",
+    "conditional timeout margin arithmetic and review-scope distinctions checked",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

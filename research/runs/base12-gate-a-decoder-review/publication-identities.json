@@ -1,0 +1,20 @@
+{
+  "source_baseline": "9d919edfc5e3dd38b3563f80b570afc1430ce346",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-decoder-review.md",
+      "bytes": 6316,
+      "sha256": "265c475ef9f73ba932f1190f46a7e05b9fac61c746e58b7b6338385e86ebd520"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-decoder-review.json",
+      "bytes": 4749,
+      "sha256": "71f1f8e535f26596a5170c7cd0c728e030efbdc8495783c1b0284a6b2ca5fc2a"
+    },
+    {
+      "path": "research/runs/base12-gate-a-decoder-review/validation.json",
+      "bytes": 6352,
+      "sha256": "2ff6745909cc3bd893b70c1ac6ed42244bcae0e753ee4d10f166a02fac7d3f2b"
+    }
+  ]
+}

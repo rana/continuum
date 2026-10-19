@@ -307,6 +307,8 @@ The [builder artifact-text closeout](source-review/base12-builder-artifact-text-
 
 The [exact grammar-boundary inputs](source-review/base12-builder-grammar-inputs.md) include invalid UTF-8, NUL/CR/control bytes, an accepted adjacent comment and an accepted missing final LF. Decoding with replacement or normalizing input can erase the condition a fixture tests. Preserve raw-byte identity and transformation scope; count LF bytes separately from physical lines, and classify an empty source mechanically without manufacturing semantic-reading credit.
 
+The [exact numeric endpoints](source-review/base12-builder-numeric-inputs.md) preserve two distinctions that a value-only check erases: a rejected plus-prefixed immediate and a rejected negative-zero shift. Keep source spelling where grammar depends on sign/prefix, rather than retaining only a normalized integer. Seven different code expectations also share three structural map digests; map identity needs its separate source/code association.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

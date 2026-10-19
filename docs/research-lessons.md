@@ -223,6 +223,8 @@ The [packet-custody return](source-review/base12-packet-custody.md) binds a reta
 
 The [transport-controls return](source-review/base12-transport-controls.md) distinguishes response-body allowance from EOF, synced request intent from a sent request, and per-file installation from batch/receipt success. A later failure may coexist with visible published bytes. Continuum should preserve those partial-effect states and reconcile them before retries. Twenty-six saved fixture names and five gate identities bind; no fixture, transport or historical run was repeated.
 
+The [transport-recovery return](source-review/base12-transport-recovery.md) reconciles all 36 file states and 72 journal events while separating append order, worker timestamps and socket effects. Operation timeout, file deadline and inner/outer elapsed boundaries answer different questions. Continuum should retain those boundaries and avoid inferring global exactly-once behavior or a bottleneck from one consistent successful record. No transfer was replayed.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

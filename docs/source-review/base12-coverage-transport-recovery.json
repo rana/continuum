@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-transport-controls.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/attempts.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/receipt.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/receipt.json",
+      "bytes": 29202,
+      "git_blob_sha": "a6352c10ac6617a7f2d1c6d52bff9346e380922c",
+      "sha256": "d6fc63d42504d001ef634d7dca33a06a5bc8669b162ce57f24fad24c5fa80119",
+      "lines": 820,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-recovery-rows-and-terminal-controls",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete field-preserving receipt/journal view with exact original byte reconstruction; direct full envelope JSON reading"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/attempts.jsonl",
+      "bytes": 39217,
+      "git_blob_sha": "4c338934d9b593e5125636217c5cb3eb9132b139",
+      "sha256": "15c9f883511d1a8632535d98521d2b5b5b33514aefd2bfc352ac55ab0579cb8e",
+      "lines": 72,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-recovery-rows-and-terminal-controls",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete field-preserving receipt/journal view with exact original byte reconstruction; direct full envelope JSON reading"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/invocation.json",
+      "bytes": 1158,
+      "git_blob_sha": "b38dd2707d5c4efc522c6121d32c641c93eecfc5",
+      "sha256": "43963bbae0b32b0190bd6933910c1a588897da3cf69fb935b5d9ed4d0f6dffb4",
+      "lines": 34,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-recovery-rows-and-terminal-controls",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete field-preserving receipt/journal view with exact original byte reconstruction; direct full envelope JSON reading"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/effective-before-exec.json",
+      "bytes": 238,
+      "git_blob_sha": "c5feeb6bc772586b7c564e0ccae5628247de86de",
+      "sha256": "dedad667b812ad6af0174ea64d8786ee4566e448dce884b694bd221c491703c6",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-recovery-rows-and-terminal-controls",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete field-preserving receipt/journal view with exact original byte reconstruction; direct full envelope JSON reading"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/receipt.json",
+      "bytes": 2013,
+      "git_blob_sha": "8f975b229db58f4325e1238d5706d794d8bcb0e2",
+      "sha256": "903179e7ee337f2f85642d3f4995e429012972234222c98ebe91df53a444a320",
+      "lines": 62,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-recovery-rows-and-terminal-controls",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete field-preserving receipt/journal view with exact original byte reconstruction; direct full envelope JSON reading"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 71828
+    },
+    "cumulative_direct_read": {
+      "paths": 364,
+      "unique_blobs": 364,
+      "bytes": 2657304
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 416,
+    "remaining_paths_without_full_semantic_read_or_alias": 5177,
+    "remaining_distinct_blobs_without_full_semantic_read": 4065,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 71828,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five texts fully read, using a lossless complete field view for repeated attempt records; no transport replay or signal-byte acquisition.",
+    "Each of 36 files has one requested and one complete row in this retained helper attempt; that is not a host-wide or server-side exactly-once guarantee.",
+    "Recorded journal order and worker intervals do not independently measure HTTP socket activity.",
+    "Body sizes/hashes match later inventory and intake declarations; original data/header bytes were not independently rehashed here.",
+    "Thirty-second operation timeout is distinct from the 300-second cooperative file deadline; no per-operation timing log is retained in this unit.",
+    "Inner-helper and outer-envelope elapsed boundaries differ; their gap is not a measured attribution of one overhead category.",
+    "Terminal resource summaries bind wrapper/control identities, but the 84,236-byte accounting journal remains semantically unread until the next unit.",
+    "Retained successful records do not exercise the source-derived partial-publication failure states, arbitrary faults or crash durability."
+  ],
+  "review_report": "base12-transport-recovery.md"
+}

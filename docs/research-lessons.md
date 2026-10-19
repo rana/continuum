@@ -299,6 +299,8 @@ The [complete saved instruction listing](source-review/base12-builder-instructio
 
 The [complete saved disassembly](source-review/base12-builder-saved-disassembly.md) agrees with every listing row after explicit operand-order, width, sign and mnemonic conversion. A raw-binary `.data` display does not establish ELF permissions. Seven numbered syscall annotations collapse to one decoded opcode mnemonic; retain the preceding register-setting association for number claims. Saved external decoding also remains distinct from a fresh authenticated tool invocation or behavioral independence.
 
+The [complete builder code-revision comparison](source-review/base12-builder-code-revision-comparison.md) upgrades six selected witnesses into an exclusive result over the two complete, identity-bound code spans. The only differences are six equal-width displacement bytes; structural instruction counts, branches and syscall properties remain unchanged despite different argument semantics. Keep the comparison's code boundary explicit when the full container headers/padding remain unexamined.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

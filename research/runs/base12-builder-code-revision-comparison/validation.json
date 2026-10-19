@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "source_baseline": "aaf15d0dd5176532d394d6989c380461f112d479",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 75434,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 75434,
+  "complete_R1_listing_roundtrip_exact": true,
+  "complete_R1_listing_rows_read": 1589,
+  "complete_R2_listing_rows_compared": 1589,
+  "R1_distinct_annotations": 578,
+  "both_listing_byte_identities": [
+    {
+      "revision": "artifact-r1",
+      "code_bytes": 9644,
+      "code_sha256": "b22d3d5f9b9d811baf414ff644b64786b98f948fc27b450edcd00666cc58daed",
+      "code_git_blob_sha": "d69264e25a62b0c3f46ac6bda8533c4121c56dea",
+      "pinned_tree_code_identity_matches": true
+    },
+    {
+      "revision": "artifact-r2",
+      "code_bytes": 9644,
+      "code_sha256": "f1ed3e878d6beaba79c9317147ecace63f8bb2e6e9c2ea811a27fd6be2f6dd96",
+      "code_git_blob_sha": "1914a0c1346316de7439349d4d0b36b68c590b86",
+      "pinned_tree_code_identity_matches": true
+    }
+  ],
+  "both_all_declared_instruction_fields_checked": true,
+  "both_all_479_branch_fields_equal_R2_layout": true,
+  "all_offsets_and_lengths_equal": true,
+  "unchanged_listing_rows": 1583,
+  "changed_listing_rows": [
+    {
+      "instruction_code_offset": 89,
+      "register": "rsi",
+      "old_stack_offset": 8,
+      "new_stack_offset": 16
+    },
+    {
+      "instruction_code_offset": 105,
+      "register": "rsi",
+      "old_stack_offset": 16,
+      "new_stack_offset": 24
+    },
+    {
+      "instruction_code_offset": 121,
+      "register": "rsi",
+      "old_stack_offset": 24,
+      "new_stack_offset": 32
+    },
+    {
+      "instruction_code_offset": 137,
+      "register": "rdx",
+      "old_stack_offset": 16,
+      "new_stack_offset": 24
+    },
+    {
+      "instruction_code_offset": 145,
+      "register": "rdx",
+      "old_stack_offset": 24,
+      "new_stack_offset": 32
+    },
+    {
+      "instruction_code_offset": 160,
+      "register": "rdi",
+      "old_stack_offset": 8,
+      "new_stack_offset": 16
+    }
+  ],
+  "complete_code_byte_differences": [
+    {
+      "code_offset": 92,
+      "file_offset": 4188,
+      "r1": 8,
+      "r2": 16
+    },
+    {
+      "code_offset": 108,
+      "file_offset": 4204,
+      "r1": 16,
+      "r2": 24
+    },
+    {
+      "code_offset": 124,
+      "file_offset": 4220,
+      "r1": 24,
+      "r2": 32
+    },
+    {
+      "code_offset": 140,
+      "file_offset": 4236,
+      "r1": 16,
+      "r2": 24
+    },
+    {
+      "code_offset": 148,
+      "file_offset": 4244,
+      "r1": 24,
+      "r2": 32
+    },
+    {
+      "code_offset": 163,
+      "file_offset": 4259,
+      "r1": 8,
+      "r2": 16
+    }
+  ],
+  "exactly_six_code_bytes_differ": true,
+  "all_six_differences_match_saved_full_ELF_offset_declarations": true,
+  "all_six_R2_bytes_match_correction_witnesses": true,
+  "all_changed_fields_precede_first_syscall": true,
+  "prior_source_AST_comparison_matches_six_expanded_sites": true,
+  "full_ELF_exclusive_difference_newly_verified": false,
+  "binary_artifact_files_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete R1 listing fully read: all1589 rows, bytes and annotations; shared annotation dictionary plus three additional spellings retain a lossless projection.",
+    "Both complete listing byte streams match their respective pinned code-blob identities; neither binary file was acquired or emitted.",
+    "Exactly six bytes differ within the complete9644-byte code spans, one displacement byte in each of six equal-length loads; all1583 other rows are identical.",
+    "Finite declared-family byte checks and all479 branch fields pass for both listings using the same address map; this is not native behavior or a fresh disassembler run.",
+    "The prior six-offset full-ELF declaration agrees at those offsets; unacquired headers/padding prevent promotion to a newly verified exclusive full-ELF difference.",
+    "Source AST evidence, complete code comparison and historical execution/acceptance have different scope; structural equality does not establish correct argument semantics.",
+    "No upstream import, native emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.layout.json",
+      "bytes": 53163,
+      "intended_review": "complete_R1_layout_and_metadata_revision_join_without_execution"
+    }
+  ],
+  "next_scope_bytes": 53163,
+  "public_contribution_checks": [
+    "pinned R1 listing and complete exact text reconstruction passed",
+    "both1589-row listings pass finite field checks and pinned code-identity checks",
+    "complete9644-byte comparison finds exactly six changed displacement bytes",
+    "all479 branches unchanged; six witnesses and prior source relation agree",
+    "code-only exclusivity, coverage, links, privacy and git diff --check passed"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "aaf15d0dd5176532d394d6989c380461f112d479",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-code-revision-comparison.md",
+      "bytes": 5447,
+      "sha256": "6977e0b72388aac291e06360587b7279e8bdf94a434b6b0647edeb577fb0c45f"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-code-revision-comparison.json",
+      "bytes": 3229,
+      "sha256": "95fc06b0c1b6a204d1a73c4267ed6cdd8943c465ae0b784bd60e701acf49a4e6"
+    },
+    {
+      "path": "research/runs/base12-builder-code-revision-comparison/validation.json",
+      "bytes": 5227,
+      "sha256": "344b44ba4b29f3806716309291177fa0d2a29d7555fd04ea22fc206cf560a6a4"
+    }
+  ]
+}

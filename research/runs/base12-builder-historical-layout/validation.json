@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2590647f149c44c6cba812a0614c4f677e17d9d9",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 53163,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 53163,
+  "complete_R1_layout_roundtrip_exact": true,
+  "all_top_level_fields_read": 11,
+  "labels_fully_read": 163,
+  "patches_fully_read": 479,
+  "globals_fully_read": 33,
+  "buffers_fully_read": 7,
+  "changed_top_level_fields": [
+    "elf_sha256"
+  ],
+  "complete_R2_text_reconstructed_by_only_hash_value_replacement": true,
+  "both_all_163_labels_match_own_listing_boundaries": true,
+  "both_all_479_patch_fields_match_own_listings": true,
+  "both_relocation_arithmetic_and_disjoint_fields_pass": true,
+  "historical_source_constants_globals_and_buffers_match": true,
+  "both_build_and_static_declarations_match": true,
+  "artifact_text_coverage": {
+    "artifact-r1": {
+      "text_paths": 7,
+      "full_read_or_identical_blob_paths": 6,
+      "text_bytes": 275865,
+      "remaining_text_paths": [
+        "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.disassembly.txt"
+      ]
+    },
+    "artifact-r2": {
+      "text_paths": 7,
+      "full_read_or_identical_blob_paths": 7,
+      "text_bytes": 275947,
+      "remaining_text_paths": []
+    }
+  },
+  "code_identities_remain_distinct": true,
+  "full_ELF_exclusive_difference_newly_verified": false,
+  "binary_artifact_files_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "check_corrections": [
+    "Initial local checker lacked its regex import; corrected before writing validation or publication files."
+  ],
+  "limits": [
+    "Complete eleven-field R1 layout fully read:163 labels,479 patches,33 globals and7 buffers; exact JSON reconstruction passed.",
+    "Only declared ELF hash differs from R2; replacing that single text value reproduces complete R2 bytes, while the two code identities and six data-field changes remain distinct.",
+    "Both complete listings bind their own label boundaries and all479 patch fields; source constants/global declarations and memory intervals agree with historical source/build/static records.",
+    "Identical address maps do not identify code bytes or correct argument semantics; declared artifact hashes must remain part of any identity relation.",
+    "Seven R2 artifact text paths have full reading or identical-blob credit; one R1 disassembly text and all four native artifact files retain their own coverage classes.",
+    "Code-identity streaming checks do not confer separate semantic-reading credit on unacquired binary files; full ELF headers/padding remain unverified here.",
+    "No upstream import, native emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.disassembly.txt",
+      "bytes": 118158,
+      "intended_review": "complete_R1_saved_disassembly_and_revision_text_closeout_without_execution"
+    }
+  ],
+  "next_scope_bytes": 118158,
+  "public_contribution_checks": [
+    "pinned historical layout and complete exact JSON reconstruction passed",
+    "complete R2 layout text differs only in declared ELF hash value",
+    "both own-listing label/patch joins and relocation field arithmetic passed",
+    "historical source declarations, build/static records and scoped artifact text coverage agree",
+    "artifact identity boundary, coverage, links, privacy and git diff --check passed"
+  ]
+}

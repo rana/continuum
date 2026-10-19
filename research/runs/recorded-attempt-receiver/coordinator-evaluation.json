@@ -1,0 +1,61 @@
+{
+  "input_source_commit": "7c35f9a0de7d17bec539ae1508aef72cffb16240",
+  "exact_retrieval_exposure_verified": true,
+  "retrievals": [
+    {
+      "retrieval_round": 1,
+      "payload_bytes": 54259,
+      "native_objects": 4,
+      "sidecars": 3,
+      "native_byte_equality_verified": true,
+      "sidecar_byte_equality_verified": true
+    },
+    {
+      "retrieval_round": 2,
+      "payload_bytes": 5077,
+      "native_objects": 2,
+      "sidecars": 2,
+      "native_byte_equality_verified": true,
+      "sidecar_byte_equality_verified": true
+    },
+    {
+      "retrieval_round": 3,
+      "payload_bytes": 9773,
+      "native_objects": 3,
+      "sidecars": 0,
+      "native_byte_equality_verified": true,
+      "sidecar_byte_equality_verified": true
+    }
+  ],
+  "source_comparison": [
+    {
+      "path": "README.md",
+      "native_id": "sha256:a75d9b86792a9b8289599052e766a2658a0cb41093f8ab278ba0cd65d30c8648",
+      "raw_sha256": "aa0c26af955c53b420c7774cfe90615d88eb397357896f2a2d0a8484a39e4339",
+      "exact_utf8_byte_match_to_receipt_file": true
+    },
+    {
+      "path": "inspect_csv.py",
+      "native_id": "sha256:86b3465ad7081f99e7163a9abc31c9b60d9f8884decc74a4ee7da76119204077",
+      "raw_sha256": "f5f997878d4f61f28f79c4d19fdcbd9c18023fa68617cbb8bf43a1b246e7a092",
+      "exact_utf8_byte_match_to_receipt_file": true
+    },
+    {
+      "path": "test_inspect_csv.py",
+      "native_id": "sha256:7691505969a264f43f1e079ba2532d7ab16e126b6da07fd1be53ce1e5dde605c",
+      "raw_sha256": "94f1a5a8c24ef0a72b9cc4ee460dabb5deb6324528f330cf93233a632b369167",
+      "exact_utf8_byte_match_to_receipt_file": true
+    }
+  ],
+  "fresh_csv_tests_executed": false,
+  "native_get_and_fixture_reconstruction_executed": true,
+  "observed_receiver_behavior": {
+    "repeated_original_inference": false,
+    "reimplemented_feature": false,
+    "requested_execution_sidecars": true,
+    "distinguished_historical_from_new_execution": true,
+    "rediscovered_already_recorded_test_count_correction": true
+  },
+  "causal_limit": "No avoided-work benefit is established; the original handoff explicitly said not to reissue and no comparison arm was run.",
+  "next_action": "Capture a new source-bound local CSV verification attempt with explicit interpreter identity and retained actual fixture bytes, using existing WorkState references rather than new native types."
+}

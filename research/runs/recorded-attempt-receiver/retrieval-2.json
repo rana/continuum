@@ -1,0 +1,59 @@
+{
+  "scope": "Retrieval round 2. No tests or inference reexecuted.",
+  "native_objects": [
+    {
+      "format_version": 1,
+      "id": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+      "object": {
+        "entries": [
+          {
+            "blob": "sha256:a75d9b86792a9b8289599052e766a2658a0cb41093f8ab278ba0cd65d30c8648",
+            "path": "README.md"
+          },
+          {
+            "blob": "sha256:86b3465ad7081f99e7163a9abc31c9b60d9f8884decc74a4ee7da76119204077",
+            "path": "inspect_csv.py"
+          },
+          {
+            "blob": "sha256:7ace13ec5c61121ca65c38cb35ced0fd4ab758ecda35d6bfbfda463c513c2fab",
+            "path": "sample.csv"
+          },
+          {
+            "blob": "sha256:7691505969a264f43f1e079ba2532d7ab16e126b6da07fd1be53ce1e5dde605c",
+            "path": "test_inspect_csv.py"
+          }
+        ],
+        "type": "snapshot"
+      }
+    },
+    {
+      "id": "sha256:7ace13ec5c61121ca65c38cb35ced0fd4ab758ecda35d6bfbfda463c513c2fab",
+      "format_version": 1,
+      "type": "blob",
+      "encoding": "utf-8",
+      "bytes": 67,
+      "sha256": "af0ebbaeba721099ca10742b81b77cf4236307c343300b94b064ff3f90c6e4be",
+      "content": "city,temperature,note\nOslo,NA,\"cold, clear\"\nLima,,\nKyoto,18,steady\n"
+    }
+  ],
+  "sidecars": [
+    {
+      "path": "research/runs/independent-csv-pilot/verify_requirement.py",
+      "bytes": 2595,
+      "sha256": "85c39607732567b6ecbc1a5478546799323adee53e6534f334285051264e2d59",
+      "encoding": "utf-8",
+      "content": "#!/usr/bin/env python3\n\"\"\"Coordinator-authored CLI oracle, withheld from the successor's input.\"\"\"\nimport csv\nimport io\nimport json\nfrom pathlib import Path\nimport subprocess\nimport sys\nimport tempfile\n\n\ndef verify(script):\n    # Counts below were derived manually from these five records, not from\n    # the successor implementation or tests. They include a quoted newline.\n    records = [[\"NA\", \"\"], [\"na\", \" NA \"], [\"\", \"null\"], [\" \", \"NA\"], [\"a,\\nb\", \"null\"]]\n    cases = [\n        ([], [1, 1]),\n        ([\"--missing-value\", \"NA\"], [2, 2]),\n        ([\"--missing-value\", \"NA\", \"--missing-value\", \"null\"], [2, 4]),\n        ([\"--missing-value\", \"NA\", \"--missing-value\", \"NA\"], [2, 2]),\n        ([\"--missing-value\", \"\"], [1, 1]),\n        ([\"--missing-value\", \"na\", \"--missing-value\", \" NA \"], [2, 2]),\n        ([\"--missing-value\", \" \"], [2, 1]),\n        ([\"--missing-value\", \"a,\\nb\"], [2, 1]),\n    ]\n    observed = []\n    with tempfile.TemporaryDirectory() as directory:\n        source = Path(directory) / \"fixture.csv\"\n        with source.open(\"w\", encoding=\"utf-8\", newline=\"\") as stream:\n            writer = csv.writer(stream)\n            writer.writerow([\"a\", \"b\"])\n            writer.writerows(records)\n        for options, missing in cases:\n            command = [sys.executable, str(script), str(source), *options]\n            run = subprocess.run(command, capture_output=True, text=True)\n            expected = {\"rows\": 5, \"columns\": [\n                {\"name\": name, \"present\": 5 - count, \"missing\": count}\n                for name, count in zip([\"a\", \"b\"], missing)\n            ]}\n            observed.append({\"options\": options, \"returncode\": run.returncode,\n                             \"stdout\": run.stdout, \"stderr\": run.stderr, \"expected\": expected})\n            if run.returncode != 0 or json.loads(run.stdout) != expected:\n                print(json.dumps({\"passed\": False, \"observations\": observed}, indent=2))\n                return 1\n        source.write_text(\"a,b\\nNA\\n\", encoding=\"utf-8\")\n        run = subprocess.run([sys.executable, str(script), str(source), \"--missing-value\", \"NA\"],\n                             capture_output=True, text=True)\n        assert run.returncode == 1 and run.stdout == \"\" and \"error\" in json.loads(run.stderr)\n        observed.append({\"case\": \"ragged input under options\", \"returncode\": run.returncode,\n                         \"stdout\": run.stdout, \"stderr\": run.stderr})\n    print(json.dumps({\"passed\": True, \"observations\": observed}, indent=2))\n    return 0\n\n\nif __name__ == \"__main__\":\n    sys.exit(verify(Path(sys.argv[1]).resolve()))\n"
+    },
+    {
+      "path": "research/runs/recorded-attempt-receiver/reconstructed-oracle-input.csv",
+      "provenance": "New reconstruction from retained script; not the original temporary file.",
+      "bytes": 45,
+      "sha256": "c7c687a70c95c361477c0b9fc01d8a3cc4f16869ece043c57ca6f829e4b11adb",
+      "encoding": "utf-8",
+      "content": "a,b\r\nNA,\r\nna, NA \r\n,null\r\n ,NA\r\n\"a,\nb\",null\r\n"
+    }
+  ],
+  "notes": [
+    "The original oracle input was a temporary file and was not retained with a digest. The exact retained script is supplied. The CSV fixture below is newly reconstructed from its literal rows using csv.writer; equality with the actual historical temporary bytes is not independently established."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "native_binary_sha256": "81dd3a7e25c3d00714f42e127ae114118001720148eb5719110e79fa98a22eb9",
+  "payload_sha256": "b7823a35e83ca0cc1b067b5b34291191e2d242efcbe6321c3cda8d6677e57e8b",
+  "payload_bytes": 54259,
+  "native_object_ids": [
+    "sha256:947cf469f0d2662e942e5edf01d1bea2920926452bfb143dec99d1f100063f02",
+    "sha256:6157b34a7685e19b62df6c18924137ea67b7beab1b57cd7696d1190a22416a75",
+    "sha256:c2882a1666b2dc96a5b2b7d3e83fb32982a605f7e21746a9e5802cfb6d81b50a",
+    "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491"
+  ],
+  "sidecars": [
+    "research/runs/independent-csv-pilot/successor-first-tests.log",
+    "research/runs/independent-csv-pilot/oracle-successor.json",
+    "research/runs/independent-csv-pilot/coordinator-checks.json"
+  ],
+  "source_database": "Existing first store reconstructed in the prior import unit; native get checks stored identity before returning objects.",
+  "bound_checked": true
+}

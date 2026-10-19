@@ -1,0 +1,73 @@
+{
+  "successful_visible_replies": 4,
+  "connector_schema_rejections": 1,
+  "calls": [
+    {
+      "attempt": "1",
+      "wall_ms": 12092,
+      "status": "OK",
+      "actual_model": "claude-opus-5-5",
+      "configured_model": "us.anthropic.claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "usage": {
+        "input_tokens": 2364,
+        "output_tokens": 848,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "attempt": "2",
+      "wall_ms": 20566,
+      "status": "OK",
+      "actual_model": "claude-opus-5-5",
+      "configured_model": "us.anthropic.claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "usage": {
+        "input_tokens": 39913,
+        "output_tokens": 1856,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "attempt": "3b",
+      "wall_ms": 22590,
+      "status": "OK",
+      "actual_model": "claude-opus-5-5",
+      "configured_model": "us.anthropic.claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "usage": {
+        "input_tokens": 44270,
+        "output_tokens": 1893,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "attempt": "4",
+      "wall_ms": 17412,
+      "status": "OK",
+      "actual_model": "claude-opus-5-5",
+      "configured_model": "us.anthropic.claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "usage": {
+        "input_tokens": 50605,
+        "output_tokens": 1583,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ],
+  "total_reported_input_tokens": 137152,
+  "total_reported_output_tokens": 6180,
+  "scope": "Tool-call wall latency and returned usage only. Not total upkeep, financial cost or a controlled benefit comparison. The rejected turn-3 attempt returned no model/usage metadata and was corrected as turn-3b, not retried after an uncertain inference outcome."
+}

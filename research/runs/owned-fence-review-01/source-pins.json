@@ -1,0 +1,25 @@
+{
+  "source_commit": "8bc0fc1578fb915f10fedd22ee016bf9c4e9b2df",
+  "sources": [
+    {
+      "path": "research/owned-authority/framing/src/journal.rs",
+      "bytes": 8874,
+      "sha256": "c7f2f343bf5b3bc7c284c69ab8e7303a1806008ca7d83186c46b4a55bb14d4f6"
+    },
+    {
+      "path": "research/owned-authority/framing/src/archive.rs",
+      "bytes": 3365,
+      "sha256": "39c7356d9457f2392d0e2dab6018f80b01d924541cf6390e94ea39091e4b4155"
+    },
+    {
+      "path": "research/owned-authority/framing/src/store.rs",
+      "bytes": 9888,
+      "sha256": "242623da68cf884d672e9609864f1f19970b8a3944b3f8891d0e1ab4ae34726e"
+    },
+    {
+      "path": "research/owned-authority/framing/src/lib.rs",
+      "bytes": 8091,
+      "sha256": "41b3f705a40e04c34c35c63b84e50d3e8542d8b8a6e3f6cc7512b32eef8be125"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "fixture": true,
+  "receipt_id": "fixture-walk-001-receipt",
+  "invocation_id": "fixture-walk-001",
+  "recorded_at": "2026-10-19T00:00:01Z",
+  "outcome": "not_applicable",
+  "scope_performed": "Applicability probe only; this synthetic local question does not require a multiscale walk.",
+  "evidence_refs": [],
+  "output_refs": [],
+  "limitations": [
+    "Synthetic fixture; no test or external action was executed."
+  ],
+  "effects": [],
+  "next_action": "Inspect or test the local parser under the existing task scope."
+}

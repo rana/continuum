@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "fixture": true,
+  "invocation_id": "fixture-walk-001",
+  "protocol": {
+    "id": "holographic-walk",
+    "version": "0.1.0",
+    "definition_sha256": "a769b34bfc9cbcdc11d27968c60d392b2286d58d6362e1677617a337eb5e36f8"
+  },
+  "objective_ref": "fixture-objective-recover-accepted-operation",
+  "snapshot_ref": "fixture-snapshot-001",
+  "authority_refs": [
+    "fixture-existing-grant"
+  ],
+  "actor": {
+    "principal_id": "fixture-principal",
+    "worker_id": "fixture-worker",
+    "attempt_id": "fixture-attempt-001"
+  },
+  "started_at": "2026-10-19T00:00:00Z",
+  "inputs": [
+    {
+      "role": "question",
+      "reference": "fixture-question-local-validation",
+      "availability": "available",
+      "coverage": "Synthetic example; no live repository action."
+    }
+  ],
+  "capabilities": [
+    "read_project_records"
+  ],
+  "limits": {
+    "max_depth": 1,
+    "max_steps": 1
+  },
+  "parameters": {
+    "question": "Does a local parser reject an empty operation ID?",
+    "phase": "applicability_probe"
+  }
+}

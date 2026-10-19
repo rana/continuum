@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "conversion_date": "2026-10-19",
+  "converter": {
+    "name": "Pandoc",
+    "version": "3.1.3",
+    "reader": "docx",
+    "writer": "gfm",
+    "wrap": "none"
+  },
+  "scope": "Faithful Markdown editions of the two original historical briefs, including their user transcriptions and complete Claude collaboration records.",
+  "conversion_notes": [
+    "Titles and subtitles extracted by the DOCX reader as metadata were restored to visible Markdown.",
+    "Section heading levels were adjusted beneath one document title; the vision's Claude exchange headings were made consistent under its collaboration appendix.",
+    "Historical status, cross-document links, compact navigation, and conversion notes were added outside the marked original document body.",
+    "Original prose, dates, proposal language, citations, tables, hyperlink targets, transcripts, and response wording were preserved without substantive edits or redactions.",
+    "Literal Markdown notation in the response appendices remains literal, matching its presentation in the Word documents; Markdown escaping is representational.",
+    "Whitespace and paragraph spacing were normalized by conversion. Word-specific pagination, running page numbers, font sizes, and table shading are not reproduced in GitHub Markdown.",
+    "Historical factual descriptions were not updated during conversion. The later vision supersedes the earlier conditional source-engine direction; preserved exploratory replies remain subject to their editorial corrections.",
+    "The source DOCX files are identified by filename, exact byte count, and SHA-256; the Markdown files are also hashed for this conversion snapshot."
+  ],
+  "verification": {
+    "visible_text": "DOCX body text, including titles, tables, and appendices, equals the Markdown round-trip text after whitespace normalization.",
+    "tables_and_links": "All table contents and all external hyperlink targets match the source documents.",
+    "public_content_review": "Targeted credential-pattern scan and content review found no credential material or unrelated private operational details. Intended author attribution, user transcription, Base12 context, and collaboration records were retained."
+  },
+  "documents": [
+    {
+      "markdown": "docs/history/01-scion-assessment.md",
+      "source_document": "AI_Native_Repository_Design_Brief.docx",
+      "source_size_bytes": 53173,
+      "source_sha256": "272af906cb8dcf66cd02c0b9c070a64ce1910ccb84bfdeef347f59505077f082",
+      "markdown_sha256": "85bead9fbc1d899b9296d7ccaed7875d1a5260a490bd851a78cff2e9ba7bea99",
+      "source_document_date": "2026-10-18",
+      "historical_status": "historical_initial_assessment_superseded_on_native_engine_direction",
+      "preserved_tables": 2,
+      "preserved_external_hyperlinks": 15,
+      "preserved_user_transcriptions": 1,
+      "preserved_claude_responses": 2,
+      "normalized_visible_source_text_sha256": "32a806bfb1d2758d11a15479d54a1de531ca5c570b240a0497eeada2576fa4d1"
+    },
+    {
+      "markdown": "docs/history/02-agentic-vision.md",
+      "source_document": "AI_Native_Repository_Vision_and_Architecture.docx",
+      "source_size_bytes": 62798,
+      "source_sha256": "d914680b037d824b3c24025793f749a23074b70232343d5a15d061c943653f83",
+      "markdown_sha256": "40dda3994dcc917d29b9acac82e862b9dafd5022b549319b4ca5b363f41e36c2",
+      "source_document_date": "2026-10-18",
+      "historical_status": "historical_native_architecture_vision",
+      "preserved_tables": 3,
+      "preserved_external_hyperlinks": 22,
+      "preserved_user_transcriptions": 1,
+      "preserved_claude_responses": 4,
+      "normalized_visible_source_text_sha256": "2b5ec67e8c0cfd6f0ecaf9b77bb575baca6bc7b7de2b7f8b25741458f19fa388"
+    }
+  ]
+}

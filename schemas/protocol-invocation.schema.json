@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Continuum protocol invocation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "invocation_id",
+    "protocol",
+    "objective_ref",
+    "snapshot_ref",
+    "authority_refs",
+    "actor",
+    "started_at",
+    "inputs",
+    "capabilities",
+    "limits"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "invocation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "definition_sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+        },
+        "definition_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "objective_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "snapshot_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "principal_id",
+        "worker_id"
+      ],
+      "properties": {
+        "principal_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "worker_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conversation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "host_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attempt_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_provenance_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "reference",
+          "availability"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "availability": {
+            "enum": [
+              "available",
+              "unavailable",
+              "partial"
+            ]
+          },
+          "coverage": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "max_depth",
+        "max_steps"
+      ],
+      "properties": {
+        "max_depth": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 32
+        },
+        "max_steps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "max_wall_seconds": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_context_tokens": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "composed_invocations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "extensions": {
+      "type": "object"
+    }
+  }
+}

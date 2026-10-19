@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Continuum protocol registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "protocols"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "protocols": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "version",
+          "kind",
+          "definition_path",
+          "definition_sha256",
+          "status",
+          "execution_mode",
+          "authority",
+          "purpose",
+          "triggers",
+          "not_needed_when",
+          "required_inputs",
+          "optional_inputs",
+          "required_capabilities",
+          "possible_effects",
+          "outputs",
+          "composition_defaults"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+          },
+          "kind": {
+            "enum": [
+              "procedure",
+              "skill_adapter",
+              "prompt_template",
+              "policy_reference"
+            ]
+          },
+          "definition_path": {
+            "type": "string",
+            "pattern": "^(?:protocols|skills|prompts|policy)/(?:[A-Za-z0-9_-]+/)*[A-Za-z0-9_.-]+\\.(?:md|json|toml|yaml)$"
+          },
+          "definition_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "status": {
+            "enum": [
+              "experimental",
+              "adopted",
+              "deprecated",
+              "retired"
+            ]
+          },
+          "execution_mode": {
+            "enum": [
+              "agent_guided",
+              "implemented_adapter"
+            ]
+          },
+          "authority": {
+            "const": "inherited_only"
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 1
+          },
+          "triggers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "not_needed_when": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "required_inputs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "optional_inputs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "required_capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "possible_effects": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "composition_defaults": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "limits",
+              "recursive_invocation",
+              "repeat_requires"
+            ],
+            "properties": {
+              "limits": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "max_depth",
+                  "max_steps"
+                ],
+                "properties": {
+                  "max_depth": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 32
+                  },
+                  "max_steps": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10000
+                  },
+                  "max_wall_seconds": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "max_context_tokens": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                }
+              },
+              "recursive_invocation": {
+                "const": false
+              },
+              "repeat_requires": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "lineage_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "extensions": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  }
+}

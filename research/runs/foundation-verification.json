@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "record_kind": "foundation_verification",
+  "recorded_at": "2026-10-19T00:45:04.198685+00:00",
+  "toolchain": {
+    "rust": "1.99.1",
+    "host": "x86_64-unknown-linux-gnu",
+    "profile": "debug/test"
+  },
+  "source_files_sha256": {
+    "Cargo.toml": "5739f85b75d23eb83b81c22b41bf8ef83425d0b2e5c4da325a7e810ba6d0762b",
+    "Cargo.lock": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb",
+    "src/lib.rs": "1184f2cd5b9774315c18d1a43662b5863cef8e7f7fd4a850ceb02f7c81531421",
+    "src/main.rs": "3d311cceb88b3d96103f6466bb91e7a6c29703ec35bb8c08ea36ca13ea2a13ef",
+    "src/object.rs": "3c97e27383410a004be5d263e61b66d976be6dcc00983f361b64ba37d04d36ad",
+    "src/store.rs": "4a22be3dc5cf87918501a20137bb0963b94d8cbe9375a82313ec7da1d82b8b83",
+    "tests/crash_recovery.rs": "c2edcd04bf7caff61b63a4a7205c429e409a262a5fa712642afe19326dff3322",
+    "tests/invariants.rs": "8c72cc3cc969232cf893936f7ffcfe30de6a063ea17f20e365cc44ae7f28b475"
+  },
+  "checks": [
+    {
+      "command": "cargo fmt --all -- --check",
+      "result": "passed"
+    },
+    {
+      "command": "cargo clippy --offline --locked --all-targets --all-features -- -D warnings",
+      "result": "passed"
+    },
+    {
+      "command": "cargo test --offline --locked --all-features",
+      "result": "passed",
+      "invariants": 9,
+      "subprocess_recovery": 2,
+      "total": 11
+    },
+    {
+      "command": "cargo run --offline --locked -- demo <fresh-local-database>",
+      "result": "passed",
+      "generation": 2,
+      "events": 3,
+      "stale_rejected": true,
+      "original_retry_preserved": true
+    },
+    {
+      "validator": "Python jsonschema 4.26.0 Draft202012Validator with FormatChecker",
+      "result": "passed",
+      "schemas": 4,
+      "instances": 5
+    },
+    {
+      "check": "SHA-256 of all four protocol definitions agrees with registry",
+      "result": "passed"
+    },
+    {
+      "check": "Both historical DOCX visible text round-trips, tables and source hyperlinks",
+      "result": "passed",
+      "provenance_ref": "docs/history/conversion-provenance.json"
+    }
+  ],
+  "limits": [
+    "Local process-failure scenarios, not physical power-loss testing.",
+    "No high-load benchmark or comparative performance claim.",
+    "No authentication, trusted evidence verifier, remote service or sandbox.",
+    "No upstream Base12 or Prime Radiant experiment was executed.",
+    "GitHub Actions workflow is authored but has not run remotely."
+  ]
+}

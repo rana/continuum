@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "record_kind": "recorded_model_execution",
+  "attempt_id": "design-claude-02",
+  "recorded_at": "2026-10-19T00:39:54.459Z",
+  "executor": {
+    "vendor": "anthropic",
+    "service": "aws-bedrock",
+    "adapter": "claude-collaborator",
+    "revision": null
+  },
+  "requested": {
+    "model_selector": "opus",
+    "settings": {
+      "claude_collaborator.effort": "high"
+    },
+    "configuration_history_ref": null
+  },
+  "observed": {
+    "metadata_source": "Claude Collaborator returned metadata",
+    "model_id": "claude-opus-5-5",
+    "model_revision": null,
+    "provider_request_id": null,
+    "effective_settings_known": false,
+    "configured_route": "us.anthropic.claude-opus-5-5",
+    "reported_settings": {
+      "claude_collaborator.configured_effort": "high",
+      "claude_collaborator.thinking": "adaptive"
+    },
+    "usage": {
+      "input_tokens": 4156,
+      "output_tokens": 4344,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false
+  },
+  "inputs": {
+    "request_record_ref": "docs/collaboration/requests/claude-02.json",
+    "source_exposure": "Supplied Prime and Base12 excerpts, source reading limits, implementation summary, and previous visible response. No direct repository access.",
+    "context_pack_ref": null,
+    "source_snapshot_ref": null
+  },
+  "status": "completed",
+  "output_ref": "docs/collaboration/2026-10-19-claude-02.md",
+  "limitations": [
+    "Recorded after execution; precise provider start/end time was not captured.",
+    "Reported model identity is not proof of internal weights.",
+    "No raw hidden reasoning captured.",
+    "Usage is tool-reported, not independently metered."
+  ]
+}
+

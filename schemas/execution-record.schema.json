@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Continuum recorded model execution metadata, proposal version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_kind",
+    "attempt_id",
+    "recorded_at",
+    "executor",
+    "requested",
+    "observed",
+    "inputs",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "record_kind": {
+      "const": "recorded_model_execution"
+    },
+    "attempt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "executor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vendor",
+        "service",
+        "adapter"
+      ],
+      "properties": {
+        "vendor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "service": {
+          "type": "string",
+          "minLength": 1
+        },
+        "adapter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "requested": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model_selector",
+        "settings"
+      ],
+      "properties": {
+        "model_selector": {
+          "type": "string",
+          "minLength": 1
+        },
+        "settings": {
+          "type": "object"
+        },
+        "configuration_history_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "observed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metadata_source",
+        "model_id",
+        "model_revision",
+        "effective_settings_known"
+      ],
+      "properties": {
+        "metadata_source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provider_request_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effective_settings_known": {
+          "type": "boolean"
+        },
+        "reported_settings": {
+          "type": "object"
+        },
+        "configured_route": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "usage": {
+          "type": "object"
+        },
+        "stop_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "truncated": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request_record_ref",
+        "source_exposure"
+      ],
+      "properties": {
+        "request_record_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_exposure": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context_pack_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_snapshot_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "partial",
+        "failed",
+        "unknown"
+      ]
+    },
+    "output_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  }
+}
+

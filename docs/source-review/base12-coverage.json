@@ -1,0 +1,1622 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "purpose": "Record source-review aggregates and the actual directly read files without publishing the entire private repository tree.",
+  "definitions": {
+    "full_direct_read": "A reviewer received and read the complete source text at this pinned content identity. This is review coverage, not a proof of correctness.",
+    "byte_identical_to_full_read": "The pinned Git blob equals a directly read file. The alternate path context was inventoried, not separately semantically read.",
+    "not_semantically_reviewed": "No full semantic review is claimed, even if the bytes were acquired and programmatically inspected.",
+    "exact_bytes_hash_verified": "Local bytes match both the pinned Git blob SHA-1 and declared byte count. SHA-256 was also computed.",
+    "source_document_heuristic": "Filename extension filter: md, py, sh, awk, b12s, b12asm, c, h, rs, go, html, js, ts, css. This does not establish human authorship; generated fixtures and frozen copies can match, and other formats are excluded."
+  },
+  "summary": {
+    "inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790,
+      "unique_bytes": 175097688
+    },
+    "tree_entries": 6230,
+    "tree_truncated": false,
+    "source_document_heuristic": {
+      "paths": 1587,
+      "unique_blobs": 1404,
+      "path_bytes": 14201063,
+      "unique_bytes": 12371893
+    },
+    "exact_local_acquisition": {
+      "paths": 477,
+      "unique_blobs": 476,
+      "path_bytes": 4100899,
+      "unique_bytes": 4094509
+    },
+    "direct_full_semantic_read": {
+      "paths": 88,
+      "unique_blobs": 88,
+      "path_bytes": 876422,
+      "unique_bytes": 876422
+    },
+    "additional_identical_blob_paths": {
+      "paths": 35,
+      "unique_blobs": 12,
+      "path_bytes": 319090,
+      "unique_bytes": 178857
+    },
+    "not_semantically_reviewed": {
+      "paths": 5470,
+      "unique_blobs": 4341,
+      "path_bytes": 179137278,
+      "unique_bytes": 174221266
+    },
+    "transport_mismatches": 2,
+    "programmatic_inspection_counts": {
+      "markdown_scanned": 276,
+      "python_ast_parsed": 160,
+      "other_utf8_checked": 41
+    },
+    "source_execution_performed": false,
+    "whole_repository_full_read_complete": false
+  },
+  "limitations": [
+    "The complete recursive tree was inventoried. Whole-repository semantic reading remains open.",
+    "Generated JSON/JSONL results, arrays, binary executables and compressed evidence were largely inventoried rather than downloaded and interpreted.",
+    "Programmatic full-byte scans and Python AST parsing are explicitly separate from semantic reading; repository code was not imported or executed.",
+    "Deliberately malformed source fixtures exposed connector text/byte fidelity limits. Mismatching copies were excluded from exact acquisition counts.",
+    "Hash identity detects byte equality. It does not establish semantic correctness, execution approval, independent reproduction or observed performance.",
+    "No raw private repository source, credentials, personal operational identifiers or downloaded archives are included in this public metadata checkpoint."
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "f437d2f5093a9f4e2e2eb62174750c74fe453d42",
+      "bytes": 10670,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination",
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b70bf99717bfb5fe1e6245386ed6c580ecb219b8a7a850055283c1ffd6795c07",
+      "lines": 66,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 10
+      }
+    },
+    {
+      "path": "CURRENT.md",
+      "git_blob_sha": "c90f1a98285889119dd8f3ed02f7782b06e594ec",
+      "bytes": 63725,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "7491cb2723129ff93a543446f45d74cb601d211f8451a5d48840bb8a2ab9f780",
+      "lines": 147,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 9
+      }
+    },
+    {
+      "path": "DOT_BRIDGE.md",
+      "git_blob_sha": "df157d183748b3f2647a3abb88745a9fe5a1f4f3",
+      "bytes": 4100,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "bdf604a7f77955377e5aff691bf69fd945f3d826c7e99456529596d1aaf4ab0f",
+      "lines": 34,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 5
+      }
+    },
+    {
+      "path": "MERGE_POLICY.md",
+      "git_blob_sha": "1c325c233f5e2a537c506ea03cd155d97abee9bf",
+      "bytes": 5825,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "42a7d348537f430f3a5acd8c977761f076d7f8d917cf33051926547a23239d23",
+      "lines": 35,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 6
+      }
+    },
+    {
+      "path": "METHOD.md",
+      "git_blob_sha": "fe7ec940cd679f97391ec193a01b9862f209a49c",
+      "bytes": 3804,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "bbe117f1a74cafee93483b54b5fad6bf6b0613bde1a953564fa4c4e4305b2621",
+      "lines": 37,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 3
+      }
+    },
+    {
+      "path": "NEXT.md",
+      "git_blob_sha": "ede03b5118c0cd423d50a873301655311d86ed46",
+      "bytes": 2634,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "f727cbb351f3e276bf41d99f87e86eb4afad0cffe13e36e2d223bbf9e8180d8e",
+      "lines": 17,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 3
+      }
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "c9d94fc8136d78f2c73e6375bae40dc2873bb39c",
+      "bytes": 4262,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "212ed4529085c1ce7c0fdb1841de31aa3b84fa05a0a02a29052e52bb5790ba29",
+      "lines": 35,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 4
+      }
+    },
+    {
+      "path": "RECORD.md",
+      "git_blob_sha": "ccf4abbf3085b8c29cf7c3a03ac5dd9f3d617c13",
+      "bytes": 7271,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "9d681da46f9cd77d2a70e0dcf58da2ba97bca8a8734610edc54bd386404bccdf",
+      "lines": 56,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 6
+      }
+    },
+    {
+      "path": "REPORT.md",
+      "git_blob_sha": "8eb6487e043c39509641a7df32e43f8d69556552",
+      "bytes": 8425,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "8d5ff0fbab840fe2375a3be4bc790943690ba70393658b594a303dcb8580b742",
+      "lines": 57,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "START_HERE_OWNED_STACK.md",
+      "git_blob_sha": "c5e0deef16368693febf6bdd73bde4a1e587026a",
+      "bytes": 1253,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "fa3f7adde1dbec94aa4903efc4c3ac4b1b8e159ccec2d993f8f08440634cb699",
+      "lines": 9,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "collaboration/prime-radiant/2026-10-18-repository-design.md",
+      "git_blob_sha": "9a90ed6806911939c2ebc7610be115551a1d644d",
+      "bytes": 11398,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination"
+      ],
+      "acquisition": "not_materialized_at_checkpoint",
+      "programmatic_inspection": {
+        "method": "tree_inventory_only"
+      }
+    },
+    {
+      "path": "research/automation/COORDINATION.md",
+      "git_blob_sha": "9cff65ee7e6d8d8a1060e2747ac4c9dd9778622e",
+      "bytes": 3743,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination"
+      ],
+      "acquisition": "not_materialized_at_checkpoint",
+      "programmatic_inspection": {
+        "method": "tree_inventory_only"
+      }
+    },
+    {
+      "path": "research/automation/COORDINATOR.md",
+      "git_blob_sha": "b63c5449b7a31144e3e9ec867a1b4620e92a70d9",
+      "bytes": 6000,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "governance-and-coordination"
+      ],
+      "acquisition": "not_materialized_at_checkpoint",
+      "programmatic_inspection": {
+        "method": "tree_inventory_only"
+      }
+    },
+    {
+      "path": "research/continuity/PRESERVATION.md",
+      "git_blob_sha": "64fb5d667604418b7d3ef68d17333d847da20489",
+      "bytes": 6679,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "4a308d31e212d7aa3a157d255122292293a48ab740e101d1ab9cbeb0c0db5e14",
+      "lines": 57,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/acquisition-protocol.md",
+      "git_blob_sha": "475d82562e6d1330cff845ab73715cda9c68cd44",
+      "bytes": 12799,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b577f9fc51a218b03189f194017b2b407481fc73cb7ba7a1d5430174c454e0a7",
+      "lines": 67,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/acquisition-result.md",
+      "git_blob_sha": "08c90955f79c521383a4171b915a1cae9404ac48",
+      "bytes": 12360,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "280b466eca0e6bbc1c4f4a4703b85a8f4768c79382b581f141db9943a6cc90cc",
+      "lines": 91,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/history-protocol.md",
+      "git_blob_sha": "dcf10526b6357e2d20b3feb4532068a58dacbe3d",
+      "bytes": 11321,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "f0ee83b4c3c396a0125773e15f731ea7d5f444c46ca79b789e0eff72875e2522",
+      "lines": 66,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 8
+      }
+    },
+    {
+      "path": "research/learning/history-result.md",
+      "git_blob_sha": "23aa18c5e17213675bdaec925396c705decf4556",
+      "bytes": 9462,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "69e0e572badc0250441e4f0cc30a2802f5f277a6da62b60532236c6a8e98ad7e",
+      "lines": 80,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 6
+      }
+    },
+    {
+      "path": "research/learning/operator-restart-protocol.md",
+      "git_blob_sha": "650313ed71ca13986215e025689e4844acf926c7",
+      "bytes": 10371,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "c6d539ee5d76d769ce379f331e08a178b11c577b82287da2dee8d8858d9dc644",
+      "lines": 65,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 6
+      }
+    },
+    {
+      "path": "research/learning/operator-restart-result.md",
+      "git_blob_sha": "123e4ecbc87dd7e2b02a02be82015013428ef2b6",
+      "bytes": 13948,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "cd0ea073e2bc9ce52721f89f1c469eadc55ba52cf6301fcc9a43333404504264",
+      "lines": 99,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/operator-witness-protocol.md",
+      "git_blob_sha": "ab5c85f18c9924fcbf187dcce99587ea8e6d46a2",
+      "bytes": 8433,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "cfa9481dad0e3fc4ff54b26723996e06c9db2c9788ddce1a9fedd7dc28caeecf",
+      "lines": 49,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/operator-witness-result.md",
+      "git_blob_sha": "3dbf2fc79baf98f1dde81bd5295f97bf04408ddf",
+      "bytes": 13414,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "e0387a3e2a06b6f41a6155d630a6eb9e3f41179481ec0ffc3830e626d4b105d2",
+      "lines": 75,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/structural-protocol.md",
+      "git_blob_sha": "3b18af368695f858d66e47013ab270c36a219c9f",
+      "bytes": 10274,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "bf0d00c7036a9ff8239f82285bd440845b4070184137be91d0df0cf8490c8f3e",
+      "lines": 65,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/structural-result.md",
+      "git_blob_sha": "643d50865d6fd07f9387188a9d3743233f7c2181",
+      "bytes": 8635,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b4811a43d5c68834504acea07ebd242f26b9321138aa7ea1c2649baec82c9854",
+      "lines": 73,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/transfer-calibration.md",
+      "git_blob_sha": "6414062ab07c1aeb4ebc1648709877c464328d47",
+      "bytes": 7531,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "103653467ee3a07842e507876a5323dcad9ab1d4673cdaf08bc632c029fc3b83",
+      "lines": 57,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 6
+      }
+    },
+    {
+      "path": "research/learning/transfer-protocol.md",
+      "git_blob_sha": "5b9ad53c225d0e1830ca726f7f854d6e7f36d579",
+      "bytes": 11150,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "36f7a75bbcdd951b077be2f5ffcd59f3e4da832bfd79032bfe54bcdf70e445ca",
+      "lines": 69,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/transfer-result.md",
+      "git_blob_sha": "3d49305f92b13f1eacad93146ec7c1f4cb452588",
+      "bytes": 12576,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "a3c09d3c6e7c267bb8f2fc8b8bd25bf65e9388204d97443aa956f4281bceeccc",
+      "lines": 97,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/learning/validation-risk.md",
+      "git_blob_sha": "06259ba4bcd5dca833c93ee742ec950c646ea199",
+      "bytes": 6927,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "dada9b4a4259e2e892d81cb003966794cdec67fe7332e148617d67aa3a9c5735",
+      "lines": 44,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 4
+      }
+    },
+    {
+      "path": "research/map/EXAMPLE_PACKET.md",
+      "git_blob_sha": "907f7320d9c76d189d62bad600ad6cbe3715f9f0",
+      "bytes": 3529,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "465377235f9e4b7fe3f2d6d24c882a208754e8c42dd31f3c92a5db07ff7493e3",
+      "lines": 71,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 6
+      }
+    },
+    {
+      "path": "research/map/INTENT_AND_REVIEW.md",
+      "git_blob_sha": "15f5a95e38eb26d77efae29ab01fea309ec9e652",
+      "bytes": 8511,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "87b08f302f095c537a087fe25318b2024cf9f50f526726e3e2c7da8720067ff4",
+      "lines": 45,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 8
+      }
+    },
+    {
+      "path": "research/map/README.md",
+      "git_blob_sha": "53e9a016692f8aa98d42221a969492d41fcfd380",
+      "bytes": 9350,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "556e2ca4e4122e2a309d2f4e075c4b4d3126bc60e8e3a23341fa709d85185c38",
+      "lines": 87,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 9
+      }
+    },
+    {
+      "path": "research/native-learner/2026-10-15-reviewed/base12-native-learning-reviewed/base12-native-learning/vendor/compiler.py",
+      "git_blob_sha": "8d4f0de9b6ffdd58740900be5eefccd1d8806133",
+      "bytes": 19359,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "a87404db0b8edb033eccb3c2fc5d6d3b7bec65cf476d6011c00a053021a1e6ee",
+      "lines": 384,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 54,
+        "classes": 7,
+        "imports": 13
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/codegen.py",
+      "git_blob_sha": "2c8153136a219136c277021dadaaf323e608c690",
+      "bytes": 10109,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "d6a09018729ded2201e876fcc172240b5ca0a7e19d58bcc9446f6cbb998f3aae",
+      "lines": 213,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 27,
+        "classes": 4,
+        "imports": 5
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/differential.py",
+      "git_blob_sha": "4d1e26d806c0ff2654ea7aca7458c9af1544c673",
+      "bytes": 5447,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "161a8c639b46ba7247cf0ec318333d0d24b25480a1f9565351a82477f0b1de41",
+      "lines": 121,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 15,
+        "classes": 1,
+        "imports": 4
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/runtime.py",
+      "git_blob_sha": "f4cab037f502b90b273780225a238fe1cf281321",
+      "bytes": 2647,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "2382f92bc33ca03381490fc95359517b159d4adb27ccc210ba61296227db975f",
+      "lines": 54,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 6,
+        "classes": 1,
+        "imports": 4
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/CONTRACT.md",
+      "git_blob_sha": "6a49be528b92adaa325ba61b2cfa4c576c5cf29c",
+      "bytes": 5556,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "260421d3c6da81b19a9b0ab90e0ece3d4a2253eed12fc42e09cc6131df4a1fcd",
+      "lines": 46,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 4
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/output-runtime-preparation-01/CONTRACT.md",
+      "git_blob_sha": "58e679cfcd2a922bb5eee4bb7e5f55560276a52a",
+      "bytes": 4903,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "d4c7e9a72e9cb85645e70c57a9a4a83e408812fd1a49358fcce67eb8bf98bd25",
+      "lines": 79,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 3
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/output-runtime-result-01/README.md",
+      "git_blob_sha": "da576f888d222948d2a48b4a9156cf273c809508",
+      "bytes": 6010,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "f551db37b6b556e362fa6ef05fb4fb168b2aeda219e806aa6dd2b5e79e2bde68",
+      "lines": 90,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 4
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "git_blob_sha": "d876f5183f478dd97b1999004d3c98eba2029346",
+      "bytes": 6957,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+      "lines": 46,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 3
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CASE_MATRIX.md",
+      "git_blob_sha": "354190eae70688837a759001567b1e0a2aa8fb97",
+      "bytes": 5442,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "85231e96e9441c6412c6c5bb6123abef4b59b3f8f46b9fecd5259a77d09f14cd",
+      "lines": 74,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVELOPE.md",
+      "git_blob_sha": "a604c869f02d7197d3066d2b3b487f27a0c63cee",
+      "bytes": 9985,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "d59edbbaa80f5ecaaee2e431eacf4dfd9daf0200c6893d244e674544e32f0fcf",
+      "lines": 43,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 5
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/caller.py",
+      "git_blob_sha": "cb3c189608669ceeefc0457f8cc151d120ac50f6",
+      "bytes": 11056,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b3bca1451ad4e8e4249dcb19eadc05c42c5a443b04a755143594219ffe3372ac",
+      "lines": 197,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 5,
+        "classes": 0,
+        "imports": 5
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/driver.py",
+      "git_blob_sha": "bbb786dcb4924513b5cd7478386365b1fb214d38",
+      "bytes": 14211,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "be2477ab56e86ef940fa64c05cf499d73e0a68a65eab2a6edad754f6cf435396",
+      "lines": 285,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 11,
+        "classes": 0,
+        "imports": 10
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-launch-controller/CONTRACT.md",
+      "git_blob_sha": "66f60ab1c49084edd4f5f1b9546a59849f0591d5",
+      "bytes": 9126,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "a61f6155bccb39aa67292c01924cfcb3cbeb5982720167525412c761389a32a8",
+      "lines": 57,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 5
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-launch-controller/build.py",
+      "git_blob_sha": "bc1a6ab73375698139976b20b3f286ef4c8d291a",
+      "bytes": 17107,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b4995b53834a614d0ce036953b5880cdd2b3d63fd25bd8c10b0fdeb49ace3647",
+      "lines": 319,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 18,
+        "classes": 1,
+        "imports": 6
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-research-loop/implementation-01/CONTRACTS.md",
+      "git_blob_sha": "2924f08e0c9e1402a13886fe5a517d3e07761f27",
+      "bytes": 7702,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "3b17696fbf3de0feee5e21fa6fcca7ec9f8af54d4dea0350f181ac1594e3981c",
+      "lines": 58,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 4
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-research-loop/implementation-01/consumer.b12s",
+      "git_blob_sha": "79f06abf91dae84aef665c9803a0c4500e208901",
+      "bytes": 11680,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b1c2c4788ded1e9e55315b7651cc1370feb7cca4aa3d8b126590118e8c244440",
+      "lines": 689,
+      "programmatic_inspection": {
+        "method": "full_byte_read_and_utf8_validation"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/decoder-b1-compact-source-01/CONTRACT.md",
+      "git_blob_sha": "815cece130121f8070d459f0351da7fc456c09cf",
+      "bytes": 6297,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "465a8f2bc48c4620dce44395f541bbc13c27d01c609de13f1f4c8a67b59cd6e3",
+      "lines": 33,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 4
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/decoder-b1-compact-source-01/LOWERINGS.md",
+      "git_blob_sha": "d77e69d760b82a562e586ac79c18063affed150f",
+      "bytes": 5565,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "e68c7752604a5a5a67a56919f888f09d7923eb3b0cb1381cbb1b0af7ba01f515",
+      "lines": 28,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/decoder-b1-compact-source-01/README.md",
+      "git_blob_sha": "8a780213c306869aaada9e15e275016d15965a1f",
+      "bytes": 2451,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "c48d3b11df82b89be7f44b469a3676b6b760f50d31d42f6a04ea3906d76f9426",
+      "lines": 11,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/decoder-b1-compact-source-01/SHA_INVARIANTS.md",
+      "git_blob_sha": "752e31223430c38aceb6052aff3c5dd93f8ca33d",
+      "bytes": 4864,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "a7b25326c31764c83c89b63ad5d2739f7c26aa43cac393c90542f9ea8ec1a7f1",
+      "lines": 42,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 5
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/decoder-b1-compact-source-01/STATE_ABI.md",
+      "git_blob_sha": "90043dc4f57480990896d01c25e1760a0605e5a7",
+      "bytes": 5262,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "06eefc5e7dd011eb109bbd43ef8dff84c735b76aaa78350c5e89aff56c1ad6b6",
+      "lines": 39,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 2
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/decoder-b1-compact-source-01/decoder.b12s",
+      "git_blob_sha": "779ad30d0785008f2599433095ea0eaa266bfe44",
+      "bytes": 21197,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "c986a31193b2ac0a95d9e2520c1aa8e5c43a76d739b37c59b9504aeeb0eca7dd",
+      "lines": 1447,
+      "programmatic_inspection": {
+        "method": "full_byte_read_and_utf8_validation"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/COMPATIBILITY.md",
+      "git_blob_sha": "f5fe4959c818c9685373e4b64cc98e69e780bf15",
+      "bytes": 4464,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "8e322cd0ddfccee799314114d1cead199a5ba625730784d430c8dac042c0a158",
+      "lines": 26,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/CONTRACT.md",
+      "git_blob_sha": "0422d01c2f5e274a3760092ba5b8d107b2dd8aae",
+      "bytes": 3471,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "148e3c62c4c47eddff8fc8ef1edad554f074705d7b3a895c4f024d51bd993e18",
+      "lines": 28,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/LAYOUT_GUARDS.md",
+      "git_blob_sha": "23347ae63bb9e70cfd6be5d98e93b326874b8bf5",
+      "bytes": 4062,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b94bcf5737b27f933ffbb2b88bfe35cc76a93e8923696aace894ca392aa5f64c",
+      "lines": 36,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/LENGTH.md",
+      "git_blob_sha": "b66d8114e146a0d2425f64fedab38da0e91a7d77",
+      "bytes": 3033,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "254df971e952e754d640bfce917e1541e441922c5bf380847d8489fb31a8ba8a",
+      "lines": 15,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/LENGTH_QUALIFICATION.md",
+      "git_blob_sha": "8352a126570e26a5397fd0a57657a14eb6845be3",
+      "bytes": 1343,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "15d93ed62c90a289d8b5028b2562749e06d1884ce4c57e18e694ad968a99c780",
+      "lines": 7,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/README.md",
+      "git_blob_sha": "6a5773cbea2ba007cbb42428ea47347da648503c",
+      "bytes": 2166,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "95ddb5962b42933e7c77234cf2f7d691db84fb5efb02a096970644fbfd0cf52d",
+      "lines": 11,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/bootstrap.py",
+      "git_blob_sha": "d15a59fe0b863999254001532458f0f2c79c3d04",
+      "bytes": 25532,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b998db1211eade7a76c05dfa1ef80f50e918b0d80357a45772dea6442470e8c3",
+      "lines": 404,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 21,
+        "classes": 1,
+        "imports": 6
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-capacity-01/vendor/isa.py",
+      "git_blob_sha": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "bytes": 6390,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "lines": 121,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 35,
+        "classes": 1,
+        "imports": 3
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/native-builder-decoder-word32-01/CONTRACT.md",
+      "git_blob_sha": "548c9e86f682289d12d1852dc82d2d9e734e09a3",
+      "bytes": 4853,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "a864fb196a4905d1361ccaaac57c40f04fc394ef7dae9fd5d9b9754182569190",
+      "lines": 79,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 3
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/word32-witness-runtime-result-01-qualification.md",
+      "git_blob_sha": "edbe26f4a3dba61b7bc36685695865d893cbca1e",
+      "bytes": 2457,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "0cd3d6adbdb6778481b54fbd528d917110cd93feb9d33778947073bce2405049",
+      "lines": 18,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-17/word32-witness-runtime-result-01/README.md",
+      "git_blob_sha": "b816b23f0d420110920ae36a318d4bafba2b3e64",
+      "bytes": 4077,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "268ce177c65d7312534a5fe1ae5e130f1d1972e6795fc8accc1f0dcbc25c9644",
+      "lines": 15,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 1
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-18/native-hash-input-sha/README.md",
+      "git_blob_sha": "23d5a9ecdf18f9e17978170478fb957de9a0a963",
+      "bytes": 11321,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "ff8e578a001adc98968de0d3bfce5c5b1d22c00ab57aa76faa59cc489bc12583",
+      "lines": 60,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-18/native-hash-input-sha/emit_accel.py",
+      "git_blob_sha": "31fe69e85c8fd8d6431637a96320b2a0dada6491",
+      "bytes": 24550,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "b101ee575856cd54fed6c2449ef275d6aa73b5727733bbed91ec962b829452ee",
+      "lines": 278,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 51,
+        "classes": 1,
+        "imports": 4
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-18/native-hash-input-sha/tests/check_backend.py",
+      "git_blob_sha": "c9cd358b49bbe833cfc30dbe211f69fc3c2bac16",
+      "bytes": 3641,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "66a6fc129a40f05adfbe6906b3981675cff2e62ef24a0adb32b68efea353acc4",
+      "lines": 62,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 4,
+        "classes": 0,
+        "imports": 3
+      }
+    },
+    {
+      "path": "research/owned-stack/polynomial-spirv-2026-10-15/bundle/compiler-gpu/CONTRACT.md",
+      "git_blob_sha": "744e73d914839948a91c5852ea50b857129bd58c",
+      "bytes": 10480,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "994821b43b6b624ff35352dbb0e7b055e82ac58a62921e87403af4d2877b7abb",
+      "lines": 178,
+      "programmatic_inspection": {
+        "method": "markdown_heading_scan_full_text",
+        "headings": 7
+      }
+    },
+    {
+      "path": "research/owned-stack/polynomial-spirv-2026-10-15/bundle/compiler-gpu/backend.py",
+      "git_blob_sha": "78162c1158d029a45c2c9b997abe1f031073a4a8",
+      "bytes": 10451,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "48ba98b4daeb39960917419334abbbc0d57b4b2c052b99ead2d5808c66c4b547",
+      "lines": 244,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 12,
+        "classes": 1,
+        "imports": 9
+      }
+    },
+    {
+      "path": "research/owned-stack/polynomial-spirv-2026-10-15/bundle/compiler-gpu/oracle.py",
+      "git_blob_sha": "8b3e6a4d5867f9a523f3cc15d6d7a94baa0bd63d",
+      "bytes": 4230,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "native-engineering"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "5c2193db2b42d90747101a1df7f90e95dec46282b6ec6fae9b957df3bde89376",
+      "lines": 113,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 6,
+        "classes": 0,
+        "imports": 1
+      }
+    },
+    {
+      "path": "tests/test_transparent_core_costs.py",
+      "git_blob_sha": "cdb59f1b42bef58e7d4c3c58a946046eb9d6e684",
+      "bytes": 7971,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "43c1db77492eacf68bb182221d8d62d70c1677b54739523d358d5c33b3eb133c",
+      "lines": 173,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 14,
+        "classes": 2,
+        "imports": 5
+      }
+    },
+    {
+      "path": "tests/test_transparent_core_semantics.py",
+      "git_blob_sha": "78125bc4880597dfac6349bffb307147fff5cb7f",
+      "bytes": 15725,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "3395a64455903da7c5b0bdb944b0e93a5df5fa101dea1902ef27174cc6cc1a83",
+      "lines": 316,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 32,
+        "classes": 4,
+        "imports": 6
+      }
+    },
+    {
+      "path": "tools/learning/operator_restart.py",
+      "git_blob_sha": "05b751647daeb8483b70ccd2be0f97e51a193405",
+      "bytes": 21849,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "a3f8f3b2c54343387c80cab8d52f015c3ceb2d07509e7af224a566f5cbd8ab21",
+      "lines": 338,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 13,
+        "classes": 0,
+        "imports": 13
+      }
+    },
+    {
+      "path": "tools/learning/operator_witness.py",
+      "git_blob_sha": "c81faad7b9fffe187f05fd2fcacb554f0586299e",
+      "bytes": 18742,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "18c94a104472cff67ac4b4eca22cd46de9fc067646e13551e232a0ca89971a43",
+      "lines": 374,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 19,
+        "classes": 0,
+        "imports": 15
+      }
+    },
+    {
+      "path": "tools/learning/run_transfer.py",
+      "git_blob_sha": "3c518332be9dbbe4f7cb817c52505d15c8a19561",
+      "bytes": 17859,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "1cda4d996f6e8934f741c036ea9db304fc73f8d23441ad5f491bd706a4b9e69e",
+      "lines": 293,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 11,
+        "classes": 0,
+        "imports": 13
+      }
+    },
+    {
+      "path": "tools/learning/test_transfer.py",
+      "git_blob_sha": "6181e54915306a99a4473ea185ae3b4e707d2b6a",
+      "bytes": 10527,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "e0f996ccd96d8c8ad3d34b37a2fe433a04aa9465202269624e7bd6b6bbc26040",
+      "lines": 200,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 22,
+        "classes": 4,
+        "imports": 7
+      }
+    },
+    {
+      "path": "tools/learning/transfer_engine.py",
+      "git_blob_sha": "ea5c53bd02ada3c42a39d233c6d4fa7e47214318",
+      "bytes": 15130,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "e2405576e711b0198f70e582051c28254bb834517f1cace6d61ac6f612c41d6a",
+      "lines": 387,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 30,
+        "classes": 5,
+        "imports": 6
+      }
+    },
+    {
+      "path": "tools/learning/transfer_task.py",
+      "git_blob_sha": "9c733195abbdaa0bfe736ffc17eab203d0da871a",
+      "bytes": 4109,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "aa2ab598db72039ede7755e2359b243d6a6945a3b56deff703356f06524dc77d",
+      "lines": 95,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 7,
+        "classes": 0,
+        "imports": 7
+      }
+    },
+    {
+      "path": "tools/learning/validation_risk_audit.py",
+      "git_blob_sha": "3e466677d551d0919e9a359a1a5daa41d0da05fb",
+      "bytes": 6178,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "74eb00306bbebf1d7507f40de3ffa3dc41bf924267d7445d46b941a6a7219d0f",
+      "lines": 121,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 4,
+        "classes": 0,
+        "imports": 8
+      }
+    },
+    {
+      "path": "tools/learning/verify_operator_restart.py",
+      "git_blob_sha": "30463b2e6287bc29f7eeb6aa1518c5318cd3b809",
+      "bytes": 31919,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "053179b4db0abfa7f624fcbb60813c1f0113c921624d88e5a8d7412049125aab",
+      "lines": 537,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 20,
+        "classes": 0,
+        "imports": 13
+      }
+    },
+    {
+      "path": "tools/learning/verify_operator_witness.py",
+      "git_blob_sha": "a81a305f18b285e2aee050986e5103cabe4f6586",
+      "bytes": 30792,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "addb724546801d0dd49fb12583cbb0efbf93b1017605670a18f8e630c84001eb",
+      "lines": 533,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 26,
+        "classes": 0,
+        "imports": 12
+      }
+    },
+    {
+      "path": "tools/learning/verify_transfer.py",
+      "git_blob_sha": "29f0a3e0978d208b142e051bc044bf4fe64e2fdc",
+      "bytes": 30359,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "f7d4c81bc87edce7d3b8c63f8f0d132d56cb8f432a0f5caf24b409555cb061bc",
+      "lines": 628,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 34,
+        "classes": 5,
+        "imports": 12
+      }
+    },
+    {
+      "path": "tools/learning/verify_validation_risk.py",
+      "git_blob_sha": "7b8675e685d74d5fccbcc6e844f8ff167d9403e9",
+      "bytes": 9580,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "learning-and-verification"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "73abb51fc273e40dc2b8eae10f9ded2e46e5e4a13458b6e1377c63343e8b2df6",
+      "lines": 181,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 5,
+        "classes": 0,
+        "imports": 7
+      }
+    },
+    {
+      "path": "transparent_core/__init__.py",
+      "git_blob_sha": "6aeca37eaa6fded9ecc1c165e7f4c4648caf2496",
+      "bytes": 73,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "80b0e903549b69e45e556369e8b41429abdc4bd15513bce9a26242d090430dfd",
+      "lines": 1,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 0,
+        "classes": 0,
+        "imports": 0
+      }
+    },
+    {
+      "path": "transparent_core/__main__.py",
+      "git_blob_sha": "348b5354fc851ccebd9ec863aaf858769604d3e1",
+      "bytes": 5015,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "cae2fa65b181cff1560ec835f65b5419976528c49ac2ab860ce9626ac3962ba5",
+      "lines": 91,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 3,
+        "classes": 0,
+        "imports": 7
+      }
+    },
+    {
+      "path": "transparent_core/costs.py",
+      "git_blob_sha": "3f78bddeb9f76c596faf76d3a928b713ee7c483d",
+      "bytes": 11216,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "0e2dc514920a2fa9a7388e71f17d5e1ce0f0c8c003c2fa1f551562d421eb6aa4",
+      "lines": 292,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 18,
+        "classes": 4,
+        "imports": 5
+      }
+    },
+    {
+      "path": "transparent_core/interpreter.py",
+      "git_blob_sha": "3923ccda632e0c031b7876fcdb62b7c8ac9f0e11",
+      "bytes": 7833,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "d8b15d8091b7fab32e4f7fdd2c77f73a951e0961d1c03db985e0131b0b4aad99",
+      "lines": 232,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 13,
+        "classes": 13,
+        "imports": 5
+      }
+    },
+    {
+      "path": "transparent_core/search.py",
+      "git_blob_sha": "30041243dcc9a214d8849b56e4720efc842e2fd5",
+      "bytes": 1711,
+      "source_document_heuristic": true,
+      "semantic_review": "full_direct_read",
+      "review_lanes": [
+        "research-and-reference-core"
+      ],
+      "acquisition": "exact_bytes_hash_verified",
+      "sha256": "a4ad540bf113ebc5661aeaa8ac751ed3b42109f529070d451fb3d3611ac0abba",
+      "lines": 49,
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import_or_execution",
+        "functions": 2,
+        "classes": 4,
+        "imports": 4
+      }
+    }
+  ],
+  "publication_scope": "Aggregates plus the directly read source references. The complete private repository inventory is retained separately from this public project."
+}

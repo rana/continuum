@@ -1,0 +1,12 @@
+/target/
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+/core
+/core.[0-9]*
+

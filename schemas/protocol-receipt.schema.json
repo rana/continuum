@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Continuum protocol receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "invocation_id",
+    "recorded_at",
+    "outcome",
+    "scope_performed",
+    "evidence_refs",
+    "output_refs",
+    "limitations",
+    "effects",
+    "next_action"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "invocation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "outcome": {
+      "enum": [
+        "completed",
+        "partial",
+        "not_applicable",
+        "blocked",
+        "failed"
+      ]
+    },
+    "scope_performed": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "output_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "state",
+          "reference"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "enum": [
+              "prepared",
+              "attempted",
+              "observed",
+              "confirmed",
+              "uncertain"
+            ]
+          },
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision_delta": {
+      "type": "string",
+      "minLength": 1
+    },
+    "useful_seed_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supersedes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "extensions": {
+      "type": "object"
+    }
+  }
+}

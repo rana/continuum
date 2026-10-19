@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "protocols": [
+    {
+      "id": "progress-brief",
+      "version": "0.1.0",
+      "kind": "procedure",
+      "definition_path": "protocols/progress-brief.md",
+      "definition_sha256": "053536906f9b47437cee93d5ea1afcd4f0479b90a2764f74ce116b412bd3aff1",
+      "status": "adopted",
+      "execution_mode": "agent_guided",
+      "authority": "inherited_only",
+      "purpose": "Restore orientation from actual evidence and select the next useful action.",
+      "triggers": [
+        "explicit progress briefing request",
+        "selected substantive milestone"
+      ],
+      "not_needed_when": [
+        "a duplicate unchanged archive with no user request or decision value"
+      ],
+      "required_inputs": [
+        "objective_reference",
+        "source_snapshot",
+        "evidence_cutoff",
+        "available_evidence"
+      ],
+      "optional_inputs": [
+        "previous_brief",
+        "capacity_observations",
+        "collaborator_responses"
+      ],
+      "required_capabilities": [
+        "read_project_records"
+      ],
+      "possible_effects": [
+        "preserve_dated_brief"
+      ],
+      "outputs": [
+        "brief",
+        "evidence_references",
+        "coverage_and_uncertainty",
+        "next_action"
+      ],
+      "composition_defaults": {
+        "limits": {
+          "max_depth": 3,
+          "max_steps": 8
+        },
+        "recursive_invocation": false,
+        "repeat_requires": "new evidence, a changed question, or a changed representation within the invocation budget"
+      },
+      "lineage_refs": [
+        "docs/research-lessons.md"
+      ]
+    },
+    {
+      "id": "holographic-walk",
+      "version": "0.1.0",
+      "kind": "procedure",
+      "definition_path": "protocols/holographic-walk.md",
+      "definition_sha256": "a769b34bfc9cbcdc11d27968c60d392b2286d58d6362e1677617a337eb5e36f8",
+      "status": "adopted",
+      "execution_mode": "agent_guided",
+      "authority": "inherited_only",
+      "purpose": "Investigate a consequential question across representations and return with a useful constraint or question.",
+      "triggers": [
+        "explicit holographic walk request",
+        "material local/global or interface mismatch"
+      ],
+      "not_needed_when": [
+        "ordinary analysis already names the decisive uncertainty and next action",
+        "no meaningful return path"
+      ],
+      "required_inputs": [
+        "question",
+        "objective_reference",
+        "source_snapshot",
+        "local_anchor",
+        "system_boundary"
+      ],
+      "optional_inputs": [
+        "counterpart_response",
+        "candidate_representations"
+      ],
+      "required_capabilities": [
+        "read_project_records"
+      ],
+      "possible_effects": [
+        "preserve_walk_record",
+        "perform_scoped_discriminator"
+      ],
+      "outputs": [
+        "route_and_bridges",
+        "findings",
+        "decision_delta_or_seed",
+        "next_action"
+      ],
+      "composition_defaults": {
+        "limits": {
+          "max_depth": 3,
+          "max_steps": 8
+        },
+        "recursive_invocation": false,
+        "repeat_requires": "new evidence, a changed question, or a changed representation within the invocation budget"
+      },
+      "lineage_refs": [
+        "docs/research-lessons.md"
+      ]
+    },
+    {
+      "id": "research-record",
+      "version": "0.1.0",
+      "kind": "procedure",
+      "definition_path": "protocols/research-record.md",
+      "definition_sha256": "775b9facb426f248e079d8036ce43eeaf12695ec487f46b739a746eb43fd852c",
+      "status": "adopted",
+      "execution_mode": "agent_guided",
+      "authority": "inherited_only",
+      "purpose": "Preserve a substantive contribution with evidence and honest coverage.",
+      "triggers": [
+        "explicit preservation request",
+        "substantive result decision correction disagreement or useful seed"
+      ],
+      "not_needed_when": [
+        "no substantive contribution and no requested archive"
+      ],
+      "required_inputs": [
+        "objective_reference",
+        "source_snapshot",
+        "contribution",
+        "record_routes",
+        "publication_scope"
+      ],
+      "optional_inputs": [
+        "visible_transcript",
+        "model_provenance",
+        "run_receipt"
+      ],
+      "required_capabilities": [
+        "read_project_records",
+        "write_project_records"
+      ],
+      "possible_effects": [
+        "preserve_records",
+        "publish_with_existing_authority"
+      ],
+      "outputs": [
+        "record_references",
+        "coverage",
+        "publication_receipts",
+        "next_action"
+      ],
+      "composition_defaults": {
+        "limits": {
+          "max_depth": 3,
+          "max_steps": 8
+        },
+        "recursive_invocation": false,
+        "repeat_requires": "new evidence, a changed question, or a changed representation within the invocation budget"
+      },
+      "lineage_refs": [
+        "docs/research-lessons.md"
+      ]
+    },
+    {
+      "id": "bounded-research-loop",
+      "version": "0.1.0",
+      "kind": "procedure",
+      "definition_path": "protocols/bounded-research-loop.md",
+      "definition_sha256": "6b69eb8c420e262b0abbcb15858487e32b3ffbdac8366b6979cbcbfb93a1acd8",
+      "status": "adopted",
+      "execution_mode": "agent_guided",
+      "authority": "inherited_only",
+      "purpose": "Continue an authorized objective through useful bounded units and recoverable handoffs.",
+      "triggers": [
+        "explicit continuation request",
+        "active authorized unit with a ready successor"
+      ],
+      "not_needed_when": [
+        "no authorized useful work with available inputs"
+      ],
+      "required_inputs": [
+        "objective_reference",
+        "source_snapshot",
+        "authority_references",
+        "current_ownership",
+        "resource_bounds"
+      ],
+      "optional_inputs": [
+        "prior_attempt_receipts",
+        "capacity_observations",
+        "collaborator_availability"
+      ],
+      "required_capabilities": [
+        "read_project_records"
+      ],
+      "possible_effects": [
+        "scoped_research_and_implementation",
+        "scoped_execution",
+        "preservation",
+        "authorized_handoff"
+      ],
+      "outputs": [
+        "unit_result",
+        "evidence_and_limits",
+        "resource_observations",
+        "next_action"
+      ],
+      "composition_defaults": {
+        "limits": {
+          "max_depth": 3,
+          "max_steps": 8
+        },
+        "recursive_invocation": false,
+        "repeat_requires": "new evidence, a changed question, or a changed representation within the invocation budget"
+      },
+      "lineage_refs": [
+        "docs/research-lessons.md"
+      ]
+    }
+  ]
+}

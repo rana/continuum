@@ -137,6 +137,12 @@ The [signal-readiness review](source-review/base12-signal-readiness.md) records 
 
 Shared computation can support paired output comparisons while preventing independent per-arm timing claims. An older codec with different history, framing and adaptation is not a matched baseline. For future Continuum studies, declare task exposure, candidate relationships, cost boundaries and readiness checks before scored work. A prerequisite failure after validation exposure is retained attempt evidence; later installation does not erase it. Historical coordination with an existing owner also does not authorize a second execution queue.
 
+### 12. Structural advantages change the interpretation of wins
+
+The [learning-performance review](source-review/base12-learning-performance.md) explains why a minimum-cost arm retaining all baseline candidates does not yield unconstrained per-record win trials. Magnitudes, global model overhead and a matched alternative still matter; eight favorable records do not justify a sign test under that design. A reported 98.27% share of the full family's net saving also needs its exact baseline denominator, rather than becoming a size or speed ratio. Continuum comparisons should record candidate inclusion and task exposure before scoring wins.
+
+The same source proposes associative reconstruction for a fixed recurrence while declining to apply it to rounded/clipped feedback. Efficient batching needs a sufficient boundary state and preserved semantics; a derivation for one algorithm does not establish another's optimization. Three source readings, two preservation bindings and arithmetic from reported totals were checked here, without reproducing a run or measuring acceleration.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

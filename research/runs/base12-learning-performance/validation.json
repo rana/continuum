@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source_baseline": "61f30811dcc03030ef1ae710b409c7621917a78a",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 3,
+  "verified_source_bytes": 20038,
+  "utf8_decoded": 3,
+  "markdown_full_text_read": 3,
+  "preservation_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/learning-performance-followup/PERFORMANCE.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/learning-performance-followup/README.md",
+      "matched": true
+    }
+  ],
+  "preservation_bindings_outside_selected_scope_not_checked": [
+    "collaboration/dot-bridge/to-dot/gpt-20261016-avx-gpu-followup-01.md"
+  ],
+  "arithmetic_recomputed_from_reported_totals": true,
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "path": "research/owned-stack/2026-10-15/alignment-pilot/",
+    "files": 11,
+    "bytes": 45984
+  }
+}

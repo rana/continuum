@@ -1,0 +1,580 @@
+{
+  "schema_version": 1,
+  "source_baseline": "ae338645920edb13add90dad8eb53d982e95c5cb",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 8,
+  "verified_source_bytes": 65342,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 30073,
+  "previously_read_vendor_backfill": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+      "git_blob": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/runtime.py",
+      "git_blob": "f4cab037f502b90b273780225a238fe1cf281321",
+      "bytes": 2647,
+      "sha256": "2382f92bc33ca03381490fc95359517b159d4adb27ccc210ba61296227db975f"
+    }
+  ],
+  "source_archive": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/original/base12_ecg_codec_stage_a.tar.xz",
+    "git_blob": "e0e811835a8b07f95c5b7560ef19d5e19637bc9e",
+    "bytes": 26232,
+    "sha256": "f544cd17b8dd4ba5f5643c340c3b6aad92c9d7d501dec9d2bbac6119157e80bd",
+    "regular_members": 19,
+    "unpacked_bytes": 76539,
+    "exact_expected_member_set": true,
+    "duplicate_members": false,
+    "nonregular_members": false,
+    "filesystem_extraction": false,
+    "members": [
+      {
+        "path": "ATTRIBUTION.md",
+        "bytes": 1547,
+        "sha256": "88ff6a269b07d20c579f1995d8dc0a32ac5f458aa9e4421b7d276af04a5eea6e",
+        "matches_installed": true
+      },
+      {
+        "path": "DOT_HANDOFF.md",
+        "bytes": 3815,
+        "sha256": "9b916f5ba61fc0011b8c3d74b9197a8289df5a465dbd05c012ece6325c8266f4",
+        "matches_installed": true
+      },
+      {
+        "path": "MANIFEST.json",
+        "bytes": 2355,
+        "sha256": "c3b47cba704aae8224e594308e1bf9cfdafc56a78ac8ad5f5e140f26bb2e215c",
+        "matches_installed": true
+      },
+      {
+        "path": "PROTOCOL.md",
+        "bytes": 6042,
+        "sha256": "9e1e43b3845e69f65c3e3fd0862783ae36027e6ea52a44fe59d1a937b7f19c32",
+        "matches_installed": true
+      },
+      {
+        "path": "README.md",
+        "bytes": 7078,
+        "sha256": "8f36537de81478cd2b5078ff49725b25fe0aaa5e0e28c2392bd41da1998aa1b3",
+        "matches_installed": true
+      },
+      {
+        "path": "REVIEW_AND_ALIGNMENT.md",
+        "bytes": 4830,
+        "sha256": "0f6ee595e271db2fd5e98655aadd1878dd181bfe0a3ec2713fc50a544d621bb8",
+        "matches_installed": true
+      },
+      {
+        "path": "WIRE.md",
+        "bytes": 1877,
+        "sha256": "8eda125db6fd6f275146e2a186bb665b6170f2681cdbb97616d99079d6023a3c",
+        "matches_installed": true
+      },
+      {
+        "path": "check.py",
+        "bytes": 7708,
+        "sha256": "ce97f82b37b4e03d1c1caffbd37e551d5ef75583917d84b7e315c377ae920d32",
+        "matches_installed": true
+      },
+      {
+        "path": "codec.py",
+        "bytes": 9208,
+        "sha256": "3cbd016e38a306ed9cb4cfb38eebb61a431c4b4a91cc1b014794921b5fa0d158",
+        "matches_installed": true
+      },
+      {
+        "path": "native_signal.py",
+        "bytes": 3719,
+        "sha256": "f686d91bbae2d220ad1e05d243afa6a9fe05177655568ffeda56dfba4e34131d",
+        "matches_installed": true
+      },
+      {
+        "path": "record100.py",
+        "bytes": 8874,
+        "sha256": "c9c3bc878477652a9f1ba327f661647b9388e1151852fa5bef2711575cfcb09a",
+        "matches_installed": true
+      },
+      {
+        "path": "records/checks.json",
+        "bytes": 5723,
+        "sha256": "41b83b7442e3fdeb44f609ddd3e45cccf906f0134d26aff4c33f4a7fcfd2eb7a",
+        "matches_installed": true
+      },
+      {
+        "path": "records/design-freeze.json",
+        "bytes": 829,
+        "sha256": "07e07c6c96bf7630385a033bdb9af63355d1efcfbcabdf5ecc22869745295c38",
+        "matches_installed": true
+      },
+      {
+        "path": "records/development-corrections.json",
+        "bytes": 460,
+        "sha256": "f833ac171aa0487333e5c9eb82489aed1dd72f84575caa5c80f8bc26d6a3ac6b",
+        "matches_installed": true
+      },
+      {
+        "path": "records/external-wrapper-checks.json",
+        "bytes": 1532,
+        "sha256": "634f98bae30a9b16c0e8e91f0a5c20e7a16a3eaf23802e44046ebe1feabb59e7",
+        "matches_installed": true
+      },
+      {
+        "path": "records/published-pins.json",
+        "bytes": 946,
+        "sha256": "d3b45f9d93093c5fb92fc958fb52ec7fd4b4a8bc7d957c3892fe7c0b6420601e",
+        "matches_installed": true
+      },
+      {
+        "path": "records/source-freeze.json",
+        "bytes": 959,
+        "sha256": "c01e758dd99c2b88c8b2c617d2516a9f186875c92ab8be5fa8966ab485df50f4",
+        "matches_installed": true
+      },
+      {
+        "path": "vendor/isa.py",
+        "bytes": 6390,
+        "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+        "matches_installed": true
+      },
+      {
+        "path": "vendor/runtime.py",
+        "bytes": 2647,
+        "sha256": "2382f92bc33ca03381490fc95359517b159d4adb27ccc210ba61296227db975f",
+        "matches_installed": true
+      }
+    ]
+  },
+  "source_manifest_bindings": 18,
+  "parent_review_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "static-source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "claude-review-evidence.json",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": []
+  },
+  "cumulative_delivery_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "README.md",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "frozen-source/base12_ecg_codec_stage_a.tar.xz",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "intake/acquisition-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/REVIEW_MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/claude-review-evidence.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/static-source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/acquire_record100.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/environment.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/intake-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/native-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/packet-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-clearance.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-review-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/postrun-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/record100-attempt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/result-static-verification.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/run_once.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/wire-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/RESULTS.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/execution-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/input-and-code.json",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "run/stderr.log",
+      "run/stdout.log"
+    ]
+  },
+  "cumulative_preservation_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "original/base12_ecg_codec_stage_a.tar.xz",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "ATTRIBUTION.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "DOT_HANDOFF.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "PROTOCOL.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "README.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "REVIEW_AND_ALIGNMENT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "WIRE.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "check.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "codec.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "native_signal.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "record100.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/checks.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/design-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/development-corrections.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/external-wrapper-checks.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/published-pins.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/source-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "vendor/isa.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "vendor/runtime.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/DELIVERY_MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/README.md",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/frozen-source/base12_ecg_codec_stage_a.tar.xz",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/intake/acquisition-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/static-source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/acquire_record100.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/environment.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/intake-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/native-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/packet-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/parent-clearance.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/parent-review-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/postrun-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/record100-attempt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/result-static-verification.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/run_once.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/wire-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/RESULTS.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/execution-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/input-and-code.json",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/run/stderr.log",
+      "aum-run-2026-10-16/evidence/run/stdout.log"
+    ]
+  },
+  "consultation": {
+    "initial_status": "ERROR",
+    "initial_category": "output_budget_exhausted",
+    "initial_inference_outcome": "unknown",
+    "initial_substantive_answer": false,
+    "successful_status": "OK",
+    "actual_model": "claude-opus-5-5",
+    "configured_effort": "medium",
+    "truncated": false,
+    "stop_reason": "end_turn",
+    "input_tokens": 5768,
+    "output_tokens": 3062,
+    "visible_and_structured_response_text_equal": true,
+    "request_source_context_declared_reconstructed": true,
+    "independent_live_transport_capture": false,
+    "new_model_invocation": false
+  },
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+      "bytes": 80492
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "bytes": 11348
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/stderr.log",
+      "bytes": 0
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/stdout.log",
+      "bytes": 1768
+    }
+  ],
+  "public_contribution_checks": [
+    "JSON parsing and cumulative arithmetic passed",
+    "publication file size and SHA-256 checks passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "ae338645920edb13add90dad8eb53d982e95c5cb",
+  "files": [
+    {
+      "path": "docs/source-review/base12-stage-a-source-custody.md",
+      "bytes": 5359,
+      "sha256": "4661b9089da714a6c562a6b1ca6f14b41e83be0986709ac37547a3625736f5a2"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-stage-a-source-custody.json",
+      "bytes": 5281,
+      "sha256": "e24d834d1b502d023b7c35e7bc001da81d5a4a4438365f5a1cf3e80e3bdfd73f"
+    },
+    {
+      "path": "research/runs/base12-stage-a-source-custody/validation.json",
+      "bytes": 17423,
+      "sha256": "796d6c3325bd58daaae4ba9a42d7ad856e566cc2f8cf90aebbe56fac8410c9fa"
+    }
+  ]
+}

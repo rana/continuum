@@ -193,6 +193,8 @@ The [consumer-claims return](source-review/base12-consumer-claims.md) recovers a
 
 The [consumer-source return](source-review/base12-consumer-source.md) confirms the qualified freeze/exposure sequence, one-byte dictionary charging and complete block/container cost units. It also traces native arm work before a late external-reference gate and final result, so absent final output would not establish absent effects. Continuum should recover intermediate evidence before repeating an attempt. All forty declared lineage payloads reconcile; historical execution and the late-failure path were not reproduced.
 
+The [consumer-records return](source-review/base12-consumer-records.md) resolves local selector ordinals through each arm dictionary: equal numbers can name different models, and equal models can use different numbers. Continuum projections should retain the defining dictionary and parent artifact. Saved accounting, counters and identities reconcile; repeated result/stdout and intake copies add no independent observation. Waveform costs, greedy replay and native generation remain unperformed.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

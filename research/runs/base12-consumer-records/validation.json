@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "source_baseline": "f4a91ed73b601ce3a26e393ef43621bcc423dff3",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 6,
+  "verified_source_bytes": 33264,
+  "json_full_text_read_and_parsed": 6,
+  "intake_rows_read": 80,
+  "result_per_record_rows_read": 8,
+  "native_identity_rows_read": 40,
+  "source_and_protocol_hashes_match": true,
+  "learned_payload_hash_matches_freeze": true,
+  "learned_object_and_training_time_match_result": true,
+  "training_cost_payload_hash_checked": false,
+  "training_cost_rows_semantically_read": false,
+  "intake_split_and_unique_names_match_source": true,
+  "intake_total_bytes": 78009188,
+  "validation_total_bytes": 15602045,
+  "arm_accounting": [
+    {
+      "arm": "fixed",
+      "archive_bytes": 5524566,
+      "header_dictionary_bytes": 11,
+      "per_record_sum": 5524555,
+      "selector_count": 2544,
+      "output_hashes_matching_intake": 16
+    },
+    {
+      "arm": "learned",
+      "archive_bytes": 5418065,
+      "header_dictionary_bytes": 15,
+      "per_record_sum": 5418050,
+      "selector_count": 2544,
+      "output_hashes_matching_intake": 16
+    },
+    {
+      "arm": "fixed4",
+      "archive_bytes": 5467168,
+      "header_dictionary_bytes": 15,
+      "per_record_sum": 5467153,
+      "selector_count": 2544,
+      "output_hashes_matching_intake": 16
+    },
+    {
+      "arm": "full",
+      "archive_bytes": 5416191,
+      "header_dictionary_bytes": 46,
+      "per_record_sum": 5416145,
+      "selector_count": 2544,
+      "output_hashes_matching_intake": 16
+    }
+  ],
+  "per_record_deltas": [
+    {
+      "record": "106",
+      "learned_minus_fixed": -16936,
+      "full_minus_learned": -152
+    },
+    {
+      "record": "112",
+      "learned_minus_fixed": -10006,
+      "full_minus_learned": -32
+    },
+    {
+      "record": "118",
+      "learned_minus_fixed": -12276,
+      "full_minus_learned": -20
+    },
+    {
+      "record": "123",
+      "learned_minus_fixed": -16512,
+      "full_minus_learned": -31
+    },
+    {
+      "record": "207",
+      "learned_minus_fixed": -18322,
+      "full_minus_learned": -109
+    },
+    {
+      "record": "213",
+      "learned_minus_fixed": -3713,
+      "full_minus_learned": -1490
+    },
+    {
+      "record": "222",
+      "learned_minus_fixed": -21303,
+      "full_minus_learned": -67
+    },
+    {
+      "record": "230",
+      "learned_minus_fixed": -7437,
+      "full_minus_learned": -4
+    }
+  ],
+  "training_net_savings_sum": 11349,
+  "training_calls": 10240,
+  "training_sample_evaluations": 41943040,
+  "validation_candidate_calls": 101760,
+  "validation_sample_evaluations": 416000000,
+  "overlap_candidate_starts": 5167240,
+  "overlap_full_byte_candidates": 0,
+  "encoder_native_identities": 40,
+  "encoder_native_bytes": 7472,
+  "decoder_native_identities_preserved": false,
+  "original_signal_payloads_rehashed": false,
+  "greedy_selection_independently_replayed": false,
+  "no_upstream_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_saved_learning_receipts.py",
+      "bytes": 11722
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/learning-native-audit-v1.json",
+      "bytes": 4429
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/checks.json",
+      "bytes": 13748
+    }
+  ],
+  "next_scope_bytes": 29899,
+  "arm_selector_models": {
+    "fixed": [
+      {
+        "serialized_selector": 2,
+        "model": "fixed:2",
+        "count": 2226
+      },
+      {
+        "serialized_selector": 1,
+        "model": "fixed:1",
+        "count": 314
+      },
+      {
+        "serialized_selector": 3,
+        "model": "fixed:3",
+        "count": 4
+      }
+    ],
+    "learned": [
+      {
+        "serialized_selector": 5,
+        "model": "alpha:10",
+        "count": 1403
+      },
+      {
+        "serialized_selector": 7,
+        "model": "alpha:8",
+        "count": 500
+      },
+      {
+        "serialized_selector": 8,
+        "model": "alpha:7",
+        "count": 187
+      },
+      {
+        "serialized_selector": 6,
+        "model": "alpha:5",
+        "count": 293
+      },
+      {
+        "serialized_selector": 2,
+        "model": "fixed:2",
+        "count": 158
+      },
+      {
+        "serialized_selector": 3,
+        "model": "fixed:3",
+        "count": 3
+      }
+    ],
+    "fixed4": [
+      {
+        "serialized_selector": 2,
+        "model": "fixed:2",
+        "count": 1359
+      },
+      {
+        "serialized_selector": 6,
+        "model": "alpha:6",
+        "count": 1181
+      },
+      {
+        "serialized_selector": 3,
+        "model": "fixed:3",
+        "count": 4
+      }
+    ],
+    "full": [
+      {
+        "serialized_selector": 25,
+        "model": "alpha:9",
+        "count": 78
+      },
+      {
+        "serialized_selector": 26,
+        "model": "alpha:10",
+        "count": 1288
+      },
+      {
+        "serialized_selector": 24,
+        "model": "alpha:8",
+        "count": 436
+      },
+      {
+        "serialized_selector": 23,
+        "model": "alpha:7",
+        "count": 186
+      },
+      {
+        "serialized_selector": 22,
+        "model": "alpha:6",
+        "count": 105
+      },
+      {
+        "serialized_selector": 21,
+        "model": "alpha:5",
+        "count": 211
+      },
+      {
+        "serialized_selector": 20,
+        "model": "alpha:4",
+        "count": 48
+      },
+      {
+        "serialized_selector": 19,
+        "model": "alpha:3",
+        "count": 5
+      },
+      {
+        "serialized_selector": 27,
+        "model": "alpha:11",
+        "count": 174
+      },
+      {
+        "serialized_selector": 2,
+        "model": "fixed:2",
+        "count": 10
+      },
+      {
+        "serialized_selector": 3,
+        "model": "fixed:3",
+        "count": 3
+      }
+    ]
+  },
+  "selector_scope_resolved_from_each_arm_dictionary": true,
+  "public_contribution_checks": [
+    "JSON parsing, coverage and record-accounting arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

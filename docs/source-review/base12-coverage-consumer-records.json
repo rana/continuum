@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-consumer-source.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/RESULTS.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/learned.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/model-freeze.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/pre-run.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/overlap.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/intake.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/RESULTS.json",
+      "bytes": 17237,
+      "git_blob_sha": "42be68b90bed607663a0235f1e858e0eb1b9a16d",
+      "sha256": "e9dc55450019ccfffeb76e318efdd1b6e09e19a5cd7e75ac7b88e179c160884a",
+      "lines": 510,
+      "semantic_review": "full_direct_read",
+      "review_lane": "consumer-saved-run-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/learned.json",
+      "bytes": 677,
+      "git_blob_sha": "1e0da61e7106918765f0500b62832d1a4b07514b",
+      "sha256": "6b3044efde002522f970c7f09f6f2204ad93fb21eb89e187ab4fb6f9338652f8",
+      "lines": 42,
+      "semantic_review": "full_direct_read",
+      "review_lane": "consumer-saved-run-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/model-freeze.json",
+      "bytes": 368,
+      "git_blob_sha": "5a2cf6bd7e81fa18266ce38572d3ea8d07115b15",
+      "sha256": "0cd89b68bb518591ff7db012ce10adee81c0f251b131f56e0dd735ea380e5266",
+      "lines": 10,
+      "semantic_review": "full_direct_read",
+      "review_lane": "consumer-saved-run-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/pre-run.json",
+      "bytes": 716,
+      "git_blob_sha": "438522e232a63084fb5081c61ba60bb6301f1ea6",
+      "sha256": "4f33ca9e7368037019f4cb4dc1031beb5375e9dd07ac30387e78440d58afda24",
+      "lines": 13,
+      "semantic_review": "full_direct_read",
+      "review_lane": "consumer-saved-run-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/overlap.json",
+      "bytes": 266,
+      "git_blob_sha": "2b8501f33873b582c7880a9656f892e63c23ec12",
+      "sha256": "23eb17161e607786fd3c71cac442cfbe66582867e256288feb8e81415b678108",
+      "lines": 11,
+      "semantic_review": "full_direct_read",
+      "review_lane": "consumer-saved-run-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/run-json/intake.json",
+      "bytes": 14000,
+      "git_blob_sha": "7a1173fd3c106fe1b31fee461487500807b7ae84",
+      "sha256": "eaeb87982ec56f74fdae43cecc977b8029e6b3629c0a395657f814d699a02743",
+      "lines": 488,
+      "semantic_review": "full_direct_read",
+      "review_lane": "consumer-saved-run-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_parse_without_execution"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 6,
+      "unique_blobs": 6,
+      "bytes": 33264
+    },
+    "cumulative_direct_read": {
+      "paths": 298,
+      "unique_blobs": 298,
+      "bytes": 1935496
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 349,
+    "remaining_paths_without_full_semantic_read_or_alias": 5244,
+    "remaining_distinct_blobs_without_full_semantic_read": 4131,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 33264,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All six JSON texts fully read, including 80 intake rows, eight per-record rows, all arm/file hashes and forty native identity records.",
+    "Saved accounting and cross-record identities reconcile; no waveform costs or compressed outputs regenerated.",
+    "Training cost rows and greedy optimum/selection replay remain outside this unit.",
+    "Encoder native identity records do not preserve fresh decoder-cache identities or regenerate instruction bytes.",
+    "Overlap counters remain scoped to the declared scan and are not independently reproduced."
+  ],
+  "review_report": "base12-consumer-records.md"
+}

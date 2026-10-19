@@ -1,0 +1,20 @@
+{
+  "source_baseline": "f4a91ed73b601ce3a26e393ef43621bcc423dff3",
+  "files": [
+    {
+      "path": "docs/source-review/base12-consumer-records.md",
+      "bytes": 5909,
+      "sha256": "8cf7c19b718c382ffb9c65ece17107411474e5bbb19cdbc534df011a3ffbd0d3"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-consumer-records.json",
+      "bytes": 6204,
+      "sha256": "bc4e2bb58385600fe56203406d38c6cc2608d66d643346568ad37f18e9be2cec"
+    },
+    {
+      "path": "research/runs/base12-consumer-records/validation.json",
+      "bytes": 6594,
+      "sha256": "24262f98fec1502291ae61c358bc9298065d6bd5564657493abb95d33eb75e38"
+    }
+  ]
+}

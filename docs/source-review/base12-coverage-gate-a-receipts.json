@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-records.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/STARTED",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/freeze.sha256",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/tools.sha256",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/boot-id",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/pid-namespace",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/resources",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/exit",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/driver.exit",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/group.identity",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/group-scan.exit",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/survivors",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/survivors.stderr",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/OUTCOME",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/stdout.log",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/stderr.log",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/preflight.log",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/preflight-tools.sha256",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/outer-start.log",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/launcher-call.log",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/outer-return.log"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/STARTED",
+      "bytes": 58,
+      "git_blob_sha": "d0629db2357dcfa15000fe11bef6243bf8390b14",
+      "sha256": "d5e8c8906aa35806d043044eb59f237cea49adb2dc8ab53071c84950856f6160",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/freeze.sha256",
+      "bytes": 65,
+      "git_blob_sha": "c4ccacf8e758ab6b4842efa28e38caf65eb2b4a0",
+      "sha256": "fea4713c2aaa840033fe4b783300611c3a2accbfdb8049052d51933cd76c9029",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/tools.sha256",
+      "bytes": 490,
+      "git_blob_sha": "37f8c5b8a54d8b42b822bdc5eeac6b36aa5f09bc",
+      "sha256": "08659432a2d033276578d94d5aed929ec1d84db335e0a180f18b04c1ae752f24",
+      "lines": 6,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/boot-id",
+      "bytes": 37,
+      "git_blob_sha": "6089ed2056687f35bba0bdf9b3d19f55c79963fe",
+      "sha256": "beae7096074e8d61ab4cd72becba4e787c5d1400fafe0537f6474914fff96c34",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/pid-namespace",
+      "bytes": 17,
+      "git_blob_sha": "e27e9bee4c3236bafa8666c3166302366698e809",
+      "sha256": "d8d691467e1fa0996d6d28932e94ee3b75885f991fa467f34837fed231881817",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/resources",
+      "bytes": 1041,
+      "git_blob_sha": "f6c6ddd189379c5be8bfe843ec54d56d146e2e7a",
+      "sha256": "9daf415caec69abc2a438a4f16793f9855f6275a943ef8b1c31048f20a2714da",
+      "lines": 23,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/exit",
+      "bytes": 39,
+      "git_blob_sha": "3b0ec1b602867a3aed06a4bb4ed60b7dbced3841",
+      "sha256": "0c4f89ca83f578f8f66ee6cbd984c3b47568e912df690edda709401aafe0cddb",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/driver.exit",
+      "bytes": 14,
+      "git_blob_sha": "eeddaec07749acf383821971a98ee3e7b5759158",
+      "sha256": "d50c642d50fc6ecc59f5c8e96f0b1514c3cb471ae1fca5f5379a4888c315d642",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/group.identity",
+      "bytes": 38,
+      "git_blob_sha": "071a5cf845e5bd4c9f99e93788a863f3d2ed7857",
+      "sha256": "d2e48e6de493cfc30ead75b8c0fcae61ea926d9b70e954994eca8298078bc7dd",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/group-scan.exit",
+      "bytes": 18,
+      "git_blob_sha": "8dab97d741bb30834a2d207f89f45fb2fe5486e2",
+      "sha256": "e95e0239ea851dbad654917ed9eaeaea437ea039a98266fa6defab752c52139c",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/survivors",
+      "bytes": 68,
+      "git_blob_sha": "f0dada81f89e0c6faaab6e01e2026135afe69b74",
+      "sha256": "535f7e529533b7272b60eda4e6cb0ebc444796da3aecdb7a759799819e5b1054",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/survivors.stderr",
+      "bytes": 49,
+      "git_blob_sha": "d7a57c43e9927ddb5bbd11da83d29686cc0dc135",
+      "sha256": "b95997fb6134eaf1a6535680d4cc21d5acc397c87f727a2bfabc844e1a1e7a84",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/OUTCOME",
+      "bytes": 68,
+      "git_blob_sha": "5ba4596a916fe21cf82914d842fb3b723405c3d1",
+      "sha256": "bfe0040c07a6f5c65059636e443842b5eabce93893054068c08419a76481d1c3",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/stdout.log",
+      "bytes": 4400,
+      "git_blob_sha": "ddf24926857d314ae084b4216abd88a763d72431",
+      "sha256": "9d7ab4e39eb41aee60adaf4b3be8d3e9926d9d14dd43ade966858cc4398df03c",
+      "lines": 93,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/preflight.log",
+      "bytes": 3069,
+      "git_blob_sha": "cf20267904dee2d7148795b34caaa47f4b3698a8",
+      "sha256": "f4b42ab3381f25d65271071f96ccb1c7d717aa4c5c273e50d11a6e5f2eb01911",
+      "lines": 46,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/preflight-tools.sha256",
+      "bytes": 1056,
+      "git_blob_sha": "c49cca864f5b5d362b4eb6adac1793c3a1d0bdeb",
+      "sha256": "c13c7fbea5188fb7df5bf2a1bab36e5551697d53132166aaf547e0b6b01470f5",
+      "lines": 13,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/outer-start.log",
+      "bytes": 45,
+      "git_blob_sha": "3deeeb720e9242ebfb6d2478cc5775f6ff5af0be",
+      "sha256": "1934f04c3a91f27ea331e911aba1416392f08eba054b8e8dcd3d1aa9624bd999",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/launcher-call.log",
+      "bytes": 38,
+      "git_blob_sha": "af8c1baad766c76511310a047b5beedfd86cc064",
+      "sha256": "eae82edc81d84260da12be2311b084b5c15a902b7f464d31f4c99a58839b18d7",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/outer-return.log",
+      "bytes": 59,
+      "git_blob_sha": "d8b69acd01c8aa7ff6f97abf95b4991716050612",
+      "sha256": "0d9df9220b3016cbb14f4cbe31e9e828da0bb3d39e1300aa5f7df9c40e04ea52",
+      "lines": 2,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-allowlisted-receipt-payloads",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 19,
+      "unique_blobs": 19,
+      "bytes": 10669
+    },
+    "cumulative_direct_read": {
+      "paths": 425,
+      "unique_blobs": 425,
+      "bytes": 3256725
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 477,
+    "remaining_paths_without_full_semantic_read_or_alias": 5116,
+    "remaining_distinct_blobs_without_full_semantic_read": 4004,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 20,
+    "this_review_verified_bytes": 10669,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Nineteen nonempty receipt texts fully read; one zero-byte stderr checked mechanically without semantic credit.",
+    "All 22 preservation entries bind exact acquired bytes; this verifies copied receipt custody, not their historical truth or live-host state.",
+    "Log contains 77 unique verdict rows matching RESULT; collision and retained outcomes retain frozen-driver control-flow dependencies.",
+    "Freeze ten OK lines and tool-digest declarations do not newly hash the corresponding source/ELF/tool binaries.",
+    "Boot/namespace/group identities are private scoped evidence, not authenticated worker identity; raw values and absolute timestamps are excluded from the public findings.",
+    "No-group scan and recorded vanished-proc stderr are a retained snapshot, not arbitrary-interference proof or current process census.",
+    "GNU time values are normal waited-child, rounded batch observations; zero socket counters are not an independent network audit.",
+    "No native execution, output/trace-byte access, source/tool rebuild, new inference or uncertain invocation retry occurred."
+  ],
+  "review_report": "base12-gate-a-receipts.md",
+  "mechanical_custody_files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/stderr.log",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_credit": false
+    }
+  ],
+  "repeated_identical_payload_reads": []
+}

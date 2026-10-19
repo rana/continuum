@@ -239,6 +239,8 @@ The [Gate-A claims return](source-review/base12-gate-a-claims.md) preserves nati
 
 The [Gate-A records return](source-review/base12-gate-a-records.md) traces an actual-exit summary field to expected values, matching log text and output predicates rather than treating the label as independent telemetry. A later same-named syscall alone also cannot identify a retry of the same operation. Continuum should preserve field derivations, call identity and separate reviewer scope. No saved auditor or native code was run.
 
+The [Gate-A receipts return](source-review/base12-gate-a-receipts.md) closes a complete preservation manifest without promoting log, control-flow or toolchain assumptions into independent telemetry. Equal hashes across several tool paths establish repeated content declarations, not independent implementations or held binaries. Continuum should preserve those dependencies alongside a complete custody result. No historical code or batch was run.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

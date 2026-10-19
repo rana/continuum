@@ -261,6 +261,8 @@ The [B1 source-record return](source-review/base12-decoder-b1-boundary-records.m
 
 The [B1 inspection closeout](source-review/base12-decoder-b1-inspection-closeout.md) closes packet custody while distinguishing extracted source facts from eight literal capacity fields copied into an inspection summary. A corrected reader can answer a narrower question successfully without verifying every claim in its output. Preserve that derivation boundary and the focused reviewer’s actual scope.
 
+The [builder source return](source-review/base12-builder-source-boundary.md) traces literal summary limits to actual source guards and preserves the output contract: parse/resolve before reservation, but no atomic ELF/map pair after reservation. File presence is not completion; a full-looking pair still needs the success observation. Native runtime, native construction and consumer behavior also remain separate claims.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

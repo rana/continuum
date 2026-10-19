@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "source_baseline": "257d255da9ce667a720b263ee6c48dc2881fd220",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 2,
+  "verified_source_bytes": 56899,
+  "python_full_text_read_and_syntax_parsed": 1,
+  "json_full_text_read_and_strictly_parsed": 1,
+  "all332_historical_check_entries_read": true,
+  "historical_check_taxonomy": {
+    "total": 332,
+    "encoding": 127,
+    "member_shape": 127,
+    "other": 78,
+    "unique_names": 332,
+    "all_saved_pass_flags": true,
+    "nested82_audit_is_one_dependency_entry": true
+  },
+  "both_per_member_name_sets_match_pinned_tree_127_paths": true,
+  "all_four_library_provenance_payloads_bind": true,
+  "library_payload_bindings_without_operational_identifiers": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/INDEPENDENT-PACKET-REVIEW.md",
+      "bytes": 9512,
+      "sha256": "72cef8dc5ffd59fc5eb420936d90e8d44dde40161ce6693ad386a5e7792198c3",
+      "version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.py",
+      "bytes": 16925,
+      "sha256": "dad23f00e7c0669b4ac176895da1ccb9b9ff6681a81f529fe938c0419058c7de",
+      "version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.json",
+      "bytes": 39974,
+      "sha256": "f34c8a5524055ec165b2b4a7e8f2c582aaa66220d7c1e52e19e993a2ddf1426c",
+      "version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-zip-check.json",
+      "bytes": 241,
+      "sha256": "31c9187d1320d93f4ed418f5403f2ee2f44f058677e978807a93aebcc6e39ae1",
+      "version": 0,
+      "matched": true
+    }
+  ],
+  "parent_greedy_events_and_charged_totals_match_prior_set_objective_replay": true,
+  "parent_four_arm_and_eight_paired_rows_match_saved_RESULTS": true,
+  "parent_resource_summary_matches_saved_audit": true,
+  "checker_source_line_anchors": {
+    "read_all_extracted_files": 18,
+    "decode_before_member_check": 21,
+    "member_shape_check": 23,
+    "nested_82_verdict_is_one_entry": 41,
+    "credential_pattern_indicator": 114,
+    "report_write": 118
+  },
+  "checker_rejects_duplicate_JSON_keys_and_nonfinite_constants": true,
+  "read_and_decode_precede_member_shape_checks": true,
+  "parse_exceptions_can_prevent_completed_report": true,
+  "privacy_indicators_are_not_full_semantic_privacy_proof": true,
+  "manifest_payload_acquired": false,
+  "allowlist_payload_acquired": false,
+  "report_declared_manifest_sha256": "2ac4be9055c7aee5c2d7f552fc9148aca609ba30ca0d1b5195d49b0e22aeb3ba",
+  "upstream_checker_executed": false,
+  "complete332_predicate_reexecuted": false,
+  "zip_bytes_acquired": false,
+  "recursive_packet_privacy_review_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All four Library file identities bind, without executing the checker or replaying its complete predicate.",
+    "All 332 saved entries are read; 254 are paired per-member structural checks and 78 are other entries, not independent scientific trials.",
+    "Checker reads/decodes extracted paths before member-shape checks; it is not a pre-access safe extractor or containment boundary.",
+    "Parse/read exceptions can abort before a final report; Boolean BLOCK output is not the only failure mode.",
+    "Credential-pattern and filename exclusions are supplementary indicators; the parent prose review describes broader manual content exposure.",
+    "Saved greedy report agrees with the earlier separate set-objective replay on the same cost matrix, not independently regenerated waveform costs.",
+    "Manifest/allowlist and all 127 input payloads remain outside current complete custody/semantic claims; no new ZIP or recursive privacy audit occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/build_review_packet.py",
+      "bytes": 6699
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/prepare_review_metadata.py",
+      "bytes": 7092
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/packaging/verify_review_packet.py",
+      "bytes": 4357
+    }
+  ],
+  "next_scope_bytes": 18148,
+  "public_contribution_checks": [
+    "source syntax and strict report JSON parsing passed",
+    "all four review bindings, check taxonomy/name sets and scoped saved summaries passed",
+    "source-order and coverage arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

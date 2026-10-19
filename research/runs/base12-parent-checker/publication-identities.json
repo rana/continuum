@@ -1,0 +1,20 @@
+{
+  "source_baseline": "257d255da9ce667a720b263ee6c48dc2881fd220",
+  "files": [
+    {
+      "path": "docs/source-review/base12-parent-checker.md",
+      "bytes": 5689,
+      "sha256": "ef12961b591457f6198b112e0654b09e50940a579f9bc7498f5a3a4cb648f548"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-parent-checker.json",
+      "bytes": 3952,
+      "sha256": "7cabb299a2313cd356df9dfa05e586a4fecddac239a2821b220c8ce4d896ca41"
+    },
+    {
+      "path": "research/runs/base12-parent-checker/validation.json",
+      "bytes": 5285,
+      "sha256": "d96d948ed364f1f950ca095e205ebbaf45e94e7fcf2a1a6160183ca8704b4702"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Offline retained-sample checks, no timings or child processes rerun."""
+import argparse
 import hashlib
 import json
 import pathlib
@@ -8,7 +9,11 @@ import struct
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
-r = json.loads((HERE / 'result.json').read_text())
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--result', type=pathlib.Path, default=HERE / 'result.json')
+parser.add_argument('--filesystem', default='tmpfs')
+args = parser.parse_args()
+r = json.loads(args.result.read_text())
 for p in (HERE / 'check.py', HERE / 'PLAN.md', HERE.parent / 'recovery-sync/fail_sync.c'):
     pin = next(item for item in r['sources'] if item['path'] == str(p.relative_to(ROOT)))
     assert p.stat().st_size == pin['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest() == pin['sha256']
@@ -68,5 +73,5 @@ for cell in r['cells']:
 for summary in r['summaries']:
     values = [s['elapsed_ns'] for s in r['samples'] if (s['updates'], s['operation']) == (summary['updates'], summary['operation'])]
     assert (summary['samples'], summary['median_ns'], summary['min_ns'], summary['max_ns']) == (len(values), statistics.median(values), min(values), max(values))
-assert r['filesystem'] == 'tmpfs'
-print('PASS: retained 369 exact results, independent object IDs/receipts, sync observations, summaries and probe-source custody; tmpfs scope explicit')
+assert r['filesystem'] == args.filesystem
+print(f"PASS: retained 369 exact results, independent object IDs/receipts, sync observations, summaries and probe-source custody; {args.filesystem} scope explicit")

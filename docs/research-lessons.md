@@ -215,6 +215,8 @@ The [documentation-continuity return](source-review/base12-documentation-continu
 
 The [parent-packet return](source-review/base12-parent-packet-review.md) binds later review/provenance records without overwriting an earlier pending snapshot. Technical pass, publication authority, publication and unrelated task acceptance retain separate scopes. A saved policy proposal also differs from the later approved helper revision. Continuum should bind approvals and policy evidence to exact objects/actions, preserving both chronology and missing payloads; no historical authority was activated.
 
+The [parent-checker return](source-review/base12-parent-checker.md) reads every check and separates per-member structural entries from numerical derivations and a nested saved verdict. Its reads precede member checks, and parse exceptions can prevent a final report. Continuum should preserve dependency/count semantics, pre-access versus post-access validation, and explicit failure versus missing output; a large pass total is not an experiment count. No upstream checker ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

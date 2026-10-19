@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-parent-packet-review.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.py",
+      "bytes": 16925,
+      "git_blob_sha": "044bda924d34d0f2e382d138f459ba028cab754b",
+      "sha256": "dad23f00e7c0669b4ac176895da1ccb9b9ff6681a81f529fe938c0419058c7de",
+      "lines": 119,
+      "semantic_review": "full_direct_read",
+      "review_lane": "parent-static-checker-and-complete-report",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-review-checks.json",
+      "bytes": 39974,
+      "git_blob_sha": "f7d122d50e55c6b180e424b2131bea2256976392",
+      "sha256": "f34c8a5524055ec165b2b4a7e8f2c582aaa66220d7c1e52e19e993a2ddf1426c",
+      "lines": 1468,
+      "semantic_review": "full_direct_read",
+      "review_lane": "parent-static-checker-and-complete-report",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_in_four_contiguous_chunks; duplicate_key_and_nonfinite_constant_rejecting_parse; all_332_entries_read"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 2,
+      "unique_blobs": 2,
+      "bytes": 56899
+    },
+    "cumulative_direct_read": {
+      "paths": 347,
+      "unique_blobs": 347,
+      "bytes": 2462569
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 399,
+    "remaining_paths_without_full_semantic_read_or_alias": 5194,
+    "remaining_distinct_blobs_without_full_semantic_read": 4082,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 2,
+    "this_review_verified_bytes": 56899,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All four Library file identities bind, without executing the checker or replaying its complete predicate.",
+    "All 332 saved entries are read; 254 are paired per-member structural checks and 78 are other entries, not independent scientific trials.",
+    "Checker reads/decodes extracted paths before member-shape checks; it is not a pre-access safe extractor or containment boundary.",
+    "Parse/read exceptions can abort before a final report; Boolean BLOCK output is not the only failure mode.",
+    "Credential-pattern and filename exclusions are supplementary indicators; the parent prose review describes broader manual content exposure.",
+    "Saved greedy report agrees with the earlier separate set-objective replay on the same cost matrix, not independently regenerated waveform costs.",
+    "Manifest/allowlist and all 127 input payloads remain outside current complete custody/semantic claims; no new ZIP or recursive privacy audit occurred."
+  ],
+  "review_report": "base12-parent-checker.md"
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-packet-membership.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/materialize_fixtures.py",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/FIXTURE_REVIEW.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/PROVENANCE.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/SHA256SUMS"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/materialize_fixtures.py",
+      "bytes": 30074,
+      "git_blob_sha": "a2d425bb1b3985da67e3960d17ab31db70e5c552",
+      "sha256": "44c2caa932b72c8037c92c49f0f5b9a3d67bd47eafa74e3a368cbce1bd7eb1b4",
+      "lines": 520,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-fixture-source-derivation-and-provenance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/FIXTURE_REVIEW.md",
+      "bytes": 9226,
+      "git_blob_sha": "4193673d55b5af9034dc7b135ad794806c7d9a24",
+      "sha256": "58820aadff7d90882fcdb4d68fd6e8d18bd7b752a2120e082e4007f34693278e",
+      "lines": 63,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-fixture-source-derivation-and-provenance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/PROVENANCE.json",
+      "bytes": 2204,
+      "git_blob_sha": "0b49d1b2a031b687498a5731b32f2404657ed504",
+      "sha256": "b94f7c842df28122f06c4462db640f8421f2908f93d015ca24e975170d8ab557",
+      "lines": 60,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-fixture-source-derivation-and-provenance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/SHA256SUMS",
+      "bytes": 13072,
+      "git_blob_sha": "2433fbc02dd80982010f6d871a007e95d9019b3f",
+      "sha256": "9a1d09b5a292081697065a641a051c132e1991fbdfa5356bbf94abf8b0113c73",
+      "lines": 157,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-fixture-source-derivation-and-provenance",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 54576
+    },
+    "cumulative_direct_read": {
+      "paths": 519,
+      "unique_blobs": 519,
+      "bytes": 4003056
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 596,
+    "remaining_paths_without_full_semantic_read_or_alias": 4997,
+    "remaining_distinct_blobs_without_full_semantic_read": 3910,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 54576,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Four texts fully read; materializer syntax/AST and literal data checked without import or execution.",
+    "Seven provenance inputs bind held bytes; historical ELF/listing/layout remain unheld dependencies.",
+    "Complete 157-member fixture list agrees with packet/tree; 729210 bytes and maxima are pinned-tree accounting, not fresh filesystem or runtime observations.",
+    "Ten literal fault specifications, sixteen invalid inputs and sixteen numeric endpoints are authored cases, not observed parser/instrumentation progress.",
+    "Seven valid endpoint byte fields reconcile arithmetically; no candidate/independent assembler or full expected ELF was generated.",
+    "Individual exclusive fixture writes follow derivation but lack atomic directory publication; no materializer or candidate control ran here.",
+    "Reported close-EIO suppresses the syscall and does not establish successful close; partial-write case remains untraced signal/prefix inference."
+  ],
+  "review_report": "base12-builder-fixture-derivation.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

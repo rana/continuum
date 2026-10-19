@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-case-expectations.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PLANNED_COMMANDS.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PLANNED_COMMANDS.json",
+      "bytes": 71425,
+      "git_blob_sha": "6bf32ab52a5e0c1f6a588cacc50cd5359ac530e2",
+      "sha256": "43432ddeb05db45d6c0228c66f443c1699d2518245c8168148de160b234e7c70",
+      "lines": 1170,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-proposed-command-metadata",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 71425
+    },
+    "cumulative_direct_read": {
+      "paths": 521,
+      "unique_blobs": 521,
+      "bytes": 4215296
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 598,
+    "remaining_paths_without_full_semantic_read_or_alias": 4995,
+    "remaining_distinct_blobs_without_full_semantic_read": 3908,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 71425,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete 71425-byte command JSON read including all66 argv/env/stream/status/counter rows and all header/resource fields; exact JSON reconstruction passed.",
+    "Every proposed row equals an original reconstruction from complete case metadata; no command submitted, control evaluated or result observed.",
+    "The ten strace prefixes directly name the builder with exact syscall/errno/ordinal; actual target/retry/no-retry proof still requires later traces.",
+    "Case60 alone uses a child file-size wrapper and remains untraced; configured signal/file-prefix expectations are not observed syscall returns.",
+    "All env objects are empty and stdin paths are /dev/null; these declarations are not full environment, descriptor, kernel or shared-library images.",
+    "Resource fields describe inherited/per-process settings; aggregate timing, failure containment and terminal caller acceptance depend on separate controls/evidence.",
+    "Never-submitted status is historical metadata and does not rule out later saved execution records."
+  ],
+  "review_report": "base12-builder-planned-commands.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

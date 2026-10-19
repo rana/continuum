@@ -149,6 +149,12 @@ The [alignment-pilot review](source-review/base12-alignment-pilot.md) separates 
 
 The reviewed runner also imports backend modules before its documented digest gate. This is a static source-order mismatch, not an observed exploit. Identity admission must precede executable loading when that is the intended boundary; a later check establishes a narrower property. Five source/result bindings and saved-count arithmetic passed, while the raw execution closure and inherited backend were not newly audited. Hash references do not recover missing evidence bytes.
 
+### 14. Exact representations still need a useful consumer
+
+The [next-experiments review](source-review/base12-next-experiments.md) distinguishes lossless residual recovery from a useful summary. Exact recovery needs deterministic prediction, available context and defined arithmetic; a summary can serve a task without reconstructing its source. Continuum keeps exact artifact custody separate from selected context and omitted material. A digest cannot stand in for unavailable recovery bytes.
+
+The geometric construction also shows why algebraically equivalent formulations are not automatically separate experimental arms, and why canonical representation does not establish locality or consumer benefit. Declare which policy or cost actually changes, and account for state, redundancy and retrieval. Five source readings, four preservation bindings and saved-data consistency checks passed without replaying the mathematical reference or measuring compression.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2f65f8f1ae2a68232e99a865bbe7f05ee4ac0bac",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 118158,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 118158,
+  "complete_R1_disassembly_roundtrip_exact": true,
+  "R1_header_lines_read": 7,
+  "R1_instruction_rows_fully_read": 1589,
+  "R1_distinct_annotations": 572,
+  "both_complete_disassemblies_match_own_listings": true,
+  "both_all_479_targets_match": true,
+  "both_all_15_syscall_sites_match": true,
+  "both_disassembly_code_identities": [
+    {
+      "revision": "artifact-r1",
+      "code_bytes": 9644,
+      "code_sha256": "b22d3d5f9b9d811baf414ff644b64786b98f948fc27b450edcd00666cc58daed",
+      "code_git_blob_sha": "d69264e25a62b0c3f46ac6bda8533c4121c56dea",
+      "pinned_tree_code_identity_matches": true
+    },
+    {
+      "revision": "artifact-r2",
+      "code_bytes": 9644,
+      "code_sha256": "f1ed3e878d6beaba79c9317147ecace63f8bb2e6e9c2ea811a27fd6be2f6dd96",
+      "code_git_blob_sha": "1914a0c1346316de7439349d4d0b36b68c590b86",
+      "pinned_tree_code_identity_matches": true
+    }
+  ],
+  "exactly_six_changed_decoded_rows": true,
+  "all_other_decoded_rows_identical": 1583,
+  "complete_revision_byte_differences_match_prior": true,
+  "artifact_text_paths_closed": 14,
+  "artifact_text_path_bytes": 551812,
+  "all_artifact_texts_read_or_identical_blob": true,
+  "nonfixture_nonnative_paths_closed": 68,
+  "nonfixture_nonnative_path_bytes": 1211262,
+  "remaining_fixture_path_extension_classes": {
+    ".elf": 30,
+    ".json": 32,
+    ".map": 29,
+    ".b12s": 45,
+    ".bin": 2
+  },
+  "full_ELF_exclusive_difference_newly_verified": false,
+  "binary_artifact_files_acquired": false,
+  "external_disassembler_newly_invoked": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete seven-line R1 header and all1589 address/byte/decoded-text rows fully read through a lossless projection; exact text reconstruction passed.",
+    "All R1 rows match its listing and explicit representation conversion; complete external-record revision comparison reproduces exactly the six prior code-byte changes.",
+    "Fourteen artifact text paths have full reading/identical-blob credit; this is scoped text closure, not acquisition or execution of native files.",
+    "All non-fixture, non-native-artifact paths under the builder prefix have full reading/identical-blob credit; fixture payloads retain explicit remaining classes.",
+    "Raw-binary display remains separate from ELF permissions, and retained decoding remains separate from a fresh authenticated tool invocation or behavioral independence.",
+    "Full ELF header/padding identity and exclusive full-ELF difference remain outside fresh verification; code hash streaming does not add binary semantic-reading credit.",
+    "No upstream import, native emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/15.b12s",
+      "bytes": 0,
+      "intended_review": "mechanical_empty_file_identity"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/16.b12s",
+      "bytes": 13,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/17.b12s",
+      "bytes": 16,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/18.b12s",
+      "bytes": 21,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/19.b12s",
+      "bytes": 30,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/20.b12s",
+      "bytes": 29,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/21.b12s",
+      "bytes": 28,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/22.b12s",
+      "bytes": 32,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/23.b12s",
+      "bytes": 17,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/24.b12s",
+      "bytes": 25,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/25.b12s",
+      "bytes": 19,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/26.b12s",
+      "bytes": 36,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/27.b12s",
+      "bytes": 24,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/28.b12s",
+      "bytes": 18,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/29.b12s",
+      "bytes": 18,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/30.b12s",
+      "bytes": 28,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/31.b12s",
+      "bytes": 31,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/32.b12s",
+      "bytes": 16,
+      "intended_review": "complete_grammar_boundary_fixture_source_without_execution"
+    }
+  ],
+  "next_scope_bytes": 401,
+  "public_contribution_checks": [
+    "pinned R1 disassembly and complete exact text reconstruction passed",
+    "both complete decodings bind own listings,479 targets and15 syscall sites",
+    "complete six-row revision relation and both pinned code identities agree",
+    "fourteen artifact texts and68 nonfixture/nonnative paths have scoped reading coverage",
+    "remaining classes, next scope, links, privacy and git diff --check passed"
+  ]
+}

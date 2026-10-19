@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-capacity-layouts.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.layout.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.layout.json",
+      "bytes": 45963,
+      "git_blob_sha": "46ea90748643ed2a51d364bbb1dd8c69de1be51a",
+      "sha256": "5e434b2498e1225d398929f01b8cabb51a9da70f40915d04dd2cb948c6e11a77",
+      "lines": 3723,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-runner-expected-layout-and-corpus-closeout",
+      "reading_representation": "complete_lossless_compact_record_projection_and_finite_source_byte_field_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 45963
+    },
+    "cumulative_direct_read": {
+      "paths": 595,
+      "unique_blobs": 595,
+      "bytes": 5239835
+    },
+    "additional_identical_blob_paths": 94,
+    "alias_distinct_blobs": 30,
+    "semantic_covered_paths_including_aliases": 689,
+    "remaining_paths_without_full_semantic_read_or_alias": 4904,
+    "remaining_distinct_blobs_without_full_semantic_read": 3834,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 45963,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete45963-byte layout read through lossless compact record projection; all13 fields and entire JSON reconstruct exactly.",
+    "All471 supplied instruction snippets match source-derived widths and finite retained encoding fields;109 branch opcode/displacement fields match named labels.",
+    "All518 map rows,47 labels and109 patches match the independently source-derived migration table, with virtual-address/file-offset conversion explicit.",
+    "All32 expected layout paths now have full reading or identical-blob credit;17 distinct content blobs do not equate source/runtime case identities.",
+    "Literal expected map identity matches; ELF digest remains a manifest declaration, with no raw map/ELF acquisition or native execution.",
+    "Finite encoding checks are scoped to held contract forms and correlated authored data, not a general compiler proof or independent runtime oracle.",
+    "No upstream import/materializer execution,native artifact emission/execution,model invocation,live scan,workstation activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-builder-layout-corpus-closeout.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

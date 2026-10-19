@@ -1,0 +1,22 @@
+{
+  "source_baseline": "3128c0d20a7ed41aafed19645d2981d63fd98440",
+  "files": [
+    {
+      "path": "docs/source-review/base12-next-experiments.md",
+      "bytes": 6922,
+      "sha256": "da6774c0998bbd12a81d0f717303d0c36bbffeff65e7857726637fac14c1f2dc"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-next-experiments.json",
+      "bytes": 4771,
+      "sha256": "194ccd658bfc34a91917a23e3be69c61c1bb0dd3c7d4c1308b79bc8b34afd13a"
+    },
+    {
+      "path": "research/runs/base12-next-experiments/validation.json",
+      "bytes": 1941,
+      "sha256": "b63e884a37deb45a7cb3fd71dbcf957faee56fcd69c35a2246d63a515e0ec68e"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

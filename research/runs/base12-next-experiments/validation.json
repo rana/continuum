@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "source_baseline": "3128c0d20a7ed41aafed19645d2981d63fd98440",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 5,
+  "verified_source_bytes": 25474,
+  "utf8_decoded": 5,
+  "markdown_full_text_read": 3,
+  "python_ast_parsed_without_import": 1,
+  "json_parsed": 1,
+  "preservation_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/BETA_RADIX.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/README.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/beta12_probe.py",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/beta12_result.json",
+      "matched": true
+    }
+  ],
+  "preservation_bindings_outside_selected_scope_not_checked": [
+    "collaboration/dot-bridge/to-dot/gpt-20261015-geometric-radix-consumer.md"
+  ],
+  "nonexecuting_consistency_checks": {
+    "source_digit_literal_matches_saved_result": true,
+    "digit_count": 12,
+    "distinct_literal_residue_keys": 12,
+    "max_literal_squared_norm": 4,
+    "saved_histogram_sum": 6561,
+    "expected_grid_count": 6561,
+    "expected_canonical_string_count": 1728,
+    "expected_two_digit_address_count": 144,
+    "saved_beta_twelfth_matches_integer_power": true
+  },
+  "upstream_probe_replayed": false,
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/",
+    "direct_children_only": true,
+    "files": 3,
+    "bytes": 7352
+  }
+}

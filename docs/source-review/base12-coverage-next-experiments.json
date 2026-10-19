@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-alignment-pilot.json",
+  "selected_scope": "research/owned-stack/2026-10-15/next-experiments/",
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/BETA_RADIX.md",
+      "git_blob_sha": "b1759f0c988b9a17e5955b58c01fcaaaa067a976",
+      "bytes": 4417,
+      "sha256": "5721686587895a8b17f36272a9593b84f19f04a829ab4dfd518607c557d1d6fe",
+      "lines": 42,
+      "semantic_review": "full_direct_read",
+      "review_lane": "representation-proof-and-lossless-consumer-proposal",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/INTEGRATION.md",
+      "git_blob_sha": "d5b14e25555974beb92f55b73a3a7afbc4fde8e4",
+      "bytes": 5281,
+      "sha256": "2bbc6ede1074d57b6c75759f48f1dedc849b0077054daa940f0b49b34f2adf9a",
+      "lines": 31,
+      "semantic_review": "full_direct_read",
+      "review_lane": "representation-proof-and-lossless-consumer-proposal",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/README.md",
+      "git_blob_sha": "70bf71229789319b08d1f4f468eb4186a897b343",
+      "bytes": 10065,
+      "sha256": "27a529aaaf86d862134387db2552ab881307cca9e481f67ebf147887d6b45f95",
+      "lines": 52,
+      "semantic_review": "full_direct_read",
+      "review_lane": "representation-proof-and-lossless-consumer-proposal",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/beta12_probe.py",
+      "git_blob_sha": "a0c1cd361a980ed3495eaf28ff0755bdba0c30d0",
+      "bytes": 4442,
+      "sha256": "69bd33f2bb00e8275170e76af7732993d989351c56ff007f535a698bdb2935b8",
+      "lines": 118,
+      "semantic_review": "full_direct_read",
+      "review_lane": "representation-proof-and-lossless-consumer-proposal",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/next-experiments/beta12_result.json",
+      "git_blob_sha": "034f339956b8d268ac217637ba75f66b8e1e6655",
+      "bytes": 1269,
+      "sha256": "1cf23a07434c491530f31f96197bb910b6d523ac7069a85ae7a02af79ca001c1",
+      "lines": 82,
+      "semantic_review": "full_direct_read",
+      "review_lane": "representation-proof-and-lossless-consumer-proposal",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 25474
+    },
+    "cumulative_direct_read": {
+      "paths": 201,
+      "unique_blobs": 201,
+      "bytes": 1394072
+    },
+    "additional_identical_blob_paths": 47,
+    "alias_distinct_blobs": 17,
+    "semantic_covered_paths_including_aliases": 248,
+    "remaining_paths_without_full_semantic_read_or_alias": 5345,
+    "remaining_distinct_blobs_without_full_semantic_read": 4228,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 25474,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All five selected files were fully read; aliases are not separately read.",
+    "Private source, historical messages and operational payloads are not published.",
+    "No upstream reference function, learning experiment, dataset operation, native code or model consultation ran.",
+    "Four in-scope preservation bindings checked; external historical handoff not retrieved or checked.",
+    "Saved-count and literal-table consistency checks are not a replay of the finite probe or independent execution authentication.",
+    "External literature and linked historical recipient replies were not newly audited."
+  ],
+  "review_report": "base12-next-experiments.md"
+}

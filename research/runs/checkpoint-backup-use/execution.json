@@ -1,0 +1,17 @@
+{
+  "source_baseline": "6365c7bdb74cbc5501692dd34821ba9d3b509636",
+  "command": [
+    "python3",
+    "research/runs/checkpoint-backup-use/run.py",
+    "--binary",
+    "target/debug/continuum",
+    "--checkpoint",
+    "../pilots/source-bound-verification-2/checkpoint",
+    "--output",
+    "../pilots/checkpoint-backup-use-2"
+  ],
+  "run_script_sha256": "0266f5e2c4c7d4bc8781d6ccf9431f2ace355d6679ec4b817022e41e23a4fe83",
+  "binary_provenance_reference": "../native-backup-export/validation.json",
+  "binary_sha256": "3c2abb54cc10ec18dff7d1dc7bc3785965e2ddfb26520f0de79b0c637987ec9a",
+  "scope": "Existing retained native build; no rebuild or new inference claimed."
+}

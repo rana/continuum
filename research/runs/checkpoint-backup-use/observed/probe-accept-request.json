@@ -1,0 +1,10 @@
+{
+  "acceptor": "project-checkpoint",
+  "target": "work",
+  "operation_id": "restored-copy-freshness-probe",
+  "expected": {
+    "generation": 1,
+    "root": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373"
+  },
+  "candidate": "sha256:ac85434ed36c2585d5ce86b426c176c635715f69683adac68dc572fc0847544d"
+}

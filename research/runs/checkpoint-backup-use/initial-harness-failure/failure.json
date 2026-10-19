@@ -1,0 +1,6 @@
+{
+  "failed_assertion": "assert 'stale' in current_error['error']",
+  "actual_native_error": "{\"error\":\"invalid input: context has no matching current anchor at observation; historical verification remains available\"}\n",
+  "cause": "Harness expected the word stale, but native current-context rejection uses no matching current anchor. Native historical verification reported stale_at_observation as intended. No new inference or uncertain effect.",
+  "next_attempt": "Fresh output directory after exact expected native error correction; original retained checkpoint not advanced."
+}

@@ -179,6 +179,8 @@ The [static-review return](source-review/base12-stage-a-static-review.md) preser
 
 The [source-custody return](source-review/base12-stage-a-source-custody.md) verifies complete byte correspondence for the declared source packet while leaving larger evidence custody explicit. Two vendor backfills restore current availability without adding readings. The retained consultation distinguishes an unknown initial outcome from a separate focused answer and qualifies reconstructed request context. Continuum should retain preparation-time status, original uncertainty and custody boundaries as later receipts accumulate. No historical effect was replayed.
 
+The [evidence-custody return](source-review/base12-stage-a-evidence-custody.md) closes declared stage-A manifest bindings and finds stdout byte-identical to a projection of the saved result. Repeated representations are useful consistency evidence but share the original observation. Empty stderr establishes retained bytes, not universal absence of diagnostics. Archive custody, semantic reading and execution remain separately counted; no historical effect was replayed.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -1,0 +1,23 @@
+# Execution-evidence packet custody
+
+Reviewed 2026-10-19 UTC at private Base12 commit `88382e793b65c84fd8e223840c27f6bb8682864a`, tree `5cf96129bdcb0dde075f6f5800ae0c68a95c4b82`. This unit closes the four outstanding declared payload bindings from the [source-custody return](base12-stage-a-source-custody.md): two evidence archives, stdout and empty stderr, totaling 93,608 acquired bytes. The [ledger](base12-coverage-stage-a-evidence-custody.json) adds only the fully read 1,768-byte nonempty log to semantic coverage.
+
+## Research Delta: close custody without replaying effects
+
+The 80,492-byte execution-evidence archive contains exactly 28 distinct regular members, totaling 220,984 uncompressed bytes. Its member set equals the 27-entry delivery manifest plus that manifest itself. Every archived payload matches its installed pinned bytes, including two installed paths recovered through previously established identical-blob aliases. The 11,348-byte nested parent-review archive contains exactly three distinct regular members, totaling 31,501 bytes: its two declared payloads and manifest. All three match their installed bytes. Neither archive contains extra or nonregular members.
+
+Together with the preceding source-packet checks, this reconciles **27/27 delivery bindings** and **49/49 preservation bindings**, each including two pinned identical-blob aliases. Complete means complete against these explicit manifests and the pinned tree. It does not mean every possible run artifact was preserved, every manifest was authentic, or every historical claim was reproduced. The larger packet deliberately does not include original waveform/header payloads or the generated compressed signal archives, so this review cannot independently decode them or verify their declared content hashes.
+
+Both compressed byte strings were acquired through the Git blob API and checked against length, Git SHA-1 framing and raw SHA-256. Archives were inspected in memory without filesystem extraction. No source module, generated instruction, acquisition, codec, compressor or model was executed. The [validation record](../../research/runs/base12-stage-a-evidence-custody/validation.json) retains exact archive/member identities and all manifest bindings. No private archive, log or source payload is published here.
+
+## Research Delta: repeated representations share an observation
+
+The nonempty stdout log parses as the saved `RESULTS.json` with exactly the top-level `owned_receipt` field omitted. Reformatting that projection with the producer's recorded JSON convention reproduces the log bytes exactly, including its trailing newline. The already-read producer source explicitly prints that projection after writing the full result.
+
+This is a useful consistency check, not a second experimental observation. Stdout, a result file and a report can all carry the same underlying result; counting their agreement as independent confirmation would exaggerate the evidence. Continuum's future evidence views should retain derivation and omission relationships so that a compact projection can be checked against its parent without being mistaken for another run. This source return changes no current receipt-view or native identity behavior.
+
+Stderr is exactly zero bytes with the standard empty-payload identities. That verifies the retained file, not absence of every possible historical diagnostic or failure. It is recorded mechanically and does not promote unrelated empty-blob paths into semantic-reading coverage. The historical exit receipt remains a separate artifact from the log.
+
+Cumulative full semantic reading now reaches **251 distinct blobs / 1,690,425 bytes**, plus **49 byte-identical alias paths**: 300 covered paths. **5,293 paths / 4,178 distinct blobs** remain without complete semantic-reading claims. Archive inspection and empty-payload verification remain separate categories. The historical acquisition aggregate stays unchanged because its complete overlap index is unavailable. Public hosted CI validates this contribution and existing behavior; it does not independently establish private reading, custody or historical execution.
+
+Next bounded unit: seven texts / 33,915 bytes from the separately retained reference-decoder packet: integration, preservation, README, result, manifest, decoder source and source review. Inspect whether its claimed independence changes the earlier self-round-trip evidence, tracing source and exposure rather than assuming independence from the directory name. Reconcile current main and ownership first; do not execute that decoder or repeat its historical run. The owned-storage finite-model lane retains separate ownership, and no recipient has accepted this next unit.

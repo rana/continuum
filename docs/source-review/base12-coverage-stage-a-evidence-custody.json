@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-source-custody.json",
+  "selected_scope": {
+    "new_semantic_files": [
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/stdout.log"
+    ],
+    "empty_payload_custody": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/stderr.log",
+    "mechanical_archives": [
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/stdout.log",
+      "bytes": 1768,
+      "git_blob_sha": "bf72f25a574ffb620c577a818f967e6981c402cd",
+      "sha256": "97f766d2cf61f89e8e1358f907954529c288fbb736e9741edbae891548fcd80d",
+      "lines": 57,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-evidence-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "JSON parse, exact result projection and formatted bytes comparison"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 1768
+    },
+    "cumulative_direct_read": {
+      "paths": 251,
+      "unique_blobs": 251,
+      "bytes": 1690425
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 300,
+    "remaining_paths_without_full_semantic_read_or_alias": 5293,
+    "remaining_distinct_blobs_without_full_semantic_read": 4178,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 93608,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "One nonempty log fully read; empty stderr verified mechanically, not promoted to semantic reading or empty-blob alias coverage.",
+    "Two archives inspected in memory without filesystem extraction or execution.",
+    "Complete declared custody is not authentication, historical execution reproduction or complete repository review.",
+    "Stdout is byte-identical to a projection of RESULTS.json, not an independent observation."
+  ],
+  "review_report": "base12-stage-a-evidence-custody.md"
+}

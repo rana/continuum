@@ -1,0 +1,20 @@
+{
+  "source_baseline": "d89c632f2c2ddb038ac7f0abc6900c945d5b3cef",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-saved-case-records.md",
+      "bytes": 6016,
+      "sha256": "1d747bbf9461268fc321741c6a2235cb5b3995b568d6ce5bc76bd7ffffaad547"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-saved-case-records.json",
+      "bytes": 3271,
+      "sha256": "38d2b4c0f7e12e6d7641fd8b52902601a4e51e880fb8dfc5730cc862c9bab616"
+    },
+    {
+      "path": "research/runs/base12-builder-saved-case-records/validation.json",
+      "bytes": 3465,
+      "sha256": "cea7e698c6cce37666395518605ae12ca938575ea4cc3b5cec1d70e43f76c2b6"
+    }
+  ]
+}

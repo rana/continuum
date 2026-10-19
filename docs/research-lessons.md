@@ -289,6 +289,8 @@ The [planned-command review](source-review/base12-builder-planned-commands.md) c
 
 The [builder saved-result review](source-review/base12-builder-result-review.md) retains reported actual execution, independent saved-evidence review and parent acceptance as separate stages. Source/command hashes bind preparation to the summary without substituting for private raw traces. Prepublication accounting remains a persisted numeric sample; terminal exit attests a later final check without supplying its unsaved numeric value. Two final receipt sizes explain the inventory increase. Earlier zero-execution documents keep their historical scope rather than being rewritten after the later cleared batch.
 
+The [derived saved-case review](source-review/base12-builder-saved-case-records.md) finds 66 distinct invocation-digest declarations but only 26 observation digests. Repeated output-state content cannot identify a particular operation or establish independent executions; retain its source/attempt association. Complete derived syscall counts and reconstructed fixed receipt hashes can strengthen metadata consistency without becoming fresh trace parsing or receipt custody. Omitted zero-count keys must be normalized before comparison with a complete expected count vector.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

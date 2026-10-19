@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-result-review.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_SAVED_REVIEW.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_SAVED_REVIEW.json",
+      "bytes": 52312,
+      "git_blob_sha": "958da4aa42b30b7e990f1c17ed4cd37f03d81818",
+      "sha256": "4d06bde15fd677bacd9b24031703b3530f930a38a2729044e3e3882bba27da05",
+      "lines": 1677,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-derived-case-trace-receipt-review",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 52312
+    },
+    "cumulative_direct_read": {
+      "paths": 527,
+      "unique_blobs": 527,
+      "bytes": 4290049
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 604,
+    "remaining_paths_without_full_semantic_read_or_alias": 4989,
+    "remaining_distinct_blobs_without_full_semantic_read": 3902,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 52312,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete52312-byte derived JSON fully read, including66 case records,10 injection summaries,21 root-receipt identities,5 capture records,12 source identities and all qualifications.",
+    "All per-case states/modes/digests agree with frozen expectations as metadata; no raw output/observation/invocation file newly acquired.",
+    "Distinct invocation digests coexist with repeated observed-projection digests; content equality is not invocation identity or independent evidence.",
+    "Ten summarized syscall counts normalize absent zero-count keys and agree with authored qualified full-I/O counts plus one exit; complete raw syscall sequences are not present in this derived record.",
+    "Eight fixed receipt values reconstruct their declared length/hash; this is expectation-to-metadata consistency, not fresh receipt custody.",
+    "Nine source pins bind bytes,two match prior ledger identities and one remains candidate ELF declaration; current narrower access does not invalidate historical reviewer fuller access.",
+    "Raw private capture/trace/tree evidence remains unacquired; no new execution,live scan,model call or result acceptance is inferred."
+  ],
+  "review_report": "base12-builder-saved-case-records.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

@@ -339,6 +339,8 @@ The [complete preservation inventory and reader sources](source-review/base12-de
 
 The [decoder-profile source-packet closure](source-review/base12-decoder-profile-source-packet-closeout.md) joins every manifest member, checksum reference and review-copy identity without promoting matching global counts into full preservation evidence. Historical pin custody, dated source acceptance and future execution prerequisites retain separate scope; later result directories need their own reading. This coherent source boundary also leaves room for the [real-work usefulness comparison](../research/runs/foundations-brief-2026-10-19/README.md) rather than making whole-upstream reading a prerequisite.
 
+The [build-preparation foundation](source-review/base12-decoder-profile-build-preparation-foundation.md) recovers a missing exact publication cut and upgrades a count-only preservation assertion to full historical Git metadata joins. It also separates saved markers from later unsaved checks: when final acceptance runs after receipt publication, the outside completion observation remains necessary. A proposal's detailed resource/process rules do not prove their implementation or execution.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "source_baseline": "e40cb5730c4cbba43a8413d3824dd5d933e41af5",
+  "depends_on_publication_pr": 110,
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 5,
+  "verified_source_bytes": 17210,
+  "full_source_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 17210,
+  "source_acceptance": {
+    "pull_number": 41,
+    "head": "28b2d600dc15cb05dbc8b86d08600232de44c69c",
+    "merge_commit": "dfa008b318fa7dcd415cbb35ee71567b16eea696",
+    "tree_sha": "bc6153cc74b6f46df29f334a09f9dae5d28ee4dc",
+    "comment_id": 6223921067,
+    "source_only_acceptance_record_read": true,
+    "no_execution_authorization": true
+  },
+  "source_publication_preservation": {
+    "historical_base": "4e2f235c9810454559b0711468c7610570e1436e",
+    "prior_blob_paths": 4208,
+    "all_prior_memberships_blobs_lengths_and_modes_preserved": true,
+    "accepted_blob_paths": 4232,
+    "new_paths": 24,
+    "new_membership_matches_complete_source_packet": true,
+    "all_new_modes": "100644",
+    "head_and_merge_tree_identical": true,
+    "tree_truncated": false,
+    "current_workstation_modes_not_observed": true
+  },
+  "source_and_seed_hashes_match_held_bytes": true,
+  "proposed_resource_envelope": {
+    "CPU_affinity": [
+      0
+    ],
+    "RLIMIT_AS": 268435456,
+    "RLIMIT_CORE": 0,
+    "RLIMIT_CPU": 2,
+    "RLIMIT_FSIZE": 8388608,
+    "aggregate_accept_CPU_seconds": 10,
+    "aggregate_accept_wall_seconds_from_first_clock": 15,
+    "caller_deadline_seconds_from_first_clock": 12,
+    "caught_cleanup_poll_seconds": 1,
+    "child_watchdog_seconds": 5
+  },
+  "predictions_only": {
+    "ELF_bytes": 13740,
+    "code_bytes": 9644,
+    "instructions": 1589,
+    "labels": 163,
+    "own_RW_base": 4325376,
+    "own_RW_bytes": 155648,
+    "rel32_patches": 479
+  },
+  "prospective_output_modes": {
+    "BUILD.json": "0600",
+    "bootstrap.source.py": "0600",
+    "builder.code.bin": "0600",
+    "builder.elf": "0644; non-executable",
+    "builder.instructions.txt": "0600",
+    "builder.layout.json": "0600"
+  },
+  "control_command_and_data_pin_declarations": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/capture.py",
+      "bytes": 17739,
+      "git_blob_sha": "b9865cf1607b5036e338e81f9911d024388cb6d8",
+      "sha256_declaration": "c5aa46d993077865956afeb793a3e0803b55a496756956fc13a5e5c07bcf8c9f",
+      "tracked_mode": "100644",
+      "payload_read_in_this_unit": false,
+      "historical_workstation_mode_not_refreshed": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CALLER_COMMAND.txt",
+      "bytes": 17826,
+      "git_blob_sha": "24e7104f3699c55264661ae041e91ac167b2ccb7",
+      "sha256_declaration": "afdbf3ecf44c7038c06060476e3cfd010fa040845987ab1cd9f48417268bdd47",
+      "tracked_mode": "100644",
+      "payload_read_in_this_unit": false,
+      "historical_workstation_mode_not_refreshed": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/DEPENDENCIES.json",
+      "bytes": 398511,
+      "git_blob_sha": "4aa58c7ded69e4250f988ce6662af6b27af20842",
+      "sha256_declaration": "ce6fab3a7fefb627f90d97c7de7b3bfcae3815488feb2650fdd85ef771daf9da",
+      "tracked_mode": "100644",
+      "payload_read_in_this_unit": false,
+      "historical_workstation_mode_not_refreshed": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/FROZEN_INPUTS.json",
+      "bytes": 15371,
+      "git_blob_sha": "730c1608f4622222d72f9b595556f0aac0abeddb",
+      "sha256_declaration": "af06774e83cdc9be4fb3dff528bf19ea5356518358ea781a6268e96d0065e84b",
+      "tracked_mode": "100644",
+      "payload_read_in_this_unit": false,
+      "historical_workstation_mode_not_refreshed": true
+    }
+  ],
+  "control_or_dependency_payloads_not_reviewed_here": true,
+  "final_saved_marker_is_provisional_and_outside_exit_required": true,
+  "accepted_old_source_not_new_native_artifact": true,
+  "upstream_imported_or_executed": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "new_model_invocation": false,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five complete files/17210 bytes read; proposal/control/dependency claims retain their dated preparation scope.",
+    "Fresh nontruncated source-publication tree closes all4208 prior blob,length,mode and membership joins,with exactly24 original source-packet additions; this does not verify current workstation permissions or payload semantics.",
+    "Fresh primary comment records source-only acceptance at exact head; no build or control authorization transfers.",
+    "Four control/command/dependency pin payloads remain unreviewed here; modes and hashes are declarations plus Git metadata,not inspected executable behavior.",
+    "Resource/process/cleanup/final-exit mechanics are proposed source claims,not freshly executed controls or physical containment guarantees.",
+    "No upstream code imported/executed,native artifact acquired/emitted/executed,new inference or activation occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/capture.py",
+      "bytes": 17739,
+      "intended_review": "read complete proposed capture/caller and static control review as source data; no replay"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CALLER_COMMAND.txt",
+      "bytes": 17826,
+      "intended_review": "read complete proposed capture/caller and static control review as source data; no replay"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CALLER_INVOCATION.md",
+      "bytes": 4504,
+      "intended_review": "read complete proposed capture/caller and static control review as source data; no replay"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/CONTROL_REVIEW.md",
+      "bytes": 7330,
+      "intended_review": "read complete proposed capture/caller and static control review as source data; no replay"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-preparation-01/AUTHOR_STATIC_CHECKS.json",
+      "bytes": 1395,
+      "intended_review": "read complete proposed capture/caller and static control review as source data; no replay"
+    }
+  ],
+  "next_scope_bytes": 48794,
+  "public_contribution_checks": [
+    "five complete new payloads and exact Git/SHA identities passed",
+    "fresh accepted source/merge trees match; all4208 prior blob,length,mode joins and exactly24 complete packet additions passed",
+    "source/seed,prediction,resource,output-mode and four unheld declaration classes passed",
+    "coverage,links,private operating identifiers and publication hashes checked; no upstream execution or model calls"
+  ]
+}

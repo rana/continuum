@@ -1,0 +1,20 @@
+{
+  "source_baseline": "7dc25450660260080bc44fcc86d52e89933f8e70",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-vector-layout.md",
+      "bytes": 5456,
+      "sha256": "9edcd636dce2d3b2d148d2b8f4c2e19f2f1758e0e97fefae2e9ddb25dcba9bab"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-vector-layout.json",
+      "bytes": 3172,
+      "sha256": "240795cdce5f2d535a545dff97d093acb6712a4ba0781ae69dde09eca2bb1a88"
+    },
+    {
+      "path": "research/runs/base12-builder-vector-layout/validation.json",
+      "bytes": 8186,
+      "sha256": "8ca2dcf2e592162eaab1bbb0932b2356d8d607390374ae2c16455fac4bd5462c"
+    }
+  ]
+}

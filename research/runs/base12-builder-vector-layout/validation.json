@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "source_baseline": "7dc25450660260080bc44fcc86d52e89933f8e70",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 1,
+  "verified_source_bytes": 27040,
+  "full_source_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 27040,
+  "complete_json_reconstruction_exact": true,
+  "checker_repairs_before_record": [
+    "preserve relocation JSON key order for byte-exact reconstruction",
+    "correct top-level field count to13"
+  ],
+  "top_level_fields": 13,
+  "all_source_positions_labels_patches_and_coverage_match": true,
+  "map_rows": 224,
+  "labels": 15,
+  "relocations": 14,
+  "coverage_entries": 87,
+  "instructions": 209,
+  "code_bytes": 538,
+  "code_sha256": "e7abcb5c73d340e805be164aa924a4d7b8758276d06bf97266835b5b1f0a1179",
+  "map_bytes": 7200,
+  "map_sha256": "4d1572b66d8ca4db7a24c694dbe253a8b4e6d615a7d6a5e2b31252407f478111",
+  "map_identity_reconstructed_without_raw_map_acquisition": true,
+  "shared_label_address_groups": 1,
+  "labels_at_code_end": 1,
+  "relocation_directions": {
+    "forward": 10,
+    "backward": 3,
+    "zero": 1
+  },
+  "patch_checks": [
+    {
+      "patch_file_offset": 4433,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 11
+    },
+    {
+      "patch_file_offset": 4450,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4466,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4482,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4498,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4514,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4530,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4546,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4562,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 10
+    },
+    {
+      "patch_file_offset": 4577,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 11
+    },
+    {
+      "patch_file_offset": 4604,
+      "field_within_exactly_one_instruction": true,
+      "displacement": -16
+    },
+    {
+      "patch_file_offset": 4619,
+      "field_within_exactly_one_instruction": true,
+      "displacement": -15
+    },
+    {
+      "patch_file_offset": 4624,
+      "field_within_exactly_one_instruction": true,
+      "displacement": -5
+    },
+    {
+      "patch_file_offset": 4630,
+      "field_within_exactly_one_instruction": true,
+      "displacement": 0
+    }
+  ],
+  "elf_digest_source": "frozen_case_manifest_declaration_not_recomputed",
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete27040-byte expected layout read; all13 top-level fields reconstruct exactly from held source/witness literals and frozen manifest metadata.",
+    "All224 map rows,15 labels,14 patches and87 coverage entries join the complete source;538 supplied code bytes match the streamed literal digest.",
+    "Unique label names may share an address; one zero-displacement target is exactly code end. These accepted source semantics do not establish executable safety.",
+    "Expected ELF digest is copied from the held manifest, not recomputed from unacquired ELF headers/padding; raw map and ELF payloads remain unacquired here.",
+    "Complete layout identity and saved-case metadata agreement are static consistency evidence, not a fresh native invocation, independent runtime oracle or recipient acceptance.",
+    "No upstream import/materializer execution,native artifact emission/execution,model invocation,live scan or workstation activation occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.layout.json",
+      "bytes": 894,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.layout.json",
+      "bytes": 1756,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.layout.json",
+      "bytes": 691,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.layout.json",
+      "bytes": 9502,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.layout.json",
+      "bytes": 788,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.layout.json",
+      "bytes": 711,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.layout.json",
+      "bytes": 691,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.layout.json",
+      "bytes": 711,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.layout.json",
+      "bytes": 711,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.layout.json",
+      "bytes": 703,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.layout.json",
+      "bytes": 703,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.layout.json",
+      "bytes": 697,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.layout.json",
+      "bytes": 697,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.layout.json",
+      "bytes": 697,
+      "intended_review": "complete_small_expected_layouts_and_source_metadata_joins_without_execution"
+    }
+  ],
+  "next_scope_bytes": 19952,
+  "public_contribution_checks": [
+    "complete13-field JSON reconstruction passed",
+    "all224 map rows,15 labels,14 patches and87 coverage entries join source and witnesses",
+    "shared-address and code-end semantics preserved; ELF digest declaration retained",
+    "coverage, next scope, links, privacy and git diff --check passed"
+  ]
+}

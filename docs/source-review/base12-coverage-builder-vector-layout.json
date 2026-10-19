@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-source-corpus-closeout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.layout.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.layout.json",
+      "bytes": 27040,
+      "git_blob_sha": "1b723a61c5c0cf66422c4e1e79f1cd3f4f6f7efe",
+      "sha256": "b9b10e0df79aa2be567e8d4f6c531acb8fdef2630b47e148bbeb4d5508432348",
+      "lines": 1975,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-all-vector-expected-layout",
+      "reading_representation": "complete_json_all_fields_and_exact_source_derived_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 27040
+    },
+    "cumulative_direct_read": {
+      "paths": 579,
+      "unique_blobs": 579,
+      "bytes": 5066629
+    },
+    "additional_identical_blob_paths": 79,
+    "alias_distinct_blobs": 28,
+    "semantic_covered_paths_including_aliases": 658,
+    "remaining_paths_without_full_semantic_read_or_alias": 4935,
+    "remaining_distinct_blobs_without_full_semantic_read": 3850,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 27040,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete27040-byte expected layout read; all13 top-level fields reconstruct exactly from held source/witness literals and frozen manifest metadata.",
+    "All224 map rows,15 labels,14 patches and87 coverage entries join the complete source;538 supplied code bytes match the streamed literal digest.",
+    "Unique label names may share an address; one zero-displacement target is exactly code end. These accepted source semantics do not establish executable safety.",
+    "Expected ELF digest is copied from the held manifest, not recomputed from unacquired ELF headers/padding; raw map and ELF payloads remain unacquired here.",
+    "Complete layout identity and saved-case metadata agreement are static consistency evidence, not a fresh native invocation, independent runtime oracle or recipient acceptance.",
+    "No upstream import/materializer execution,native artifact emission/execution,model invocation,live scan or workstation activation occurred."
+  ],
+  "review_report": "base12-builder-vector-layout.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

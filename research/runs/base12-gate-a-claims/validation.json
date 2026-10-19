@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2aadf2409753c388500f3120dd12934baf30919d",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 5,
+  "verified_source_bytes": 28641,
+  "cross_document_identity_declarations": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/decoder.elf",
+      "declared_sha256": "bfb03f7b9a5fb0e639668da233d6d8bfaf25d76fef076bca888680f60c59ece7",
+      "pinned_tree_bytes": 22066,
+      "cross_document_declarations_match": true,
+      "payload_acquired_in_this_unit": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/emit.py",
+      "declared_sha256": "91c3b77bce952eca137509aa4ee9029ed96df42c27065c5b7e28fa487156a253",
+      "pinned_tree_bytes": 25043,
+      "cross_document_declarations_match": true,
+      "payload_acquired_in_this_unit": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/FREEZE.sha256",
+      "declared_sha256": "a6b562eba1c1591f2930cddddc56c8696cad5ab1176f74e8a35123fe4ba687d6",
+      "pinned_tree_bytes": 1830,
+      "cross_document_declarations_match": true,
+      "payload_acquired_in_this_unit": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "declared_sha256": "1ca8e5d8c618e444fd5873112786eaecf35b6788d2189c3ec7772a686360acd6",
+      "pinned_tree_bytes": 6241,
+      "cross_document_declarations_match": true,
+      "payload_acquired_in_this_unit": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "declared_sha256": "7a0ea68a9343b96171a658f842de86b597b3acb4b5bb7fdd99136a2b5e876b6d",
+      "pinned_tree_bytes": 6051,
+      "cross_document_declarations_match": true,
+      "payload_acquired_in_this_unit": false
+    }
+  ],
+  "retained_output_hash_declarations_match_across_execution_and_review": true,
+  "execution_revision_declarations_agree": true,
+  "authored_counts_and_arithmetic": {
+    "matrix_valid": 36,
+    "matrix_invalid": 29,
+    "matrix_total": 65,
+    "EINTR_cases": 6,
+    "hard_IO_cases": 6,
+    "fault_total": 12,
+    "explicit_matrix_fault_verdicts": 77,
+    "collision_control_flow_completions": 1,
+    "retained_control_flow_completions": 1,
+    "total_declared_invocations": 79,
+    "batch_CPU_user_plus_system_seconds": 1.0,
+    "outer_wall_microseconds": 2866612,
+    "outer_prelaunch_microseconds": 56587,
+    "launcher_call_microseconds": 2810025,
+    "outer_minus_prelaunch_microseconds": 2810025,
+    "rounded_monitored_wall_microseconds": 1550000,
+    "launcher_minus_rounded_monitored_microseconds": 1260025,
+    "max_frames": 650000,
+    "max_signal_bytes": 1950000,
+    "channel_buffer_bytes": 32768,
+    "admitted_input_bytes": 4194304,
+    "overflow_detecting_input_buffer_bytes": 4194305
+  },
+  "positive_short_IO_limit_explicit": true,
+  "group_timeout_exercised_by_passing_batch": false,
+  "parent_directory_fsync_absence_explicit": true,
+  "wire_leading_zero_case_and_oracle_guard_distinguished": true,
+  "internal_ABI_distinguished_from_System_V": true,
+  "native_application_build_and_controller_distinguished": true,
+  "consumed_clearance_explicit": true,
+  "actual_native_ELF_payload_acquired": false,
+  "actual_native_execution_repeated": false,
+  "raw_result_and_preservation_payloads_reviewed": false,
+  "accepted_parent_result_review_payload_reviewed": false,
+  "author_reported_acceptance_is_current_native_acceptance": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five text records fully read; claims and finite arithmetic compared without building, acquiring or executing a native artifact.",
+    "ELF/emitter/freeze/driver/launcher SHA256 declarations agree across documents but their payload identities are not newly verified here.",
+    "Authored 79-invocation evidence combines 77 explicit verdict rows and two driver-control-flow completions; not a kernel-wide execution census.",
+    "Delegated review reports receipt/trace inspection and separate parent acceptance is asserted in overview; current reading does not independently retrieve those trace payloads or accepted parent review.",
+    "Positive short IO remains static-only; successful batch does not dynamically exercise group timeout/kill or forced-exit resource accounting.",
+    "Atomic output namespace publication is distinct from power-loss durability; parent-directory sync is explicitly absent.",
+    "The contract separates wire grammar from a Python oracle conversion guard, internal ABI from System V, native application from Python AOT build and shell/tool supervision.",
+    "Consumed historical clearance grants no fresh execution or ownership to this Continuum review.",
+    "No raw signal/executable payload, model invocation, native launch, benchmark, service/security or scheduler change occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/RESULT.json",
+      "bytes": 20580,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/PRESERVATION.json",
+      "bytes": 6331,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/audit_saved_execution.py",
+      "bytes": 7443,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/FREEZE.sha256",
+      "bytes": 1830,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/retained-identities.json",
+      "bytes": 646,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 36830,
+  "public_contribution_checks": [
+    "five exact source identities and cross-document declarations checked",
+    "authored invocation/timing/capacity arithmetic passed with evidence taxonomy explicit",
+    "native/build/controller, oracle/grammar and publication/durability boundaries retained",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

@@ -155,6 +155,12 @@ The [next-experiments review](source-review/base12-next-experiments.md) distingu
 
 The geometric construction also shows why algebraically equivalent formulations are not automatically separate experimental arms, and why canonical representation does not establish locality or consumer benefit. Declare which policy or cost actually changes, and account for state, redundancy and retrieval. Five source readings, four preservation bindings and saved-data consistency checks passed without replaying the mathematical reference or measuring compression.
 
+### 15. Preserve review corrections with the design they changed
+
+The [corpus-preservation review](source-review/base12-corpus-preservation.md) reads a visible historical consultation alongside its adjudication. Matching channel transforms across fixed and learned arms corrects a real possible confound; unsupported claims about immutability, sizes and alternative datasets remain explicitly rejected. Continuum should preserve those links rather than treat the model response as verified source evidence or erase its mistakes.
+
+Exact reconstruction also has a declared object boundary, population and denominator. Advertised directory arithmetic is not acquired-byte verification; metadata-exposed manual grouping is not a blind split. Original and relocated manifests need explicit path roots and identity mappings. Seven texts and their archive correspondence were inspected here, without acquiring corpus data or executing an experiment.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

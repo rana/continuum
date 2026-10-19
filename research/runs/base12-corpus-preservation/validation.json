@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "source_baseline": "212bae6667db3fb2c01c2c23538d6278894abb87",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 8,
+  "verified_source_bytes": 52914,
+  "full_text_read": 7,
+  "json_parsed": 1,
+  "archive_opened_from_verified_memory_bytes": true,
+  "archive_payloads_equal_installed_originals": [
+    {
+      "installed_path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/SHA256SUMS.txt",
+      "bytes": 294,
+      "matched": true
+    },
+    {
+      "installed_path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/claude-20261015-corpus-review.md",
+      "bytes": 14980,
+      "matched": true
+    },
+    {
+      "installed_path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/dot-20261015-lossless-corpus-nomination.md",
+      "bytes": 7966,
+      "matched": true
+    },
+    {
+      "installed_path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/source-inventory.md",
+      "bytes": 10382,
+      "matched": true
+    }
+  ],
+  "installed_manifest_bindings": [
+    {
+      "path": "collaboration/dot-bridge/from-dot/dot-20261015-lossless-corpus-nomination.md",
+      "method": "pinned_tree_identical_blob_alias",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/PROVENANCE.json",
+      "method": "acquired_bytes",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/README.md",
+      "method": "acquired_bytes",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/archives/lossless-corpus-nomination.tar.xz",
+      "method": "acquired_bytes",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/SHA256SUMS.txt",
+      "method": "acquired_bytes",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/claude-20261015-corpus-review.md",
+      "method": "acquired_bytes",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/dot-20261015-lossless-corpus-nomination.md",
+      "method": "acquired_bytes",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/source-inventory.md",
+      "method": "acquired_bytes",
+      "matched": true
+    }
+  ],
+  "original_manifest_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/claude-20261015-corpus-review.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/dot-20261015-lossless-corpus-nomination.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/lossless-corpus-nomination/original/source-inventory.md",
+      "matched": true
+    }
+  ],
+  "transcribed_inventory_arithmetic": {
+    "record_rows": 48,
+    "header_bytes": 11162,
+    "advertised_waveform_bytes": 93600000,
+    "advertised_combined_bytes": 93611162,
+    "train_records": 32,
+    "validation_records": 8,
+    "test_records": 8,
+    "same_subject_pair_retained_in_train": true,
+    "dataset_payloads_verified": false
+  },
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/",
+    "files": [
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/README.md",
+        "bytes": 7078
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/PROTOCOL.md",
+        "bytes": 6042
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/WIRE.md",
+        "bytes": 1877
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/codec.py",
+        "bytes": 9208
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/native_signal.py",
+        "bytes": 3719
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/record100.py",
+        "bytes": 8874
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/check.py",
+        "bytes": 7708
+      }
+    ],
+    "total_bytes": 44506
+  }
+}

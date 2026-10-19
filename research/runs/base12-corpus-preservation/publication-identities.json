@@ -1,0 +1,22 @@
+{
+  "source_baseline": "212bae6667db3fb2c01c2c23538d6278894abb87",
+  "files": [
+    {
+      "path": "docs/source-review/base12-corpus-preservation.md",
+      "bytes": 6541,
+      "sha256": "5c56b9ede56d6f84d6d0dce9f6de3b97d2e3624fd57e3883429bef16ea29105e"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-corpus-preservation.json",
+      "bytes": 6661,
+      "sha256": "a8f34c5560d5677f66f9114db8c79088956f4123c3fbdbd6711f4ac4043f65c8"
+    },
+    {
+      "path": "research/runs/base12-corpus-preservation/validation.json",
+      "bytes": 4700,
+      "sha256": "f23ef35e4335cc6e7bad269372ba4a993767aba6fab8d6fdd35d86a3ace7db51"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

@@ -209,6 +209,8 @@ The [envelope-fixture return](source-review/base12-envelope-fixture.md) binds em
 
 The [audit-closeout return](source-review/base12-audit-closeout.md) preserves a reconnection history as an explicitly authored retrospective, with receiver-state checks attributed rather than promoted into original dispatch evidence. Saved metadata agreement, historical output rehashing, a local audit pass, recipient acceptance and publication remain separate. Continuum should preserve reconciliation provenance and narrow resumption scope before resolving uncertain effects; no historical invocation was repeated.
 
+The [persistence/acquisition return](source-review/base12-persistence-acquisition.md) distinguishes an incomplete acquisition attempt from its complete retained artifact subset and exact remaining complement. Its audit-source review separates output content rehashes from input filesystem metadata checks. Continuum should preserve attempt outcomes and artifact states independently so reconciliation can reuse verified effects without relabeling failure or blindly replaying work. No historical effect was repeated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

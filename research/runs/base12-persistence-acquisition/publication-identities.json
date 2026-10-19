@@ -1,0 +1,20 @@
+{
+  "source_baseline": "35f54772863014bce6555491d94bc3a698a17e55",
+  "files": [
+    {
+      "path": "docs/source-review/base12-persistence-acquisition.md",
+      "bytes": 6560,
+      "sha256": "c314cb420b3956e7aecdc42bc061bcea2a805c702acffccf771a85e9907a473a"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-persistence-acquisition.json",
+      "bytes": 4439,
+      "sha256": "4ae93d4a20f0791e5983b3cb4a16596ff357b2bfd2942b5b717721a3bad5cae3"
+    },
+    {
+      "path": "research/runs/base12-persistence-acquisition/validation.json",
+      "bytes": 6885,
+      "sha256": "5fd21dc7de2e5b5d2626878a45e49426b07bfe292c2cbd90a0d82843812603fa"
+    }
+  ]
+}

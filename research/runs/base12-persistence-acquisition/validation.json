@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "source_baseline": "35f54772863014bce6555491d94bc3a698a17e55",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 3,
+  "verified_source_bytes": 35074,
+  "persistence_source_full_text_read_and_AST_parsed": true,
+  "json_full_text_read_and_duplicate_key_checked": 2,
+  "persistence_audit_source_digest_matches_postrun": true,
+  "persistence_source_predicate_summary": {
+    "source_digest_bound": true,
+    "ordinary_JSON_parser": true,
+    "source_files_rehashed_under_clean_exact_head": 14,
+    "output_payloads_rehashed": 7,
+    "input_payload_check": "inventory, lstat type/owner/mode/size; content not rehashed",
+    "source_and_output_reads_are_current_path_reads": true,
+    "exclusive_no_follow_report_creation": true,
+    "report_explicit_fsync": false
+  },
+  "closeout_receipt_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/learning-native-audit-v1.json",
+      "bytes": 4429,
+      "sha256": "1e3cb37d5e4a7e23eee838295291531ddc3613531a8ee92e119252549df32dc4",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/independent-full-accounting-audit-v1.json",
+      "bytes": 19297,
+      "sha256": "c4083c41d719018480bc5693420ac714092805c2e2cc7a667b644829c55dd56e",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/post-run-verification-v1.json",
+      "bytes": 6038,
+      "sha256": "03ff118194fdfb9de599cad0c55e4d70e0d8085080ca79545526f1aa77c3ead0",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-outcome-v1.json",
+      "bytes": 27648,
+      "sha256": "9958b272f8bba9a2da465e3a45765cc19145fc9581d51ba53b78d79b54a1067f",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/recovery-outcome-v1.json",
+      "bytes": 15080,
+      "sha256": "b67753eded81cf3eb8297adc696ded96af2c901518ce90c566cece82a276ae5f",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "bytes": 2048,
+      "sha256": "fbcca657434ebf6348416afd5453498d716f65b3ac6767f6773bfbade8149ba3",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/payload-file-evidence-v1.json",
+      "bytes": 1783,
+      "sha256": "f5b5cedaf451beb22265e00070a7065bb2068374b0283810848c5ee59d102763",
+      "matched": true
+    }
+  ],
+  "all_seven_closeout_receipt_payloads_now_bind": true,
+  "embedded_acquisition_receipt_equals_standalone": true,
+  "acquisition_receipt_digest_matches_outcome": true,
+  "acquisition_source14_hash_declarations_match_static": true,
+  "acquisition_publisher_manifest_digest_agrees_with_intake": true,
+  "initial_saved_inventory_rows_read": 44,
+  "remaining_inventory_rows_read": 36,
+  "initial_and_remaining_name_sets_disjoint_and_union_matches_later80": true,
+  "all_saved_rows_match_later_inventory": true,
+  "all_remaining_hashes_partitions_and_caps_match_later_inventory": true,
+  "partial_inventory_arithmetic": {
+    "saved_files": 44,
+    "saved_train_files": 44,
+    "saved_validation_files": 0,
+    "saved_dat_bytes": 42900000,
+    "saved_header_bytes": 4816,
+    "saved_total_bytes": 42904816,
+    "remaining_files": 36,
+    "remaining_train_files": 20,
+    "remaining_validation_files": 16,
+    "remaining_actual_total_bytes": 35104372,
+    "final_files": 80,
+    "final_total_bytes": 78009188
+  },
+  "saved_acquisition_resources": {
+    "wall_seconds": 1700.050689102,
+    "termination_requested_at_seconds": 1700.000181684,
+    "cleanup_tail_seconds": 0.050507418000051985,
+    "wait4_cpu_seconds": 2.1965820000000003,
+    "sampled_cpu_max_seconds": 2.200880724999661,
+    "monitor_samples": 33526,
+    "terminal_wait4_entries": 1,
+    "root_exitcode": -9,
+    "cleanup_complete": true
+  },
+  "acquisition_envelope_artifact_digests_declared": 6,
+  "acquisition_envelope_payload_bindings_here": 1,
+  "initial_scientific_work_not_started_is_saved_status": true,
+  "upstream_audit_or_acquisition_executed": false,
+  "payloads_attested_or_decoded": false,
+  "live_resource_measurement": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Persistence audit source digest and all seven closeout receipt payloads now bind, without executing the audit.",
+    "Initial44 and remaining36 inventories exactly partition later80 rows; publisher and payload content were not freshly attested.",
+    "Incomplete transport does not imply no effect; later continuation remains a separate historical authorization and outcome.",
+    "Low CPU relative to wall time does not identify the transport bottleneck or historical failure cause.",
+    "Only one of six acquisition-envelope artifact digests binds to an acquired payload here; other envelope logs remain unacquired.",
+    "No historical acquisition, scientific program, output rehash, live filesystem audit or model call was repeated."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/collaboration/dot-bridge/to-dot/gpt-20261016-documentation-continuity.md",
+      "bytes": 2614
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/CURRENT.md",
+      "bytes": 10373
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/LEARNING_LEDGER.md",
+      "bytes": 18925
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/PRESERVATION.md",
+      "bytes": 6259
+    }
+  ],
+  "next_scope_bytes": 38171,
+  "public_contribution_checks": [
+    "source syntax, duplicate-key checked JSON, coverage and all seven closeout receipt bindings passed",
+    "all saved/complement inventory rows, source declarations and terminal arithmetic checked",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

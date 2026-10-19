@@ -175,6 +175,8 @@ The [stage-A launcher review](source-review/base12-stage-a-launcher.md) ties tho
 
 The [complete stage-A result review](source-review/base12-stage-a-result.md) reconciles all 318 block rows and shows why a raw block-payload fallback does not bound the whole container by its literal frame: subframe headers remain charged. Encode counters also exclude other work, and smaller stored bytes coexist with slower saved timing observations. Continuum budgets and benefit claims need the complete closure and exact counter/measurement scope. No binary archive or codec was re-executed here.
 
+The [static-review return](source-review/base12-stage-a-static-review.md) preserves the bounded caller assumptions behind numerical and memory arguments: an important external prerequisite can coexist with approval of a scoped path. It also distinguishes a deterministic encoder and canonical padding from uniqueness of all accepted encodings. Continuum should bind proof scope and semantic-equivalence claims explicitly. Five documents and endpoint arithmetic were checked without executing source or repeating a model call.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

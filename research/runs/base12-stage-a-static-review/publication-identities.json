@@ -1,0 +1,22 @@
+{
+  "source_baseline": "89d2e1562ae6943eab679ef6d6e0a79975e364fb",
+  "files": [
+    {
+      "path": "docs/source-review/base12-stage-a-static-review.md",
+      "bytes": 6665,
+      "sha256": "8352b28ec2c9ed41e4f7be250f8673c236d3a2446d1f05ae5f875adc6a8600d9"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-stage-a-static-review.json",
+      "bytes": 5178,
+      "sha256": "3708c0463b9304d8c88b4523da3535f20f7ba9218f93d444183d90fb2ed82c23"
+    },
+    {
+      "path": "research/runs/base12-stage-a-static-review/validation.json",
+      "bytes": 12027,
+      "sha256": "ba641db79fb11b32cd0781bc8a95776c8ab03d2c2c7c0195d500859a35b06247"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "source_baseline": "89d2e1562ae6943eab679ef6d6e0a79975e364fb",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 5,
+  "verified_source_bytes": 39483,
+  "markdown_full_text_read": 3,
+  "json_parsed": 2,
+  "cumulative_delivery_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "README.md",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "intake/acquisition-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/static-source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/acquire_record100.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/environment.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/intake-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/native-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/packet-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-clearance.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-review-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/postrun-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/record100-attempt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/result-static-verification.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/run_once.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/wire-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/RESULTS.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/execution-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/input-and-code.json",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "frozen-source/base12_ecg_codec_stage_a.tar.xz",
+      "parent-source-review/REVIEW_MANIFEST.json",
+      "parent-source-review/claude-review-evidence.json",
+      "parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "run/stderr.log",
+      "run/stdout.log"
+    ]
+  },
+  "cumulative_preservation_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "PROTOCOL.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "README.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "WIRE.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "check.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "codec.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "native_signal.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "record100.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/checks.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/design-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/development-corrections.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/external-wrapper-checks.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/published-pins.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/source-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/DELIVERY_MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/README.md",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/intake/acquisition-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/static-source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/acquire_record100.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/environment.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/intake-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/native-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/packet-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/parent-clearance.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/parent-review-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/postrun-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/record100-attempt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/result-static-verification.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/run_once.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/wire-static-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/RESULTS.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/execution-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/input-and-code.json",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "original/base12_ecg_codec_stage_a.tar.xz",
+      "ATTRIBUTION.md",
+      "DOT_HANDOFF.md",
+      "REVIEW_AND_ALIGNMENT.md",
+      "vendor/isa.py",
+      "vendor/runtime.py",
+      "aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/frozen-source/base12_ecg_codec_stage_a.tar.xz",
+      "aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json",
+      "aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+      "aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/run/stderr.log",
+      "aum-run-2026-10-16/evidence/run/stdout.log"
+    ]
+  },
+  "independent_arithmetic_from_retained_coefficient_literal": [
+    {
+      "order": 0,
+      "prediction_min": 0,
+      "prediction_max": 0,
+      "encoded_residual_min": -2048,
+      "encoded_residual_max": 2047
+    },
+    {
+      "order": 1,
+      "prediction_min": -2048,
+      "prediction_max": 2047,
+      "encoded_residual_min": -4095,
+      "encoded_residual_max": 4095
+    },
+    {
+      "order": 2,
+      "prediction_min": -6143,
+      "prediction_max": 6142,
+      "encoded_residual_min": -8190,
+      "encoded_residual_max": 8190
+    },
+    {
+      "order": 3,
+      "prediction_min": -14333,
+      "prediction_max": 14332,
+      "encoded_residual_min": -16380,
+      "encoded_residual_max": 16380
+    },
+    {
+      "order": 4,
+      "prediction_min": -30713,
+      "prediction_max": 30712,
+      "encoded_residual_min": -32760,
+      "encoded_residual_max": 32760
+    }
+  ],
+  "declared_packet_membership_matches_source_manifest": true,
+  "declared_unpacked_bytes_arithmetic": 76539,
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": {
+    "new_semantic_files": [
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/ATTRIBUTION.md",
+        "bytes": 1547
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/DOT_HANDOFF.md",
+        "bytes": 3815
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/REVIEW_AND_ALIGNMENT.md",
+        "bytes": 4830
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+        "bytes": 18592
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json",
+        "bytes": 1289
+      }
+    ],
+    "new_semantic_bytes": 30073,
+    "previously_read_vendor_byte_custody_backfill": [
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+        "bytes": 6390
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/runtime.py",
+        "bytes": 2647
+      }
+    ],
+    "mechanical_source_archive": {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/original/base12_ecg_codec_stage_a.tar.xz",
+      "bytes": 26232
+    },
+    "purpose": "Complete source-packet byte custody and inspect the retained visible consultation without executing source or repeating inference."
+  }
+}

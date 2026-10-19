@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-fixture-derivation.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/cases.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/cases.json",
+      "bytes": 140815,
+      "git_blob_sha": "ca55a165d107aa5b0400abb394224e9adad6c699",
+      "sha256": "2c4feb10a2133cda533417f5b30d77b20f0ab4a1a778a18a3e1c5a13c04ebd1b",
+      "lines": 3612,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-case-expectations",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 140815
+    },
+    "cumulative_direct_read": {
+      "paths": 520,
+      "unique_blobs": 520,
+      "bytes": 4143871
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 597,
+    "remaining_paths_without_full_semantic_read_or_alias": 4996,
+    "remaining_distinct_blobs_without_full_semantic_read": 3909,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 140815,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete 140815-byte JSON read including all 64 cases, both tiny runs, header/provenance and bounds through byte-exact reconstruction and complete checked field projections.",
+    "All155 referenced fixture paths bind list digests/tree sizes, not fresh verification of all payloads. Only available identical source bytes receive line/hash checks.",
+    "Failure rows with a full source layout do not claim parser progress or actual partial-output map records.",
+    "Ten injection specifications and qualified syscall counts reconcile with authored materializer data, not observed instrumentation.",
+    "Both tiny outputs remain conditional on earlier cases, exact copied identity and separate clearance; no general encoding/limit output becomes executable.",
+    "155 payload-file count excludes cases/provenance/checksum metadata; 573119+140815+2204+13072=729210 is pinned-tree accounting."
+  ],
+  "review_report": "base12-builder-case-expectations.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

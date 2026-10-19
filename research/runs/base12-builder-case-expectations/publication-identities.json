@@ -1,0 +1,20 @@
+{
+  "source_baseline": "9ea3b2069a15f221981c915c791ab909c641031e",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-case-expectations.md",
+      "bytes": 5786,
+      "sha256": "32c401ef10396588a1cfa68cc5e4f030962e9d5ee79b56a460315141120e2126"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-case-expectations.json",
+      "bytes": 2977,
+      "sha256": "b58852528d3784def2a3aba0de63cf1bec35f36c56ad68c3f6e6f0544668cd6a"
+    },
+    {
+      "path": "research/runs/base12-builder-case-expectations/validation.json",
+      "bytes": 3456,
+      "sha256": "014d9e9124664e9232f6bbecb97c7ecab28effaf63bd88a5bfc841c1863ab4bd"
+    }
+  ]
+}

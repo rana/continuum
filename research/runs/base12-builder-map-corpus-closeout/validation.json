@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "source_baseline": "5751b66130ef5ac379c367ada1d6ae1cde4906fa",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 6,
+  "verified_source_bytes": 61785,
+  "full_binary_metadata_paths_read": 3,
+  "full_sentinel_paths_read": 1,
+  "mechanically_checked_empty_paths": 2,
+  "new_semantic_files": 4,
+  "new_semantic_bytes": 61785,
+  "total_valid_map_records": 1927,
+  "all_valid_fields_decode_roundtrip_and_match_held_layout": true,
+  "case_checks": [
+    {
+      "case": "01",
+      "map_bytes": 16608,
+      "header_version": 1,
+      "map_rows": 518,
+      "code_bytes": 2834,
+      "instruction_rows": 471,
+      "label_rows": 47,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "07",
+      "map_bytes": 36896,
+      "header_version": 1,
+      "map_rows": 1152,
+      "code_bytes": 1024,
+      "instruction_rows": 1024,
+      "label_rows": 128,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    },
+    {
+      "case": "11",
+      "map_bytes": 8256,
+      "header_version": 1,
+      "map_rows": 257,
+      "code_bytes": 1280,
+      "instruction_rows": 256,
+      "label_rows": 1,
+      "all_fields_equal_held_layout": true,
+      "exact_binary_roundtrip": true,
+      "checksum_manifest_and_saved_metadata_match": true
+    }
+  ],
+  "special_output_checks": [
+    {
+      "case": "50",
+      "bytes": 25,
+      "classification": "collision_sentinel_full_byte_read",
+      "semantic_credit": true,
+      "valid_map_decoder_rejects": true,
+      "declared_rc": 73,
+      "declared_publication_valid": false,
+      "saved_map_and_failure_metadata_match": true,
+      "declared_elf_bytes": 0
+    },
+    {
+      "case": "57",
+      "bytes": 0,
+      "classification": "mechanical_empty_map_identity_only",
+      "semantic_credit": false,
+      "valid_map_decoder_rejects": true,
+      "declared_rc": 74,
+      "declared_publication_valid": false,
+      "saved_map_and_failure_metadata_match": true,
+      "declared_elf_bytes": 0
+    },
+    {
+      "case": "60",
+      "bytes": 0,
+      "classification": "mechanical_empty_map_identity_only",
+      "semantic_credit": false,
+      "valid_map_decoder_rejects": true,
+      "declared_rc": -25,
+      "declared_publication_valid": false,
+      "saved_map_and_failure_metadata_match": true,
+      "declared_elf_bytes": 4096
+    }
+  ],
+  "map_corpus": {
+    "paths": 29,
+    "path_bytes": 76377,
+    "nonempty_paths": 27,
+    "distinct_nonempty_blobs": 13,
+    "valid_map_paths": 26,
+    "collision_sentinel_paths": 1,
+    "mechanical_empty_paths": 2,
+    "all_nonempty_paths_have_full_read_or_identical_blob_credit": true,
+    "all_empty_paths_mechanically_classified": true
+  },
+  "new_identical_blob_alias_paths": [
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/50.bin"
+  ],
+  "empty_blob_receives_no_global_semantic_credit": true,
+  "reader": "research/runs/base12-builder-map-metadata/map_metadata.py",
+  "reader_sha256": "dc4c7fecb047170fdc37e26a34fed6d0a534e6fb190a8bfb5491a1882b6db9d7",
+  "reader_unchanged_from_source_baseline": true,
+  "private_source_or_map_payloads_in_publication": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Six remaining map paths/61785 bytes acquired:three valid binary metadata maps and one sentinel gain semantic credit;two empty failure maps receive mechanical identity only.",
+    "All1927 valid records decode and roundtrip exactly, matching held layouts, checksums, case declarations and saved metadata.",
+    "The25-byte sentinel equals the held materializer literal and collision declaration; valid-map decoding correctly rejects sentinel and empty files without classifying expected failure fixtures as upstream defects.",
+    "Identical empty map content accompanies different failures and companion ELF lengths; metadata equality does not identify the failure mechanism or observed syscall progress.",
+    "All29 expected map paths are classified:26 valid maps,one sentinel and two mechanical empty files. Empty-blob identity does not grant global semantic alias credit.",
+    "No private raw execution map or native ELF/code artifact acquired; no upstream import,materializer/native execution,native emission,model call,live scan,activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/49.bin",
+      "bytes": 25,
+      "intended_review": "complete_remaining_collision_sentinel_and_fixture_evidence_boundary_inventory_without_native_ELF_acquisition_or_execution"
+    }
+  ],
+  "next_scope_bytes": 25,
+  "public_contribution_checks": [
+    "three complete valid maps decode all1927 records and round-trip exactly",
+    "sentinel bytes and two mechanical empty identities bind frozen/saved failure metadata",
+    "all29 expected map paths classified without blanket empty-blob semantic credit",
+    "reader unchanged, native/runtime gaps, coverage, links, privacy and git diff --check passed"
+  ]
+}

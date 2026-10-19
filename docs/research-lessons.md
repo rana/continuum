@@ -325,6 +325,8 @@ The [exact binary metadata maps](source-review/base12-builder-map-metadata.md) d
 
 The [acquired small map bytes](source-review/base12-builder-small-maps.md) directly substantiate map-shape equivalence while retaining different code identities and source conditions. Strengthening custody of one representation does not add identities absent from that representation. Failure-output sentinels and empty files also need their own reading classifications instead of being treated as malformed successful maps.
 
+The [expected-map corpus closeout](source-review/base12-builder-map-corpus-closeout.md) classifies valid metadata, collision sentinels and empty reservations separately. Parser rejection can be the correct interpretation of a failure-output fixture. Identical empty map bytes accompany different companion files and failure declarations; byte identity leaves execution history unresolved, and mechanical custody does not become global semantic credit.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

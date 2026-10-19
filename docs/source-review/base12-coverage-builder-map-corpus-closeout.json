@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-small-maps.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.map",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.map"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.map",
+      "bytes": 16608,
+      "git_blob_sha": "b14c2869f13c62fd3c2852459a9049d421680369",
+      "sha256": "48a4f80ab464ccfee23f7bd69df03dc5e40cd5e9ad2dfdbedeac94cea2332c4d",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-final-map-metadata-and-sentinel",
+      "reading_representation": "all_header_and_record_fields_lossless_decoded_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.map",
+      "bytes": 36896,
+      "git_blob_sha": "5354352e8dcaf42f2da541223f19f5c61db651fb",
+      "sha256": "e2d2e30ac0d6c03d30d0b6686e471c94ba9506ea3b677f790beafbfb16c4a287",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-final-map-metadata-and-sentinel",
+      "reading_representation": "all_header_and_record_fields_lossless_decoded_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.map",
+      "bytes": 8256,
+      "git_blob_sha": "5daf39d9c599f165488ccba7fa225a921cbb2cf6",
+      "sha256": "93fc878c82ba7f3d946e72087edd8d8a8860e20967f5a7feabdab6a0d93eb3d7",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-final-map-metadata-and-sentinel",
+      "reading_representation": "all_header_and_record_fields_lossless_decoded_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.map",
+      "bytes": 25,
+      "git_blob_sha": "9a6d8386a2b65986588728c7035ce792fa7b3c8f",
+      "sha256": "6e8b74df8442e1766456d22957ca17dd1b5aae07a6f015b3516d2b987fa9c47c",
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-final-map-metadata-and-sentinel",
+      "reading_representation": "complete_literal_sentinel_byte_read",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 61785
+    },
+    "cumulative_direct_read": {
+      "paths": 608,
+      "unique_blobs": 608,
+      "bytes": 5314100
+    },
+    "additional_identical_blob_paths": 113,
+    "alias_distinct_blobs": 37,
+    "semantic_covered_paths_including_aliases": 721,
+    "remaining_paths_without_full_semantic_read_or_alias": 4872,
+    "remaining_distinct_blobs_without_full_semantic_read": 3821,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 61785,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Six remaining map paths/61785 bytes acquired:three valid binary metadata maps and one sentinel gain semantic credit;two empty failure maps receive mechanical identity only.",
+    "All1927 valid records decode and roundtrip exactly, matching held layouts, checksums, case declarations and saved metadata.",
+    "The25-byte sentinel equals the held materializer literal and collision declaration; valid-map decoding correctly rejects sentinel and empty files without classifying expected failure fixtures as upstream defects.",
+    "Identical empty map content accompanies different failures and companion ELF lengths; metadata equality does not identify the failure mechanism or observed syscall progress.",
+    "All29 expected map paths are classified:26 valid maps,one sentinel and two mechanical empty files. Empty-blob identity does not grant global semantic alias credit.",
+    "No private raw execution map or native ELF/code artifact acquired; no upstream import,materializer/native execution,native emission,model call,live scan,activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-builder-map-corpus-closeout.md",
+  "mechanical_custody_files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.map",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_credit": false,
+      "classification": "empty_failure_output_mechanical_identity"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.map",
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_credit": false,
+      "classification": "empty_failure_output_mechanical_identity"
+    }
+  ],
+  "repeated_identical_payload_reads": []
+}

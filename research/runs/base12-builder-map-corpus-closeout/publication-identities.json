@@ -1,0 +1,20 @@
+{
+  "source_baseline": "5751b66130ef5ac379c367ada1d6ae1cde4906fa",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-map-corpus-closeout.md",
+      "bytes": 4937,
+      "sha256": "1c772b8ba70bab350b20cff6d0ea625fd26e6c36bed3ff610603d09b58e6b0f7"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-map-corpus-closeout.json",
+      "bytes": 6202,
+      "sha256": "36423949014ecf38ac4e62a21614ccc97672482a05e1db23dc8df6e7284a57ad"
+    },
+    {
+      "path": "research/runs/base12-builder-map-corpus-closeout/validation.json",
+      "bytes": 5551,
+      "sha256": "e855f221fafdbb6dae3db47c4e686c3a32010028c35c6730a71f8b665dbaeb3b"
+    }
+  ]
+}

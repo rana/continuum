@@ -21,3 +21,7 @@ jobs:
       - run: cargo run --locked -- demo "$RUNNER_TEMP/continuum-demo.db"
       - name: Check workload outcomes without a timing threshold
         run: cargo run --locked --example measure_workloads -- --samples 3 --directory "$RUNNER_TEMP"
+      - name: Check disposable project checkpoint adapter
+        run: |
+          cargo build --locked
+          python3 -m unittest discover -s tools -p 'test_project_checkpoint.py'

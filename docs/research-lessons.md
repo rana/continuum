@@ -207,6 +207,8 @@ The [envelope-control return](source-review/base12-envelope-controls.md) disting
 
 The [envelope-fixture return](source-review/base12-envelope-fixture.md) binds emitted-state dependencies without replaying expired host assertions. Short self-check journals each show no descendants while terminal inventories retain later observations. Continuum evidence views should preserve selection scope so omission does not become an absence claim. PID-only joins and mechanical empty-stream custody remain narrower than full process identity and semantic reading. No upstream test ran.
 
+The [audit-closeout return](source-review/base12-audit-closeout.md) preserves a reconnection history as an explicitly authored retrospective, with receiver-state checks attributed rather than promoted into original dispatch evidence. Saved metadata agreement, historical output rehashing, a local audit pass, recipient acceptance and publication remain separate. Continuum should preserve reconciliation provenance and narrow resumption scope before resolving uncertain effects; no historical invocation was repeated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

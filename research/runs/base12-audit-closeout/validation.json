@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "source_baseline": "6b4092256d6ca475d9ae3f7cbf62279571a51a3c",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 4,
+  "verified_source_bytes": 17704,
+  "json_full_text_read_and_duplicate_key_checked": 4,
+  "closeout_and_reconnection_receipt_identity_maps_equal": true,
+  "receipt_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/learning-native-audit-v1.json",
+      "declared_bytes": 4429,
+      "declared_sha256": "1e3cb37d5e4a7e23eee838295291531ddc3613531a8ee92e119252549df32dc4",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/independent-full-accounting-audit-v1.json",
+      "declared_bytes": 19297,
+      "declared_sha256": "c4083c41d719018480bc5693420ac714092805c2e2cc7a667b644829c55dd56e",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/post-run-verification-v1.json",
+      "declared_bytes": 6038,
+      "declared_sha256": "03ff118194fdfb9de599cad0c55e4d70e0d8085080ca79545526f1aa77c3ead0",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-outcome-v1.json",
+      "declared_bytes": 27648,
+      "declared_sha256": "9958b272f8bba9a2da465e3a45765cc19145fc9581d51ba53b78d79b54a1067f",
+      "payload_acquired": false,
+      "matched": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/recovery-outcome-v1.json",
+      "declared_bytes": 15080,
+      "declared_sha256": "b67753eded81cf3eb8297adc696ded96af2c901518ce90c566cece82a276ae5f",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "declared_bytes": 2048,
+      "declared_sha256": "fbcca657434ebf6348416afd5453498d716f65b3ac6767f6773bfbade8149ba3",
+      "payload_acquired": true,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/payload-file-evidence-v1.json",
+      "declared_bytes": 1783,
+      "declared_sha256": "f5b5cedaf451beb22265e00070a7065bb2068374b0283810848c5ee59d102763",
+      "payload_acquired": true,
+      "matched": true
+    }
+  ],
+  "matched_receipt_bindings": 6,
+  "closeout_reconnection_digest_matches": true,
+  "closeout_coefficients_arms_comparisons_and_resource_summary_match_prior_audits": true,
+  "postrun_fourteen_source_declarations_match_static": true,
+  "postrun_seven_output_declarations_match_prior_payload_metadata": true,
+  "postrun_result_and_wrapper_receipt_hashes_match": true,
+  "wrapper_source_hash_matches_clearance_and_postrun": true,
+  "zstd_declared_hash_agrees_with_static": true,
+  "zstd_binary_rehashed_here": false,
+  "persistence_audit_source_payload_acquired": false,
+  "persistence_audit_source_sha256_declared": "0e86dea0a6f465e72c39c7b6e8b7ab6bbc010f6ccbed010b2c233cb9e3b5081a",
+  "documentation_snapshot_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/collaboration/dot-bridge/to-dot/gpt-20261016-documentation-continuity.md",
+      "declared_bytes": 2614,
+      "git_blob_sha": "96bf753a31bccd87c3d7bab4dae90a7ae0ed8d61",
+      "declared_sha256": "e801f05117f5fc0902becc0650f7d29e4db5b9dd20fef6a5f3e86d1cde237e70",
+      "tree_blob_and_size_match": true,
+      "payload_acquired": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/CURRENT.md",
+      "declared_bytes": 10373,
+      "git_blob_sha": "2a946ad10c5b0a33d7a2da9561d9158181f4616b",
+      "declared_sha256": "b2be72e1646bf5c8d2163196d7038c7556a364b7473de8a45163776b9eb05566",
+      "tree_blob_and_size_match": true,
+      "payload_acquired": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/LEARNING_LEDGER.md",
+      "declared_bytes": 18925,
+      "git_blob_sha": "5429ec98272272b81437784a9cc5a35ab95da23d",
+      "declared_sha256": "5eac327b39c6ea3876c7a9738605d4680c877acafc25356801b12176b2d7406c",
+      "tree_blob_and_size_match": true,
+      "payload_acquired": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/PRESERVATION.md",
+      "declared_bytes": 6259,
+      "git_blob_sha": "64958dfc7a4d5eca43dc77ae2d5c1c19a515491b",
+      "declared_sha256": "9e0e36079323de6440302b7f26716e4bda1e6c29a470aca3dc413a103a24e293",
+      "tree_blob_and_size_match": true,
+      "payload_acquired": false
+    }
+  ],
+  "documentation_snapshot_bytes": 38171,
+  "distinct_experiment_and_documentation_revisions": true,
+  "clearance_partition_and_limit_fields_match_saved_source_and_gates": true,
+  "authored_reconnection_events_read": 5,
+  "authored_reconnection_status": "retrospective from task results and persisted receipts",
+  "acquisition_counter_arithmetic": {
+    "initial_verified_files": 44,
+    "initial_waveform_bytes": 42900000,
+    "initial_header_bytes": 4816,
+    "initial_total_bytes": 42904816,
+    "continuation_new_files": 36,
+    "continuation_new_bytes": 35104372,
+    "final_files": 80,
+    "final_bytes": 78009188
+  },
+  "authored_single_scientific_attempt_scope": "owned receipt set; no global host-history proof",
+  "historical_parent_acceptance": "pending",
+  "historical_publication": false,
+  "current_upstream_parent_acceptance_established": false,
+  "upstream_programs_executed": false,
+  "payloads_attested_or_decoded": false,
+  "live_resource_measurement": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Reconnection is explicitly an authored retrospective from task results and receipts, not a recovered pre-disconnection file or current host observation.",
+    "Six of seven referenced receipt payloads bind; initial acquisition outcome remains unacquired.",
+    "Post-run output rehashes and source/binary checks are historical claims; this unit compared retained metadata without reading reversible payloads or host binary bytes.",
+    "Persistence-audit source remains unacquired and its declared digest is not yet bound.",
+    "Four documentation-snapshot tree identities match declared blob/size only; payload SHA-256 and semantic readings remain pending.",
+    "Experiment head, documentation revision, review acceptance and publication are separate roles; historical pending/false fields do not grant current authority or establish current upstream acceptance.",
+    "No historical invocation, scientific run, audit, signal decode or model call was repeated."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_saved_persistence.py",
+      "bytes": 5589
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-outcome-v1.json",
+      "bytes": 27648
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/receipt.json",
+      "bytes": 1837
+    }
+  ],
+  "next_scope_bytes": 35074,
+  "public_contribution_checks": [
+    "duplicate-key checked JSON, coverage and receipt bindings passed",
+    "saved metadata, acquisition counters, source/limit and timestamp comparisons checked",
+    "four documentation blobs remain outside prior semantic coverage",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "6b4092256d6ca475d9ae3f7cbf62279571a51a3c",
+  "files": [
+    {
+      "path": "docs/source-review/base12-audit-closeout.md",
+      "bytes": 6404,
+      "sha256": "9d485f763d24161a6553cad82702c96d351a2b14f6c5c485993f7be5cdad7b11"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-audit-closeout.json",
+      "bytes": 5372,
+      "sha256": "cac23dd52379212b75f412fbbe50cd45f138997f0eee465cd1361c8e319abf34"
+    },
+    {
+      "path": "research/runs/base12-audit-closeout/validation.json",
+      "bytes": 8491,
+      "sha256": "3f8d43b86ad5eec434418fbc51b535d148b3062ae16e80e3ea45416761381398"
+    }
+  ]
+}

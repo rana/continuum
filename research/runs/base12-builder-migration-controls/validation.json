@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "source_baseline": "47f797d3811df0a687d5b12d27d1fb1735cb97a6",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 6,
+  "verified_source_bytes": 22795,
+  "full_text_paths_read": 6,
+  "new_semantic_files": 6,
+  "new_semantic_bytes": 22795,
+  "runner": {
+    "bytes": 7463,
+    "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+    "physical_lines": 520,
+    "instructions": 471,
+    "labels": 47,
+    "relocations": 109,
+    "source_map_records": 518,
+    "forms": {
+      "add": 6,
+      "add_i8": 4,
+      "and": 3,
+      "and_i8": 2,
+      "call": 13,
+      "cld": 1,
+      "cmp": 33,
+      "dec": 3,
+      "imm": 127,
+      "imul": 1,
+      "inc": 2,
+      "ja": 8,
+      "jae": 5,
+      "jalways": 23,
+      "jb": 6,
+      "jle": 2,
+      "jns": 11,
+      "jnz": 12,
+      "js": 10,
+      "jz": 19,
+      "load32": 4,
+      "load64": 43,
+      "load8": 3,
+      "mov": 14,
+      "neg": 11,
+      "ret": 1,
+      "shr": 2,
+      "store32": 2,
+      "store64": 42,
+      "sub": 5,
+      "syscall": 20,
+      "test": 32,
+      "ud2": 1
+    },
+    "declarative_admission": true,
+    "all_symbolic_targets_resolve": true
+  },
+  "checkpoint_payload_hash_bindings": [
+    {
+      "field": "bootstrap_sha256",
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614"
+    },
+    {
+      "field": "seed_sha256",
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae"
+    },
+    {
+      "field": "contract_sha256",
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064"
+    },
+    {
+      "field": "symbolic_consumer_sha256",
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/runner.b12s",
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8"
+    },
+    {
+      "field": "independent_review_sha256",
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SOURCE_REVIEW.md",
+      "sha256": "150a5b2cd11ff6cfb07be445505ff5f0279c2a1ebef0c09e446ebd7e8484d525"
+    },
+    {
+      "field": "independent_witness_manifest_sha256",
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SHA256SUMS",
+      "sha256": "e64330b00b0e2cf2035f8062d6dde97837da741f4b29bdd8b64c46803529586c"
+    }
+  ],
+  "checkpoint_and_owner_fields_agree": true,
+  "declared_candidate_fits_owner_caps": true,
+  "migration_AST_parses": true,
+  "migration_output_modes": [
+    "xb",
+    "x"
+  ],
+  "migration_outputs_sequential_not_atomic": true,
+  "migration_executed": false,
+  "historical_payloads_acquired": false,
+  "proposal_table_ranges": 15,
+  "proposal_builder_call_ids": 64,
+  "proposal_tiny_calls_conditional": 2,
+  "proposal_materialized_or_launched_here": false,
+  "no_native_program_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Six source/control/proposal texts fully read; original source counts and declarative admission checked without native parsing or execution.",
+    "Six checkpoint source hashes bind held payloads; artifact ELF and historical runner bytes remain unacquired.",
+    "Migration script AST inspected only; its historical layout ELF hash assertion is a declaration, not recomputation of original ELF identity.",
+    "Migration has two sequential exclusive writes; failed second creation can leave the first source file. No migration or output operation ran here.",
+    "Proposal ranges cover 64 builder calls plus two conditional tiny executions, but materialization, enforcement and clearance remain historical open work at this checkpoint.",
+    "Source-only status and ownership observations are capture-time claims, not current worker state or proof that no later run exists."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/MIGRATION.json",
+      "bytes": 62176,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/SHA256SUMS",
+      "bytes": 3993,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/BUILD.json",
+      "bytes": 790,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/BUILD.json",
+      "bytes": 790,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 67749,
+  "public_contribution_checks": [
+    "six pinned identities and complete text readings passed",
+    "runner counts, all 33 forms and 109 symbolic references reconcile",
+    "six checkpoint source bindings and owner ceilings agree",
+    "migration AST and sequential exclusive output modes inspected without import",
+    "15 proposal ranges cover 64 builder IDs exactly once",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

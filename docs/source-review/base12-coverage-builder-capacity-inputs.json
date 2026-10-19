@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-numeric-inputs.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/05.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/06.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/07.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/08.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/09.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/10.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/11.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/12.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/13.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/14.b12s"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/05.b12s",
+      "bytes": 65536,
+      "git_blob_sha": "a8e441fdcfdd695846d34b6cf1d51bd59312f77a",
+      "sha256": "9f62e5a0a49e41c1ccd1026f730a36a31d18e959e3b4f0572065d3f4db613ca5",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/06.b12s",
+      "bytes": 65537,
+      "git_blob_sha": "2641aeb1f0d834e02e9cee8f2d0c6e00884ef95d",
+      "sha256": "ea2f2ee06bb50424c16ecfb8477d8992615e6167b07db5ea365cdceb3809a668",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/07.b12s",
+      "bytes": 5398,
+      "git_blob_sha": "c92636b50073b1327a8c7aba3b0e0d1f2cfd5cf1",
+      "sha256": "055c80251575880a9e832f8654ddcff9bc44a149f9161dd817b33d5cf3feb334",
+      "lines": 1152,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/08.b12s",
+      "bytes": 5402,
+      "git_blob_sha": "18bbdfa4ba939f9f374bde42b0d588c110c815e6",
+      "sha256": "f59e3e9b9af274b0fd219b5d924307892a2a095b8273885e87666916c5d4986d",
+      "lines": 1153,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/09.b12s",
+      "bytes": 1306,
+      "git_blob_sha": "768d6180f2c449a82bcc9196c1852daadb44f0da",
+      "sha256": "9c067d3e672123bfcef3cd6d17aedc38b6df056746d11981abeeb2472d0a1376",
+      "lines": 129,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/10.b12s",
+      "bytes": 1317,
+      "git_blob_sha": "77f578b736d257e47f2b00ce0092dcf2fdc0fca3",
+      "sha256": "1d7f645acd101be04901d473704b97cbf296885f619032ebb6e541f40627391e",
+      "lines": 130,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/11.b12s",
+      "bytes": 3853,
+      "git_blob_sha": "282f964ccbf972a2f61166982bfa4b5a603f013e",
+      "sha256": "04c517717d25230d4379ef16491ecf85d6373229954f4d56f26ff6187b2fdce5",
+      "lines": 257,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/12.b12s",
+      "bytes": 3868,
+      "git_blob_sha": "d4acb9863067305f7cf4751cbdce0cc8a461b728",
+      "sha256": "576c9778f711651a28272077f419d84b4dee5f8e464e436bcb222535551416fe",
+      "lines": 258,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/13.b12s",
+      "bytes": 55,
+      "git_blob_sha": "9b1142c2d39ccbe335e45d1bafa044be9a55599c",
+      "sha256": "8c3974f0933803c0f6bead40f6a46f037366f8d6d60086023180f28595b248e1",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/14.b12s",
+      "bytes": 56,
+      "git_blob_sha": "5eddcfc0bab9c95301d71e6e8e948a9a3a1d5acf",
+      "sha256": "94a5e0a27c839ae152ed47568d0323f219b40c9fed29c0f785d76f167eb0feb1",
+      "lines": 3,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-boundary-fixture-sources",
+      "reading_representation": "complete_lossless_repeated_byte_and_line_projection",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 10,
+      "unique_blobs": 10,
+      "bytes": 152328
+    },
+    "cumulative_direct_read": {
+      "paths": 577,
+      "unique_blobs": 577,
+      "bytes": 5035975
+    },
+    "additional_identical_blob_paths": 79,
+    "alias_distinct_blobs": 28,
+    "semantic_covered_paths_including_aliases": 656,
+    "remaining_paths_without_full_semantic_read_or_alias": 4937,
+    "remaining_distinct_blobs_without_full_semantic_read": 3852,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 10,
+    "this_review_verified_bytes": 152328,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Ten complete sources/152328 bytes fully read through exact repeated-byte and line projections; explicit bounded compositions reconstruct every file.",
+    "All source hashes, lengths, LF/physical-line counts, authored counts and saved case metadata bind; five acceptance/five rejection verdicts remain finite specification checks.",
+    "65537-byte stable regular input targets the earlier fstat bound, not demonstrated overflow-probe coverage; stripping comments before byte accounting would erase the distinguishing payload.",
+    "1024 instructions plus128 labels reaches1152 map rows; first-guard explanations are source-derived, not fresh native traces.",
+    "The32-byte name exceeds the lexer token limit before later name validation; simultaneous limits must not be counted as independently exercised paths.",
+    "Five expected maps reconstructed from literal rows match identities; no actual output map or native ELF acquired/generated/executed.",
+    "Accepted repeated backward jumps are encoding data, not executable-safety evidence.",
+    "No upstream import/materializer execution,native emission/execution,model invocation,live scan,workstation activation or upstream acceptance occurred."
+  ],
+  "review_report": "base12-builder-capacity-inputs.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

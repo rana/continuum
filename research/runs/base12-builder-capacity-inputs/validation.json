@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "source_baseline": "d6fdb6f581bf293aa2782248007b304c88592054",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 10,
+  "verified_source_bytes": 152328,
+  "full_source_paths_read": 10,
+  "new_semantic_files": 10,
+  "new_semantic_bytes": 152328,
+  "all_lossless_projections_and_bounded_source_reconstructions_exact": true,
+  "all_source_identity_line_and_authored_counts_match": true,
+  "all_saved_case_metadata_relations_match": true,
+  "finite_capacity_comparisons_match_expectations": true,
+  "accepted_case_ids": [
+    "05",
+    "07",
+    "09",
+    "11",
+    "13"
+  ],
+  "declared_acceptance_cases": 5,
+  "declared_rejection_cases": 5,
+  "comment_tail_byte_counts": [
+    65518,
+    65519
+  ],
+  "comment_stripping_erases_only_byte_size_pair_difference": true,
+  "fstat_and_lexer_first_guard_source_qualifications_verified": true,
+  "expected_map_identity_checks": [
+    {
+      "case": "05",
+      "records": 2,
+      "bytes": 96,
+      "map_identity_matches": true
+    },
+    {
+      "case": "07",
+      "records": 1152,
+      "bytes": 36896,
+      "map_identity_matches": true
+    },
+    {
+      "case": "09",
+      "records": 129,
+      "bytes": 4160,
+      "map_identity_matches": true
+    },
+    {
+      "case": "11",
+      "records": 257,
+      "bytes": 8256,
+      "map_identity_matches": true
+    },
+    {
+      "case": "13",
+      "records": 3,
+      "bytes": 128,
+      "map_identity_matches": true
+    }
+  ],
+  "maximum_map_rows": 1152,
+  "maximum_map_bytes": 36896,
+  "case_checks": [
+    {
+      "case": "05",
+      "source_bytes": 65536,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "max_token_bytes": 6,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": true,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "06",
+      "source_bytes": 65537,
+      "instructions": 1,
+      "labels": 1,
+      "relocations": 0,
+      "max_token_bytes": 6,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": false,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "07",
+      "source_bytes": 5398,
+      "instructions": 1024,
+      "labels": 128,
+      "relocations": 0,
+      "max_token_bytes": 6,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": true,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "08",
+      "source_bytes": 5402,
+      "instructions": 1025,
+      "labels": 128,
+      "relocations": 0,
+      "max_token_bytes": 6,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": false,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "09",
+      "source_bytes": 1306,
+      "instructions": 1,
+      "labels": 128,
+      "relocations": 0,
+      "max_token_bytes": 6,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": true,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "10",
+      "source_bytes": 1317,
+      "instructions": 1,
+      "labels": 129,
+      "relocations": 0,
+      "max_token_bytes": 6,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": false,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "11",
+      "source_bytes": 3853,
+      "instructions": 256,
+      "labels": 1,
+      "relocations": 256,
+      "max_token_bytes": 7,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": true,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "12",
+      "source_bytes": 3868,
+      "instructions": 257,
+      "labels": 1,
+      "relocations": 257,
+      "max_token_bytes": 7,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": false,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "13",
+      "source_bytes": 55,
+      "instructions": 1,
+      "labels": 2,
+      "relocations": 0,
+      "max_token_bytes": 31,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": true,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    },
+    {
+      "case": "14",
+      "source_bytes": 56,
+      "instructions": 1,
+      "labels": 2,
+      "relocations": 0,
+      "max_token_bytes": 32,
+      "max_tokens_per_statement": 2,
+      "expected_acceptance": false,
+      "lossless_projection_exact": true,
+      "source_specification_and_saved_metadata_match": true
+    }
+  ],
+  "remaining_nonempty_fixture_source_paths": [
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/02.b12s"
+  ],
+  "empty_input_remains_mechanically_classified": true,
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Ten complete sources/152328 bytes fully read through exact repeated-byte and line projections; explicit bounded compositions reconstruct every file.",
+    "All source hashes, lengths, LF/physical-line counts, authored counts and saved case metadata bind; five acceptance/five rejection verdicts remain finite specification checks.",
+    "65537-byte stable regular input targets the earlier fstat bound, not demonstrated overflow-probe coverage; stripping comments before byte accounting would erase the distinguishing payload.",
+    "1024 instructions plus128 labels reaches1152 map rows; first-guard explanations are source-derived, not fresh native traces.",
+    "The32-byte name exceeds the lexer token limit before later name validation; simultaneous limits must not be counted as independently exercised paths.",
+    "Five expected maps reconstructed from literal rows match identities; no actual output map or native ELF acquired/generated/executed.",
+    "Accepted repeated backward jumps are encoding data, not executable-safety evidence.",
+    "No upstream import/materializer execution,native emission/execution,model invocation,live scan,workstation activation or upstream acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/02.b12s",
+      "bytes": 3614,
+      "intended_review": "complete_all_vector_fixture_source_and_source_corpus_closeout_without_execution"
+    }
+  ],
+  "next_scope_bytes": 3614,
+  "public_contribution_checks": [
+    "all ten complete source identities and lossless repeated-content reconstructions passed",
+    "authored source counts, five boundary pairs and all saved metadata joins agree",
+    "whole-input/comment scope and source-derived fstat/lexer guard qualifications retained",
+    "five literal map hashes and maximum map capacity arithmetic passed",
+    "coverage, next source gap, links, privacy and git diff --check passed"
+  ]
+}

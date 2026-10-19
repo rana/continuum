@@ -1,0 +1,20 @@
+{
+  "source_baseline": "d6fdb6f581bf293aa2782248007b304c88592054",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-capacity-inputs.md",
+      "bytes": 5348,
+      "sha256": "840d68d895a475dd0aa25c2078af46d24c084c8d6f0618b2bc69e975d966f3d9"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-capacity-inputs.json",
+      "bytes": 9479,
+      "sha256": "fe61d971641cbffaa19044b13b3a128ce8bc7f4c630e793f8d136ba95d1da825"
+    },
+    {
+      "path": "research/runs/base12-builder-capacity-inputs/validation.json",
+      "bytes": 7400,
+      "sha256": "cb28682bc12648a9f28e188d6c0dd55073569560cf60c5c321e689683c8f1064"
+    }
+  ]
+}

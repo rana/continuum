@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-learning-performance.json",
+  "selected_scope": "research/owned-stack/2026-10-15/alignment-pilot/",
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/ALIGNMENT.md",
+      "git_blob_sha": "c91ebb2ec196240f135d99af83af76fb41383ae6",
+      "bytes": 3271,
+      "sha256": "70a56b7e076c05906d54bc76a7b07abe68b9d516c978be4690fa87e5a99e7793",
+      "lines": 25,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/BACKEND_IDENTITY.json",
+      "git_blob_sha": "d2132d0c98ad8c9ce3bacb7bf9d0bff745543553",
+      "bytes": 340,
+      "sha256": "4514c21da51d41ce8f2d89f9819fb6ad094790131dd65af31a289f5e3a01d904",
+      "lines": 6,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/CLAUDE_REVIEW.md",
+      "git_blob_sha": "885d450c753aabba4bbfd09b4a6387ba37d1d6e6",
+      "bytes": 1967,
+      "sha256": "3788e9df791dae719a1bab6d537f4a3642db299a4cf3681c9b0f1b1977625297",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/INTEGRATION.md",
+      "git_blob_sha": "19ed9da6c8e1735b91eb9672255c9de05427c307",
+      "bytes": 3931,
+      "sha256": "85b686b1976a6e853301c2b1a39ba00553df847b4afaeb50af90fa7763f72515",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/PROTOCOL.md",
+      "git_blob_sha": "12e00841411922d5911047a41d79a4fef1de2d3a",
+      "bytes": 5352,
+      "sha256": "8691034e93e286fdc45b4567b391837dfdb7da01b120c0015b80fd63d87b1276",
+      "lines": 29,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/README.md",
+      "git_blob_sha": "fdf1d13897179bf6f7884372750322f847d9a0af",
+      "bytes": 5262,
+      "sha256": "a2aac8552728fba036399eaf82124e72bcd2aeec46f881ac1369ff5ddef7da37",
+      "lines": 43,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/bundle.py",
+      "git_blob_sha": "b3d54727375678051c3873ace06afc5068b3a7ec",
+      "bytes": 3433,
+      "sha256": "17161168f345ea859b12d71ac2421ab60d377d1df045f2c38d24668de5110b25",
+      "lines": 75,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/learner.py",
+      "git_blob_sha": "de0df79c87e1a9ace1f0f83267a456920a0d7510",
+      "bytes": 5845,
+      "sha256": "04e34bec74d5d11191dc921b62df7d4bd44e556d48a346fc6faa3414413a9951",
+      "lines": 116,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/results-summary.json",
+      "git_blob_sha": "571abc3d707341f02fdbc0b388371ab60b080658",
+      "bytes": 5351,
+      "sha256": "7f8659e64b3f58f81022a70e1d182c3a00ed41e6b595cc4bd2675e7139328697",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/run_pilot.py",
+      "git_blob_sha": "ad23ba1374aadf37c8919313178024d6ada0939b",
+      "bytes": 10338,
+      "sha256": "857d81014b87aee7ee2a6f165f64fa122faa1de5fbc798851f9a82c225b614c8",
+      "lines": 158,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/alignment-pilot/tasks.py",
+      "git_blob_sha": "f5f85f8059bfe00f729390cbaa4ba84f81322a1f",
+      "bytes": 894,
+      "sha256": "84abbce467c4cc44acdf42b1440f3f95ea9b91dfee08b6d3e1462f2c86261a44",
+      "lines": 20,
+      "semantic_review": "full_direct_read",
+      "review_lane": "alignment-pilot-source-and-saved-evidence",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 11,
+      "unique_blobs": 11,
+      "bytes": 45984
+    },
+    "cumulative_direct_read": {
+      "paths": 196,
+      "unique_blobs": 196,
+      "bytes": 1368598
+    },
+    "additional_identical_blob_paths": 47,
+    "alias_distinct_blobs": 17,
+    "semantic_covered_paths_including_aliases": 243,
+    "remaining_paths_without_full_semantic_read_or_alias": 5350,
+    "remaining_distinct_blobs_without_full_semantic_read": 4233,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 11,
+    "this_review_verified_bytes": 45984,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All eleven selected files were fully read; aliases are not separately read.",
+    "Private source, messages and operational payloads are not published.",
+    "No upstream module, generated machine code, experiment or model consultation ran.",
+    "Five source/result hash bindings and saved-count arithmetic checked; raw decisions and original run closure were not acquired.",
+    "Four inherited backend digest declarations were read; backend bytes were not newly retrieved or re-audited.",
+    "Import-before-check finding is a static source-order mismatch, not an executed exploit or observed historical failure."
+  ],
+  "review_report": "base12-alignment-pilot.md"
+}

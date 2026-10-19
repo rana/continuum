@@ -143,6 +143,12 @@ The [learning-performance review](source-review/base12-learning-performance.md) 
 
 The same source proposes associative reconstruction for a fixed recurrence while declining to apply it to rounded/clipped feedback. Efficient batching needs a sufficient boundary state and preserved semantics; a derivation for one algorithm does not establish another's optimization. Three source readings, two preservation bindings and arithmetic from reported totals were checked here, without reproducing a run or measuring acceleration.
 
+### 13. Alternative representations, explanations and actions differ
+
+The [alignment-pilot review](source-review/base12-alignment-pilot.md) separates equivalent expression trees for an identified relation from tied minimizing actions under that relation. Returning all ties is an authored policy; its downstream benefit under perturbation or changed representation still needs a test. Continuum should specify which kind of alternative changes its next decision and charge the retained state, rather than treating multiplicity alone as useful uncertainty preservation.
+
+The reviewed runner also imports backend modules before its documented digest gate. This is a static source-order mismatch, not an observed exploit. Identity admission must precede executable loading when that is the intended boundary; a later check establishes a narrower property. Five source/result bindings and saved-count arithmetic passed, while the raw execution closure and inherited backend were not newly audited. Hash references do not recover missing evidence bytes.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

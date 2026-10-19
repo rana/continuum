@@ -1,0 +1,22 @@
+{
+  "source_baseline": "2d196ae709301c1d77df388a3b1083497d8df33b",
+  "files": [
+    {
+      "path": "docs/source-review/base12-alignment-pilot.md",
+      "bytes": 7156,
+      "sha256": "45160dd19bccdbf29b3152b2e8795547d9c312ee83414bfc9cd379b1574dc0c1"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-alignment-pilot.json",
+      "bytes": 7924,
+      "sha256": "ec075dedf16d9775b7a85437cd8ca22b5b4ac80f8eb71e3f845c0dce90b7d99f"
+    },
+    {
+      "path": "research/runs/base12-alignment-pilot/validation.json",
+      "bytes": 2257,
+      "sha256": "77d6a802f530369115f5e2f166f0ff560e5da02fd64f81958fa498857e7a1a73"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

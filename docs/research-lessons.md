@@ -161,6 +161,12 @@ The [corpus-preservation review](source-review/base12-corpus-preservation.md) re
 
 Exact reconstruction also has a declared object boundary, population and denominator. Advertised directory arithmetic is not acquired-byte verification; metadata-exposed manual grouping is not a blind split. Original and relocated manifests need explicit path roots and identity mappings. Seven texts and their archive correspondence were inspected here, without acquiring corpus data or executing an experiment.
 
+### 16. Validation and publication have separate failure boundaries
+
+The [stage-A source review](source-review/base12-stage-a-codec.md) distinguishes corruptions stopped by an outer checksum from rehashed faults reaching structural and reconstructed-source checks. A mutation count alone does not identify deeper coverage. Same-author independent formulations can challenge self-consistency without proving every instruction or authenticating execution.
+
+The reviewed CLI validates an archive before writing two output files separately. Interruption can leave a partial directory despite correct reconstruction; refusal of existing outputs does not reconcile that uncertain effect. This is a source-derived schedule, not an observed failure or broken atomicity promise. Continuum should preserve distinct evidence for validated content, coherent publication and recovery. Seven source/doc files were read without importing upstream code or running tests.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

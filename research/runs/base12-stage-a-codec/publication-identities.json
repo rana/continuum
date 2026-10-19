@@ -1,0 +1,22 @@
+{
+  "source_baseline": "5d0f258cf9ee48ba7586b4889358970cb7f8959a",
+  "files": [
+    {
+      "path": "docs/source-review/base12-stage-a-codec.md",
+      "bytes": 6757,
+      "sha256": "8c2309b6a8a0a966ce2ff66914276a6836a35dfe4006532740146e9522ed0f9d"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-stage-a-codec.json",
+      "bytes": 6013,
+      "sha256": "303978f755a0885ed852c543246a13b26396e6f80b2c020bb2e25821323e466a"
+    },
+    {
+      "path": "research/runs/base12-stage-a-codec/validation.json",
+      "bytes": 2421,
+      "sha256": "9dda86f564e59ad0de960f4e832bc090cf43e1d7f615d38f3476a967b15524f1"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

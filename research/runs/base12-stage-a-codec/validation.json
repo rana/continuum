@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "source_baseline": "5d0f258cf9ee48ba7586b4889358970cb7f8959a",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 7,
+  "verified_source_bytes": 44506,
+  "utf8_decoded": 7,
+  "markdown_full_text_read": 3,
+  "python_ast_parsed_without_import": 4,
+  "source_order_observations": {
+    "codec_main_output_calls": [
+      {
+        "line": 193,
+        "operation": "dest.mkdir"
+      },
+      {
+        "line": 194,
+        "operation": "(dest / (name + '.hea')).write_bytes"
+      },
+      {
+        "line": 194,
+        "operation": "(dest / (name + '.dat')).write_bytes"
+      }
+    ],
+    "native_signal_pin_loop_lines": [
+      12,
+      14
+    ],
+    "native_signal_import_lines": [
+      16,
+      17
+    ],
+    "executed": false
+  },
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "files": [
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/INTEGRATION.md",
+        "bytes": 6516
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/MANIFEST.json",
+        "bytes": 2355
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/PRESERVATION.json",
+        "bytes": 9141
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/checks.json",
+        "bytes": 5723
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/design-freeze.json",
+        "bytes": 829
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/development-corrections.json",
+        "bytes": 460
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/external-wrapper-checks.json",
+        "bytes": 1532
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/published-pins.json",
+        "bytes": 946
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/source-freeze.json",
+        "bytes": 959
+      }
+    ],
+    "total_bytes": 28461
+  }
+}

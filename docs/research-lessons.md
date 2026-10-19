@@ -311,6 +311,8 @@ The [exact numeric endpoints](source-review/base12-builder-numeric-inputs.md) pr
 
 The [exact capacity-boundary sources](source-review/base12-builder-capacity-inputs.md) isolate whole-input bytes with long comments, implied map rows with instruction-plus-label counts, and relocation capacity below other ceilings. State the first guard actually distinguished: stable oversized input targets fstat size, and a32-byte name targets the lexer before name validation. Intended coverage and source-derived guard order remain separate from native trace evidence.
 
+The [complete all-vector fixture source](source-review/base12-builder-source-corpus-closeout.md) shows why composition needs separate evidence: unique renamed targets, padding, preserved lexical spellings and source-line accounting must survive joining otherwise correct vectors. Exact whole-source reconstruction and expected map identity close that join within static scope. A closed source-text corpus does not close native-output custody or runtime coverage.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

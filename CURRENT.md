@@ -15,17 +15,21 @@ Continuum is a native work and evidence engine for continuing AI engineering. Th
 - Local SQLite expected-root/generation acceptance, operation identity binding, durable retries, and receipt queries.
 - Four agent-guided protocols: Progress Brief, Holographic Walk, Research Record, Bounded Research Loop.
 - Versioned digest-pinned registry, protocol schemas and fixtures, and a proposed execution-metadata schema.
-- Four further actual Claude Opus 5.5 exchanges, with supplied inputs, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the original briefs also retain their historical exchanges.
+- Six further actual Claude Opus 5.5 exchanges, with supplied-input custody, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the fifth and sixth review unattended work and the Base12 continuity pattern. Private cross-project context in those latest requests is explicitly redacted from the public projections and retained privately. The original briefs also retain their historical exchanges.
 - Exact WorkState records, bounded whole-record context selection, retained rendered packs, historical and current-anchor verification, and explicit handoff acknowledgement-reference checks.
 - A reproducible context example using independently started CLI processes.
 - One actual fresh Claude continuation from an 8,321-byte pack, with an exact model-authored acknowledgement whose references passed native verification.
 - Current architecture, native-core decision, research experiment, and phased roadmap.
+- A reproducible release-build workload covering nine core operation groups, with raw results from three separately started processes, 100 samples per group in each run, and identical deterministic semantic fingerprints.
+- A [continuing work method and ready Codex prompt](docs/operations/continuation.md) for preserving research movement across Chat and implementation tasks through GitHub.
 
 ## Validation
 
 The current Rust code passes formatting, strict Clippy, and 20 scenario tests: nine context cases, nine invariants, and two child-process recovery cases. Recovery was checked immediately before commit and after commit before acknowledgement. The coordinating agent independently reran these checks after the implementation was frozen.
 
 The checks establish the specified local process-failure behavior. They do not establish physical power-loss durability, authenticated multi-user operation, semantic evidence truth, replication correctness, or comparative high-load performance.
+
+The [first release baseline](research/runs/release-baseline-2026-10-19/README.md) is measured in this Chat task's Linux executor on an observed overlay filesystem, not on the user's workstation. It checks deterministic object, acceptance, retry, and context outcomes while retaining individual in-process timings. This is a small single-worker workload; no language, Git, Scion, cold-cache, or concurrent-capacity comparison is established. The new CI smoke invocation checks workload outcomes without a timing threshold.
 
 The acceptance demo demonstrates one accepted competing candidate, one stale rejected candidate, and an exact retry returning its historical receipt after the current head moves. The context example preserves different declared dispatch states for the same source, and distinguishes an intact old pack from current accepted state. Acknowledgement checks establish reference consistency, not identity, understanding, or external execution.
 
@@ -49,6 +53,14 @@ The first [GitHub Actions run](https://github.com/rana/continuum/actions/runs/39
 
 ## Next useful unit
 
-Continue the next bounded source-review group and define a representative workload for release-build measurements before expanding the storage engine. The [fresh-model trial](research/continuation-trial/README.md) is complete. The full upstream reading request and a controlled model-performance comparison remain open.
+The first release workload is complete. Next, measure how context preparation and selection change with a controlled growth in retained history, keeping the mandatory facts, byte budget, environment, and correctness expectations explicit. Preserve raw results and actual omission coverage before changing the storage engine. If that unit's execution capability is unavailable, advance the next bounded source-review group from the coverage ledgers instead of writing another unchanged status recap.
+
+The [fresh-model trial](research/continuation-trial/README.md) is complete. The full upstream reading request and a controlled model-performance comparison remain open.
 
 Before adding a remote executor or model runner, specify durable dispatch and uncertain-outcome reconciliation. Add resource measurements before a fleet scheduler.
+
+## Continuation setup
+
+The operating method and first manual unit are prepared and verified locally. A recurring Continuum task is being configured separately; this checkpoint does not yet establish a completed unattended run. Read the task's actual execution history before claiming that it has run.
+
+GitHub read/write and the supplied-context Claude collaborator were verified in this session. No direct Dot dispatch or user-workstation Continuum worker was verified. A ready startup prompt is available in the operating document. Existing responsibilities for other projects are separate and were not changed.

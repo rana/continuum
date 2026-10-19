@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "record_kind": "observed_release_workload",
+  "started_at": "2026-10-19T05:13:18.885279+00:00",
+  "finished_at": "2026-10-19T05:13:22.372911+00:00",
+  "source": {
+    "base_commit": "b57df43a05f4b15a5a931765c91d3fcb50516d37",
+    "uncommitted_inputs": "The new harness had not yet been committed; exact input bytes are pinned below. Core and Cargo inputs match the base commit. Publication commit is discoverable from this record in Git history.",
+    "files": [
+      {
+        "path": "Cargo.toml",
+        "size_bytes": 563,
+        "sha256": "5739f85b75d23eb83b81c22b41bf8ef83425d0b2e5c4da325a7e810ba6d0762b"
+      },
+      {
+        "path": "Cargo.lock",
+        "size_bytes": 13180,
+        "sha256": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb"
+      },
+      {
+        "path": "src/context.rs",
+        "size_bytes": 32224,
+        "sha256": "0d371595ddcff87c119ea29a568e50cc0de111e25b3c9d0920d5d4d9a3f03539"
+      },
+      {
+        "path": "src/lib.rs",
+        "size_bytes": 1252,
+        "sha256": "0e6b4506d7b1b5d2b0b3ee81f89144b6205ebadfca6b41e5935425d3fe76e66b"
+      },
+      {
+        "path": "src/main.rs",
+        "size_bytes": 7587,
+        "sha256": "6daa02817a955514cf3a3c56a9bcd9291fdb7efd428d2fb39c746742e9f9ede6"
+      },
+      {
+        "path": "src/object.rs",
+        "size_bytes": 10446,
+        "sha256": "3c97e27383410a004be5d263e61b66d976be6dcc00983f361b64ba37d04d36ad"
+      },
+      {
+        "path": "src/store.rs",
+        "size_bytes": 13735,
+        "sha256": "4a22be3dc5cf87918501a20137bb0963b94d8cbe9375a82313ec7da1d82b8b83"
+      },
+      {
+        "path": "examples/measure_workloads.rs",
+        "size_bytes": 16686,
+        "sha256": "e7e310a76d4f9ee0152e89e0e1096b0ff178c6fa2aa674a627138ae0b9c1f149"
+      }
+    ],
+    "binary_sha256": "b38b27253f78f7d4fbfcaf97194e0ff66687b96833393f29766c2e6f18a28cdd"
+  },
+  "build": {
+    "profile": "release",
+    "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+    "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)\n",
+    "relevant_environment": {
+      "RUSTFLAGS": null,
+      "CARGO_ENCODED_RUSTFLAGS": null,
+      "CARGO_BUILD_TARGET": null,
+      "CARGO_PROFILE_RELEASE_OPT_LEVEL": null,
+      "CARGO_PROFILE_RELEASE_LTO": null,
+      "CARGO_PROFILE_RELEASE_CODEGEN_UNITS": null
+    },
+    "validation": [
+      {
+        "command": [
+          "/tmp/continuum-rust-toolchain/cargo/bin/cargo",
+          "fmt",
+          "--all",
+          "--",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/tmp/continuum-rust-toolchain/cargo/bin/cargo",
+          "clippy",
+          "--locked",
+          "--all-targets",
+          "--all-features",
+          "--",
+          "-D",
+          "warnings"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "    Checking continuum-core v0.1.0 (/workspace/scratch/46b64ecbb5a5/continuum)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.27s\n"
+      },
+      {
+        "command": [
+          "/tmp/continuum-rust-toolchain/cargo/bin/cargo",
+          "test",
+          "--locked",
+          "--all-features"
+        ],
+        "exit_code": 0,
+        "stdout": "\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 9 tests\ntest byte_budget_omits_only_whole_optional_history_and_refuses_critical_loss ... ok\ntest same_source_histories_keep_distinct_conditional_recovery_and_exact_custody ... ok\ntest context_acknowledgement_cannot_be_relabelled_as_an_attempt_receipt ... ok\ntest independently_hashed_tampering_cannot_replace_the_selector_projection ... ok\ntest historical_attempt_scope_and_opaque_failed_output_survive_current_source_change ... ok\ntest context_acknowledgement_requires_explicit_recipient_and_exact_coverage_only ... ok\ntest typed_admission_rejects_ambiguous_json_dangling_ids_and_malformed_states ... ok\ntest bound_anchor_can_become_stale_without_corrupting_historical_context ... ok\ntest separately_started_cli_processes_prepare_inspect_and_acknowledge_exact_context ... ok\n\ntest result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s\n\n\nrunning 2 tests\ntest process_death_before_commit_leaves_neither_transition_nor_receipt ... ok\ntest process_death_after_commit_before_reply_reconciles_original_receipt ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s\n\n\nrunning 9 tests\ntest canonical_format_rejects_ambiguous_and_unknown_encodings ... ok\ntest invalid_paths_references_and_candidate_types_cannot_enter_state ... ok\ntest unrelated_or_future_databases_are_not_silently_adopted ... ok\ntest exact_binary_source_and_canonical_snapshot_survive_reopen ... ok\ntest evidence_preserves_declared_scope_without_becoming_trusted_verification ... ok\ntest operation_id_binds_full_request_within_acceptor_namespace ... ok\ntest retries_return_original_receipt_after_later_head_changes ... ok\ntest generation_rejects_aba_even_when_root_bytes_return_to_the_same_value ... ok\ntest competing_connections_have_one_winner_without_lost_updates ... ok\n\ntest result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n",
+        "stderr": "   Compiling continuum-core v0.1.0 (/workspace/scratch/46b64ecbb5a5/continuum)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.83s\n     Running unittests src/lib.rs (target/debug/deps/continuum_core-c4cc9aedf7bad2a3)\n     Running unittests src/main.rs (target/debug/deps/continuum-de9b9e4a398f2a4f)\n     Running tests/context_handoff.rs (target/debug/deps/context_handoff-9cd4d78766bb8fd3)\n     Running tests/crash_recovery.rs (target/debug/deps/crash_recovery-e47a7de304948103)\n     Running tests/invariants.rs (target/debug/deps/invariants-ce17bc5d1f2185dd)\n   Doc-tests continuum_core\n"
+      },
+      {
+        "command": [
+          "/tmp/continuum-rust-toolchain/cargo/bin/cargo",
+          "build",
+          "--locked",
+          "--release",
+          "--example",
+          "measure_workloads"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "    Finished `release` profile [optimized] target(s) in 0.03s\n"
+      }
+    ]
+  },
+  "environment": {
+    "kind": "Chat task executor; not the user workstation",
+    "system": "Linux",
+    "kernel": "6.18.55",
+    "architecture": "x86_64",
+    "cpu_model_reported": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "logical_cpus_visible": 9,
+    "affinity_cpus": 9,
+    "proc_mem_total": "10206480 kB",
+    "cgroup_cpu_max": "800000 100000",
+    "cgroup_memory_max": "8589934592",
+    "database_parent_filesystem": "overlayfs",
+    "load_average_at_finish": [
+      0.2802734375,
+      0.35302734375,
+      0.15673828125
+    ],
+    "physical_host_storage_and_competing_work": "Not independently observed; visible metadata does not identify a dedicated workstation or physical persistence behavior."
+  },
+  "runs": [
+    {
+      "run": 1,
+      "command": [
+        "target/release/examples/measure_workloads",
+        "--samples",
+        "100",
+        "--directory",
+        "/tmp"
+      ],
+      "exit_code": 0,
+      "raw_result": "research/runs/release-baseline-2026-10-19/run-01.json",
+      "raw_sha256": "3ab1e0e2a0a0e3a3fd98775d297a3794a372588e93cd919f4f645ba523ef3ee4",
+      "fixture_sha256": "7ff47849ffa95c44c53831c4b019d680680ed0c6b3c6161acd3501ea6363f941",
+      "semantic_sha256": "5d6a482d48957e0abcfd93db54c1b1603bb156ad2c55205af5297920d0b44bcf",
+      "summary": [
+        {
+          "operation": "put_unique_1024_byte_blob",
+          "p50_ns": 586165,
+          "p95_ns": 1479088,
+          "samples": 100
+        },
+        {
+          "operation": "get_existing_1024_byte_blob",
+          "p50_ns": 5516,
+          "p95_ns": 7738,
+          "samples": 100
+        },
+        {
+          "operation": "accept_new_expected_head",
+          "p50_ns": 735023,
+          "p95_ns": 1730564,
+          "samples": 100
+        },
+        {
+          "operation": "reject_stale_expected_head",
+          "p50_ns": 350328,
+          "p95_ns": 1043739,
+          "samples": 100
+        },
+        {
+          "operation": "retry_exact_accepted_request",
+          "p50_ns": 7368,
+          "p95_ns": 25234,
+          "samples": 100
+        },
+        {
+          "operation": "prepare_unique_anchored_context",
+          "p50_ns": 957535,
+          "p95_ns": 2683691,
+          "samples": 100
+        },
+        {
+          "operation": "prepare_existing_anchored_context",
+          "p50_ns": 96304,
+          "p95_ns": 1094567,
+          "samples": 100
+        },
+        {
+          "operation": "verify_historical_context",
+          "p50_ns": 148606,
+          "p95_ns": 1344367,
+          "samples": 100
+        },
+        {
+          "operation": "verify_current_context",
+          "p50_ns": 135575,
+          "p95_ns": 1810978,
+          "samples": 100
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "command": [
+        "target/release/examples/measure_workloads",
+        "--samples",
+        "100",
+        "--directory",
+        "/tmp"
+      ],
+      "exit_code": 0,
+      "raw_result": "research/runs/release-baseline-2026-10-19/run-02.json",
+      "raw_sha256": "d7d1a97b36e865ae95e1ab73920d6ee22cba1fbc048268aab66a3d1fd59be3dc",
+      "fixture_sha256": "7ff47849ffa95c44c53831c4b019d680680ed0c6b3c6161acd3501ea6363f941",
+      "semantic_sha256": "5d6a482d48957e0abcfd93db54c1b1603bb156ad2c55205af5297920d0b44bcf",
+      "summary": [
+        {
+          "operation": "put_unique_1024_byte_blob",
+          "p50_ns": 573681,
+          "p95_ns": 1300305,
+          "samples": 100
+        },
+        {
+          "operation": "get_existing_1024_byte_blob",
+          "p50_ns": 5439,
+          "p95_ns": 5899,
+          "samples": 100
+        },
+        {
+          "operation": "accept_new_expected_head",
+          "p50_ns": 719358,
+          "p95_ns": 1341882,
+          "samples": 100
+        },
+        {
+          "operation": "reject_stale_expected_head",
+          "p50_ns": 345421,
+          "p95_ns": 967415,
+          "samples": 100
+        },
+        {
+          "operation": "retry_exact_accepted_request",
+          "p50_ns": 7414,
+          "p95_ns": 8797,
+          "samples": 100
+        },
+        {
+          "operation": "prepare_unique_anchored_context",
+          "p50_ns": 831520,
+          "p95_ns": 2648709,
+          "samples": 100
+        },
+        {
+          "operation": "prepare_existing_anchored_context",
+          "p50_ns": 91262,
+          "p95_ns": 155815,
+          "samples": 100
+        },
+        {
+          "operation": "verify_historical_context",
+          "p50_ns": 109357,
+          "p95_ns": 429020,
+          "samples": 100
+        },
+        {
+          "operation": "verify_current_context",
+          "p50_ns": 107053,
+          "p95_ns": 308028,
+          "samples": 100
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "command": [
+        "target/release/examples/measure_workloads",
+        "--samples",
+        "100",
+        "--directory",
+        "/tmp"
+      ],
+      "exit_code": 0,
+      "raw_result": "research/runs/release-baseline-2026-10-19/run-03.json",
+      "raw_sha256": "1a013bf83db9754601a4a8c2f3696955591a289831dd3d4fa698d5964bb33167",
+      "fixture_sha256": "7ff47849ffa95c44c53831c4b019d680680ed0c6b3c6161acd3501ea6363f941",
+      "semantic_sha256": "5d6a482d48957e0abcfd93db54c1b1603bb156ad2c55205af5297920d0b44bcf",
+      "summary": [
+        {
+          "operation": "put_unique_1024_byte_blob",
+          "p50_ns": 497536,
+          "p95_ns": 1644688,
+          "samples": 100
+        },
+        {
+          "operation": "get_existing_1024_byte_blob",
+          "p50_ns": 5571,
+          "p95_ns": 31038,
+          "samples": 100
+        },
+        {
+          "operation": "accept_new_expected_head",
+          "p50_ns": 578967,
+          "p95_ns": 1018626,
+          "samples": 100
+        },
+        {
+          "operation": "reject_stale_expected_head",
+          "p50_ns": 370512,
+          "p95_ns": 1070878,
+          "samples": 100
+        },
+        {
+          "operation": "retry_exact_accepted_request",
+          "p50_ns": 7372,
+          "p95_ns": 11860,
+          "samples": 100
+        },
+        {
+          "operation": "prepare_unique_anchored_context",
+          "p50_ns": 941864,
+          "p95_ns": 1784971,
+          "samples": 100
+        },
+        {
+          "operation": "prepare_existing_anchored_context",
+          "p50_ns": 96855,
+          "p95_ns": 273275,
+          "samples": 100
+        },
+        {
+          "operation": "verify_historical_context",
+          "p50_ns": 120308,
+          "p95_ns": 400647,
+          "samples": 100
+        },
+        {
+          "operation": "verify_current_context",
+          "p50_ns": 105031,
+          "p95_ns": 296961,
+          "samples": 100
+        }
+      ]
+    }
+  ],
+  "result": "All 3 independent processes completed 100 samples per each of 9 operation groups, checked all declared outcomes, and agreed on fixture and semantic fingerprints.",
+  "limits": [
+    "One executor environment, one worker and fixed small shapes.",
+    "No cold-cache, contention, large-history, physical-power-loss, network, model or comparative-language measurement.",
+    "Per-operation latency excludes startup, fixture setup and assertions; raw reports preserve boundaries.",
+    "Percentiles are descriptive observations, not latency guarantees or confidence intervals."
+  ]
+}

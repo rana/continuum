@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "record_kind": "recorded_model_execution",
+  "attempt_id": "design-claude-06",
+  "recorded_at": "2026-10-19 05:12:05 UTC",
+  "started_at": {
+    "current_time": "2026-10-19 05:08:50 UTC"
+  },
+  "finished_at": {
+    "current_time": "2026-10-19 05:09:12 UTC"
+  },
+  "executor": {
+    "vendor": "anthropic",
+    "service": "aws-bedrock",
+    "adapter": "claude-collaborator",
+    "revision": null
+  },
+  "requested": {
+    "model_selector": "opus",
+    "settings": {
+      "claude_collaborator.effort": "medium"
+    }
+  },
+  "observed": {
+    "metadata_source": "Claude Collaborator returned metadata",
+    "model_id": "claude-opus-5-5",
+    "model_revision": null,
+    "provider_request_id": null,
+    "effective_settings_known": false,
+    "configured_route": "us.anthropic.claude-opus-5-5",
+    "reported_settings": {
+      "configured_effort": "medium",
+      "thinking": "adaptive"
+    },
+    "usage": {
+      "input_tokens": 1567,
+      "output_tokens": 1669,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none"
+  },
+  "inputs": {
+    "public_request_projection_ref": "docs/collaboration/requests/claude-06.json",
+    "exact_request_canonical_json_sha256": "c7135134543eeed4731f5cce3faee96d4da07560272335e67cd5f62db5e695a9",
+    "exact_request_retention": "Continuum_Continuation_Private_Checkpoint.json, retained privately with the project owner; contains exact request fields and actual response metadata.",
+    "source_exposure": "Full visible latest user timer transcription and supplied coordinator observations; no direct repository, browser or workstation tools. Exchange 6 also received the full Base12 follow-up user message, recovered setup summaries and explicit corrections to exchange 5.",
+    "prior_exchange_supplied": false
+  },
+  "status": "completed",
+  "output_ref": "docs/collaboration/2026-10-19-claude-06.md",
+  "raw_visible_response_metadata_ref": "research/runs/claude-06-response.json",
+  "limitations": [
+    "Public request is explicitly redacted, not a full reproducer; exact request retained privately.",
+    "Reported model identity is not proof of internal weights; tool-reported usage is not independent metering.",
+    "Supplied-text design consultation, not independent execution or empirical confirmation.",
+    "No hidden model reasoning captured.",
+    "Coordinator corrections are retained in the collaboration README."
+  ]
+}

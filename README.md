@@ -36,6 +36,8 @@ Use a fresh local database path for a fresh demo. The CLI help describes individ
 
 ## Read the design
 
+Start with [Understanding Continuum](docs/orientation.md) for the vision, information architecture, and source-derived choices. Use the [complete Codex handoff](CODEX_HANDOFF.md) to begin an implementation task.
+
 | Question | Authoritative home |
 |---|---|
 | Why build this? | [Mission](MISSION.md) |
@@ -52,6 +54,7 @@ Use a fresh local database path for a fresh demo. The CLI help describes individ
 | Where are the original briefs? | [Faithful Markdown conversions](docs/history/README.md) |
 | What did Claude contribute? | [Collaboration record](docs/collaboration/README.md) |
 | How should agents contribute? | [Project instructions](AGENTS.md) |
+| How do research Chat and Codex continue together? | [Continuing work and startup prompt](docs/operations/continuation.md) |
 
 ## Design principles
 

@@ -19,3 +19,5 @@ jobs:
       - run: cargo clippy --locked --all-targets --all-features -- -D warnings
       - run: cargo test --locked --all-features
       - run: cargo run --locked -- demo "$RUNNER_TEMP/continuum-demo.db"
+      - name: Check workload outcomes without a timing threshold
+        run: cargo run --locked --example measure_workloads -- --samples 3 --directory "$RUNNER_TEMP"

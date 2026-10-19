@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "text": "# Base12 Pattern for Overnight Continuity: Advice\n\n**Short answer: yes for continuity, no for continuous execution.** The user's real need is to resume reliably without losing reasoning between Chat, Codex and sessions. Base12 already provides this: Chat holds research and architecture, Codex implements, and GitHub holds durable state. It does this without a new orchestration layer, and building one would add failure modes for no gain.\n\n## Consequential correction\n\nBase12 shows continuity, not autonomy. No Dot or Codex dispatch integration was found. The scheduled job can therefore only reconcile and reason over what already exists. Overnight implementation progress happens only if Codex tasks are queued before sleep. Claims that overnight progress is \"continuous\" should say this explicitly.\n\nTwo related limits:\n\n- The job's model cannot be set to Sol, so its outputs should be treated as coordination, not authoritative engineering judgment.\n- Hourly wakeups replace the 15-minute idea. That is fine because the work is gated by units of work, not by the clock.\n\n## Minimal Research Delta\n\nCommit one per unit in the repository, not only in the PR body. It should contain:\n\n1. **Unit ID**, branch/PR and base commit SHA.\n2. **Question addressed.**\n3. **What changed**, in one or two lines.\n4. **What we learned**: each claim paired with its evidence (exact command, CI run link, raw-data path).\n5. **Negative findings**, including approaches that failed.\n6. **Limits**: environment scope (e.g., cloud host unknown or noisy) and anything untested.\n7. **Uncertain effects**, flagged and not retried.\n8. **Unresolved question.**\n9. **Next action**, with an owner (Codex, Chat or the user).\n\nAnything beyond this belongs in REPORT.md or CURRENT.\n\n## When to involve me versus Sol/Codex\n\nSol/Codex should do implementation, tests and the benchmark harness.\n\nBring me in at decision points rather than on every unit:\n\n- reviewing the benchmark methodology before you trust the numbers;\n- adversarially reading Research Deltas for overclaims;\n- architecture forks;\n- reassessment after two unproductive units.\n\nI have no memory between requests, so paste CURRENT plus the relevant deltas each time.\n\n## Criterion for genuinely working\n\nThe test is a morning check: starting from CURRENT alone, can you verify each overnight unit's claim from its linked evidence in about 10 minutes, and did each unit's evidence actually change or confirm the next action?\n\nSigns it is not working:\n\n- activity without evidence-backed movement, such as reconciling notes, restating plans or opening PRs that change no conclusion;\n- the same next action repeating across units.\n\nEither sign calls for reassessment, not more wakeups.",
+  "actual_model": "claude-opus-5-5",
+  "configured_model": "us.anthropic.claude-opus-5-5",
+  "configured_effort": "medium",
+  "thinking": "adaptive",
+  "usage": {
+    "input_tokens": 1567,
+    "output_tokens": 1669,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "stop_reason": "end_turn",
+  "truncated": false,
+  "input_modality": "text-only",
+  "server_memory": "none",
+  "image_count": 0,
+  "images": []
+}

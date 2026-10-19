@@ -1,6 +1,6 @@
 # Actual Claude collaboration
 
-The initial historical briefs contain earlier preserved Claude exchanges. This directory records four further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC.
+The initial historical briefs contain earlier preserved Claude exchanges. This directory records six further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC.
 
 | Exchange | Actual exposure | Result |
 |---|---|---|
@@ -8,8 +8,12 @@ The initial historical briefs contain earlier preserved Claude exchanges. This d
 | [2](2026-10-19-claude-02.md) | Actual supplied Prime/Base12 excerpts, implementation facts and coverage limits, coordinator corrections, previous visible answer | Accepted the native-source direction and explicit publication operations; proposed durable effect attempts and distinction-pair experiments |
 | [3](2026-10-19-claude-03.md) | Latest user deferral of GitHub, implemented foundation, proposed context shapes, source-review findings and limits | Identified provenance and freshness risks; proposed controls for a discriminating context experiment |
 | [4](2026-10-19-claude-04.md) | Only an 8,321-byte native context rendering for the real project plus a short task request; no prior exchange or source objects | Recovered reported completion, renewed publication authorization, pending authentication, and a bounded next step; supplied an acknowledgement that passed native reference checks |
+| [5](2026-10-19-claude-05.md) | Full latest user request for unattended progress, verified project/runtime facts, candidate operating model | Favored useful bounded units, explicit schedule/run/progress evidence, and a release workload; ownership and timing claims needed correction |
+| [6](2026-10-19-claude-06.md) | Full timer request and Base12 follow-up, recovered workflow/model recommendations, actual setup observations, and coordinator corrections | Favored repository Research Deltas and decision-point review; correctly distinguished continuity from execution, but understated the active chat's capabilities |
 
 The [user wording](2026-10-19-user-brief.md), exact supplied [first request](requests/claude-01.json), [second request](requests/claude-02.json), [third request](requests/claude-03.json), [fourth request](requests/claude-04.json), and [execution metadata](../../research/runs/) are retained. Responses are unedited except for surrounding provenance notes. Claude had no direct filesystem, browser, or repository tools in these exchanges.
+
+The [fifth](requests/claude-05.json) and [sixth](requests/claude-06.json) public request files are explicitly redacted projections because their supplied context included private operating state from another project. Exact request fields and actual responses are retained in the owner's private `Continuum_Continuation_Private_Checkpoint.json`. The public projections preserve request digests and state their encoding; they are not represented as complete reproducers. The complete visible responses and returned metadata remain in this repository.
 
 ## Adopted design contributions
 
@@ -57,4 +61,17 @@ The [trial record](../../research/continuation-trial/README.md) contains the exa
 Two qualifications remain visible. The model returned a Markdown code fence despite a JSON-only request. The coordinator extracted the exact acknowledgement object substring, retained the full original response, and submitted the object as a proxy; it was not silently reserialized. The suggested fresh local expected-head check also cannot make a later GitHub action atomic or confer authority at that external service. The external effect needs its own supported preconditions, result observation, and reconciliation contract.
 
 The trial is one observed continuation with supplied authored facts. It has no randomized control, blinded comparative grading, or model-performance estimate. Native acceptance of the acknowledgement establishes reference consistency, with recipient authentication, understanding, and external-effect verification explicitly false.
+
+## Continuing research while implementation proceeds
+
+Exchanges five and six informed the [continuing work method](../operations/continuation.md). Adopted contributions are a small durable Research Delta, one accountable owner for overlapping integration, actual execution evidence, decision-point consultation, and a useful first release workload. The method borrows the Chat/research, Codex/implementation, GitHub/continuity pattern already used in Base12.
+
+Retained corrections:
+
+1. A Git lease note is not an enforced distributed lock. Expiry does not prove a worker stopped, and an expected branch-head condition protects publication rather than remote execution. Unknown overlap requires reconciliation or disjoint work.
+2. Two unproductive units or an arbitrary nightly count do not complete a continuing objective. Reassess the question, preserve a blocker, or advance another ready unit under the existing resource scope.
+3. Cloud and CI measurements are real observations of their recorded environment. Unknown physical storage and competing load limit comparison; a user's workstation is not the only intrinsically valid place to measure.
+4. Lack of a separate Dot/Codex dispatch tool does not imply that a code-capable research session can only summarize. This coordinating session actually implemented, built, tested, and measured a contribution through its available executor and GitHub connection. Future runs must establish their own capabilities; no unattended implementation is inferred merely from the saved schedule.
+5. Inability to set a scheduled task's model to Sol does not demote its engineering judgment or make it authoritative. Evaluate all model output through its evidence. The actual scheduler interface did not expose a model-setting argument.
+6. Repository continuity, a saved schedule, an observed scheduled run, a meaningful research result, and successful CI are distinct facts. A useful derivation or negative finding need not be code to count as progress; passing CI alone does not prove the result's meaning.
 

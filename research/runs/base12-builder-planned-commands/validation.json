@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "source_baseline": "e6d2d3f6ce844aa41e664a674b68be36a81c51f1",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 1,
+  "verified_source_bytes": 71425,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 71425,
+  "complete_json_roundtrip_exact": true,
+  "all_66_rows_fully_read": true,
+  "all_rows_equal_case_derived_reconstruction": true,
+  "command_categories": {
+    "plain_builder": 53,
+    "injected_builder": 10,
+    "fsize_builder": 1,
+    "conditional_tiny": 2
+  },
+  "all_expected_returncode_counts": {
+    "0": 24,
+    "65": 30,
+    "73": 2,
+    "66": 4,
+    "74": 3,
+    "-25": 1,
+    "17": 1,
+    "42": 1
+  },
+  "per_case_relation_checks": [
+    {
+      "case": "01",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "02",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "03",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "04",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "05",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "06",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "07",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "08",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "09",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "10",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "11",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "12",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "13",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "14",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "15",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "16",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "17",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "18",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "19",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "20",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "21",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "22",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "23",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "24",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "25",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "26",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "27",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "28",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "29",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "30",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "31",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "32",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "33",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "34",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "35",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "36",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "37",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "38",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "39",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "40",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "41",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "42",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "43",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "44",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "45",
+      "category": "plain_builder",
+      "expected_returncode": 0,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "46",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "47",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "48",
+      "category": "plain_builder",
+      "expected_returncode": 65,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "49",
+      "category": "plain_builder",
+      "expected_returncode": 73,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "50",
+      "category": "plain_builder",
+      "expected_returncode": 73,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "51",
+      "category": "plain_builder",
+      "expected_returncode": 66,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "52",
+      "category": "plain_builder",
+      "expected_returncode": 66,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "53",
+      "category": "plain_builder",
+      "expected_returncode": 66,
+      "argument_count": 4,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "54",
+      "category": "injected_builder",
+      "expected_returncode": 0,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "55",
+      "category": "injected_builder",
+      "expected_returncode": 0,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "56",
+      "category": "injected_builder",
+      "expected_returncode": 0,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "57",
+      "category": "injected_builder",
+      "expected_returncode": 74,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "58",
+      "category": "injected_builder",
+      "expected_returncode": 74,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "59",
+      "category": "injected_builder",
+      "expected_returncode": 74,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "60",
+      "category": "fsize_builder",
+      "expected_returncode": -25,
+      "argument_count": 6,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "61",
+      "category": "injected_builder",
+      "expected_returncode": 66,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "62",
+      "category": "injected_builder",
+      "expected_returncode": 0,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "63",
+      "category": "injected_builder",
+      "expected_returncode": 0,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "64",
+      "category": "injected_builder",
+      "expected_returncode": 0,
+      "argument_count": 13,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "65",
+      "category": "conditional_tiny",
+      "expected_returncode": 17,
+      "argument_count": 1,
+      "all_fields_match_case": true
+    },
+    {
+      "case": "66",
+      "category": "conditional_tiny",
+      "expected_returncode": 42,
+      "argument_count": 1,
+      "all_fields_match_case": true
+    }
+  ],
+  "all_env_objects_empty": true,
+  "all_stdin_paths_dev_null": true,
+  "all_stream_paths_match_cases": true,
+  "inherited_limits_match_preparation": true,
+  "case60_is_only_child_file_limit_override": true,
+  "accepted_runner_execution_targets": 0,
+  "tiny_execution_targets": 2,
+  "planned_builder_invocations": 64,
+  "packet_identity_binding_matches": true,
+  "commands_submitted": false,
+  "controls_evaluated": false,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete 71425-byte command JSON read including all66 argv/env/stream/status/counter rows and all header/resource fields; exact JSON reconstruction passed.",
+    "Every proposed row equals an original reconstruction from complete case metadata; no command submitted, control evaluated or result observed.",
+    "The ten strace prefixes directly name the builder with exact syscall/errno/ordinal; actual target/retry/no-retry proof still requires later traces.",
+    "Case60 alone uses a child file-size wrapper and remains untraced; configured signal/file-prefix expectations are not observed syscall returns.",
+    "All env objects are empty and stdin paths are /dev/null; these declarations are not full environment, descriptor, kernel or shared-library images.",
+    "Resource fields describe inherited/per-process settings; aggregate timing, failure containment and terminal caller acceptance depend on separate controls/evidence.",
+    "Never-submitted status is historical metadata and does not rule out later saved execution records."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/README.md",
+      "bytes": 5584,
+      "intended_review": "full_saved_result_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/RESULT.json",
+      "bytes": 4240,
+      "intended_review": "full_saved_result_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_RESULT_REVIEW.md",
+      "bytes": 9382,
+      "intended_review": "full_saved_result_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/EVIDENCE_PROVENANCE.json",
+      "bytes": 2699,
+      "intended_review": "full_saved_result_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/SHA256SUMS",
+      "bytes": 536,
+      "intended_review": "full_saved_result_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 22441,
+  "public_contribution_checks": [
+    "pinned command-manifest identity and complete JSON readings passed",
+    "every field in all 66 rows matches independent case-derived reconstruction",
+    "ten direct tracing prefixes, single child file-limit override and two tiny targets reconcile",
+    "environment/streams, expected outcomes, invocation counters and declared limits agree",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

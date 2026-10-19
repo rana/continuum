@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-revision-static.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/README.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PREPARATION.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PROVENANCE.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/REVIEW_REQUEST.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CONTROL_REVIEW.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/README.md",
+      "bytes": 3833,
+      "git_blob_sha": "b631023cd3c8618134a9293874877172b80fcb8b",
+      "sha256": "7c8e4ff94a06bf1c597f765462ca39495de9e0eebec49cc0b5fb22a387a47388",
+      "lines": 20,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-preparation-and-review-chronology",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PREPARATION.json",
+      "bytes": 3950,
+      "git_blob_sha": "fdf3ca132d134521379f3aaeb78340ce9e4834de",
+      "sha256": "7be90fca7d777a0e0af57b88067c27a79fe4b5f0f017759cc27d5f1524997b90",
+      "lines": 85,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-preparation-and-review-chronology",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PROVENANCE.json",
+      "bytes": 826,
+      "git_blob_sha": "d97efc49a6565d556fa2f5f98b2663e1eb8bc509",
+      "sha256": "fe2d887e0daca8927149f5691ca75e432fe5655e8db426115f31e0f4387bee23",
+      "lines": 12,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-preparation-and-review-chronology",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/REVIEW_REQUEST.md",
+      "bytes": 4012,
+      "git_blob_sha": "3d67518803919e7765d31ee521997fb09a1df8c8",
+      "sha256": "f84940dea62e59cb7d8f318bea750e2544c18104e297b5740d77691c38adb4ea",
+      "lines": 27,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-preparation-and-review-chronology",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CONTROL_REVIEW.md",
+      "bytes": 7966,
+      "git_blob_sha": "32348168530871c6da9a6d33d4634afddb5d109a",
+      "sha256": "426d31b83364ea277c825660460a4ae1b383159922189f8f6ae67840e92fa667",
+      "lines": 36,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-preparation-and-review-chronology",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 20587
+    },
+    "cumulative_direct_read": {
+      "paths": 507,
+      "unique_blobs": 507,
+      "bytes": 3856578
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 584,
+    "remaining_paths_without_full_semantic_read_or_alias": 5009,
+    "remaining_distinct_blobs_without_full_semantic_read": 3922,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 20587,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five preparation/control-review records fully read; packet descriptions and saved review claims do not establish new materialization, execution or acceptance.",
+    "Eleven request-table pins agree with preparation fields; three source pins bind held bytes and three prior source-review identities agree without recovered cache payloads.",
+    "Draft literal/payload freeze was pending at control-review capture; later request points to separate final verification, not yet read here.",
+    "Reported EIO no-retry correction and resource/control behavior remain source-review claims in this unit, not fresh control-code or trace validation.",
+    "Parent source/actual-byte PASS is explicitly reported without its full external report; current unheld ELF gap must not be projected onto that historical reviewer.",
+    "Declared attempt absence, success-tree size and evidence caps retain historical/static scope; acceptance caps are not disk quotas."
+  ],
+  "review_report": "base12-builder-preparation-controls.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "source_baseline": "23276eeba9d819e62db2bb904c2ab8ea6da27c31",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 20587,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 20587,
+  "request_table_pins": 11,
+  "all_request_pins_match_preparation": true,
+  "control_review_table_pins": 6,
+  "all_four_control_pins_match_preparation": true,
+  "held_payload_pin_checks": [
+    {
+      "role": "bootstrap",
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614"
+    },
+    {
+      "role": "original_lane_manifest",
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/SHA256SUMS",
+      "sha256": "54696e7cd4c28d55076d430f540f922b3421a43ce4d6e0defd3e61af22dc1292"
+    },
+    {
+      "role": "seed",
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae"
+    }
+  ],
+  "prior_read_ledger_pin_checks": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/caller.py",
+      "sha256": "b3bca1451ad4e8e4249dcb19eadc05c42c5a443b04a755143594219ffe3372ac",
+      "status": "prior_full_read_ledger_identity_agrees_cache_payload_not_recovered_here"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/driver.py",
+      "sha256": "be2477ab56e86ef940fa64c05cf499d73e0a68a65eab2a6edad754f6cf435396",
+      "status": "prior_full_read_ledger_identity_agrees_cache_payload_not_recovered_here"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVELOPE.md",
+      "sha256": "d59edbbaa80f5ecaaee2e431eacf4dfd9daf0200c6893d244e674544e32f0fcf",
+      "status": "prior_full_read_ledger_identity_agrees_cache_payload_not_recovered_here"
+    }
+  ],
+  "reported_parent_review_full_report_recovered": false,
+  "draft_payload_entries": 212,
+  "later_payload_entries": 217,
+  "draft_and_later_command_document_digests_differ": true,
+  "final_freeze_validation_read_here": false,
+  "reported_builder_calls": 64,
+  "reported_tiny_calls": 2,
+  "reported_error_injections": 10,
+  "reported_EINTR_retries": 6,
+  "reported_EIO_nonretry_cases": 4,
+  "reported_no_retry_correction_freshly_executed": false,
+  "budget_arithmetic_consistent": true,
+  "success_tree_counts_are_static": true,
+  "acceptance_caps_are_not_filesystem_quota": true,
+  "attempt_status_not_freshly_observed": true,
+  "candidate_binary_acquired": false,
+  "candidate_controls_invoked": false,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five preparation/control-review records fully read; packet descriptions and saved review claims do not establish new materialization, execution or acceptance.",
+    "Eleven request-table pins agree with preparation fields; three source pins bind held bytes and three prior source-review identities agree without recovered cache payloads.",
+    "Draft literal/payload freeze was pending at control-review capture; later request points to separate final verification, not yet read here.",
+    "Reported EIO no-retry correction and resource/control behavior remain source-review claims in this unit, not fresh control-code or trace validation.",
+    "Parent source/actual-byte PASS is explicitly reported without its full external report; current unheld ELF gap must not be projected onto that historical reviewer.",
+    "Declared attempt absence, success-tree size and evidence caps retain historical/static scope; acceptance caps are not disk quotas."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/launch.sh",
+      "bytes": 7141,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/guard.sh",
+      "bytes": 1507,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CALLER_INVOCATION.md",
+      "bytes": 4983,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/STATIC_REVIEW.json",
+      "bytes": 3003,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVIRONMENT.json",
+      "bytes": 4026,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 20660,
+  "public_contribution_checks": [
+    "five pinned identities and complete text readings passed",
+    "eleven request-table pins and four reviewed control pins reconcile",
+    "three held-byte pins and three prior-ledger identities agree within their distinct scopes",
+    "draft/final freeze chronology, proposed call counts and budget arithmetic reconcile",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

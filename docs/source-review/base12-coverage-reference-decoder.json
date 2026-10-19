@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-evidence-custody.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/INTEGRATION.md",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/PRESERVATION.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/README.md",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/RESULT.md",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/MANIFEST.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/source/reference_decode.py",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/source-review.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/INTEGRATION.md",
+      "bytes": 5109,
+      "git_blob_sha": "7733227688dc9292c9692445a6b76ee34b3a399e",
+      "sha256": "ae0e740b68a9fa993e94c1172ada9fd625970abfa6e0abb3707233be892516f3",
+      "lines": 83,
+      "semantic_review": "full_direct_read",
+      "review_lane": "same-author-reference-decoder",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/PRESERVATION.json",
+      "bytes": 4486,
+      "git_blob_sha": "fd22a33aa7add215b13cee84fed9a952fa8d78e4",
+      "sha256": "4dee228bd90751b6a1be310c0c7b26a842385e7a101bd6f94e810d36edaa4979",
+      "lines": 119,
+      "semantic_review": "full_direct_read",
+      "review_lane": "same-author-reference-decoder",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/README.md",
+      "bytes": 1339,
+      "git_blob_sha": "7a2a4cf960d6104be535df6ff0fe9242e824a891",
+      "sha256": "7678984534fa4867d821281cc93c01999bdb7e9e2a841ce11e93b9b3ce7b1cf6",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "same-author-reference-decoder",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/RESULT.md",
+      "bytes": 4275,
+      "git_blob_sha": "75bd2f8ee0a268663bab311e70325b447d3e12b2",
+      "sha256": "62f2a0d0a826fb3226d14d2947201516e5a42625484256f5da99fe48bb9e06c0",
+      "lines": 26,
+      "semantic_review": "full_direct_read",
+      "review_lane": "same-author-reference-decoder",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/MANIFEST.json",
+      "bytes": 3138,
+      "git_blob_sha": "27a2e2e36173476c2af928e425cd585e6abc2168",
+      "sha256": "02c84159af946c8fbf5d4de45c66dcda975f14d51a21fb081f8489d43acb8761",
+      "lines": 99,
+      "semantic_review": "full_direct_read",
+      "review_lane": "same-author-reference-decoder",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/source/reference_decode.py",
+      "bytes": 7753,
+      "git_blob_sha": "66bedd8b633d0057ec94a38697df6fb04b9f81eb",
+      "sha256": "e1a36de5335407be19fa8aa6bb95a84503033a9d5379519d728fe05ce3ffae74",
+      "lines": 185,
+      "semantic_review": "full_direct_read",
+      "review_lane": "same-author-reference-decoder",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "ast_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/source-review.md",
+      "bytes": 7815,
+      "git_blob_sha": "d6f9571eafaae79e8fc50f86421e2bf38d90b58b",
+      "sha256": "7732f84834d3fa8bc0ed0b6fb05f02023dc71c8ec15f20b1c56231013a23ca09",
+      "lines": 43,
+      "semantic_review": "full_direct_read",
+      "review_lane": "same-author-reference-decoder",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 7,
+      "unique_blobs": 7,
+      "bytes": 33915
+    },
+    "cumulative_direct_read": {
+      "paths": 258,
+      "unique_blobs": 258,
+      "bytes": 1724340
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 307,
+    "remaining_paths_without_full_semantic_read_or_alias": 5286,
+    "remaining_distinct_blobs_without_full_semantic_read": 4171,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 7,
+    "this_review_verified_bytes": 33915,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Seven texts fully read; decoder syntax parsed without executing it.",
+    "Binomial predictor coefficients and all 4096 signed-12 division/modulo representations checked with original arithmetic, not upstream function execution.",
+    "Same authorship and wire specification are explicit; implementation diversity is not independent authorship or fresh empirical reproduction.",
+    "Historical execution claims remain attributed; raw execution receipts, launcher, result review and archive are outside this unit.",
+    "Empty-payload alias contributes only to manifest custody, not semantic-reading coverage."
+  ],
+  "review_report": "base12-reference-decoder.md"
+}

@@ -142,3 +142,23 @@ mod tests {
         assert_eq!(decode(&encode(&max).unwrap()), Ok(max));
     }
 }
+
+// Compile-time reuse of the project's original canonical codec only. The
+// laboratory does not link continuum-core, rusqlite or any SQLite store code.
+#[path = "../../../../src/object.rs"]
+mod object;
+pub use object::{EvidenceOutcome, Object, ObjectId, SnapshotEntry};
+pub mod store;
+
+#[derive(Debug, thiserror::Error)]
+pub enum Error {
+    #[error("invalid input: {0}")]
+    Invalid(String),
+    #[error("operation ID was already used for a different request")]
+    OperationConflict,
+    #[error("filesystem: {0}")]
+    Io(#[from] std::io::Error),
+    #[error("record encoding: {0}")]
+    Json(#[from] serde_json::Error),
+}
+pub type Result<T, E = Error> = std::result::Result<T, E>;

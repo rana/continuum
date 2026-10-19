@@ -1,0 +1,6 @@
+PASS: owned Rust journal matches finite oracle on 7 retained traces / 18 acceptance invocations
+PASS: exact source for two approaches; actual negative/pass evidence; lost-reply acceptance recovered; accepted/stale retries survive later movement without new bytes
+PASS: independent byte/semantic reader validated 8 canonical objects and 3 complete evaluated outcomes
+PASS: missing closure and self-consistent but invented receipt refuse without mutation
+LIMIT: selected semantic traces and local process exit; no retained-data adoption, export/restore, full power-loss model or receiver acceptance
+binary_sha256: 5524eccb6ecf895450128e05f6e642d91565ddad08537bd8a9931673bcbf9e51

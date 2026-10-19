@@ -2,7 +2,7 @@
 
 This successor to the framing-only primitive implements `src/journal.rs`. Input source: framing/oracle commit `5890ea50c2b88ea71baadfe22cf512053861c442`, main `c474b0dc9e6f4732d22a1c3f2f4da20df415a2cd`, ADR 0002 and selected design in PR 112. Owner: this continuing Codex engineering session; no overlapping implementation owner observed during fresh reconciliation.
 
-This is a bounded Unix/local-filesystem laboratory, not storage adopted for retained work. It persists opaque payload frames. No object type/closure checks, operation deduplication, acceptance transition, receipt, semantic replay, export/restore or migration is implemented yet. Those requirements remain in the [oracle](../oracle/README.md).
+This is a bounded Unix/local-filesystem laboratory, not storage adopted for retained work. It persists opaque payload frames. This journal module itself interprets no object or acceptance semantics. The later [owned-store layer](STORE.md) implements object closure, operation deduplication, acceptance outcomes and receipt replay above it. Export/restore and migration remain unimplemented. The comparison requirements remain in the [oracle](../oracle/README.md).
 
 ## Contract and boundary selection
 

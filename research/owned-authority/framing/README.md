@@ -1,6 +1,6 @@
 # Owned journal framing: first construction slice
 
-Disposable Rust implementation with no SQLite/Git runtime dependency, plus a separately authored Python reader. This is a framing primitive, **not a qualified store or acceptance engine**. It does not read or modify retained Continuum stores.
+Disposable Rust implementation with no SQLite/Git runtime dependency, plus a separately authored Python reader. This page describes the original framing primitive. Subsequent [boundary journal](JOURNAL.md) and [semantic store](STORE.md) layers are implemented as disposable experiments; none is qualified for retained work. It does not read or modify retained Continuum stores.
 
 Sources: main `c474b0dc9e6f4732d22a1c3f2f4da20df415a2cd`, [ADR 0002](../../../docs/decisions/0002-owned-storage-research.md), and selected successor design at Git commit `c7e3f48` ([PR 112](https://github.com/rana/continuum/pull/112)). The design and earlier owned-model branch tips were reconciled before construction; neither older tip contained implementation beyond main. Design publication remains independently owned. Implementation owner: this continuing Codex engineering session, disjoint `research/owned-authority/` files.
 

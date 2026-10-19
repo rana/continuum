@@ -1,0 +1,27 @@
+--- a/check_archive.py
++++ b/check_archive.py
+@@ -94,13 +94,17 @@
+         corruptions = [b'', exported[:15], exported[:16], exported[:-1], exported + b'X']
+         for index in (0, 8, 16, len(exported) - 1):
+             data = bytearray(exported); data[index] ^= 1; corruptions.append(bytes(data))
+-        # Physically self-consistent archive with an invalid semantic event.
+-        payload = b'{}'
+-        frame = struct.pack('<8sIQ32s', b'CTJFR001', len(payload), 0, bytes(32)) + payload
+-        frame += hashlib.sha256(b'continuum:journal-frame:v1\0' + frame).digest()
+-        container = b'CTJEX001' + struct.pack('<Q', len(frame)) + frame
+-        container += hashlib.sha256(b'continuum:export:v1\0' + container).digest()
+-        corruptions.append(container)
++        # Physically self-consistent archives with invalid semantic events.
++        def sealed(payload):
++            frame = struct.pack('<8sIQ32s', b'CTJFR001', len(payload), 0, bytes(32)) + payload
++            frame += hashlib.sha256(b'continuum:journal-frame:v1\0' + frame).digest()
++            container = b'CTJEX001' + struct.pack('<Q', len(frame)) + frame
++            return container + hashlib.sha256(b'continuum:export:v1\0' + container).digest()
++        corruptions.append(sealed(b'{}'))
++        # Valid container and frame chain; ObjectV1 Snapshot names a Blob absent from replayed state.
++        path = b'source'
++        canonical = b'continuum.object\0' + struct.pack('>HBI', 1, 2, 1) + struct.pack('>I', len(path)) + path + bytes(32)
++        corruptions.append(sealed(json.dumps(dict(record='ObjectV1', canonical=list(canonical)), separators=(',', ':')).encode()))
+         for number, data in enumerate(corruptions):
+             damaged, target = root / f'bad-{number}.export', root / f'bad-{number}-restore'
+             damaged.write_bytes(data)

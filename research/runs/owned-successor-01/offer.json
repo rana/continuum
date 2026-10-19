@@ -1,0 +1,39 @@
+{
+  "source_commit": "02d491d5057095a92ba21d1d23a4fa7a27b28026",
+  "source_snapshot": "sha256:f8742d13ee664144ea5ef4f419e3cbd91b75b1a97e3edd5d8707e910d59b9ba3",
+  "request_blob": "sha256:5e84d8ae34b488aca4f11b34ca0520c4bf9e859fbdac7f8e927fc5c1bf368d78",
+  "acceptance": {
+    "receipt": {
+      "observed": null,
+      "outcome": "accepted",
+      "request": {
+        "acceptor": "continuum",
+        "candidate": "sha256:f8742d13ee664144ea5ef4f419e3cbd91b75b1a97e3edd5d8707e910d59b9ba3",
+        "expected": null,
+        "operation_id": "offer-source",
+        "target": "owned-successor-01"
+      },
+      "resulting": {
+        "generation": 1,
+        "root": "sha256:f8742d13ee664144ea5ef4f419e3cbd91b75b1a97e3edd5d8707e910d59b9ba3"
+      },
+      "sequence": 1
+    },
+    "replayed": false
+  },
+  "binary_sha256": "3b3ec2bb9ee703de51ab218bb9ed4ae00a4da475b47dd2d40bc5c57cf92c4377",
+  "source_files": [
+    {
+      "path": "check_archive.py",
+      "blob": "sha256:efddba46291af7ecf871f020f6307d49dd5b6b07dc42b205b7437293131ed4ab"
+    },
+    {
+      "path": "restore-excerpt.txt",
+      "blob": "sha256:ff92c4252937ad55f3d307cfabf0907655f3f165809bdf84971b79f95074c3ff"
+    },
+    {
+      "path": "task.txt",
+      "blob": "sha256:51059df124ad185b912afddb6b74db71a69eb30bc06da45e10582b00a4be2eae"
+    }
+  ]
+}

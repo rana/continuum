@@ -40,3 +40,5 @@ python3 research/owned-authority/framing/check_archive.py research/owned-authori
 ```
 
 Next: use this disposable path for one actual continuation of its development, retaining exact source, exposure, recipient response and observed consequence. A qualitative continuation will not establish comparative model benefit or qualify retained-data adoption. Continue contract/fault review, including real I/O errors and availability costs, independently of that use.
+
+The later [actual owned-store successor](../../runs/owned-successor-01/README.md) adds an eleventh missing-closure negative case and a separate two-object positive control. Its exact model patch, coordinator change and execution evidence are retained there; the ten-case validation above remains historical.

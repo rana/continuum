@@ -94,19 +94,43 @@ def main():
         corruptions = [b'', exported[:15], exported[:16], exported[:-1], exported + b'X']
         for index in (0, 8, 16, len(exported) - 1):
             data = bytearray(exported); data[index] ^= 1; corruptions.append(bytes(data))
-        # Physically self-consistent archive with an invalid semantic event.
-        payload = b'{}'
-        frame = struct.pack('<8sIQ32s', b'CTJFR001', len(payload), 0, bytes(32)) + payload
-        frame += hashlib.sha256(b'continuum:journal-frame:v1\0' + frame).digest()
-        container = b'CTJEX001' + struct.pack('<Q', len(frame)) + frame
-        container += hashlib.sha256(b'continuum:export:v1\0' + container).digest()
-        corruptions.append(container)
+        # Physically self-consistent archives with invalid semantic events.
+        def sealed(payload):
+            payloads = payload if isinstance(payload, (list, tuple)) else [payload]
+            image, previous = b'', bytes(32)
+            for ordinal, item in enumerate(payloads):
+                frame = struct.pack('<8sIQ32s', b'CTJFR001', len(item), ordinal, previous) + item
+                previous = hashlib.sha256(b'continuum:journal-frame:v1\0' + frame).digest()
+                image += frame + previous
+            container = b'CTJEX001' + struct.pack('<Q', len(image)) + image
+            return container + hashlib.sha256(b'continuum:export:v1\0' + container).digest()
+        corruptions.append(sealed(b'{}'))
+        # Valid container and frame chain; ObjectV1 Snapshot names a Blob absent from replayed state.
+        path = b'source'
+        canonical = b'continuum.object\0' + struct.pack('>HBI', 1, 2, 1) + struct.pack('>I', len(path)) + path + bytes(32)
+        corruptions.append(sealed(json.dumps(dict(record='ObjectV1', canonical=list(canonical)), separators=(',', ':')).encode()))
         for number, data in enumerate(corruptions):
             damaged, target = root / f'bad-{number}.export', root / f'bad-{number}-restore'
             damaged.write_bytes(data)
-            assert call('restore', target, damaged).returncode != 0
+            rejected_archive = call('restore', target, damaged)
+            assert rejected_archive.returncode != 0
+            if number == len(corruptions) - 1:
+                assert b'missing object or wrong kind' in rejected_archive.stderr, rejected_archive.stderr
             assert not target.exists() and damaged.read_bytes() == data
         print(f'PASS: {len(corruptions)} malformed archives rejected before target creation')
+        # Coordinator follow-up: accepted same encoding with a real Blob before
+        # the Snapshot distinguishes missing closure from a vacuous format failure.
+        blob_body = b'closure control'
+        blob_bytes = b'continuum.object\0' + struct.pack('>HBI', 1, 1, len(blob_body)) + blob_body
+        snapshot_bytes = canonical[:-32] + hashlib.sha256(blob_bytes).digest()
+        positive = root / 'closure-positive.export'
+        positive.write_bytes(sealed([json.dumps(dict(record='ObjectV1', canonical=list(data)), separators=(',', ':')).encode()
+                                     for data in (blob_bytes, snapshot_bytes)]))
+        target = root / 'closure-positive'
+        assert call('restore', target, positive).returncode == 0
+        objects, history = independent(target)
+        assert len(objects) == 2 and not history
+        print('PASS: missing-Blob rejection reason verified; same encoding with preceding real Blob restores two objects')
     print('LIMIT: trusted local Unix paths, same schema, bounded images; process exits are not power loss; leftover staging aliases require explicit inspection; no migration or receiver acceptance')
 
 

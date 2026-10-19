@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'research/owned-authority/**'
+      - 'research/runs/owned-successor-01/**'
       - 'src/**'
       - 'Cargo.toml'
       - 'Cargo.lock'
@@ -10,6 +11,7 @@ on:
   pull_request:
     paths:
       - 'research/owned-authority/**'
+      - 'research/runs/owned-successor-01/**'
       - 'src/**'
       - 'Cargo.toml'
       - 'Cargo.lock'
@@ -35,6 +37,7 @@ jobs:
       - run: python3 check_journal.py target/debug/continuum-journal-framing
       - run: python3 check_store.py target/debug/owned-store
       - run: python3 check_archive.py target/debug/owned-store
+      - run: python3 ../../runs/owned-successor-01/verify.py --binary target/debug/owned-store
       - name: Check finite semantic oracle against the SQLite reference
         run: |
           cargo build --manifest-path ../../../Cargo.toml --locked

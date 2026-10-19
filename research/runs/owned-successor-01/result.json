@@ -1,0 +1,52 @@
+{
+  "finished_at": "2026-10-19T16:20:08.410541+00:00",
+  "provider_attempts": 1,
+  "actual_model": "claude-opus-5-5",
+  "configured_effort": "medium",
+  "usage": {
+    "input_tokens": 3923,
+    "output_tokens": 4601,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "stop_reason": "end_turn",
+  "truncated": false,
+  "reference_acknowledgement_consistent": true,
+  "authenticated_recipient_acceptance": false,
+  "patch_applied_unchanged": true,
+  "unchanged_patch_check_passed": true,
+  "coordinator_positive_control_separate": true,
+  "final_check_passed": true,
+  "final_source_sha256": "9cd7cd2dd4596e7e95a52441c8905f46609216f849c4b47e9f9e52ddd4821fd8",
+  "native_request_bytes_recovered_exactly": true,
+  "accepted": {
+    "receipt": {
+      "observed": {
+        "generation": 1,
+        "root": "sha256:f8742d13ee664144ea5ef4f419e3cbd91b75b1a97e3edd5d8707e910d59b9ba3"
+      },
+      "outcome": "accepted",
+      "request": {
+        "acceptor": "continuum",
+        "candidate": "sha256:7d484621c0c2908a5ff9f3502a6271e01e8573693bb1928066a251d363956025",
+        "expected": {
+          "generation": 1,
+          "root": "sha256:f8742d13ee664144ea5ef4f419e3cbd91b75b1a97e3edd5d8707e910d59b9ba3"
+        },
+        "operation_id": "accept-checked-successor",
+        "target": "owned-successor-01"
+      },
+      "resulting": {
+        "generation": 2,
+        "root": "sha256:7d484621c0c2908a5ff9f3502a6271e01e8573693bb1928066a251d363956025"
+      },
+      "sequence": 2
+    },
+    "replayed": false
+  },
+  "evidence": "sha256:7fc930c3e90aba9ca7285a69b8645b57497e3ced905575e9a47b5c140a51da5c",
+  "completed_archive_sha256": "53a6df51b3985662f5edeeb535435854815ae370879c5867580980167499fb09",
+  "fresh_restore_preserved_both_receipts": true,
+  "binary_sha256": "3b3ec2bb9ee703de51ab218bb9ed4ae00a4da475b47dd2d40bc5c57cf92c4377",
+  "scope": "One supplied-source qualitative continuation; no comparative benefit, authentication, power-loss qualification or retained-data adoption"
+}

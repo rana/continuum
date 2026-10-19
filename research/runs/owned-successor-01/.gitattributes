@@ -1,0 +1,4 @@
+# Literal retained diff context and caller-serialized response artifacts.
+*.patch -whitespace
+provider-result.json -whitespace
+response.json -whitespace

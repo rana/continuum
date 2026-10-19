@@ -1,0 +1,20 @@
+{
+  "source_baseline": "bc51d523386508d79d6cd0db51eba4fe15abaf7b",
+  "files": [
+    {
+      "path": "docs/source-review/base12-initial-acquisition-accounting.md",
+      "bytes": 5324,
+      "sha256": "fec8f89a13f6d3a081f4f0e8cb6c4566cf43e14eebcb2e057ee97454654879b1"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-initial-acquisition-accounting.json",
+      "bytes": 5096,
+      "sha256": "7237510f5dee023a146b0e47416552d2e5822fb8eabd778f30219b2d2c765970"
+    },
+    {
+      "path": "research/runs/base12-initial-acquisition-accounting/validation.json",
+      "bytes": 8278,
+      "sha256": "7dbc099b9b6b5f097cc721c108fbe3152bb16a6e048d21695ce7eed47ff5dc79"
+    }
+  ]
+}

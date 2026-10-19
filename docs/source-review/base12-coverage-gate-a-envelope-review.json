@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-decoder-review.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/ENVELOPE_REVIEW.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/ENVELOPE_REVISION.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/envelope-static-check.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/envelope-review-original.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/envelope-review-revised.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/ENVELOPE_REVIEW.md",
+      "bytes": 8962,
+      "git_blob_sha": "fbc307880e8fea10b3d319b74e42f94671c3aab9",
+      "sha256": "cb36b7d330cb1390cd8217fbe2fd61476dc7829091606c919385f4ba77c67218",
+      "lines": 51,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-envelope-revision-and-parent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/ENVELOPE_REVISION.md",
+      "bytes": 3970,
+      "git_blob_sha": "c74bd592d9b4abf3a1aad7b2c9ea4371db948182",
+      "sha256": "1781c620be1539a7f77874bc27516d423f0db5de84f20cbb61951249d67917ae",
+      "lines": 25,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-envelope-revision-and-parent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/envelope-static-check.json",
+      "bytes": 1290,
+      "git_blob_sha": "c5f45c4301e44a7b214b91ec937af8ed45cd377f",
+      "sha256": "42ee5e1ffb4c52990277ae31ba3a7c06a2c8d4872e5ac357736cfca2f88fd44e",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-envelope-revision-and-parent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/envelope-review-original.md",
+      "bytes": 12242,
+      "git_blob_sha": "f048625c1c5c835206ae4f0da95a203715ad7d1f",
+      "sha256": "3d1eaf856a534fd8d90de80d40997db02e9009feced57480325f2a48bf9e5989",
+      "lines": 83,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-envelope-revision-and-parent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/envelope-review-revised.md",
+      "bytes": 10677,
+      "git_blob_sha": "692fdd1da1b4ef962b35c8d6129518301f99f8ed",
+      "sha256": "b4ad8b845fc3085c7ed50936c28792ba54cade2910d888f83d27a6c8be1913bc",
+      "lines": 68,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-envelope-revision-and-parent-review",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 37141
+    },
+    "cumulative_direct_read": {
+      "paths": 445,
+      "unique_blobs": 445,
+      "bytes": 3425563
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 497,
+    "remaining_paths_without_full_semantic_read_or_alias": 5096,
+    "remaining_distinct_blobs_without_full_semantic_read": 3984,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 37141,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five full envelope/revision/static texts read; no script, native artifact, control test or new inference executed.",
+    "Three current controls and delegated review digest bind actual held payloads; sixteen unchanged-file entries remain historical cross-revision declarations.",
+    "Twelve listed unchanged texts are held; ELF, code and two instruction-text artifacts remain unacquired.",
+    "Parent original review already used case-table reconstruction and later actual TSV verification; current reconstruction is independently repeated, not a novel method attributed to this session.",
+    "All four original conditions have scoped revised static PASS; eight parent-clearance conditions remain separate from an execution grant, live preflight or fresh acceptance.",
+    "Exit 137, post-return process snapshot and waited-child resource accounting have distinct limits; no dynamic failure/timeout coverage inferred from later normal success.",
+    "Private Library IDs, task identities, absolute paths and raw private review bytes are not published."
+  ],
+  "review_report": "base12-gate-a-envelope-review.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

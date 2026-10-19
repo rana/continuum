@@ -6,7 +6,7 @@ Last reconciled: 2026-10-19 UTC (2026-10-19 America/Los_Angeles).
 
 Continuum is a native work and evidence engine for continuing AI engineering. The first implementation is a small Rust core, with exact source custody and durable local acceptance receipts. Git is the intended public development host and a future interoperability edge; the core has no Git runtime dependency.
 
-The [owned-storage research decision](docs/decisions/0002-owned-storage-research.md) now opens a separate purpose-built kernel and independent emitted-verifier investigation. Its first unit is a finite transition/recovery model. No custom engine, model execution, native-emitter target, migration or successor repository is claimed; the current practical pilot below keeps its existing ownership.
+The renewed clean-slate direction selects owned Rust storage as the successor construction target; [PR 112](https://github.com/rana/continuum/pull/112) preserves that design and actual Claude reviews. SQLite remains the working reference. The first [owned journal framing slice](research/owned-authority/framing/README.md) now has executed Rust and independent Python readers, corruption controls and a process exit after file sync. It is not an acceptance engine: complete-frame suffix loss is undetectable. Next: the independent finite acceptance oracle and an explicit committed-boundary protocol before reopening for writes. No retained-data migration, successor repository or emitter adoption occurred. The existing [owned-storage decision](docs/decisions/0002-owned-storage-research.md) supplies the comparison contract.
 
 ## Completed locally
 

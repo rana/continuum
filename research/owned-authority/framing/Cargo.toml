@@ -1,0 +1,10 @@
+[package]
+name = "continuum-journal-framing"
+version = "0.0.1"
+edition = "2024"
+license = "MIT"
+
+[workspace]
+
+[dependencies]
+sha2 = "0.10.9"

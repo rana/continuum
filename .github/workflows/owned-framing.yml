@@ -1,0 +1,28 @@
+name: Owned journal framing
+on:
+  push:
+    paths:
+      - 'research/owned-authority/framing/**'
+      - '.github/workflows/owned-framing.yml'
+  pull_request:
+    paths:
+      - 'research/owned-authority/framing/**'
+      - '.github/workflows/owned-framing.yml'
+permissions:
+  contents: read
+jobs:
+  framing:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: research/owned-authority/framing
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt -- --check
+      - run: cargo clippy --locked --all-targets -- -D warnings
+      - run: cargo test --locked
+      - run: cargo build --locked
+      - run: python3 check.py target/debug/continuum-journal-framing

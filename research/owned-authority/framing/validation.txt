@@ -1,0 +1,7 @@
+2026-10-19 local execution, rustc 1.91.1 (ed61e7d7e 2025-11-07)
+cargo fmt: passed
+cargo clippy --locked --all-targets -- -D warnings: passed
+cargo test --locked: 3 passed; 0 failed
+Python subprocess/independent reader output:
+PASS: process exit 73 after file sync; 3 recovered frames; 297 partial-frame cuts refused; 300 byte flips refused; exclusive-create and preserved-corruption controls passed
+LIMIT: complete-frame suffix loss is undetectable; no acceptance receipts, commit selection, writer takeover, power-loss or directory-durability qualification

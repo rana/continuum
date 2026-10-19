@@ -301,6 +301,8 @@ The [complete saved disassembly](source-review/base12-builder-saved-disassembly.
 
 The [complete builder code-revision comparison](source-review/base12-builder-code-revision-comparison.md) upgrades six selected witnesses into an exclusive result over the two complete, identity-bound code spans. The only differences are six equal-width displacement bytes; structural instruction counts, branches and syscall properties remain unchanged despite different argument semantics. Keep the comparison's code boundary explicit when the full container headers/padding remain unexamined.
 
+The [complete historical layout](source-review/base12-builder-historical-layout.md) differs from R2 only in declared artifact hash, despite six changed code bytes. Shared address maps can support reuse of position checks without identifying code or correct argument semantics. Preserve the artifact digest when caching or handing off structural results; an unchanged map must not erase the distinction between the artifacts it describes.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

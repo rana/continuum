@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-code-revision-comparison.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.layout.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.layout.json",
+      "bytes": 53163,
+      "git_blob_sha": "9e08f606fb09b07f6f3fee4e9a2ad28feedee806",
+      "sha256": "836482132b0b4ec8ec34a25ef188cedb8d8d03ce0ad9054341063b9af09f0b73",
+      "lines": 2636,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-historical-layout",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 1,
+      "unique_blobs": 1,
+      "bytes": 53163
+    },
+    "cumulative_direct_read": {
+      "paths": 533,
+      "unique_blobs": 533,
+      "bytes": 4764558
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 610,
+    "remaining_paths_without_full_semantic_read_or_alias": 4983,
+    "remaining_distinct_blobs_without_full_semantic_read": 3896,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 1,
+    "this_review_verified_bytes": 53163,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete eleven-field R1 layout fully read:163 labels,479 patches,33 globals and7 buffers; exact JSON reconstruction passed.",
+    "Only declared ELF hash differs from R2; replacing that single text value reproduces complete R2 bytes, while the two code identities and six data-field changes remain distinct.",
+    "Both complete listings bind their own label boundaries and all479 patch fields; source constants/global declarations and memory intervals agree with historical source/build/static records.",
+    "Identical address maps do not identify code bytes or correct argument semantics; declared artifact hashes must remain part of any identity relation.",
+    "Seven R2 artifact text paths have full reading or identical-blob credit; one R1 disassembly text and all four native artifact files retain their own coverage classes.",
+    "Code-identity streaming checks do not confer separate semantic-reading credit on unacquired binary files; full ELF headers/padding remain unverified here.",
+    "No upstream import, native emission/execution, model invocation, live scan, workstation activation or upstream acceptance occurred."
+  ],
+  "review_report": "base12-builder-historical-layout.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

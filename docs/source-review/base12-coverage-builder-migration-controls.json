@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-contract-witnesses.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/migrate_runner.py",
+      "research/owned-stack/2026-10-16/native-builder-slice/runner.b12s",
+      "research/owned-stack/2026-10-16/native-builder-slice/CHECKPOINT.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/OWNER.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/OPEN.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/TEST_PROPOSAL.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/migrate_runner.py",
+      "bytes": 3321,
+      "git_blob_sha": "a712f95d420afe2b938215439ea388516b05e2f5",
+      "sha256": "0de7665c13a895a96a2c9bff9368182c97d5cc3525588b4d766bb64783aaf9b7",
+      "lines": 53,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-migration-and-control-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/runner.b12s",
+      "bytes": 7463,
+      "git_blob_sha": "70fb133b2fd33b8d7aec72973c3317268cb46d8a",
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+      "lines": 520,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-migration-and-control-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CHECKPOINT.json",
+      "bytes": 3228,
+      "git_blob_sha": "dd0bd1388067e765ecad59bb0b0cf1e8aa495114",
+      "sha256": "d7831906494c9b0beb62280085306372f63b426076ea87beaff030fc2e1bd9ca",
+      "lines": 64,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-migration-and-control-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OWNER.json",
+      "bytes": 1022,
+      "git_blob_sha": "66fd07a8ad54b24e7003498f47dcb82d1ab8a9b6",
+      "sha256": "85d6e5e75086bc4c480ed92b8636bcd512473c8b04337bbf158683ef2395df10",
+      "lines": 22,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-migration-and-control-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OPEN.md",
+      "bytes": 2138,
+      "git_blob_sha": "877477871a0349b191a5306470e4ae3e4b079c21",
+      "sha256": "0d4ee14bee7bd12f63101d0afcaa505063754e84cdb375a0d306f9ab580655a1",
+      "lines": 13,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-migration-and-control-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/TEST_PROPOSAL.md",
+      "bytes": 5623,
+      "git_blob_sha": "84db995ffadf0f57cab2c4d1736bf2764a2c7392",
+      "sha256": "13e10232ec75b21686a74a8de7f5c287ccfde805d7bb370d754549626d405637",
+      "lines": 31,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-migration-and-control-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 6,
+      "unique_blobs": 6,
+      "bytes": 22795
+    },
+    "cumulative_direct_read": {
+      "paths": 494,
+      "unique_blobs": 494,
+      "bytes": 3737799
+    },
+    "additional_identical_blob_paths": 76,
+    "alias_distinct_blobs": 26,
+    "semantic_covered_paths_including_aliases": 570,
+    "remaining_paths_without_full_semantic_read_or_alias": 5023,
+    "remaining_distinct_blobs_without_full_semantic_read": 3935,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 22795,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Six source/control/proposal texts fully read; original source counts and declarative admission checked without native parsing or execution.",
+    "Six checkpoint source hashes bind held payloads; artifact ELF and historical runner bytes remain unacquired.",
+    "Migration script AST inspected only; its historical layout ELF hash assertion is a declaration, not recomputation of original ELF identity.",
+    "Migration has two sequential exclusive writes; failed second creation can leave the first source file. No migration or output operation ran here.",
+    "Proposal ranges cover 64 builder calls plus two conditional tiny executions, but materialization, enforcement and clearance remain historical open work at this checkpoint.",
+    "Source-only status and ownership observations are capture-time claims, not current worker state or proof that no later run exists."
+  ],
+  "review_report": "base12-builder-migration-controls.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

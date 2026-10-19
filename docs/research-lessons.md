@@ -171,6 +171,8 @@ The subsequent [stage-A records review](source-review/base12-stage-a-records.md)
 
 The [stage-A execution-receipt review](source-review/base12-stage-a-execution.md) further distinguishes consumed attempts from reported exits, checksum inventories from accessed payloads, and per-process limits from process-tree quotas. Six records and their cross-links reconcile without authenticating their issuer or proving enforcement. Matching repeated fields are consistent custody evidence, not independent observations or permission to repeat an old effect.
 
+The [stage-A launcher review](source-review/base12-stage-a-launcher.md) ties those receipts to source that consumes an exclusive fsynced attempt marker before launch. Its timeout cleanup depends on the live controller, and assertion-based admission depends on the helper's invocation mode. A corrected manifest binding still has trusted-path assumptions. Seven files were read without running helpers; no historical enforcement or failure schedule was reproduced.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

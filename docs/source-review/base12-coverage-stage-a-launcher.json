@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-execution.json",
+  "selected_scope": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/",
+    "files": [
+      "review/acquire_record100.py",
+      "review/environment.json",
+      "review/intake-verification.json",
+      "review/launcher-freeze.json",
+      "review/launcher-review.md",
+      "review/parent-clearance.json",
+      "review/run_once.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/acquire_record100.py",
+      "git_blob_sha": "b417f4f36edc478497f07d0a50e5e9cfb97fc35b",
+      "bytes": 5181,
+      "sha256": "b1390cec949624e5155fee6b9758d7b5571031a34bb93dc5994b70df23224e66",
+      "lines": 108,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-launcher-intake-control-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/environment.json",
+      "git_blob_sha": "46d549d4efaabdb34edd6ce4dd85f85431a39ce9",
+      "bytes": 1499,
+      "sha256": "ca0180af3cb4b01ff70bcfb1ed2ca80b3252882f293bf5b7ea5bc3c40375bb12",
+      "lines": 48,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-launcher-intake-control-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/intake-verification.json",
+      "git_blob_sha": "09260f4997d33972a55ee1184ff4bbf8c250b921",
+      "bytes": 1214,
+      "sha256": "4b0ada40b9c699c408459a4804763ae3674e7f55927610dc0e29767c19e692f8",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-launcher-intake-control-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/launcher-freeze.json",
+      "git_blob_sha": "1535093f06ad51224399e5dd0758475479c6b282",
+      "bytes": 314,
+      "sha256": "2c7910c815fc5c990947e16dfc215dbded0ec4cd9442cfac9d9d00f1efbbde7e",
+      "lines": 11,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-launcher-intake-control-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/launcher-review.md",
+      "git_blob_sha": "ea34a6b1feabecd05f7e90b077bd801832f6fe47",
+      "bytes": 5862,
+      "sha256": "ccd894903b688a0cf1a1a1535f8a1ca43246c693bec5746668b5bc1e3f94b5cf",
+      "lines": 36,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-launcher-intake-control-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/parent-clearance.json",
+      "git_blob_sha": "a7f2bdfb64d49039aeded7a0249ad10c1229d8d2",
+      "bytes": 651,
+      "sha256": "c9f1ac885cb58ac064d162c89f3bdc617c6f682ead6ec0e559e514da8abd6ed6",
+      "lines": 12,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-launcher-intake-control-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/run_once.py",
+      "git_blob_sha": "1358b5510242f11ad0beaed3c2e88b93baa9e435",
+      "bytes": 6890,
+      "sha256": "5ca2e22a77ff4519c3890d84f789bab57bdd7da2ce54ea6399d7b33a3903f36f",
+      "lines": 156,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-launcher-intake-control-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 7,
+      "unique_blobs": 7,
+      "bytes": 21611
+    },
+    "cumulative_direct_read": {
+      "paths": 237,
+      "unique_blobs": 237,
+      "bytes": 1551628
+    },
+    "additional_identical_blob_paths": 48,
+    "alias_distinct_blobs": 18,
+    "semantic_covered_paths_including_aliases": 285,
+    "remaining_paths_without_full_semantic_read_or_alias": 5308,
+    "remaining_distinct_blobs_without_full_semantic_read": 4192,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 7,
+    "this_review_verified_bytes": 21611,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Seven files fully read; aliases not separately read.",
+    "No helper, acquisition, native code, timer, model or research run executed.",
+    "Source inspection and matching receipts do not authenticate historical invocation mode or prove control enforcement.",
+    "Private command paths, parent identities, executable and payload identifiers are not copied into public prose.",
+    "Manifest payload validation remains partial and explicitly enumerated.",
+    "Timeout and cleanup source behavior was not fault-injected; no security-service or power-loss guarantee is established."
+  ],
+  "review_report": "base12-stage-a-launcher.md"
+}

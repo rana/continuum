@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "source_baseline": "c94d0ac63d5bc289b3f962d37f0f1bf6a4319346",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 7,
+  "verified_source_bytes": 21611,
+  "markdown_full_text_read": 1,
+  "python_ast_parsed_without_import": 2,
+  "json_parsed": 4,
+  "launcher_freeze_bindings": {
+    "matched_acquired_payloads": [
+      {
+        "path": "acquire_record100.py",
+        "matched": true
+      },
+      {
+        "path": "run_once.py",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": []
+  },
+  "cumulative_delivery_bindings": {
+    "matched_acquired_payloads": [
+      {
+        "path": "intake/acquisition-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "review/acquire_record100.py",
+        "matched": true
+      },
+      {
+        "path": "review/environment.json",
+        "matched": true
+      },
+      {
+        "path": "review/intake-verification.json",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-freeze.json",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-review.md",
+        "matched": true
+      },
+      {
+        "path": "review/parent-clearance.json",
+        "matched": true
+      },
+      {
+        "path": "review/postrun-verification.json",
+        "matched": true
+      },
+      {
+        "path": "review/record100-attempt.json",
+        "matched": true
+      },
+      {
+        "path": "review/run_once.py",
+        "matched": true
+      },
+      {
+        "path": "run/execution-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "run/input-and-code.json",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "README.md",
+      "frozen-source/base12_ecg_codec_stage_a.tar.xz",
+      "parent-source-review/REVIEW_MANIFEST.json",
+      "parent-source-review/claude-review-evidence.json",
+      "parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "parent-source-review/static-source-review.md",
+      "review/RESULT.md",
+      "review/native-static-review.md",
+      "review/packet-verification.json",
+      "review/parent-review-verification.json",
+      "review/result-static-verification.md",
+      "review/wire-static-review.md",
+      "run/RESULTS.json",
+      "run/stderr.log",
+      "run/stdout.log"
+    ]
+  },
+  "cumulative_preservation_bindings": {
+    "matched_acquired_payloads": [
+      {
+        "path": "MANIFEST.json",
+        "matched": true
+      },
+      {
+        "path": "PROTOCOL.md",
+        "matched": true
+      },
+      {
+        "path": "README.md",
+        "matched": true
+      },
+      {
+        "path": "WIRE.md",
+        "matched": true
+      },
+      {
+        "path": "check.py",
+        "matched": true
+      },
+      {
+        "path": "codec.py",
+        "matched": true
+      },
+      {
+        "path": "native_signal.py",
+        "matched": true
+      },
+      {
+        "path": "record100.py",
+        "matched": true
+      },
+      {
+        "path": "records/checks.json",
+        "matched": true
+      },
+      {
+        "path": "records/design-freeze.json",
+        "matched": true
+      },
+      {
+        "path": "records/development-corrections.json",
+        "matched": true
+      },
+      {
+        "path": "records/external-wrapper-checks.json",
+        "matched": true
+      },
+      {
+        "path": "records/published-pins.json",
+        "matched": true
+      },
+      {
+        "path": "records/source-freeze.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/DELIVERY_MANIFEST.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/intake/acquisition-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/acquire_record100.py",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/environment.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/intake-verification.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-freeze.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-review.md",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/parent-clearance.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/postrun-verification.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/record100-attempt.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/run_once.py",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/execution-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/input-and-code.json",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "original/base12_ecg_codec_stage_a.tar.xz",
+      "ATTRIBUTION.md",
+      "DOT_HANDOFF.md",
+      "REVIEW_AND_ALIGNMENT.md",
+      "vendor/isa.py",
+      "vendor/runtime.py",
+      "aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/README.md",
+      "aum-run-2026-10-16/evidence/frozen-source/base12_ecg_codec_stage_a.tar.xz",
+      "aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json",
+      "aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+      "aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/parent-source-review/static-source-review.md",
+      "aum-run-2026-10-16/evidence/review/RESULT.md",
+      "aum-run-2026-10-16/evidence/review/native-static-review.md",
+      "aum-run-2026-10-16/evidence/review/packet-verification.json",
+      "aum-run-2026-10-16/evidence/review/parent-review-verification.json",
+      "aum-run-2026-10-16/evidence/review/result-static-verification.md",
+      "aum-run-2026-10-16/evidence/review/wire-static-review.md",
+      "aum-run-2026-10-16/evidence/run/RESULTS.json",
+      "aum-run-2026-10-16/evidence/run/stderr.log",
+      "aum-run-2026-10-16/evidence/run/stdout.log"
+    ]
+  },
+  "cross_record_consistency": {
+    "parent_clearance_equals_execution_clearance": true,
+    "intake_size_and_hash_declarations_equal": true
+  },
+  "static_source_observations": {
+    "attempt_file_fsync_line": 115,
+    "popen_line": 119,
+    "assertion_statement_counts": {
+      "review/acquire_record100.py": 7,
+      "review/run_once.py": 19
+    },
+    "acquisition_per_file_caps_sum": 4047295,
+    "four_file_one_byte_lookahead_total_below_global_cap": true,
+    "executed": false
+  },
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "files": [
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/RESULT.md",
+        "bytes": 11184
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/result-static-verification.md",
+        "bytes": 8091
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/RESULTS.json",
+        "bytes": 48198
+      }
+    ],
+    "total_bytes": 67473
+  }
+}

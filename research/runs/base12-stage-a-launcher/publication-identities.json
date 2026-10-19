@@ -1,0 +1,22 @@
+{
+  "source_baseline": "c94d0ac63d5bc289b3f962d37f0f1bf6a4319346",
+  "files": [
+    {
+      "path": "docs/source-review/base12-stage-a-launcher.md",
+      "bytes": 6848,
+      "sha256": "74136649f72e5324e5a85a3f7d84ea633c258e38f593134bd872277ef2f7722a"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-stage-a-launcher.json",
+      "bytes": 6394,
+      "sha256": "115de292aebf0532c5e88999076275f9543b65e9697e086e7739f2ed903324d0"
+    },
+    {
+      "path": "research/runs/base12-stage-a-launcher/validation.json",
+      "bytes": 7825,
+      "sha256": "9dad2611e0a069cef24927a5b7aa81f5f24b2eafe05f2658daea1d4013f4074d"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

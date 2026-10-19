@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-fixture-boundary-closeout.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OWNERSHIP.json",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OPEN.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/MANIFEST.json",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SOURCE.diff",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/CONTRACT.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "bytes": 3393,
+      "git_blob_sha": "da22608ea6a1516b383164ac49f6b999edb26817",
+      "sha256": "ebc0901ca7dc4eb83ba144635a10a368b271b147a5005b3f21eabf7cd381fcc8",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-foundation-and-source-diff-boundary",
+      "reading_representation": "complete_text_and_json_read_with_exact_diff_and_restricted_AST_data_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OWNERSHIP.json",
+      "bytes": 4084,
+      "git_blob_sha": "63ed379e417fabeefe6c41640f376bb4f1718862",
+      "sha256": "a2eee4ea6ac08b6832174741ac8ba737a7e7488a1e2e366ff6efd327303a976f",
+      "lines": 111,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-foundation-and-source-diff-boundary",
+      "reading_representation": "complete_text_and_json_read_with_exact_diff_and_restricted_AST_data_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OPEN.md",
+      "bytes": 1304,
+      "git_blob_sha": "a8e3b7c2d56b92dfca97dcb1ad1c64d7f40fad09",
+      "sha256": "ebdf695a2fa3b44c75b3b04773e752a76640f5a295cb834f2583cec2a2e22e0f",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-foundation-and-source-diff-boundary",
+      "reading_representation": "complete_text_and_json_read_with_exact_diff_and_restricted_AST_data_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/MANIFEST.json",
+      "bytes": 4007,
+      "git_blob_sha": "aadb80b31537aeae048a23e2d739fc36d384e7e5",
+      "sha256": "57983401fc94d781878438136c3b627edce16ab27dcd90f2f621fd02b470104f",
+      "lines": 126,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-foundation-and-source-diff-boundary",
+      "reading_representation": "complete_text_and_json_read_with_exact_diff_and_restricted_AST_data_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SOURCE.diff",
+      "bytes": 850,
+      "git_blob_sha": "bc90538ee9449cbd17c2b6c5737dcf440097cb9f",
+      "sha256": "dc3d48d1c6905e9704c813465cd3be3fac28ba640e58168cc93f2c8db3efb95b",
+      "lines": 13,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-foundation-and-source-diff-boundary",
+      "reading_representation": "complete_text_and_json_read_with_exact_diff_and_restricted_AST_data_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 13638
+    },
+    "cumulative_direct_read": {
+      "paths": 614,
+      "unique_blobs": 614,
+      "bytes": 5327763
+    },
+    "additional_identical_blob_paths": 114,
+    "alias_distinct_blobs": 38,
+    "semantic_covered_paths_including_aliases": 728,
+    "remaining_paths_without_full_semantic_read_or_alias": 4865,
+    "remaining_distinct_blobs_without_full_semantic_read": 3815,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 19194,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five new complete files/13638 bytes read;5556-byte previously credited contract recovered and reread with no new semantic credit.",
+    "Complete retained diff applies exactly to held R2 source and reconstructs the declared variant source hash/Git identity; full variant source acquisition/reading is deferred.",
+    "Restricted AST comparison changes only three generated consumer header fields; all other AST nodes agree, without imports, source execution or native generation.",
+    "Source-unit manifest and owner records preserve historical source-only status, consumed attempts and pending parent review; later result directories exist in the pin and are not reviewed or reconciled as current outcomes here.",
+    "Twenty-two manifest records bind tree lengths and classify held exact/alias hashes,derived source identity and unheld checksum declarations separately.",
+    "Changed consumer RW mapping does not change builder owned-state/input/count bounds,relocate source immediates,fit the decoder or establish runtime/code-map equality.",
+    "No native artifact acquisition/emission/execution,model invocation,live process scan,workstation activation or recipient acceptance occurred; historical ownership does not transfer authority."
+  ],
+  "review_report": "base12-decoder-profile-foundation.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/CONTRACT.md",
+      "bytes": 5556,
+      "git_blob_sha": "6a49be528b92adaa325ba61b2cfa4c576c5cf29c",
+      "sha256": "260421d3c6da81b19a9b0ab90e0ece3d4a2253eed12fc42e09cc6131df4a1fcd",
+      "classification": "prior_semantic_contract_recovered_and_fully_reread_no_new_credit"
+    }
+  ]
+}

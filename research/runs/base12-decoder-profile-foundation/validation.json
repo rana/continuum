@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "source_baseline": "63a2365b0a24ad4dd26da3b92ea90ad1ef103286",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 6,
+  "verified_source_bytes": 19194,
+  "new_full_source_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 13638,
+  "prior_contract_recovered_bytes": 5556,
+  "prior_contract_no_additional_semantic_credit": true,
+  "complete_owner_and_manifest_json_roundtrips": true,
+  "retained_diff_hunks": 1,
+  "retained_diff_applies_to_held_R2_exactly": true,
+  "derived_variant_source_bytes": 24745,
+  "derived_variant_source_sha256": "890650b8e0543d5ff20c495fcdee8f4e42f5b1f98f54e75d21e08275c33f7dba",
+  "derived_variant_git_identity_matches": true,
+  "variant_source_imported_acquired_or_full_read": false,
+  "only_three_header_field_AST_values_differ": [
+    {
+      "field_offset": 136,
+      "before": 4259840,
+      "after": 5242880
+    },
+    {
+      "field_offset": 144,
+      "before": 4259840,
+      "after": 5242880
+    },
+    {
+      "field_offset": 160,
+      "before": 4096,
+      "after": 10555392
+    }
+  ],
+  "all_other_source_AST_nodes_equal": true,
+  "consumer_RW_base": 5242880,
+  "consumer_RW_bytes": 10555392,
+  "consumer_RW_end": 15798272,
+  "minimum_RX_RW_address_gap": 1032192,
+  "builder_owned_RW_unchanged": true,
+  "source_unit_historical_pending_acceptance": true,
+  "later_result_directories_exist_but_unreviewed": true,
+  "historical_owner_task_records": 9,
+  "historical_returned_task_count": 50,
+  "historical_worktree_head_records": 16,
+  "no_live_absence_or_owner_transfer_claim": true,
+  "manifest_checks": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/AUTHOR_STATIC_CHECKS.json",
+      "bytes": 3948,
+      "sha256": "ba3f7a842cc60dbbc833b430ac68bd1a1c61a3da4b94e6b1b7c37536ecba1eac",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/BUILD_REVIEW_NEEDS.md",
+      "bytes": 3392,
+      "sha256": "bae0510ccaea08742ae09c89d025e4b4bf713fbfd7cbfbe8a0d1380d002bac1a",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/CONTRACT.md",
+      "bytes": 5556,
+      "sha256": "260421d3c6da81b19a9b0ab90e0ece3d4a2253eed12fc42e09cc6131df4a1fcd",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OPEN.md",
+      "bytes": 1304,
+      "sha256": "ebdf695a2fa3b44c75b3b04773e752a76640f5a295cb834f2583cec2a2e22e0f",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OWNERSHIP.json",
+      "bytes": 4084,
+      "sha256": "a2eee4ea6ac08b6832174741ac8ba737a7e7488a1e2e366ff6efd327303a976f",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PROVENANCE.json",
+      "bytes": 10417,
+      "sha256": "5598e5982180474555c03b0e14b21fc8b0aa648e9b401985001e1106f56f68ce",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PUBLICATION_CHECKS.json",
+      "bytes": 2030,
+      "sha256": "8bb48c8829358d5d9cb6a05c338248c852eea9de508458c67f575a748316c177",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "bytes": 3393,
+      "sha256": "ebc0901ca7dc4eb83ba144635a10a368b271b147a5005b3f21eabf7cd381fcc8",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SOURCE.diff",
+      "bytes": 850,
+      "sha256": "dc3d48d1c6905e9704c813465cd3be3fac28ba640e58168cc93f2c8db3efb95b",
+      "status": "held_exact_path_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md",
+      "bytes": 4294,
+      "sha256": "74d9bf3c6b639256ad0ce1c95fbee01d3700951481d422730e68ad4adc0e1d2f",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/bootstrap.py",
+      "bytes": 24745,
+      "sha256": "890650b8e0543d5ff20c495fcdee8f4e42f5b1f98f54e75d21e08275c33f7dba",
+      "status": "derived_text_identity_matches_not_acquired_or_full_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/CHECKS.json",
+      "bytes": 5468,
+      "sha256": "19dab3577700c7f0149a91bc249a7fb34d65f46a7af03b76f0d2616763fe3177",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/IDENTITIES.json",
+      "bytes": 2319,
+      "sha256": "18e38685db7fd1a60e7b0414af82037b3358647a79c4637e95b321b024f52ab1",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PRESERVED_BASE.json",
+      "bytes": 65811,
+      "sha256": "3899107d10c11f7d537fd07ffa976769d118734e7539c9d8f2bb965ad5c22e17",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PROVENANCE.json",
+      "bytes": 1392,
+      "sha256": "c3461a961c2c0ed697e54eec2a6ba643ceccfecd53fa69b5e05c4ea3542755c0",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/READER_CORRECTION.json",
+      "bytes": 473,
+      "sha256": "d72777619db7be5aa4a16602046ab153bbe55ba541efe0e834e90bfcf926faeb",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/REVIEW.md",
+      "bytes": 7387,
+      "sha256": "bf6d3d4c48cefd22b4aec65ce16c0054a3154f7f5b4f88fad31c2eb300278b7b",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/SHA256SUMS",
+      "bytes": 648,
+      "sha256": "34c6ec7e14001a0b8f81ca7f445e986933a291db0254b8c973ba6bf192706eb5",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader-r2.py",
+      "bytes": 11076,
+      "sha256": "8c47a293b30bb1a96d98a09bfb1acab27ca4021fe865366ff5f6c17a20f5036c",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader.py",
+      "bytes": 11072,
+      "sha256": "2e69acc124ad3150af6cd57d02ee370730f25a7eef4a9238ba6c561679461955",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/inspection-reader.py.txt",
+      "bytes": 7732,
+      "sha256": "1aa93559be69aadff24f6a8c879ac65a28fb72a5db41526cf9ce0332279039ab",
+      "status": "checksum_declaration_payload_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/vendor/isa.py",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "status": "held_identical_blob_hash_verified"
+    }
+  ],
+  "manifest_status_counts": {
+    "checksum_declaration_payload_unheld": 15,
+    "held_exact_path_hash_verified": 5,
+    "derived_text_identity_matches_not_acquired_or_full_read": 1,
+    "held_identical_blob_hash_verified": 1
+  },
+  "native_ELF_or_code_artifact_acquired": false,
+  "upstream_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five new complete files/13638 bytes read;5556-byte previously credited contract recovered and reread with no new semantic credit.",
+    "Complete retained diff applies exactly to held R2 source and reconstructs the declared variant source hash/Git identity; full variant source acquisition/reading is deferred.",
+    "Restricted AST comparison changes only three generated consumer header fields; all other AST nodes agree, without imports, source execution or native generation.",
+    "Source-unit manifest and owner records preserve historical source-only status, consumed attempts and pending parent review; later result directories exist in the pin and are not reviewed or reconciled as current outcomes here.",
+    "Twenty-two manifest records bind tree lengths and classify held exact/alias hashes,derived source identity and unheld checksum declarations separately.",
+    "Changed consumer RW mapping does not change builder owned-state/input/count bounds,relocate source immediates,fit the decoder or establish runtime/code-map equality.",
+    "No native artifact acquisition/emission/execution,model invocation,live process scan,workstation activation or recipient acceptance occurred; historical ownership does not transfer authority."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/bootstrap.py",
+      "bytes": 24745,
+      "intended_review": "complete_profile_bootstrap_and_author_static_review_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md",
+      "bytes": 4294,
+      "intended_review": "complete_profile_bootstrap_and_author_static_review_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/AUTHOR_STATIC_CHECKS.json",
+      "bytes": 3948,
+      "intended_review": "complete_profile_bootstrap_and_author_static_review_data_without_execution"
+    }
+  ],
+  "next_scope_bytes": 32987,
+  "public_contribution_checks": [
+    "five new full readings and prior contract recovery with no duplicate credit",
+    "exact text diff, derived source identity and three-value AST delta passed",
+    "manifest custody classes,dated source status and runtime compatibility remain distinct",
+    "historical task/path privacy,coverage,next source scope,links and git diff --check passed"
+  ]
+}

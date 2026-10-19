@@ -329,6 +329,8 @@ The [expected-map corpus closeout](source-review/base12-builder-map-corpus-close
 
 The [complete fixture evidence inventory](source-review/base12-builder-fixture-boundary-closeout.md) makes local closeouts accountable to a residual inventory. An ELF-named output slot can contain sentinel text; pinned empty identity differs from acquisition of an empty path. Preserve reviewed content, mechanical custody, unacquired declarations and native payload gaps separately so completed metadata layers do not become whole-fixture or runtime completion claims.
 
+The [fixed decoder-output profile foundation](source-review/base12-decoder-profile-foundation.md) isolates a three-field consumer mapping change while preserving source language and builder bounds. Identical code/map bytes can retain incompatible absolute-address assumptions. Bind a narrow source delta exactly, and keep its dated source-only status separate from later unreviewed results, current ownership and runtime compatibility.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

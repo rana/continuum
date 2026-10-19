@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-19T15:35:51.910139+00:00",
+  "caller_interval_seconds": 16.8086002219934,
+  "timing_scope": "Host interval from submission marker through outcome capture, including caller/tool overhead; not model compute time.",
+  "tool_result_bytes": 378,
+  "tool_result_sha256": "3d5424a01f724dc98809f674d70b3298019b0e31c8471a13eb33eb3f3a6b8c72"
+}

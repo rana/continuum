@@ -221,6 +221,8 @@ The [packaging-boundary return](source-review/base12-packaging-boundary.md) dist
 
 The [packet-custody return](source-review/base12-packet-custody.md) binds a retained archive digest and member inspection to one consumed byte buffer, with pinned total size and membership checked before decompression. All 127 member identities agree, but 44 nonempty packet files remain semantically unread. Continuum should track byte custody, structural parsing and semantic review as separate evidence rather than letting automated acquisition inflate comprehension. No packaged code or historical effect ran.
 
+The [transport-controls return](source-review/base12-transport-controls.md) distinguishes response-body allowance from EOF, synced request intent from a sent request, and per-file installation from batch/receipt success. A later failure may coexist with visible published bytes. Continuum should preserve those partial-effect states and reconcile them before retries. Twenty-six saved fixture names and five gate identities bind; no fixture, transport or historical run was repeated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

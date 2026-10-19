@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "source_baseline": "95b16e6b07721fd2bab7bee45de1a1a16e453587",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 7,
+  "verified_source_bytes": 53398,
+  "python_syntax_parsed_without_execution": 2,
+  "gate_payload_bindings": [
+    {
+      "gate_field": "helper_sha256",
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/transport_prefetch.py",
+      "bytes": 18159,
+      "sha256": "1f99579859df7c80b8e26232e415a782c8c909364060ad0b08c58a3753786c14",
+      "matched": true
+    },
+    {
+      "gate_field": "test_source_sha256",
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/test_transport_prefetch.py",
+      "bytes": 26109,
+      "sha256": "87850d350b0d76ccdea9c36fe414e131826bee65c80930920b0ca3372c19aece",
+      "matched": true
+    },
+    {
+      "gate_field": "wrapper_sha256",
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/envelope.py",
+      "bytes": 13706,
+      "sha256": "cb286da6fbd582b8b88720c040d3dc193b733d39932321dfb1bf992d6f3ab815",
+      "matched": true
+    },
+    {
+      "gate_field": "fixture_envelope_receipt_sha256",
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/receipt.json",
+      "bytes": 1595,
+      "sha256": "f544a6f09cda18c24cd882abfe6dc2730c7009b24e303d490c0722e8e2c79f2c",
+      "matched": true
+    },
+    {
+      "gate_field": "fixture_log_sha256",
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/stderr.txt",
+      "bytes": 4111,
+      "sha256": "68e9c4640e59c4ff6eb6cd36fed023538f06bb323d56c7f515a336ab7c98f88d",
+      "matched": true
+    }
+  ],
+  "prior_outcome_payload_matches_helper_and_authorization": true,
+  "manifest_identity_is_declared_only_no_payload_acquired": true,
+  "source_fixture_test_method_names": [
+    "test_all_36_small_fixtures_have_at_most_four_active_gets_and_no_retry",
+    "test_atomic_install_race_cannot_clobber_another_file",
+    "test_broken_destination_symlink_is_rejected",
+    "test_concurrent_global_budget_counts_received_bytes_including_failed_attempts",
+    "test_declared_oversize_is_rejected_before_body",
+    "test_default_connection_has_fixed_host_tls_and_ignores_proxy_environment",
+    "test_encoded_response_is_rejected_before_body",
+    "test_exact_size_rejects_short_body_even_with_matching_hash",
+    "test_existing_destination_is_never_overwritten",
+    "test_expired_file_deadline_stops_without_payload_or_retry",
+    "test_expired_scheduling_deadline_starts_no_requests",
+    "test_hash_mismatch_retains_partial_without_installing",
+    "test_incomplete_read_partial_is_counted_hashed_preserved_and_redacted",
+    "test_initial_journal_sync_failure_starts_no_get_and_redacts_error",
+    "test_known_length_premature_eof_is_logged_as_prefix_not_complete",
+    "test_load_plan_authored_inventory_pins_tampering_and_extra_files",
+    "test_load_plan_rejects_unapproved_paths_without_inspecting_them",
+    "test_production_scope_is_exact_and_test_records_excluded",
+    "test_read_exception_retains_prior_bytes_without_logging_exception_payload",
+    "test_redirect_is_not_followed_or_retried_and_stops_later_work",
+    "test_rejects_bad_scope_before_request",
+    "test_success_has_exact_bytes_hash_logs_and_private_modes",
+    "test_transfer_encoding_is_rejected_even_with_content_length",
+    "test_unadvertised_oversize_is_counted_bounded_and_not_published",
+    "test_unknown_length_at_cap_fails_closed_without_extra_probe",
+    "test_unknown_length_smaller_than_cap_can_finish_at_eof"
+  ],
+  "retained_log_method_names_equal_source": true,
+  "retained_methods_passed": 26,
+  "retained_fixture_inner_seconds": 0.085,
+  "retained_fixture_envelope_wall_seconds": 0.2049406670003009,
+  "retained_fixture_wait4_CPU_seconds": 0.146621,
+  "retained_fixture_pass": true,
+  "fixture_executed_here": false,
+  "transport_executed_here": false,
+  "source_line_anchors": {
+    "initial_journal_before_network": 228,
+    "GET_request": 234,
+    "complete_digest_check": 294,
+    "payload_sync": 298,
+    "install_link": 305,
+    "published_flag": 306,
+    "destination_directory_sync": 309,
+    "remove_partial_alias": 312,
+    "mark_complete": 313,
+    "terminal_receipt": 379,
+    "helper_digest_at_receipt": 370,
+    "unknown_length_cap_stop": 263
+  },
+  "source_function_keyword_defaults": {
+    "connection_factory": null,
+    "max_workers": 4,
+    "timeout": 30,
+    "file_seconds": 300,
+    "scheduling_seconds": 1600
+  },
+  "production_limits": {
+    "single_cpu": 0,
+    "address_space_bytes": 2147483648,
+    "per_process_cpu_seconds": 120,
+    "aggregate_cpu_early_stop_seconds": 110,
+    "wall_seconds": 1700,
+    "max_https_requests": 4,
+    "payload_bytes": 41943040,
+    "dat_exact_bytes": 1950000,
+    "header_max_bytes": 16384,
+    "operation_timeout_seconds": 30,
+    "cooperative_file_deadline_seconds": 300,
+    "cooperative_scheduling_deadline_seconds": 1600
+  },
+  "remaining_names_match_prior_outcome": true,
+  "recovery_file_count": 36,
+  "recovery_record_count": 18,
+  "retained_file_count": 44,
+  "heldout_test_record_overlap": 0,
+  "derived_maximum_recovery_payload_bytes": 35394912,
+  "global_payload_cap_bytes": 41943040,
+  "derived_cap_headroom_bytes": 6548128,
+  "unknown_length_exact_cap_rejected_without_probe": true,
+  "per_file_publication_is_distinct_from_batch_success": true,
+  "post_link_failure_can_preserve_published_true": true,
+  "initial_fsynced_journal_precedes_GET": true,
+  "atomic_batch_receipt_publication_established": false,
+  "programmatic_original_source_execution": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Seven retained texts fully read; two Python files syntax/AST-inspected without import or execution.",
+    "Fixture names, gate pins, log and envelope agree; no fixture, socket, recovery request or historical scientific run was replayed.",
+    "Budget reservation protects delivered HTTP body bytes under the client read contract, not TLS/headers/whole-process memory.",
+    "Operation and cooperative deadlines require the separately configured external wall envelope; generic injectable batch options are not the production entrypoint policy.",
+    "Per-file no-overwrite link publication is not atomic batch or receipt publication; post-link failures can retain visible bytes and a published flag with failed status.",
+    "Initial journal fsync precedes GET, but no durable directory/terminal receipt transaction or automated resumption is established.",
+    "Pinned-file digest and later parsing still assume stable private paths; no replacement or crash experiment ran.",
+    "Historical authorization and local gate records do not grant fresh authority or establish production completion."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/receipt.json",
+      "bytes": 29202,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/attempts.jsonl",
+      "bytes": 39217,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/invocation.json",
+      "bytes": 1158,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/effective-before-exec.json",
+      "bytes": 238,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/receipt.json",
+      "bytes": 2013,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 71828,
+  "public_contribution_checks": [
+    "seven exact source identities and two syntax parses passed without module execution",
+    "five gate payload bindings and all 26 retained fixture method names match",
+    "production/default policy comparisons, scope arithmetic and publication ordering passed",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

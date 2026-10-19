@@ -32,3 +32,15 @@ Rust is the preferred initial language because it supports native code, explicit
 
 The first release makes no comparative throughput claim. Reopen this decision if measured metadata contention, storage layout, memory amplification, or portability costs dominate representative workloads.
 
+## Why Rust is useful for this experiment
+
+The decision starts with the work the core must do: preserve exact identities, represent operation states explicitly, and recover the same local acceptance result after an interrupted acknowledgement. Rust lets us express parts of that contract as types while compiling the implementation to native machine code. The implementation uses a dedicated object-ID type, enums for states and outcomes, explicit fallible results, and a clearly owned storage connection. These checks help agents change the core coherently; they do not establish that an authored claim is true or prove a distributed protocol correct.
+
+Rust's ownership rules are checked by the compiler rather than a tracing garbage collector. Its usual compiler backend is LLVM, with an established optimization pipeline. These properties support the choice, but they are not a measured performance result for Continuum. Sources: [ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html), [compiler code generation](https://rustc-dev-guide.rust-lang.org/backend/codegen.html).
+
+The retained 20 local scenario tests exercise correctness and process-crash recovery in the test profile. No representative release-build throughput or tail-latency benchmark has been run. Likely places to investigate include transaction frequency, writer contention, object loading and hashing, allocation and copying, and repeated context rendering. These are profiling candidates, not diagnosed bottlenecks. At the workflow level, avoided repeated investigation and reliable continuation also belong in the performance objective.
+
+Assembly remains available for a bounded, measured need. Rust supports inline assembly on supported targets, so a useful optimized kernel would not require rewriting the whole project. Before introducing one, require a representative CPU profile, an end-to-end improvement over an appropriate optimized baseline, and preserved object, error, and recovery semantics. Source: [Rust inline assembly reference](https://doc.rust-lang.org/reference/inline-assembly.html).
+
+The longer-lived commitment is the documented data format and behavioral contract. SQLite, implementation language, and selected kernels can change behind those contracts when evidence justifies the change.
+

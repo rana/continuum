@@ -1,0 +1,47 @@
+{
+  "schema": "continuum.publication.source_commit_map.v1",
+  "repository": "https://github.com/rana/continuum",
+  "date_utc": "2026-10-19",
+  "method": "GitHub Git data API import of exact prepared source trees",
+  "bootstrap_commit": "32e3da0c4849e6148cb766b5d77df57879716c8d",
+  "source_tree_identities_preserved": true,
+  "original_commit_metadata_and_parent_links_preserved": false,
+  "snapshots": [
+    {
+      "local_commit": "e191aaf559e388c65df4373d9850b8f3ccc58ffe",
+      "public_commit": "2466608f25568ea78e967aed3cc0ac2308d1b960",
+      "git_tree": "6e1d214a761be265adff692f4278029bf742c219",
+      "tracked_files": 55
+    },
+    {
+      "local_commit": "4fec33bf2cc910fc02b254bc36f9dbe724e78336",
+      "public_commit": "256f37c2f92a0f79da2e1859e9c7e1be64a792a1",
+      "git_tree": "8ef2563eef6c58b20d13c9e2b041975f00b50ca0",
+      "tracked_files": 70,
+      "role": "Exact source tree used by the recorded fresh Claude continuation"
+    },
+    {
+      "local_commit": "2d82a730a03cf4e201ce075347b227f2ecfbd463",
+      "public_commit": "3439f61989d344ff89df1b0cad4ea7fd119918e7",
+      "git_tree": "c9a222a2ad691b844af17f02ec6d5bbcc314143f",
+      "tracked_files": 95
+    }
+  ],
+  "original_history_custody": {
+    "prepublication_archive": "Continuum_Repository.zip contains continuum-history.bundle",
+    "local_branch": "local-research-history"
+  },
+  "first_public_project_ci": {
+    "commit": "3439f61989d344ff89df1b0cad4ea7fd119918e7",
+    "run_id": 39199405358,
+    "url": "https://github.com/rana/continuum/actions/runs/39199405358",
+    "status": "completed",
+    "conclusion": "success",
+    "checks": ["formatting", "strict Clippy", "all-feature tests", "acceptance demo"]
+  },
+  "limits": [
+    "Tree identity preserves paths, file modes, and blob bytes; it does not preserve commit metadata.",
+    "GitHub Actions success is correctness evidence for the configured checks, not a high-load benchmark.",
+    "This record does not claim a packaged release or an activated remote service."
+  ]
+}

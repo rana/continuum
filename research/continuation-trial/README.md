@@ -43,4 +43,6 @@ There was one call, without randomization, a blinded control condition, or a sta
 
 The JSON inputs, source manifest, accepted-head observation, generated rendering, model response, extracted acknowledgement, and CLI outputs are retained here. The referenced source commit is in the local Git history included with the repository's recoverable archive. A source-only ZIP without that history cannot independently resolve a local commit identifier; use the supplied Git bundle when restoring that archive.
 
+After publication to GitHub, the same exact source tree is also available at public commit `256f37c2f92a0f79da2e1859e9c7e1be64a792a1`. The [publication map](../publication/source-commit-map.json) relates this public commit to the retained local source commit. Their Git tree identities match; their commit metadata and parent links differ. The original trial records have not been rewritten to substitute a later public commit ID.
+
 The repository's [synthetic context example](../../examples/context_handoff.py) provides a turnkey local replay of the same custody and staleness mechanics. Re-executing this Claude call would be a new model sample and potentially a new paid operation. It is not required to inspect or verify the retained records, and it is not performed automatically.

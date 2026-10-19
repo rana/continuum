@@ -41,10 +41,14 @@ The precise source scope and transferable findings live in [research lessons](do
 
 ## Publication status
 
-A local read-write Git repository is committed, and a recoverable foundation archive is saved. The user briefly deferred GitHub, then explicitly resumed access setup and repository creation after returning to their desktop on 2026-10-18 America/Los_Angeles. The connected GitHub service recognizes the intended account; browser sign-in remains incomplete at this checkpoint. No remote Continuum repository has been created or claimed as published. Publication is authorized, but authentication must finish before repository creation can proceed.
+The original project is published at [rana/continuum](https://github.com/rana/continuum), a public MIT repository. GitHub sign-in completed, and connected read/write operations created the repository and published all 95 prepared files. The first published project commit is `3439f61989d344ff89df1b0cad4ea7fd119918e7`.
+
+All three local development snapshots were imported with identical Git tree identities. The GitHub API assigned new commit metadata and parent links, so the public commit IDs differ from the local research IDs. The [source-commit map](research/publication/source-commit-map.json) records the exact correspondence, including the source used by the fresh Claude continuation. Original local history remains in the recoverable archive and the local `local-research-history` branch. Historical context packs and transcripts retain their original capture-time claims.
+
+The first [GitHub Actions run](https://github.com/rana/continuum/actions/runs/39199405358) completed successfully on that project commit: formatting, strict Clippy, all-feature tests, and the acceptance demo. This confirms those checks on GitHub's hosted runner; it adds no high-load or comparative performance evidence. No packaged release or remotely deployed service is claimed.
 
 ## Next useful unit
 
-Publish the reviewed project once the requested account access is established. The [fresh-model trial](research/continuation-trial/README.md) and the next bounded source-review group are complete. The full upstream reading request and a controlled model-performance comparison remain open.
+Continue the next bounded source-review group and define a representative workload for release-build measurements before expanding the storage engine. The [fresh-model trial](research/continuation-trial/README.md) is complete. The full upstream reading request and a controlled model-performance comparison remain open.
 
 Before adding a remote executor or model runner, specify durable dispatch and uncertain-outcome reconciliation. Add resource measurements before a fleet scheduler.

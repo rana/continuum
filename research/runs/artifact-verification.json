@@ -1,0 +1,25 @@
+{
+  "record_kind": "artifact_verification",
+  "recorded_at": "2026-10-19T03:13:39.851448+00:00",
+  "checks": {
+    "rust_and_example_hashes_match_independently_verified_sources": true,
+    "structural_schemas_valid": 5,
+    "schema_instances_valid": 20,
+    "protocol_definition_digests_valid": 4,
+    "historical_markdown_conversion_digests_unchanged": 2,
+    "claude_04_input_and_output_byte_identity_checked": true,
+    "relative_nonhistorical_document_links_checked": 119,
+    "missing_relative_links": 0,
+    "credential_pattern_scan": {
+      "files": 94,
+      "matches": [],
+      "scope": "Targeted known credential formats; a content review and path-scope check also informed the public package."
+    }
+  },
+  "limits": [
+    "Historical conversions remain exact and preserve their original claims; they are not rewritten as current status.",
+    "The source-review ledgers retain incomplete whole-repository reading and absent live Prime Radiant checkout.",
+    "Schema validity and document links are consistency checks, not tests of model quality or external authority.",
+    "No remote repository or GitHub Actions run is claimed."
+  ]
+}

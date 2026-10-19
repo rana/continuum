@@ -1,0 +1,156 @@
+[
+  {
+    "command": "init",
+    "result": {
+      "database": "/workspace/scratch/46b64ecbb5a5/continuum-real-continuation-20261019/work.db",
+      "schema_version": 1
+    },
+    "exit_code": 0
+  },
+  {
+    "command": "accept",
+    "result": {
+      "receipt": {
+        "observed": null,
+        "outcome": "accepted",
+        "request": {
+          "acceptor": "local-trial",
+          "candidate": "sha256:db9c9346030bb64a480074bdcdc8295e46662732da97d196a201cf99d9be9368",
+          "expected": null,
+          "operation_id": "offer-fresh-claude-01",
+          "target": "continuum-continuation"
+        },
+        "resulting": {
+          "generation": 1,
+          "root": "sha256:db9c9346030bb64a480074bdcdc8295e46662732da97d196a201cf99d9be9368"
+        },
+        "sequence": 1
+      },
+      "replayed": false
+    },
+    "exit_code": 0
+  },
+  {
+    "command": "prepare-context",
+    "result": {
+      "context_pack": "sha256:788a3edebfeb8a4bc8d2f44c8a425e73983463eaf17d1fee8429518e59e60f0b",
+      "freshness": {
+        "observed": {
+          "generation": 1,
+          "root": "sha256:db9c9346030bb64a480074bdcdc8295e46662732da97d196a201cf99d9be9368"
+        },
+        "status": "matches_at_observation"
+      },
+      "manifest": {
+        "anchor": {
+          "acceptor": "local-trial",
+          "expected": {
+            "generation": 1,
+            "root": "sha256:db9c9346030bb64a480074bdcdc8295e46662732da97d196a201cf99d9be9368"
+          },
+          "target": "continuum-continuation",
+          "work_state_path": "work-state.json"
+        },
+        "budget_method": "utf8_bytes_including_newlines",
+        "handoff_id": "handoff-claude-fresh-01",
+        "included": [
+          {
+            "id": "continuum-project",
+            "kind": "work_state",
+            "reason": "work_identity"
+          },
+          {
+            "id": "objective-continuing-engine",
+            "kind": "objective",
+            "reason": "objective_and_constraints"
+          },
+          {
+            "id": "attempt-context-verification",
+            "kind": "attempt",
+            "reason": "attempt_recovery"
+          },
+          {
+            "id": "attempt-create-repository",
+            "kind": "attempt",
+            "reason": "attempt_recovery"
+          },
+          {
+            "id": "decision-github-deferred",
+            "kind": "decision",
+            "reason": "optional_history"
+          },
+          {
+            "id": "decision-github-resumed",
+            "kind": "decision",
+            "reason": "active_decision"
+          },
+          {
+            "id": "decision-native-core",
+            "kind": "decision",
+            "reason": "active_decision"
+          },
+          {
+            "id": "decision-phase-two-scope",
+            "kind": "decision",
+            "reason": "active_decision"
+          },
+          {
+            "id": "unknown-auth-completion",
+            "kind": "uncertainty",
+            "reason": "unresolved_uncertainty"
+          },
+          {
+            "id": "unknown-model-benefit",
+            "kind": "uncertainty",
+            "reason": "unresolved_uncertainty"
+          },
+          {
+            "id": "unknown-source-coverage",
+            "kind": "uncertainty",
+            "reason": "unresolved_uncertainty"
+          },
+          {
+            "id": "handoff-claude-fresh-01",
+            "kind": "handoff",
+            "reason": "offered_handoff"
+          }
+        ],
+        "limits": [
+          "Authored claims are unverified; current action authority and external-effect truth are not established.",
+          "Conditional guidance assumes the authored dispatch state is accurate; this store is not an external dispatch ledger.",
+          "Only this WorkState's declared records and direct object references are checked; source files are not materialized.",
+          "Whole records only; unrequired historical decisions may be omitted; no truncation or token estimate.",
+          "Head freshness is observed once; later effects need action-time authority and expected-head checks.",
+          "Context acknowledgements check references, not authenticated authorship, delivery, understanding, acceptance, or completion."
+        ],
+        "max_bytes": 16384,
+        "omitted": [],
+        "rendered": "sha256:caecac16fd8cf69e71605e4d524b198947f758e2a89b227286770fa8d2abac5b",
+        "rendered_bytes": 8321,
+        "schema": "continuum.context_pack.v1",
+        "selector_revision": "continuum.whole_records.v1",
+        "source_snapshot": "sha256:40533f98d5945bee13e1ee83c72fd4c7b1ffa39127a4d5c3fb4ccf74c8f8a0a9",
+        "work_state": "sha256:425e38e8b58e4b5207921b30a3cc17b5eabeba4c9f0feddbd742aec92b33089d",
+        "work_state_id": "continuum-project"
+      }
+    },
+    "exit_code": 0
+  },
+  {
+    "command": "verify-current-context",
+    "result": {
+      "action_authority_verified": false,
+      "context_pack": "sha256:788a3edebfeb8a4bc8d2f44c8a425e73983463eaf17d1fee8429518e59e60f0b",
+      "exact_projection_verified": true,
+      "freshness": {
+        "observed": {
+          "generation": 1,
+          "root": "sha256:db9c9346030bb64a480074bdcdc8295e46662732da97d196a201cf99d9be9368"
+        },
+        "status": "matches_at_observation"
+      },
+      "rendered_bytes": 8321
+    },
+    "exit_code": 0
+  }
+]

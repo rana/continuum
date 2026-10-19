@@ -15,9 +15,10 @@ Continuum is a native work and evidence engine for continuing AI engineering. Th
 - Local SQLite expected-root/generation acceptance, operation identity binding, durable retries, and receipt queries.
 - Four agent-guided protocols: Progress Brief, Holographic Walk, Research Record, Bounded Research Loop.
 - Versioned digest-pinned registry, protocol schemas and fixtures, and a proposed execution-metadata schema.
-- Three further actual Claude Opus 5.5 design exchanges, with supplied inputs, visible responses, metadata, adopted proposals, and retained corrections. The original briefs also retain their historical exchanges.
+- Four further actual Claude Opus 5.5 exchanges, with supplied inputs, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the original briefs also retain their historical exchanges.
 - Exact WorkState records, bounded whole-record context selection, retained rendered packs, historical and current-anchor verification, and explicit handoff acknowledgement-reference checks.
 - A reproducible context example using independently started CLI processes.
+- One actual fresh Claude continuation from an 8,321-byte pack, with an exact model-authored acknowledgement whose references passed native verification.
 - Current architecture, native-core decision, research experiment, and phased roadmap.
 
 ## Validation
@@ -34,7 +35,7 @@ See the historical [foundation verification](research/runs/foundation-verificati
 
 Base12's full pinned tree has 5,593 files / 180,332,790 bytes. The cumulative review acquired 539 exact file paths and completed semantic reading of 161 distinct blobs (1,226,434 bytes), with 46 additional byte-identical alias paths. It distinguishes full inventory, programmatic inspection, and actual semantic reading. The requested whole-repository reading is incomplete; the [extended ledger](docs/source-review/base12-coverage-extended.json) preserves the precise remaining scope.
 
-Prime Radiant's live checkout was not discovered through available repository access. The current retained research kit was reviewed instead: 193 files / 8,984,055 uncompressed bytes, with complete archive identity verification and detailed source/document reading. All eight retained dialogue captures, eight associated receipts, and three prose reports now have complete semantic coverage. The [follow-up report](docs/source-review/prime-followup.md) separates direct reading, exact quotation reuse, historical source diffs, and the remaining structured and generated material.
+Prime Radiant's live checkout was not discovered through available repository access. The current retained research kit was reviewed instead: 193 files / 8,984,055 uncompressed bytes, with complete archive identity verification. The latest checkpoint has 86 complete semantic readings, seven separate complete historical source diffs, and two separately classified generated-manifest checks. All eight retained dialogue captures, eight associated receipts, three prose reports, and all 159 source-inventory records were read. The [latest audit](docs/source-review/prime-audits.md) keeps the 98 remaining numerical, visual, and binary files explicit; authored annotations in numerical records are among the gaps.
 
 The precise source scope and transferable findings live in [research lessons](docs/research-lessons.md). No upstream code was executed or imported into this public project.
 
@@ -44,6 +45,6 @@ A local read-write Git repository is committed, and a recoverable foundation arc
 
 ## Next useful unit
 
-Use the implemented context path for a fresh Claude continuation of this real project, retaining its exact exposure and response. This is an observational trial, not a controlled model-performance comparison. Finish the next bounded source-review group, reconcile the documentation, and publish once access is established.
+Publish the reviewed project once the requested account access is established. The [fresh-model trial](research/continuation-trial/README.md) and the next bounded source-review group are complete. The full upstream reading request and a controlled model-performance comparison remain open.
 
 Before adding a remote executor or model runner, specify durable dispatch and uncertain-outcome reconciliation. Add resource measurements before a fleet scheduler.

@@ -1,0 +1,17 @@
+{
+  "acknowledgement": "sha256:e92192b61674445a628011c32ed4f16e826eb3814530eb4b99ec7196bd485685",
+  "context_pack": "sha256:788a3edebfeb8a4bc8d2f44c8a425e73983463eaf17d1fee8429518e59e60f0b",
+  "external_effect_verified": false,
+  "freshness": {
+    "observed": {
+      "generation": 1,
+      "root": "sha256:db9c9346030bb64a480074bdcdc8295e46662732da97d196a201cf99d9be9368"
+    },
+    "status": "matches_at_observation"
+  },
+  "handoff_id": "handoff-claude-fresh-01",
+  "recipient_authenticated": false,
+  "recipient_worker": "claude-reviewer",
+  "reference_consistency_verified": true,
+  "understanding_verified": false
+}

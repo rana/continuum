@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "record_kind": "recorded_model_execution",
+  "attempt_id": "continuation-claude-04",
+  "recorded_at": "2026-10-19T03:04:18.859450+00:00",
+  "executor": {
+    "vendor": "anthropic",
+    "service": "aws-bedrock",
+    "adapter": "claude-collaborator",
+    "revision": null
+  },
+  "requested": {
+    "model_selector": "opus",
+    "settings": {
+      "claude_collaborator.effort": "high"
+    },
+    "configuration_history_ref": null
+  },
+  "observed": {
+    "metadata_source": "Claude Collaborator returned metadata",
+    "model_id": "claude-opus-5-5",
+    "model_revision": null,
+    "provider_request_id": null,
+    "effective_settings_known": false,
+    "configured_route": "us.anthropic.claude-opus-5-5",
+    "reported_settings": {
+      "claude_collaborator.configured_effort": "high",
+      "claude_collaborator.thinking": "adaptive"
+    },
+    "usage": {
+      "input_tokens": 4028,
+      "output_tokens": 1257,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false
+  },
+  "inputs": {
+    "request_record_ref": "docs/collaboration/requests/claude-04.json",
+    "source_exposure": "Exactly the 8,321-byte generated context JSONL plus the saved short task request; no prior_exchange. Source object identities were supplied, but source files and referenced receipt bytes were not supplied. The collaborator reports no server memory.",
+    "context_pack_ref": "sha256:788a3edebfeb8a4bc8d2f44c8a425e73983463eaf17d1fee8429518e59e60f0b",
+    "source_snapshot_ref": "sha256:40533f98d5945bee13e1ee83c72fd4c7b1ffa39127a4d5c3fb4ccf74c8f8a0a9"
+  },
+  "status": "completed",
+  "output_ref": "docs/collaboration/2026-10-19-claude-04.md",
+  "limitations": [
+    "Single observed continuation, without randomized controls or a model-performance estimate.",
+    "The supplied state is coordinator-authored, with its factual and currentness limits explicitly included.",
+    "The receiving model had no direct source, database, browser, or executor tools.",
+    "The coordinator extracted the model-authored acknowledgement object unchanged and submitted it as a proxy; recipient authentication and understanding are not verified.",
+    "The model returned a Markdown JSON fence despite a JSON-only request; extraction is recorded rather than hidden.",
+    "A suggested fresh local head check cannot atomically authorize or make a GitHub side effect idempotent; see the retained coordinator correction.",
+    "Reported model identity is not proof of hidden weights; no raw hidden reasoning retained."
+  ]
+}

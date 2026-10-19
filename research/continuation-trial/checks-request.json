@@ -1,0 +1,10 @@
+{
+  "record_kind": "retrospective_command_description",
+  "commands": [
+    "cargo fmt --check",
+    "cargo clippy --locked --offline --all-targets --all-features -- -D warnings",
+    "cargo test --locked --offline --all-features",
+    "python3 examples/context_handoff.py --binary target/debug/continuum --output <fresh-output-directory>"
+  ],
+  "note": "Commands already ran before this record was authored. This is not an instrumented dispatch receipt."
+}

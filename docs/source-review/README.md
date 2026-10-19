@@ -10,7 +10,7 @@ The [rounded-operation and native-launch follow-up](base12-followup.md) adds 47 
 
 The remaining 5,386 paths, representing 4,268 distinct blobs, have no complete semantic-review claim. The generated 144,160-byte native static inventory received full mechanical relation checks, which remain separate from semantic reading. Source reading, binary inspection, numerical evidence interpretation, and reproduction are still distinct tasks.
 
-The [Prime follow-up](prime-followup.md) records complete reading of all eight retained dialogue captures, eight associated receipts, and three prose reports. Combined kit coverage is 76 complete semantic readings and seven separate historical source diff reviews. The report classifies the remaining 110 files explicitly, including authored structured material among the gaps. The live checkout remains unavailable.
+The [Prime follow-up](prime-followup.md) records complete reading of all eight retained dialogue captures, eight associated receipts, and three prose reports. The [subsequent audit](prime-audits.md) completes the authored source audits, preparatory contracts, all 159 source-inventory records, and the historical automation receipt. Latest mutually exclusive kit coverage is 86 complete semantic readings, seven complete source diffs, two separately classified generated-manifest checks, and 98 remaining numerical, visual, or binary files. The live checkout remains unavailable.
 
 ## Initial checkpoint retained below
 

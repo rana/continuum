@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "text": "```json\n{\n  \"orientation\": {\n    \"current_objective\": \"Develop and publish Continuum, an MIT-licensed native work and evidence engine for continuing AI engineering across conversations, models, and workstations. The goal is met when a verified increment, its evidence, and its limitations are retained and the authorized public GitHub repository is created and populated.\",\n    \"observed_completion\": \"Per an authored report (receipt_recorded, not independently verified here): formatting, strict linting, all 20 native tests (9 context, 9 invariant, 2 process-crash) and the CLI context example passed under the retained source hashes. No throughput or model-benefit measurement exists. I have not seen the receipt or the source objects.\",\n    \"publication_state\": \"Not published. Repository creation is authorized but never_dispatched (no receipt). At capture, browser sign-in was awaiting device approval. The GitHub connector exposed no repository-creation operation. The old GitHub deferral is historical and superseded by decision-github-resumed.\",\n    \"next_bounded_step\": \"An agent with action-time authority should obtain a definitive result from the existing authentication flow without starting a new credential flow. If sign-in succeeded and a creation capability exists, issue the single create-continuum-remote request after a fresh expected-head check. Otherwise, continue local work: inspect the recorded verification receipt, then draft the phase-two external-dispatch/reconciliation contract.\",\n    \"most_important_unknown\": \"unknown-auth-completion: whether account verification has completed since capture. Publication is blocked on it, and this pack holds only a point-in-time authored observation.\"\n  },\n  \"acknowledgement\": {\n    \"schema\": \"continuum.context_acknowledgement.v1\",\n    \"id\": \"ack-claude-reviewer-handoff-claude-fresh-01-001\",\n    \"context_pack\": \"sha256:788a3edebfeb8a4bc8d2f44c8a425e73983463eaf17d1fee8429518e59e60f0b\",\n    \"handoff_id\": \"handoff-claude-fresh-01\",\n    \"recipient_worker\": \"claude-reviewer\",\n    \"included_ids\": [\n      \"continuum-project\",\n      \"objective-continuing-engine\",\n      \"attempt-context-verification\",\n      \"attempt-create-repository\",\n      \"decision-github-deferred\",\n      \"decision-github-resumed\",\n      \"decision-native-core\",\n      \"decision-phase-two-scope\",\n      \"unknown-auth-completion\",\n      \"unknown-model-benefit\",\n      \"unknown-source-coverage\",\n      \"handoff-claude-fresh-01\"\n    ],\n    \"omitted_ids\": [],\n    \"note\": \"Acknowledges receipt of the listed records by reference, including required decisions decision-github-resumed, decision-native-core and decision-phase-two-scope. This does not claim execution, verification of authored claims, publication, authentication status, or acceptance.\"\n  }\n}\n```",
+  "actual_model": "claude-opus-5-5",
+  "configured_model": "us.anthropic.claude-opus-5-5",
+  "configured_effort": "high",
+  "thinking": "adaptive",
+  "usage": {
+    "input_tokens": 4028,
+    "output_tokens": 1257,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "stop_reason": "end_turn",
+  "truncated": false,
+  "input_modality": "text-only",
+  "server_memory": "none",
+  "image_count": 0,
+  "images": []
+}

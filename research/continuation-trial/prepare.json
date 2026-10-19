@@ -1,0 +1,14 @@
+{
+  "schema": "continuum.prepare_context.v1",
+  "work_state": "sha256:425e38e8b58e4b5207921b30a3cc17b5eabeba4c9f0feddbd742aec92b33089d",
+  "max_bytes": 16384,
+  "anchor": {
+    "acceptor": "local-trial",
+    "target": "continuum-continuation",
+    "expected": {
+      "generation": 1,
+      "root": "sha256:db9c9346030bb64a480074bdcdc8295e46662732da97d196a201cf99d9be9368"
+    },
+    "work_state_path": "work-state.json"
+  }
+}

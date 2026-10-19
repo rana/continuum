@@ -1,0 +1,10 @@
+{
+  "operation_id": "create-continuum-remote",
+  "action": "create_repository",
+  "owner": "rana",
+  "name": "continuum",
+  "visibility": "public",
+  "license_intent": "MIT for original project work",
+  "description": "A native work and evidence engine for continuing AI engineering.",
+  "status": "planned input; repository-creation action has not been dispatched"
+}

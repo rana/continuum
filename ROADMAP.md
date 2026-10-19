@@ -12,7 +12,7 @@ Exit: compile and run locally; retries, stale heads, concurrent candidates, and 
 
 ## 1. Continuing work across two sessions
 
-Status: the bounded native path is implemented and locally verified, including independently started CLI processes. Fresh-model continuation is the next observational trial; a controlled comparison against ordinary handoffs remains open.
+Status: the bounded native path is implemented and locally verified, including independently started CLI processes. One [fresh Claude continuation](research/continuation-trial/README.md) of this real project is recorded. A controlled comparison against ordinary handoffs remains open; the single trial is not a general performance result.
 
 Add minimal Objective, Attempt, Decision, Handoff, and ContextPack schemas plus inspection and explicit handoff receipts. Implement one budgeted context query with coverage and source references. Use it on a real project with two separately started sessions.
 

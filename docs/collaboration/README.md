@@ -1,14 +1,15 @@
 # Actual Claude collaboration
 
-The initial historical briefs contain earlier preserved Claude exchanges. This directory records three further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC.
+The initial historical briefs contain earlier preserved Claude exchanges. This directory records four further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC.
 
 | Exchange | Actual exposure | Result |
 |---|---|---|
 | [1](2026-10-19-claude-01.md) | Entire current user transcription and subsequent full-repository-review request, plus coordinator design and source summaries | Proposed context-linked decisions and targeted review; challenged scope; initially preferred Git as source authority |
 | [2](2026-10-19-claude-02.md) | Actual supplied Prime/Base12 excerpts, implementation facts and coverage limits, coordinator corrections, previous visible answer | Accepted the native-source direction and explicit publication operations; proposed durable effect attempts and distinction-pair experiments |
 | [3](2026-10-19-claude-03.md) | Latest user deferral of GitHub, implemented foundation, proposed context shapes, source-review findings and limits | Identified provenance and freshness risks; proposed controls for a discriminating context experiment |
+| [4](2026-10-19-claude-04.md) | Only an 8,321-byte native context rendering for the real project plus a short task request; no prior exchange or source objects | Recovered reported completion, renewed publication authorization, pending authentication, and a bounded next step; supplied an acknowledgement that passed native reference checks |
 
-The [user wording](2026-10-19-user-brief.md), exact supplied [first request](requests/claude-01.json), [second request](requests/claude-02.json), [third request](requests/claude-03.json), and [execution metadata](../../research/runs/) are retained. Responses are unedited except for surrounding provenance notes. Claude had no direct filesystem, browser, or repository tools in these exchanges.
+The [user wording](2026-10-19-user-brief.md), exact supplied [first request](requests/claude-01.json), [second request](requests/claude-02.json), [third request](requests/claude-03.json), [fourth request](requests/claude-04.json), and [execution metadata](../../research/runs/) are retained. Responses are unedited except for surrounding provenance notes. Claude had no direct filesystem, browser, or repository tools in these exchanges.
 
 ## Adopted design contributions
 
@@ -48,4 +49,12 @@ The coordinator retained three qualifications to that response:
 For experiments, a prompt containing the correct next-action label would confound representation with instruction following. The proposed evaluator should receive a neutral question, with hidden expected answers and separate raw-fact and guidance conditions. Small preserved trials can expose a specific failure; they cannot establish general model performance.
 
 These are design decisions, not a claim that the unimplemented capabilities already exist.
+
+## First real-project context continuation
+
+The [trial record](../../research/continuation-trial/README.md) contains the exact native source snapshot, work state, prepared pack, returned response, acknowledgement, native validation result, and retrospective assessment. The receiver correctly kept the old publication deferral historical and the latest authorization current, while preserving the unknown authentication result. It qualified the reported test outcome rather than pretending to have inspected the source or receipt itself.
+
+Two qualifications remain visible. The model returned a Markdown code fence despite a JSON-only request. The coordinator extracted the exact acknowledgement object substring, retained the full original response, and submitted the object as a proxy; it was not silently reserialized. The suggested fresh local expected-head check also cannot make a later GitHub action atomic or confer authority at that external service. The external effect needs its own supported preconditions, result observation, and reconciliation contract.
+
+The trial is one observed continuation with supplied authored facts. It has no randomized control, blinded comparative grading, or model-performance estimate. Native acceptance of the acknowledgement establishes reference consistency, with recipient authentication, understanding, and external-effect verification explicitly false.
 

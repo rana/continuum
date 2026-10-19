@@ -1,0 +1,22 @@
+{
+  "source_snapshot": "sha256:40533f98d5945bee13e1ee83c72fd4c7b1ffa39127a4d5c3fb4ccf74c8f8a0a9",
+  "git_commit": "4fec33bf2cc910fc02b254bc36f9dbe724e78336",
+  "context_pack": "sha256:788a3edebfeb8a4bc8d2f44c8a425e73983463eaf17d1fee8429518e59e60f0b",
+  "rendered_bytes": 8321,
+  "included_ids": [
+    "continuum-project",
+    "objective-continuing-engine",
+    "attempt-context-verification",
+    "attempt-create-repository",
+    "decision-github-deferred",
+    "decision-github-resumed",
+    "decision-native-core",
+    "decision-phase-two-scope",
+    "unknown-auth-completion",
+    "unknown-model-benefit",
+    "unknown-source-coverage",
+    "handoff-claude-fresh-01"
+  ],
+  "omitted_ids": [],
+  "source_files": 70
+}

@@ -1,0 +1,41 @@
+{
+  "record_kind": "single_fresh_context_continuation_observation",
+  "source_commit": "4fec33bf2cc910fc02b254bc36f9dbe724e78336",
+  "source_snapshot": "sha256:40533f98d5945bee13e1ee83c72fd4c7b1ffa39127a4d5c3fb4ccf74c8f8a0a9",
+  "context_pack": "sha256:788a3edebfeb8a4bc8d2f44c8a425e73983463eaf17d1fee8429518e59e60f0b",
+  "rendered_bytes": 8321,
+  "input_tokens_reported": 4028,
+  "output_tokens_reported": 1257,
+  "call_window_utc": {
+    "start": "2026-10-19 03:02:04 UTC",
+    "end": "2026-10-19 03:02:17 UTC",
+    "precision": "seconds; includes tool call overhead, not a model-speed benchmark"
+  },
+  "assessment_method": "Coordinator retrospective inspection against the supplied record; no preregistered randomized grading or control condition.",
+  "observed": {
+    "recovered_current_objective": true,
+    "qualified_test_report_as_not_independently_checked": true,
+    "kept_historical_deferral_separate_from_current_authorization": true,
+    "did_not_claim_remote_created_or_published": true,
+    "identified_auth_currentness_uncertainty": true,
+    "acknowledgement_reference_validation_passed": true,
+    "strict_json_only_output": false
+  },
+  "acknowledgement_extraction": {
+    "method": "Strip the outer Markdown code fence; preserve exact acknowledgement object substring. The standalone object bytes were not reserialized.",
+    "sha256": "250303a939a25d64223eb456e6bf5638fe8f93f113e499074c8c4cd0cc945bf3",
+    "submitted_by": "coordinating agent proxy",
+    "model_response_ref": "research/runs/claude-04-response.json"
+  },
+  "corrections": [
+    {
+      "claim": "A fresh expected-head check before the GitHub creation action.",
+      "qualification": "A local currentness check is an observation, not atomic authorization or fencing at GitHub. The provider effect needs its own supported authorization, result observation, and uncertain-outcome reconciliation. The current prototype has no external dispatch protocol."
+    }
+  ],
+  "conclusions": [
+    "The saved response recovered the supplied completion, current authorization, pending publication, and unknown status in this one trial.",
+    "Exact reference acknowledgement was accepted by the native checker.",
+    "No claim of recipient authentication, general understanding, factual truth, better model performance, or comparative cost follows."
+  ]
+}

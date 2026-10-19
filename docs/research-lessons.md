@@ -26,6 +26,8 @@ The substantive reading includes all sixteen Markdown documents and all sixteen 
 
 The initial pass inventoried historical captures, reports, numerical traces, plots, and binaries. The [follow-up](source-review/prime-followup.md) subsequently completed semantic coverage of all eight retained dialogue captures, their eight receipts, and all three prose reports. Combined coverage is 76 complete semantic readings, including one exact-quotation-deduplicated capture, plus seven separately classified complete source-diff reviews. Its remaining-material table preserves the actual structured, numerical, visual, and binary gaps. Parsing or hashing does not establish semantic or visual review. No original scientific calculation, saved binary, or original simulation suite was rerun for this adaptation. Reported historical results remain source-reported results.
 
+The [subsequent source audit](source-review/prime-audits.md) adds ten complete semantic readings, including all 159 source-inventory records, and separately checks two generated manifests. Latest kit coverage is **86 complete semantic readings**, **seven historical full-diff reviews**, **two generated-manifest checks**, and **98 remaining numerical, visual, or binary files**. No live checkout was obtained.
+
 The most consequential kit paths are `REPORT.md`, `WALK.md`, `RECORD.md`, `AUTONOMY.md`, `AI_NATIVE.md`, `RESONANCE.md`, `SIMULATOR.md`, `calculations/ai-native-observability/`, `calculations/resonance-memory/`, `native/physics-seed/`, and `tools/research_record.py`. Exact bytes remain in the private source snapshot; this public repository contains the adaptations below.
 
 ### Canonical method cross-check

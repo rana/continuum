@@ -1,0 +1,20 @@
+{
+  "source_baseline": "3653ab17bc15bced64c8fd9480906722eeefa3dd",
+  "files": [
+    {
+      "path": "docs/source-review/base12-codec-lineage.md",
+      "bytes": 6015,
+      "sha256": "7d9b473e5766519566620703be8df6e1d331fa792d3d560f9812d83396ea7a9b"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-codec-lineage.json",
+      "bytes": 7668,
+      "sha256": "8651dbb855752150ef7d5dd065b656b5b79332d3160322ace9e76bc4834f9dea"
+    },
+    {
+      "path": "research/runs/base12-codec-lineage/validation.json",
+      "bytes": 15877,
+      "sha256": "f04e3d7565179eca815992a00129b7ebe4dd4a6656e04587fbbabd8f1b3e9288"
+    }
+  ]
+}

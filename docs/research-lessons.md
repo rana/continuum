@@ -317,6 +317,8 @@ The [complete expected vector layout](source-review/base12-builder-vector-layout
 
 The [complete small expected layouts](source-review/base12-builder-small-layouts.md) distinguish several equivalence relations: different source conditions can share an entire expected layout; different code can share a map shape; different fault cases can share a hypothetical complete source layout. Deduplicate byte content in reading/custody accounting while preserving the source and runtime context needed to interpret it.
 
+The [complete capacity layouts](source-review/base12-builder-capacity-layouts.md) show how lossless repetition must preserve changing fields. Repeated backward branch statements have distinct relative displacements at every position; instruction and label records jointly determine map capacity. Bounded formulas plus exact whole-file reconstruction retain those distinctions without treating authored expectations as a fresh runtime boundary test.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

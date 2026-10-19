@@ -1,0 +1,20 @@
+{
+  "source_baseline": "2506de176425baf21f7613049312909c7151f5ce",
+  "files": [
+    {
+      "path": "docs/source-review/base12-decoder-profile-source-static.md",
+      "bytes": 5564,
+      "sha256": "bb8c56a0349ffcf895418f624347a0987cb73bcd90ed6e9564f000961727be3c"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-decoder-profile-source-static.json",
+      "bytes": 4630,
+      "sha256": "8f2059d445b41d4480ebc851ed73a224ffdcb3fc46a5892c922ea919fe855f6c"
+    },
+    {
+      "path": "research/runs/base12-decoder-profile-source-static/validation.json",
+      "bytes": 5162,
+      "sha256": "f742cb626c15209b66658cda025bf9e9cbd6c2e1c174f8398b21218316f9b0ea"
+    }
+  ]
+}

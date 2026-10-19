@@ -331,6 +331,8 @@ The [complete fixture evidence inventory](source-review/base12-builder-fixture-b
 
 The [fixed decoder-output profile foundation](source-review/base12-decoder-profile-foundation.md) isolates a three-field consumer mapping change while preserving source language and builder bounds. Identical code/map bytes can retain incompatible absolute-address assumptions. Bind a narrow source delta exactly, and keep its dated source-only status separate from later unreviewed results, current ownership and runtime compatibility.
 
+The [complete profile bootstrap and author review](source-review/base12-decoder-profile-source-static.md) distinguish a mechanism-backed prediction from an emitted observation. Fixed-width immediate syntax supports unchanged lengths; exact state intervals support bounded layout arithmetic. Neither supplies a new artifact identity or runtime result, and a source-copy alias in a result directory does not accept the surrounding execution record.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

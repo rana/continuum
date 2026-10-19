@@ -1,0 +1,20 @@
+{
+  "source_baseline": "29818e223b056fede867c28d9a4f7bfd804d7851",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-artifact-records.md",
+      "bytes": 5612,
+      "sha256": "b5ab281c0d45c58b91012c32c775ce41b389a53811296616bdd0e08d9e23174e"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-artifact-records.json",
+      "bytes": 5040,
+      "sha256": "82197757eab76d279573a984320ebdbfe89eafd5429843a9ebe5734e6f038701"
+    },
+    {
+      "path": "research/runs/base12-gate-a-artifact-records/validation.json",
+      "bytes": 5089,
+      "sha256": "a3ac37aa95098660818793bbd94e92bab8a47c1a124edf1b7278f4a9256ff8db"
+    }
+  ]
+}

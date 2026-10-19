@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-producer.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/DEPENDENCIES.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/build.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/layout.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/readelf.txt",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/static-check.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/DEPENDENCIES.json",
+      "bytes": 1629,
+      "git_blob_sha": "523f3ce201c7a7b41413ede10c526784dc0cccb7",
+      "sha256": "c35ad461376e86c1d0b4daa0d12ac11e36fd67b0198cf91791dee12649272496",
+      "lines": 37,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-artifact-and-dependency-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/build.json",
+      "bytes": 458,
+      "git_blob_sha": "ac9c23ff0aa163c7fa356866ebae3e434fdb534b",
+      "sha256": "4af281a775b70108929b036973260c40ec399940dc4395e3416c80836b9f499d",
+      "lines": 8,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-artifact-and-dependency-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/layout.json",
+      "bytes": 21116,
+      "git_blob_sha": "057dee864974d98e5d17039bd9f43e152b570696",
+      "sha256": "6283ae80a16ae2c22ea7a4a76b8cf23fbea346c6b056162d572e111328175cec",
+      "lines": 1152,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-artifact-and-dependency-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/readelf.txt",
+      "bytes": 1576,
+      "git_blob_sha": "75033133894b84f8debec3996a44303c26def345",
+      "sha256": "e02b2c033887ff387f86761df99dbc17e538e40020c73bd89f8c45e527ea760d",
+      "lines": 32,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-artifact-and-dependency-records",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/static-check.json",
+      "bytes": 765,
+      "git_blob_sha": "f47dd29b18b76f25b5405aec53121a8e9f20dae8",
+      "sha256": "721d71d9dd892e89a18d8cba671c132c88135380e74c08eef034773a45ddc728",
+      "lines": 22,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-artifact-and-dependency-records",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 25544
+    },
+    "cumulative_direct_read": {
+      "paths": 436,
+      "unique_blobs": 436,
+      "bytes": 3358805
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 488,
+    "remaining_paths_without_full_semantic_read_or_alias": 5105,
+    "remaining_distinct_blobs_without_full_semantic_read": 3993,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 25544,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five complete metadata texts read, including every global, label and patch row.",
+    "Six dependency payload pins match held exact bytes; declared historical commit IDs are not freshly verified commit-tree provenance.",
+    "All region offsets and BSS match earlier source-derived arithmetic, and all 198 displacement formulas match declared labels; no instruction bytes or starts newly checked.",
+    "Readelf and static reports are retained observations; ELF hash, instruction count and header claims do not become fresh artifact custody or reexecution.",
+    "Pre-execution NONE/NOT EXECUTED fields describe an earlier stage and do not negate later saved execution receipts.",
+    "No upstream inspector, emitter, readelf, objdump, native artifact or new model invocation was run; no raw private source or executable published."
+  ],
+  "review_report": "base12-gate-a-artifact-records.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

@@ -185,6 +185,8 @@ The [reference-decoder return](source-review/base12-reference-decoder.md) separa
 
 The [reference-launcher return](source-review/base12-reference-launcher.md) inspects a correction that prevents zero exit from overwriting an already recorded timeout. Receipt reconciliation also explains pre-chmod and postrun permission observations as distinct phases. Continuum should preserve terminal restrictions and observation timing rather than let later fields erase them. These are source/saved-data checks; no timeout or historical run was reproduced.
 
+The [reference-custody return](source-review/base12-reference-custody.md) reconciles a sixteen-file staged audit with an eighteen-member final archive by verifying the exact review/manifest additions and unchanged bytes. Continuum should bind reviews to their input sets and check later publication deltas. The saved result review already states several recovered limitations; continuation should preserve their attribution instead of repeatedly presenting them as new findings. Declared custody is complete; historical execution was not reproduced.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

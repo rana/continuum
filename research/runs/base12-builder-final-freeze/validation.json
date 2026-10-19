@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "source_baseline": "87ec7dc5a24220c5bb60f69d813e781c97ff0628",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 20660,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 20660,
+  "literal_command_hash_matches_preparation": true,
+  "literal_command_sha256": "a99ec0e001511253140728891f0957eeee90d4114ff99f1da1314722ec669cfb",
+  "literal_gate_AST_parses": true,
+  "literal_gate_count": 217,
+  "all_four_literal_control_pins_match_preparation": true,
+  "two_new_control_payload_hashes_bind": true,
+  "caller_driver_prior_ledger_pins_agree": true,
+  "bash_syntax_only_checks": 3,
+  "final_static_report_control_review_pin_binds": true,
+  "final_static_report_identity_fields_agree": true,
+  "reported_fixture_manifest_members": 157,
+  "reported_payload_members": 217,
+  "actual_payload_membership_verified_here": false,
+  "historical_tool_records": 18,
+  "historical_tool_digest_identities": 11,
+  "largest_identical_digest_group": 8,
+  "historical_tool_payloads_newly_verified": false,
+  "guard_driver_invocations_in_source": 1,
+  "guard_hold_paths": 2,
+  "attempt_marker_follows_directory_reservation": true,
+  "launcher_only_candidate_status": true,
+  "group_scan_does_not_signal_numeric_group": true,
+  "common_clock_precedes_imports_alarm_follows_imports": true,
+  "gate_or_controls_evaluated": false,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five texts fully read; exact literal command hash, isolated Python AST and bash -n syntax only, without gate/control evaluation.",
+    "Final static record reports closure of draft freeze qualification; current payload and fixture manifest membership remain unverified until those complete lists are read.",
+    "Two held control pins bind bytes; caller/driver pins match prior full-reading ledger identities without recovered cache bodies in this unit.",
+    "Eighteen historical tool records contain eleven digest identities, including eight byte-identical-content declarations; no executable/shared-library/kernel bytes newly verified.",
+    "Atomic attempt-directory creation precedes marker write; it is cooperative one-shot reservation, not filesystem-crash durability or authenticated authority.",
+    "Failure hold and group scans retain deadline, no-detach and non-hostile assumptions; SIGKILL cannot execute postchecks, clean scan cannot promote missing success receipts.",
+    "Clock begins before authentication but alarm is installed after imports; later latest-start checks constrain acceptance, not hard real-time coverage of earlier imports."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/freeze_review_packet.py",
+      "bytes": 6495,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PACKET.sha256",
+      "bytes": 16130,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PAYLOAD.sha256",
+      "bytes": 48617,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 71242,
+  "public_contribution_checks": [
+    "five pinned identities and complete text readings passed",
+    "exact literal/new-control hashes and prior caller/driver ledger pins agree",
+    "isolated gate AST and three bash syntax-only checks passed without evaluation",
+    "final static report bindings and historical tool-record arithmetic reconcile",
+    "source control-flow review retains reservation, failure-hold, group-scan and candidate-status scope",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

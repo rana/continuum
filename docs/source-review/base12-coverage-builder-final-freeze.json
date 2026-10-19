@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-preparation-controls.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/launch.sh",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/guard.sh",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CALLER_INVOCATION.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/STATIC_REVIEW.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVIRONMENT.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/launch.sh",
+      "bytes": 7141,
+      "git_blob_sha": "7707270983c773118c8bfb065fb06b358d942207",
+      "sha256": "c3d7d795f6927cb08418809e58a12de9499c61004e4b764f4e61c032b92e2793",
+      "lines": 121,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-final-freeze-and-launch-control-source",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/guard.sh",
+      "bytes": 1507,
+      "git_blob_sha": "7f7a3ae43c0d452e4211a5f70d9673ce105b09dc",
+      "sha256": "458039911ae06e6c534be144f61c0a04a311f28249da2de8549a2a4b2a05064f",
+      "lines": 32,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-final-freeze-and-launch-control-source",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CALLER_INVOCATION.md",
+      "bytes": 4983,
+      "git_blob_sha": "bc3b35bad900a3248c13ef2637211cf010477964",
+      "sha256": "8abeee977cdd607c1445487b388ac0995b40ed977beb9dca8870f26726cced02",
+      "lines": 86,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-final-freeze-and-launch-control-source",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/STATIC_REVIEW.json",
+      "bytes": 3003,
+      "git_blob_sha": "33832740450757edf5fe072794372ac7a77b1000",
+      "sha256": "31d1c13e4e5314e90f0f32ef29c1703da3316325e6c297e61a2c6cc94a4cd302",
+      "lines": 32,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-final-freeze-and-launch-control-source",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVIRONMENT.json",
+      "bytes": 4026,
+      "git_blob_sha": "487b2e8ddcbf3dd0c88d4b5df462172687d520c6",
+      "sha256": "05a3de723093c8fe3d9cc0d836b03ca9b4b9009c74123208fb53ddf1907c6d67",
+      "lines": 118,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-final-freeze-and-launch-control-source",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 20660
+    },
+    "cumulative_direct_read": {
+      "paths": 512,
+      "unique_blobs": 512,
+      "bytes": 3877238
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 589,
+    "remaining_paths_without_full_semantic_read_or_alias": 5004,
+    "remaining_distinct_blobs_without_full_semantic_read": 3917,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 20660,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five texts fully read; exact literal command hash, isolated Python AST and bash -n syntax only, without gate/control evaluation.",
+    "Final static record reports closure of draft freeze qualification; current payload and fixture manifest membership remain unverified until those complete lists are read.",
+    "Two held control pins bind bytes; caller/driver pins match prior full-reading ledger identities without recovered cache bodies in this unit.",
+    "Eighteen historical tool records contain eleven digest identities, including eight byte-identical-content declarations; no executable/shared-library/kernel bytes newly verified.",
+    "Atomic attempt-directory creation precedes marker write; it is cooperative one-shot reservation, not filesystem-crash durability or authenticated authority.",
+    "Failure hold and group scans retain deadline, no-detach and non-hostile assumptions; SIGKILL cannot execute postchecks, clean scan cannot promote missing success receipts.",
+    "Clock begins before authentication but alarm is installed after imports; later latest-start checks constrain acceptance, not hard real-time coverage of earlier imports."
+  ],
+  "review_report": "base12-builder-final-freeze.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

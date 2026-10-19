@@ -183,6 +183,8 @@ The [evidence-custody return](source-review/base12-stage-a-evidence-custody.md) 
 
 The [reference-decoder return](source-review/base12-reference-decoder.md) separates fresh-process state independence, implementation diversity, shared specification and same authorship. Its different recurrence/repacking route agrees through explicit binomial and signed-12 arithmetic identities; that does not establish full parser equivalence or a fresh run. Continuum should retain which dependencies a cross-check changes and which it shares. Historical execution receipts remain selected next.
 
+The [reference-launcher return](source-review/base12-reference-launcher.md) inspects a correction that prevents zero exit from overwriting an already recorded timeout. Receipt reconciliation also explains pre-chmod and postrun permission observations as distinct phases. Continuum should preserve terminal restrictions and observation timing rather than let later fields erase them. These are source/saved-data checks; no timeout or historical run was reproduced.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

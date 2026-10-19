@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "source_baseline": "94f439ca3a011316bf660ba879f5993815cd7866",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 8,
+  "verified_source_bytes": 23272,
+  "markdown_full_text_read": 1,
+  "json_parsed": 6,
+  "python_syntax_parsed": 1,
+  "attempt_receipt_shared_fields_agree": [
+    "started_utc",
+    "command",
+    "cwd",
+    "environment",
+    "limits",
+    "before",
+    "clearance",
+    "python",
+    "scope"
+  ],
+  "before_after_identity_and_modes_agree": true,
+  "clearance_copies_agree": true,
+  "source_receipt_and_launcher_freeze_match_acquired_bytes": true,
+  "launcher_literal_pins_limits_and_interpreter_digest_agree": true,
+  "prior_encoding_identities_agree": true,
+  "outputs": [
+    {
+      "name": "100.dat",
+      "bytes": 1950000,
+      "sha256": "b2ea3c250e56e48f4b7b90697832b8ecd1afa1e0bb31f2dcfea4ed6e1075a639",
+      "execution_receipt_mode": "0o600",
+      "postrun_final_mode": "0400",
+      "saved_identity_fields_agree": true
+    },
+    {
+      "name": "100.hea",
+      "bytes": 143,
+      "sha256": "60ebc904c7bf3e04d142638d3fd5c903e8dc9f10f1ea3264e07926aa089ee75e",
+      "execution_receipt_mode": "0o600",
+      "postrun_final_mode": "0400",
+      "saved_identity_fields_agree": true
+    }
+  ],
+  "source_order_lines": {
+    "exclusive_marker": 101,
+    "marker_fsync": 105,
+    "child_launch": 112,
+    "timeout_recorded": 119,
+    "timeout_acceptance_guard": 125,
+    "success_acceptance": 141,
+    "output_mode_recorded": 136,
+    "output_chmod": 140
+  },
+  "timeout_race_exercised": false,
+  "original_failed_launcher_bytes_acquired": false,
+  "reference_evidence_manifest_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "README.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "execution/execution-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "execution/stderr.log",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "review/decoder-attempt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-clearance.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/post-run-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/run_decoder_once.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/source-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "source/reference_decode.py",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "DRAFT_REPLY.md",
+      "execution/stdout.log",
+      "review/package-review.md",
+      "review/result-review.md"
+    ]
+  },
+  "reference_preservation_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "evidence/MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/README.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/execution/execution-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/execution/stderr.log",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/decoder-attempt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/launcher-freeze.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/launcher-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/parent-clearance.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/post-run-verification.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/run_decoder_once.py",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/source-receipt.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/source/reference_decode.py",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "evidence/DRAFT_REPLY.md",
+      "evidence/execution/stdout.log",
+      "evidence/review/package-review.md",
+      "evidence/review/result-review.md",
+      "original/stage-a-record100-decoder-evidence.tar.xz"
+    ]
+  },
+  "no_upstream_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "ownership_reconciliation": {
+    "new_remote_owned_journal_branch_observed": true,
+    "owned_journal_branch_commits_beyond_current_main": 0,
+    "execution_ownership_inferred": false
+  },
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/DRAFT_REPLY.md",
+      "bytes": 1500
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/execution/stdout.log",
+      "bytes": 146
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/package-review.md",
+      "bytes": 4781
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/result-review.md",
+      "bytes": 7826
+    }
+  ],
+  "next_scope_bytes": 14253,
+  "next_mechanical_archive": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/original/stage-a-record100-decoder-evidence.tar.xz",
+    "bytes": 17888
+  },
+  "public_contribution_checks": [
+    "JSON parsing, coverage and partial-binding arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

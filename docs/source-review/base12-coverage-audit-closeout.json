@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-envelope-fixture.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/audit-closeout-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/post-run-verification-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/reconnection-history-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/stage-clearance.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/audit-closeout-v1.json",
+      "bytes": 6862,
+      "git_blob_sha": "54605cec40bb3b609de72cc28abb126aa57d24ec",
+      "sha256": "5d2dd27cef786843ed0a44070b25321a6e200016fb83c4a6b6c1304d78eb1811",
+      "lines": 182,
+      "semantic_review": "full_direct_read",
+      "review_lane": "audit-closeout-and-authored-reconnection",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/post-run-verification-v1.json",
+      "bytes": 6038,
+      "git_blob_sha": "849e40293de6212b6430094b9596642224d3b12f",
+      "sha256": "03ff118194fdfb9de599cad0c55e4d70e0d8085080ca79545526f1aa77c3ead0",
+      "lines": 144,
+      "semantic_review": "full_direct_read",
+      "review_lane": "audit-closeout-and-authored-reconnection",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/reconnection-history-v1.json",
+      "bytes": 3570,
+      "git_blob_sha": "b89cd02a4c2725f42fb7a46d04fa5330a1d6c338",
+      "sha256": "0b3be407f9b09e68d6143f0dbe93ec13d985aa31bd08836b79eafba60552aea2",
+      "lines": 93,
+      "semantic_review": "full_direct_read",
+      "review_lane": "audit-closeout-and-authored-reconnection",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/stage-clearance.json",
+      "bytes": 1234,
+      "git_blob_sha": "77e84557a7af934051d781ec1d31e9a7b746a48b",
+      "sha256": "41ca8adc124d29b88ad0b712b7994dedee96708a2705f57bd34544e348b56838",
+      "lines": 45,
+      "semantic_review": "full_direct_read",
+      "review_lane": "audit-closeout-and-authored-reconnection",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 17704
+    },
+    "cumulative_direct_read": {
+      "paths": 334,
+      "unique_blobs": 334,
+      "bytes": 2317320
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 385,
+    "remaining_paths_without_full_semantic_read_or_alias": 5208,
+    "remaining_distinct_blobs_without_full_semantic_read": 4095,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 17704,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Reconnection is explicitly an authored retrospective from task results and receipts, not a recovered pre-disconnection file or current host observation.",
+    "Six of seven referenced receipt payloads bind; initial acquisition outcome remains unacquired.",
+    "Post-run output rehashes and source/binary checks are historical claims; this unit compared retained metadata without reading reversible payloads or host binary bytes.",
+    "Persistence-audit source remains unacquired and its declared digest is not yet bound.",
+    "Four documentation-snapshot tree identities match declared blob/size only; payload SHA-256 and semantic readings remain pending.",
+    "Experiment head, documentation revision, review acceptance and publication are separate roles; historical pending/false fields do not grant current authority or establish current upstream acceptance.",
+    "No historical invocation, scientific run, audit, signal decode or model call was repeated."
+  ],
+  "review_report": "base12-audit-closeout.md"
+}

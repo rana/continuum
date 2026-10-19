@@ -44,3 +44,7 @@ Assembly remains available for a bounded, measured need. Rust supports inline as
 
 The longer-lived commitment is the documented data format and behavioral contract. SQLite, implementation language, and selected kernels can change behind those contracts when evidence justifies the change.
 
+## Embedded storage review
+
+The [2026-10-19 storage assessment](../experiments/embedded-storage-evaluation.md) examines redb as a narrower Rust KV implementation, Turso Database as a Rust SQL implementation, and Fjall for a conditional LSM workload. It preserves SQLite as the operational baseline and defines contract, process, durability, footprint, and lifecycle comparisons. No candidate has yet been executed by this review. The current decision can be reopened for a demonstrated operability or target benefit as well as a measured performance gain; SQL itself is not a mandatory public contract.
+

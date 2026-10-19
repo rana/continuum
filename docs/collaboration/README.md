@@ -1,6 +1,6 @@
 # Actual Claude collaboration
 
-The initial historical briefs contain earlier preserved Claude exchanges. This directory records seven further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC.
+The initial historical briefs contain earlier preserved Claude exchanges. This directory records eight numbered further actual Claude Opus 5.5 exchanges on 2026-10-19 UTC. Separate project trials also retain their own actual collaborator records.
 
 | Exchange | Actual exposure | Result |
 |---|---|---|
@@ -11,12 +11,15 @@ The initial historical briefs contain earlier preserved Claude exchanges. This d
 | [5](2026-10-19-claude-05.md) | Full latest user request for unattended progress, verified project/runtime facts, candidate operating model | Favored useful bounded units, explicit schedule/run/progress evidence, and a release workload; ownership and timing claims needed correction |
 | [6](2026-10-19-claude-06.md) | Full timer request and Base12 follow-up, recovered workflow/model recommendations, actual setup observations, and coordinator corrections | Favored repository Research Deltas and decision-point review; correctly distinguished continuity from execution, but understated the active chat's capabilities |
 | [7](2026-10-19-claude-07.md) | Full user real-use request, current public implementation and measurement summary, runtime limits, candidate consumers | Chose Continuum itself first, a small independent project second, and observations of context gaps; backup and upgrade advice required correction |
+| [8](2026-10-19-claude-08.md) | Full user SQLite/Rust-alternatives question, actual schema and operation summary, current primary-document summaries | Prioritized atomic acceptance, durable receipts, process ownership and relocated invariants; overstrong compatibility, language, and permission claims were corrected |
 
 The [user wording](2026-10-19-user-brief.md), exact supplied [first request](requests/claude-01.json), [second request](requests/claude-02.json), [third request](requests/claude-03.json), [fourth request](requests/claude-04.json), and [execution metadata](../../research/runs/) are retained. Responses are unedited except for surrounding provenance notes. Claude had no direct filesystem, browser, or repository tools in these exchanges.
 
 The [fifth](requests/claude-05.json) and [sixth](requests/claude-06.json) public request files are explicitly redacted projections because their supplied context included private operating state from another project. Exact request fields and actual responses are retained in the owner's private `Continuum_Continuation_Private_Checkpoint.json`. The public projections preserve request digests and state their encoding; they are not represented as complete reproducers. The complete visible responses and returned metadata remain in this repository.
 
 The [seventh request](requests/claude-07.json) is retained in full; it supplies current public project facts and the complete user request for learning by using the software.
+
+The [eighth request](requests/claude-08.json) is retained in full. It preceded the later dependency inspection and concurrent checkpoint-pilot merge; those updates appear in the storage assessment rather than being retroactively inserted into Claude's exposure.
 
 ## Adopted design contributions
 
@@ -88,4 +91,19 @@ Exchange seven usefully frames the project as a tool to think with, selects self
 - Restoring an older store can discard accepted work created after that backup. Keep both histories when testing a candidate and reconcile before any destructive data rollback. Software rollback alone does not require erasing later evidence.
 - Existing user authorization remains in effect. Coordinate a later Base12/Prime contribution with its actual current owner and scope without inventing another blanket permission gate.
 - The first few handoffs are an early design-learning checkpoint. They are not a statistical quality estimate or an arbitrary end to continuing development. Administrative upkeep and missing context should be observed before adding a new native gap-record type.
+
+## Storage review corrections
+
+Exchange eight informed the [embedded storage assessment](../experiments/embedded-storage-evaluation.md). The visible answer is retained with these qualifications:
+
+- Durable acknowledgement is a contract relative to a persistence barrier and the OS/filesystem/device model. The current process-crash tests do not demonstrate physical power-loss behavior.
+- Required invariants need not be SQL constraints. A KV backend can enforce them through a small centralized Rust write interface; the comparison must include the implementation and verification of those responsibilities.
+- Removing the SQLite C engine does not guarantee a single memory-safety or cross-compilation story. Later inspection found feature-dependent native crypto/SIMD dependencies in Turso's core manifest. Ordinary OS FFI is a different boundary from a C database engine, and neither observation alone decides performance or reliability.
+- Turso documents partial compatibility; this does not establish that every use of SQLite tools on its files is unsafe. Test the relevant read/export/import path on retained copies. Do not assume simultaneous mixed-engine writers or experimental file features are interoperable. The stubbed backup API is not an existing Continuum-path failure, because no such backup command is implemented; VACUUM INTO is a separate documented option to validate.
+- Experimental multi-process support is an evaluation gate, not proof that a daemon is the only possible architecture. Direct sharing under an explicitly tested mode, serialized exclusive use, and a single owner with IPC are distinct choices.
+- The existing user's R&D authorization persists. Neither the coordinator's scope wording nor Claude's suggestion creates a new permission requirement for a bounded conformance experiment. No migration was performed in this review.
+- Store::open taking an immediate transaction is a profiling candidate. A change must preserve initialization and format-validation races; no measured contention bottleneck or safe replacement path was established merely by reading it.
+- Fjall needs persistence covering every durable acknowledgement; group commit is possible if acknowledgements wait for the covering barrier. It is not necessary to prescribe one physical sync per logical operation in every architecture.
+- The supplied redb summary mentioned Eventual from older API knowledge. The freshly inspected 4.4.0 Durability documentation lists None and Immediate. The assessment uses Immediate and does not carry the obsolete variant forward.
+- The consultation preceded the later checkpoint and independent-example pilot merges. Its suggestion to retain the pilot remains useful, but CURRENT.md owns the advancing next unit. Preserve the subsequent work instead of treating Claude's exposure as current repository state.
 

@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "source_baseline": "c4ed182a2d5c5c94dc9ff35a4d4318d40506edea",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 6,
+  "verified_source_bytes": 22004,
+  "json_parsed_and_full_read": 6,
+  "delivery_bindings": {
+    "matched_acquired_payloads": [
+      {
+        "path": "intake/acquisition-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "review/postrun-verification.json",
+        "matched": true
+      },
+      {
+        "path": "review/record100-attempt.json",
+        "matched": true
+      },
+      {
+        "path": "run/execution-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "run/input-and-code.json",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "README.md",
+      "frozen-source/base12_ecg_codec_stage_a.tar.xz",
+      "parent-source-review/REVIEW_MANIFEST.json",
+      "parent-source-review/claude-review-evidence.json",
+      "parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "parent-source-review/static-source-review.md",
+      "review/RESULT.md",
+      "review/acquire_record100.py",
+      "review/environment.json",
+      "review/intake-verification.json",
+      "review/launcher-freeze.json",
+      "review/launcher-review.md",
+      "review/native-static-review.md",
+      "review/packet-verification.json",
+      "review/parent-clearance.json",
+      "review/parent-review-verification.json",
+      "review/result-static-verification.md",
+      "review/run_once.py",
+      "review/wire-static-review.md",
+      "run/RESULTS.json",
+      "run/stderr.log",
+      "run/stdout.log"
+    ]
+  },
+  "cumulative_preservation_bindings": {
+    "matched_acquired_payloads": [
+      {
+        "path": "MANIFEST.json",
+        "matched": true
+      },
+      {
+        "path": "PROTOCOL.md",
+        "matched": true
+      },
+      {
+        "path": "README.md",
+        "matched": true
+      },
+      {
+        "path": "WIRE.md",
+        "matched": true
+      },
+      {
+        "path": "check.py",
+        "matched": true
+      },
+      {
+        "path": "codec.py",
+        "matched": true
+      },
+      {
+        "path": "native_signal.py",
+        "matched": true
+      },
+      {
+        "path": "record100.py",
+        "matched": true
+      },
+      {
+        "path": "records/checks.json",
+        "matched": true
+      },
+      {
+        "path": "records/design-freeze.json",
+        "matched": true
+      },
+      {
+        "path": "records/development-corrections.json",
+        "matched": true
+      },
+      {
+        "path": "records/external-wrapper-checks.json",
+        "matched": true
+      },
+      {
+        "path": "records/published-pins.json",
+        "matched": true
+      },
+      {
+        "path": "records/source-freeze.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/DELIVERY_MANIFEST.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/intake/acquisition-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/postrun-verification.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/record100-attempt.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/execution-receipt.json",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/input-and-code.json",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "original/base12_ecg_codec_stage_a.tar.xz",
+      "ATTRIBUTION.md",
+      "DOT_HANDOFF.md",
+      "REVIEW_AND_ALIGNMENT.md",
+      "vendor/isa.py",
+      "vendor/runtime.py",
+      "aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/README.md",
+      "aum-run-2026-10-16/evidence/frozen-source/base12_ecg_codec_stage_a.tar.xz",
+      "aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json",
+      "aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+      "aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "aum-run-2026-10-16/evidence/parent-source-review/static-source-review.md",
+      "aum-run-2026-10-16/evidence/review/RESULT.md",
+      "aum-run-2026-10-16/evidence/review/acquire_record100.py",
+      "aum-run-2026-10-16/evidence/review/environment.json",
+      "aum-run-2026-10-16/evidence/review/intake-verification.json",
+      "aum-run-2026-10-16/evidence/review/launcher-freeze.json",
+      "aum-run-2026-10-16/evidence/review/launcher-review.md",
+      "aum-run-2026-10-16/evidence/review/native-static-review.md",
+      "aum-run-2026-10-16/evidence/review/packet-verification.json",
+      "aum-run-2026-10-16/evidence/review/parent-clearance.json",
+      "aum-run-2026-10-16/evidence/review/parent-review-verification.json",
+      "aum-run-2026-10-16/evidence/review/result-static-verification.md",
+      "aum-run-2026-10-16/evidence/review/run_once.py",
+      "aum-run-2026-10-16/evidence/review/wire-static-review.md",
+      "aum-run-2026-10-16/evidence/run/RESULTS.json",
+      "aum-run-2026-10-16/evidence/run/stderr.log",
+      "aum-run-2026-10-16/evidence/run/stdout.log"
+    ]
+  },
+  "run_source_bindings": {
+    "matched_acquired_payloads": [
+      {
+        "path": "native_signal.py",
+        "matched": true
+      },
+      {
+        "path": "codec.py",
+        "matched": true
+      },
+      {
+        "path": "record100.py",
+        "matched": true
+      },
+      {
+        "path": "check.py",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "vendor/runtime.py",
+      "vendor/isa.py"
+    ]
+  },
+  "cross_record_consistency": {
+    "attempt_and_exit_common_fields_equal": [
+      "started_utc",
+      "clearance",
+      "command",
+      "cwd",
+      "limits",
+      "environment",
+      "warning"
+    ],
+    "clearance_records_equal": true,
+    "reported_intake_bytes_sum": 2046316,
+    "reported_intake_under_declared_budget": true,
+    "source_hash_inventory_entries": 96,
+    "accessed_waveform_header_entries": 2,
+    "manifest_digest_agrees": true,
+    "reported_payload_pins_agree": true,
+    "split_disjoint_counts": [
+      32,
+      8,
+      8
+    ],
+    "training_group_pair_retained": true,
+    "byte_accounting_total": 673412,
+    "meaningful_plus_padding_bits_match_payload": true,
+    "postrun_input_record_matches_acquired_bytes": true
+  },
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "files": [
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/acquire_record100.py",
+        "bytes": 5181
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/environment.json",
+        "bytes": 1499
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/intake-verification.json",
+        "bytes": 1214
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/launcher-freeze.json",
+        "bytes": 314
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/launcher-review.md",
+        "bytes": 5862
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/parent-clearance.json",
+        "bytes": 651
+      },
+      {
+        "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/run_once.py",
+        "bytes": 6890
+      }
+    ],
+    "total_bytes": 21611
+  }
+}

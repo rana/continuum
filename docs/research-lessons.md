@@ -169,6 +169,8 @@ The reviewed CLI validates an archive before writing two output files separately
 
 The subsequent [stage-A records review](source-review/base12-stage-a-records.md) checks saved counts and partial manifest bindings while preserving two different test corrections. A freeze can bind bytes without independently proving its timestamp or absence of prior exposure. An earlier semantic reading also does not guarantee a retained local byte copy: our first binding check stopped on that assumption, and the corrected check explicitly limits validation to available payloads. Keep reading coverage, custody, present retrieval and fresh validation separate.
 
+The [stage-A execution-receipt review](source-review/base12-stage-a-execution.md) further distinguishes consumed attempts from reported exits, checksum inventories from accessed payloads, and per-process limits from process-tree quotas. Six records and their cross-links reconcile without authenticating their issuer or proving enforcement. Matching repeated fields are consistent custody evidence, not independent observations or permission to repeat an old effect.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

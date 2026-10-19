@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-records.json",
+  "selected_scope": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/",
+    "files": [
+      "DELIVERY_MANIFEST.json",
+      "intake/acquisition-receipt.json",
+      "review/postrun-verification.json",
+      "review/record100-attempt.json",
+      "run/execution-receipt.json",
+      "run/input-and-code.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/DELIVERY_MANIFEST.json",
+      "git_blob_sha": "b39dc6374c16ca08c8f94b920862a13ccfcd24f2",
+      "bytes": 4440,
+      "sha256": "5eb299e73be9eed52cf43f24ce9f88fbee27168b6338e9780e9987c3cd3477cf",
+      "lines": 115,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-intake-execution-and-postrun-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/intake/acquisition-receipt.json",
+      "git_blob_sha": "64091fa918d4f9c324d1c956132ba6e5db9cdef7",
+      "bytes": 1783,
+      "sha256": "c7885006c693acbcd3fc693eade47de057ae822bbecf941ab8af9c5ed884fa30",
+      "lines": 45,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-intake-execution-and-postrun-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/postrun-verification.json",
+      "git_blob_sha": "a2f857078f752c844c42a7b4d48877a63e1e9d3a",
+      "bytes": 2363,
+      "sha256": "312069ab62770f29593b21a095fe3942a82ad0720613ca562293a4492773b9c9",
+      "lines": 59,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-intake-execution-and-postrun-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/review/record100-attempt.json",
+      "git_blob_sha": "aefdb22b3a207056bdb265d23f8917603a00b023",
+      "bytes": 1753,
+      "sha256": "4a08d8cc5203ae0a2eabf82f95216ebbeaf3961b993b1a1274144075cb103ad4",
+      "lines": 44,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-intake-execution-and-postrun-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/execution-receipt.json",
+      "git_blob_sha": "caaafb16198de2ba6d5cc23f0647af7c45811dea",
+      "bytes": 1995,
+      "sha256": "720b66fe2716dbdb3566aa5a1a65ff847ca44b11a2f2cc22bdae25eed585b7bb",
+      "lines": 53,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-intake-execution-and-postrun-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/input-and-code.json",
+      "git_blob_sha": "4fe3f45b181ec9e7589c2fcdc2a95595f38ccb6a",
+      "bytes": 9670,
+      "sha256": "92c86dbc1660f6ad91f654b1ac3a3831c4a80e700eecd21ed60bfd5aa05d6904",
+      "lines": 171,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-intake-execution-and-postrun-records",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 6,
+      "unique_blobs": 6,
+      "bytes": 22004
+    },
+    "cumulative_direct_read": {
+      "paths": 230,
+      "unique_blobs": 230,
+      "bytes": 1530017
+    },
+    "additional_identical_blob_paths": 48,
+    "alias_distinct_blobs": 18,
+    "semantic_covered_paths_including_aliases": 278,
+    "remaining_paths_without_full_semantic_read_or_alias": 5315,
+    "remaining_distinct_blobs_without_full_semantic_read": 4199,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 22004,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Six JSON documents fully read; aliases not separately read.",
+    "Historical intake/exit claims are source-authored records, not authenticated execution or current worker acceptance.",
+    "No corpus payload, run output archive, dataset acquisition, codec, model or upstream code was executed or retrieved.",
+    "Manifest validation is partial; exact checked payloads and remaining entries are listed.",
+    "Private command paths, clearance identities, payload hashes and operational contents are not copied into public prose.",
+    "Launcher enforcement and the full numerical result are not established by receipt inspection alone."
+  ],
+  "review_report": "base12-stage-a-execution.md"
+}

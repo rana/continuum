@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-full-accounting.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/payload-file-evidence-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/accounting.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-launch-gates-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/static-preflight.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/recovery-outcome-v1.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/payload-file-evidence-v1.json",
+      "bytes": 1783,
+      "git_blob_sha": "9631e8af2c144e0c20f47910dc8a0c0d0cfa8a96",
+      "sha256": "f5b5cedaf451beb22265e00070a7065bb2068374b0283810848c5ee59d102763",
+      "lines": 58,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-accounting-input-closure",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/invocation.json",
+      "bytes": 1103,
+      "git_blob_sha": "81fb04ec8f9c15e6931f28d4232764f68b7512a4",
+      "sha256": "ba24152092a3264f29343f0eae015f9a9dddecbe3998a971934626e2d2bde8ac",
+      "lines": 32,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-accounting-input-closure",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/accounting.jsonl",
+      "bytes": 29084,
+      "git_blob_sha": "c65245f148bfe011b98588bfb1350d0030dcbcfd",
+      "sha256": "d26d21a5db217f08b3f8baf90a65af3b3be6c31ffd2de38713b81ac3c16a6459",
+      "lines": 140,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-accounting-input-closure",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSONL_text_read_and_duplicate_key_checked_parse_of_all_140_rows"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-launch-gates-v1.json",
+      "bytes": 1636,
+      "git_blob_sha": "44307eac6c24f9b3ec84386a18c30f5e5dced1fe",
+      "sha256": "1e8157345d37368004fd6262aeb7d4435c3e8a5318697ec1d7d7f20819e52eac",
+      "lines": 57,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-accounting-input-closure",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/static-preflight.json",
+      "bytes": 5787,
+      "git_blob_sha": "4d342aafc74bc4bdf056739097aad88830df2a0b",
+      "sha256": "e8dabf74cb2af2e4b2f3a8cb2be3f4347c2d481d4ea4d2487a05a1d8d2745ff2",
+      "lines": 156,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-accounting-input-closure",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/recovery-outcome-v1.json",
+      "bytes": 15080,
+      "git_blob_sha": "c862f701fc2474c432ee0e4f68e58eb34f1574eb",
+      "sha256": "b67753eded81cf3eb8297adc696ded96af2c901518ce90c566cece82a276ae5f",
+      "lines": 512,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-accounting-input-closure",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 6,
+      "unique_blobs": 6,
+      "bytes": 54473
+    },
+    "cumulative_direct_read": {
+      "paths": 312,
+      "unique_blobs": 312,
+      "bytes": 2271929
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 363,
+    "remaining_paths_without_full_semantic_read_or_alias": 5230,
+    "remaining_distinct_blobs_without_full_semantic_read": 4117,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 54473,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All fifteen audit input references bind to fourteen distinct blobs, including one explicit identical-byte intake alias.",
+    "Source-manifest payload agreement does not newly establish original source-head changed-file completeness.",
+    "Journal checks operate on saved samples, not continuous monitoring, process-tree absence or new resource enforcement.",
+    "Seven payload metadata rows reconcile but payload bytes, permissions and owner state were not freshly attested.",
+    "Historical static/recovery/launch stages retain capture-time scope; no renewed execution or publication authority is inferred.",
+    "No upstream audit, wrapper, numerical program or new model invocation ran."
+  ],
+  "review_report": "base12-accounting-inputs.md"
+}

@@ -201,6 +201,8 @@ The [training-cost return](source-review/base12-training-costs.md) closes a miss
 
 The [full-accounting return](source-review/base12-full-accounting.md) binds an audit source to its saved verdict while preserving six missing input payloads and the distinction between declarations and current byte checks. Existing qualifications separate polling, per-process limits, root-inclusive CPU and nonaggregate memory. Continuum should retain those quantity scopes and avoid attributing an unexplained timer-sum gap or promoting a historical pass into payload or host attestation. No upstream audit or wrapper ran.
 
+The [accounting-input return](source-review/base12-accounting-inputs.md) closes the full audit input set and checks every saved journal row without converting sampled identities, states or tick counters into continuous process history. Static holds, recovery-pending checks and later launch passes remain valid capture-time states. Continuum should preserve this chronology and distinguish newly available dependencies from fresh attestation of their claimed effects. No upstream program ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -251,6 +251,8 @@ The [Gate-A decoder-review return](source-review/base12-gate-a-decoder-review.md
 
 The [Gate-A envelope-review return](source-review/base12-gate-a-envelope-review.md) recovers four concrete review conditions, their narrow control corrections and eight later clearance conditions. A static PASS and packet-byte agreement remain distinct from live preflight, execution authority and observed completion. Signal exit, original failure cause and incomplete waited-child accounting must also survive as separate facts.
 
+The [Gate-A result-acceptance return](source-review/base12-gate-a-result-acceptance.md) binds six preserved review payloads while retaining the remote audit’s reliance on frozen control flow and separate on-host trace/filesystem observations. Accepted evidence can be reusable without becoming authenticated telemetry or renewed execution authority. A qualified transient-process description remains qualified rather than becoming causal attribution.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "source_baseline": "e3516dc900ef488bd84fa6286489aca89431e18a",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 6,
+  "verified_source_bytes": 16863,
+  "full_text_paths_read": 6,
+  "new_semantic_files": 6,
+  "new_semantic_bytes": 16863,
+  "all_six_provenance_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/envelope-review-original.md",
+      "bytes": 12242,
+      "sha256": "3d1eaf856a534fd8d90de80d40997db02e9009feced57480325f2a48bf9e5989",
+      "declared_version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-review.md",
+      "bytes": 8691,
+      "sha256": "90ca6953637622c4f16112630d8f04bb2dfc0735542907dc920cfeb1c23b9a17",
+      "declared_version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-static-verification.json",
+      "bytes": 802,
+      "sha256": "e5bbf51ff92249118d1e3f799bedb6ae61eab0714eec68e0e73a52370013d3aa",
+      "declared_version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/envelope-review-revised.md",
+      "bytes": 10677,
+      "sha256": "b4ad8b845fc3085c7ed50936c28792ba54cade2910d888f83d27a6c8be1913bc",
+      "declared_version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review.md",
+      "bytes": 10466,
+      "sha256": "ffd11bf6b8b0f19745dd568193bd8ff11064347d7f9bf62659926de8916d74cc",
+      "declared_version": 0,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review-checks.json",
+      "bytes": 1593,
+      "sha256": "8adb6a99b7d7c627e7538801e721ce67eb00c16987d4729d35ff72119d78dc9b",
+      "declared_version": 0,
+      "matched": true
+    }
+  ],
+  "all_seven_held_result_review_anchor_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "sha256": "7a0ea68a9343b96171a658f842de86b597b3acb4b5bb7fdd99136a2b5e876b6d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "sha256": "1ca8e5d8c618e444fd5873112786eaecf35b6788d2189c3ec7772a686360acd6",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/FREEZE.sha256",
+      "sha256": "a6b562eba1c1591f2930cddddc56c8696cad5ab1176f74e8a35123fe4ba687d6",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/RESULT.json",
+      "sha256": "cc0535a14f02c2e4ae50f7af449dea3fb8ca000409f5677e4b03323eed6089ca",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/stdout.log",
+      "sha256": "9d7ab4e39eb41aee60adaf4b3be8d3e9926d9d14dd43ade966858cc4398df03c",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/resources",
+      "sha256": "9daf415caec69abc2a438a4f16793f9855f6275a943ef8b1c31048f20a2714da",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/INDEPENDENT_RESULT_REVIEW.md",
+      "sha256": "a5f6cb158336acadb06133091d403b329bcbae2d117a9058eed43e5a671c2d1e",
+      "matched": true
+    }
+  ],
+  "owner_opening_result_execution_head_matches": true,
+  "historical_parent_acceptance_declaration_is_not_new_authority": true,
+  "saved_checks": 33,
+  "all_saved_checks_true": true,
+  "saved_counts": {
+    "manifest_files": 61,
+    "inventory": 368,
+    "logged_rows": 77,
+    "output_inventory_files": 352,
+    "staging_receipts": 79,
+    "entry_receipts": 44
+  },
+  "fresh_stdout_65_ordered_matrix_and_77_unique_verdicts_match": true,
+  "single_completion_markers_match": true,
+  "inventory_count_arithmetic_consistent": true,
+  "private_inventory_payload_read_this_unit": false,
+  "result_ZIP_or_packet_manifest_acquired": false,
+  "private_output_or_trace_payload_acquired": false,
+  "review_qualifications_and_dependencies_attributed": true,
+  "remote_Library_or_thread_queried": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Six full metadata/review texts read; no native, audit checker, model invocation or new dispatch occurred.",
+    "Six provenance payload lengths/digests and declared versions match held files; private Library IDs and thread IDs excluded; remote Library history not freshly queried.",
+    "Seven result-review anchors match held payloads; ELF and result ZIP/manifest remain historical declarations, not newly acquired artifact custody.",
+    "Saved all-true audit checks are retained remote-review results; inventory set/hash claims remain selected next for local metadata reconciliation.",
+    "Seventy-seven explicit log rows plus two control-flow completions support 79 invocations, not an independent kernel execution census.",
+    "Raw traces/private outputs remain unacquired; injection and lstat/absence claims retain on-host reviewer and frozen-driver dependencies.",
+    "Original report qualifies transient process attribution, rounded waited-child accounting, snapshot limits, no timeout-path execution, and no new execution or merge authority."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/PRIVATE_INVENTORY.json",
+      "bytes": 59438,
+      "intended_review": "full_metadata_read_with_exact_reconstruction_if_viewed_as_table"
+    }
+  ],
+  "next_scope_bytes": 59438,
+  "public_contribution_checks": [
+    "six pinned blob identities and complete text/JSON reading passed",
+    "six provenance payload length/hash/version declarations and seven held anchors bind",
+    "33 saved checks and count arithmetic reconcile without promoting inventory claims",
+    "fresh ordered matrix, 77 unique verdicts and completion markers match held stdout",
+    "acceptance scope and on-host observation dependencies retained",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

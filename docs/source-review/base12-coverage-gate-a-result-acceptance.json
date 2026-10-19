@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-envelope-review.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/OPEN.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/OWNER.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/LIBRARY_PROVENANCE.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/LIBRARY_PROVENANCE.json",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review-checks.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/OPEN.md",
+      "bytes": 1125,
+      "git_blob_sha": "3d8985799b4ea958c6f43e5af3a83f6ee2f67b37",
+      "sha256": "8e9325308f82dfa7d8508f0a6c3a2ce2aa30bf00b399827bc09526bc151533d8",
+      "lines": 5,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-owner-provenance-and-result-acceptance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/OWNER.json",
+      "bytes": 1115,
+      "git_blob_sha": "3fc9310ed29e812136455149f419e8eb355a72e2",
+      "sha256": "ec9d43c4160a6dfb068b18fb2c0857ac7d3862530bc368f2067225d2d1bd523a",
+      "lines": 15,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-owner-provenance-and-result-acceptance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/LIBRARY_PROVENANCE.json",
+      "bytes": 1095,
+      "git_blob_sha": "042d1505cf7be28e0dbf78d44aed810b8a8af7f1",
+      "sha256": "8b5523c4828e72d39aab0b544f50fa2e4239ba7081f16a1371d86d82c10b801b",
+      "lines": 30,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-owner-provenance-and-result-acceptance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/LIBRARY_PROVENANCE.json",
+      "bytes": 1469,
+      "git_blob_sha": "67595eebb24717cf975780c207df2bee20f63d49",
+      "sha256": "572ecc24350d085f8e4f05a93bec96119006857573ae13e38e00f87845aa3636",
+      "lines": 35,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-owner-provenance-and-result-acceptance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review.md",
+      "bytes": 10466,
+      "git_blob_sha": "f14ffc66d57904cd74cc4161808e4f63397a131d",
+      "sha256": "ffd11bf6b8b0f19745dd568193bd8ff11064347d7f9bf62659926de8916d74cc",
+      "lines": 76,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-owner-provenance-and-result-acceptance",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review-checks.json",
+      "bytes": 1593,
+      "git_blob_sha": "a23ad5872f41b34a9675669c32e6774f6785786c",
+      "sha256": "8adb6a99b7d7c627e7538801e721ce67eb00c16987d4729d35ff72119d78dc9b",
+      "lines": 47,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-owner-provenance-and-result-acceptance",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 6,
+      "unique_blobs": 6,
+      "bytes": 16863
+    },
+    "cumulative_direct_read": {
+      "paths": 451,
+      "unique_blobs": 451,
+      "bytes": 3442426
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 503,
+    "remaining_paths_without_full_semantic_read_or_alias": 5090,
+    "remaining_distinct_blobs_without_full_semantic_read": 3978,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 16863,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Six full metadata/review texts read; no native, audit checker, model invocation or new dispatch occurred.",
+    "Six provenance payload lengths/digests and declared versions match held files; private Library IDs and thread IDs excluded; remote Library history not freshly queried.",
+    "Seven result-review anchors match held payloads; ELF and result ZIP/manifest remain historical declarations, not newly acquired artifact custody.",
+    "Saved all-true audit checks are retained remote-review results; inventory set/hash claims remain selected next for local metadata reconciliation.",
+    "Seventy-seven explicit log rows plus two control-flow completions support 79 invocations, not an independent kernel execution census.",
+    "Raw traces/private outputs remain unacquired; injection and lstat/absence claims retain on-host reviewer and frozen-driver dependencies.",
+    "Original report qualifies transient process attribution, rounded waited-child accounting, snapshot limits, no timeout-path execution, and no new execution or merge authority."
+  ],
+  "review_report": "base12-gate-a-result-acceptance.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

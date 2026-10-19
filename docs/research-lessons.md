@@ -297,6 +297,8 @@ The [complete static builder layout](source-review/base12-builder-static-layout.
 
 The [complete saved instruction listing](source-review/base12-builder-instruction-listing.md) connects every layout patch to opcode context, signed bytes and target boundaries, and its streaming bytes match the pinned code-blob identity. This strengthens earlier metadata-only relations without importing the encoder or executing a program. Keep code-segment identity, complete ELF custody, saved external decoding and native behavior as separate claims. Six selected corrected rows also cannot establish that a cross-revision binary difference contains only those changes.
 
+The [complete saved disassembly](source-review/base12-builder-saved-disassembly.md) agrees with every listing row after explicit operand-order, width, sign and mnemonic conversion. A raw-binary `.data` display does not establish ELF permissions. Seven numbered syscall annotations collapse to one decoded opcode mnemonic; retain the preceding register-setting association for number claims. Saved external decoding also remains distinct from a fresh authenticated tool invocation or behavioral independence.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

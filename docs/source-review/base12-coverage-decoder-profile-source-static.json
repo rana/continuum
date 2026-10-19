@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-decoder-profile-foundation.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/bootstrap.py",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/AUTHOR_STATIC_CHECKS.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/bootstrap.py",
+      "bytes": 24745,
+      "git_blob_sha": "4f5a3c59f886a18a52c9e2179c4eab0a8ed59b3b",
+      "sha256": "890650b8e0543d5ff20c495fcdee8f4e42f5b1f98f54e75d21e08275c33f7dba",
+      "lines": 394,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-bootstrap-and-author-static-review",
+      "reading_representation": "complete_source_and_review_records_with_exact_diff_AST_and_literal_state_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md",
+      "bytes": 4294,
+      "git_blob_sha": "a12d426b14ca6cf8b3383659079138ea283a5672",
+      "sha256": "74d9bf3c6b639256ad0ce1c95fbee01d3700951481d422730e68ad4adc0e1d2f",
+      "lines": 41,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-bootstrap-and-author-static-review",
+      "reading_representation": "complete_source_and_review_records_with_exact_diff_AST_and_literal_state_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/AUTHOR_STATIC_CHECKS.json",
+      "bytes": 3948,
+      "git_blob_sha": "e15469d92fcde1470e61566282eab504b74165a8",
+      "sha256": "ba3f7a842cc60dbbc833b430ac68bd1a1c61a3da4b94e6b1b7c37536ecba1eac",
+      "lines": 155,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-bootstrap-and-author-static-review",
+      "reading_representation": "complete_source_and_review_records_with_exact_diff_AST_and_literal_state_checks",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 32987
+    },
+    "cumulative_direct_read": {
+      "paths": 617,
+      "unique_blobs": 617,
+      "bytes": 5360750
+    },
+    "additional_identical_blob_paths": 115,
+    "alias_distinct_blobs": 39,
+    "semantic_covered_paths_including_aliases": 732,
+    "remaining_paths_without_full_semantic_read_or_alias": 4861,
+    "remaining_distinct_blobs_without_full_semantic_read": 3812,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 32987,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three complete files/32987 bytes read; acquired full bootstrap equals the earlier diff-derived source identity and exact retained hunk.",
+    "All three AST Constant.value differences match author paths/values; package,grammar,limits,state,error and publication code remain identical to R2.",
+    "Seven buffers plus33 scalar slots fit unchanged155648-byte owned RW;17863-byte slack is layout arithmetic,not measured free memory.",
+    "Held seed immediate syntax has fixed width for admitted64-bit values; unchanged counts/lengths remain predictions tied to baseline metadata,not new artifact observations.",
+    "Saved author zero-invocation and static PASS fields retain historical scope; the cited independent230-path preservation claim and reader correction require their own complete review.",
+    "No upstream module imported or source/seed executed,native artifact acquired/emitted/executed,model invoked,live process scanned,workstation activated or recipient acceptance obtained."
+  ],
+  "review_report": "base12-decoder-profile-source-static.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

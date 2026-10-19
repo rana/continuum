@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2506de176425baf21f7613049312909c7151f5ce",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 3,
+  "verified_source_bytes": 32987,
+  "full_source_paths_read": 3,
+  "new_semantic_files": 3,
+  "new_semantic_bytes": 32987,
+  "full_variant_source_matches_exact_diff_and_prior_derived_identity": true,
+  "new_identical_blob_alias_paths": [
+    "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/build-result-01/raw/output/bootstrap.source.py"
+  ],
+  "all_author_AST_paths_and_three_values_match": true,
+  "author_json_exact_roundtrip": true,
+  "grammar_forms": 33,
+  "source_derived_scalar_slots": 33,
+  "source_derived_owned_buffers": 7,
+  "source_derived_occupied_bytes": 137785,
+  "source_derived_owned_RW_bytes": 155648,
+  "source_derived_layout_slack_bytes": 17863,
+  "all_author_source_seed_manifest_and_layout_metadata_match": true,
+  "package_source_AST_unchanged": true,
+  "seed_imm64_width_checked_as_syntax_without_invocation": true,
+  "checker_repairs_before_record": [
+    "bind actual seed parameter names and explicit width branch instead of assumed spelling"
+  ],
+  "unchanged_baseline_counts_are_predictions": {
+    "code_bytes": 9644,
+    "elf_bytes": 13740,
+    "emitted_instructions": 1589,
+    "fixups": 479,
+    "labels": 163,
+    "owned_rw_bytes": 155648
+  },
+  "new_artifact_hash_observed": false,
+  "independent_preservation_claim_requires_next_review": true,
+  "inspection_reader_hash_is_manifest_declaration_only": true,
+  "upstream_imported_or_executed": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three complete files/32987 bytes read; acquired full bootstrap equals the earlier diff-derived source identity and exact retained hunk.",
+    "All three AST Constant.value differences match author paths/values; package,grammar,limits,state,error and publication code remain identical to R2.",
+    "Seven buffers plus33 scalar slots fit unchanged155648-byte owned RW;17863-byte slack is layout arithmetic,not measured free memory.",
+    "Held seed immediate syntax has fixed width for admitted64-bit values; unchanged counts/lengths remain predictions tied to baseline metadata,not new artifact observations.",
+    "Saved author zero-invocation and static PASS fields retain historical scope; the cited independent230-path preservation claim and reader correction require their own complete review.",
+    "No upstream module imported or source/seed executed,native artifact acquired/emitted/executed,model invoked,live process scanned,workstation activated or recipient acceptance obtained."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/REVIEW.md",
+      "bytes": 7387,
+      "intended_review": "complete_independent_source_review_envelope_and_preserve_reader_correction_and_baseline_claim_limits_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/CHECKS.json",
+      "bytes": 5468,
+      "intended_review": "complete_independent_source_review_envelope_and_preserve_reader_correction_and_baseline_claim_limits_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/IDENTITIES.json",
+      "bytes": 2319,
+      "intended_review": "complete_independent_source_review_envelope_and_preserve_reader_correction_and_baseline_claim_limits_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PROVENANCE.json",
+      "bytes": 1392,
+      "intended_review": "complete_independent_source_review_envelope_and_preserve_reader_correction_and_baseline_claim_limits_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/READER_CORRECTION.json",
+      "bytes": 473,
+      "intended_review": "complete_independent_source_review_envelope_and_preserve_reader_correction_and_baseline_claim_limits_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/SHA256SUMS",
+      "bytes": 648,
+      "intended_review": "complete_independent_source_review_envelope_and_preserve_reader_correction_and_baseline_claim_limits_without_execution"
+    }
+  ],
+  "next_scope_bytes": 17687,
+  "public_contribution_checks": [
+    "three complete source/review files and exact retained diff match",
+    "author AST paths,grammar,buffers,source/seed pins and prediction baseline reconcile",
+    "actual seed width branch checked without invocation; cited independent/result evidence retains scope",
+    "coverage,next review scope,links,operational privacy and git diff --check passed"
+  ]
+}

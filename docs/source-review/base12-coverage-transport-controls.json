@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-packet-custody.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/transport_prefetch.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/test_transport_prefetch.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-authorization-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-continuation-clarification.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-local-gates-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/stderr.txt"
+    ],
+    "scope_expansion": "Added saved fixture receipt and stderr to bind the gate to its retained 26-method result."
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/transport_prefetch.py",
+      "bytes": 18159,
+      "git_blob_sha": "5bd45e7a5e1e068c1f2fcbcc2262db4b477e8029",
+      "sha256": "1f99579859df7c80b8e26232e415a782c8c909364060ad0b08c58a3753786c14",
+      "lines": 395,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-controls-and-retained-fixture-gate",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/test_transport_prefetch.py",
+      "bytes": 26109,
+      "git_blob_sha": "8be3cb65f102b46ec607c515b59bd52f18bea495",
+      "sha256": "87850d350b0d76ccdea9c36fe414e131826bee65c80930920b0ca3372c19aece",
+      "lines": 516,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-controls-and-retained-fixture-gate",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-authorization-v1.json",
+      "bytes": 1147,
+      "git_blob_sha": "a3e38b00a150187f7f00c516100739888a4034de",
+      "sha256": "02375edc17b51841d80682afd863ebabad9ed14e6db8b96a9ae2f729d24ff9d5",
+      "lines": 24,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-controls-and-retained-fixture-gate",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-continuation-clarification.json",
+      "bytes": 697,
+      "git_blob_sha": "2d8a92f1c1864c3701759d11b5475da182824864",
+      "sha256": "df27753ebc0025f4ca22fb32bdd4bda966ecf8af51ae69f354a4cdb38a8ace42",
+      "lines": 11,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-controls-and-retained-fixture-gate",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-local-gates-v1.json",
+      "bytes": 1580,
+      "git_blob_sha": "f011a9068f5b0c39c9a0f5fa0f684c5278ded5d9",
+      "sha256": "41cc33b35e61b4b02b1a02e32b42bacd7209d14996d9b469fff70249fc09f84b",
+      "lines": 34,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-controls-and-retained-fixture-gate",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/receipt.json",
+      "bytes": 1595,
+      "git_blob_sha": "f7a35c933779381ab2ac6fdfa60ca71194834a3c",
+      "sha256": "f544a6f09cda18c24cd882abfe6dc2730c7009b24e303d490c0722e8e2c79f2c",
+      "lines": 56,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-controls-and-retained-fixture-gate",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/stderr.txt",
+      "bytes": 4111,
+      "git_blob_sha": "85d62f437699827cc813f5bf5ff7f124235b649b",
+      "sha256": "68e9c4640e59c4ff6eb6cd36fed023538f06bb323d56c7f515a336ab7c98f88d",
+      "lines": 31,
+      "semantic_review": "full_direct_read",
+      "review_lane": "transport-controls-and-retained-fixture-gate",
+      "acquisition": "previously_archive_custodied_payload_reverified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 7,
+      "unique_blobs": 7,
+      "bytes": 53398
+    },
+    "cumulative_direct_read": {
+      "paths": 359,
+      "unique_blobs": 359,
+      "bytes": 2585476
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 411,
+    "remaining_paths_without_full_semantic_read_or_alias": 5182,
+    "remaining_distinct_blobs_without_full_semantic_read": 4070,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 7,
+    "this_review_verified_bytes": 53398,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Seven retained texts fully read; two Python files syntax/AST-inspected without import or execution.",
+    "Fixture names, gate pins, log and envelope agree; no fixture, socket, recovery request or historical scientific run was replayed.",
+    "Budget reservation protects delivered HTTP body bytes under the client read contract, not TLS/headers/whole-process memory.",
+    "Operation and cooperative deadlines require the separately configured external wall envelope; generic injectable batch options are not the production entrypoint policy.",
+    "Per-file no-overwrite link publication is not atomic batch or receipt publication; post-link failures can retain visible bytes and a published flag with failed status.",
+    "Initial journal fsync precedes GET, but no durable directory/terminal receipt transaction or automated resumption is established.",
+    "Pinned-file digest and later parsing still assume stable private paths; no replacement or crash experiment ran.",
+    "Historical authorization and local gate records do not grant fresh authority or establish production completion."
+  ],
+  "review_report": "base12-transport-controls.md"
+}

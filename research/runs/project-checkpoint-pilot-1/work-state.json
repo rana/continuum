@@ -1,0 +1,41 @@
+{
+  "schema": "continuum.work_state.v1",
+  "id": "checkpoint-pilot-1",
+  "source_snapshot": "sha256:f8d9a0304b281870b0e01cdfaec78f6b6e41e40cca313d9ac89322c78bc30bb5",
+  "objective": {
+    "id": "pilot-objective",
+    "statement": "Continue real development by reviewing the new project checkpoint adapter for an actionable custody or recovery defect.",
+    "done_when": "Return one concrete supported issue and a minimal fix/test proposal, or explain why no actionable issue is established.",
+    "constraints": [
+      "Review only this public project. Do not claim code execution or repository access: receiver has supplied text only.",
+      "Distinguish context sufficient to select an action from source needed to perform that action.",
+      "Current adapter source is committed in caf7880; do not assume proposed capabilities are implemented."
+    ]
+  },
+  "attempts": [],
+  "decisions": [
+    {
+      "id": "disposable-store",
+      "state": "active",
+      "statement": "Use a fresh disposable store and committed regular Git source. Native core remains independent of Git.",
+      "basis_attempt_ids": [],
+      "reopen_when": "Observed use requires retained store upgrades or a broader source representation."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "custody-gap",
+      "question": "Does the adapter lose a decision-relevant artifact or misrepresent provenance under plausible inputs?",
+      "why_it_matters": "A completed checkpoint should enable useful continuation without concealing what was captured."
+    }
+  ],
+  "handoff": {
+    "id": "pilot-review-handoff",
+    "from_worker": "codex-coordinator",
+    "to_worker": "claude-supplied-context",
+    "scope": "Review the adapter and propose a bounded next implementation using the supplied source. Report needed/missing/unused context and extra retrieval; no tools are available to this receiver.",
+    "required_decision_ids": [
+      "disposable-store"
+    ]
+  }
+}

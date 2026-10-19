@@ -1,0 +1,9 @@
+{
+  "source_commit": "caf78807cb0175de58603fa7e329f8634d2114a4",
+  "binary_sha256": "5eec2d78668e0e849fcdeade95531447c09ef544b3e926228b2b301197610ab1",
+  "build_command": "cargo build --locked",
+  "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)",
+  "cargo": "cargo 1.91.1 (ea2d97820 2025-10-10)",
+  "build_source_note": "Rust files and Cargo.lock identical to build source 3d15a37; adapter-only commit caf7880 added no native changes. Build completed successfully in this Linux tool executor; no workstation activation observed.",
+  "build_log": "build.log"
+}

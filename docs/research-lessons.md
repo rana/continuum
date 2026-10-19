@@ -125,6 +125,12 @@ The [decision-gate review](source-review/base12-decision-gate.md) supplies two c
 
 The reviewed archive checker also verifies one read of a path and then reopens that path for parsing. Under replacement between opens, checked and parsed content can differ even when the parsed members match their own manifest. This is a source-derived conditional schedule, not an observed failure or an executed exploit. Continuum should bind transformations to the exact retained byte object or state the enforced immutability condition, keeping custody, interpretation, execution and acceptance separate.
 
+### 10. Completion and cost follow the declared boundary
+
+The [native-boundary review](source-review/base12-native-reset.md) separates complete native execution, native building and reproducible self-rebuilding. A later reported decoder result does not silently finish the original gate's controller or builder. Continuum's native runtime, owned acceptance semantics and proposed owned kernel likewise require separate evidence. Reproducible bytes alone do not establish compiler correctness.
+
+The source also distinguishes resident-kernel, whole-operation, launch, build/cache and device timing. Continuum's in-process workload, CLI reservation probe and complete checkpoint attempts retain their own boundaries; they do not compose into a general speed claim. Historical integration notes can preserve original packets while appending narrower outcomes and consumed clearances. Those notes are navigation for a successor, not fresh authorization to repeat external effects. This unit read six pinned files and checked four manifest bindings; it performed no upstream execution or new consultation.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

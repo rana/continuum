@@ -1,0 +1,22 @@
+{
+  "source_baseline": "8259af12f406c5f081fbcdd2238c44b1faf84a16",
+  "files": [
+    {
+      "path": "docs/source-review/base12-native-reset.md",
+      "bytes": 6792,
+      "sha256": "224a449cd56fbee34fbcc86235aad4786cb8f5a6be589782428b12fbab31fea2"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-native-reset.json",
+      "bytes": 5161,
+      "sha256": "052ac28a6358fc162df444adcd36bdfe4e60fbdd9062879f9a01bb5a34aa0a5b"
+    },
+    {
+      "path": "research/runs/base12-native-reset/validation.json",
+      "bytes": 1435,
+      "sha256": "191fc6da36139ae64c5a386a1b90cebc40532c40f29a22d652af052430f0d62d"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_baseline": "8259af12f406c5f081fbcdd2238c44b1faf84a16",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "GitHub Git blob API base64; decoded bytes checked with Git blob SHA-1 framing, length and SHA-256",
+  "verified_source_files": 6,
+  "verified_source_bytes": 25430,
+  "utf8_decoded": 6,
+  "markdown_full_text_read": 5,
+  "json_parsed": 1,
+  "manifest_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/native-execution-reset/CLAUDE_REVIEW.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/native-execution-reset/MEASUREMENT.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/native-execution-reset/README.md",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/native-execution-reset/USER_MESSAGE.md",
+      "matched": true
+    }
+  ],
+  "manifest_bindings_outside_selected_scope_not_checked": [
+    "collaboration/dot-bridge/to-dot/gpt-20261016-native-boundary-reset.md"
+  ],
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_unread_scope": {
+    "path": "research/owned-stack/2026-10-15/signal-learning-readiness/",
+    "files": 5,
+    "bytes": 20074
+  }
+}

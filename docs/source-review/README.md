@@ -6,7 +6,9 @@ The architecture lessons are in [research-lessons.md](../research-lessons.md). T
 
 ## Latest additive checkpoint
 
-The [decision-gate review](base12-decision-gate.md) fully reads ten additional distinct files / 30,638 bytes and checks nine internal manifest bindings without executing upstream code. Cumulative semantic coverage is now **171 distinct blobs / 1,257,072 bytes**, plus **47 byte-identical alias paths**. The [new ledger](base12-coverage-decision-gate.json) retains exact identities and the remaining **5,375 paths / 4,258 distinct blobs**. Its source-derived path-reopen custody limitation is conditional, not an observed archive failure. The earlier global acquisition aggregate is retained as historical because its full private overlap index was not recovered.
+The [native-boundary review](base12-native-reset.md) fully reads six additional distinct files / 25,430 bytes and checks four original-file manifest bindings without upstream execution. Cumulative semantic coverage is **177 distinct blobs / 1,282,502 bytes**, plus **47 byte-identical alias paths**. The [latest ledger](base12-coverage-native-reset.json) retains identities and the remaining **5,369 paths / 4,252 distinct blobs**. It separates runtime, build and self-rebuild milestones and preserves measurement and historical-authority boundaries. The earlier global acquisition aggregate remains historical because its complete private overlap index was not recovered.
+
+The preceding [decision-gate review](base12-decision-gate.md) added ten distinct full readings and nine manifest checks, reaching 171 directly read blobs. Its conditional path-reopen custody limitation remains source-derived, not an observed archive failure.
 
 ## Later completed review groups
 

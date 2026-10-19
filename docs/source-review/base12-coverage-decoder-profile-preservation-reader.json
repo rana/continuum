@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-decoder-profile-independent-review.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PRESERVED_BASE.json",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader.py",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader-r2.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PRESERVED_BASE.json",
+      "bytes": 65811,
+      "git_blob_sha": "8480e728be1b2d8d5ae57b40b26c3ab565d492e0",
+      "sha256": "3899107d10c11f7d537fd07ffa976769d118734e7539c9d8f2bb965ad5c22e17",
+      "lines": 1387,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-baseline-inventory-and-reader-source",
+      "reading_representation": "complete_compact_inventory_and_lossless_reader_source_difference_with_exact_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader.py",
+      "bytes": 11072,
+      "git_blob_sha": "39cf6d1998695466da8559764503c7363b5ca014",
+      "sha256": "2e69acc124ad3150af6cd57d02ee370730f25a7eef4a9238ba6c561679461955",
+      "lines": 194,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-baseline-inventory-and-reader-source",
+      "reading_representation": "complete_compact_inventory_and_lossless_reader_source_difference_with_exact_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader-r2.py",
+      "bytes": 11076,
+      "git_blob_sha": "35aeddfbab5146e592e0f41c7de989e7eb278618",
+      "sha256": "8c47a293b30bb1a96d98a09bfb1acab27ca4021fe865366ff5f6c17a20f5036c",
+      "lines": 194,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-output-profile-complete-baseline-inventory-and-reader-source",
+      "reading_representation": "complete_compact_inventory_and_lossless_reader_source_difference_with_exact_roundtrip",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 87959
+    },
+    "cumulative_direct_read": {
+      "paths": 626,
+      "unique_blobs": 626,
+      "bytes": 5466396
+    },
+    "additional_identical_blob_paths": 115,
+    "alias_distinct_blobs": 39,
+    "semantic_covered_paths_including_aliases": 741,
+    "remaining_paths_without_full_semantic_read_or_alias": 4852,
+    "remaining_distinct_blobs_without_full_semantic_read": 3803,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 87959,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three complete files/87959 bytes read; all230 baseline rows and both reader sources have lossless full-reading projections and exact identity checks.",
+    "Reader sources differ only by the four added characters n=4; removing that one AST keyword restores complete AST equality.",
+    "Fresh nontruncated historical/current Git trees match all230 memberships,blob identities,lengths and tracked modes; no native payload acquisition follows from metadata equality.",
+    "Saved baseline rows contain no mode field. Reader source checks worktree execute bits, but those per-file historical filesystem observations are not retained in the inventory and were not refreshed here.",
+    "Reader code checks regular inputs and fixed Git metadata,then writes three exclusive0600 JSON outputs sequentially; no set-level atomicity,fsync or new runtime authorization is supplied.",
+    "Reported initial failure precedes output save calls in source; actual historical receipts/results remain separately reported,not replayed.",
+    "No historical reader execution,candidate import,native acquisition/emission/execution,model invocation,live scan,activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-decoder-profile-preservation-reader.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

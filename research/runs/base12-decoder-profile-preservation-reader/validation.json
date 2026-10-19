@@ -1,0 +1,2169 @@
+{
+  "schema_version": 1,
+  "source_baseline": "7a9612c45f55eb4536ecf98d385d6d5bdd02875f",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 3,
+  "verified_source_bytes": 87959,
+  "full_source_paths_read": 3,
+  "new_semantic_files": 3,
+  "new_semantic_bytes": 87959,
+  "baseline_json_exact_roundtrip": true,
+  "baseline_records": 230,
+  "baseline_record_bytes": 1987240,
+  "historical_commit": "4e2f235c9810454559b0711468c7610570e1436e",
+  "historical_tree_sha": "4298d0ae056f9873d17bf8489a0fa9da1877f7d9",
+  "historical_tree_truncated": false,
+  "all230_memberships_blobs_lengths_and_Git_modes_match_both_trees": true,
+  "tracked_mode_counts": {
+    "100644": 230
+  },
+  "baseline_rows_do_not_retain_modes": true,
+  "historical_worktree_permissions_not_freshly_verified": true,
+  "baseline_identity_checks": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CHECKPOINT.json",
+      "git_blob_sha": "dd0bd1388067e765ecad59bb0b0cf1e8aa495114",
+      "bytes": 3228,
+      "sha256": "d7831906494c9b0beb62280085306372f63b426076ea87beaff030fc2e1bd9ca",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "git_blob_sha": "d876f5183f478dd97b1999004d3c98eba2029346",
+      "bytes": 6957,
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CORRECTIONS.md",
+      "git_blob_sha": "a0de6d5b0bcb6f4dfe3060a4ad4776f893f05873",
+      "bytes": 1220,
+      "sha256": "bc9c2700c6db958d2ce24af65fff84e9230bbeccf7e9d272f63eba256889d501",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DEPENDENCIES.json",
+      "git_blob_sha": "dd1deb7672f4c8bdfb0e0e5d65a275e63905b319",
+      "bytes": 1737,
+      "sha256": "394731bbfb37e08162abe598f4b5e3fca83933215115ea194465d0d5edc64730",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DESIGN_REVIEW.md",
+      "git_blob_sha": "05dd5321a596a157360b8eba7fac903c99a94bab",
+      "bytes": 7109,
+      "sha256": "1545ec6bbd4a115433fdb7e990a45278f686adc2225acaf58537cec0378c4995",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/MIGRATION.json",
+      "git_blob_sha": "62b92436ce02af873a0381be66cbece88fb6f928",
+      "bytes": 62176,
+      "sha256": "4cf9ea02eca2f92a50002890cc3ef00ca1e10f7e31d36bc2ae6178ba7ce649d2",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OPEN.md",
+      "git_blob_sha": "877477871a0349b191a5306470e4ae3e4b079c21",
+      "bytes": 2138,
+      "sha256": "0d4ee14bee7bd12f63101d0afcaa505063754e84cdb375a0d306f9ab580655a1",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OWNER.json",
+      "git_blob_sha": "66fd07a8ad54b24e7003498f47dcb82d1ab8a9b6",
+      "bytes": 1022,
+      "sha256": "85d6e5e75086bc4c480ed92b8636bcd512473c8b04337bbf158683ef2395df10",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/README.md",
+      "git_blob_sha": "7db7906814a0663492dbafc5fabab68084429810",
+      "bytes": 4186,
+      "sha256": "82ed3be29f12c62dc5d84c3196a529e0237e2d1704aeac57c56c3700b284aa22",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/SHA256SUMS",
+      "git_blob_sha": "d5f2861f718f94bed1620882971e3a7751af1a48",
+      "bytes": 3993,
+      "sha256": "54696e7cd4c28d55076d430f540f922b3421a43ce4d6e0defd3e61af22dc1292",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/TEST_PROPOSAL.md",
+      "git_blob_sha": "84db995ffadf0f57cab2c4d1736bf2764a2c7392",
+      "bytes": 5623,
+      "sha256": "13e10232ec75b21686a74a8de7f5c287ccfde805d7bb370d754549626d405637",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/BUILD.json",
+      "git_blob_sha": "75bff894eb593dc12583c07476c9ef3e3c74b5e2",
+      "bytes": 790,
+      "sha256": "020cd302efa549d3c0b1623d6ec521d59a86cdc29a708130964c0a863e5bc5a3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/STATIC_CHECK.json",
+      "git_blob_sha": "70cfea3bd3e34f17fb3f4d410d188a218d2c5b04",
+      "bytes": 2123,
+      "sha256": "9249889bba33143d7206755eccc19d95f76016103c412ca8ef8e24a32c9b782d",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/bootstrap.source.py",
+      "git_blob_sha": "858ec8e528dac3368e59a20d1bdc02e88aac9c2b",
+      "bytes": 24663,
+      "sha256": "bf4a268210ea8987594b34a3525953b06ab61cc3547c822f94717807849a71c1",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.code.bin",
+      "git_blob_sha": "d69264e25a62b0c3f46ac6bda8533c4121c56dea",
+      "bytes": 9644,
+      "sha256": "b22d3d5f9b9d811baf414ff644b64786b98f948fc27b450edcd00666cc58daed",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.disassembly.txt",
+      "git_blob_sha": "bfcbc0b2ec762b68f57470c38e3df24b2215ef04",
+      "bytes": 118158,
+      "sha256": "f83dc80eb48b157d1a01830fdf42a81d6d3552cb24137606d8e4a70f595c4881",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.elf",
+      "git_blob_sha": "9b49bcdefb8e18ae4ec223df19c237c423fcfae5",
+      "bytes": 13740,
+      "sha256": "5fd517cab468619cf6800630c887635fa1f4100cef7842ee256fe7649715e41a",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.instructions.txt",
+      "git_blob_sha": "16f4b3f686f13c57a3b755a6135e290d436f9f4b",
+      "bytes": 75434,
+      "sha256": "c9bd9356d34e6c19ab0a471fd0c502414307e19e64c88b32184a6f9ee724189b",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.layout.json",
+      "git_blob_sha": "9e08f606fb09b07f6f3fee4e9a2ad28feedee806",
+      "bytes": 53163,
+      "sha256": "836482132b0b4ec8ec34a25ef188cedb8d8d03ce0ad9054341063b9af09f0b73",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.readelf.txt",
+      "git_blob_sha": "3758c19b93ccb095a06f277be83b7ee3cfcebd62",
+      "bytes": 1534,
+      "sha256": "9f7713be741e49a1f98c46a537e4b540afb727ae9a0d7a389bee1b0147151cee",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/BUILD.json",
+      "git_blob_sha": "6041bcc5d237bc01e29735abbae4ad45e1648092",
+      "bytes": 790,
+      "sha256": "ec807560258c31bda4729512a3e3dfbdf584f21c75668215ddd144a8ca1ec0af",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/STATIC_CHECK.json",
+      "git_blob_sha": "7773d533cc8b81db43e94d418b6feb378a1b66cf",
+      "bytes": 2123,
+      "sha256": "36bed47cd36b406ccaccf397d06e22e0fb06423cee2fd59ef501dd6c6592b5fe",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/bootstrap.source.py",
+      "git_blob_sha": "df50fc2ab6c29d9edfba5fd386b57b5df1270890",
+      "bytes": 24741,
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.code.bin",
+      "git_blob_sha": "1914a0c1346316de7439349d4d0b36b68c590b86",
+      "bytes": 9644,
+      "sha256": "f1ed3e878d6beaba79c9317147ecace63f8bb2e6e9c2ea811a27fd6be2f6dd96",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.disassembly.txt",
+      "git_blob_sha": "33cd1887276a3004fea35a5ee532994a9e92ea11",
+      "bytes": 118160,
+      "sha256": "965b3665c9fc1fe8ba741bdab7ab8707155bb71e700654df565ed9c624ae4f08",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.elf",
+      "git_blob_sha": "c7c0fa6eeb5b79ac8050c92ec85a4bb3d7e84569",
+      "bytes": 13740,
+      "sha256": "2faf4a1c6b03422c2ee213cc8901fcaae7bf7046146efacaa234ebaeb60673ab",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.instructions.txt",
+      "git_blob_sha": "dedba3efbc31fe2a832729eb95283210373ba271",
+      "bytes": 75436,
+      "sha256": "01977a73bf4c3f4b9fb01567a34dc40b29925f4315263f65c64c324c370795a7",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.layout.json",
+      "git_blob_sha": "6b95f6ef0b6db8235839467d8b16390a0d1ee564",
+      "bytes": 53163,
+      "sha256": "ddb22e1423b1853b755f90f7703b21a3bf05a5a8f34cb80c27181e9238678cb0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.readelf.txt",
+      "git_blob_sha": "3758c19b93ccb095a06f277be83b7ee3cfcebd62",
+      "bytes": 1534,
+      "sha256": "9f7713be741e49a1f98c46a537e4b540afb727ae9a0d7a389bee1b0147151cee",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "git_blob_sha": "df50fc2ab6c29d9edfba5fd386b57b5df1270890",
+      "bytes": 24741,
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/EVIDENCE_PROVENANCE.json",
+      "git_blob_sha": "11532d5dfe915b05b82ca4898784a736172c7525",
+      "bytes": 2699,
+      "sha256": "f3115884e25b4ef8e5b7167d074cdd6314570f4adb7c388586f405803ee6f0fd",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_ATTEMPT_MANIFEST.json",
+      "git_blob_sha": "bb010399a7847fb248b79ba9552d37968406d262",
+      "bytes": 99153,
+      "sha256": "9e372164f839a723ea75798447ea52751db25d8a7de37c33e01541afb67ef704",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_RESULT_REVIEW.md",
+      "git_blob_sha": "a3ce44b5adf89cd5a50edc568f4adf99cd16f52f",
+      "bytes": 9382,
+      "sha256": "bd707bf56bccaea097571e35ca34eae46cc8d7565696fedc30bce5e862a45206",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_SAVED_REVIEW.json",
+      "git_blob_sha": "958da4aa42b30b7e990f1c17ed4cd37f03d81818",
+      "bytes": 52312,
+      "sha256": "4d06bde15fd677bacd9b24031703b3530f930a38a2729044e3e3882bba27da05",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/README.md",
+      "git_blob_sha": "e8ace623a447ce2e1a8fadd55a51dc44e7ec43df",
+      "bytes": 5584,
+      "sha256": "5dfdd803fa9bfcb9ff4b66c5fcf45bcceca4d024ff55721b244d54c9acb66ebf",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/RESULT.json",
+      "git_blob_sha": "b15777d23296550535e85c01df67da4dfd781f3b",
+      "bytes": 4240,
+      "sha256": "7d9930d31bf64fbb0d63a20d09ab0e8e2df14d345fc2e1a0ee21bcb3aba28506",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/SHA256SUMS",
+      "git_blob_sha": "e0ae309ff89795bc733dc15b301d77b22f43e98a",
+      "bytes": 536,
+      "sha256": "84c54616a442079a62e07d8934ccf6e32cad19d72c7df8a4b4e856ebcae11454",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/inspect_static.py",
+      "git_blob_sha": "fe619628b6854b28685e781b4d4f274cdb5644c7",
+      "bytes": 4615,
+      "sha256": "5ff70f4a34a918f50113597825b77c27f20fc6499c8ccaeb65a006caccd7ba7d",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/migrate_runner.py",
+      "git_blob_sha": "a712f95d420afe2b938215439ea388516b05e2f5",
+      "bytes": 3321,
+      "sha256": "0de7665c13a895a96a2c9bff9368182c97d5cc3525588b4d766bb64783aaf9b7",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CALLER_INVOCATION.md",
+      "git_blob_sha": "bc3b35bad900a3248c13ef2637211cf010477964",
+      "bytes": 4983,
+      "sha256": "8abeee977cdd607c1445487b388ac0995b40ed977beb9dca8870f26726cced02",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CASE_MATRIX.md",
+      "git_blob_sha": "354190eae70688837a759001567b1e0a2aa8fb97",
+      "bytes": 5442,
+      "sha256": "85231e96e9441c6412c6c5bb6123abef4b59b3f8f46b9fecd5259a77d09f14cd",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "prior_semantic_ledger_identity_payload_not_held"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CONTROL_REVIEW.md",
+      "git_blob_sha": "32348168530871c6da9a6d33d4634afddb5d109a",
+      "bytes": 7966,
+      "sha256": "426d31b83364ea277c825660460a4ae1b383159922189f8f6ae67840e92fa667",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVELOPE.md",
+      "git_blob_sha": "a604c869f02d7197d3066d2b3b487f27a0c63cee",
+      "bytes": 9985,
+      "sha256": "d59edbbaa80f5ecaaee2e431eacf4dfd9daf0200c6893d244e674544e32f0fcf",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "prior_semantic_ledger_identity_payload_not_held"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVIRONMENT.json",
+      "git_blob_sha": "487b2e8ddcbf3dd0c88d4b5df462172687d520c6",
+      "bytes": 4026,
+      "sha256": "05a3de723093c8fe3d9cc0d836b03ca9b4b9009c74123208fb53ddf1907c6d67",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/FIXTURE_REVIEW.md",
+      "git_blob_sha": "4193673d55b5af9034dc7b135ad794806c7d9a24",
+      "bytes": 9226,
+      "sha256": "58820aadff7d90882fcdb4d68fd6e8d18bd7b752a2120e082e4007f34693278e",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PACKET.sha256",
+      "git_blob_sha": "0245ea1c2e21c1c6f42f044ee4db8728ac980b83",
+      "bytes": 16130,
+      "sha256": "828fbc83ac73c464adba934c3a97d4c703fde83e89fc71f8961c483f5182eb36",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PAYLOAD.sha256",
+      "git_blob_sha": "5c8b2f47ba968939037894399d807249072c86f0",
+      "bytes": 48617,
+      "sha256": "6851d8f100ed38d9af3606bfb58b6f9ee7a209af81cbf56d04d12277e5094ceb",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PLANNED_COMMANDS.json",
+      "git_blob_sha": "6bf32ab52a5e0c1f6a588cacc50cd5359ac530e2",
+      "bytes": 71425,
+      "sha256": "43432ddeb05db45d6c0228c66f443c1699d2518245c8168148de160b234e7c70",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PREPARATION.json",
+      "git_blob_sha": "fdf3ca132d134521379f3aaeb78340ce9e4834de",
+      "bytes": 3950,
+      "sha256": "7be90fca7d777a0e0af57b88067c27a79fe4b5f0f017759cc27d5f1524997b90",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PROVENANCE.json",
+      "git_blob_sha": "d97efc49a6565d556fa2f5f98b2663e1eb8bc509",
+      "bytes": 826,
+      "sha256": "fe2d887e0daca8927149f5691ca75e432fe5655e8db426115f31e0f4387bee23",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/README.md",
+      "git_blob_sha": "b631023cd3c8618134a9293874877172b80fcb8b",
+      "bytes": 3833,
+      "sha256": "7c8e4ff94a06bf1c597f765462ca39495de9e0eebec49cc0b5fb22a387a47388",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/REVIEW_REQUEST.md",
+      "git_blob_sha": "3d67518803919e7765d31ee521997fb09a1df8c8",
+      "bytes": 4012,
+      "sha256": "f84940dea62e59cb7d8f318bea750e2544c18104e297b5740d77691c38adb4ea",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/STATIC_REVIEW.json",
+      "git_blob_sha": "33832740450757edf5fe072794372ac7a77b1000",
+      "bytes": 3003,
+      "sha256": "31d1c13e4e5314e90f0f32ef29c1703da3316325e6c297e61a2c6cc94a4cd302",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/caller.py",
+      "git_blob_sha": "cb3c189608669ceeefc0457f8cc151d120ac50f6",
+      "bytes": 11056,
+      "sha256": "b3bca1451ad4e8e4249dcb19eadc05c42c5a443b04a755143594219ffe3372ac",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "prior_semantic_ledger_identity_payload_not_held"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/driver.py",
+      "git_blob_sha": "bbb786dcb4924513b5cd7478386365b1fb214d38",
+      "bytes": 14211,
+      "sha256": "be2477ab56e86ef940fa64c05cf499d73e0a68a65eab2a6edad754f6cf435396",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "prior_semantic_ledger_identity_payload_not_held"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/PROVENANCE.json",
+      "git_blob_sha": "0b49d1b2a031b687498a5731b32f2404657ed504",
+      "bytes": 2204,
+      "sha256": "b94f7c842df28122f06c4462db640f8421f2908f93d015ca24e975170d8ab557",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/SHA256SUMS",
+      "git_blob_sha": "2433fbc02dd80982010f6d871a007e95d9019b3f",
+      "bytes": 13072,
+      "sha256": "9a1d09b5a292081697065a641a051c132e1991fbdfa5356bbf94abf8b0113c73",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/cases.json",
+      "git_blob_sha": "ca55a165d107aa5b0400abb394224e9adad6c699",
+      "bytes": 140815,
+      "sha256": "2c4feb10a2133cda533417f5b30d77b20f0ab4a1a778a18a3e1c5a13c04ebd1b",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.elf",
+      "git_blob_sha": "ca3aaf877d6efa8c2d79e2c5308a826f309f27ba",
+      "bytes": 6930,
+      "sha256": "12fd50a2fa3ff18a1b615557246cbcdb13dc93214f075dba238be34f7f40e543",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.layout.json",
+      "git_blob_sha": "46ea90748643ed2a51d364bbb1dd8c69de1be51a",
+      "bytes": 45963,
+      "sha256": "5e434b2498e1225d398929f01b8cabb51a9da70f40915d04dd2cb948c6e11a77",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.map",
+      "git_blob_sha": "b14c2869f13c62fd3c2852459a9049d421680369",
+      "bytes": 16608,
+      "sha256": "48a4f80ab464ccfee23f7bd69df03dc5e40cd5e9ad2dfdbedeac94cea2332c4d",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.elf",
+      "git_blob_sha": "ed466ca3d0b6e50485c21401e0452b8660223b79",
+      "bytes": 4634,
+      "sha256": "0464ee6d8faf6bc6166bc3a6d141b453f6a1e47f073fe40056e038a29ac08217",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.layout.json",
+      "git_blob_sha": "1b723a61c5c0cf66422c4e1e79f1cd3f4f6f7efe",
+      "bytes": 27040,
+      "sha256": "b9b10e0df79aa2be567e8d4f6c531acb8fdef2630b47e148bbeb4d5508432348",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.map",
+      "git_blob_sha": "b5ca4f5cdf6fc9bedfda8ed96e0f3567979230bb",
+      "bytes": 7200,
+      "sha256": "4d1572b66d8ca4db7a24c694dbe253a8b4e6d615a7d6a5e2b31252407f478111",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.elf",
+      "git_blob_sha": "56fcafb0174bff6227c61615be8f3c6d91b9e690",
+      "bytes": 4154,
+      "sha256": "30b0f857faedd8900c8c724b2e117781b1a3f9be93efde357814d9d5587600c3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.layout.json",
+      "git_blob_sha": "dbdbd6c64c293e2399d3f71137edce2c967d95f0",
+      "bytes": 1756,
+      "sha256": "15a5efd7ac4fd5bfdc5b447346dd8e3d750942dbcce7f4b15b88e186133ea4ae",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.map",
+      "git_blob_sha": "7414170bbb4c42b71dd26bae2fd681d38a8a9a14",
+      "bytes": 416,
+      "sha256": "c7803799095199253c422bfcfd0501998ffa98ade9aa3ea3a64376e6a5e7aefa",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.elf",
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "bytes": 4097,
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.layout.json",
+      "git_blob_sha": "06d45870be83e9f14e3b9ef6fa43785888d6adab",
+      "bytes": 691,
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.map",
+      "git_blob_sha": "d5a74e59012478f37fc1a30241e79d9706416e7f",
+      "bytes": 96,
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.elf",
+      "git_blob_sha": "3fd6332bf4a99c6e6bd5f9e43dc704c13d17c4ab",
+      "bytes": 5120,
+      "sha256": "a72ef0fdfc63ff2955307c4bf7832ae4ec0d28364c322ea16744f2a726ed6258",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.layout.json",
+      "git_blob_sha": "f8c4cc845c7275f4c1f9127dff280acd686da037",
+      "bytes": 65928,
+      "sha256": "282599d930877f24d37a23e2ab2b84377a80b2a350945c8a767192a69407218f",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.map",
+      "git_blob_sha": "5354352e8dcaf42f2da541223f19f5c61db651fb",
+      "bytes": 36896,
+      "sha256": "e2d2e30ac0d6c03d30d0b6686e471c94ba9506ea3b677f790beafbfb16c4a287",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.elf",
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "bytes": 4097,
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.layout.json",
+      "git_blob_sha": "2289b36184fc914322f9b465511ae5534fe276cd",
+      "bytes": 9502,
+      "sha256": "546ea0bf6e4d6cf9a7ac3d8015334f706475f4b40f0e745ccefbb3a7e4d5e4c2",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.map",
+      "git_blob_sha": "59c94c638565f12a910232184878cf6e0b11c758",
+      "bytes": 4160,
+      "sha256": "f42492a6380df1d4073f66c343d69e8a5f0c7297c439c27ee9c4e97eee2a7358",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.elf",
+      "git_blob_sha": "589077b3c08fc1fa5cc9853ce9bb754ab650ead4",
+      "bytes": 5376,
+      "sha256": "e82248a44973eb4f8c99ff7ce0d46ba43b90a7575655f1a6271ebbe2f33d1f1e",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.layout.json",
+      "git_blob_sha": "7e70f1071e5638ec6c47b80708ea7e8493215ba5",
+      "bytes": 42054,
+      "sha256": "88573c21e46682f6d345dccecf707eaf30b32756ae4740ee078eb3d3309e76d4",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.map",
+      "git_blob_sha": "5daf39d9c599f165488ccba7fa225a921cbb2cf6",
+      "bytes": 8256,
+      "sha256": "93fc878c82ba7f3d946e72087edd8d8a8860e20967f5a7feabdab6a0d93eb3d7",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.elf",
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "bytes": 4097,
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.layout.json",
+      "git_blob_sha": "1b5e47c636b7e7350dded66200aa56c22c293e58",
+      "bytes": 788,
+      "sha256": "ef299d157f367f4c75901e96239e03d95e9943a511d443e3f6dbb250b240a3b1",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.map",
+      "git_blob_sha": "99be6911838664a36cc8d8bda53f685195c86c29",
+      "bytes": 128,
+      "sha256": "59d6ac9a169c840d349a6ed202c4d1d18f63695f70f4bb6d23284e1d8815a0af",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.elf",
+      "git_blob_sha": "45e7405c6fdf4fef7257ae1a0bb0cb3e70845c7d",
+      "bytes": 4106,
+      "sha256": "8b12b28fac8b344ae96c7a8a4930c1269715d5c59f91a65f8eb2da4f01f7a1b7",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.layout.json",
+      "git_blob_sha": "b16d4f7468688af7f21ad4b1696e7fdca6ea838b",
+      "bytes": 711,
+      "sha256": "41d051f4f5641474802b5de63f1136f562c3ceef6a1a5775529a26f0d2130e9f",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.map",
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "bytes": 96,
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.elf",
+      "git_blob_sha": "7cde33baea44b4349f8b257b9f7f875a6f0440c6",
+      "bytes": 4097,
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.layout.json",
+      "git_blob_sha": "06d45870be83e9f14e3b9ef6fa43785888d6adab",
+      "bytes": 691,
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.map",
+      "git_blob_sha": "d5a74e59012478f37fc1a30241e79d9706416e7f",
+      "bytes": 96,
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.elf",
+      "git_blob_sha": "106597037488b206ca373a1668c0de798a93a0b9",
+      "bytes": 4106,
+      "sha256": "8e8e8bc8c2b377ecf6c1934cd8171e2249b24ee7fd2ab681f1f13c80386cc71e",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.layout.json",
+      "git_blob_sha": "a50ff242f16d43e3402b567ae670355b7ba28842",
+      "bytes": 711,
+      "sha256": "26f0c1296ce741dba453f8e5955ac54cca42981ccabf1069909a753e6a3a07f0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.map",
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "bytes": 96,
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.elf",
+      "git_blob_sha": "cd954174a9e1e76373c347ad3c0c1066916cadd2",
+      "bytes": 4106,
+      "sha256": "ee10bea8f55dca18448f744567e0d3ea8704b1bd77aa22c64f41cf27d72c73bb",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.layout.json",
+      "git_blob_sha": "267143ae5a0749cccb6f496894fe41107794316c",
+      "bytes": 711,
+      "sha256": "e9d9828e9c2ead453f2fe6b829ee94ccab3c25aab6e27d3f3193087d0c7116fe",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.map",
+      "git_blob_sha": "02448f026c88200e1d0fa1a39f3bb5a70b268359",
+      "bytes": 96,
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.elf",
+      "git_blob_sha": "e83abf407b8398a1df5bba0f84263710f09d22ff",
+      "bytes": 4103,
+      "sha256": "a2211e69a1465cc364638c80634c3670e5aebfe8e95938d4ad18f17a3338d17b",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.layout.json",
+      "git_blob_sha": "719ffbc567344491795ab6d136dbafedf6a7956f",
+      "bytes": 703,
+      "sha256": "a1afee113def7d64fdfe0d950f8d116b32c8310120c1386415365fd426968b59",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.map",
+      "git_blob_sha": "1948430814c60e8639f8182160ee20316317fafc",
+      "bytes": 96,
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.elf",
+      "git_blob_sha": "2daec19a669a680975bb7aee63c75f6fd5c6e22d",
+      "bytes": 4103,
+      "sha256": "97e4adb5e9df8f8af90ef6462a95020e264e9d9cce6a70bd5f84552a63780f7c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.layout.json",
+      "git_blob_sha": "c309f497d1189f761db204ebc14434be50020da8",
+      "bytes": 703,
+      "sha256": "3bcd3fdd40d2ac03ebc6bba9d6020a9eb5493d5e22509308f0152b788b1e8d44",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.map",
+      "git_blob_sha": "1948430814c60e8639f8182160ee20316317fafc",
+      "bytes": 96,
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.elf",
+      "git_blob_sha": "16de2b911b3041a011809a7d379dc29f6f3b863e",
+      "bytes": 4100,
+      "sha256": "d53e9c2cb5957760db939df93349f16da415d3119989ed6272117f84f200613b",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.layout.json",
+      "git_blob_sha": "5c638b429e25e127d7150d490aaa9a60e6707f6a",
+      "bytes": 697,
+      "sha256": "cbd16205e4d423064dfbe003b3d27c25b3efe79e599cb38354f097a1b82f0cb3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.map",
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "bytes": 96,
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.elf",
+      "git_blob_sha": "296783a833788ba9783f6fb7ae5e997fa8128000",
+      "bytes": 4100,
+      "sha256": "a1619a954a1f09b653cdc741742f5dbdc3344b55a503cb2b69dbaf42f1688637",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.layout.json",
+      "git_blob_sha": "9e282a73509dccd027c5867706ab85d1b0dbe61c",
+      "bytes": 697,
+      "sha256": "9bac01512fd33fe4285ff5d23f59e1a49d4d671fae4d2931ffea3a28499381bd",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.map",
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "bytes": 96,
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.elf",
+      "git_blob_sha": "37b6c6441292b566362b746de9c35ba72d1ae421",
+      "bytes": 4100,
+      "sha256": "ae3cbd16d93613e239b9aa9b189c3b4c12ab17ed8f60044a65c3082a07c788bc",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.layout.json",
+      "git_blob_sha": "c7445aec5e189186b1cf41539be9d5982a2337ab",
+      "bytes": 697,
+      "sha256": "eb36117e5bd3ec5c5c825830d9f029faca5040c927cd2c59dff8d8a8c6d375db",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.map",
+      "git_blob_sha": "0ed7d26687285073064a512c8ab2635e55d2ab14",
+      "bytes": 96,
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.elf",
+      "git_blob_sha": "91b7ce395c46712f3bd894f6a6f133dc652e8415",
+      "bytes": 25,
+      "sha256": "26e9f2ba5bf7e560452c5c5a373e09eb47daa4833ecc8c352e1859d8ddf50fe5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.elf",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "empty_identity_only_no_semantic_promotion"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.map",
+      "git_blob_sha": "9a6d8386a2b65986588728c7035ce792fa7b3c8f",
+      "bytes": 25,
+      "sha256": "6e8b74df8442e1766456d22957ca17dd1b5aae07a6f015b3516d2b987fa9c47c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/53.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.elf",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "empty_identity_only_no_semantic_promotion"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.map",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "empty_identity_only_no_semantic_promotion"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.elf",
+      "git_blob_sha": "a24b139d6bad608f13a1803ce6b373d2846ad127",
+      "bytes": 4096,
+      "sha256": "75c8d2b3e9761105ede89e8c87a1409974846bd6547539791522c8c3bc97ffd8",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.map",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "empty_identity_only_no_semantic_promotion"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/61.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.elf",
+      "git_blob_sha": "e38dbacb85a5d72a87c2ea0d2c79a35c649550b4",
+      "bytes": 4120,
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "payload_checksum_declaration_unheld"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.layout.json",
+      "git_blob_sha": "3e172874936e7892f6a2b4521ef65a278adc39ef",
+      "bytes": 894,
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.map",
+      "git_blob_sha": "dd18863b4c645749b414100a304525b31fc5cb28",
+      "bytes": 192,
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/01.b12s",
+      "git_blob_sha": "70fb133b2fd33b8d7aec72973c3317268cb46d8a",
+      "bytes": 7463,
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/02.b12s",
+      "git_blob_sha": "c44a6b71c7fe31fbe3b3e3159ffe1f9c35ae5547",
+      "bytes": 3614,
+      "sha256": "1e6b201da0a06933d6dfb5a0194f2813acfce36c1bd6dc76d5a0d2b685c74351",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/03.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/04.b12s",
+      "git_blob_sha": "b4042593c3921f2e49016582c638cfd166fee8b3",
+      "bytes": 206,
+      "sha256": "d013c9f79eb65d91f329d0f1375bd5683321a7867143067242a3b526778c86a5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/05.b12s",
+      "git_blob_sha": "a8e441fdcfdd695846d34b6cf1d51bd59312f77a",
+      "bytes": 65536,
+      "sha256": "9f62e5a0a49e41c1ccd1026f730a36a31d18e959e3b4f0572065d3f4db613ca5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/06.b12s",
+      "git_blob_sha": "2641aeb1f0d834e02e9cee8f2d0c6e00884ef95d",
+      "bytes": 65537,
+      "sha256": "ea2f2ee06bb50424c16ecfb8477d8992615e6167b07db5ea365cdceb3809a668",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/07.b12s",
+      "git_blob_sha": "c92636b50073b1327a8c7aba3b0e0d1f2cfd5cf1",
+      "bytes": 5398,
+      "sha256": "055c80251575880a9e832f8654ddcff9bc44a149f9161dd817b33d5cf3feb334",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/08.b12s",
+      "git_blob_sha": "18bbdfa4ba939f9f374bde42b0d588c110c815e6",
+      "bytes": 5402,
+      "sha256": "f59e3e9b9af274b0fd219b5d924307892a2a095b8273885e87666916c5d4986d",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/09.b12s",
+      "git_blob_sha": "768d6180f2c449a82bcc9196c1852daadb44f0da",
+      "bytes": 1306,
+      "sha256": "9c067d3e672123bfcef3cd6d17aedc38b6df056746d11981abeeb2472d0a1376",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/10.b12s",
+      "git_blob_sha": "77f578b736d257e47f2b00ce0092dcf2fdc0fca3",
+      "bytes": 1317,
+      "sha256": "1d7f645acd101be04901d473704b97cbf296885f619032ebb6e541f40627391e",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/11.b12s",
+      "git_blob_sha": "282f964ccbf972a2f61166982bfa4b5a603f013e",
+      "bytes": 3853,
+      "sha256": "04c517717d25230d4379ef16491ecf85d6373229954f4d56f26ff6187b2fdce5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/12.b12s",
+      "git_blob_sha": "d4acb9863067305f7cf4751cbdce0cc8a461b728",
+      "bytes": 3868,
+      "sha256": "576c9778f711651a28272077f419d84b4dee5f8e464e436bcb222535551416fe",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/13.b12s",
+      "git_blob_sha": "9b1142c2d39ccbe335e45d1bafa044be9a55599c",
+      "bytes": 55,
+      "sha256": "8c3974f0933803c0f6bead40f6a46f037366f8d6d60086023180f28595b248e1",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/14.b12s",
+      "git_blob_sha": "5eddcfc0bab9c95301d71e6e8e948a9a3a1d5acf",
+      "bytes": 56,
+      "sha256": "94a5e0a27c839ae152ed47568d0323f219b40c9fed29c0f785d76f167eb0feb1",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/15.b12s",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "empty_identity_only_no_semantic_promotion"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/16.b12s",
+      "git_blob_sha": "856e9b429ccbbee33817906f2c45cffc17100e1f",
+      "bytes": 13,
+      "sha256": "3f9632f02df5f4467c097e34655ffd50623fde9348a214fa03846e16104c74f8",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/17.b12s",
+      "git_blob_sha": "79dccd9e0dcd3a156c2807da740ec569532d2a1d",
+      "bytes": 16,
+      "sha256": "23848e399bcfc7f9912a1d5fc2aa1267e816dc0b1e32f1297381c07a0439a4fc",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/18.b12s",
+      "git_blob_sha": "7c8c8c3aaa936f1e008b6b0696af06291c75417a",
+      "bytes": 21,
+      "sha256": "ccb16b1ca8c2d8df6068b8ea0c3039050c2d8f077319fb54612a49fa097e61a1",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/19.b12s",
+      "git_blob_sha": "5bf6dad86b3e90224164be4a264f2550418d46ae",
+      "bytes": 30,
+      "sha256": "54529b4196e1514b599c71db9fa397ba8799747c55ca036b096aeab238a48668",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/20.b12s",
+      "git_blob_sha": "6201890aa7d241941fd67c0bf65eef19b7e00cb3",
+      "bytes": 29,
+      "sha256": "e0f3cecdb9be6af66d341475cce089a67221e5d86b3de2363819c4311b3fa362",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/21.b12s",
+      "git_blob_sha": "5c8f3d11d943098866631506113dad44fa7930e4",
+      "bytes": 28,
+      "sha256": "cfa9764177ea5081313e8e6949d216b5a6dce6b074b4ced844be6494b5bc298e",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/22.b12s",
+      "git_blob_sha": "9d841a1788ac28748f7bd0068bef6638d7601c0b",
+      "bytes": 32,
+      "sha256": "c6116ce5219abdbf510c85dde1594d661696691af78e1d88a7d70d0f8a76dcc4",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/23.b12s",
+      "git_blob_sha": "fbdab140db8e014249f82c5e7b23e104cc55170d",
+      "bytes": 17,
+      "sha256": "1b7da9cd88d3e9493303a5f8633f86f9104800e51e1e80401210822fc70fb5d6",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/24.b12s",
+      "git_blob_sha": "56c1d9e3a7f5a955aa204d5bdfbc6297232f68f4",
+      "bytes": 25,
+      "sha256": "527dd6f84e26c353f20b6e84458ca7a49d476d2a8c61997da96e864742859727",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/25.b12s",
+      "git_blob_sha": "2429ad9eb36d475f79f0ab506fc6d451882538ff",
+      "bytes": 19,
+      "sha256": "c0111e134a9d272764ad11039d558c19c7e292b91d9d588779af08e0ce08f19f",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/26.b12s",
+      "git_blob_sha": "2f50700fb2d969cf8774e2a81f9d8db5540e131d",
+      "bytes": 36,
+      "sha256": "c8f6a097f898ac0a8c5dc2634bd8811c56f1d3d9c5a2958021369d6ece6b582f",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/27.b12s",
+      "git_blob_sha": "2bed62d1385770e66a9b4192aa701d58d0ce2172",
+      "bytes": 24,
+      "sha256": "13533d66723cad6bd63f0b90ca510f346068d5df8e074b8cbb94ff96d39bb9d4",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/28.b12s",
+      "git_blob_sha": "e3a72eaeed01b207a103e4532601576f7ce7600d",
+      "bytes": 18,
+      "sha256": "b39fcd98dd4ebf3c7f9d6521e52ae174b5b4330d11acbc41f6432148b34bcab9",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/29.b12s",
+      "git_blob_sha": "bca425b457079c035f80011ee9d03ed85a616afe",
+      "bytes": 18,
+      "sha256": "bd4954515e1584c8a0d9fb36e6e565ce5babb51a31d9d5fd1f5f22f0c7aa1bc9",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/30.b12s",
+      "git_blob_sha": "de3b1cf6ebf25941586fcea0d78c0625cc6f52c4",
+      "bytes": 28,
+      "sha256": "bc82781f47682e4f806bd8cfe400d8ceaafcc86d9b79cc4a2da4472411a2ef4e",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/31.b12s",
+      "git_blob_sha": "a803b8ce5441544bd54442df380635c0840215db",
+      "bytes": 31,
+      "sha256": "ae4daad8b2dd05fe836196ca686e2e50e8ace97495a3defc02ce26b672070907",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/32.b12s",
+      "git_blob_sha": "062c0e72ce481d4ca1f83a27fa5cc2c14e921755",
+      "bytes": 16,
+      "sha256": "93cc2cf3f957a7effbb6a9ac9c649d5f7353f33d231bb80ea90132bb1cc575fd",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/33.b12s",
+      "git_blob_sha": "4a2d7183f0047df4e60af1f61514b7e332357738",
+      "bytes": 41,
+      "sha256": "fb6354463e33fb2e57cb4fa6c7bc3f4d3a72b803b8fb5bc11150ebbf2962ee89",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/34.b12s",
+      "git_blob_sha": "4149e136b318a4561e9799473dcc320e65b82724",
+      "bytes": 41,
+      "sha256": "0d9ba36564e55f0864a7d39fb7672199c52bed7582add7187bb1062897203324",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/35.b12s",
+      "git_blob_sha": "f70a956dbf18841e0e3a3d18532ba06887dcd661",
+      "bytes": 42,
+      "sha256": "a68c28fdb2c7c1cfc9559462a4f964039303afdce5d66eb1b132ae6617c132a4",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/36.b12s",
+      "git_blob_sha": "c6fce44ab8b48956851af854d5561f4b5502318a",
+      "bytes": 42,
+      "sha256": "80773fe95adc1af6fd7859ef7df061dab41bb0c512d333297b0554eb6cffd30f",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/37.b12s",
+      "git_blob_sha": "e97ebc30ea91dd4f0f9e57e850aae8d49e8fab23",
+      "bytes": 39,
+      "sha256": "63a515eafb519c33886d9eae01a32d91562ce0ff77c87f72e0dfeeb2815f0ddb",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/38.b12s",
+      "git_blob_sha": "3f63b267ebafd342ed5a55056e68133f623ca1f9",
+      "bytes": 39,
+      "sha256": "b73440d23bc44c18724c27ddb0b190768cec0a1e2c84e08fea3c3560ff75cfc3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/39.b12s",
+      "git_blob_sha": "10ed0c7901c920040a69d59bbdb675994065f1f7",
+      "bytes": 38,
+      "sha256": "bf54b12fc40489d1dbb6a80714808c7b30c3887f0505ee3e5f57173bb31d5899",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/40.b12s",
+      "git_blob_sha": "34dac99f1cf7fc1e3fdccb7d8892edc749b3c25c",
+      "bytes": 38,
+      "sha256": "35555473ebd3b8edbfb3482c270c7b8849f07c5d933b7c2fe102a05a0232efff",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/41.b12s",
+      "git_blob_sha": "cf4f7e13631d79f5af0c515fabb85613ee1f38da",
+      "bytes": 29,
+      "sha256": "56aa5132504b143793b2b03204ee9ecca3e78ba87dff4fd1456e5c5125e55731",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/42.b12s",
+      "git_blob_sha": "3e67416d8bff857f4a4af02ebf650d26100104de",
+      "bytes": 29,
+      "sha256": "494dbb581395a67de3e7dc52a513d2e0de7e43ab120ab887aaa22088f5e65468",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/43.b12s",
+      "git_blob_sha": "f0930f0a4208e903887c452ec2313c94b47c9df9",
+      "bytes": 28,
+      "sha256": "eb3f91e225f9fee07c247311b9884c498fa0b545d79ae94b6c59ddc8991e88ce",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/44.b12s",
+      "git_blob_sha": "d4ee20ab1c8bd2a7c6535c94b7f38a9b77de0ff8",
+      "bytes": 28,
+      "sha256": "4d3e01256fe75e92561f1b1cb8c1bbf1b78d412efb92892de03438ce189d9e07",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/45.b12s",
+      "git_blob_sha": "759f9d7d0d7b51338d667086f5be2c3c9b3bb776",
+      "bytes": 24,
+      "sha256": "594547e331bfa5ce3a0593c61497837455ff61706069d0d9f24696bc83c6c8ce",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/46.b12s",
+      "git_blob_sha": "4e0d2548fe0f376a9c2ba2e169baa7aa245a2e0f",
+      "bytes": 24,
+      "sha256": "88d5875aa3029a09d35cf925f2c7546c15ebf2e3c2f88a0ff5d81d90e6ee9c8c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/47.b12s",
+      "git_blob_sha": "6c1f4bc9633191e6e0abc071429421921c52fef8",
+      "bytes": 24,
+      "sha256": "0dfba9ccdaa989195531f8881e0c22e15feb2b10e17b0e56f1c1a7620b8c64e4",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/48.b12s",
+      "git_blob_sha": "ae903534315395010feaac24161da8fd92034638",
+      "bytes": 24,
+      "sha256": "17990ca919833dc850c1462eb7817c1c9c72b4a6afb79c7965fad818911c6750",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/49.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/50.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/53-target.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/54.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/55.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/56.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/57.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/58.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/59.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/60.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/61.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/62.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/63.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/64.b12s",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/49.bin",
+      "git_blob_sha": "91b7ce395c46712f3bd894f6a6f133dc652e8415",
+      "bytes": 25,
+      "sha256": "26e9f2ba5bf7e560452c5c5a373e09eb47daa4833ecc8c352e1859d8ddf50fe5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/50.bin",
+      "git_blob_sha": "9a6d8386a2b65986588728c7035ce792fa7b3c8f",
+      "bytes": 25,
+      "sha256": "6e8b74df8442e1766456d22957ca17dd1b5aae07a6f015b3516d2b987fa9c47c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/freeze_review_packet.py",
+      "git_blob_sha": "f2c47a3ba43f55ad1edf9ea353e48b744f3bc26a",
+      "bytes": 6495,
+      "sha256": "d2da4f112e184f63ff24ac9e49be51e18138f2ce700911f85a49ec1adad7210b",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/guard.sh",
+      "git_blob_sha": "7f7a3ae43c0d452e4211a5f70d9673ce105b09dc",
+      "bytes": 1507,
+      "sha256": "458039911ae06e6c534be144f61c0a04a311f28249da2de8549a2a4b2a05064f",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/launch.sh",
+      "git_blob_sha": "7707270983c773118c8bfb065fb06b358d942207",
+      "bytes": 7141,
+      "sha256": "c3d7d795f6927cb08418809e58a12de9499c61004e4b764f4e61c032b92e2793",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/materialize_fixtures.py",
+      "git_blob_sha": "a2d425bb1b3985da67e3960d17ab31db70e5c552",
+      "bytes": 30074,
+      "sha256": "44c2caa932b72c8037c92c49f0f5b9a3d67bd47eafa74e3a368cbce1bd7eb1b4",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/runner.b12s",
+      "git_blob_sha": "70fb133b2fd33b8d7aec72973c3317268cb46d8a",
+      "bytes": 7463,
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/vendor/isa.py",
+      "git_blob_sha": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_identical_blob_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/README.md",
+      "git_blob_sha": "2e3cd6b43f940a647a2f7d888d609edb7aa3491e",
+      "bytes": 5864,
+      "sha256": "220b264d7b6f2fc2dfa2c710571f394aa7996939587675a5f1b4d09ae17cafbb",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SHA256SUMS",
+      "git_blob_sha": "3a84e0a4e01f510cf860ffb28685582e88a141b5",
+      "bytes": 864,
+      "sha256": "e64330b00b0e2cf2035f8062d6dde97837da741f4b29bdd8b64c46803529586c",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SOURCE_REVIEW.md",
+      "git_blob_sha": "287dee5819cdeb042e8b56a30ef8a7554ad59f63",
+      "bytes": 8501,
+      "sha256": "150a5b2cd11ff6cfb07be445505ff5f0279c2a1ebef0c09e446ebd7e8484d525",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/branch42.b12asm",
+      "git_blob_sha": "b4042593c3921f2e49016582c638cfd166fee8b3",
+      "bytes": 206,
+      "sha256": "d013c9f79eb65d91f329d0f1375bd5683321a7867143067242a3b526778c86a5",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/contract-cases.json",
+      "git_blob_sha": "d7c8b2d33e0224aee0f2f8d9893c36831ca4a9fc",
+      "bytes": 21758,
+      "sha256": "319fa6bb115a79bed0e4104414e6fd6536cbd1dd74edd0cdb1b790627375ff87",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/encoding-vectors.json",
+      "git_blob_sha": "3703a2a985a840b55e546f0a64f16cfb03979e87",
+      "bytes": 15052,
+      "sha256": "387d904dec24c976512cff187749e021e253b4bc3535cc43bb742dc7bfb48930",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/exit17.b12asm",
+      "git_blob_sha": "3e234d303a887b98afd6d45ba2a9c617d9eef478",
+      "bytes": 138,
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/historical-comparison.json",
+      "git_blob_sha": "c3fc83fa512c7d68ab54e28373ab4b2a340f1ebe",
+      "bytes": 8798,
+      "sha256": "a7187e160b081e32bccd46211570922e56404cf9397f54983390aa5596bbff46",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/program-expectations.json",
+      "git_blob_sha": "2528fcb8354c383d4186b0ce8f0d72e8ec925841",
+      "bytes": 4238,
+      "sha256": "ecdf2200ba3b49acacdfe1390b5f5598c23254d77b444388096ecb5283435231",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/r2-static-observations.json",
+      "git_blob_sha": "19cbd5791513e8d056ac0f30ad91fd56137e32e1",
+      "bytes": 4957,
+      "sha256": "901748c67e1436b76cb1627b5b05705c18c2f4cec531d75e057e7b42e744d880",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/relocation-vectors.json",
+      "git_blob_sha": "c43ff3198a8244ee6c3063b40e56f6881be11a09",
+      "bytes": 5341,
+      "sha256": "d97b15509b1b0dd768668aeccac97a5587ecc191b706bf82c289678509ab66b3",
+      "historical_and_current_Git_mode": "100644",
+      "historical_and_current_tree_identity_match": true,
+      "sha256_custody_status": "held_exact_path_hash"
+    }
+  ],
+  "sha256_custody_status_counts": {
+    "held_exact_path_hash": 139,
+    "payload_checksum_declaration_unheld": 31,
+    "held_identical_blob_hash": 51,
+    "prior_semantic_ledger_identity_payload_not_held": 4,
+    "empty_identity_only_no_semantic_promotion": 5
+  },
+  "reader_exact_added_text": "n=4 keyword with leading comma",
+  "reader_byte_delta": 4,
+  "only_added_AST_keyword_is_n_equals_4": true,
+  "all_reader_checksum_provenance_pins_match": true,
+  "reader_external_calls_are_two_fixed_Git_reads": true,
+  "checker_repairs_before_record": [
+    "classify Git calls in source-line order rather than AST traversal order"
+  ],
+  "reader_save_outputs": [
+    "PRESERVED_BASE.json",
+    "CHECKS.json",
+    "IDENTITIES.json"
+  ],
+  "reader_output_exclusive_mode": 384,
+  "reader_outputs_not_atomic_as_set_or_fsynced": true,
+  "reported_first_failure_source_precedes_saves": true,
+  "reader_module_has_top_level_effects_do_not_import": true,
+  "upstream_reader_or_candidate_executed": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three complete files/87959 bytes read; all230 baseline rows and both reader sources have lossless full-reading projections and exact identity checks.",
+    "Reader sources differ only by the four added characters n=4; removing that one AST keyword restores complete AST equality.",
+    "Fresh nontruncated historical/current Git trees match all230 memberships,blob identities,lengths and tracked modes; no native payload acquisition follows from metadata equality.",
+    "Saved baseline rows contain no mode field. Reader source checks worktree execute bits, but those per-file historical filesystem observations are not retained in the inventory and were not refreshed here.",
+    "Reader code checks regular inputs and fixed Git metadata,then writes three exclusive0600 JSON outputs sequentially; no set-level atomicity,fsync or new runtime authorization is supplied.",
+    "Reported initial failure precedes output save calls in source; actual historical receipts/results remain separately reported,not replayed.",
+    "No historical reader execution,candidate import,native acquisition/emission/execution,model invocation,live scan,activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PROVENANCE.json",
+      "bytes": 10417,
+      "intended_review": "complete_source_packet_provenance_publication_future_build_needs_and_inspection_reader_as_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PUBLICATION_CHECKS.json",
+      "bytes": 2030,
+      "intended_review": "complete_source_packet_provenance_publication_future_build_needs_and_inspection_reader_as_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/BUILD_REVIEW_NEEDS.md",
+      "bytes": 3392,
+      "intended_review": "complete_source_packet_provenance_publication_future_build_needs_and_inspection_reader_as_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SHA256SUMS",
+      "bytes": 2048,
+      "intended_review": "complete_source_packet_provenance_publication_future_build_needs_and_inspection_reader_as_data_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/inspection-reader.py.txt",
+      "bytes": 7732,
+      "intended_review": "complete_source_packet_provenance_publication_future_build_needs_and_inspection_reader_as_data_without_execution"
+    }
+  ],
+  "next_scope_bytes": 25619,
+  "public_contribution_checks": [
+    "three complete payloads and230-row JSON reconstruction passed",
+    "fresh historical/current membership,blob,length and tracked-mode checks passed",
+    "exact reader text/AST delta and effect boundaries preserve historical-mode/custody limits",
+    "coverage,next source-packet scope,links,operational privacy and git diff --check passed"
+  ]
+}

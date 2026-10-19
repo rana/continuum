@@ -28,6 +28,9 @@ fn boundary(image: &[u8]) -> Vec<u8> {
 
 fn recover(path: &Path) -> io::Result<Vec<Vec<u8>>> {
     // No prefix is exposed on extra bytes, missing bytes or pending publication.
+    if path.join("RESTORING").try_exists()? {
+        return Err(invalid("incomplete initialization/restore"));
+    }
     if path.join("boundary.pending").try_exists()? {
         return Err(invalid("pending boundary: preserve and refuse"));
     }
@@ -56,6 +59,20 @@ pub struct Journal {
 
 impl Journal {
     pub fn init(path: &Path) -> io::Result<()> {
+        Self::install(path, &[], "none")
+    }
+
+    /// Install one validated physical image into an exclusively new directory.
+    /// RESTORING prevents a partially installed image from opening as a store.
+    pub fn install(path: &Path, image: &[u8], fault: &str) -> io::Result<()> {
+        if image.len() as u64 > LIMIT || decode(image).is_err() {
+            return Err(invalid("invalid install image"));
+        }
+        if !["none", "restore-before-ready", "restore-after-ready"].contains(&fault) {
+            return Err(invalid("unknown restore fault"));
+        }
+        let absolute = std::path::absolute(path)?;
+        let path = absolute.as_path();
         fs::create_dir(path)?;
         let lock = OpenOptions::new()
             .read(true)
@@ -63,19 +80,39 @@ impl Journal {
             .create_new(true)
             .open(path.join("lock"))?;
         lock.try_lock().map_err(io::Error::other)?;
-        let journal = OpenOptions::new()
+        let restoring = OpenOptions::new()
+            .write(true)
+            .create_new(true)
+            .open(path.join("RESTORING"))?;
+        restoring.sync_all()?;
+        File::open(path)?.sync_all()?;
+        let mut journal = OpenOptions::new()
             .write(true)
             .create_new(true)
             .open(path.join("journal"))?;
+        journal.write_all(image)?;
         journal.sync_all()?;
         let mut marker = OpenOptions::new()
             .write(true)
             .create_new(true)
             .open(path.join("boundary"))?;
-        marker.write_all(&boundary(&[]))?;
+        marker.write_all(&boundary(image))?;
         marker.sync_all()?;
         File::open(path)?.sync_all()?;
-        File::open(path.parent().ok_or_else(|| invalid("parent required"))?)?.sync_all()
+        if fault == "restore-before-ready" {
+            std::process::exit(81);
+        }
+        fs::remove_file(path.join("RESTORING"))?;
+        File::open(path)?.sync_all()?;
+        File::open(path.parent().ok_or_else(|| invalid("parent required"))?)?.sync_all()?;
+        if fault == "restore-after-ready" {
+            std::process::exit(82);
+        }
+        Ok(())
+    }
+
+    pub fn image(&self) -> io::Result<Vec<u8>> {
+        encode(self.records()?).map_err(|_| invalid("invalid memory framing"))
     }
 
     pub fn open(path: &Path) -> io::Result<Self> {

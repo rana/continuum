@@ -1,4 +1,5 @@
 //! Disposable framing primitive, not an acceptance engine.
+mod archive;
 pub mod journal;
 
 use sha2::{Digest, Sha256};

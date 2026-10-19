@@ -34,6 +34,7 @@ jobs:
       - run: python3 check.py target/debug/continuum-journal-framing
       - run: python3 check_journal.py target/debug/continuum-journal-framing
       - run: python3 check_store.py target/debug/owned-store
+      - run: python3 check_archive.py target/debug/owned-store
       - name: Check finite semantic oracle against the SQLite reference
         run: |
           cargo build --manifest-path ../../../Cargo.toml --locked

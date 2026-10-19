@@ -17,8 +17,23 @@ fn main() {
             Journal::init(path)?;
             return Ok(json!({"initialized":true}));
         }
+        if args[1] == "restore" && (args.len() == 4 || args.len() == 5) {
+            Store::restore(
+                Path::new(&args[3]),
+                path,
+                args.get(4).map_or("none", String::as_str),
+            )?;
+            return Ok(json!({"restored":true}));
+        }
         let mut store = Store::open(path)?;
         Ok(match args[1].as_str() {
+            "export" if args.len() == 4 || args.len() == 5 => {
+                store.export(
+                    Path::new(&args[3]),
+                    args.get(4).map_or("none", String::as_str),
+                )?;
+                json!({"exported":true})
+            }
             "put" if args.len() == 4 => {
                 let object: Object = serde_json::from_slice(&fs::read(&args[3])?)?;
                 json!({"id":store.put(object)?})

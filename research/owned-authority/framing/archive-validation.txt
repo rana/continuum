@@ -1,0 +1,6 @@
+PASS: exact committed image, source advances after cut, original accepted/stale receipts and objects survive fresh restore; existing export/restore destinations unchanged
+PASS: competing subprocess exporters yield one successful immutable destination
+PASS: three export and two restore process exits; partial installation refuses, lost-reply ready restore recovers; artifacts preserved
+PASS: 10 malformed archives rejected before target creation
+LIMIT: trusted local Unix paths, same schema, bounded images; process exits are not power loss; leftover staging aliases require explicit inspection; no migration or receiver acceptance
+binary_sha256: 3b3ec2bb9ee703de51ab218bb9ed4ae00a4da475b47dd2d40bc5c57cf92c4377

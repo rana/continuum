@@ -84,6 +84,17 @@ struct State {
     sequence: u64,
 }
 impl State {
+    fn replay(records: &[Vec<u8>]) -> Result<Self> {
+        let mut state = Self::default();
+        for bytes in records {
+            let event: Event = serde_json::from_slice(bytes)?;
+            if serde_json::to_vec(&event)? != *bytes {
+                return Err(bad("noncanonical event"));
+            }
+            state.apply(event)?;
+        }
+        Ok(state)
+    }
     fn kind(&self, id: ObjectId, expected: &str) -> Result<()> {
         if self.objects.get(&id).is_none_or(|o| o.kind() != expected) {
             return Err(bad("missing object or wrong kind"));
@@ -212,15 +223,18 @@ pub struct Store {
 impl Store {
     pub fn open(path: &Path) -> Result<Self> {
         let journal = Journal::open(path)?;
-        let mut state = State::default();
-        for bytes in journal.records()? {
-            let event: Event = serde_json::from_slice(bytes)?;
-            if serde_json::to_vec(&event)? != *bytes {
-                return Err(bad("noncanonical event"));
-            }
-            state.apply(event)?;
-        }
+        let state = State::replay(journal.records()?)?;
         Ok(Self { journal, state })
+    }
+    pub fn export(&self, destination: &Path, fault: &str) -> Result<()> {
+        self.healthy()?;
+        crate::archive::publish(destination, &self.journal.image()?, fault)
+    }
+    pub fn restore(source: &Path, destination: &Path, fault: &str) -> Result<()> {
+        let image = crate::archive::read(source)?;
+        State::replay(&crate::decode(&image).map_err(|_| bad("archive framing"))?)?;
+        Journal::install(destination, &image, fault)?;
+        Ok(())
     }
     fn healthy(&self) -> Result<()> {
         self.journal.records()?;

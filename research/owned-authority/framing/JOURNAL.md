@@ -2,7 +2,7 @@
 
 This successor to the framing-only primitive implements `src/journal.rs`. Input source: framing/oracle commit `5890ea50c2b88ea71baadfe22cf512053861c442`, main `c474b0dc9e6f4732d22a1c3f2f4da20df415a2cd`, ADR 0002 and selected design in PR 112. Owner: this continuing Codex engineering session; no overlapping implementation owner observed during fresh reconciliation.
 
-This is a bounded Unix/local-filesystem laboratory, not storage adopted for retained work. It persists opaque payload frames. This journal module itself interprets no object or acceptance semantics. The later [owned-store layer](STORE.md) implements object closure, operation deduplication, acceptance outcomes and receipt replay above it. Export/restore and migration remain unimplemented. The comparison requirements remain in the [oracle](../oracle/README.md).
+This is a bounded Unix/local-filesystem laboratory, not storage adopted for retained work. It persists opaque payload frames. This journal module itself interprets no object or acceptance semantics. The later [owned-store layer](STORE.md) implements object closure, operation deduplication, acceptance outcomes and receipt replay above it. The subsequent [archive layer](ARCHIVE.md) adds exact-image export and fresh-directory restore. Migration remains unimplemented. The comparison requirements remain in the [oracle](../oracle/README.md).
 
 ## Contract and boundary selection
 
@@ -10,7 +10,7 @@ A directory contains `lock`, `journal`, and `boundary`. Maximum journal image is
 
 Boundary encoding is exactly 80 bytes: eight ASCII bytes `CTJBD001`, u64 little-endian journal length, 32-byte SHA-256 of the entire journal image, then SHA-256 of `continuum:boundary:v1` plus NUL plus the preceding 48 marker bytes. Missing boundary is an error even when the journal itself decodes. This checksum does not authenticate metadata or detect a coherently replaced older image.
 
-Opening acquires a nonblocking exclusive OS file lock before recovery, held for the handle lifetime. Contention is an error. Readers currently use the same exclusive ownership: there is no concurrent committed-generation reader optimization. Lock release on process exit was exercised. Replacing the lock inode externally defeats cooperative ownership and is out of scope.
+Initialization/restore now keeps a `RESTORING` guard until installation is complete; opening refuses that guard. Opening acquires a nonblocking exclusive OS file lock before recovery, held for the handle lifetime. Contention is an error. Readers currently use the same exclusive ownership: there is no concurrent committed-generation reader optimization. Lock release on process exit was exercised. Replacing the lock inode externally defeats cooperative ownership and is out of scope.
 
 Recovery requires no pending boundary, exactly matching journal length and digest, valid boundary checksum, and valid complete chained framing. It exposes no prefix if any check fails. It never truncates, removes pending files, chooses a shorter boundary, rewrites damaged bytes or converts a reread into a durability acknowledgement. Availability is deliberately sacrificed on ambiguous tails: manual inspection and a later explicitly qualified repair protocol are still needed.
 

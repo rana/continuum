@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-signal-readiness.json",
+  "selected_scope": "research/owned-stack/2026-10-15/learning-performance-followup/",
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/learning-performance-followup/INTEGRATION.md",
+      "git_blob_sha": "4b3934cda9ce613329a54fb5124af05b4215f6cd",
+      "bytes": 5132,
+      "sha256": "142e8c9ce8fe10aa5bf66e0e14d398149526a54bf70bd58dc25baf5421641d66",
+      "lines": 29,
+      "semantic_review": "full_direct_read",
+      "review_lane": "learning-result-interpretation-and-performance-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/learning-performance-followup/PERFORMANCE.md",
+      "git_blob_sha": "ab57cc36224b922603544883234b1584eb73f8a5",
+      "bytes": 8868,
+      "sha256": "6e65894bcd3adf744b45093e1ff36bfd31c576fb35a8497adf54b13080d763f1",
+      "lines": 66,
+      "semantic_review": "full_direct_read",
+      "review_lane": "learning-result-interpretation-and-performance-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/learning-performance-followup/README.md",
+      "git_blob_sha": "bdce2e920f851482c2e08889f577af11fc5b00c1",
+      "bytes": 6038,
+      "sha256": "1d0be69ffd83fb8818c46d26bf85f284d185a19e4ceeb80b27a1e8f85383dbf8",
+      "lines": 40,
+      "semantic_review": "full_direct_read",
+      "review_lane": "learning-result-interpretation-and-performance-contract",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 20038
+    },
+    "cumulative_direct_read": {
+      "paths": 185,
+      "unique_blobs": 185,
+      "bytes": 1322614
+    },
+    "additional_identical_blob_paths": 47,
+    "alias_distinct_blobs": 17,
+    "semantic_covered_paths_including_aliases": 232,
+    "remaining_paths_without_full_semantic_read_or_alias": 5361,
+    "remaining_distinct_blobs_without_full_semantic_read": 4244,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 20038,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All three selected documents were fully read; aliases are not separately read.",
+    "Private source, historical messages and operational payloads are not published.",
+    "No upstream learner, decoder, data operation, benchmark or model consultation ran.",
+    "Two in-scope preservation bindings checked; external historical handoff not retrieved or checked.",
+    "Recomputed arithmetic uses source-reported totals; it does not authenticate execution or persistence.",
+    "Referenced implementation, run attachments, external references and historical recipient acceptance were not newly audited."
+  ],
+  "review_report": "base12-learning-performance.md"
+}

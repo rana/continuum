@@ -1,0 +1,24 @@
+{
+  "input_kind": "Historical source-reported provisional archive totals, not newly authenticated run outputs",
+  "totals_bytes": {
+    "A": 5524566,
+    "B": 5418065,
+    "C": 5467168,
+    "D": 5416191
+  },
+  "B_saving_vs_A_bytes": 106501,
+  "B_saving_vs_C_bytes": 49103,
+  "B_excess_vs_D_bytes": 1874,
+  "B_fraction_of_D_net_saving": {
+    "numerator": 106501,
+    "denominator": 108375,
+    "reduced_fraction": "106501/108375"
+  },
+  "derived_D_payload_saving_vs_B_bytes_conditional_on_format": 1905,
+  "bound_D_minus_B_at_L4": {
+    "actual_from_reported_totals": -1874,
+    "upper_bound": 31,
+    "satisfied": true
+  },
+  "measurement_or_execution_reproduction": false
+}

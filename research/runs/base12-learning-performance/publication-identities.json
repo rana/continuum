@@ -1,0 +1,27 @@
+{
+  "source_baseline": "61f30811dcc03030ef1ae710b409c7621917a78a",
+  "files": [
+    {
+      "path": "docs/source-review/base12-learning-performance.md",
+      "bytes": 6382,
+      "sha256": "911c9a0e3fb16a23094e991f978381bebcf3d27c6bfffa236c693872dade6457"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-learning-performance.json",
+      "bytes": 3728,
+      "sha256": "a5d8a4bbdf5f51fdd6559fd16f11721bce5834880de1f1f4003c057abc5a9d65"
+    },
+    {
+      "path": "research/runs/base12-learning-performance/validation.json",
+      "bytes": 1233,
+      "sha256": "338ec9da8bfc399e800774077afa8d66ba700bdeedfc8682a16aa5b131fc5c82"
+    },
+    {
+      "path": "research/runs/base12-learning-performance/reported-arithmetic.json",
+      "bytes": 676,
+      "sha256": "bf987af6d5f3ded13d9f54a5bfbfb26d4e27f48f8670c758bf2be11b4c163913"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

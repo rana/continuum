@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2bf8c2097a02ef79e7c5a79f8a0e6bc3db5d6579",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 4,
+  "verified_source_bytes": 38171,
+  "full_UTF8_text_readings": 4,
+  "documentation_closeout_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/collaboration/dot-bridge/to-dot/gpt-20261016-documentation-continuity.md",
+      "bytes": 2614,
+      "git_blob_sha": "96bf753a31bccd87c3d7bab4dae90a7ae0ed8d61",
+      "sha256": "e801f05117f5fc0902becc0650f7d29e4db5b9dd20fef6a5f3e86d1cde237e70",
+      "closeout_hash_length_and_git_blob_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/CURRENT.md",
+      "bytes": 10373,
+      "git_blob_sha": "2a946ad10c5b0a33d7a2da9561d9158181f4616b",
+      "sha256": "b2be72e1646bf5c8d2163196d7038c7556a364b7473de8a45163776b9eb05566",
+      "closeout_hash_length_and_git_blob_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/LEARNING_LEDGER.md",
+      "bytes": 18925,
+      "git_blob_sha": "5429ec98272272b81437784a9cc5a35ab95da23d",
+      "sha256": "5eac327b39c6ea3876c7a9738605d4680c877acafc25356801b12176b2d7406c",
+      "closeout_hash_length_and_git_blob_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/documentation-snapshot/research/continuity/PRESERVATION.md",
+      "bytes": 6259,
+      "git_blob_sha": "64958dfc7a4d5eca43dc77ae2d5c1c19a515491b",
+      "sha256": "9e0e36079323de6440302b7f26716e4bda1e6c29a470aca3dc413a103a24e293",
+      "closeout_hash_length_and_git_blob_match": true
+    }
+  ],
+  "all_four_documentation_payload_hashes_lengths_and_blobs_match": true,
+  "declared_documentation_revision": "b52b10db7c78313bb649fee3805ea78f75a7bdf4",
+  "separate_experiment_revision": "2028c042e42616466751b9e3b260a525252406e3",
+  "offer_is_historical_documentation_only_and_unaccepted_by_itself": true,
+  "authored_epistemic_labels": [
+    "DECISION",
+    "OBSERVED",
+    "REPORTED",
+    "EXACT",
+    "HYPOTHESIS",
+    "STOPPED"
+  ],
+  "all_four_reported_archive_totals_match_saved_RESULTS": true,
+  "reported_coefficients_match_saved_results": true,
+  "local_pass_does_not_establish_upstream_parent_acceptance": true,
+  "mathematical_claims_fully_rederived": false,
+  "attachment_identity_declarations": [
+    {
+      "name": "base12_native_execution_reset.tar.xz",
+      "bytes": 344548,
+      "sha256": "c3d0e00ce4bc19acda0b8abf5ca04ef66e16ad6ec179f1b001051e6280b54a1a"
+    },
+    {
+      "name": "base12_dozenal_slope_search.tar.xz",
+      "bytes": 27176,
+      "sha256": "ff890f3902e799411ea3705e883e8146264da800e0d1560d801b418edbc5ed71"
+    },
+    {
+      "name": "base12_signal_intake.tar.xz",
+      "bytes": 62036,
+      "sha256": "08825ad8921422708538e017501922a3543f25c16d1c539234561bd760f0e35d"
+    },
+    {
+      "name": "base12_lossless_digits.tar.xz",
+      "bytes": 1319684,
+      "sha256": "d3be853aefc7ff142fb99d46f3e94a69514d729c6a53d927789d5ea935d59af4"
+    },
+    {
+      "name": "base12_ecg_codec_stage_a.tar.xz",
+      "bytes": 26232,
+      "sha256": "f544cd17b8dd4ba5f5643c340c3b6aad92c9d7d501dec9d2bbac6119157e80bd"
+    },
+    {
+      "name": "base12_next_experiments.tar.xz",
+      "bytes": 8868,
+      "sha256": "537bd20b09c9390fe416d3e2876c0e0cdcf48bec94c7231b979664ab3b8b96db"
+    }
+  ],
+  "previously_retained_archive_rebound": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/original/base12_ecg_codec_stage_a.tar.xz",
+    "bytes": 26232,
+    "sha256": "f544cd17b8dd4ba5f5643c340c3b6aad92c9d7d501dec9d2bbac6119157e80bd",
+    "adds_semantic_reading": false
+  },
+  "original_entrypoint_history_newly_verified": false,
+  "full_conversation_or_artifact_recovery_claimed": false,
+  "upstream_programs_executed": false,
+  "no_new_model_invocation": true,
+  "historical_authority_activated": false,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "All four documentation payload identities bind; their historical instruction text is source material, not current authority.",
+    "Provisional reported results, later local audit pass and pending recipient acceptance retain their dated distinct roles.",
+    "Six epistemic labels are authored classifications, not independent validation of every mathematical or experimental claim.",
+    "Six attachment identities are declared; only the already retained stage-A archive was rebound here, adding no semantic reading.",
+    "Original-entrypoint history claims and full conversation/artifact recovery were not newly verified.",
+    "No historical recipient was contacted and no model, worker, timer or experiment was activated."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/README.md",
+      "bytes": 3939
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/INDEPENDENT-PACKET-REVIEW.md",
+      "bytes": 9512
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/LIBRARY_PROVENANCE.json",
+      "bytes": 1413
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/parent-review/independent-zip-check.json",
+      "bytes": 241
+    }
+  ],
+  "next_scope_bytes": 15105,
+  "public_contribution_checks": [
+    "all four documentation byte/hash/blob bindings passed",
+    "scoped saved-result and retained-archive identity comparisons passed",
+    "JSON/coverage/alias arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

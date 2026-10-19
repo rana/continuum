@@ -211,6 +211,8 @@ The [audit-closeout return](source-review/base12-audit-closeout.md) preserves a 
 
 The [persistence/acquisition return](source-review/base12-persistence-acquisition.md) distinguishes an incomplete acquisition attempt from its complete retained artifact subset and exact remaining complement. Its audit-source review separates output content rehashes from input filesystem metadata checks. Continuum should preserve attempt outcomes and artifact states independently so reconciliation can reuse verified effects without relabeling failure or blindly replaying work. No historical effect was repeated.
 
+The [documentation-continuity return](source-review/base12-documentation-continuity.md) binds four dated views while preserving their distinct roles: current state, authored interpretation, preservation coverage and an offered reconciliation. Claim labels do not prove their contents; later audit knowledge does not retroactively belong to an earlier snapshot. Continuum should retain view revision/exposure and one authoritative home per live fact, with exact history rather than duplicated stale status. No historical instruction was activated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

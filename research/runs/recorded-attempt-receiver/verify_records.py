@@ -59,7 +59,9 @@ def main():
         for item in payload.get('sidecars', []):
             data = item['content'].encode('utf-8')
             assert len(data) == item['bytes'] and digest(data) == item['sha256']
-            assert (REPOSITORY / item['path']).read_bytes() == data
+            source = REPOSITORY / item['path']
+            retained = source.read_bytes() if source.exists() else gzip.decompress(Path(str(source) + '.gz').read_bytes())
+            assert retained == data
         observations.append({'round': index, 'bytes': len(raw), 'native_objects': len(payload['native_objects'])})
     receipt = json.loads(load('retrieval-1.json')['native_objects'][0]['content'])
     returned = json.loads(receipt['structuredContent']['text'])['files']

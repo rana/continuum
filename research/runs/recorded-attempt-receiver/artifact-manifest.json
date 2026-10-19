@@ -1,10 +1,10 @@
 {
-  "scope": "Exact public record files excluding this manifest; lossless gzip restores original JSON bytes.",
+  "scope": "Exact public record files excluding this manifest; gzip restores original JSON/CSV bytes.",
   "files": [
     {
       "path": "README.md",
-      "bytes": 9669,
-      "sha256": "334054f09b3a1b4775f83c2d9ab8fba4bea0fcd2b9f3afda5782269cd27b2d20"
+      "bytes": 10392,
+      "sha256": "5dc3c30cb4edbdf184ee9930b392eca8b40b9ead41392df434cbe9c9d1064a8f"
     },
     {
       "path": "coordinator-evaluation.json",
@@ -17,9 +17,10 @@
       "sha256": "19b074d1db77ee47809446c8326284fd30d927683fcf3ee0580b1c43de6d1eae"
     },
     {
-      "path": "reconstructed-oracle-input.csv",
-      "bytes": 45,
-      "sha256": "c7c687a70c95c361477c0b9fc01d8a3cc4f16869ece043c57ca6f829e4b11adb"
+      "path": "reconstructed-oracle-input.csv.gz",
+      "bytes": 91,
+      "sha256": "a4a2a766aa9c116573c1b615dbb82f08c87234f1cc9709a158e0ca9e7941b616",
+      "decompressed_sha256": "c7c687a70c95c361477c0b9fc01d8a3cc4f16869ece043c57ca6f829e4b11adb"
     },
     {
       "path": "retrieval-1-custody.json",
@@ -141,8 +142,8 @@
     },
     {
       "path": "verify_records.py",
-      "bytes": 3973,
-      "sha256": "e6db314fdd1f1d2c7ac6702f888232ca2a03516e46d0348c0a56015abcb433f3"
+      "bytes": 4111,
+      "sha256": "c3170496411df3d3014c2b40a82310ba083dd205979887e728b7464039c0e726"
     }
   ]
 }

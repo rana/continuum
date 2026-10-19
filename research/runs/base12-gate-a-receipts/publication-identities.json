@@ -1,0 +1,20 @@
+{
+  "source_baseline": "83b5da6f040d20ab13ef5dbd00eb6536a700d270",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-receipts.md",
+      "bytes": 5198,
+      "sha256": "5affa9f5d2a85217f2a226bc69751b6f350e6e44442c58a3b96296e3a1f6dbc1"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-receipts.json",
+      "bytes": 13534,
+      "sha256": "05f03841b7970aaf957f1897b80a19f45af27f02c9711a16d3a3ef990362de38"
+    },
+    {
+      "path": "research/runs/base12-gate-a-receipts/validation.json",
+      "bytes": 10150,
+      "sha256": "e1a4d6327093780fc6dfcb13da122aa3f79bff7d4a169d04e2a8b185af63a783"
+    }
+  ]
+}

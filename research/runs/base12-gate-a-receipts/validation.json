@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "source_baseline": "83b5da6f040d20ab13ef5dbd00eb6536a700d270",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 20,
+  "verified_source_bytes": 10669,
+  "full_text_paths_read": 19,
+  "mechanical_empty_paths": 1,
+  "new_semantic_files": 19,
+  "new_semantic_bytes": 10669,
+  "repeated_identical_blob_reads": 0,
+  "all_22_preservation_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/STARTED",
+      "bytes": 58,
+      "sha256": "d5e8c8906aa35806d043044eb59f237cea49adb2dc8ab53071c84950856f6160",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/freeze.sha256",
+      "bytes": 65,
+      "sha256": "fea4713c2aaa840033fe4b783300611c3a2accbfdb8049052d51933cd76c9029",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/tools.sha256",
+      "bytes": 490,
+      "sha256": "08659432a2d033276578d94d5aed929ec1d84db335e0a180f18b04c1ae752f24",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/boot-id",
+      "bytes": 37,
+      "sha256": "beae7096074e8d61ab4cd72becba4e787c5d1400fafe0537f6474914fff96c34",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/pid-namespace",
+      "bytes": 17,
+      "sha256": "d8d691467e1fa0996d6d28932e94ee3b75885f991fa467f34837fed231881817",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/resources",
+      "bytes": 1041,
+      "sha256": "9daf415caec69abc2a438a4f16793f9855f6275a943ef8b1c31048f20a2714da",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/exit",
+      "bytes": 39,
+      "sha256": "0c4f89ca83f578f8f66ee6cbd984c3b47568e912df690edda709401aafe0cddb",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/driver.exit",
+      "bytes": 14,
+      "sha256": "d50c642d50fc6ecc59f5c8e96f0b1514c3cb471ae1fca5f5379a4888c315d642",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/group.identity",
+      "bytes": 38,
+      "sha256": "d2e48e6de493cfc30ead75b8c0fcae61ea926d9b70e954994eca8298078bc7dd",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/group-scan.exit",
+      "bytes": 18,
+      "sha256": "e95e0239ea851dbad654917ed9eaeaea437ea039a98266fa6defab752c52139c",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/survivors",
+      "bytes": 68,
+      "sha256": "535f7e529533b7272b60eda4e6cb0ebc444796da3aecdb7a759799819e5b1054",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/survivors.stderr",
+      "bytes": 49,
+      "sha256": "b95997fb6134eaf1a6535680d4cc21d5acc397c87f727a2bfabc844e1a1e7a84",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/OUTCOME",
+      "bytes": 68,
+      "sha256": "bfe0040c07a6f5c65059636e443842b5eabce93893054068c08419a76481d1c3",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/stdout.log",
+      "bytes": 4400,
+      "sha256": "9d7ab4e39eb41aee60adaf4b3be8d3e9926d9d14dd43ade966858cc4398df03c",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/receipts/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched": true,
+      "mechanical_only": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/preflight.log",
+      "bytes": 3069,
+      "sha256": "f4b42ab3381f25d65271071f96ccb1c7d717aa4c5c273e50d11a6e5f2eb01911",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/preflight-tools.sha256",
+      "bytes": 1056,
+      "sha256": "c13c7fbea5188fb7df5bf2a1bab36e5551697d53132166aaf547e0b6b01470f5",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/outer-start.log",
+      "bytes": 45,
+      "sha256": "1934f04c3a91f27ea331e911aba1416392f08eba054b8e8dcd3d1aa9624bd999",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/launcher-call.log",
+      "bytes": 38,
+      "sha256": "eae82edc81d84260da12be2311b084b5c15a902b7f464d31f4c99a58839b18d7",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/outer-return.log",
+      "bytes": 59,
+      "sha256": "0d9df9220b3016cbb14f4cbe31e9e828da0bb3d39e1300aa5f7df9c40e04ea52",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/audit_saved_execution.py",
+      "bytes": 7443,
+      "sha256": "6674feaa84062581243185075084de1ee2e31680090aff0d9c8fbdb14e978cbb",
+      "matched": true,
+      "mechanical_only": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/execution-01/RESULT.json",
+      "bytes": 20580,
+      "sha256": "cc0535a14f02c2e4ae50f7af449dea3fb8ca000409f5677e4b03323eed6089ca",
+      "matched": true,
+      "mechanical_only": false
+    }
+  ],
+  "freeze_marker_digest_matches_acquired_freeze_file": true,
+  "stdout_verdict_rows": 77,
+  "stdout_unique_verdict_names": 77,
+  "stdout_actual_fields_match_all_RESULT_matrix_and_fault_rows": true,
+  "stdout_ten_frozen_input_OK_lines": true,
+  "driver_gates_precede_retained_completion": true,
+  "collision_and_retained_not_separately_printed_verdict_rows": true,
+  "cleanup_exit_and_group_summary_fields_match": true,
+  "recorded_boot_namespace_identifier_shapes_checked_privately": true,
+  "absolute_operational_identifiers_published": false,
+  "raw_resource_CPU_and_RSS_match_result": true,
+  "exact_decimal_timing_differences": {
+    "separate_preflight": "0.109131",
+    "approved_block_total": "2.866612",
+    "checks_and_chmod_before_launcher_call": "0.056587",
+    "launcher_total": "2.810025",
+    "combined_launcher_preflight_and_postscan_approx": "1.260025"
+  },
+  "all_timing_differences_equal_RESULT": true,
+  "launcher_tool_digest_rows": 6,
+  "preflight_tool_digest_rows": 13,
+  "preflight_distinct_tool_digest_values": 9,
+  "overlapping_six_tool_digest_declarations_match": true,
+  "five_tool_paths_share_one_digest": true,
+  "tool_binary_payloads_acquired": false,
+  "freeze_input_payloads_newly_verified": false,
+  "scan_snapshot_is_not_live_current_census": true,
+  "native_execution_repeated": false,
+  "original_output_or_trace_bytes_acquired": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Nineteen nonempty receipt texts fully read; one zero-byte stderr checked mechanically without semantic credit.",
+    "All 22 preservation entries bind exact acquired bytes; this verifies copied receipt custody, not their historical truth or live-host state.",
+    "Log contains 77 unique verdict rows matching RESULT; collision and retained outcomes retain frozen-driver control-flow dependencies.",
+    "Freeze ten OK lines and tool-digest declarations do not newly hash the corresponding source/ELF/tool binaries.",
+    "Boot/namespace/group identities are private scoped evidence, not authenticated worker identity; raw values and absolute timestamps are excluded from the public findings.",
+    "No-group scan and recorded vanished-proc stderr are a retained snapshot, not arbitrary-interference proof or current process census.",
+    "GNU time values are normal waited-child, rounded batch observations; zero socket counters are not an independent network audit.",
+    "No native execution, output/trace-byte access, source/tool rebuild, new inference or uncertain invocation retry occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "bytes": 6051,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "bytes": 6241,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures-manifest.json",
+      "bytes": 27851,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 40143,
+  "public_contribution_checks": [
+    "all 22 preservation payload length/digest bindings passed",
+    "77 unique verdict rows and raw resource/decimal timing comparisons passed",
+    "control summaries and six overlapping tool declarations match",
+    "semantic/empty coverage, next-scope arithmetic and relative links passed",
+    "private raw boot/namespace/group/epoch values excluded; git diff --check passed"
+  ]
+}

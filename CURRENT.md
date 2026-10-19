@@ -4,9 +4,9 @@ Last reconciled: 2026-10-19 UTC (2026-10-19 America/Los_Angeles).
 
 ## Selected direction
 
-Continuum is a native work and evidence engine for continuing AI engineering. The first implementation is a small Rust core, with exact source custody and durable local acceptance receipts. Git is the intended public development host and a future interoperability edge; the core has no Git runtime dependency.
+Continuum's selected product direction is an **AI-native scientific code/investigation repository**: exact source revisions linked to hypotheses, attempts, observations, negative results, decisions and accepted work. The working Rust/SQLite core remains the operational and validation reference, with Git the public development host and an interoperability/editing edge.
 
-The [owned-storage research decision](docs/decisions/0002-owned-storage-research.md) now opens a separate purpose-built kernel and independent emitted-verifier investigation. Its first unit is a finite transition/recovery model. No custom engine, model execution, native-emitter target, migration or successor repository is claimed; the current practical pilot below keeps its existing ownership.
+The user's renewed clean-slate/native-stack steering is recorded in [ADR 0003](docs/decisions/0003-owned-authority-development-target.md): a **project-owned append-only persistence authority** is now the next architectural **development target**, not merely a conditional performance-response investigation. [ADR 0002](docs/decisions/0002-owned-storage-research.md) continues to govern its oracle, recovery and independent-verifier research. No custom engine is implemented or adopted for retained stores, and no migration, repository rename, native emitter, network executor or workstation installation is claimed. The existing real-use trial and source-review owners retain their disjoint units and schedules.
 
 ## Completed locally
 

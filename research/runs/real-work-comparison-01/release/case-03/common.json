@@ -1,0 +1,44 @@
+{
+  "observation": {
+    "exact_projection_verified": true,
+    "local_anchor": "stale_at_observation",
+    "action_authority_verified": false,
+    "repository_revision": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+    "limits": "Local anchor is not a remote Git freshness observation. Facts are supplied equally to every arm."
+  },
+  "original_work_state": "sha256:cb63e53ee52900f4a92e8c7e59255052c7e943ff91661c7249c54a7f8b4fa702",
+  "original_source_snapshot": "sha256:f6a491fe77c6a38e986d938be907e1de46a038e6882a6e55ed15c0a53def832f",
+  "original_anchor": {
+    "acceptor": "project-checkpoint",
+    "expected": {
+      "generation": 1,
+      "root": "sha256:3c8a0499502657ecb488ffb4ddbdbea2a5361268b585bfeea9202c091ed72792"
+    },
+    "target": "work",
+    "work_state_path": "work-state.json"
+  },
+  "selector_revision": "continuum.whole_records.v1",
+  "context_byte_budget": 8192,
+  "budget_method": "utf8_bytes_including_newlines",
+  "included_ids": [
+    "read-availability-recovery",
+    "read-availability",
+    "opening-route",
+    "current-state",
+    "resume-read-investigation"
+  ],
+  "omitted": [],
+  "attempt_records": [],
+  "attempt_scope": "No attempt records supplied is not proof no attempt occurred.",
+  "limits": [
+    "Authored claims are unverified; current action authority and external-effect truth are not established.",
+    "Conditional guidance assumes the authored dispatch state is accurate; this store is not an external dispatch ledger.",
+    "Only this WorkState's declared records and direct object references are checked; source files are not materialized.",
+    "Whole records only; unrequired historical decisions may be omitted; no truncation or token estimate.",
+    "Head freshness is observed once; later effects need action-time authority and expected-head checks.",
+    "Context acknowledgements check references, not authenticated authorship, delivery, understanding, acceptance, or completion."
+  ],
+  "decision_basis_unresolved": false,
+  "decision_basis_validity": "not_established_by_dispatch_state_or_blob_custody",
+  "scope": "Facts and native limits are shared initially in all arms. The handoff is offered, not an accepted recipient action."
+}

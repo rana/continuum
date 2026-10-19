@@ -1,0 +1,11 @@
+{
+  "current/src/store.rs": "case-02/evidence/current/src/store.rs",
+  "current/src/main.rs": "case-02/evidence/current/src/main.rs",
+  "current/examples/probe_reader_reservation.rs": "case-02/evidence/current/examples/probe_reader_reservation.rs",
+  "current/report.md": "case-02/evidence/current/report.md",
+  "current/result.json": "case-02/evidence/current/result.json",
+  "current-source-pins.json": "case-02/evidence/current-source-pins.json",
+  "current-accepted-state.json": "case-02/evidence/current-accepted-state.json",
+  "local-verification.json": "case-02/evidence/local-verification.json",
+  "original-work-state.json": "case-02/evidence/original-work-state.json"
+}

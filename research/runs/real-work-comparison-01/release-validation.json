@@ -1,0 +1,36 @@
+{
+  "schema": "continuum.retrieval_release_validation.v1",
+  "source_baseline": "416e41f8f9a009f02fb20152d67f0c74bbef606a",
+  "release_manifest_sha256": "85499f123a0501d201a5b37608dfd52b51ef56802f231454f5cb3c039c0d71b8",
+  "release_file_count": 42,
+  "test_command": "python3 -m unittest discover -s research/runs/real-work-comparison-01 -p 'test_bridge.py' -v",
+  "tests_passed": 10,
+  "original_packet_checker_passed": true,
+  "initial_requests": 9,
+  "receiver_calls": 0,
+  "rater_calls": 0,
+  "exposure_audit": "author performed; common inputs and authored-string presence checked; independent answer not received",
+  "exposure_review_attempt": {
+    "status": "ERROR",
+    "error_category": "invalid_response",
+    "inference_outcome": "unknown",
+    "upstream_http_status": 200,
+    "accepted_answer": false,
+    "automatic_retry": false
+  },
+  "scientific_release_decision": "One case-01/A read-only protocol-calibration cell selected; no native-benefit or adoption inference.",
+  "adversarial_checks": [
+    "cross-case and grading/private paths denied",
+    "duplicate/nonfinite/malformed/oversized JSON rejected",
+    "changed manifest,artifact and symlink refused",
+    "denial/round/byte limits enforced; no partial source",
+    "current-only pins and equal common/task/menu/model inputs",
+    "all selected authored semantic strings exposed initially in all representations"
+  ],
+  "source_fingerprints": {
+    "research/runs/real-work-comparison-01/bridge.py": "79c2439100da18ebe88a3d83e344407fdaac21585d0425fc424d2c6b29a7a846",
+    "research/runs/real-work-comparison-01/freeze_release.py": "fd1d0cef38f38bb4f4b837e08f5d3e2bfd7cf1f3c19167ed47095c492c963902",
+    "research/runs/real-work-comparison-01/test_bridge.py": "c2c33addb89bf370817c2901c092f65d21114e761dc737efc9fbc184d2d4110c",
+    "research/runs/real-work-comparison-01/exposure-review-attempt.json": "153a355fb0fc91b8406d2b879781afbd748773552f65161d93c1cc364ddaa5e8"
+  }
+}

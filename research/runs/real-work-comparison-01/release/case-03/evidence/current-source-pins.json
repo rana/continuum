@@ -1,0 +1,62 @@
+[
+  {
+    "file": "current/src/store.rs",
+    "commit": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+    "source_path": "src/store.rs",
+    "git_blob": "7d7b70a556f5ad3141579047dae34c0522848a7e",
+    "original_bytes": 17650,
+    "original_sha256": "21c741ce3f2d726ea1ae116cc6b6f4ce76e04fb7268ca1bd3913dfab9de92a7d",
+    "bytes": 17650,
+    "sha256": "21c741ce3f2d726ea1ae116cc6b6f4ce76e04fb7268ca1bd3913dfab9de92a7d",
+    "representation": "exact source bytes",
+    "absolute_path_values_omitted": 0
+  },
+  {
+    "file": "current/src/main.rs",
+    "commit": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+    "source_path": "src/main.rs",
+    "git_blob": "8d4f494a655b511bd2a20e6002972a33e171e182",
+    "original_bytes": 8076,
+    "original_sha256": "488dd1bced5b2c8810392abf118b511c3faf59326100d7c1aeddaf34716ab172",
+    "bytes": 8076,
+    "sha256": "488dd1bced5b2c8810392abf118b511c3faf59326100d7c1aeddaf34716ab172",
+    "representation": "exact source bytes",
+    "absolute_path_values_omitted": 0
+  },
+  {
+    "file": "current/examples/probe_reader_reservation.rs",
+    "commit": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+    "source_path": "examples/probe_reader_reservation.rs",
+    "git_blob": "e0935d538b659d5b526c089b6e7393c6ea8ec315",
+    "original_bytes": 5789,
+    "original_sha256": "b96d2f8e76af4d2b92a9faea9e0c609d7c911fca01df6139aaa9b4e2fd02c273",
+    "bytes": 5789,
+    "sha256": "b96d2f8e76af4d2b92a9faea9e0c609d7c911fca01df6139aaa9b4e2fd02c273",
+    "representation": "exact source bytes",
+    "absolute_path_values_omitted": 0
+  },
+  {
+    "file": "current/report.md",
+    "commit": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+    "source_path": "research/runs/read-only-store/README.md",
+    "git_blob": "ee55366cdc494532b45312fc65704148fab4e16b",
+    "original_bytes": 6438,
+    "original_sha256": "aa9d88d45a63e799908c581a1dedd5f457e0d33859ff6cce44871758c97557de",
+    "bytes": 6438,
+    "sha256": "aa9d88d45a63e799908c581a1dedd5f457e0d33859ff6cce44871758c97557de",
+    "representation": "exact source bytes",
+    "absolute_path_values_omitted": 0
+  },
+  {
+    "file": "current/result.json",
+    "commit": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+    "source_path": "research/runs/read-only-store/result.json",
+    "git_blob": "76ac5af0050b9ed4ab5316a33bc8205e0c5cf7e4",
+    "original_bytes": 7778,
+    "original_sha256": "cf7661eb68de45cd1957700110ad3ac38dc2fabb80d7b8e311bd6fba18ce016b",
+    "bytes": 6897,
+    "sha256": "f3edca995f2c3799a7720e6f46d9d33f8771419bc223b025f00485b62d00743d",
+    "representation": "path-redacted JSON projection",
+    "absolute_path_values_omitted": 18
+  }
+]

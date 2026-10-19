@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-receipts.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures-manifest.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "bytes": 6051,
+      "git_blob_sha": "65c10f2066aa8af3ee924c788591f5f84a039081",
+      "sha256": "7a0ea68a9343b96171a658f842de86b597b3acb4b5bb7fdd99136a2b5e876b6d",
+      "lines": 107,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-controller-and-fixture-metadata",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "bytes": 6241,
+      "git_blob_sha": "7f53c2a9bd10e9d435b5128b16e956bfd11d5544",
+      "sha256": "1ca8e5d8c618e444fd5873112786eaecf35b6788d2189c3ec7772a686360acd6",
+      "lines": 139,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-controller-and-fixture-metadata",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures-manifest.json",
+      "bytes": 27851,
+      "git_blob_sha": "93c74f36c4c1dd751f2af3aa583f608626a5e4b2",
+      "sha256": "53fb3d3b7d6ed435febaaec481a297304408ef1348eb4851e8310d92165c7ccb",
+      "lines": 720,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-controller-and-fixture-metadata",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 40143
+    },
+    "cumulative_direct_read": {
+      "paths": 428,
+      "unique_blobs": 428,
+      "bytes": 3296868
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 480,
+    "remaining_paths_without_full_semantic_read_or_alias": 5113,
+    "remaining_distinct_blobs_without_full_semantic_read": 4001,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 40143,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three frozen texts fully read; Bash -n parses shell syntax without execution.",
+    "Atomic mkdir reserves the named attempt under trusted filesystem assumptions; markers are not authenticated or fsynced durable exactly-once state.",
+    "Source control flow supports collision/retained completion dependencies; no failure, signal, timeout or cleanup path was dynamically tested.",
+    "Post-wait proc scan is a historical snapshot predicate, not a current census or hostile-interference guarantee.",
+    "Manifest metadata agrees with all 65 saved matrix rows; private TSV and fixture/archive/output/trace payloads remain unacquired.",
+    "One valid wire case explicitly waives Python reference acceptance; correlated fixture output digests are not independent trials.",
+    "No native/controller/generator/oracle execution or new model invocation occurred; no executable or raw private source published."
+  ],
+  "review_report": "base12-gate-a-controller.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

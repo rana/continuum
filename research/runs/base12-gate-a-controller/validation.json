@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "source_baseline": "87b3c0950f8bab9c2ea94a8dd88fd23ef275eeab",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 3,
+  "verified_source_bytes": 40143,
+  "full_text_paths_read": 3,
+  "new_semantic_files": 3,
+  "new_semantic_bytes": 40143,
+  "source_digest_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "sha256": "7a0ea68a9343b96171a658f842de86b597b3acb4b5bb7fdd99136a2b5e876b6d",
+      "digest_present_in_freeze": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "sha256": "1ca8e5d8c618e444fd5873112786eaecf35b6788d2189c3ec7772a686360acd6",
+      "digest_present_in_freeze": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures-manifest.json",
+      "sha256": "53fb3d3b7d6ed435febaaec481a297304408ef1348eb4851e8310d92165c7ccb",
+      "digest_present_in_freeze": true
+    }
+  ],
+  "bash_syntax_only_checks": [
+    "launch-once.sh",
+    "run-cases.sh"
+  ],
+  "shell_scripts_executed": false,
+  "source_order_reservation_before_marker_before_monitored_child": true,
+  "source_failure_trap_precedes_native_invocation": true,
+  "manifest_cases": 65,
+  "manifest_unique_ids": 65,
+  "manifest_order_and_exits_match_saved_matrix": true,
+  "valid_cases": 36,
+  "invalid_cases": 29,
+  "reference_accept_cases": 35,
+  "reference_required_cases": 64,
+  "reference_policy_exception": {
+    "id": "wire-leading-zero-count",
+    "native_expected_exit": 0,
+    "reference": "reject",
+    "reference_required": false
+  },
+  "distinct_valid_output_digest_pairs": 15,
+  "maximum_declared_fixture_archive_bytes": 4194305,
+  "fault_injection_literals_match_all_twelve_saved_fault_names_and_exits": true,
+  "source_fault_inventory": [
+    {
+      "case": "fault-read-error-EINTR-when-1",
+      "expected_exit": 0
+    },
+    {
+      "case": "fault-open-error-EINTR-when-1",
+      "expected_exit": 0
+    },
+    {
+      "case": "fault-fstat-error-EINTR-when-1",
+      "expected_exit": 0
+    },
+    {
+      "case": "fault-openat-error-EINTR-when-1",
+      "expected_exit": 0
+    },
+    {
+      "case": "fault-write-error-EINTR-when-1",
+      "expected_exit": 0
+    },
+    {
+      "case": "fault-fsync-error-EINTR-when-1",
+      "expected_exit": 0
+    },
+    {
+      "case": "fault-write-error-ENOSPC-when-1",
+      "expected_exit": 3
+    },
+    {
+      "case": "fault-write-error-ENOSPC-when-2",
+      "expected_exit": 3
+    },
+    {
+      "case": "fault-write-retval-0-when-1",
+      "expected_exit": 3
+    },
+    {
+      "case": "fault-fsync-error-EIO-when-1",
+      "expected_exit": 3
+    },
+    {
+      "case": "fault-close-error-EIO-when-2",
+      "expected_exit": 3
+    },
+    {
+      "case": "fault-renameat2-error-EACCES-when-1",
+      "expected_exit": 3
+    }
+  ],
+  "source_collision_checks_before_synthetic_gate_and_retained_decode": true,
+  "retained_native_success_depends_on_shell_errexit_and_subsequent_output_checks": true,
+  "private_TSV_payload_acquired": false,
+  "fixture_payloads_acquired": false,
+  "timeout_or_failure_paths_dynamically_tested": false,
+  "markers_fsynced": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three frozen texts fully read; Bash -n parses shell syntax without execution.",
+    "Atomic mkdir reserves the named attempt under trusted filesystem assumptions; markers are not authenticated or fsynced durable exactly-once state.",
+    "Source control flow supports collision/retained completion dependencies; no failure, signal, timeout or cleanup path was dynamically tested.",
+    "Post-wait proc scan is a historical snapshot predicate, not a current census or hostile-interference guarantee.",
+    "Manifest metadata agrees with all 65 saved matrix rows; private TSV and fixture/archive/output/trace payloads remain unacquired.",
+    "One valid wire case explicitly waives Python reference acceptance; correlated fixture output digests are not independent trials.",
+    "No native/controller/generator/oracle execution or new model invocation occurred; no executable or raw private source published."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/emit.py",
+      "bytes": 25043,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures.py",
+      "bytes": 8771,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/inspect.py",
+      "bytes": 2579,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 36393,
+  "public_contribution_checks": [
+    "three pinned blob identities and freeze digest references passed",
+    "Bash syntax-only parse passed for both scripts; no execution",
+    "65 ordered case/exit comparisons and twelve fault inventory comparisons passed",
+    "reference exception and output overlap arithmetic passed",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

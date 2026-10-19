@@ -1,6 +1,6 @@
 # Current state
 
-Last reconciled: 2026-10-19 UTC (2026-10-18 America/Los_Angeles).
+Last reconciled: 2026-10-19 UTC (2026-10-19 America/Los_Angeles).
 
 ## Selected direction
 
@@ -74,7 +74,9 @@ The [native backup export](research/runs/native-backup-export/README.md) now imp
 
 A [real checkpoint backup-use check](research/runs/checkpoint-backup-use/README.md) now exported the retained source-bound store and preserved all 17 objects, exact 5,420-byte context, generation-1 anchor and original receipt. Advancing only a disposable restored copy made current-anchor verification reject the old pack while historical projection verification and exact retry remained valid. Original source state and published export bytes stayed unchanged. No new inference, CSV execution, worker activation or receipt authentication is claimed.
 
-Next practical unit: measure CLI reads while a separate connection holds a writer reservation, using controlled transactions and a read-only SQLite control. Investigate the open-time writer reservation identified in ADR 0002 before selecting a fix. Reconcile remote ownership; the owned-storage finite model remains its separate research lane. Full backup/upgrade guarantees remain open; no recipient has accepted this next unit. Stop expanding the CSV feature chain absent a new requirement.
+A [controlled read-under-reservation probe](research/runs/read-writer-reservation/README.md) now observed `get`, `head` and `receipt` each fail after about five seconds under a held `BEGIN IMMEDIATE` with no data writes, while same-build SQLite read-only SQL returned committed rows. Baseline/post-rollback CLI outputs matched. Source inspection identifies the common `Store::open` immediate transaction before dispatch. This is one availability scenario, not a throughput comparison. Actual Claude advice and its limits are retained.
+
+Next practical unit: a separate existing-only read-only Store path for the eight audited pure-read CLI commands, with a consistent command snapshot and unchanged writable initialization. Test contention, identity/version/corruption rejection, main-file preservation, no database creation, snapshot consistency and WAL sidecar permissions; no writable fallback. Keep backup and all mutations on their existing paths initially. Reconcile remote ownership; the owned-storage finite model remains separate. Full backup/upgrade guarantees remain open; no recipient has accepted this next unit. Stop expanding the CSV feature chain absent a new requirement.
 
 Controlled context-history scaling remains a follow-up when use identifies the need. Keep mandatory facts, byte budget, environment, omission coverage, and expected outcomes explicit. If the selected unit's execution capability is unavailable, advance the next bounded source-review group from the coverage ledgers instead of writing another unchanged status recap.
 

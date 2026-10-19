@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "baseline_commands": 3,
+  "held_busy_failures": 3,
+  "released_commands": 3,
+  "same_build_sqlite_read_only_control": true,
+  "new_execution": false
+}

@@ -61,3 +61,5 @@ jobs:
         run: |
           python3 research/runs/checkpoint-backup-use/verify_records.py
           python3 research/runs/checkpoint-backup-use/run.py --binary target/debug/continuum --checkpoint "$RUNNER_TEMP/source-bound-verification/checkpoint" --output "$RUNNER_TEMP/checkpoint-backup-use"
+      - name: Verify read-reservation baseline evidence
+        run: python3 research/runs/read-writer-reservation/verify_records.py

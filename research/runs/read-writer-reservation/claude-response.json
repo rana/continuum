@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "**Judgment:** Yes. The smallest safe boundary is a separate `Store::open_existing_read_only` that only the eight pure-read commands use (get, head, receipt, events, inspect-context, verify-context, verify-current-context, verify-handoff). It should:\n\n- open with `SQLITE_OPEN_READ_ONLY`, without the create flag;\n- keep the 5-second busy timeout;\n- skip `BEGIN IMMEDIATE`, initialization, and `PRAGMA journal_mode`;\n- validate application ID and schema inside a deferred read transaction, then run the command's reads in that same transaction so it sees one consistent snapshot;\n- reuse the existing object-validation code unchanged.\n\n`Store::open`, the writer commands, prepare-context, acknowledge-handoff and backup stay as they are. Before routing verify-handoff, audit it for any hidden writes.\n\n**Falsifying tests:**\n1. **Contention:** while another connection holds `BEGIN IMMEDIATE`, each routed read command exits 0 well under 5 seconds, and its stdout matches the uncontended baseline byte for byte.\n2. **Rejection:** a wrong application ID, a wrong schema version, or a corrupt object gives the same error and exit code as today.\n3. **No creation:** a missing database is rejected, and no file, `-wal` or `-shm` is created.\n4. **No writes:** the read-only handle fails with `SQLITE_READONLY` if any write slips in, and the file's mtime and checksum are unchanged after every read command.\n5. **Writer regression:** the existing init, WAL and `synchronous=FULL` tests pass unchanged, and writers still hit the expected busy behaviour under contention.\n6. **Snapshot consistency:** a read of a head plus its receipt, with a commit landing between the two statements, never returns a mixed state.\n\n**Important failure mode:** a read-only connection on a WAL database may fail with `SQLITE_CANTOPEN` or a read-only error when the `-shm` file is missing or the directory is not writable, for example after an unclean shutdown. Test this explicitly, and return a clear error rather than silently falling back to the writable path.\n\n**Scope:** the probe shows reads are unblocked under one controlled contention scenario. It does not show any throughput gain."
+    }
+  ],
+  "structuredContent": {
+    "status": "OK",
+    "text": "**Judgment:** Yes. The smallest safe boundary is a separate `Store::open_existing_read_only` that only the eight pure-read commands use (get, head, receipt, events, inspect-context, verify-context, verify-current-context, verify-handoff). It should:\n\n- open with `SQLITE_OPEN_READ_ONLY`, without the create flag;\n- keep the 5-second busy timeout;\n- skip `BEGIN IMMEDIATE`, initialization, and `PRAGMA journal_mode`;\n- validate application ID and schema inside a deferred read transaction, then run the command's reads in that same transaction so it sees one consistent snapshot;\n- reuse the existing object-validation code unchanged.\n\n`Store::open`, the writer commands, prepare-context, acknowledge-handoff and backup stay as they are. Before routing verify-handoff, audit it for any hidden writes.\n\n**Falsifying tests:**\n1. **Contention:** while another connection holds `BEGIN IMMEDIATE`, each routed read command exits 0 well under 5 seconds, and its stdout matches the uncontended baseline byte for byte.\n2. **Rejection:** a wrong application ID, a wrong schema version, or a corrupt object gives the same error and exit code as today.\n3. **No creation:** a missing database is rejected, and no file, `-wal` or `-shm` is created.\n4. **No writes:** the read-only handle fails with `SQLITE_READONLY` if any write slips in, and the file's mtime and checksum are unchanged after every read command.\n5. **Writer regression:** the existing init, WAL and `synchronous=FULL` tests pass unchanged, and writers still hit the expected busy behaviour under contention.\n6. **Snapshot consistency:** a read of a head plus its receipt, with a commit landing between the two statements, never returns a mixed state.\n\n**Important failure mode:** a read-only connection on a WAL database may fail with `SQLITE_CANTOPEN` or a read-only error when the `-shm` file is missing or the directory is not writable, for example after an unclean shutdown. Test this explicitly, and return a clear error rather than silently falling back to the writable path.\n\n**Scope:** the probe shows reads are unblocked under one controlled contention scenario. It does not show any throughput gain.",
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "low",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 754,
+      "output_tokens": 1050,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none",
+    "image_count": 0,
+    "images": []
+  },
+  "isError": false
+}

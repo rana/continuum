@@ -1,0 +1,27 @@
+{
+  "source_baseline": "5f4acabe58158c6f1bf95ae06fa2a537673373e6",
+  "command": [
+    "cargo",
+    "run",
+    "--locked",
+    "--example",
+    "probe_reader_reservation",
+    "--",
+    "--binary",
+    "target/debug/continuum",
+    "--directory",
+    "../pilots/read-writer-reservation-1"
+  ],
+  "build_command": "cargo build --locked -j 4",
+  "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)",
+  "binary_sha256": "3c2abb54cc10ec18dff7d1dc7bc3785965e2ddfb26520f0de79b0c637987ec9a",
+  "probe_binary_sha256": "3d6a84d1a26c9f8e65b964af6255fb31b204cf8de86c211a976d0ebc5a1a2f1e",
+  "source_files": {
+    "examples/probe_reader_reservation.rs": "4342fa7533f3ccf4b6aeead36218803e2681887c52e3e4ab4f457dab72eebb0b",
+    "src/store.rs": "6938727a6ffbbf7b453280a7c98c65e46c04d4cb6046155e9996b6ac456569ef",
+    "src/main.rs": "85f9a790d01d7aac7704a3e79e1d21114aa2e5e3a93a7eeb7c3f358cf84eb004",
+    "Cargo.toml": "24d16daf952d92700d2fae63f646a3823c2a297c9d7411d32648784e35a92e52",
+    "Cargo.lock": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb"
+  },
+  "scope": "One local controlled reservation, no data writes during hold. Native read-only SQL control uses the same dependency/build path as the tested CLI."
+}

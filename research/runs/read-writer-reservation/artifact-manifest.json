@@ -1,0 +1,40 @@
+{
+  "schema": "continuum.pilot_artifacts.v1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6466,
+      "sha256": "e94f0c2b6e09de3213ad7075c752ff7e436acadb9e0946c1585a47d35cfff3ed"
+    },
+    {
+      "path": "claude-request.json",
+      "bytes": 1864,
+      "sha256": "a7e293c626085db541992c294b5d13a38ddc0445222c4a2c452ef10893f492c0"
+    },
+    {
+      "path": "claude-response.json",
+      "bytes": 4992,
+      "sha256": "3437e4438dbc6245893b7c9ba14c312d463fd56583be1f320403da1ea1cfe0aa"
+    },
+    {
+      "path": "execution.json",
+      "bytes": 1215,
+      "sha256": "4e72ef16aafe1012630f702474f102adaacf4a4517da7f2a6526230c8a14be39"
+    },
+    {
+      "path": "result.json",
+      "bytes": 6917,
+      "sha256": "1c8b805161cb0388a95c9af3236032c8c095ff1d5ef7b8ed62e794d64aa7aeda"
+    },
+    {
+      "path": "verification-result.json",
+      "bytes": 175,
+      "sha256": "b768102dc590e7f20ebc7784e7a555748ee9d3fea00637e809ebb0e208fe6742"
+    },
+    {
+      "path": "verify_records.py",
+      "bytes": 1815,
+      "sha256": "cddb36442c245d6ce15aeeb66ca8d914c40f6b9e317193686ef3f9ec3d9d166e"
+    }
+  ]
+}

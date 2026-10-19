@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-decoder-profile-preservation-reader.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PROVENANCE.json",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PUBLICATION_CHECKS.json",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/BUILD_REVIEW_NEEDS.md",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SHA256SUMS",
+      "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/inspection-reader.py.txt"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PROVENANCE.json",
+      "bytes": 10417,
+      "git_blob_sha": "88b84b8bd1e245404f26bce71cec541cf18cccb2",
+      "sha256": "5598e5982180474555c03b0e14b21fc8b0aa648e9b401985001e1106f56f68ce",
+      "lines": 242,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-source-packet-closeout",
+      "reading_representation": "complete_direct_text_read_with_JSON_AST_and_all_manifest_checksum_joins",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PUBLICATION_CHECKS.json",
+      "bytes": 2030,
+      "git_blob_sha": "750e0f175b41f1ada051dd2ac64a14d81c8b7378",
+      "sha256": "8bb48c8829358d5d9cb6a05c338248c852eea9de508458c67f575a748316c177",
+      "lines": 66,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-source-packet-closeout",
+      "reading_representation": "complete_direct_text_read_with_JSON_AST_and_all_manifest_checksum_joins",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/BUILD_REVIEW_NEEDS.md",
+      "bytes": 3392,
+      "git_blob_sha": "41eb8ee0e496fa99d3c60f76ccd63de80373a1ce",
+      "sha256": "bae0510ccaea08742ae09c89d025e4b4bf713fbfd7cbfbe8a0d1380d002bac1a",
+      "lines": 17,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-source-packet-closeout",
+      "reading_representation": "complete_direct_text_read_with_JSON_AST_and_all_manifest_checksum_joins",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SHA256SUMS",
+      "bytes": 2048,
+      "git_blob_sha": "7bea68d061197a0dcf82920c019a55398d93bd4c",
+      "sha256": "1f307b02017d54509aee25d79f12faf5e5f1eabc504f4866566dc8defa46a38d",
+      "lines": 23,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-source-packet-closeout",
+      "reading_representation": "complete_direct_text_read_with_JSON_AST_and_all_manifest_checksum_joins",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/inspection-reader.py.txt",
+      "bytes": 7732,
+      "git_blob_sha": "ced43bee999bb458b63c6a44b4ca6329b1f46b43",
+      "sha256": "1aa93559be69aadff24f6a8c879ac65a28fb72a5db41526cf9ce0332279039ab",
+      "lines": 141,
+      "semantic_review": "full_direct_read",
+      "review_lane": "decoder-profile-source-packet-closeout",
+      "reading_representation": "complete_direct_text_read_with_JSON_AST_and_all_manifest_checksum_joins",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 25619
+    },
+    "cumulative_direct_read": {
+      "paths": 631,
+      "unique_blobs": 631,
+      "bytes": 5492015
+    },
+    "additional_identical_blob_paths": 115,
+    "alias_distinct_blobs": 39,
+    "semantic_covered_paths_including_aliases": 746,
+    "remaining_paths_without_full_semantic_read_or_alias": 4847,
+    "remaining_distinct_blobs_without_full_semantic_read": 3798,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 25619,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Complete original 24-path source packet has reading or identical-blob credit; later preparation/results subtrees remain separate.",
+    "All 22 manifest payloads and 23 root checksum references match exact held bytes.",
+    "Thirteen historical source pins match Git metadata; SHA256 custody is separately classified. The 4208-path count agrees with historical tree size but does not verify global preservation at an unspecified publication HEAD.",
+    "Author reader has top-level effects and one exclusive text JSON output; no fixed0600 mode, fsync or multi-record transaction is declared. It was parsed, not imported or run.",
+    "Dated parent acceptance and build selection remain pending in these records; later result directory existence is not accepted or rejected here.",
+    "No upstream execution/import, native acquisition/emission/execution, model invocation, workstation activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-decoder-profile-source-packet-closeout.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

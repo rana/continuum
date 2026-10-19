@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "source_baseline": "267bc25c244491f4ee2471954c8b295dfb6429c7",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 5,
+  "verified_source_bytes": 25619,
+  "full_source_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 25619,
+  "source_packet_members": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/AUTHOR_STATIC_CHECKS.json",
+      "bytes": 3948,
+      "git_blob_sha": "e15469d92fcde1470e61566282eab504b74165a8",
+      "sha256": "ba3f7a842cc60dbbc833b430ac68bd1a1c61a3da4b94e6b1b7c37536ecba1eac"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/BUILD_REVIEW_NEEDS.md",
+      "bytes": 3392,
+      "git_blob_sha": "41eb8ee0e496fa99d3c60f76ccd63de80373a1ce",
+      "sha256": "bae0510ccaea08742ae09c89d025e4b4bf713fbfd7cbfbe8a0d1380d002bac1a"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/CONTRACT.md",
+      "bytes": 5556,
+      "git_blob_sha": "6a49be528b92adaa325ba61b2cfa4c576c5cf29c",
+      "sha256": "260421d3c6da81b19a9b0ab90e0ece3d4a2253eed12fc42e09cc6131df4a1fcd"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/MANIFEST.json",
+      "bytes": 4007,
+      "git_blob_sha": "aadb80b31537aeae048a23e2d739fc36d384e7e5",
+      "sha256": "57983401fc94d781878438136c3b627edce16ab27dcd90f2f621fd02b470104f"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OPEN.md",
+      "bytes": 1304,
+      "git_blob_sha": "a8e3b7c2d56b92dfca97dcb1ad1c64d7f40fad09",
+      "sha256": "ebdf695a2fa3b44c75b3b04773e752a76640f5a295cb834f2583cec2a2e22e0f"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OWNERSHIP.json",
+      "bytes": 4084,
+      "git_blob_sha": "63ed379e417fabeefe6c41640f376bb4f1718862",
+      "sha256": "a2eee4ea6ac08b6832174741ac8ba737a7e7488a1e2e366ff6efd327303a976f"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PROVENANCE.json",
+      "bytes": 10417,
+      "git_blob_sha": "88b84b8bd1e245404f26bce71cec541cf18cccb2",
+      "sha256": "5598e5982180474555c03b0e14b21fc8b0aa648e9b401985001e1106f56f68ce"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/PUBLICATION_CHECKS.json",
+      "bytes": 2030,
+      "git_blob_sha": "750e0f175b41f1ada051dd2ac64a14d81c8b7378",
+      "sha256": "8bb48c8829358d5d9cb6a05c338248c852eea9de508458c67f575a748316c177"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "bytes": 3393,
+      "git_blob_sha": "da22608ea6a1516b383164ac49f6b999edb26817",
+      "sha256": "ebc0901ca7dc4eb83ba144635a10a368b271b147a5005b3f21eabf7cd381fcc8"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SHA256SUMS",
+      "bytes": 2048,
+      "git_blob_sha": "7bea68d061197a0dcf82920c019a55398d93bd4c",
+      "sha256": "1f307b02017d54509aee25d79f12faf5e5f1eabc504f4866566dc8defa46a38d"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SOURCE.diff",
+      "bytes": 850,
+      "git_blob_sha": "bc90538ee9449cbd17c2b6c5737dcf440097cb9f",
+      "sha256": "dc3d48d1c6905e9704c813465cd3be3fac28ba640e58168cc93f2c8db3efb95b"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md",
+      "bytes": 4294,
+      "git_blob_sha": "a12d426b14ca6cf8b3383659079138ea283a5672",
+      "sha256": "74d9bf3c6b639256ad0ce1c95fbee01d3700951481d422730e68ad4adc0e1d2f"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/bootstrap.py",
+      "bytes": 24745,
+      "git_blob_sha": "4f5a3c59f886a18a52c9e2179c4eab0a8ed59b3b",
+      "sha256": "890650b8e0543d5ff20c495fcdee8f4e42f5b1f98f54e75d21e08275c33f7dba"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/CHECKS.json",
+      "bytes": 5468,
+      "git_blob_sha": "d66f0e12f36c51d5e2d524e649135fc4df4760a4",
+      "sha256": "19dab3577700c7f0149a91bc249a7fb34d65f46a7af03b76f0d2616763fe3177"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/IDENTITIES.json",
+      "bytes": 2319,
+      "git_blob_sha": "b7f558bd0d23af07087c67a2ba03505061481ab0",
+      "sha256": "18e38685db7fd1a60e7b0414af82037b3358647a79c4637e95b321b024f52ab1"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PRESERVED_BASE.json",
+      "bytes": 65811,
+      "git_blob_sha": "8480e728be1b2d8d5ae57b40b26c3ab565d492e0",
+      "sha256": "3899107d10c11f7d537fd07ffa976769d118734e7539c9d8f2bb965ad5c22e17"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/PROVENANCE.json",
+      "bytes": 1392,
+      "git_blob_sha": "88d64071c734dcd60565ada2064f8149654200b5",
+      "sha256": "c3461a961c2c0ed697e54eec2a6ba643ceccfecd53fa69b5e05c4ea3542755c0"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/READER_CORRECTION.json",
+      "bytes": 473,
+      "git_blob_sha": "08009f16705dd08c826e926e114e871988fb3bdd",
+      "sha256": "d72777619db7be5aa4a16602046ab153bbe55ba541efe0e834e90bfcf926faeb"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/REVIEW.md",
+      "bytes": 7387,
+      "git_blob_sha": "d47f93be8cb73731bfa69044dd219c532e695ae1",
+      "sha256": "bf6d3d4c48cefd22b4aec65ce16c0054a3154f7f5b4f88fad31c2eb300278b7b"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/SHA256SUMS",
+      "bytes": 648,
+      "git_blob_sha": "7fdab8a6d61c479fa08210103753dd90edf19a23",
+      "sha256": "34c6ec7e14001a0b8f81ca7f445e986933a291db0254b8c973ba6bf192706eb5"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader-r2.py",
+      "bytes": 11076,
+      "git_blob_sha": "35aeddfbab5146e592e0f41c7de989e7eb278618",
+      "sha256": "8c47a293b30bb1a96d98a09bfb1acab27ca4021fe865366ff5f6c17a20f5036c"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/reader.py",
+      "bytes": 11072,
+      "git_blob_sha": "39cf6d1998695466da8559764503c7363b5ca014",
+      "sha256": "2e69acc124ad3150af6cd57d02ee370730f25a7eef4a9238ba6c561679461955"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/inspection-reader.py.txt",
+      "bytes": 7732,
+      "git_blob_sha": "ced43bee999bb458b63c6a44b4ca6329b1f46b43",
+      "sha256": "1aa93559be69aadff24f6a8c879ac65a28fb72a5db41526cf9ce0332279039ab"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/vendor/isa.py",
+      "bytes": 6390,
+      "git_blob_sha": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae"
+    }
+  ],
+  "source_packet_path_count": 24,
+  "source_packet_bytes": 189836,
+  "manifest_payload_count": 22,
+  "root_checksum_references": 23,
+  "all_manifest_and_checksum_joins_pass": true,
+  "all_nine_independent_copy_identities_match": true,
+  "three_prospective_Git_blob_identities_match": true,
+  "historical_source_pins": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 8134,
+      "git_blob_sha": "05f933c1421f0ec5cf47e3b09f2a16407b9791b0",
+      "sha256": "aa76753ec4f83828d46c6a7a782e14a1293d1ac73ca58a8efee92c34b267046d",
+      "custody": "historical_Git_identity_checked_SHA256_declaration_not_rehashed"
+    },
+    {
+      "path": "CURRENT.md",
+      "bytes": 23285,
+      "git_blob_sha": "1be449f92f81fb867d874548c704e52b262e028d",
+      "sha256": "c7b98e911b31fe808769092d85066d94c819d5317149c3f19a670f1bb107be96",
+      "custody": "historical_Git_identity_checked_SHA256_declaration_not_rehashed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3920,
+      "git_blob_sha": "65945a85788c5f0b593afb3ee402c56e61cf2d86",
+      "sha256": "a58b49fcd7aaea791c177552a668f8838227880f6683e2feb2ae1d3a0e9f941d",
+      "custody": "historical_Git_identity_checked_SHA256_declaration_not_rehashed"
+    },
+    {
+      "path": "NEXT.md",
+      "bytes": 1095,
+      "git_blob_sha": "374c6f0d66135b9a91249a04666e9ad714b287a8",
+      "sha256": "d09516c4fd44f4ca7f27147f00234eea3c930a50e13fd0339aed137658808230",
+      "custody": "historical_Git_identity_checked_SHA256_declaration_not_rehashed"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/NEXT_SOURCE.md",
+      "bytes": 3731,
+      "git_blob_sha": "6f84ac9199e646cbdd4db406b9b8fb03c6215b99",
+      "sha256": "525d41ef1811115682042af81ac1eff42642b367e2bac2a0153317392d89f19d",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/LAYOUT_SKETCH.md",
+      "bytes": 5854,
+      "git_blob_sha": "029f100f436212b74cac5a776c3204286c46bbac",
+      "sha256": "a186c3079b629299b78c8454b957a117ed6229de9b19e9a38dbd2075432d3a68",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_RETURN.md",
+      "bytes": 3975,
+      "git_blob_sha": "8364529aac3af9309598e27b959632d66547e574",
+      "sha256": "7fdc1381fcafbd0a56f60c2c2de881f4a160ee963031d3d66df944496501f598",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "bytes": 24741,
+      "git_blob_sha": "df50fc2ab6c29d9edfba5fd386b57b5df1270890",
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/vendor/isa.py",
+      "bytes": 6390,
+      "git_blob_sha": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "bytes": 6957,
+      "git_blob_sha": "d876f5183f478dd97b1999004d3c98eba2029346",
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OWNER.json",
+      "bytes": 1022,
+      "git_blob_sha": "66fd07a8ad54b24e7003498f47dcb82d1ab8a9b6",
+      "sha256": "85d6e5e75086bc4c480ed92b8636bcd512473c8b04337bbf158683ef2395df10",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/bootstrap.source.py",
+      "bytes": 24741,
+      "git_blob_sha": "df50fc2ab6c29d9edfba5fd386b57b5df1270890",
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "custody": "held_identical_blob_hash_checked"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.layout.json",
+      "bytes": 53163,
+      "git_blob_sha": "6b95f6ef0b6db8235839467d8b16390a0d1ee564",
+      "sha256": "ddb22e1423b1853b755f90f7703b21a3bf05a5a8f34cb80c27181e9238678cb0",
+      "custody": "held_identical_blob_hash_checked"
+    }
+  ],
+  "historical_source_pin_custody_counts": {
+    "historical_Git_identity_checked_SHA256_declaration_not_rehashed": 4,
+    "held_identical_blob_hash_checked": 9
+  },
+  "historical_tree_blob_count": 4208,
+  "global_source_publication_preservation_not_independently_established": true,
+  "relative_links": [
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/AUTHOR_STATIC_CHECKS.json"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/independent-review/REVIEW.md"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/bootstrap.py"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/SOURCE.diff"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/CONTRACT.md"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/STATIC_REVIEW.md"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/BUILD_REVIEW_NEEDS.md"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/README.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/OPEN.md"
+    },
+    {
+      "file": "research/owned-stack/2026-10-16/native-builder-decoder-output-profile/CONTRACT.md",
+      "target": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md"
+    }
+  ],
+  "author_reader_checksum_and_saved_output_pins_match": true,
+  "author_reader_literal_output_fields_checked": [
+    "status",
+    "exact_byte_diff_only_three_selected_constants",
+    "normalized_AST_equals_original",
+    "grammar_count",
+    "source_bytes_max",
+    "instruction_count_max",
+    "labels_max",
+    "fixups_max",
+    "map_records_max",
+    "unchanged_AST_regions",
+    "candidate_imports",
+    "candidate_or_bootstrap_executions",
+    "code_or_fixture_emission",
+    "original_R2_edits",
+    "old_positive_expectations_reused_as_new_oracles"
+  ],
+  "all_three_AST_changes_match_saved_output": true,
+  "unchanged_counts_remain_predictions": {
+    "code_bytes": 9644,
+    "elf_bytes": 13740,
+    "emitted_instructions": 1589,
+    "fixups": 479,
+    "labels": 163,
+    "owned_rw_bytes": 155648
+  },
+  "author_reader_has_top_level_effects": true,
+  "author_reader_output": "AUTHOR_STATIC_CHECKS.json",
+  "author_reader_output_exclusive": true,
+  "author_reader_output_permissions_not_explicitly_fixed": true,
+  "author_reader_not_imported_or_executed": true,
+  "source_packet_fully_read": true,
+  "later_preparation_and_results_not_closed": true,
+  "upstream_imported_or_executed": false,
+  "native_ELF_or_code_artifact_acquired": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete original 24-path source packet has reading or identical-blob credit; later preparation/results subtrees remain separate.",
+    "All 22 manifest payloads and 23 root checksum references match exact held bytes.",
+    "Thirteen historical source pins match Git metadata; SHA256 custody is separately classified. The 4208-path count agrees with historical tree size but does not verify global preservation at an unspecified publication HEAD.",
+    "Author reader has top-level effects and one exclusive text JSON output; no fixed0600 mode, fsync or multi-record transaction is declared. It was parsed, not imported or run.",
+    "Dated parent acceptance and build selection remain pending in these records; later result directory existence is not accepted or rejected here.",
+    "No upstream execution/import, native acquisition/emission/execution, model invocation, workstation activation or recipient acceptance occurred."
+  ],
+  "next_unit": "Prepare one real-work continuation comparison packet from the merged foundations assessment; reconcile ownership and precommit action rubric, matched exposure and total-cost measures before any model dispatch.",
+  "next_source_review_if_experiment_capability_unavailable": "Select a bounded source-only build-preparation metadata group; no upstream replay or native acquisition follows from this closeout.",
+  "checker_repairs_before_record": [
+    "resolve the seed through an already-held identical blob instead of requiring a separate packet-path cache file"
+  ],
+  "public_contribution_checks": [
+    "five complete new files,24 packet members,22 manifest identities and23 checksum references passed",
+    "nine copy destinations,three prospective Git identities and13 historical metadata pins passed with SHA256 custody separated",
+    "author-reader syntax,15 literal output fields,three AST changes and prediction limits passed without upstream execution",
+    "coverage,links,operational privacy and git diff --check passed"
+  ]
+}

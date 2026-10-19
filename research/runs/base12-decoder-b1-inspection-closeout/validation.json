@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "source_baseline": "850b5f2ba68e5771243f49a8377ffba31e5f8883",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 9,
+  "verified_source_bytes": 32863,
+  "full_text_paths_read": 9,
+  "new_semantic_files": 9,
+  "new_semantic_bytes": 32863,
+  "all_17_packet_manifest_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/CHECKS.json",
+      "bytes": 2277,
+      "sha256": "46f84b376ce96dde5d1e3e690b405758ab69e34c4636715e5a073fdac8c8c10c",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/INSPECTION.md",
+      "bytes": 3273,
+      "sha256": "dfbdcedcd52dbaaa49885cf13a536941db6067e525eb569192bcc84feb53b085",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/INSPECTION_CORRECTION.json",
+      "bytes": 633,
+      "sha256": "a8d6462587631b376684c44595e87291f34c864a3237a0010619fb41d84d85ad",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/LAYOUT_SKETCH.md",
+      "bytes": 5854,
+      "sha256": "a186c3079b629299b78c8454b957a117ed6229de9b19e9a38dbd2075432d3a68",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/NEXT_SOURCE.md",
+      "bytes": 3731,
+      "sha256": "525d41ef1811115682042af81ac1eff42642b367e2bac2a0153317392d89f19d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/OPEN.md",
+      "bytes": 1023,
+      "sha256": "31151c7e1859d32e05b526325d06bfc2603cbb3e5c03de1747d5f37574ef0827",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/OWNERSHIP.json",
+      "bytes": 3872,
+      "sha256": "d98323acfc00f2622552bf2fec70bb2e89f34524841886946538620a14d70ea8",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/PROVENANCE.json",
+      "bytes": 13856,
+      "sha256": "4a7f9ff196c0da62b6393eb6c7429c71e52777d1356e7f629bc0221790cd6a10",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/README.md",
+      "bytes": 4195,
+      "sha256": "5a13574f636d71fe33c989cec965b9710fdcba50aef6b503a831abe675c32766",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/REQUIREMENTS.md",
+      "bytes": 10622,
+      "sha256": "768680f68016cf33a6313dacd4994ecde61107afb9f3a7d5b9faff01eca26cd4",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_CHECKS.json",
+      "bytes": 12519,
+      "sha256": "3a174a4c6d939ab8a9f8b876f5b4a46e5b860ec570c294abeffab336c9467a0e",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/SOURCE_RETURN.md",
+      "bytes": 3975,
+      "sha256": "7fdc1381fcafbd0a56f60c2c2de881f4a160ee963031d3d66df944496501f598",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/independent-review/IDENTITIES.json",
+      "bytes": 2645,
+      "sha256": "67ccee7054ae63074d5e583d89330e16065804408c5449dbe823a74a3f3b1909",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/independent-review/REVIEW.md",
+      "bytes": 6697,
+      "sha256": "a85cf5d0e8648f71219b0568794a9988c157771d4210b3a6b42a5b85a7b7c857",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/independent-review/SHA256SUMS",
+      "bytes": 158,
+      "sha256": "3c4516a71febf514dbf4325e0bd1659381132ebb564ac8f5e358aee2913e6a4d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/inspection-reader-r1-stopped.py.txt",
+      "bytes": 6951,
+      "sha256": "5b252216a8f56fb2a248b39e8670a8a1cebf9a158e3b56cbf34ba6780dd7b16d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/decoder-b1-port-boundary-01/inspection-reader-r2.py.txt",
+      "bytes": 7088,
+      "sha256": "61ee7324b789f85a875a522ae260d5204b7114c8ad1e535d1b850d466b7e6b14",
+      "matched": true
+    }
+  ],
+  "checksum_counts": {
+    "SHA256SUMS": 18,
+    "independent-review/SHA256SUMS": 2
+  },
+  "all_three_provenance_review_copies_bind": true,
+  "all_12_focused_identity_rows_match_provenance": true,
+  "reader_AST_syntax_parses": 2,
+  "reader_sources_imported_or_executed": false,
+  "unchanged_helper_function_ASTs": 4,
+  "r2_literal_field_filter_and_removed_builder_listing_walk_verified": true,
+  "reader_literal_capacity_output_fields": {
+    "source_bytes_max": 65536,
+    "instructions_max": 1024,
+    "labels_max": 128,
+    "fixups_max": 256,
+    "elf_bytes_max": 16384,
+    "code_bytes_max": 12288,
+    "map_records_max": 1152,
+    "map_bytes_max": 36896
+  },
+  "capacity_enforcement_independently_derived_from_builder": false,
+  "all_19_packet_paths_fully_read": true,
+  "packet_paths": 19,
+  "packet_bytes": 93815,
+  "historical_focused_review_and_task_inventory_scoped": true,
+  "current_full_host_absence_claimed": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Nine texts fully read and both inspection sources AST-parsed without import/execution.",
+    "All seventeen manifest payloads, eighteen top-level checksums, two focused checksums and three provenance review copies bind exact bytes.",
+    "All nineteen packet paths now fully read; input source pin coverage and outside packet artifact gaps remain as previously recorded.",
+    "Reader r2 narrows literal field parsing and removes builder listing walk; all four helper function ASTs are unchanged.",
+    "Eight builder capacity values are literal output fields in the reader, not independently derived enforcement bounds; dispatch names and five header fields use AST inspection.",
+    "Historical corrected-reader success and focused listing/ELF checks are retained observations; no replay or new binary acquisition.",
+    "Focused recommendation is not complete final packet acceptance, cheapest-route proof, parent source selection or execution authority.",
+    "Historical task/worktree inventory is partial scoped ownership evidence; no current full-host absence, security change or denied metadata retry claimed."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "bytes": 24741,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DEPENDENCIES.json",
+      "bytes": 1737,
+      "intended_review": "full_text_read_without_import_or_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/README.md",
+      "bytes": 4186,
+      "intended_review": "full_text_read_without_import_or_execution"
+    }
+  ],
+  "next_scope_bytes": 30664,
+  "public_contribution_checks": [
+    "nine pinned blob identities and full text/source readings passed",
+    "all seventeen manifest, eighteen top-level and two focused checksums bind",
+    "three provenance copies and twelve focused input identities reconcile",
+    "both reader ASTs parse, four helper ASTs match and correction scope verified",
+    "eight literal capacity fields distinguished from derived enforcement; all nineteen packet paths read",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

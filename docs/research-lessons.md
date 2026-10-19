@@ -259,6 +259,8 @@ The [decoder B1 boundary return](source-review/base12-decoder-b1-boundary-claims
 
 The [B1 source-record return](source-review/base12-decoder-b1-boundary-records.md) preserves an inspection-reader failure, its narrower correction, historical source pins and explicit reading taxonomy. A failed reader is not a candidate failure, and hash-only context or reported consultations are not fresh full reading. Keep those distinctions alongside a successful source-summary checkpoint.
 
+The [B1 inspection closeout](source-review/base12-decoder-b1-inspection-closeout.md) closes packet custody while distinguishing extracted source facts from eight literal capacity fields copied into an inspection summary. A corrected reader can answer a narrower question successfully without verifying every claim in its output. Preserve that derivation boundary and the focused reviewer’s actual scope.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

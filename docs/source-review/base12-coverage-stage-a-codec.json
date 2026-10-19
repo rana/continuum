@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-corpus-preservation.json",
+  "selected_scope": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/",
+    "files": [
+      "PROTOCOL.md",
+      "README.md",
+      "WIRE.md",
+      "check.py",
+      "codec.py",
+      "native_signal.py",
+      "record100.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/PROTOCOL.md",
+      "git_blob_sha": "ce94c2252df2c8e7f4216ce18d110fd3cfc56fa5",
+      "bytes": 6042,
+      "sha256": "9e1e43b3845e69f65c3e3fd0862783ae36027e6ea52a44fe59d1a937b7f19c32",
+      "lines": 31,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-codec-wire-and-recovery-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/README.md",
+      "git_blob_sha": "e49084f0b4f68dc22fa9854ee4c002713bed2749",
+      "bytes": 7078,
+      "sha256": "8f36537de81478cd2b5078ff49725b25fe0aaa5e0e28c2392bd41da1998aa1b3",
+      "lines": 60,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-codec-wire-and-recovery-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/WIRE.md",
+      "git_blob_sha": "6cd0fa0d661af4f8d7761075fa0f7af73576ce59",
+      "bytes": 1877,
+      "sha256": "8eda125db6fd6f275146e2a186bb665b6170f2681cdbb97616d99079d6023a3c",
+      "lines": 15,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-codec-wire-and-recovery-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/check.py",
+      "git_blob_sha": "c132329e60ebc0091a1cd2248f4dac9beaee9a41",
+      "bytes": 7708,
+      "sha256": "ce97f82b37b4e03d1c1caffbd37e551d5ef75583917d84b7e315c377ae920d32",
+      "lines": 129,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-codec-wire-and-recovery-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/codec.py",
+      "git_blob_sha": "28c35fa96e09e4dd1f509ed6d632e9f685e63502",
+      "bytes": 9208,
+      "sha256": "3cbd016e38a306ed9cb4cfb38eebb61a431c4b4a91cc1b014794921b5fa0d158",
+      "lines": 195,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-codec-wire-and-recovery-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/native_signal.py",
+      "git_blob_sha": "fd7ff06c14222e4fb440a8ba0da764e794bf1736",
+      "bytes": 3719,
+      "sha256": "f686d91bbae2d220ad1e05d243afa6a9fe05177655568ffeda56dfba4e34131d",
+      "lines": 83,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-codec-wire-and-recovery-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/record100.py",
+      "git_blob_sha": "9b8d0a36b90a2fc057348608e51e02527df64f69",
+      "bytes": 8874,
+      "sha256": "c9c3bc878477652a9f1ba327f661647b9388e1151852fa5bef2711575cfcb09a",
+      "lines": 112,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-codec-wire-and-recovery-boundaries",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "python_ast_parse_without_import"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 7,
+      "unique_blobs": 7,
+      "bytes": 44506
+    },
+    "cumulative_direct_read": {
+      "paths": 215,
+      "unique_blobs": 215,
+      "bytes": 1479552
+    },
+    "additional_identical_blob_paths": 48,
+    "alias_distinct_blobs": 18,
+    "semantic_covered_paths_including_aliases": 263,
+    "remaining_paths_without_full_semantic_read_or_alias": 5330,
+    "remaining_distinct_blobs_without_full_semantic_read": 4214,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 7,
+    "this_review_verified_bytes": 44506,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All seven selected files were fully read; aliases are not separately read.",
+    "Private source, headers, waveforms and operational payloads are not published.",
+    "No upstream module, native instruction, test, codec, acquisition or benchmark was executed.",
+    "Test implementation was inspected; saved check records and subsequent integration evidence are selected next, not verified here.",
+    "Partial-output schedule is source-derived, not an injected process failure or a claim that atomic output was promised.",
+    "Pre-import pin ordering is narrower than a proof of immutable dependency loading or protection from preloaded modules."
+  ],
+  "review_report": "base12-stage-a-codec.md"
+}

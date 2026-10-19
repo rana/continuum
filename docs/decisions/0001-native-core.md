@@ -48,3 +48,6 @@ The longer-lived commitment is the documented data format and behavioral contrac
 
 The [2026-10-19 storage assessment](../experiments/embedded-storage-evaluation.md) examines redb as a narrower Rust KV implementation, Turso Database as a Rust SQL implementation, and Fjall for a conditional LSM workload. It preserves SQLite as the operational baseline and defines contract, process, durability, footprint, and lifecycle comparisons. No candidate has yet been executed by this review. The current decision can be reopened for a demonstrated operability or target benefit as well as a measured performance gain; SQL itself is not a mandatory public contract.
 
+## Owned-storage research follow-up
+
+[ADR 0002](0002-owned-storage-research.md) accepts a bounded purpose-built storage and independent emitted-verifier research direction under the user's native-stack intent. Architectural ownership can be worth investigating before a measured bottleneck. This refines the earlier deferral of a new engine without claiming an adopted replacement: the existing SQLite implementation and its evidence remain the operational baseline.

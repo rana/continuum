@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "record_kind": "owned-native-design-review",
+  "observed_date_utc": "2026-10-19",
+  "observed_date_user": "2026-10-18",
+  "user_timezone": "America/Los_Angeles",
+  "design_source_revision": "d126337d22c3a181d72ef559d2c84a436d9aec19",
+  "reconciled_revision": "4fc43550866a2794c1bdd492a4b1a79b0883faa4",
+  "native_changes_since_storage_survey": [],
+  "source_files": [
+    {
+      "path": "src/store.rs",
+      "bytes": 13735,
+      "sha256": "4a22be3dc5cf87918501a20137bb0963b94d8cbe9375a82313ec7da1d82b8b83"
+    },
+    {
+      "path": "src/object.rs",
+      "bytes": 10446,
+      "sha256": "3c97e27383410a004be5d263e61b66d976be6dcc00983f361b64ba37d04d36ad"
+    },
+    {
+      "path": "src/context.rs",
+      "bytes": 32224,
+      "sha256": "0d371595ddcff87c119ea29a568e50cc0de111e25b3c9d0920d5d4d9a3f03539"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 563,
+      "sha256": "5739f85b75d23eb83b81c22b41bf8ef83425d0b2e5c4da325a7e810ba6d0762b"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 13180,
+      "sha256": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb"
+    },
+    {
+      "path": "tests/invariants.rs",
+      "bytes": 11078,
+      "sha256": "8c72cc3cc969232cf893936f7ffcfe30de6a063ea17f20e365cc44ae7f28b475"
+    },
+    {
+      "path": "tests/crash_recovery.rs",
+      "bytes": 3369,
+      "sha256": "c2edcd04bf7caff61b63a4a7205c429e409a262a5fa712642afe19326dff3322"
+    }
+  ],
+  "method": [
+    "Current public source and contract audit",
+    "Five actual supplied-context Claude turns with retained follow-up corrections",
+    "Independent architecture and durability reviews",
+    "Scoped private cross-project review; only original method adaptations enter public design",
+    "Conditional fresh-reader and repository-transition design"
+  ],
+  "model_exchanges": [
+    {
+      "record": "research/runs/claude-09.json",
+      "request_path": "docs/collaboration/requests/claude-09.json",
+      "request_bytes": 5933,
+      "request_sha256": "50341142e2313946822395d6bf45591e7aac4a575e02980979d8377336d6054a",
+      "actual_model": "claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false
+    },
+    {
+      "record": "research/runs/claude-10.json",
+      "request_path": "docs/collaboration/requests/claude-10.json",
+      "request_bytes": 15921,
+      "request_sha256": "91f136e0ff33330fd2ad708944535817318316bdfd19111837cb66f04e8286f3",
+      "actual_model": "claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false
+    },
+    {
+      "record": "research/runs/claude-11.json",
+      "request_path": "docs/collaboration/requests/claude-11.json",
+      "request_bytes": 6950,
+      "request_sha256": "f6c2d6af22ad139ecef960a15db7d3aec7be117f8311cfb7bc8abfaeec1dc785",
+      "actual_model": "claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false
+    },
+    {
+      "record": "research/runs/claude-12.json",
+      "request_path": "docs/collaboration/requests/claude-12.json",
+      "request_bytes": 2420,
+      "request_sha256": "6ce33bfc2e32223ca9441a831e647a8a07287696fa212285a62ea5854e21c74b",
+      "actual_model": "claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false
+    },
+    {
+      "record": "research/runs/claude-13.json",
+      "request_path": "docs/collaboration/requests/claude-13.json",
+      "request_bytes": 3130,
+      "request_sha256": "9908c12878330fc661be9e6669491d79d6c3885f12f4a579fb58f7f73f2a6f44",
+      "actual_model": "claude-opus-5-5",
+      "configured_effort": "medium",
+      "stop_reason": "end_turn",
+      "truncated": false
+    }
+  ],
+  "alternative_engine_executions": 0,
+  "recovery_model_executions": 0,
+  "emitted_verifier_executions": 0,
+  "new_performance_measurements": 0,
+  "native_dependency_changes": false,
+  "repository_renames": 0,
+  "successor_repositories_created": 0,
+  "model_or_schedule_changes": false,
+  "decision": "docs/decisions/0002-owned-storage-research.md",
+  "design": "docs/experiments/owned-native-core-design.md",
+  "dot_bridge_record": "docs/collaboration/native-ownership-bridge.md",
+  "primary_source_urls": [
+    "https://man7.org/linux/man-pages/man2/fsync.2.html",
+    "https://man7.org/linux/man-pages/man2/memfd_create.2.html",
+    "https://man7.org/linux/man-pages/man2/F_ADD_SEALS.2const.html",
+    "https://www.sqlite.org/atomiccommit.html",
+    "https://docs.tigerbeetle.com/concepts/safety/",
+    "https://doc.rust-lang.org/reference/inline-assembly.html",
+    "https://doc.rust-lang.org/reference/names/preludes.html",
+    "https://rustc-dev-guide.rust-lang.org/backend/codegen.html",
+    "https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository"
+  ],
+  "limitations": [
+    "A research direction was accepted; no storage replacement was adopted.",
+    "A framed journal plus checksums is not by itself a complete durable commit protocol.",
+    "Model responses and their corrections are design evidence, not executed correctness or comparative performance.",
+    "Cross-project source review does not establish whole-repository coverage or fresh execution.",
+    "Mailbox publication must not be represented as Dot receipt or wake-up."
+  ],
+  "dot_offer": {
+    "state": "published_offered",
+    "private_pr_url": "https://github.com/rana/base-12-ai/pull/128",
+    "message_commit": "3b7bed167ce7f7728c389257e05a0b8989a4768a",
+    "merge_commit": "d3a53073fbc024427174446c2a0db02365ae240c",
+    "exact_merged_bytes_verified": true,
+    "recipient_response_observed": false,
+    "direct_wakeup_claimed": false
+  },
+  "base12_codex_response": {
+    "state": "actual_receipt_and_independent_design_response_observed",
+    "observed_date_utc": "2026-10-19",
+    "request_head_read": "3b7bed167ce7f7728c389257e05a0b8989a4768a",
+    "recipient": "Base12 Codex chat",
+    "scope": "Immutable published request; documentation and independent design response, not this unpublished Continuum contribution or a new storage implementation",
+    "dot_receipt_or_acceptance_claimed": false,
+    "private_response_text_published": false,
+    "base12_specific_evidence_locations_published": false,
+    "public_summary": "docs/collaboration/native-ownership-bridge.md"
+  }
+}

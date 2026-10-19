@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_kind": "model-collaboration",
+  "attempt_id": "claude-13",
+  "recorded_at": "2026-10-19",
+  "started_at": "2026-10-19T06:43:12.382Z",
+  "finished_at": "2026-10-19T06:43:25.232Z",
+  "executor": "supplied-context Claude Collaborator",
+  "requested": {
+    "model": "opus",
+    "effort": "medium"
+  },
+  "observed": {
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 1081,
+      "output_tokens": 1002,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none"
+  },
+  "inputs": [
+    {
+      "path": "docs/collaboration/requests/claude-13.json",
+      "exposure": "Complete naming, worker notification and cross-pollination user additions, public coordinator summary and verified GitHub rename behavior."
+    }
+  ],
+  "status": "completed",
+  "output_ref": "docs/collaboration/2026-10-19-claude-13.md",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "# Co-design update: naming, notification, cross-pollination\n\n**1. Naming (consideration only; no change now)**\nIf Continuum adopts a distinct owned target, the new repo should take the enduring name **Continuum**. The current repo becomes **continuum-prototype**. Call it \"frozen\" or \"deprecated\" only if that is actually true. GitHub ends redirects when an old name is reused, so any cutover needs a ledger with:\n- old and new repository IDs\n- exact cutover commits\n- active writers and local remotes\n- CI and scheduled prompts\n\nDo the steps in order: freeze writes, rename, verify the new name, then reuse it.\n\n**2. Notifying ongoing chats and workers**\nEvery research or update session that writes to the repo is a dependent. Before any cutover, list each one. Send it a handoff note with the old and new names, repo IDs, the cutover commit, and the new remote URL. Record each notice as offered, received, or acknowledged. A cutover is complete only when every active writer has acknowledged or has been explicitly retired. Nothing moves until then.\n\n**3. Two-way cross-pollination**\nThese forms fit different target and bootstrap contracts, and none require releasing private source.\n\n*Base12 → Continuum (public descriptions only):*\n- **Methods:** exact custody, bounded independent checks, deliberate mutants, preserved counterexamples, full attempt accounting.\n- **Emitted-verifier pattern:** an independently generated checker that reads a portable contract and has no Rust runtime dependency.\n\n*Continuum → Base12:*\n- **Methods:** stable operation IDs, durable historical receipts, exact context handoffs.\n- **Host tools:** a Rust reference implementation and corpus runner, used only on the host, never linked into Base12's target.\n\n*Both directions:*\n- **Specs and test vectors:** shared contract documents, golden corpora, and counterexample sets, each with a pinned version.\n\n**How to share**\n- **Prefer specs over code.** Sharing both the implementation and the oracle algorithm can reproduce the same bug on both sides. Keep the checkers independent.\n- **Copies** must record their source identity (repo, commit, hash) and a divergence policy: track upstream, fork, or freeze.\n- **Shared libraries** only when two actual consumers agree on one contract. Extract one component at a time, with no umbrella framework yet.\n- **Licensing:** Continuum is public MIT and Base12 is private. Anything flowing from Base12 into the public repo needs explicit owner release. The Dot mailbox request is still unanswered.\n\n**Status**\nThe baseline is unchanged: Rust/SQLite, with Codex pilots continuing. No rename, migration, scheduling change, or code transfer is proposed now."
+      }
+    ],
+    "structuredContent": {
+      "status": "OK",
+      "text": "# Co-design update: naming, notification, cross-pollination\n\n**1. Naming (consideration only; no change now)**\nIf Continuum adopts a distinct owned target, the new repo should take the enduring name **Continuum**. The current repo becomes **continuum-prototype**. Call it \"frozen\" or \"deprecated\" only if that is actually true. GitHub ends redirects when an old name is reused, so any cutover needs a ledger with:\n- old and new repository IDs\n- exact cutover commits\n- active writers and local remotes\n- CI and scheduled prompts\n\nDo the steps in order: freeze writes, rename, verify the new name, then reuse it.\n\n**2. Notifying ongoing chats and workers**\nEvery research or update session that writes to the repo is a dependent. Before any cutover, list each one. Send it a handoff note with the old and new names, repo IDs, the cutover commit, and the new remote URL. Record each notice as offered, received, or acknowledged. A cutover is complete only when every active writer has acknowledged or has been explicitly retired. Nothing moves until then.\n\n**3. Two-way cross-pollination**\nThese forms fit different target and bootstrap contracts, and none require releasing private source.\n\n*Base12 → Continuum (public descriptions only):*\n- **Methods:** exact custody, bounded independent checks, deliberate mutants, preserved counterexamples, full attempt accounting.\n- **Emitted-verifier pattern:** an independently generated checker that reads a portable contract and has no Rust runtime dependency.\n\n*Continuum → Base12:*\n- **Methods:** stable operation IDs, durable historical receipts, exact context handoffs.\n- **Host tools:** a Rust reference implementation and corpus runner, used only on the host, never linked into Base12's target.\n\n*Both directions:*\n- **Specs and test vectors:** shared contract documents, golden corpora, and counterexample sets, each with a pinned version.\n\n**How to share**\n- **Prefer specs over code.** Sharing both the implementation and the oracle algorithm can reproduce the same bug on both sides. Keep the checkers independent.\n- **Copies** must record their source identity (repo, commit, hash) and a divergence policy: track upstream, fork, or freeze.\n- **Shared libraries** only when two actual consumers agree on one contract. Extract one component at a time, with no umbrella framework yet.\n- **Licensing:** Continuum is public MIT and Base12 is private. Anything flowing from Base12 into the public repo needs explicit owner release. The Dot mailbox request is still unanswered.\n\n**Status**\nThe baseline is unchanged: Rust/SQLite, with Codex pilots continuing. No rename, migration, scheduling change, or code transfer is proposed now.",
+      "actual_model": "claude-opus-5-5",
+      "configured_model": "us.anthropic.claude-opus-5-5",
+      "configured_effort": "medium",
+      "thinking": "adaptive",
+      "usage": {
+        "input_tokens": 1081,
+        "output_tokens": 1002,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_modality": "text-only",
+      "server_memory": "none",
+      "image_count": 0,
+      "images": []
+    },
+    "isError": false
+  },
+  "limitations": [
+    "Design considerations only; no rename, new shared library or target migration performed.",
+    "Dot publication status in the supplied context was still pending; later actual publication is in the separate bridge record."
+  ]
+}

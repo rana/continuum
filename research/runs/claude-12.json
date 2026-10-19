@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "record_kind": "model-collaboration",
+  "attempt_id": "claude-12",
+  "recorded_at": "2026-10-19",
+  "started_at": "2026-10-19T06:35:34.425Z",
+  "finished_at": "2026-10-19T06:35:46.816Z",
+  "executor": "supplied-context Claude Collaborator",
+  "requested": {
+    "model": "opus",
+    "effort": "medium"
+  },
+  "observed": {
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 847,
+      "output_tokens": 952,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none"
+  },
+  "inputs": [
+    {
+      "path": "docs/collaboration/requests/claude-12.json",
+      "exposure": "Complete fresh-repository user consideration and coordinator's current public design summary; no direct repository access."
+    }
+  ],
+  "status": "completed",
+  "output_ref": "docs/collaboration/2026-10-19-claude-12.md",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "# Conditional successor architecture: new repo versus refreshed current repo\n\n**Status:** Nothing has switched. Rust/SQLite remains the working baseline, and the owned-native stack is unbuilt and unmeasured. Everything below applies only *if* owned-native is later adopted on evidence.\n\n## Preferred fresh-reader information architecture\n\n1. **README (front door):** what Continuum is, current contracts, implementation status, and the single next action.\n2. **`CONTRACTS/`:** canonical object, acceptance, retry, and context semantics, stated independently of any stack. These carry over unchanged.\n3. **`IMPLEMENTATION/`:** the owned-native design, including the state and recovery model, journal format, emitter, ABI, and bootstrap.\n4. **`EVIDENCE/`:** baseline conformance results, counterexamples, and any comparative speed and reliability data that justified adoption.\n5. **`PROVENANCE.md`:** a short page covering why the Rust predecessor was weighed and superseded. It links to a pinned predecessor commit or tag and does not retell the history.\n6. **`BOUNDARIES.md`:** what is private, what is public, and what was not carried over.\n\n## Criteria for a NEW repository\n\nCreate one only if most of these hold:\n- The source tree shares little or no code with the Rust tree.\n- The build toolchain or bootstrap is disjoint, so Cargo is no longer the build root.\n- CI, release, and maintenance ownership differ materially.\n- Keeping both trees in one place would force readers or tools to navigate two live build systems.\n\n## Criteria for a REFRESHED current repository\n\nPrefer refreshing in place if any of these hold:\n- The owned components replace modules incrementally inside the existing build.\n- The Rust implementation remains a conformance oracle that runs in CI.\n- Issue, PR, and license continuity matter more than a clean tree.\n\nWanting a fresh narrative does not justify a new repo on its own. A rewritten README plus an archive tag can provide that.\n\n## In either case\n\n- Keep one write authority, with the predecessor marked read-only.\n- Pin the exact baseline and counterexamples by commit hash.\n- Write `PROVENANCE.md` only after adoption actually occurs, never in anticipation of it.\n\n## Overlooked risk\n\nA fresh repository can quietly sever the conformance oracle. If the Rust/SQLite baseline is archived rather than executed, the owned stack's correctness claims lose their reference implementation, and regressions in exact operation history become undetectable. Whichever option is chosen, keep the baseline runnable against the shared contract tests until the owned stack's own evidence stands independently."
+      }
+    ],
+    "structuredContent": {
+      "status": "OK",
+      "text": "# Conditional successor architecture: new repo versus refreshed current repo\n\n**Status:** Nothing has switched. Rust/SQLite remains the working baseline, and the owned-native stack is unbuilt and unmeasured. Everything below applies only *if* owned-native is later adopted on evidence.\n\n## Preferred fresh-reader information architecture\n\n1. **README (front door):** what Continuum is, current contracts, implementation status, and the single next action.\n2. **`CONTRACTS/`:** canonical object, acceptance, retry, and context semantics, stated independently of any stack. These carry over unchanged.\n3. **`IMPLEMENTATION/`:** the owned-native design, including the state and recovery model, journal format, emitter, ABI, and bootstrap.\n4. **`EVIDENCE/`:** baseline conformance results, counterexamples, and any comparative speed and reliability data that justified adoption.\n5. **`PROVENANCE.md`:** a short page covering why the Rust predecessor was weighed and superseded. It links to a pinned predecessor commit or tag and does not retell the history.\n6. **`BOUNDARIES.md`:** what is private, what is public, and what was not carried over.\n\n## Criteria for a NEW repository\n\nCreate one only if most of these hold:\n- The source tree shares little or no code with the Rust tree.\n- The build toolchain or bootstrap is disjoint, so Cargo is no longer the build root.\n- CI, release, and maintenance ownership differ materially.\n- Keeping both trees in one place would force readers or tools to navigate two live build systems.\n\n## Criteria for a REFRESHED current repository\n\nPrefer refreshing in place if any of these hold:\n- The owned components replace modules incrementally inside the existing build.\n- The Rust implementation remains a conformance oracle that runs in CI.\n- Issue, PR, and license continuity matter more than a clean tree.\n\nWanting a fresh narrative does not justify a new repo on its own. A rewritten README plus an archive tag can provide that.\n\n## In either case\n\n- Keep one write authority, with the predecessor marked read-only.\n- Pin the exact baseline and counterexamples by commit hash.\n- Write `PROVENANCE.md` only after adoption actually occurs, never in anticipation of it.\n\n## Overlooked risk\n\nA fresh repository can quietly sever the conformance oracle. If the Rust/SQLite baseline is archived rather than executed, the owned stack's correctness claims lose their reference implementation, and regressions in exact operation history become undetectable. Whichever option is chosen, keep the baseline runnable against the shared contract tests until the owned stack's own evidence stands independently.",
+      "actual_model": "claude-opus-5-5",
+      "configured_model": "us.anthropic.claude-opus-5-5",
+      "configured_effort": "medium",
+      "thinking": "adaptive",
+      "usage": {
+        "input_tokens": 847,
+        "output_tokens": 952,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_modality": "text-only",
+      "server_memory": "none",
+      "image_count": 0,
+      "images": []
+    },
+    "isError": false
+  },
+  "limitations": [
+    "Conditional information architecture; no successor repository created, migration performed, or performance claim established."
+  ]
+}

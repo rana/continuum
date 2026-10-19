@@ -6,6 +6,8 @@ Last reconciled: 2026-10-19 UTC (2026-10-18 America/Los_Angeles).
 
 Continuum is a native work and evidence engine for continuing AI engineering. The first implementation is a small Rust core, with exact source custody and durable local acceptance receipts. Git is the intended public development host and a future interoperability edge; the core has no Git runtime dependency.
 
+The [owned-storage research decision](docs/decisions/0002-owned-storage-research.md) now opens a separate purpose-built kernel and independent emitted-verifier investigation. Its first unit is a finite transition/recovery model. No custom engine, model execution, native-emitter target, migration or successor repository is claimed; the current practical pilot below keeps its existing ownership.
+
 ## Completed locally
 
 - Both original DOCX briefs converted faithfully to Markdown, including their full historical appendices, five tables, and 37 source hyperlinks. Visible-text round trips match after whitespace normalization.
@@ -15,7 +17,7 @@ Continuum is a native work and evidence engine for continuing AI engineering. Th
 - Local SQLite expected-root/generation acceptance, operation identity binding, durable retries, and receipt queries.
 - Four agent-guided protocols: Progress Brief, Holographic Walk, Research Record, Bounded Research Loop.
 - Versioned digest-pinned registry, protocol schemas and fixtures, and a proposed execution-metadata schema.
-- Eight numbered further actual Claude Opus 5.5 exchanges, with supplied-input custody, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the fifth and sixth review unattended work and the Base12 continuity pattern; the seventh selects a real-use pilot; the eighth reviews embedded storage alternatives. The project pilots also retain their own actual successor exchanges. Private cross-project context in requests five and six is explicitly redacted from the public projections and retained privately. The original briefs also retain their historical exchanges.
+- Thirteen numbered further actual Claude Opus 5.5 exchanges, with supplied-input custody, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the fifth and sixth review unattended work and the Base12 continuity pattern; the seventh selects a real-use pilot; the eighth reviews embedded storage alternatives; exchanges nine through eleven develop and correct the owned-storage research design; the twelfth considers a conditional successor repository; the thirteenth examines naming, worker transition and shared components. The project pilots also retain their own actual successor exchanges. Private cross-project context in requests five and six is explicitly redacted from the public projections and retained privately. The original briefs also retain their historical exchanges.
 - Exact WorkState records, bounded whole-record context selection, retained rendered packs, historical and current-anchor verification, and explicit handoff acknowledgement-reference checks.
 - A reproducible context example using independently started CLI processes.
 - One actual fresh Claude continuation from an 8,321-byte pack, with an exact model-authored acknowledgement whose references passed native verification.

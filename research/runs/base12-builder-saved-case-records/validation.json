@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "source_baseline": "d89c632f2c2ddb038ac7f0abc6900c945d5b3cef",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 1,
+  "verified_source_bytes": 52312,
+  "full_text_paths_read": 1,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 52312,
+  "complete_json_roundtrip_exact": true,
+  "all_66_case_records_fully_read_and_match_expectations": true,
+  "unique_invocation_digest_declarations": 66,
+  "unique_observation_digest_declarations": 26,
+  "repeated_observation_digest_group_sizes": [
+    30,
+    7,
+    4,
+    2,
+    2
+  ],
+  "all_10_injection_summaries_match_case_semantics": true,
+  "trace_bytes_declared_total": 19823,
+  "syscall_count_declared_total": 133,
+  "root_receipt_identities": 21,
+  "fixed_receipt_text_identity_checks": 8,
+  "capture_metadata_records": 5,
+  "all_capture_identities_match_provenance": true,
+  "source_pin_classes": {
+    "held_bytes": 9,
+    "unheld_candidate_declaration": 1,
+    "prior_ledger_identity": 2
+  },
+  "accounting_and_tree_relations_match": true,
+  "all_saved_qualifications_read": true,
+  "raw_private_evidence_acquired": false,
+  "new_execution_or_live_scan": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Complete52312-byte derived JSON fully read, including66 case records,10 injection summaries,21 root-receipt identities,5 capture records,12 source identities and all qualifications.",
+    "All per-case states/modes/digests agree with frozen expectations as metadata; no raw output/observation/invocation file newly acquired.",
+    "Distinct invocation digests coexist with repeated observed-projection digests; content equality is not invocation identity or independent evidence.",
+    "Ten summarized syscall counts normalize absent zero-count keys and agree with authored qualified full-I/O counts plus one exit; complete raw syscall sequences are not present in this derived record.",
+    "Eight fixed receipt values reconstruct their declared length/hash; this is expectation-to-metadata consistency, not fresh receipt custody.",
+    "Nine source pins bind bytes,two match prior ledger identities and one remains candidate ELF declaration; current narrower access does not invalidate historical reviewer fuller access.",
+    "Raw private capture/trace/tree evidence remains unacquired; no new execution,live scan,model call or result acceptance is inferred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_ATTEMPT_MANIFEST.json",
+      "bytes": 99153,
+      "intended_review": "complete_derived_attempt_inventory_without_execution"
+    }
+  ],
+  "next_scope_bytes": 99153,
+  "public_contribution_checks": [
+    "pinned derived-review identity and complete JSON readings passed",
+    "all 66 case records match exact expected states, modes and declared identities",
+    "ten injection semantics and normalized syscall-count summaries reconcile",
+    "nine held source pins, two prior identities and one candidate declaration retain scope",
+    "five capture records, eight fixed receipt-text hashes and accounting relations agree",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

@@ -217,6 +217,8 @@ The [parent-packet return](source-review/base12-parent-packet-review.md) binds l
 
 The [parent-checker return](source-review/base12-parent-checker.md) reads every check and separates per-member structural entries from numerical derivations and a nested saved verdict. Its reads precede member checks, and parse exceptions can prevent a final report. Continuum should preserve dependency/count semantics, pre-access versus post-access validation, and explicit failure versus missing output; a large pass total is not an experiment count. No upstream checker ran.
 
+The [packaging-boundary return](source-review/base12-packaging-boundary.md) distinguishes staged member bytes from later path digests, file fsync from atomic publication of a set, and pinned receipts from authored historical claims. Continuum should bind each check and receipt to its consumed representation while preserving partial-output recovery states. No packaging code or failure experiment ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

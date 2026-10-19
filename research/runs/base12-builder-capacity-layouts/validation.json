@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "source_baseline": "5eb5f8b2516728f6e6ce511fa7b5b6b832723b74",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "verified_source_paths": 2,
+  "verified_source_bytes": 107982,
+  "full_source_paths_read": 2,
+  "new_semantic_files": 2,
+  "new_semantic_bytes": 107982,
+  "complete_json_reconstructions": 2,
+  "all13_fields_source_positions_and_literal_fields_match": true,
+  "lossless_reading_projections": [
+    {
+      "case": "07",
+      "labels": {
+        "names": "_start followed by L1 through L127 in integer order",
+        "count": 128,
+        "offset": 4096
+      },
+      "map_label_rows": {
+        "index": "i=0..127",
+        "kind": 2,
+        "line": "i+1",
+        "offset": 4096,
+        "length": 0
+      },
+      "map_instruction_rows": {
+        "index": "i=0..1023",
+        "kind": 1,
+        "line": "i+129",
+        "offset": "4096+i",
+        "length": 1
+      },
+      "literal_code": "fc repeated1024 times",
+      "relocations": [],
+      "coverage": [],
+      "all_scalar_fields": {
+        "status": "INDEPENDENT EXPECTATION; not native output",
+        "counts": {
+          "instructions": 1024,
+          "labels": 128,
+          "relocations": 0,
+          "map_rows": 1152
+        },
+        "code_bytes": 1024,
+        "code_sha256": "fe50e2c5655695c94a6ce21bfb5a8db23fa3556a85f07e3cada4064d498937bf",
+        "elf_bytes": 5120,
+        "elf_sha256": "a72ef0fdfc63ff2955307c4bf7832ae4ec0d28364c322ea16744f2a726ed6258",
+        "map_bytes": 36896,
+        "map_sha256": "e2d2e30ac0d6c03d30d0b6686e471c94ba9506ea3b677f790beafbfb16c4a287"
+      }
+    },
+    {
+      "case": "11",
+      "labels": {
+        "_start": 4096
+      },
+      "map_label_rows": [
+        [
+          2,
+          1,
+          4096,
+          0
+        ]
+      ],
+      "map_instruction_rows": {
+        "index": "i=0..255",
+        "kind": 1,
+        "line": "i+2",
+        "offset": "4096+5*i",
+        "length": 5
+      },
+      "literal_code": {
+        "index": "i=0..255",
+        "opcode_hex": "e9",
+        "signed32_little_endian_field": "-5*(i+1)"
+      },
+      "relocations": {
+        "index": "i=0..255",
+        "patch_file_offset": "4097+5*i",
+        "target": "_start",
+        "displacement": "-5*(i+1)"
+      },
+      "coverage": [],
+      "all_scalar_fields": {
+        "status": "INDEPENDENT EXPECTATION; not native output",
+        "counts": {
+          "instructions": 256,
+          "labels": 1,
+          "relocations": 256,
+          "map_rows": 257
+        },
+        "code_bytes": 1280,
+        "code_sha256": "212fb05c9d41bc8eabca7a0f8e35552b8e314b9c397dbdaa602d0228e7038b25",
+        "elf_bytes": 5376,
+        "elf_sha256": "e82248a44973eb4f8c99ff7ce0d46ba43b90a7575655f1a6271ebbe2f33d1f1e",
+        "map_bytes": 8256,
+        "map_sha256": "93fc878c82ba7f3d946e72087edd8d8a8860e20967f5a7feabdab6a0d93eb3d7"
+      }
+    }
+  ],
+  "case_checks": [
+    {
+      "case": "07",
+      "layout_bytes": 65928,
+      "source_bytes": 5398,
+      "counts": {
+        "instructions": 1024,
+        "labels": 128,
+        "relocations": 0,
+        "map_rows": 1152
+      },
+      "code_bytes": 1024,
+      "map_bytes": 36896,
+      "all13_fields_and_entire_json_reconstruct_exactly": true,
+      "all_repeated_records_match_lossless_affine_projection": true,
+      "all_source_manifest_checksum_and_saved_metadata_relations_match": true,
+      "relocation_fields_checked": 0
+    },
+    {
+      "case": "11",
+      "layout_bytes": 42054,
+      "source_bytes": 3853,
+      "counts": {
+        "instructions": 256,
+        "labels": 1,
+        "relocations": 256,
+        "map_rows": 257
+      },
+      "code_bytes": 1280,
+      "map_bytes": 8256,
+      "all13_fields_and_entire_json_reconstruct_exactly": true,
+      "all_repeated_records_match_lossless_affine_projection": true,
+      "all_source_manifest_checksum_and_saved_metadata_relations_match": true,
+      "relocation_fields_checked": 256
+    }
+  ],
+  "relocation_fields_checked": 256,
+  "relocation_displacement_min": -1280,
+  "relocation_displacement_max": -5,
+  "maximum_expected_map_rows": 1152,
+  "maximum_expected_map_bytes": 36896,
+  "remaining_expected_layout_paths": [
+    "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.layout.json"
+  ],
+  "elf_digest_source": "frozen_manifest_not_recomputed",
+  "materializer_imported_or_executed": false,
+  "native_artifact_emitted_or_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Two complete layouts/107982 bytes read through lossless affine record projections; all13 fields and entire JSON formatting reconstruct exactly.",
+    "Layout07 reaches1152 expected map rows:128 zero-length labels plus1024 one-byte instructions, with36896 expected map bytes.",
+    "Layout11 has256 five-byte branches and distinct signed displacements from-5 through-1280; repeated source text does not imply repeated encoded byte fields.",
+    "All source,checksum,manifest and saved-case metadata relations agree; no fresh parser progress, resource measurement or boundary runtime test is claimed.",
+    "Literal code/map fields bind expected identities; ELF digests remain copied manifest declarations, with raw map/ELF artifacts unacquired.",
+    "No upstream import/materializer execution,native artifact emission/execution,model call,live scan,workstation activation or recipient acceptance occurred."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.layout.json",
+      "bytes": 45963,
+      "intended_review": "complete_runner_expected_layout_and_source_migration_joins_then_expected_layout_corpus_closeout_without_execution"
+    }
+  ],
+  "next_scope_bytes": 45963,
+  "public_contribution_checks": [
+    "both complete13-field layouts reconstruct exactly through lossless record projections",
+    "source positions,1152-row map maximum and all256 signed displacement fields bind",
+    "literal code/map identities and saved metadata joins passed with ELF declaration scope retained",
+    "coverage, next runner-layout gap, links, privacy and git diff --check passed"
+  ]
+}

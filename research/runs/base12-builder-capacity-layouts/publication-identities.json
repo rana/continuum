@@ -1,0 +1,20 @@
+{
+  "source_baseline": "5eb5f8b2516728f6e6ce511fa7b5b6b832723b74",
+  "files": [
+    {
+      "path": "docs/source-review/base12-builder-capacity-layouts.md",
+      "bytes": 5390,
+      "sha256": "ca5c21703087989cf23489741dd28e718d0888d40b58322798751b77a43a9271"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-builder-capacity-layouts.json",
+      "bytes": 3835,
+      "sha256": "9eb9cb814ba4efefab1032d123835fcc7377b8569161a64499f3b52c3cdfac7e"
+    },
+    {
+      "path": "research/runs/base12-builder-capacity-layouts/validation.json",
+      "bytes": 6357,
+      "sha256": "96c42eec73a2ed8d04abc9d5e14471e6169ad97da655591f92b3ec9cd945c682"
+    }
+  ]
+}

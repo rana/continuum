@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-small-layouts.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.layout.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.layout.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.layout.json",
+      "bytes": 65928,
+      "git_blob_sha": "f8c4cc845c7275f4c1f9127dff280acd686da037",
+      "sha256": "282599d930877f24d37a23e2ab2b84377a80b2a350945c8a767192a69407218f",
+      "lines": 7062,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-expected-layouts",
+      "reading_representation": "complete_lossless_affine_record_projection_and_exact_json_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.layout.json",
+      "bytes": 42054,
+      "git_blob_sha": "7e70f1071e5638ec6c47b80708ea7e8493215ba5",
+      "sha256": "88573c21e46682f6d345dccecf707eaf30b32756ae4740ee078eb3d3309e76d4",
+      "lines": 2846,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-complete-capacity-expected-layouts",
+      "reading_representation": "complete_lossless_affine_record_projection_and_exact_json_reconstruction",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 2,
+      "unique_blobs": 2,
+      "bytes": 107982
+    },
+    "cumulative_direct_read": {
+      "paths": 594,
+      "unique_blobs": 594,
+      "bytes": 5193872
+    },
+    "additional_identical_blob_paths": 94,
+    "alias_distinct_blobs": 30,
+    "semantic_covered_paths_including_aliases": 688,
+    "remaining_paths_without_full_semantic_read_or_alias": 4905,
+    "remaining_distinct_blobs_without_full_semantic_read": 3835,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 2,
+    "this_review_verified_bytes": 107982,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Two complete layouts/107982 bytes read through lossless affine record projections; all13 fields and entire JSON formatting reconstruct exactly.",
+    "Layout07 reaches1152 expected map rows:128 zero-length labels plus1024 one-byte instructions, with36896 expected map bytes.",
+    "Layout11 has256 five-byte branches and distinct signed displacements from-5 through-1280; repeated source text does not imply repeated encoded byte fields.",
+    "All source,checksum,manifest and saved-case metadata relations agree; no fresh parser progress, resource measurement or boundary runtime test is claimed.",
+    "Literal code/map fields bind expected identities; ELF digests remain copied manifest declarations, with raw map/ELF artifacts unacquired.",
+    "No upstream import/materializer execution,native artifact emission/execution,model call,live scan,workstation activation or recipient acceptance occurred."
+  ],
+  "review_report": "base12-builder-capacity-layouts.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

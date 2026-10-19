@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-builder-planned-commands.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/native-builder-slice/execution-01/README.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/execution-01/RESULT.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_RESULT_REVIEW.md",
+      "research/owned-stack/2026-10-16/native-builder-slice/execution-01/EVIDENCE_PROVENANCE.json",
+      "research/owned-stack/2026-10-16/native-builder-slice/execution-01/SHA256SUMS"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/README.md",
+      "bytes": 5584,
+      "git_blob_sha": "e8ace623a447ce2e1a8fadd55a51dc44e7ec43df",
+      "sha256": "5dfdd803fa9bfcb9ff4b66c5fcf45bcceca4d024ff55721b244d54c9acb66ebf",
+      "lines": 33,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-saved-result-claims-and-review-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/RESULT.json",
+      "bytes": 4240,
+      "git_blob_sha": "b15777d23296550535e85c01df67da4dfd781f3b",
+      "sha256": "7d9930d31bf64fbb0d63a20d09ab0e8e2df14d345fc2e1a0ee21bcb3aba28506",
+      "lines": 114,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-saved-result-claims-and-review-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/INDEPENDENT_RESULT_REVIEW.md",
+      "bytes": 9382,
+      "git_blob_sha": "a3ce44b5adf89cd5a50edc568f4adf99cd16f52f",
+      "sha256": "bd707bf56bccaea097571e35ca34eae46cc8d7565696fedc30bce5e862a45206",
+      "lines": 68,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-saved-result-claims-and-review-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/EVIDENCE_PROVENANCE.json",
+      "bytes": 2699,
+      "git_blob_sha": "11532d5dfe915b05b82ca4898784a736172c7525",
+      "sha256": "f3115884e25b4ef8e5b7167d074cdd6314570f4adb7c388586f405803ee6f0fd",
+      "lines": 67,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-saved-result-claims-and-review-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/execution-01/SHA256SUMS",
+      "bytes": 536,
+      "git_blob_sha": "e0ae309ff89795bc733dc15b301d77b22f43e98a",
+      "sha256": "84c54616a442079a62e07d8934ccf6e32cad19d72c7df8a4b4e856ebcae11454",
+      "lines": 6,
+      "semantic_review": "full_direct_read",
+      "review_lane": "native-builder-saved-result-claims-and-review-boundary",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 22441
+    },
+    "cumulative_direct_read": {
+      "paths": 526,
+      "unique_blobs": 526,
+      "bytes": 4237737
+    },
+    "additional_identical_blob_paths": 77,
+    "alias_distinct_blobs": 27,
+    "semantic_covered_paths_including_aliases": 603,
+    "remaining_paths_without_full_semantic_read_or_alias": 4990,
+    "remaining_distinct_blobs_without_full_semantic_read": 3903,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 5,
+    "this_review_verified_bytes": 22441,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five complete saved summary/review/provenance texts read; one historical cleared batch is reported, not newly executed or freshly verified from raw private payloads here.",
+    "Four source/manifest payloads and exact 3740-byte command bind; candidate ELF remains an unheld identity declaration matching its build record.",
+    "Result histograms, tiny outcomes, fault counts and selected accounting/tree arithmetic agree with prior expectations and saved review; raw statuses/traces remain private/unacquired.",
+    "Submission/terminal observation timestamps are not runtime duration; persisted numeric accounting is prepublication, final numeric sample unsaved and terminal exit is a reported attestation.",
+    "Separate reviewer reports raw byte/trace checks from fuller access; current payload gap must not be projected backward onto that review.",
+    "Six checksum entries include four held text payloads and two unread derived records; ten private provenance files are not ten newly acquired receipts.",
+    "Parent result acceptance remains pending at this captured checkpoint; consumed clearance/attempt gives no replay authority or present ownership state."
+  ],
+  "review_report": "base12-builder-result-review.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

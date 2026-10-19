@@ -1,0 +1,67 @@
+{
+  "source_commit": "06f8a18",
+  "commands": [
+    {
+      "argv": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 0.13929198600817472
+    },
+    {
+      "argv": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--all-features",
+        "-j",
+        "4",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s\n",
+      "elapsed_seconds": 0.18048052402446046
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--locked",
+        "--all-features",
+        "-j",
+        "4"
+      ],
+      "returncode": 0,
+      "stdout": "\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 9 tests\ntest typed_admission_rejects_ambiguous_json_dangling_ids_and_malformed_states ... ok\ntest historical_attempt_scope_and_opaque_failed_output_survive_current_source_change ... ok\ntest context_acknowledgement_cannot_be_relabelled_as_an_attempt_receipt ... ok\ntest independently_hashed_tampering_cannot_replace_the_selector_projection ... ok\ntest byte_budget_omits_only_whole_optional_history_and_refuses_critical_loss ... ok\ntest same_source_histories_keep_distinct_conditional_recovery_and_exact_custody ... ok\ntest context_acknowledgement_requires_explicit_recipient_and_exact_coverage_only ... ok\ntest bound_anchor_can_become_stale_without_corrupting_historical_context ... ok\ntest separately_started_cli_processes_prepare_inspect_and_acknowledge_exact_context ... ok\n\ntest result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s\n\n\nrunning 2 tests\ntest process_death_after_commit_before_reply_reconciles_original_receipt ... ok\ntest process_death_before_commit_leaves_neither_transition_nor_receipt ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n\nrunning 9 tests\ntest canonical_format_rejects_ambiguous_and_unknown_encodings ... ok\ntest invalid_paths_references_and_candidate_types_cannot_enter_state ... ok\ntest evidence_preserves_declared_scope_without_becoming_trusted_verification ... ok\ntest exact_binary_source_and_canonical_snapshot_survive_reopen ... ok\ntest unrelated_or_future_databases_are_not_silently_adopted ... ok\ntest operation_id_binds_full_request_within_acceptor_namespace ... ok\ntest retries_return_original_receipt_after_later_head_changes ... ok\ntest generation_rejects_aba_even_when_root_bytes_return_to_the_same_value ... ok\ntest competing_connections_have_one_winner_without_lost_updates ... ok\n\ntest result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n",
+      "stderr": "    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s\n     Running unittests src/lib.rs (target/debug/deps/continuum_core-1b2f5a67536f2a12)\n     Running unittests src/main.rs (target/debug/deps/continuum-44487af38097579c)\n     Running tests/context_handoff.rs (target/debug/deps/context_handoff-9bbf9041883ceb82)\n     Running tests/crash_recovery.rs (target/debug/deps/crash_recovery-e511c8ee0a595f94)\n     Running tests/invariants.rs (target/debug/deps/invariants-f4a03a6862aa3834)\n   Doc-tests continuum_core\n",
+      "elapsed_seconds": 0.20995815901551396
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools",
+        "-p",
+        "test_project_checkpoint.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_bundle_preflight_rejects_ambiguity_versions_kinds_and_limits (test_project_checkpoint.CheckpointTests.test_bundle_preflight_rejects_ambiguity_versions_kinds_and_limits) ... ok\ntest_digest_mismatch_before_output (test_project_checkpoint.CheckpointTests.test_digest_mismatch_before_output) ... ok\ntest_exact_committed_bytes_replay_and_existing_output (test_project_checkpoint.CheckpointTests.test_exact_committed_bytes_replay_and_existing_output) ... ok\ntest_filesystem_aliases_rejected_before_output (test_project_checkpoint.CheckpointTests.test_filesystem_aliases_rejected_before_output) ... ok\ntest_imported_source_overlap_is_explicit_and_verified (test_project_checkpoint.CheckpointTests.test_imported_source_overlap_is_explicit_and_verified) ... ok\ntest_insufficient_budget_retains_failure_without_success_manifest (test_project_checkpoint.CheckpointTests.test_insufficient_budget_retains_failure_without_success_manifest) ... ok\ntest_missing_extra_and_mislabeled_objects_have_no_success_manifest (test_project_checkpoint.CheckpointTests.test_missing_extra_and_mislabeled_objects_have_no_success_manifest) ... ok\ntest_native_context_rejects_acknowledgement_as_imported_receipt (test_project_checkpoint.CheckpointTests.test_native_context_rejects_acknowledgement_as_imported_receipt) ... ok\ntest_original_binary_replacement_does_not_change_later_invocations (test_project_checkpoint.CheckpointTests.test_original_binary_replacement_does_not_change_later_invocations) ... ok\ntest_recorded_attempt_exact_bytes_historical_scope_and_reconstruction (test_project_checkpoint.CheckpointTests.test_recorded_attempt_exact_bytes_historical_scope_and_reconstruction) ... ok\ntest_symlink_rejected_before_output (test_project_checkpoint.CheckpointTests.test_symlink_rejected_before_output) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 2.390s\n\nOK\n",
+      "elapsed_seconds": 2.434200451010838
+    }
+  ]
+}

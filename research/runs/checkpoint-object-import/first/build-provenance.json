@@ -1,0 +1,9 @@
+{
+  "source_commit": "219e6e327f7f6af5d3a16578b2ea481edd5faa5b",
+  "command": "cargo build --locked -j 4",
+  "binary_sha256": "81dd3a7e25c3d00714f42e127ae114118001720148eb5719110e79fa98a22eb9",
+  "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)",
+  "cargo": "cargo 1.91.1 (ea2d97820 2025-10-10)",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "scope": "Observed native build in the current local desktop shell; no installed service or retained-store upgrade claimed."
+}

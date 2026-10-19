@@ -1,0 +1,24 @@
+{
+  "scope": "Authored historical reconstruction of actual visible CSV collaborator records; no new inference or effect.",
+  "historical_source_snapshot": "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491",
+  "current_source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "context_pack": "sha256:d9a6867d4768a46d3520fd7290039539ebee93c48fb717fed4518a0afc679e0b",
+  "imported_objects": 7,
+  "same_pack_in_fresh_store": true,
+  "all_native_envelopes_restored": true,
+  "exact_pilot_request_receipt_bytes_verified": [
+    {
+      "role": "request",
+      "retained_file": "research/runs/independent-csv-pilot/implementation-request.json",
+      "sha256": "6437ab34c935201f24459b519e37e9ee5e68f977b93c65fc19d6c02165b5271d",
+      "blob": "sha256:6157b34a7685e19b62df6c18924137ea67b7beab1b57cd7696d1190a22416a75"
+    },
+    {
+      "role": "receipt",
+      "retained_file": "research/runs/independent-csv-pilot/implementation-response.json",
+      "sha256": "2054bf8e176f70cb3b1caf90b6020f35fa45e57877e2d5833a7b86943b8848b2",
+      "blob": "sha256:947cf469f0d2662e942e5edf01d1bea2920926452bfb143dec99d1f100063f02"
+    }
+  ],
+  "conditional_next_action": "inspect_recorded_receipt"
+}

@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import platform
+import re
 import subprocess
 import sys
 import unicodedata
@@ -21,6 +22,93 @@ def write_json(path, value):
 
 def sha256(data):
     return hashlib.sha256(data).hexdigest()
+
+
+MAX_IMPORT_BYTES = 16 * 1024 * 1024
+MAX_IMPORT_OBJECTS = 256
+
+
+def strict_json(data):
+    def pairs(items):
+        value = {}
+        for key, item in items:
+            if key in value:
+                raise ValueError(f"duplicate JSON key: {key}")
+            value[key] = item
+        return value
+
+    def nonfinite(value):
+        raise ValueError(f"nonfinite JSON number: {value}")
+
+    return json.loads(data, object_pairs_hook=pairs, parse_constant=nonfinite)
+
+
+def read_imports(path):
+    if path is None:
+        return None, {}
+    with path.open("rb") as stream:
+        raw = stream.read(MAX_IMPORT_BYTES + 1)
+    if len(raw) > MAX_IMPORT_BYTES:
+        raise ValueError("object bundle exceeds 16 MiB")
+    bundle = strict_json(raw)
+    if (not isinstance(bundle, dict) or set(bundle) != {"schema", "objects"} or
+            bundle["schema"] != "continuum.object_bundle.v1" or
+            not isinstance(bundle["objects"], list)):
+        raise ValueError("expected continuum.object_bundle.v1 with objects array")
+    if len(bundle["objects"]) > MAX_IMPORT_OBJECTS:
+        raise ValueError("object bundle exceeds 256 objects")
+    objects = {}
+    for envelope in bundle["objects"]:
+        if (not isinstance(envelope, dict) or set(envelope) != {"id", "format_version", "object"} or
+                type(envelope["format_version"]) is not int or envelope["format_version"] != 1):
+            raise ValueError("object envelope requires id, integer format_version 1 and object")
+        identity = envelope["id"]
+        if not isinstance(identity, str) or not re.fullmatch(r"sha256:[0-9a-f]{64}", identity):
+            raise ValueError("invalid imported object ID")
+        if identity in objects:
+            raise ValueError(f"duplicate imported object ID: {identity}")
+        obj = envelope["object"]
+        if not isinstance(obj, dict):
+            raise ValueError("imported object must be a Blob or Snapshot")
+        if obj.get("type") == "blob" and set(obj) == {"type", "bytes"}:
+            pass  # The native CLI validates byte values and canonical identity.
+        elif obj.get("type") == "snapshot" and set(obj) == {"type", "entries"}:
+            if (not isinstance(obj["entries"], list) or
+                    any(not isinstance(e, dict) or set(e) != {"path", "blob"} or
+                        not isinstance(e["blob"], str) for e in obj["entries"])):
+                raise ValueError("invalid imported Snapshot entries")
+        else:
+            raise ValueError("import supports only v1 Blob and Snapshot objects")
+        objects[identity] = obj
+    return raw, objects
+
+
+def require_import_closure(state, objects, captured):
+    """Require only attempt roots and their Snapshot-to-Blob edges; no inference."""
+    pending = []
+    attempts = state.get("attempts", [])
+    if not isinstance(attempts, list) or any(not isinstance(a, dict) for a in attempts):
+        raise ValueError("attempts must be an array of records")
+    for attempt in attempts:
+        pending.extend([attempt["source_snapshot"], attempt["request"]])
+        if attempt.get("receipt") is not None:
+            pending.append(attempt["receipt"])
+    visited = set()
+    while pending:
+        identity = pending.pop()
+        if not isinstance(identity, str):
+            raise ValueError("attempt reference must be an object ID")
+        if identity in visited:
+            continue
+        visited.add(identity)
+        obj = objects.get(identity, captured.get(identity))
+        if obj is None:
+            raise ValueError(f"missing attempt object closure: {identity}")
+        if obj["type"] == "snapshot":
+            pending.extend(entry["blob"] for entry in obj["entries"])
+    extra = set(objects) - visited
+    if extra:
+        raise ValueError(f"unreferenced imported objects: {sorted(extra)}")
 
 
 def checkpoint(args):
@@ -60,14 +148,15 @@ def checkpoint(args):
                 raise ValueError(f"filesystem-aliased snapshot paths: {previous[0]!r}, {prefix!r}")
             names[key] = (prefix, kind)
     state_bytes = args.work_state.read_bytes()
-    state = json.loads(state_bytes)
-    if state.get("source_snapshot", "missing") is not None:
+    state = strict_json(state_bytes)
+    if not isinstance(state, dict) or state.get("source_snapshot", "missing") is not None:
         raise ValueError("authored WorkState must set source_snapshot to null for explicit binding")
     provenance_bytes = args.build_provenance.read_bytes()
-    provenance = json.loads(provenance_bytes)
+    provenance = strict_json(provenance_bytes)
+    import_bytes, imported = read_imports(args.import_objects)
     binary_bytes = binary.read_bytes()
     binary_digest = sha256(binary_bytes)
-    if provenance["binary_sha256"] != binary_digest:
+    if not isinstance(provenance, dict) or provenance.get("binary_sha256") != binary_digest:
         raise ValueError("build provenance binary digest does not match executable")
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=False)
@@ -93,6 +182,8 @@ def checkpoint(args):
             raise RuntimeError(result.stderr)
         return json.loads(result.stdout)
 
+    if import_bytes is not None:
+        (output / "import-objects.json").write_bytes(import_bytes)
     cli("init")
     entries, inventory = [], []
     for path, mode, oid in files:
@@ -106,6 +197,23 @@ def checkpoint(args):
                           "sha256": sha256(data), "bytes": len(data), "blob": blob_id})
     snapshot = cli("put", write_json(output / "source-snapshot.json",
                                     {"type": "snapshot", "entries": entries}))["id"]
+    captured = {item["blob"]: {"type": "blob"} for item in inventory}
+    captured[snapshot] = {"type": "snapshot", "entries": entries}
+    require_import_closure(state, imported, captured)
+    imported_records = []
+    if imported:
+        imports_dir = output / "imports"
+        imports_dir.mkdir()
+        # Snapshot v1 has only Blob edges, so two passes suffice in any input order.
+        ordered = sorted(imported, key=lambda identity: (imported[identity]["type"] != "blob", identity))
+        for index, identity in enumerate(ordered):
+            obj = imported[identity]
+            path = write_json(imports_dir / f"{index:04d}.json", obj)
+            actual = cli("put", path)["id"]
+            if actual != identity:
+                raise ValueError(f"imported object identity mismatch: expected {identity}, got {actual}")
+            imported_records.append({"id": identity, "type": obj["type"],
+                                     "preexisting_in_source_capture": identity in captured})
     state["source_snapshot"] = snapshot
     state_id = cli("blob", write_json(output / "work-state.json", state))["id"]
     wrapper = cli("put", write_json(output / "state-snapshot.json", {
@@ -136,6 +244,9 @@ def checkpoint(args):
         "source": {"commit": revision, "git_tree": git("rev-parse", revision + "^{tree}").decode().strip(),
                    "snapshot": snapshot, "files": inventory},
         "work_state": state_id, "context_pack": pack_id,
+        "imports": {"bundle_sha256": sha256(import_bytes) if import_bytes is not None else None,
+                    "objects": imported_records,
+                    "limits": {"max_bundle_bytes": MAX_IMPORT_BYTES, "max_objects": MAX_IMPORT_OBJECTS}},
         "binary_sha256": binary_digest, "build_provenance_sha256": sha256(provenance_bytes),
         "adapter_sha256": sha256(Path(__file__).read_bytes()),
         "environment": {"platform": platform.platform(), "python": sys.version},
@@ -157,12 +268,13 @@ def main():
     parser.add_argument("--revision", default="HEAD")
     parser.add_argument("--work-state", type=Path, required=True)
     parser.add_argument("--build-provenance", type=Path, required=True)
+    parser.add_argument("--import-objects", type=Path, help="exact v1 Blob/Snapshot bundle for attempt references")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--max-bytes", type=int, default=32768)
     args = parser.parse_args()
     try:
         print(json.dumps(checkpoint(args), indent=2))
-    except (OSError, ValueError, KeyError, subprocess.CalledProcessError, RuntimeError) as error:
+    except (OSError, ValueError, KeyError, TypeError, subprocess.CalledProcessError, RuntimeError) as error:
         parser.exit(1, f"checkpoint failed: {error}\n")
 
 

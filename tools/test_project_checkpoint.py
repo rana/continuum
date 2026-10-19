@@ -52,6 +52,123 @@ class CheckpointTests(unittest.TestCase):
         self.assertEqual(result.returncode == 0, succeeds, result.stderr)
         return output
 
+    def native(self, database, command, *values):
+        run = subprocess.run([str(BINARY), command, str(database), *map(str, values)],
+                             capture_output=True, text=True)
+        self.assertEqual(run.returncode, 0, run.stderr)
+        return json.loads(run.stdout)
+
+    def recorded_attempt_bundle(self, receipt=b"recorded response\xff\n", source=b"historical source\x00\n"):
+        database = self.root / "seed.db"
+        self.native(database, "init")
+        objects = []
+        ids = []
+        for index, data in enumerate([source, b"exact request\x00\n", receipt]):
+            path = self.root / f"blob-{index}"
+            path.write_bytes(data)
+            identity = self.native(database, "blob", path)["id"]
+            ids.append(identity)
+            objects.append(self.native(database, "get", identity))
+        path = self.root / "historical.json"
+        path.write_text(json.dumps({"type": "snapshot", "entries": [{"path": "old.txt", "blob": ids[0]}]}))
+        snapshot = self.native(database, "put", path)["id"]
+        objects.insert(0, self.native(database, "get", snapshot))  # Deliberately dependency-first reversed.
+        state = json.loads(self.state.read_text())
+        state["attempts"] = [{"id": "prior", "operation_id": "historical-operation",
+                              "source_snapshot": snapshot, "summary": "Historical authored attempt.",
+                              "dispatch_state": "receipt_recorded", "request": ids[1],
+                              "receipt": ids[2], "outcome_note": "Opaque retained bytes, no truth claim."}]
+        self.state.write_text(json.dumps(state))
+        bundle = {"schema": "continuum.object_bundle.v1", "objects": objects}
+        path = self.root / "bundle.json"
+        path.write_text(json.dumps(bundle))
+        return path, bundle
+
+    def test_recorded_attempt_exact_bytes_historical_scope_and_reconstruction(self):
+        path, bundle = self.recorded_attempt_bundle()
+        first = self.run_checkpoint(extra=("--import-objects", str(path)))
+        self.assertEqual((first / "import-objects.json").read_bytes(), path.read_bytes())
+        for envelope in bundle["objects"]:
+            self.assertEqual(self.native(first / "work.db", "get", envelope["id"]), envelope)
+        state = json.loads((first / "work-state.json").read_text())
+        self.assertEqual(state["attempts"], json.loads(self.state.read_text())["attempts"])
+        self.assertNotEqual(state["source_snapshot"], state["attempts"][0]["source_snapshot"])
+        bundle["objects"].reverse()
+        path.write_text(json.dumps(bundle))
+        second = self.run_checkpoint("reconstructed", extra=("--import-objects", str(path)))
+        self.assertEqual(json.loads((first / "checkpoint.json").read_text())["context_pack"],
+                         json.loads((second / "checkpoint.json").read_text())["context_pack"])
+        self.assertEqual(json.loads((first / "verification.json").read_text())["exact_projection_verified"], True)
+
+    def test_imported_source_overlap_is_explicit_and_verified(self):
+        path, _ = self.recorded_attempt_bundle(source=b"\x00\xff\r\nexact\n")
+        output = self.run_checkpoint(extra=("--import-objects", str(path)))
+        manifest = json.loads((output / "checkpoint.json").read_text())
+        overlap = [entry for entry in manifest["imports"]["objects"]
+                   if entry["preexisting_in_source_capture"]]
+        self.assertEqual(len(overlap), 1)
+        self.assertEqual(overlap[0]["id"], manifest["source"]["files"][0]["blob"])
+
+    def test_missing_extra_and_mislabeled_objects_have_no_success_manifest(self):
+        path, original = self.recorded_attempt_bundle()
+        import copy
+        mutations = {}
+        missing = copy.deepcopy(original)
+        missing["objects"].pop()  # A required receipt or leaf cannot disappear.
+        mutations["missing"] = missing
+        leaf = copy.deepcopy(original)
+        leaf["objects"].pop(1)
+        mutations["missing-snapshot-leaf"] = leaf
+        extra = copy.deepcopy(original)
+        database = self.root / "seed.db"
+        file = self.root / "unrelated"
+        file.write_bytes(b"unrelated")
+        extra_id = self.native(database, "blob", file)["id"]
+        extra["objects"].append(self.native(database, "get", extra_id))
+        mutations["extra"] = extra
+        mismatch = copy.deepcopy(original)
+        mismatch["objects"][1]["object"]["bytes"].append(1)
+        mutations["mismatch"] = mismatch
+        for label, bundle in mutations.items():
+            with self.subTest(label=label):
+                path.write_text(json.dumps(bundle))
+                output = self.run_checkpoint(label, extra=("--import-objects", str(path)), succeeds=False)
+                self.assertFalse((output / "checkpoint.json").exists())
+
+    def test_bundle_preflight_rejects_ambiguity_versions_kinds_and_limits(self):
+        path, original = self.recorded_attempt_bundle()
+        import copy
+        invalid = []
+        for version in [True, 1.0, "1", 2]:
+            bundle = copy.deepcopy(original)
+            bundle["objects"][0]["format_version"] = version
+            invalid.append(json.dumps(bundle))
+        duplicate = copy.deepcopy(original)
+        duplicate["objects"].append(duplicate["objects"][0])
+        invalid.append(json.dumps(duplicate))
+        kind = copy.deepcopy(original)
+        kind["objects"][0]["object"]["type"] = "evidence_record"
+        invalid.append(json.dumps(kind))
+        invalid.extend(['{"schema":"x","schema":"continuum.object_bundle.v1","objects":[]}',
+                        '{"schema":"continuum.object_bundle.v1","objects":[],"extra":NaN}',
+                        json.dumps({"schema": "continuum.object_bundle.v1", "objects": [None] * 257}),
+                        ' ' * (16 * 1024 * 1024 + 1)])
+        for index, value in enumerate(invalid):
+            with self.subTest(case=index):
+                path.write_text(value)
+                output = self.run_checkpoint(f"invalid-{index}", extra=("--import-objects", str(path)),
+                                             succeeds=False)
+                self.assertFalse(output.exists())
+
+    def test_native_context_rejects_acknowledgement_as_imported_receipt(self):
+        path, _ = self.recorded_attempt_bundle(
+            json.dumps({"schema": "continuum.context_acknowledgement.v1"}).encode())
+        output = self.run_checkpoint(extra=("--import-objects", str(path)), succeeds=False)
+        self.assertFalse((output / "checkpoint.json").exists())
+        self.assertTrue((output / "imports").exists())
+        log = [json.loads(line) for line in (output / "cli-log.jsonl").read_text().splitlines()]
+        self.assertIn("acknowledgement is not an attempt receipt", log[-1]["stderr"])
+
     def test_exact_committed_bytes_replay_and_existing_output(self):
         (self.repo / "binary data").write_bytes(b"dirty")
         (self.repo / "untracked").write_text("excluded")

@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "/home/rana/Documents/ChatGPT/Continuum/repository/tools/project_checkpoint.py",
+    "--repository",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/recorded-attempt-import-verified/csv-source",
+    "--revision",
+    "27e03a7ffd90260fc9545d89e11434d341043110",
+    "--binary",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/recorded-attempt-import-verified/runtime/continuum",
+    "--work-state",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/recorded-attempt-import-verified/authored-work-state.json",
+    "--build-provenance",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/recorded-attempt-import-verified/build-provenance.json",
+    "--import-objects",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/recorded-attempt-import-verified/import-objects.json",
+    "--output",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/recorded-attempt-import-verified/first",
+    "--max-bytes",
+    "16384"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"checkpoint\": \"/home/rana/Documents/ChatGPT/Continuum/pilots/recorded-attempt-import-verified/first/checkpoint.json\",\n  \"context_pack\": \"sha256:d9a6867d4768a46d3520fd7290039539ebee93c48fb717fed4518a0afc679e0b\"\n}\n",
+  "stderr": ""
+}

@@ -29,3 +29,18 @@ jobs:
         run: |
           python3 -m unittest discover -s examples/csv_inspector -p 'test_*.py' -v
           python3 research/runs/independent-csv-pilot/verify_requirement.py examples/csv_inspector/inspect_csv.py > "$RUNNER_TEMP/csv-oracle.json"
+      - name: Reconstruct a real recorded attempt in fresh stores
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, subprocess
+          binary = pathlib.Path('target/debug/continuum')
+          provenance = {
+              'source_commit': os.environ['GITHUB_SHA'],
+              'binary_sha256': hashlib.sha256(binary.read_bytes()).hexdigest(),
+              'build_command': 'cargo build --locked',
+              'rustc': subprocess.check_output(['rustc', '--version'], text=True).strip(),
+              'scope': 'Current hosted CI build, not the historical pilot binary.'
+          }
+          (pathlib.Path(os.environ['RUNNER_TEMP']) / 'checkpoint-build.json').write_text(json.dumps(provenance))
+          PY
+          python3 research/runs/checkpoint-object-import/reproduce.py --binary target/debug/continuum --build-provenance "$RUNNER_TEMP/checkpoint-build.json" --output "$RUNNER_TEMP/recorded-attempt-reconstruction"

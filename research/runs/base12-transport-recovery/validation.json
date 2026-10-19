@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "source_baseline": "4af70fb943c657ac2e52c81773c0d41655f2698d",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 5,
+  "verified_source_bytes": 71828,
+  "complete_field_view_reconstructs_original_receipt_and_journal_bytes": true,
+  "receipt_attempts": 36,
+  "journal_rows": 72,
+  "each_file_has_one_initial_and_one_matching_terminal_row": true,
+  "all_complete_published_HTTP200_and_hashes_match_expected": true,
+  "all_prefix_digests_null_after_complete_body": true,
+  "all_actual_declared_partial_byte_counts_equal": true,
+  "all_names_match_initial_remaining_scope": true,
+  "per_attempt_count_one": true,
+  "retained_and_recovered_name_sets_disjoint_union_80": true,
+  "all_36_metadata_bindings_to_later_inventory_and_intake_match": true,
+  "later_recovery_artifact_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/receipt.json",
+      "sha256": "d6fc63d42504d001ef634d7dca33a06a5bc8669b162ce57f24fad24c5fa80119",
+      "bytes": 29202,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-v1/attempts.jsonl",
+      "sha256": "15c9f883511d1a8632535d98521d2b5b5b33514aefd2bfc352ac55ab0579cb8e",
+      "bytes": 39217,
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/receipt.json",
+      "sha256": "903179e7ee337f2f85642d3f4995e429012972234222c98ebe91df53a444a320",
+      "bytes": 2013,
+      "matched": true
+    }
+  ],
+  "body_byte_stats": {
+    "dat": {
+      "files": 18,
+      "bytes": 35100000,
+      "elapsed_min_seconds": 68.92955766100022,
+      "elapsed_max_seconds": 87.53871432699998,
+      "recorded_UTC_duration_max_disagreement_seconds": 6.3277999728939e-05
+    },
+    "hea": {
+      "files": 18,
+      "bytes": 4372,
+      "elapsed_min_seconds": 0.5270700000000943,
+      "elapsed_max_seconds": 2.4981643210003313,
+      "recorded_UTC_duration_max_disagreement_seconds": 4.432100033113784e-05
+    }
+  },
+  "received_body_bytes": 35104372,
+  "recorded_max_active_requests": 4,
+  "journal_unfinished_row_balance_max": 4,
+  "recorded_worker_UTC_interval_overlap_max": 4,
+  "journal_timestamp_order_inversions": 2,
+  "append_order_not_universal_event_time": true,
+  "inner_helper_wall_seconds": 391.03869451799983,
+  "outer_envelope_wall_seconds": 391.1402269370001,
+  "outer_minus_inner_wall_seconds": 0.10153241900025023,
+  "aggregate_wait4_CPU_seconds": 2.517461,
+  "conservative_sample_CPU_seconds": 2.5110542849995547,
+  "monitor_sample_count": 7688,
+  "one_clean_root_wait": true,
+  "root_maxrss_kib": 32660,
+  "invocation_equals_terminal_limits": true,
+  "effective_limits_and_root_identity_match": true,
+  "helper_and_wrapper_hashes_match_acquired_sources": true,
+  "production_envelope_pass": true,
+  "accounting_journal_semantic_read": false,
+  "network_operation_timing_observed": false,
+  "transport_executed_here": false,
+  "signal_bytes_acquired": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five texts fully read, using a lossless complete field view for repeated attempt records; no transport replay or signal-byte acquisition.",
+    "Each of 36 files has one requested and one complete row in this retained helper attempt; that is not a host-wide or server-side exactly-once guarantee.",
+    "Recorded journal order and worker intervals do not independently measure HTTP socket activity.",
+    "Body sizes/hashes match later inventory and intake declarations; original data/header bytes were not independently rehashed here.",
+    "Thirty-second operation timeout is distinct from the 300-second cooperative file deadline; no per-operation timing log is retained in this unit.",
+    "Inner-helper and outer-envelope elapsed boundaries differ; their gap is not a measured attribution of one overhead category.",
+    "Terminal resource summaries bind wrapper/control identities, but the 84,236-byte accounting journal remains semantically unread until the next unit.",
+    "Retained successful records do not exercise the source-derived partial-publication failure states, arbitrary faults or crash durability."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/accounting.jsonl",
+      "bytes": 84236,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/stdout.txt",
+      "bytes": 108,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/invocation.json",
+      "bytes": 981,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/effective-before-exec.json",
+      "bytes": 226,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/receipt.json",
+      "bytes": 1817,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/accounting.jsonl",
+      "bytes": 206,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/stdout.txt",
+      "bytes": 31,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 87605,
+  "public_contribution_checks": [
+    "five source identities and lossless complete record view checked",
+    "all 36 file states, 72 journal rows and later metadata/artifact bindings reconcile",
+    "byte accounting, record-order bounds, effective controls and terminal resource arithmetic passed",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

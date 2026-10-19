@@ -1,0 +1,74 @@
+{
+  "schema": "continuum.work_state.v1",
+  "id": "csv-source-bound-work",
+  "source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "objective": {
+    "id": "csv-goal",
+    "statement": "Use the completed CSV change and new source-bound local verification without repeating its implementation or known test-count correction.",
+    "done_when": "The source-bound request, observation and checkpoint are retained with explicit limits.",
+    "constraints": [
+      "Public standard-library sample; do not treat a successful handoff as a model-performance comparison.",
+      "Stores are disposable; no backup/upgrade or persistent workstation installation claim."
+    ]
+  },
+  "attempts": [
+    {
+      "id": "csv-visible-turn",
+      "operation_id": "csv-visible-turn-retrospective-1",
+      "source_snapshot": "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491",
+      "summary": "Actual CSV successor turn reconstructed from retained visible request/response files.",
+      "dispatch_state": "receipt_recorded",
+      "request": "sha256:6157b34a7685e19b62df6c18924137ea67b7beab1b57cd7696d1190a22416a75",
+      "receipt": "sha256:947cf469f0d2662e942e5edf01d1bea2920926452bfb143dec99d1f100063f02",
+      "outcome_note": "Authored retrospective: exact local projections, not provider wire bytes or an authenticated request-response binding. The earlier coordinator executed the returned code and checks; this run performs no inference."
+    },
+    {
+      "id": "csv-local-verification",
+      "operation_id": "csv-local-verification-91858169b6424beb9c4cd3e104dcd40f",
+      "source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+      "summary": "New local observation: exact source, interpreter, every child input and raw output retained.",
+      "dispatch_state": "receipt_recorded",
+      "request": "sha256:a154770b60c56750d76dcb2b2d0ce8cb378caf9e55077ea267d8b12a8655d234",
+      "receipt": "sha256:a1c15fd80f97e53c7cbadeb3e1f13ad811360ad767fbd2ecf61d9d5c45e940a9",
+      "outcome_note": "Observed 11 tests and nine oracle cases under documented retention/capture hooks. This receipt is separate from the earlier model reply and does not authenticate a worker."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "csv-policy",
+      "state": "active",
+      "statement": "The actual successor returned source/tests/docs. Applied unchanged, they passed 11 tests, the independent nine-scenario CLI oracle and concrete sample checks. Exact request/reply/validation bytes are separate run evidence; this is an authored summary, not instrumented execution provenance.",
+      "basis_attempt_ids": [
+        "csv-visible-turn"
+      ],
+      "reopen_when": "An actual user requirement changes matching semantics."
+    },
+    {
+      "id": "known-count-correction",
+      "state": "active",
+      "statement": "The historical model reply incorrectly said six tests were added. The pilot already corrected this to seven added and eleven total; preserve the reply, do not investigate or rewrite it again.",
+      "basis_attempt_ids": [
+        "csv-visible-turn",
+        "csv-local-verification"
+      ],
+      "reopen_when": "A new source requirement changes the test inventory."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "record-scope",
+      "question": "Which evidence can a future receiver reuse for a new decision?",
+      "why_it_matters": "Exact custody and an authored recorded receipt do not establish semantic truth or authorize another dispatch."
+    }
+  ],
+  "handoff": {
+    "id": "source-bound-inspection-offer",
+    "from_worker": "codex-coordinator",
+    "to_worker": "claude-successor",
+    "scope": "Inspect both the model and verification receipts. Reuse them within their recorded source/environment scope; this is an offer, not recipient acceptance.",
+    "required_decision_ids": [
+      "csv-policy",
+      "known-count-correction"
+    ]
+  }
+}

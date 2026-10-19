@@ -1,0 +1,72 @@
+{
+  "anchor": {
+    "acceptor": "project-checkpoint",
+    "expected": {
+      "generation": 1,
+      "root": "sha256:6c120b37853a19551ea255572126268c364cc8a3bce0eeed40edc35b6549e373"
+    },
+    "target": "work",
+    "work_state_path": "work-state.json"
+  },
+  "budget_method": "utf8_bytes_including_newlines",
+  "handoff_id": "source-bound-inspection-offer",
+  "included": [
+    {
+      "id": "csv-source-bound-work",
+      "kind": "work_state",
+      "reason": "work_identity"
+    },
+    {
+      "id": "csv-goal",
+      "kind": "objective",
+      "reason": "objective_and_constraints"
+    },
+    {
+      "id": "csv-local-verification",
+      "kind": "attempt",
+      "reason": "attempt_recovery"
+    },
+    {
+      "id": "csv-visible-turn",
+      "kind": "attempt",
+      "reason": "attempt_recovery"
+    },
+    {
+      "id": "csv-policy",
+      "kind": "decision",
+      "reason": "active_decision"
+    },
+    {
+      "id": "known-count-correction",
+      "kind": "decision",
+      "reason": "active_decision"
+    },
+    {
+      "id": "record-scope",
+      "kind": "uncertainty",
+      "reason": "unresolved_uncertainty"
+    },
+    {
+      "id": "source-bound-inspection-offer",
+      "kind": "handoff",
+      "reason": "offered_handoff"
+    }
+  ],
+  "limits": [
+    "Authored claims are unverified; current action authority and external-effect truth are not established.",
+    "Conditional guidance assumes the authored dispatch state is accurate; this store is not an external dispatch ledger.",
+    "Only this WorkState's declared records and direct object references are checked; source files are not materialized.",
+    "Whole records only; unrequired historical decisions may be omitted; no truncation or token estimate.",
+    "Head freshness is observed once; later effects need action-time authority and expected-head checks.",
+    "Context acknowledgements check references, not authenticated authorship, delivery, understanding, acceptance, or completion."
+  ],
+  "max_bytes": 16384,
+  "omitted": [],
+  "rendered": "sha256:0390f8359e8838764d4ab8a392360087b5558d750d714b3ee2895aac42075191",
+  "rendered_bytes": 5420,
+  "schema": "continuum.context_pack.v1",
+  "selector_revision": "continuum.whole_records.v1",
+  "source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "work_state": "sha256:f8bda67df65bc7d64684d01750c14e68c964a6678ace575ac232908c292945e1",
+  "work_state_id": "csv-source-bound-work"
+}

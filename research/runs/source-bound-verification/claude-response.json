@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "# Review: capture custody and failed-attempt evidence\n\nOn a passing run, the driver supports its custody claims. The source snapshot is re-derived and asserted. The request, including the driver and oracle text, is stored as a Blob before dispatch. Each child's input is copied before the child runs and compared afterward. Requested and executed argv are both kept. The two material gaps are below.\n\n**1. Failure paths can lose the evidence they are meant to keep.**\n- If the worker raises outside unittest's error handling, it exits without writing `result.json`. Examples are a hook `ValueError` during `verify()` in the oracle stage, a module load error, or an unexpected-command rejection.\n- `children.json` is also never written if no child ran.\n- In either case, `capture()` raises `FileNotFoundError` while building `outcomes`. The receipt is then never written or stored as a Blob, and that stage's raw stdout/stderr, which holds the traceback, is discarded.\n- So the claim \"request, receipt and diagnostics retained\" holds only for clean failures, such as a test or oracle returning a failing result.\n- Fix: write each stage's raw outcome first. Record missing worker files as absent rather than reading them unconditionally. Write `result.json` in a `finally` block.\n\n**2. In-process code is not bound to the snapshot.**\n- The test module is loaded from `subject/`, but `sys.path[0]` is the driver's directory, not `subject/`.\n- If `test_inspect_csv.py` imports `inspect_csv` or a helper in-process, which code was imported is unrecorded. Only subprocess children are bound to `subject/inspect_csv.py`.\n- If the tests only use subprocesses, this gap is moot. That is currently an assumption.\n\n**Strongest bounded check:** Run the driver once against a scratch copy of `verify_requirement.py`, injected through a temporary `PRIOR` override, never the original file. Make it call the CLI with an off-fixture path so the hook raises. Confirm a receipt Blob exists containing the stage's stderr bytes.\n\nAt the same time, after loading the test module, record each non-stdlib entry in `sys.modules` with its `__file__` and hash. This confirms or dismisses gap 2 in the same run."
+    }
+  ],
+  "structuredContent": {
+    "status": "OK",
+    "text": "# Review: capture custody and failed-attempt evidence\n\nOn a passing run, the driver supports its custody claims. The source snapshot is re-derived and asserted. The request, including the driver and oracle text, is stored as a Blob before dispatch. Each child's input is copied before the child runs and compared afterward. Requested and executed argv are both kept. The two material gaps are below.\n\n**1. Failure paths can lose the evidence they are meant to keep.**\n- If the worker raises outside unittest's error handling, it exits without writing `result.json`. Examples are a hook `ValueError` during `verify()` in the oracle stage, a module load error, or an unexpected-command rejection.\n- `children.json` is also never written if no child ran.\n- In either case, `capture()` raises `FileNotFoundError` while building `outcomes`. The receipt is then never written or stored as a Blob, and that stage's raw stdout/stderr, which holds the traceback, is discarded.\n- So the claim \"request, receipt and diagnostics retained\" holds only for clean failures, such as a test or oracle returning a failing result.\n- Fix: write each stage's raw outcome first. Record missing worker files as absent rather than reading them unconditionally. Write `result.json` in a `finally` block.\n\n**2. In-process code is not bound to the snapshot.**\n- The test module is loaded from `subject/`, but `sys.path[0]` is the driver's directory, not `subject/`.\n- If `test_inspect_csv.py` imports `inspect_csv` or a helper in-process, which code was imported is unrecorded. Only subprocess children are bound to `subject/inspect_csv.py`.\n- If the tests only use subprocesses, this gap is moot. That is currently an assumption.\n\n**Strongest bounded check:** Run the driver once against a scratch copy of `verify_requirement.py`, injected through a temporary `PRIOR` override, never the original file. Make it call the CLI with an off-fixture path so the hook raises. Confirm a receipt Blob exists containing the stage's stderr bytes.\n\nAt the same time, after loading the test module, record each non-stdlib entry in `sys.modules` with its `__file__` and hash. This confirms or dismisses gap 2 in the same run.",
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 7002,
+      "output_tokens": 2743,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none",
+    "image_count": 0,
+    "images": []
+  },
+  "isError": false
+}

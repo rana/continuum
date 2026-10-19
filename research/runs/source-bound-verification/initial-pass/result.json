@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "request": "sha256:ec763cc868442b0d94833a17bb310070d29fe40971ff42ab13bfae1644119d26",
+  "receipt": "sha256:73f2c5ff47f37483086b270c9863cf847240974ffc000abcdae5bb9b085ef73b",
+  "context_pack": "sha256:e1448cb07f332fd55ce1826695ccb928edccf59ebec496c6e9fe4f3f818ce357",
+  "tests": {
+    "passed": true,
+    "checks": 11,
+    "child_processes": 28
+  },
+  "oracle": {
+    "passed": true,
+    "checks": 9,
+    "child_processes": 9
+  },
+  "retained_child_inputs": 37,
+  "scope": "New local CSV observation under the explicit capture hooks; not an authenticated external receipt."
+}

@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "/home/rana/Documents/ChatGPT/Continuum/repository/tools/project_checkpoint.py",
+    "--repository",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/csv-source",
+    "--binary",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/runtime/continuum",
+    "--build-provenance",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/build-provenance.json",
+    "--work-state",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/authored-work-state.json",
+    "--import-objects",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/import-objects.json",
+    "--output",
+    "/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/checkpoint",
+    "--max-bytes",
+    "16384"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"checkpoint\": \"/home/rana/Documents/ChatGPT/Continuum/pilots/source-bound-verification-2/checkpoint/checkpoint.json\",\n  \"context_pack\": \"sha256:4cf78c9e2ee123e7ab1ed1b971491054179e3e0478f99aa7b2be7b64ae6df688\"\n}\n",
+  "stderr": ""
+}

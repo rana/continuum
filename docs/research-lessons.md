@@ -203,6 +203,8 @@ The [full-accounting return](source-review/base12-full-accounting.md) binds an a
 
 The [accounting-input return](source-review/base12-accounting-inputs.md) closes the full audit input set and checks every saved journal row without converting sampled identities, states or tick counters into continuous process history. Static holds, recovery-pending checks and later launch passes remain valid capture-time states. Continuum should preserve this chronology and distinguish newly available dependencies from fresh attestation of their claimed effects. No upstream program ran.
 
+The [envelope-control return](source-review/base12-envelope-controls.md) distinguishes pre-exec release gating and retained process identity from durable dispatch. Saved self-check titles are compared with actual predicates and terminal reasons: a CPU SIGKILL is consistent with the named kernel-limit scenario but does not demonstrate aggregate early-stop coverage or uniquely identify its cause. Continuum should retain branch exposure and dependencies beside a verdict; no upstream test ran.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

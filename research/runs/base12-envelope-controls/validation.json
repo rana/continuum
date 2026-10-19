@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "source_baseline": "8feed9cbb11b257b5e8caf393c5b90c0b878fcd0",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 6,
+  "verified_source_bytes": 22126,
+  "python_full_text_read_and_syntax_parsed": 2,
+  "json_full_text_read_and_duplicate_key_checked": 4,
+  "wrapper_digest_matches_full_run_and_all_three_selfcheck_receipts": true,
+  "wrapper_source_control_line_anchors": {
+    "invocation_before_fork": 132,
+    "fork": 133,
+    "effective_record_before_release": 176,
+    "release": 184,
+    "root_exit_observation_without_reaping": 195,
+    "group_kill_before_reap": 223,
+    "reap": 234,
+    "terminal_acceptance_predicate": 257
+  },
+  "wrapper_explicit_fsync_calls": 0,
+  "terminal_status_predicate_matches_three_saved_cases": true,
+  "selfcheck_summary_categories_read": 4,
+  "saved_selfcheck_cases": [
+    {
+      "case": "cpu",
+      "status": "incomplete",
+      "reason": "root_exited",
+      "root_exitcode": -9,
+      "wall_seconds": 1.0141432179998446,
+      "termination_requested_at_seconds": 1.0138777779998236,
+      "cleanup_tail_seconds": 0.0002654400000210444,
+      "aggregate_wait4_cpu_seconds": 0.9998729999999999,
+      "sampled_cpu_max_seconds": 0.9704372270000203,
+      "sample_count": 20,
+      "sampled_descendant_identity_count": 0,
+      "wait4_entries": 1,
+      "wait4_exitcodes": [
+        -9
+      ],
+      "configured_cpu_backstop_seconds": 1,
+      "configured_cpu_early_stop_seconds": 1.0,
+      "configured_wall_limit_seconds": 5.0,
+      "cleanup_complete": true
+    },
+    {
+      "case": "inheritance",
+      "status": "complete",
+      "reason": "root_exited",
+      "root_exitcode": 0,
+      "wall_seconds": 0.6624048139999559,
+      "termination_requested_at_seconds": 0.6622360229998776,
+      "cleanup_tail_seconds": 0.0001687910000782722,
+      "aggregate_wait4_cpu_seconds": 0.43594299999999997,
+      "sampled_cpu_max_seconds": 0.43062614699982077,
+      "sample_count": 13,
+      "sampled_descendant_identity_count": 3,
+      "wait4_entries": 1,
+      "wait4_exitcodes": [
+        0
+      ],
+      "configured_cpu_backstop_seconds": 10,
+      "configured_cpu_early_stop_seconds": 10.0,
+      "configured_wall_limit_seconds": 10.0,
+      "cleanup_complete": true
+    },
+    {
+      "case": "timeout",
+      "status": "incomplete",
+      "reason": "wall_limit",
+      "root_exitcode": -9,
+      "wall_seconds": 0.5508162799999354,
+      "termination_requested_at_seconds": 0.5001664859998982,
+      "cleanup_tail_seconds": 0.05064979400003722,
+      "aggregate_wait4_cpu_seconds": 0.031535999999999995,
+      "sampled_cpu_max_seconds": 0.051067733000127194,
+      "sample_count": 10,
+      "sampled_descendant_identity_count": 1,
+      "wait4_entries": 2,
+      "wait4_exitcodes": [
+        -9,
+        -9
+      ],
+      "configured_cpu_backstop_seconds": 10,
+      "configured_cpu_early_stop_seconds": 10.0,
+      "configured_wall_limit_seconds": 0.5,
+      "cleanup_complete": true
+    }
+  ],
+  "cpu_case_observed_reason_is_root_exit_not_aggregate_early_stop": true,
+  "cpu_cause_uniquely_established": false,
+  "aggregate_cpu_early_stop_branch_covered_by_these_selfchecks": false,
+  "fixture_payload_acquired": false,
+  "fixture_digest_declared": "e379619e164a105939fe63c3f4ebc79ff5f7040bb990cb73d3601b630e11d720",
+  "inheritance_stdout_payload_acquired": false,
+  "checker_source_hash_attested_by_summary": false,
+  "upstream_wrapper_or_selfchecks_executed": false,
+  "payloads_attested_or_decoded": false,
+  "live_resource_measurement": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Wrapper digest binds to full run and three self-check receipts; checker source itself is not hash-attested by SUMMARY.",
+    "Fixture source/hash and inheritance stdout state assertions remain unverified until their payloads arrive.",
+    "CPU SIGKILL and sampled values are consistent with the kernel-limit claim, not unique cause attribution or aggregate-stop coverage.",
+    "Source ordering and saved receipts do not establish live enforcement, arbitrary process escape resistance or durable supervisor-crash recovery.",
+    "Exclusive JSON creation has no explicit file/directory fsync in this wrapper; no power-loss guarantee is inferred.",
+    "No wrapper, self-check, numerical source or new model invocation ran."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/envelope_fixture.py",
+      "bytes": 1351,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/accounting.jsonl",
+      "bytes": 209,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/effective-before-exec.json",
+      "bytes": 225,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/invocation.json",
+      "bytes": 746,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/stdout.txt",
+      "bytes": 0,
+      "intended_review": "mechanical_empty_payload_custody"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/stderr.txt",
+      "bytes": 0,
+      "intended_review": "mechanical_empty_payload_custody"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/accounting.jsonl",
+      "bytes": 206,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/effective-before-exec.json",
+      "bytes": 224,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/invocation.json",
+      "bytes": 756,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/stdout.txt",
+      "bytes": 520,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/stderr.txt",
+      "bytes": 0,
+      "intended_review": "mechanical_empty_payload_custody"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/accounting.jsonl",
+      "bytes": 206,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/effective-before-exec.json",
+      "bytes": 224,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/invocation.json",
+      "bytes": 751,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/stdout.txt",
+      "bytes": 143,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/stderr.txt",
+      "bytes": 0,
+      "intended_review": "mechanical_empty_payload_custody"
+    }
+  ],
+  "next_scope_bytes": 5561,
+  "next_scope_full_texts": 12,
+  "next_scope_mechanical_empty_payloads": 4,
+  "public_contribution_checks": [
+    "Python syntax and duplicate-key checked JSON passed",
+    "wrapper digest/control order, saved statuses, CPU sums and coverage arithmetic checked",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

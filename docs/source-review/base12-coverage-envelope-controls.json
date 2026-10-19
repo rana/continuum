@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-accounting-inputs.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/envelope.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/check_envelope.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/SUMMARY.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/receipt.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/envelope.py",
+      "bytes": 13706,
+      "git_blob_sha": "2e18125abbecbc45c61280ce69278fd1faf947cc",
+      "sha256": "cb286da6fbd582b8b88720c040d3dc193b733d39932321dfb1bf992d6f3ab815",
+      "lines": 292,
+      "semantic_review": "full_direct_read",
+      "review_lane": "external-envelope-source-and-selfcheck",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/check_envelope.py",
+      "bytes": 2796,
+      "git_blob_sha": "12bfa7c024f483cc55c5edf294cb0dc2b3c35ae9",
+      "sha256": "ff0487ac6f6b34ec3713bbdcfdeb77cac90ab93b4b0fcf9d5bfcb5bc69064356",
+      "lines": 63,
+      "semantic_review": "full_direct_read",
+      "review_lane": "external-envelope-source-and-selfcheck",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/SUMMARY.json",
+      "bytes": 464,
+      "git_blob_sha": "028848f4db440c0092ba5d8b05381946fbfcab67",
+      "sha256": "daa47ad6f976711c5c190023fa5bbbda64b93e2c784bb1e0e75a68b4b77b2455",
+      "lines": 13,
+      "semantic_review": "full_direct_read",
+      "review_lane": "external-envelope-source-and-selfcheck",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/cpu/receipt.json",
+      "bytes": 1586,
+      "git_blob_sha": "1d396da1dc97f7cfc161d5843ca76b93c7ae7c39",
+      "sha256": "f8762286446e1a255f05af90fb29c35168fdf67d87a47179d7d72120b79d1963",
+      "lines": 54,
+      "semantic_review": "full_direct_read",
+      "review_lane": "external-envelope-source-and-selfcheck",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/inheritance/receipt.json",
+      "bytes": 1749,
+      "git_blob_sha": "1e41cbf619634ef7756d5e613d145c2edc487564",
+      "sha256": "c3e57d2dd9c300f200fe84d17d38522052a59245ab44efcd1ea0252cf78b339b",
+      "lines": 67,
+      "semantic_review": "full_direct_read",
+      "review_lane": "external-envelope-source-and-selfcheck",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/envelope-selfcheck-v1/timeout/receipt.json",
+      "bytes": 1825,
+      "git_blob_sha": "640758300e58ec217807964540399b13d2777109",
+      "sha256": "ba731cfd71adf4537d3dc9657237590d54cafc22163054e5e80529d776be87b1",
+      "lines": 67,
+      "semantic_review": "full_direct_read",
+      "review_lane": "external-envelope-source-and-selfcheck",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 6,
+      "unique_blobs": 6,
+      "bytes": 22126
+    },
+    "cumulative_direct_read": {
+      "paths": 318,
+      "unique_blobs": 318,
+      "bytes": 2294055
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 369,
+    "remaining_paths_without_full_semantic_read_or_alias": 5224,
+    "remaining_distinct_blobs_without_full_semantic_read": 4111,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 6,
+    "this_review_verified_bytes": 22126,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Wrapper digest binds to full run and three self-check receipts; checker source itself is not hash-attested by SUMMARY.",
+    "Fixture source/hash and inheritance stdout state assertions remain unverified until their payloads arrive.",
+    "CPU SIGKILL and sampled values are consistent with the kernel-limit claim, not unique cause attribution or aggregate-stop coverage.",
+    "Source ordering and saved receipts do not establish live enforcement, arbitrary process escape resistance or durable supervisor-crash recovery.",
+    "Exclusive JSON creation has no explicit file/directory fsync in this wrapper; no power-loss guarantee is inferred.",
+    "No wrapper, self-check, numerical source or new model invocation ran."
+  ],
+  "review_report": "base12-envelope-controls.md"
+}

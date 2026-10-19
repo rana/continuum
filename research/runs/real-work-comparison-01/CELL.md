@@ -15,3 +15,5 @@ python3 -m unittest discover -s research/runs/real-work-comparison-01 -p 'test_*
 ```
 
 The fixtures explicitly label their provider payloads as test doubles. Passing them establishes capture/protocol behavior, not actual receiver completion or model performance. No new model runner or scheduler is installed.
+
+Research Delta: this support unit was authored from PR #109 head `d5017db8fe8014d64bf739e4b3d38aeb322c39da` while its second hosted check remained pending. Seven recorder tests and ten bridge tests passed locally; [validation](cell-validation.json) binds the source and commands. No real receiver/scorer was invoked. It is a prerequisite capture tool for the selected case-01/A cell, not evidence that the cell completed. Hosted validation and integration of the dependency remain separate.

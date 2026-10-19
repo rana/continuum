@@ -1,0 +1,152 @@
+{
+  "baseline": [
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "get",
+        "<absolute-path-omitted>",
+        "sha256:dd7eceff1af285fc17a4daec9d92f3293fe6f4a56ea98d362e26968d158b089a"
+      ],
+      "elapsed_seconds": 0.002252647,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"format_version\": 1,\n  \"id\": \"sha256:dd7eceff1af285fc17a4daec9d92f3293fe6f4a56ea98d362e26968d158b089a\",\n  \"object\": {\n    \"bytes\": [\n      114,\n      101,\n      97,\n      100,\n      101,\n      114,\n      45,\n      114,\n      101,\n      115,\n      101,\n      114,\n      118,\n      97,\n      116,\n      105,\n      111,\n      110,\n      45,\n      112,\n      114,\n      111,\n      98,\n      101,\n      10\n    ],\n    \"type\": \"blob\"\n  }\n}\n"
+    },
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "head",
+        "<absolute-path-omitted>",
+        "probe",
+        "main"
+      ],
+      "elapsed_seconds": 0.002022295,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"generation\": 1,\n  \"root\": \"sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7\"\n}\n"
+    },
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "receipt",
+        "<absolute-path-omitted>",
+        "probe",
+        "initial"
+      ],
+      "elapsed_seconds": 0.001562043,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"observed\": null,\n  \"outcome\": \"accepted\",\n  \"request\": {\n    \"acceptor\": \"probe\",\n    \"candidate\": \"sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7\",\n    \"expected\": null,\n    \"operation_id\": \"initial\",\n    \"target\": \"main\"\n  },\n  \"resulting\": {\n    \"generation\": 1,\n    \"root\": \"sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7\"\n  },\n  \"sequence\": 1\n}\n"
+    }
+  ],
+  "held": [
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "get",
+        "<absolute-path-omitted>",
+        "sha256:dd7eceff1af285fc17a4daec9d92f3293fe6f4a56ea98d362e26968d158b089a"
+      ],
+      "elapsed_seconds": 5.01151865,
+      "returncode": 1,
+      "stderr": "{\"error\":\"database error: database is locked\"}\n",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "head",
+        "<absolute-path-omitted>",
+        "probe",
+        "main"
+      ],
+      "elapsed_seconds": 5.011271986,
+      "returncode": 1,
+      "stderr": "{\"error\":\"database error: database is locked\"}\n",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "receipt",
+        "<absolute-path-omitted>",
+        "probe",
+        "initial"
+      ],
+      "elapsed_seconds": 5.010800026,
+      "returncode": 1,
+      "stderr": "{\"error\":\"database error: database is locked\"}\n",
+      "stdout": ""
+    }
+  ],
+  "logical_history_unchanged": true,
+  "read_only_control": {
+    "canonical_object_bytes": 49,
+    "elapsed_seconds": 0.000346253,
+    "flags": "SQLITE_OPEN_READ_ONLY",
+    "generation": 1,
+    "receipt": {
+      "observed": null,
+      "outcome": "accepted",
+      "request": {
+        "acceptor": "probe",
+        "candidate": "sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7",
+        "expected": null,
+        "operation_id": "initial",
+        "target": "main"
+      },
+      "resulting": {
+        "generation": 1,
+        "root": "sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7"
+      },
+      "sequence": 1
+    },
+    "root": "sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7"
+  },
+  "released": [
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "get",
+        "<absolute-path-omitted>",
+        "sha256:dd7eceff1af285fc17a4daec9d92f3293fe6f4a56ea98d362e26968d158b089a"
+      ],
+      "elapsed_seconds": 0.002119852,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"format_version\": 1,\n  \"id\": \"sha256:dd7eceff1af285fc17a4daec9d92f3293fe6f4a56ea98d362e26968d158b089a\",\n  \"object\": {\n    \"bytes\": [\n      114,\n      101,\n      97,\n      100,\n      101,\n      114,\n      45,\n      114,\n      101,\n      115,\n      101,\n      114,\n      118,\n      97,\n      116,\n      105,\n      111,\n      110,\n      45,\n      112,\n      114,\n      111,\n      98,\n      101,\n      10\n    ],\n    \"type\": \"blob\"\n  }\n}\n"
+    },
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "head",
+        "<absolute-path-omitted>",
+        "probe",
+        "main"
+      ],
+      "elapsed_seconds": 0.00220746,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"generation\": 1,\n  \"root\": \"sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7\"\n}\n"
+    },
+    {
+      "argv": [
+        "<absolute-path-omitted>",
+        "receipt",
+        "<absolute-path-omitted>",
+        "probe",
+        "initial"
+      ],
+      "elapsed_seconds": 0.001838874,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"observed\": null,\n  \"outcome\": \"accepted\",\n  \"request\": {\n    \"acceptor\": \"probe\",\n    \"candidate\": \"sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7\",\n    \"expected\": null,\n    \"operation_id\": \"initial\",\n    \"target\": \"main\"\n  },\n  \"resulting\": {\n    \"generation\": 1,\n    \"root\": \"sha256:b72cc4601c31994085e61c43b00aea837298c934a5a951fab54d7c0c973482d7\"\n  },\n  \"sequence\": 1\n}\n"
+    }
+  ],
+  "reservation": "BEGIN IMMEDIATE; no data changes",
+  "schema": "continuum.reader_reservation_probe.v1",
+  "scope": "Three sequential native CLI commands, one held writer reservation, same-build SQLite read-only control. No throughput/capacity or read-only Store implementation claim.",
+  "sqlite_version": "3.53.2",
+  "writer_transaction_open_after": true,
+  "writer_transaction_open_before": true
+}

@@ -1,0 +1,20 @@
+{
+  "source_baseline": "80289632c28421be76ed45f53cbccb8cd0c9c50e",
+  "files": [
+    {
+      "path": "docs/source-review/base12-reference-decoder.md",
+      "bytes": 6175,
+      "sha256": "fd5565ec743523f5c2b944ba4ebbab8c2e191a70cdb1ed2a489b16708aceb922"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-reference-decoder.json",
+      "bytes": 6773,
+      "sha256": "c59cda897ccbc27074a9ec6554cd7d24d00e7a5dd4e3f5d63083b70435b9a1c4"
+    },
+    {
+      "path": "research/runs/base12-reference-decoder/validation.json",
+      "bytes": 6038,
+      "sha256": "39f03933cd0856364797ff546f36deb3e659af1710c864208e9b46ac9bed3119"
+    }
+  ]
+}

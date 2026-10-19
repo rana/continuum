@@ -181,6 +181,8 @@ The [source-custody return](source-review/base12-stage-a-source-custody.md) veri
 
 The [evidence-custody return](source-review/base12-stage-a-evidence-custody.md) closes declared stage-A manifest bindings and finds stdout byte-identical to a projection of the saved result. Repeated representations are useful consistency evidence but share the original observation. Empty stderr establishes retained bytes, not universal absence of diagnostics. Archive custody, semantic reading and execution remain separately counted; no historical effect was replayed.
 
+The [reference-decoder return](source-review/base12-reference-decoder.md) separates fresh-process state independence, implementation diversity, shared specification and same authorship. Its different recurrence/repacking route agrees through explicit binomial and signed-12 arithmetic identities; that does not establish full parser equivalence or a fresh run. Continuum should retain which dependencies a cross-check changes and which it shares. Historical execution receipts remain selected next.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

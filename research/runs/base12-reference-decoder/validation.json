@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "source_baseline": "80289632c28421be76ed45f53cbccb8cd0c9c50e",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 7,
+  "verified_source_bytes": 33915,
+  "markdown_full_text_read": 4,
+  "json_parsed": 2,
+  "python_syntax_parsed": 1,
+  "source_imports": [
+    "__future__",
+    "argparse",
+    "hashlib",
+    "pathlib",
+    "re",
+    "struct"
+  ],
+  "source_identity_agrees_with_preservation": true,
+  "independent_arithmetic": {
+    "binomial_coefficient_comparisons": [
+      {
+        "order": 0,
+        "predictor_coefficients": [],
+        "matches_retained_literal": true
+      },
+      {
+        "order": 1,
+        "predictor_coefficients": [
+          1
+        ],
+        "matches_retained_literal": true
+      },
+      {
+        "order": 2,
+        "predictor_coefficients": [
+          2,
+          -1
+        ],
+        "matches_retained_literal": true
+      },
+      {
+        "order": 3,
+        "predictor_coefficients": [
+          3,
+          -3,
+          1
+        ],
+        "matches_retained_literal": true
+      },
+      {
+        "order": 4,
+        "predictor_coefficients": [
+          4,
+          -6,
+          4,
+          -1
+        ],
+        "matches_retained_literal": true
+      }
+    ],
+    "signed12_repacking_values_checked": 4096,
+    "upstream_functions_executed": false
+  },
+  "reference_evidence_manifest_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "README.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "execution/stderr.log",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "review/source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "source/reference_decode.py",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "DRAFT_REPLY.md",
+      "execution/execution-receipt.json",
+      "execution/stdout.log",
+      "review/decoder-attempt.json",
+      "review/launcher-freeze.json",
+      "review/launcher-review.md",
+      "review/package-review.md",
+      "review/parent-clearance.json",
+      "review/post-run-verification.json",
+      "review/result-review.md",
+      "review/run_decoder_once.py",
+      "review/source-receipt.json"
+    ]
+  },
+  "reference_preservation_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "evidence/MANIFEST.json",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/README.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/RESULT.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/execution/stderr.log",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "evidence/review/source-review.md",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "evidence/source/reference_decode.py",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": [
+      "evidence/DRAFT_REPLY.md",
+      "evidence/execution/execution-receipt.json",
+      "evidence/execution/stdout.log",
+      "evidence/review/decoder-attempt.json",
+      "evidence/review/launcher-freeze.json",
+      "evidence/review/launcher-review.md",
+      "evidence/review/package-review.md",
+      "evidence/review/parent-clearance.json",
+      "evidence/review/post-run-verification.json",
+      "evidence/review/result-review.md",
+      "evidence/review/run_decoder_once.py",
+      "evidence/review/source-receipt.json",
+      "original/stage-a-record100-decoder-evidence.tar.xz"
+    ]
+  },
+  "no_upstream_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/execution/execution-receipt.json",
+      "bytes": 4117
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/decoder-attempt.json",
+      "bytes": 2728
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/launcher-freeze.json",
+      "bytes": 440
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/parent-clearance.json",
+      "bytes": 737
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/post-run-verification.json",
+      "bytes": 864
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/source-receipt.json",
+      "bytes": 516
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/run_decoder_once.py",
+      "bytes": 7774
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/launcher-review.md",
+      "bytes": 6096
+    }
+  ],
+  "next_scope_bytes": 23272,
+  "public_contribution_checks": [
+    "JSON parsing, coverage and partial-binding arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

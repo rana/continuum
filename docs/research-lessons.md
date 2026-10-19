@@ -177,6 +177,8 @@ The [complete stage-A result review](source-review/base12-stage-a-result.md) rec
 
 The [static-review return](source-review/base12-stage-a-static-review.md) preserves the bounded caller assumptions behind numerical and memory arguments: an important external prerequisite can coexist with approval of a scoped path. It also distinguishes a deterministic encoder and canonical padding from uniqueness of all accepted encodings. Continuum should bind proof scope and semantic-equivalence claims explicitly. Five documents and endpoint arithmetic were checked without executing source or repeating a model call.
 
+The [source-custody return](source-review/base12-stage-a-source-custody.md) verifies complete byte correspondence for the declared source packet while leaving larger evidence custody explicit. Two vendor backfills restore current availability without adding readings. The retained consultation distinguishes an unknown initial outcome from a separate focused answer and qualifies reconstructed request context. Continuum should retain preparation-time status, original uncertainty and custody boundaries as later receipts accumulate. No historical effect was replayed.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

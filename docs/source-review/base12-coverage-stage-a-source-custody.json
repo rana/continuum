@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-static-review.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/ATTRIBUTION.md",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/DOT_HANDOFF.md",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/REVIEW_AND_ALIGNMENT.md",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+      "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/ATTRIBUTION.md",
+      "git_blob_sha": "11df2e45a12e2d2277125096ff45004e3a8048e8",
+      "bytes": 1547,
+      "sha256": "88ff6a269b07d20c579f1995d8dc0a32ac5f458aa9e4421b7d276af04a5eea6e",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-source-custody-and-consultation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/DOT_HANDOFF.md",
+      "git_blob_sha": "4a091cdca9d894618a2c271bab6258374deda1f5",
+      "bytes": 3815,
+      "sha256": "9b916f5ba61fc0011b8c3d74b9197a8289df5a465dbd05c012ece6325c8266f4",
+      "lines": 28,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-source-custody-and-consultation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/REVIEW_AND_ALIGNMENT.md",
+      "git_blob_sha": "40ee8288ecb37455dcc13496dbc590176285656c",
+      "bytes": 4830,
+      "sha256": "0f6ee595e271db2fd5e98655aadd1878dd181bfe0a3ec2713fc50a544d621bb8",
+      "lines": 33,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-source-custody-and-consultation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+      "git_blob_sha": "2f08dd25590ced9c66d1cd1116baccf3f458fd9a",
+      "bytes": 18592,
+      "sha256": "9730a9b53f83164dd4d003cd41fd4aeb62e57a42d082411f99b0f2cd6ce46b7b",
+      "lines": 67,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-source-custody-and-consultation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json",
+      "git_blob_sha": "8de09062f3e27057218ea49f1e382563eedfd1b9",
+      "bytes": 1289,
+      "sha256": "d0d11f85201c138ddde51518bfce0d026878bb38b22f8d79865d489021748ebc",
+      "lines": 27,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-source-custody-and-consultation",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 5,
+      "unique_blobs": 5,
+      "bytes": 30073
+    },
+    "cumulative_direct_read": {
+      "paths": 250,
+      "unique_blobs": 250,
+      "bytes": 1688657
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 299,
+    "remaining_paths_without_full_semantic_read_or_alias": 5294,
+    "remaining_distinct_blobs_without_full_semantic_read": 4179,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 8,
+    "this_review_verified_bytes": 65342,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Five texts fully read; two previously read vendor blobs backfilled without adding readings.",
+    "Source archive inspected as data in memory; no extraction to filesystem or upstream execution.",
+    "Retained successful request context is declared reconstructed from immutable files; original live transport was not independently observed here.",
+    "Unknown initial inference outcome is preserved; no invocation repeated.",
+    "Source-packet custody is complete for its declared set; overall execution-evidence custody and whole-repository reading remain incomplete."
+  ],
+  "review_report": "base12-stage-a-source-custody.md"
+}

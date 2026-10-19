@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-stage-a-codec.json",
+  "selected_scope": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/",
+    "files": [
+      "INTEGRATION.md",
+      "MANIFEST.json",
+      "PRESERVATION.json",
+      "records/checks.json",
+      "records/design-freeze.json",
+      "records/development-corrections.json",
+      "records/external-wrapper-checks.json",
+      "records/published-pins.json",
+      "records/source-freeze.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/INTEGRATION.md",
+      "git_blob_sha": "52cf28402aa815d278c4263e8e7ea218da54cef8",
+      "bytes": 6516,
+      "sha256": "9b09957183f966866259afc4c3a4ff4851813eb1b8498ef60afceaf0a87e2aa8",
+      "lines": 107,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/MANIFEST.json",
+      "git_blob_sha": "e4d9f406d61b16101b6c3c44810d2f03322aa6e5",
+      "bytes": 2355,
+      "sha256": "c3b47cba704aae8224e594308e1bf9cfdafc56a78ac8ad5f5e140f26bb2e215c",
+      "lines": 74,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/PRESERVATION.json",
+      "git_blob_sha": "1808dc54d30cacd3609fa8e3ab4f6481ea200746",
+      "bytes": 9141,
+      "sha256": "69d086fb43a88167eaadcf228baef297e8c2a251fd29ece880f16c1e86684c37",
+      "lines": 217,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/checks.json",
+      "git_blob_sha": "128c1c91dc89a83eb97148af753dc23787afb40f",
+      "bytes": 5723,
+      "sha256": "41b83b7442e3fdeb44f609ddd3e45cccf906f0134d26aff4c33f4a7fcfd2eb7a",
+      "lines": 198,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/design-freeze.json",
+      "git_blob_sha": "b8f1edb40092f87ab0fcb3cde7f1683a53440093",
+      "bytes": 829,
+      "sha256": "07e07c6c96bf7630385a033bdb9af63355d1efcfbcabdf5ecc22869745295c38",
+      "lines": 26,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/development-corrections.json",
+      "git_blob_sha": "ba4790a2b3aa07ec9c2cb8cea7f0553db3eb139a",
+      "bytes": 460,
+      "sha256": "f833ac171aa0487333e5c9eb82489aed1dd72f84575caa5c80f8bc26d6a3ac6b",
+      "lines": 9,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/external-wrapper-checks.json",
+      "git_blob_sha": "8abb848a41bc42366a66b67b6dcaef9134f52588",
+      "bytes": 1532,
+      "sha256": "634f98bae30a9b16c0e8e91f0a5c20e7a16a3eaf23802e44046ebe1feabb59e7",
+      "lines": 56,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/published-pins.json",
+      "git_blob_sha": "b0c0497799f858572e4621d2dafeb6c05880a3d5",
+      "bytes": 946,
+      "sha256": "d3b45f9d93093c5fb92fc958fb52ec7fd4b4a8bc7d957c3892fe7c0b6420601e",
+      "lines": 39,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/source-freeze.json",
+      "git_blob_sha": "521040baea60ac25a3f57de08ac1ef0e066f63e8",
+      "bytes": 959,
+      "sha256": "c01e758dd99c2b88c8b2c617d2516a9f186875c92ab8be5fa8966ab485df50f4",
+      "lines": 15,
+      "semantic_review": "full_direct_read",
+      "review_lane": "stage-a-saved-checks-and-integration-custody",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 9,
+      "unique_blobs": 9,
+      "bytes": 28461
+    },
+    "cumulative_direct_read": {
+      "paths": 224,
+      "unique_blobs": 224,
+      "bytes": 1508013
+    },
+    "additional_identical_blob_paths": 48,
+    "alias_distinct_blobs": 18,
+    "semantic_covered_paths_including_aliases": 272,
+    "remaining_paths_without_full_semantic_read_or_alias": 5321,
+    "remaining_distinct_blobs_without_full_semantic_read": 4205,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 9,
+    "this_review_verified_bytes": 28461,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "All nine selected documents were fully read; aliases are not separately read.",
+    "Only acquired source/record payloads were rebound; larger manifest membership is not complete validation.",
+    "Private source, Library identifiers, medical and operational payloads are not published.",
+    "No upstream code, test, acquisition, codec, model or benchmark ran.",
+    "Historical freeze timestamps and execution narratives are authored records, not independently authenticated chronology.",
+    "Earlier failed test source/raw output and later real-run closure were not acquired in this unit."
+  ],
+  "review_report": "base12-stage-a-records.md"
+}

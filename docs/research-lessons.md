@@ -167,6 +167,8 @@ The [stage-A source review](source-review/base12-stage-a-codec.md) distinguishes
 
 The reviewed CLI validates an archive before writing two output files separately. Interruption can leave a partial directory despite correct reconstruction; refusal of existing outputs does not reconcile that uncertain effect. This is a source-derived schedule, not an observed failure or broken atomicity promise. Continuum should preserve distinct evidence for validated content, coherent publication and recovery. Seven source/doc files were read without importing upstream code or running tests.
 
+The subsequent [stage-A records review](source-review/base12-stage-a-records.md) checks saved counts and partial manifest bindings while preserving two different test corrections. A freeze can bind bytes without independently proving its timestamp or absence of prior exposure. An earlier semantic reading also does not guarantee a retained local byte copy: our first binding check stopped on that assumption, and the corrected check explicitly limits validation to available payloads. Keep reading coverage, custody, present retrieval and fresh validation separate.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

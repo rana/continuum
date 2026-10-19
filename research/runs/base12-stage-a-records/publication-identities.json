@@ -1,0 +1,22 @@
+{
+  "source_baseline": "25985bcc02b5cf66c2059ab400f8d62a9d46b6c0",
+  "files": [
+    {
+      "path": "docs/source-review/base12-stage-a-records.md",
+      "bytes": 6196,
+      "sha256": "583ef8a8a9487db29020b21d43c5e179ed618942caa99ec3998432a302faa436"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-stage-a-records.json",
+      "bytes": 7325,
+      "sha256": "0c3bc247473efe5bf9684a98f498b2ae2e64f07badaa69a36ae336ca37491537"
+    },
+    {
+      "path": "research/runs/base12-stage-a-records/validation.json",
+      "bytes": 7720,
+      "sha256": "2fb94a541f747e441e1661e78be5a3e2b0c4280cd35c4926690b963eb75bc9d4"
+    }
+  ],
+  "public_metadata_checks_passed": true,
+  "private_source_rechecked_in_public_ci": false
+}

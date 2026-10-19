@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-controller.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/emit.py",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures.py",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/inspect.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/emit.py",
+      "bytes": 25043,
+      "git_blob_sha": "ce09191364edd55c06ac39e7bba64174919c2f6b",
+      "sha256": "91c3b77bce952eca137509aa4ee9029ed96df42c27065c5b7e28fa487156a253",
+      "lines": 308,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-emitter-fixtures-and-inspection-source",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/fixtures.py",
+      "bytes": 8771,
+      "git_blob_sha": "7bd09961efdf59f5ac474546065a1682507c1559",
+      "sha256": "2644ad68295ea294c26ea422f265c596444a352cd3c291e031f0b1ab1b2b040a",
+      "lines": 120,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-emitter-fixtures-and-inspection-source",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/inspect.py",
+      "bytes": 2579,
+      "git_blob_sha": "bb1541f87206d05e74d0d36df683b518a5863122",
+      "sha256": "6e3043fc4280949fe3db72fa88383f1635437d9a25c086adcd14e5e282d61d85",
+      "lines": 36,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-emitter-fixtures-and-inspection-source",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 36393
+    },
+    "cumulative_direct_read": {
+      "paths": 431,
+      "unique_blobs": 431,
+      "bytes": 3333261
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 483,
+    "remaining_paths_without_full_semantic_read_or_alias": 5110,
+    "remaining_distinct_blobs_without_full_semantic_read": 3998,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 36393,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three source texts fully read and parsed with ast.parse; none imported or executed.",
+    "Case TSV reconstructed from exact held manifest using source-inspected serialization; digest agrees with freeze, without reading the historical private TSV path.",
+    "Fixture producer executes a pinned reference during historical generation; no generation, reference or fixture/archive payload execution occurred here.",
+    "Pure arithmetic checks cover packing/folding and selected SHA padding lengths, not emitted instruction or decoder execution.",
+    "Static inspector predicates rely on the emitted format and input declarations; agreement does not prove semantic correctness or independently establish ELF metadata closure.",
+    "Source publication uses file and staging-directory fsync before no-overwrite rename, without parent-directory fsync; final directory close status is not promoted to durable success.",
+    "No executable, signal, decoded output, raw trace or private source payload published; no new inference."
+  ],
+  "review_report": "base12-gate-a-producer.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

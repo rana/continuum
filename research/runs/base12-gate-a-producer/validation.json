@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "source_baseline": "2c5d53ee9623f2fdfc4548730fc13fc6ba69b89c",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 3,
+  "verified_source_bytes": 36393,
+  "full_text_paths_read": 3,
+  "new_semantic_files": 3,
+  "new_semantic_bytes": 36393,
+  "source_digests_present_in_freeze": true,
+  "python_AST_parse_files": [
+    "emit.py",
+    "fixtures.py",
+    "inspect.py"
+  ],
+  "upstream_code_imported_or_executed": false,
+  "reference_and_seed_exact_held_payload_pins_match": true,
+  "pin_checks_precede_dynamic_imports_in_source": true,
+  "reconstructed_TSV": {
+    "bytes": 9964,
+    "sha256": "88764c28dc0da81b6f037c0971b7abe5d4118bd4d24726741d2f28783db289e1",
+    "rows": 65,
+    "matches_frozen_digest": true,
+    "historical_private_path_read": false,
+    "method": "original serialization of held manifest fields using source-inspected format; no fixture generation"
+  },
+  "fixture_oracle_exception_source_matches_manifest": true,
+  "fold_unfold_roundtrip_values": 65537,
+  "packing_equivalence_pairs": 20480,
+  "sha_padding_checked_lengths": [
+    0,
+    1,
+    55,
+    56,
+    63,
+    64,
+    65,
+    4194303,
+    4194304
+  ],
+  "independently_calculated_regions": [
+    {
+      "name": "infd",
+      "offset": 0,
+      "bytes": 8
+    },
+    {
+      "name": "outfd",
+      "offset": 8,
+      "bytes": 8
+    },
+    {
+      "name": "dirfd",
+      "offset": 16,
+      "bytes": 8
+    },
+    {
+      "name": "made",
+      "offset": 24,
+      "bytes": 8
+    },
+    {
+      "name": "status",
+      "offset": 32,
+      "bytes": 8
+    },
+    {
+      "name": "argvout",
+      "offset": 40,
+      "bytes": 8
+    },
+    {
+      "name": "inputlen",
+      "offset": 48,
+      "bytes": 8
+    },
+    {
+      "name": "bodylen",
+      "offset": 56,
+      "bytes": 8
+    },
+    {
+      "name": "nn",
+      "offset": 64,
+      "bytes": 8
+    },
+    {
+      "name": "nh",
+      "offset": 72,
+      "bytes": 8
+    },
+    {
+      "name": "frames",
+      "offset": 80,
+      "bytes": 8
+    },
+    {
+      "name": "nd",
+      "offset": 88,
+      "bytes": 8
+    },
+    {
+      "name": "tailn",
+      "offset": 96,
+      "bytes": 8
+    },
+    {
+      "name": "headptr",
+      "offset": 104,
+      "bytes": 8
+    },
+    {
+      "name": "tailptr",
+      "offset": 112,
+      "bytes": 8
+    },
+    {
+      "name": "at",
+      "offset": 120,
+      "bytes": 8
+    },
+    {
+      "name": "datptr",
+      "offset": 128,
+      "bytes": 8
+    },
+    {
+      "name": "remaining",
+      "offset": 136,
+      "bytes": 8
+    },
+    {
+      "name": "blockn",
+      "offset": 144,
+      "bytes": 8
+    },
+    {
+      "name": "channel",
+      "offset": 152,
+      "bytes": 8
+    },
+    {
+      "name": "sample",
+      "offset": 160,
+      "bytes": 8
+    },
+    {
+      "name": "mode",
+      "offset": 168,
+      "bytes": 8
+    },
+    {
+      "name": "k",
+      "offset": 176,
+      "bytes": 8
+    },
+    {
+      "name": "payload",
+      "offset": 184,
+      "bytes": 8
+    },
+    {
+      "name": "bitpos",
+      "offset": 192,
+      "bytes": 8
+    },
+    {
+      "name": "bitlimit",
+      "offset": 200,
+      "bytes": 8
+    },
+    {
+      "name": "chanptr",
+      "offset": 208,
+      "bytes": 8
+    },
+    {
+      "name": "q",
+      "offset": 216,
+      "bytes": 8
+    },
+    {
+      "name": "residual",
+      "offset": 224,
+      "bytes": 8
+    },
+    {
+      "name": "stage_len",
+      "offset": 232,
+      "bytes": 8
+    },
+    {
+      "name": "lineptr",
+      "offset": 240,
+      "bytes": 8
+    },
+    {
+      "name": "lineend",
+      "offset": 248,
+      "bytes": 8
+    },
+    {
+      "name": "nextline",
+      "offset": 256,
+      "bytes": 8
+    },
+    {
+      "name": "tokenptr",
+      "offset": 264,
+      "bytes": 8
+    },
+    {
+      "name": "tokenlen",
+      "offset": 272,
+      "bytes": 8
+    },
+    {
+      "name": "field",
+      "offset": 280,
+      "bytes": 8
+    },
+    {
+      "name": "lineno",
+      "offset": 288,
+      "bytes": 8
+    },
+    {
+      "name": "sha_len",
+      "offset": 296,
+      "bytes": 8
+    },
+    {
+      "name": "sha_total",
+      "offset": 304,
+      "bytes": 8
+    },
+    {
+      "name": "sha_off",
+      "offset": 312,
+      "bytes": 8
+    },
+    {
+      "name": "sha_dest",
+      "offset": 320,
+      "bytes": 8
+    },
+    {
+      "name": "sha_src",
+      "offset": 328,
+      "bytes": 8
+    },
+    {
+      "name": "input",
+      "offset": 4096,
+      "bytes": 4194305
+    },
+    {
+      "name": "original",
+      "offset": 4202496,
+      "bytes": 2081080
+    },
+    {
+      "name": "ch0",
+      "offset": 6287360,
+      "bytes": 32768
+    },
+    {
+      "name": "ch1",
+      "offset": 6320128,
+      "bytes": 32768
+    },
+    {
+      "name": "hashbuf",
+      "offset": 6352896,
+      "bytes": 4194432
+    },
+    {
+      "name": "hashstate",
+      "offset": 10547328,
+      "bytes": 32
+    },
+    {
+      "name": "schedule",
+      "offset": 10547360,
+      "bytes": 256
+    },
+    {
+      "name": "digest",
+      "offset": 10547616,
+      "bytes": 32
+    },
+    {
+      "name": "stat",
+      "offset": 10547648,
+      "bytes": 144
+    },
+    {
+      "name": "stage",
+      "offset": 10547792,
+      "bytes": 4096
+    },
+    {
+      "name": "heaname",
+      "offset": 10551888,
+      "bytes": 40
+    },
+    {
+      "name": "datname",
+      "offset": 10551928,
+      "bytes": 40
+    }
+  ],
+  "independently_calculated_BSS_bytes": 10555392,
+  "generated_artifact_bytes_acquired": false,
+  "generated_instruction_execution": false,
+  "static_inspector_executed": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three source texts fully read and parsed with ast.parse; none imported or executed.",
+    "Case TSV reconstructed from exact held manifest using source-inspected serialization; digest agrees with freeze, without reading the historical private TSV path.",
+    "Fixture producer executes a pinned reference during historical generation; no generation, reference or fixture/archive payload execution occurred here.",
+    "Pure arithmetic checks cover packing/folding and selected SHA padding lengths, not emitted instruction or decoder execution.",
+    "Static inspector predicates rely on the emitted format and input declarations; agreement does not prove semantic correctness or independently establish ELF metadata closure.",
+    "Source publication uses file and staging-directory fsync before no-overwrite rename, without parent-directory fsync; final directory close status is not promoted to durable success.",
+    "No executable, signal, decoded output, raw trace or private source payload published; no new inference."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/DEPENDENCIES.json",
+      "bytes": 1629,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/build.json",
+      "bytes": 458,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/layout.json",
+      "bytes": 21116,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/readelf.txt",
+      "bytes": 1576,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/artifact-r2/static-check.json",
+      "bytes": 765,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 25544,
+  "public_contribution_checks": [
+    "three pinned identities, freeze digest references and AST-only parses passed",
+    "held seed/reference payload digests match source pins",
+    "65-row reconstructed TSV matches frozen digest; no historical private path read",
+    "65537 fold roundtrips, 20480 packing pairs, padding boundaries and allocation arithmetic passed",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

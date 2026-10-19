@@ -9,6 +9,7 @@ import json
 import platform
 import subprocess
 import sys
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 
@@ -45,17 +46,37 @@ def checkpoint(args):
                 str(PurePosixPath(path)) != path):
             raise ValueError(f"unsupported snapshot entry: {mode} {path!r}")
         files.append((path, mode, oid))
+    # Conservatively reject names that common host filesystems may alias,
+    # including file/directory conflicts. Shared identical directory prefixes are OK.
+    names = {}
+    for path, _, _ in files:
+        parts = PurePosixPath(path).parts
+        for count in range(1, len(parts) + 1):
+            prefix = "/".join(parts[:count])
+            kind = "file" if count == len(parts) else "directory"
+            key = unicodedata.normalize("NFC", prefix).casefold()
+            previous = names.get(key)
+            if previous is not None and previous != (prefix, kind):
+                raise ValueError(f"filesystem-aliased snapshot paths: {previous[0]!r}, {prefix!r}")
+            names[key] = (prefix, kind)
     state_bytes = args.work_state.read_bytes()
     state = json.loads(state_bytes)
     if state.get("source_snapshot", "missing") is not None:
         raise ValueError("authored WorkState must set source_snapshot to null for explicit binding")
     provenance_bytes = args.build_provenance.read_bytes()
     provenance = json.loads(provenance_bytes)
-    binary_digest = sha256(binary.read_bytes())
+    binary_bytes = binary.read_bytes()
+    binary_digest = sha256(binary_bytes)
     if provenance["binary_sha256"] != binary_digest:
         raise ValueError("build provenance binary digest does not match executable")
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=False)
+    # Run the measured bytes, even if a concurrent build replaces the input binary.
+    runtime = output / "runtime"
+    runtime.mkdir()
+    binary = runtime / binary.name
+    binary.write_bytes(binary_bytes)
+    binary.chmod(0o700)
     source = output / "source"
     source.mkdir()
     database = output / "work.db"
@@ -107,6 +128,9 @@ def checkpoint(args):
     write_json(output / "coverage.json", inspected["manifest"])
     verification = cli("verify-current-context", pack_id)
     write_json(output / "verification.json", verification)
+    for item in inventory:
+        if sha256((source / item["path"]).read_bytes()) != item["sha256"]:
+            raise ValueError(f"retained source bytes changed: {item['path']!r}")
     manifest = {
         "schema": "continuum.project_checkpoint.v1", "created_utc": datetime.now(timezone.utc).isoformat(),
         "source": {"commit": revision, "git_tree": git("rev-parse", revision + "^{tree}").decode().strip(),
@@ -116,6 +140,7 @@ def checkpoint(args):
         "adapter_sha256": sha256(Path(__file__).read_bytes()),
         "environment": {"platform": platform.platform(), "python": sys.version},
         "limits": ["Committed regular UTF-8 paths only; working-tree edits and untracked files are excluded.",
+                   "NFC/casefold path aliases and file/directory aliases are conservatively rejected; retained bytes are rechecked.",
                    "Git executable modes are inventoried but not represented by native Snapshot v1.",
                    "Build provenance is caller-authored; digest binding is checked, build truth is not.",
                    "Disposable store: no upgrade, backup, workstation installation or recipient effect claimed.",

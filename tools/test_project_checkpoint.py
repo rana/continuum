@@ -69,6 +69,20 @@ class CheckpointTests(unittest.TestCase):
         self.run_checkpoint(succeeds=False)
         self.assertEqual(json.loads((first / "checkpoint.json").read_text()), a)
 
+    def test_filesystem_aliases_rejected_before_output(self):
+        # Index plumbing creates colliding trees even on case-insensitive hosts.
+        for paths in (("README", "readme"), ("Foo", "foo/bar"),
+                      ("caf\u00e9", "cafe\u0301"), ("Dir/a", "dir/b")):
+            with self.subTest(paths=paths):
+                self.git("read-tree", "--empty")
+                oid = self.git("rev-parse", "HEAD:binary data").decode().strip()
+                for path in paths:
+                    self.git("update-index", "--add", "--cacheinfo", f"100644,{oid},{path}")
+                tree = self.git("write-tree").decode().strip()
+                commit = self.git("commit-tree", tree, "-m", "alias fixture").decode().strip()
+                output = self.run_checkpoint(name="alias", extra=("--revision", commit), succeeds=False)
+                self.assertFalse(output.exists())
+
     def test_symlink_rejected_before_output(self):
         (self.repo / "link").symlink_to("binary data")
         self.git("add", ".")

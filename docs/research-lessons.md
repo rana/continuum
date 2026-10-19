@@ -291,6 +291,8 @@ The [builder saved-result review](source-review/base12-builder-result-review.md)
 
 The [derived saved-case review](source-review/base12-builder-saved-case-records.md) finds 66 distinct invocation-digest declarations but only 26 observation digests. Repeated output-state content cannot identify a particular operation or establish independent executions; retain its source/attempt association. Complete derived syscall counts and reconstructed fixed receipt hashes can strengthen metadata consistency without becoming fresh trace parsing or receipt custody. Omitted zero-count keys must be normalized before comparison with a complete expected count vector.
 
+The [complete saved attempt inventory](source-review/base12-builder-attempt-inventory.md) closes a seven-text metadata packet through an exact 495-path partition and case/trace/receipt joins. Inventory closure does not provide custody of the private objects it names. Directory paths without mode fields cannot carry permission claims across a handoff; regular-file modes and reported execution also remain different facts. Preserve the schema's actual information, including missing/directory/symlink inputs, rather than flattening it into an ordinary-file list.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

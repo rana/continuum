@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "source_baseline": "f3ea807a2f941c415549bbdd83c6c9208b9688cd",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 3,
+  "verified_source_bytes": 360418,
+  "full_semantic_read_files": 2,
+  "full_semantic_read_bytes": 51361,
+  "archive_identity": {
+    "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/pr13-audited-review-20261016.zip",
+    "bytes": 309057,
+    "git_blob_sha": "bc5a837784d76dde92743573dce673e449693594",
+    "sha256": "c6e24c711800f7af6b5454cb457ce277fb45e4900dc3f0a4b079577334a4e966"
+  },
+  "archive_consumed_from_one_verified_byte_buffer": true,
+  "archive_members": 127,
+  "archive_unpacked_bytes": 1319940,
+  "all_member_metadata_checked_before_any_decompression": true,
+  "expected_total_and_member_sizes_checked_before_decompression": true,
+  "member_name_set_equals_pinned_tree": true,
+  "member_names_unique": true,
+  "all_member_lengths_and_Git_blob_identities_match_tree": true,
+  "all_126_manifest_member_lengths_and_SHA256_match": true,
+  "manifest_and_allowlist_independent_payloads_equal_archive_members": true,
+  "manifest_and_allowlist_source_revision_match": true,
+  "manifest_and_allowlist_historical_publication_flags": false,
+  "manifest_rows": 126,
+  "allowlist_rows": 126,
+  "allowlist_source_names_unique": true,
+  "UTF8_NUL_checks": 127,
+  "strict_JSON_files": 59,
+  "strict_JSONL_files": 10,
+  "strict_JSONL_rows": 2280,
+  "empty_members_mechanical_only": 11,
+  "CRC_checked_on_every_member_read": true,
+  "private_cache_existing_members_preserved": 72,
+  "private_cache_new_members_written": 55,
+  "packet_paths_semantically_covered_including_prior_aliases": 72,
+  "packet_nonempty_paths_without_semantic_credit": 44,
+  "packet_nonempty_unread_bytes": 648507,
+  "mechanical_custody_does_not_add_semantic_coverage": true,
+  "packaged_code_executed": false,
+  "archive_extracted_with_library_extraction_API": false,
+  "signal_payloads_acquired": false,
+  "arbitrary_archive_security_validation_claimed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Only the manifest and allowlist receive new full semantic-reading credit.",
+    "Archive members were mechanically checked, parsed and privately cached without importing or executing packaged code.",
+    "Exact byte custody establishes agreement among this pinned tree, manifest and retained ZIP; it does not authenticate upstream claims, publication authority, original signal bytes or historical execution.",
+    "Source fields in the allowlist declare historical layout mappings; original source-path availability was not tested.",
+    "No new complete semantic privacy review or arbitrary-archive extractor evaluation is claimed.",
+    "No syscall crash, path replacement, provider or workstation activation experiment ran.",
+    "Global acquisition overlap remains unknown; the historical aggregate is unchanged."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/transport_prefetch.py",
+      "bytes": 18159,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/execution-controls/test_transport_prefetch.py",
+      "bytes": 26109,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-authorization-v1.json",
+      "bytes": 1147,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-continuation-clarification.json",
+      "bytes": 697,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-local-gates-v1.json",
+      "bytes": 1580,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 47692,
+  "fourteen_frozen_source_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-consumer-01.md",
+      "bytes": 4520,
+      "sha256": "11f2009d794db9d667a6282c7ddf9b30ac76bccda8edaaa362f81f32856d9533",
+      "git_blob_sha": "0374c2f6b28d52d4b44a3228e74b207da7d7daf0",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/.gitignore",
+      "bytes": 55,
+      "sha256": "90e7326e53f4df0ad2dff9ca276097951e5ba26fa7116f3812ace82c68e13bd6",
+      "git_blob_sha": "ff54dd973e44e4a8fe1d47e6f3eb7549418933b5",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/CHECKS.json",
+      "bytes": 2143,
+      "sha256": "ce852676fab92b69411bb9cb88077d4d418856c38d64e43d7a5d51159783bd6b",
+      "git_blob_sha": "264825f2cb38eba4e84b3ceb29bd82bb0d9494e0",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/PROTOCOL.md",
+      "bytes": 7472,
+      "sha256": "89cda5aa105a8c814e7ca27590420ee20a0b9c9f70d9bca6508097497d158fc9",
+      "git_blob_sha": "6520564bc9c9523244d9f1da3c097f70bd999ef3",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/README.md",
+      "bytes": 6130,
+      "sha256": "64a3d0f982acd2826c26b569c2e80f4e00cbf59927dcff447bca16d562ef05c0",
+      "git_blob_sha": "cf8e438b0887d1ff30b3a03fd3b16f10566fa92f",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/REVIEW.md",
+      "bytes": 4298,
+      "sha256": "6ef9f62b5771181a9051a363880c4b3e60137a1f2a7f9361481042f41e6c8256",
+      "git_blob_sha": "9378a09528581954e32afac33b2d6d4f8c0088ae",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/check_codec.py",
+      "bytes": 8659,
+      "sha256": "9b74304d226427a149d6d4b0fd4cc4342eb4c17bfa5de9a8067e7b953fd1f7c5",
+      "git_blob_sha": "702c48fcb73c2fd3e8cbc702966db023615a3798",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/codec.py",
+      "bytes": 9524,
+      "sha256": "1c36bdfcef4a4b2a3ad3cb80f2dac7cfb854a8631409c069522deda0ff11cff0",
+      "git_blob_sha": "32a00c1a3988311304f5522fe4b691bcea6e11ba",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/corpus.py",
+      "bytes": 6375,
+      "sha256": "5dbfbed1ad1c6f0159d40639bce2843ff9c84ffb3569b835b03fbc426e8f9908",
+      "git_blob_sha": "6fc1ec24bc787e0f4b63a1b1a69f5a30e926189d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/learning.py",
+      "bytes": 2415,
+      "sha256": "ca501b55c0584949a29c3d7f28de4a9f56e70794f9e4143e109ffef68d564d32",
+      "git_blob_sha": "4f1c06bcec1d4657a91ad884c3c4e0f793075bb1",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/native_predict.py",
+      "bytes": 5424,
+      "sha256": "cc7464532355b201995a8b345e1dc44ab4f74380806c0ad892beabb3e0649a94",
+      "git_blob_sha": "15d0703c2b3ee2e0489f9b9745e104ac0ef04477",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/run_consumer.py",
+      "bytes": 5692,
+      "sha256": "4e8771bdebc7e24fa470aecd093cec03d1cf2059dc7abe998b8315e99058446a",
+      "git_blob_sha": "01fa920ecf8948cec2376fb7a0fa6b98fd6feb14",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/vendor/isa.py",
+      "bytes": 6390,
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "git_blob_sha": "018320dbece2cebbf8cec56aa527ebace822f96b",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/vendor/runtime.py",
+      "bytes": 2647,
+      "sha256": "2382f92bc33ca03381490fc95359517b159d4adb27ccc210ba61296227db975f",
+      "git_blob_sha": "f4cab037f502b90b273780225a238fe1cf281321",
+      "matched": true
+    }
+  ],
+  "all_fourteen_frozen_sources_match_static_preflight": true,
+  "public_contribution_checks": [
+    "single-buffer ZIP identity, exact pinned metadata before decompression and all 127 member identities passed",
+    "126 manifest and allowlist rows and fourteen frozen-source payload bindings passed",
+    "strict JSON/JSONL parsing, UTF8/NUL and member CRC passed",
+    "semantic/mechanical coverage, next-scope arithmetic, relative links and public privacy checks passed",
+    "git diff --check passed"
+  ]
+}

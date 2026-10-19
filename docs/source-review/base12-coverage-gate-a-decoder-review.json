@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-gate-a-artifact-records.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/REVIEWER.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/REVIEW_REQUEST.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-review.md",
+      "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-static-verification.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/REVIEWER.md",
+      "bytes": 10513,
+      "git_blob_sha": "61042f71da363a115179c46cacce3edf20f4e5d0",
+      "sha256": "590f2acf78ec95a1b6e5e3cf3df777cc613f86b430d8809e972ffa0c22e19e4c",
+      "lines": 62,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-decoder-review-exposure-and-scope",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/REVIEW_REQUEST.md",
+      "bytes": 9611,
+      "git_blob_sha": "81b3b1bac32b2b46bb5e147746ebe5764a79e6dd",
+      "sha256": "124ca89b7e3d151ce7b0b8bc5d14e2aa438c35fe2157de68c636ad363b198b28",
+      "lines": 70,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-decoder-review-exposure-and-scope",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-review.md",
+      "bytes": 8691,
+      "git_blob_sha": "813b7bbde3e7d3c5ac2c6382d58a0b850bc3b5af",
+      "sha256": "90ca6953637622c4f16112630d8f04bb2dfc0735542907dc920cfeb1c23b9a17",
+      "lines": 44,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-decoder-review-exposure-and-scope",
+      "acquisition": "exact_bytes_hash_verified"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/decoder-static-verification.json",
+      "bytes": 802,
+      "git_blob_sha": "6e422c3798c436449b9a2b2a9357619750200867",
+      "sha256": "e5bbf51ff92249118d1e3f799bedb6ae61eab0714eec68e0e73a52370013d3aa",
+      "lines": 46,
+      "semantic_review": "full_direct_read",
+      "review_lane": "gate-a-decoder-review-exposure-and-scope",
+      "acquisition": "exact_bytes_hash_verified"
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 29617
+    },
+    "cumulative_direct_read": {
+      "paths": 440,
+      "unique_blobs": 440,
+      "bytes": 3388422
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 492,
+    "remaining_paths_without_full_semantic_read_or_alias": 5101,
+    "remaining_distinct_blobs_without_full_semantic_read": 3989,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 29617,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Four full texts read: delegated review, revised request, parent decoder review and saved static-verification JSON.",
+    "Seven held request payloads bind; TSV is independently reconstructed and ELF remains a declaration without current payload custody.",
+    "Delegated review names three superseded control/freeze hashes and a different timeout escalation; no approval transfer across those identities.",
+    "Parent review reports historical actual-byte Library verification and independent disassembly; this is retained reviewer evidence, not new artifact acquisition or tool execution.",
+    "Decoder static recommendation explicitly defers launcher/budget/oracle/retained-data clearance; no new authorization or recipient acceptance is inferred.",
+    "Positive short IO remains static-only; finite tests are not exhaustive proof; prior reviewer qualifications are attributed rather than newly discovered.",
+    "No upstream execution, new model invocation or private raw source/operational identifier/executable publication occurred."
+  ],
+  "review_report": "base12-gate-a-decoder-review.md",
+  "mechanical_custody_files": [],
+  "repeated_identical_payload_reads": []
+}

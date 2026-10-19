@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "source_baseline": "53c6e8f70b4c45fb1f9a079b96c182f1fac38109",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 7,
+  "verified_source_bytes": 87605,
+  "complete_385_row_field_view_reconstructs_original_bytes": true,
+  "recovery_journal_rows": 385,
+  "recovery_monitor_sample_count": 7688,
+  "recovery_all_root_identity_fields_match_effective_controls": true,
+  "recovery_root_state_counts": {
+    "R": 1,
+    "S": 384
+  },
+  "recovery_own_ticks_first": 0,
+  "recovery_own_ticks_last": 249,
+  "recovery_reaped_ticks_all_zero": true,
+  "recovery_descendants_all_empty": true,
+  "recovery_elapsed_and_own_ticks_monotone": true,
+  "recovery_upper_CPU_downsteps": 102,
+  "recovery_journal_first_elapsed_seconds": 0.003216082999642822,
+  "recovery_journal_last_elapsed_seconds": 390.7313185009998,
+  "recovery_journal_interval_min_seconds": 1.0134357329998238,
+  "recovery_journal_interval_max_seconds": 1.0212593740006923,
+  "recovery_journal_interval_mean_seconds": 1.0175211000468753,
+  "recovery_journal_max_upper_CPU_seconds": 2.510801750000392,
+  "recovery_terminal_monitor_max_upper_CPU_seconds": 2.5110542849995547,
+  "recovery_terminal_wait4_CPU_seconds": 2.517461,
+  "recovery_last_journal_to_terminal_wall_seconds": 0.4089084360002744,
+  "recovery_stdout_exact_helper_projection": true,
+  "intake_invocation_equals_terminal_limits": true,
+  "intake_no_acquire_switch": true,
+  "intake_effective_controls_and_root_identity_match": true,
+  "intake_clean_root_exit_and_cleanup": true,
+  "intake_journal_rows": 1,
+  "intake_monitor_sample_count": 2,
+  "intake_journal_elapsed_seconds": 0.0022612639995713835,
+  "intake_journal_upper_CPU_seconds": 0.02017333300002065,
+  "intake_terminal_monitor_max_upper_CPU_seconds": 0.06025052100045286,
+  "intake_terminal_wait4_CPU_seconds": 0.09389399999999999,
+  "intake_terminal_wall_seconds": 0.10317648899945198,
+  "intake_root_maxrss_kib": 28152,
+  "intake_stdout_matches_80_file_count_and_source_literal": true,
+  "intake_payload_identity_matches_pre_run_gate": true,
+  "wrapper_source_line_anchors": {
+    "record_cadence": 207,
+    "monitor_sample_count": 203,
+    "monitor_running_max": 204,
+    "root_exit_break": 199,
+    "instantaneous_upper_with_scan_margin": 83
+  },
+  "corpus_source_line_anchors": {
+    "verify_no_acquire_dispatch": 115,
+    "intake_output_write_and_stdout": 118,
+    "header_structural_check": 66,
+    "payload_hash_check": 47
+  },
+  "full_monitor_history_reconstructed": false,
+  "historical_input_bytes_reverified": false,
+  "source_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Seven texts fully read; complete 385-row view reconstructs original bytes without omission.",
+    "Sparse journal rows are not the complete monitor sample history or syscall/event history.",
+    "Instantaneous conservative upper estimates include scan/tick margins and need not be monotone; their running maximum is distinct from raw ticks and exit wait4 CPU.",
+    "Process-leader state does not describe every thread or uniquely identify a network/CPU bottleneck.",
+    "Intake receipt and source/CLI output are consistent with verification without acquire; no input bytes were rehashed or parsed anew here.",
+    "Historical test-partition locking and ordinary intake write are not a global host inventory or crash-safe publication guarantee.",
+    "No source imports, new transport, intake execution, model invocation, syscall-fault or crash experiment occurred.",
+    "Historical global acquisition overlap remains unknown."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/invocation.json",
+      "bytes": 1001,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/effective-before-exec.json",
+      "bytes": 240,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/accounting.jsonl",
+      "bytes": 365574,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 366815,
+  "intake_verify_does_not_enumerate_unlisted_directory_entries": true,
+  "intake_stdout_does_not_alone_prove_absence_of_test_files": true,
+  "public_contribution_checks": [
+    "seven source identities and complete 385-row byte reconstruction passed",
+    "all recovery identity/tick/interval/bound checks and stdout projection passed",
+    "intake invocation/effective/terminal/output bindings and source-scope checks passed",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

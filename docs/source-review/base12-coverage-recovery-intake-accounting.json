@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-transport-recovery.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/accounting.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/stdout.txt",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/accounting.jsonl",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/stdout.txt"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/accounting.jsonl",
+      "bytes": 84236,
+      "git_blob_sha": "68127b6e1d7b71df016f7bb5e51a4868f8ec9d28",
+      "sha256": "578a53576b1b4bf1fe135b27526f9d0c5dbaa4632067f90db75875a21375ff28",
+      "lines": 385,
+      "semantic_review": "full_direct_read",
+      "review_lane": "sparse-resource-history-and-intake-boundary",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 385-row field-preserving accounting view with exact byte reconstruction; other six files fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-recovery-envelope-v1/stdout.txt",
+      "bytes": 108,
+      "git_blob_sha": "4e6e58c65ff3594005ceffa46208157cdb53f69c",
+      "sha256": "bb5b5b46e1ba6a2a1a0054f9105ad32b0905f0631873d2e9b5e1e51564f2b4d5",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "sparse-resource-history-and-intake-boundary",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 385-row field-preserving accounting view with exact byte reconstruction; other six files fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/invocation.json",
+      "bytes": 981,
+      "git_blob_sha": "095a87f209fc478def54899b9e1cac1d4e037fb4",
+      "sha256": "02bb442961f18ac877a8cd6f26dc918629877f734857f475acdca95ad7dde77c",
+      "lines": 30,
+      "semantic_review": "full_direct_read",
+      "review_lane": "sparse-resource-history-and-intake-boundary",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 385-row field-preserving accounting view with exact byte reconstruction; other six files fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/effective-before-exec.json",
+      "bytes": 226,
+      "git_blob_sha": "492f79175fb912ea788b9034809169e5e626c131",
+      "sha256": "0bbbb91a716c373eaa100dbfa338ff0eb3c151d50cb5dbe57b5ba5f497906271",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "sparse-resource-history-and-intake-boundary",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 385-row field-preserving accounting view with exact byte reconstruction; other six files fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/receipt.json",
+      "bytes": 1817,
+      "git_blob_sha": "9f012f92e7dc78d23946289ea0f105eca20b7714",
+      "sha256": "b178841fad59d82f398ee56222e3128d87b102cc0ef23aa3681e3732811f77e2",
+      "lines": 58,
+      "semantic_review": "full_direct_read",
+      "review_lane": "sparse-resource-history-and-intake-boundary",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 385-row field-preserving accounting view with exact byte reconstruction; other six files fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/accounting.jsonl",
+      "bytes": 206,
+      "git_blob_sha": "6ab9297c681ddd7a6ae899d379c0cdad2667a905",
+      "sha256": "03680481bc0bdb56db763783020ea4cc0a0ca4c465c6a10bece2df421ab73c74",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "sparse-resource-history-and-intake-boundary",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 385-row field-preserving accounting view with exact byte reconstruction; other six files fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/intake-envelope-v1/stdout.txt",
+      "bytes": 31,
+      "git_blob_sha": "9f63e47c8f2520dada01578f66bffa14db2ed259",
+      "sha256": "6c25cb4722821a295aac03596e65f37f31009a8e7d15ef7c25534b0d7906df8c",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "sparse-resource-history-and-intake-boundary",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 385-row field-preserving accounting view with exact byte reconstruction; other six files fully read directly"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 7,
+      "unique_blobs": 7,
+      "bytes": 87605
+    },
+    "cumulative_direct_read": {
+      "paths": 371,
+      "unique_blobs": 371,
+      "bytes": 2744909
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 423,
+    "remaining_paths_without_full_semantic_read_or_alias": 5170,
+    "remaining_distinct_blobs_without_full_semantic_read": 4058,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 7,
+    "this_review_verified_bytes": 87605,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Seven texts fully read; complete 385-row view reconstructs original bytes without omission.",
+    "Sparse journal rows are not the complete monitor sample history or syscall/event history.",
+    "Instantaneous conservative upper estimates include scan/tick margins and need not be monotone; their running maximum is distinct from raw ticks and exit wait4 CPU.",
+    "Process-leader state does not describe every thread or uniquely identify a network/CPU bottleneck.",
+    "Intake receipt and source/CLI output are consistent with verification without acquire; no input bytes were rehashed or parsed anew here.",
+    "Historical test-partition locking and ordinary intake write are not a global host inventory or crash-safe publication guarantee.",
+    "No source imports, new transport, intake execution, model invocation, syscall-fault or crash experiment occurred.",
+    "Historical global acquisition overlap remains unknown."
+  ],
+  "review_report": "base12-recovery-intake-accounting.md"
+}

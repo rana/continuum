@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "source_baseline": "a482f2a7327114515eba7f78a8325fa928d564f2",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 8,
+  "verified_source_bytes": 41487,
+  "markdown_full_text_read": 6,
+  "json_full_text_read_and_parsed": 1,
+  "ignore_rules_full_text_read": 1,
+  "independent_arithmetic_from_authored_summaries": {
+    "fixed_bytes": 5524566,
+    "learned_bytes": 5418065,
+    "authored_four_bytes": 5467168,
+    "full_family_bytes": 5416191,
+    "learned_saving_vs_fixed": 106501,
+    "learned_saving_vs_authored_four": 49103,
+    "full_family_smaller_than_learned": 1874,
+    "learned_percent_vs_fixed": "1.9278",
+    "learned_percent_vs_authored_four": "0.8981",
+    "training_contexts": 256,
+    "training_sample_positions": 1048576,
+    "synthetic_check_sum": 2052,
+    "synthetic_variants": 84,
+    "parent_review_total_entries": 332,
+    "parent_review_type_encoding_entries": 254,
+    "parent_review_other_entries": 78,
+    "overlap_span_threshold_intended": 8191
+  },
+  "source_hash_declarations": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/codec.py",
+      "declared_sha256": "1c36bdfcef4a4b2a3ad3cb80f2dac7cfb854a8631409c069522deda0ff11cff0",
+      "pinned_tree_git_blob": "32a00c1a3988311304f5522fe4b691bcea6e11ba",
+      "payload_acquired": false,
+      "raw_sha256_checked": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/native_predict.py",
+      "declared_sha256": "cc7464532355b201995a8b345e1dc44ab4f74380806c0ad892beabb3e0649a94",
+      "pinned_tree_git_blob": "15d0703c2b3ee2e0489f9b9745e104ac0ef04477",
+      "payload_acquired": false,
+      "raw_sha256_checked": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/check_codec.py",
+      "declared_sha256": "9b74304d226427a149d6d4b0fd4cc4342eb4c17bfa5de9a8067e7b953fd1f7c5",
+      "pinned_tree_git_blob": "702c48fcb73c2fd3e8cbc702966db023615a3798",
+      "payload_acquired": false,
+      "raw_sha256_checked": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/corpus.py",
+      "declared_sha256": "5dbfbed1ad1c6f0159d40639bce2843ff9c84ffb3569b835b03fbc426e8f9908",
+      "pinned_tree_git_blob": "6fc1ec24bc787e0f4b63a1b1a69f5a30e926189d",
+      "payload_acquired": false,
+      "raw_sha256_checked": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/learning.py",
+      "declared_sha256": "ca501b55c0584949a29c3d7f28de4a9f56e70794f9e4143e109ffef68d564d32",
+      "pinned_tree_git_blob": "4f1c06bcec1d4657a91ad884c3c4e0f793075bb1",
+      "payload_acquired": false,
+      "raw_sha256_checked": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/run_consumer.py",
+      "declared_sha256": "4e8771bdebc7e24fa470aecd093cec03d1cf2059dc7abe998b8315e99058446a",
+      "pinned_tree_git_blob": "01fa920ecf8948cec2376fb7a0fa6b98fd6feb14",
+      "payload_acquired": false,
+      "raw_sha256_checked": false
+    }
+  ],
+  "lineage_destination_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-consumer-01.md",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/.gitignore",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/CHECKS.json",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/PROTOCOL.md",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/README.md",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/REVIEW.md",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/check_codec.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "not_locally_acquired",
+      "sha256_match": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/codec.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "not_locally_acquired",
+      "sha256_match": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/corpus.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "not_locally_acquired",
+      "sha256_match": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/learning.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "not_locally_acquired",
+      "sha256_match": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/native_predict.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "not_locally_acquired",
+      "sha256_match": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/run_consumer.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "not_locally_acquired",
+      "sha256_match": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/vendor/isa.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "pinned_identical_blob_alias",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/vendor/runtime.py",
+      "source_pr": 13,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "pinned_identical_blob_alias",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-record100-run.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/CONTINUATION_REVIEW.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/PRESERVATION.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/README.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/ATTRIBUTION.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/DOT_HANDOFF.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/MANIFEST.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/PROTOCOL.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/README.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/REVIEW_AND_ALIGNMENT.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/WIRE.md",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/check.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/codec.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/native_signal.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/record100.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/checks.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/design-freeze.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/development-corrections.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/external-wrapper-checks.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/published-pins.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/records/source-freeze.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/isa.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/vendor/runtime.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/RESULTS-SUMMARY.json",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/codec-history-lineage/pr15-originals/research/owned-stack/2026-10-15/ecg-codec-stage-a/reference-review/check_reference.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/source/reference_decode.py",
+      "source_pr": 15,
+      "pinned_tree_blob_and_length_match": true,
+      "byte_binding": "acquired_payload",
+      "sha256_match": true
+    }
+  ],
+  "raw_result_and_parent_audit_records_acquired_in_this_unit": false,
+  "original_signal_payloads_rehashed": false,
+  "no_upstream_execution": true,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/check_codec.py",
+      "bytes": 8659
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/codec.py",
+      "bytes": 9524
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/corpus.py",
+      "bytes": 6375
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/learning.py",
+      "bytes": 2415
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/native_predict.py",
+      "bytes": 5424
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/run_consumer.py",
+      "bytes": 5692
+    }
+  ],
+  "next_scope_bytes": 38089,
+  "public_contribution_checks": [
+    "JSON parsing, coverage and lineage-binding arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

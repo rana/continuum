@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-codec-lineage.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/INTEGRATION.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/summary/PR13-AUDITED-RESULT.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-consumer-01.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/.gitignore",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/CHECKS.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/PROTOCOL.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/README.md",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/REVIEW.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/INTEGRATION.md",
+      "bytes": 10198,
+      "git_blob_sha": "4ae5bb5d37155671421a43e700d3aadf3a81fd2d",
+      "sha256": "cd380cc5c08de7974234e15b98ae43efccb3461b57c8a79adb8a3785f6b0fc56",
+      "lines": 50,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/summary/PR13-AUDITED-RESULT.md",
+      "bytes": 6671,
+      "git_blob_sha": "bf10acf33174ec90a0131c2132e081f0a24067fb",
+      "sha256": "715e1346ef77e31e617584efe98adc5d8c7244e09e04077e26dc42b4c836d6d8",
+      "lines": 36,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/collaboration/dot-bridge/to-dot/gpt-20261016-ecg-consumer-01.md",
+      "bytes": 4520,
+      "git_blob_sha": "0374c2f6b28d52d4b44a3228e74b207da7d7daf0",
+      "sha256": "11f2009d794db9d667a6282c7ddf9b30ac76bccda8edaaa362f81f32856d9533",
+      "lines": 27,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/.gitignore",
+      "bytes": 55,
+      "git_blob_sha": "ff54dd973e44e4a8fe1d47e6f3eb7549418933b5",
+      "sha256": "90e7326e53f4df0ad2dff9ca276097951e5ba26fa7116f3812ace82c68e13bd6",
+      "lines": 7,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/CHECKS.json",
+      "bytes": 2143,
+      "git_blob_sha": "264825f2cb38eba4e84b3ceb29bd82bb0d9494e0",
+      "sha256": "ce852676fab92b69411bb9cb88077d4d418856c38d64e43d7a5d51159783bd6b",
+      "lines": 1,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "json_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/PROTOCOL.md",
+      "bytes": 7472,
+      "git_blob_sha": "6520564bc9c9523244d9f1da3c097f70bd999ef3",
+      "sha256": "89cda5aa105a8c814e7ca27590420ee20a0b9c9f70d9bca6508097497d158fc9",
+      "lines": 117,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/README.md",
+      "bytes": 6130,
+      "git_blob_sha": "cf8e438b0887d1ff30b3a03fd3b16f10566fa92f",
+      "sha256": "64a3d0f982acd2826c26b569c2e80f4e00cbf59927dcff447bca16d562ef05c0",
+      "lines": 52,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/frozen-source/research/owned-stack/2026-10-15/ecg-lossless/REVIEW.md",
+      "bytes": 4298,
+      "git_blob_sha": "9378a09528581954e32afac33b2d6d4f8c0088ae",
+      "sha256": "6ef9f62b5771181a9051a363880c4b3e60137a1f2a7f9361481042f41e6c8256",
+      "lines": 72,
+      "semantic_review": "full_direct_read",
+      "review_lane": "earlier-consumer-claims-and-governance",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "utf8_full_text_decode"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 8,
+      "unique_blobs": 8,
+      "bytes": 41487
+    },
+    "cumulative_direct_read": {
+      "paths": 286,
+      "unique_blobs": 286,
+      "bytes": 1864143
+    },
+    "additional_identical_blob_paths": 49,
+    "alias_distinct_blobs": 19,
+    "semantic_covered_paths_including_aliases": 335,
+    "remaining_paths_without_full_semantic_read_or_alias": 5258,
+    "remaining_distinct_blobs_without_full_semantic_read": 4143,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 8,
+    "this_review_verified_bytes": 41487,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Eight texts fully read; only CHECKS.json newly parsed, no numerical consumer source executed or read in this unit.",
+    "Arithmetic recomputes authored summary numbers, not raw result rows, training costs or signal bytes.",
+    "Source SHA-256 declarations remain unbound until six missing payloads are acquired.",
+    "332 parent checks and their classification are attributed summary evidence; raw checker/results remain unread here.",
+    "Historical blocked-source and later completed-run statements retain different dates/scopes."
+  ],
+  "review_report": "base12-consumer-claims.md"
+}

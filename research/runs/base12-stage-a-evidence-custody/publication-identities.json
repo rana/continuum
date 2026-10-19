@@ -1,0 +1,20 @@
+{
+  "source_baseline": "3d086ec802cfc6dc70a74b3075fd3ef297571394",
+  "files": [
+    {
+      "path": "docs/source-review/base12-stage-a-evidence-custody.md",
+      "bytes": 4737,
+      "sha256": "cbd849817b1a42b307a9ae39f66789450267bb695efda48816939caf39c5f03c"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-stage-a-evidence-custody.json",
+      "bytes": 2994,
+      "sha256": "33c64d1cfb0d07dc67814c824ea211065432cd2a144bff16a6f30634c6e986d4"
+    },
+    {
+      "path": "research/runs/base12-stage-a-evidence-custody/validation.json",
+      "bytes": 31036,
+      "sha256": "4f537b5266c6551e3f6e478574a8bb4c2baf23247e1e06e5f597aa17f29e3456"
+    }
+  ]
+}

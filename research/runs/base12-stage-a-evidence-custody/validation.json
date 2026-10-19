@@ -1,0 +1,858 @@
+{
+  "schema_version": 1,
+  "source_baseline": "3d086ec802cfc6dc70a74b3075fd3ef297571394",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "transport": "Git blob API; length, Git SHA-1 framing and raw SHA-256 verified",
+  "verified_source_files": 4,
+  "verified_source_bytes": 93608,
+  "new_semantic_files": 1,
+  "new_semantic_bytes": 1768,
+  "verified_empty_payload": {
+    "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/run/stderr.log",
+    "bytes": 0,
+    "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adds_semantic_read": false
+  },
+  "archives": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+      "bytes": 80492,
+      "git_blob_sha": "6f99d008c3591b9f2280b7d2eeca74648ee4c7a4",
+      "sha256": "c764a88794752df21df1324c8529fda31405f2e179973caa82d8f85a9fc81dc0",
+      "regular_members": 28,
+      "unpacked_bytes": 220984,
+      "exact_expected_member_set": true,
+      "duplicate_members": false,
+      "nonregular_members": false,
+      "filesystem_extraction": false,
+      "members": [
+        {
+          "path": "DELIVERY_MANIFEST.json",
+          "bytes": 4440,
+          "sha256": "5eb299e73be9eed52cf43f24ce9f88fbee27168b6338e9780e9987c3cd3477cf",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "README.md",
+          "bytes": 11184,
+          "sha256": "6c8a65c0f758538a983200b8fa756c62795cbae01e1cbaaf892407621347d1f2",
+          "matches_installed": true,
+          "installed_method": "pinned_identical_blob_alias"
+        },
+        {
+          "path": "frozen-source/base12_ecg_codec_stage_a.tar.xz",
+          "bytes": 26232,
+          "sha256": "f544cd17b8dd4ba5f5643c340c3b6aad92c9d7d501dec9d2bbac6119157e80bd",
+          "matches_installed": true,
+          "installed_method": "pinned_identical_blob_alias"
+        },
+        {
+          "path": "intake/acquisition-receipt.json",
+          "bytes": 1783,
+          "sha256": "c7885006c693acbcd3fc693eade47de057ae822bbecf941ab8af9c5ed884fa30",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "parent-source-review/REVIEW_MANIFEST.json",
+          "bytes": 1289,
+          "sha256": "d0d11f85201c138ddde51518bfce0d026878bb38b22f8d79865d489021748ebc",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "parent-source-review/claude-review-evidence.json",
+          "bytes": 18592,
+          "sha256": "9730a9b53f83164dd4d003cd41fd4aeb62e57a42d082411f99b0f2cd6ce46b7b",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+          "bytes": 11348,
+          "sha256": "4d9b7a9c69482060ad0a7f99e8bc94384592b627c5a9ee4fe9cabd5dbb9e2b06",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "parent-source-review/static-source-review.md",
+          "bytes": 11620,
+          "sha256": "ac48a5d24832dc59405ded69395759ae8c319f2d4214d02971db05ed311a14a4",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/RESULT.md",
+          "bytes": 11184,
+          "sha256": "6c8a65c0f758538a983200b8fa756c62795cbae01e1cbaaf892407621347d1f2",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/acquire_record100.py",
+          "bytes": 5181,
+          "sha256": "b1390cec949624e5155fee6b9758d7b5571031a34bb93dc5994b70df23224e66",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/environment.json",
+          "bytes": 1499,
+          "sha256": "ca0180af3cb4b01ff70bcfb1ed2ca80b3252882f293bf5b7ea5bc3c40375bb12",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/intake-verification.json",
+          "bytes": 1214,
+          "sha256": "4b0ada40b9c699c408459a4804763ae3674e7f55927610dc0e29767c19e692f8",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/launcher-freeze.json",
+          "bytes": 314,
+          "sha256": "2c7910c815fc5c990947e16dfc215dbded0ec4cd9442cfac9d9d00f1efbbde7e",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/launcher-review.md",
+          "bytes": 5862,
+          "sha256": "ccd894903b688a0cf1a1a1535f8a1ca43246c693bec5746668b5bc1e3f94b5cf",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/native-static-review.md",
+          "bytes": 12751,
+          "sha256": "5cc5165c50565fb861003043f4550cdd5a1fbd96f6360bb933fb833acf16f664",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/packet-verification.json",
+          "bytes": 745,
+          "sha256": "9c5a3d233cf900da6ca2bbcd1383ce472412c5f454c21bfe123dc9cf27a91808",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/parent-clearance.json",
+          "bytes": 651,
+          "sha256": "c9f1ac885cb58ac064d162c89f3bdc617c6f682ead6ec0e559e514da8abd6ed6",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/parent-review-verification.json",
+          "bytes": 360,
+          "sha256": "c4e852253e14bcc8c932ed0bff9f65e2ea7ab0603b6dfcf20004f4cbb4ab0307",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/postrun-verification.json",
+          "bytes": 2363,
+          "sha256": "312069ab62770f29593b21a095fe3942a82ad0720613ca562293a4492773b9c9",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/record100-attempt.json",
+          "bytes": 1753,
+          "sha256": "4a08d8cc5203ae0a2eabf82f95216ebbeaf3961b993b1a1274144075cb103ad4",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/result-static-verification.md",
+          "bytes": 8091,
+          "sha256": "6eb724453805eab621a8dc4a2d6385a0bf75bce6a689449bc74447a349d026f9",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/run_once.py",
+          "bytes": 6890,
+          "sha256": "5ca2e22a77ff4519c3890d84f789bab57bdd7da2ce54ea6399d7b33a3903f36f",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "review/wire-static-review.md",
+          "bytes": 14007,
+          "sha256": "182758828656f3f275b10d15618fb7c7df76736b7cbfa4dd2d6f40cf01366c3c",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "run/RESULTS.json",
+          "bytes": 48198,
+          "sha256": "0ff509aca796b3beff69c91290442b3eb721a0f6a0d6370cec4abbb20f2e2b64",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "run/execution-receipt.json",
+          "bytes": 1995,
+          "sha256": "720b66fe2716dbdb3566aa5a1a65ff847ca44b11a2f2cc22bdae25eed585b7bb",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "run/input-and-code.json",
+          "bytes": 9670,
+          "sha256": "92c86dbc1660f6ad91f654b1ac3a3831c4a80e700eecd21ed60bfd5aa05d6904",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "run/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "run/stdout.log",
+          "bytes": 1768,
+          "sha256": "97f766d2cf61f89e8e1358f907954529c288fbb736e9741edbae891548fcd80d",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        }
+      ]
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+      "bytes": 11348,
+      "git_blob_sha": "9a2d626cc9e9c094406b0f0bfb1f50208dbb4e48",
+      "sha256": "4d9b7a9c69482060ad0a7f99e8bc94384592b627c5a9ee4fe9cabd5dbb9e2b06",
+      "regular_members": 3,
+      "unpacked_bytes": 31501,
+      "exact_expected_member_set": true,
+      "duplicate_members": false,
+      "nonregular_members": false,
+      "filesystem_extraction": false,
+      "members": [
+        {
+          "path": "static-source-review.md",
+          "bytes": 11620,
+          "sha256": "ac48a5d24832dc59405ded69395759ae8c319f2d4214d02971db05ed311a14a4",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "claude-review-evidence.json",
+          "bytes": 18592,
+          "sha256": "9730a9b53f83164dd4d003cd41fd4aeb62e57a42d082411f99b0f2cd6ce46b7b",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        },
+        {
+          "path": "REVIEW_MANIFEST.json",
+          "bytes": 1289,
+          "sha256": "d0d11f85201c138ddde51518bfce0d026878bb38b22f8d79865d489021748ebc",
+          "matches_installed": true,
+          "installed_method": "acquired_payload"
+        }
+      ]
+    }
+  ],
+  "cumulative_delivery_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "README.md",
+        "bytes": 11184,
+        "sha256": "6c8a65c0f758538a983200b8fa756c62795cbae01e1cbaaf892407621347d1f2",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "frozen-source/base12_ecg_codec_stage_a.tar.xz",
+        "bytes": 26232,
+        "sha256": "f544cd17b8dd4ba5f5643c340c3b6aad92c9d7d501dec9d2bbac6119157e80bd",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "intake/acquisition-receipt.json",
+        "bytes": 1783,
+        "sha256": "c7885006c693acbcd3fc693eade47de057ae822bbecf941ab8af9c5ed884fa30",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/REVIEW_MANIFEST.json",
+        "bytes": 1289,
+        "sha256": "d0d11f85201c138ddde51518bfce0d026878bb38b22f8d79865d489021748ebc",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/claude-review-evidence.json",
+        "bytes": 18592,
+        "sha256": "9730a9b53f83164dd4d003cd41fd4aeb62e57a42d082411f99b0f2cd6ce46b7b",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+        "bytes": 11348,
+        "sha256": "4d9b7a9c69482060ad0a7f99e8bc94384592b627c5a9ee4fe9cabd5dbb9e2b06",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "parent-source-review/static-source-review.md",
+        "bytes": 11620,
+        "sha256": "ac48a5d24832dc59405ded69395759ae8c319f2d4214d02971db05ed311a14a4",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/RESULT.md",
+        "bytes": 11184,
+        "sha256": "6c8a65c0f758538a983200b8fa756c62795cbae01e1cbaaf892407621347d1f2",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/acquire_record100.py",
+        "bytes": 5181,
+        "sha256": "b1390cec949624e5155fee6b9758d7b5571031a34bb93dc5994b70df23224e66",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/environment.json",
+        "bytes": 1499,
+        "sha256": "ca0180af3cb4b01ff70bcfb1ed2ca80b3252882f293bf5b7ea5bc3c40375bb12",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/intake-verification.json",
+        "bytes": 1214,
+        "sha256": "4b0ada40b9c699c408459a4804763ae3674e7f55927610dc0e29767c19e692f8",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-freeze.json",
+        "bytes": 314,
+        "sha256": "2c7910c815fc5c990947e16dfc215dbded0ec4cd9442cfac9d9d00f1efbbde7e",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/launcher-review.md",
+        "bytes": 5862,
+        "sha256": "ccd894903b688a0cf1a1a1535f8a1ca43246c693bec5746668b5bc1e3f94b5cf",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/native-static-review.md",
+        "bytes": 12751,
+        "sha256": "5cc5165c50565fb861003043f4550cdd5a1fbd96f6360bb933fb833acf16f664",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/packet-verification.json",
+        "bytes": 745,
+        "sha256": "9c5a3d233cf900da6ca2bbcd1383ce472412c5f454c21bfe123dc9cf27a91808",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-clearance.json",
+        "bytes": 651,
+        "sha256": "c9f1ac885cb58ac064d162c89f3bdc617c6f682ead6ec0e559e514da8abd6ed6",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/parent-review-verification.json",
+        "bytes": 360,
+        "sha256": "c4e852253e14bcc8c932ed0bff9f65e2ea7ab0603b6dfcf20004f4cbb4ab0307",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/postrun-verification.json",
+        "bytes": 2363,
+        "sha256": "312069ab62770f29593b21a095fe3942a82ad0720613ca562293a4492773b9c9",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/record100-attempt.json",
+        "bytes": 1753,
+        "sha256": "4a08d8cc5203ae0a2eabf82f95216ebbeaf3961b993b1a1274144075cb103ad4",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/result-static-verification.md",
+        "bytes": 8091,
+        "sha256": "6eb724453805eab621a8dc4a2d6385a0bf75bce6a689449bc74447a349d026f9",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/run_once.py",
+        "bytes": 6890,
+        "sha256": "5ca2e22a77ff4519c3890d84f789bab57bdd7da2ce54ea6399d7b33a3903f36f",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "review/wire-static-review.md",
+        "bytes": 14007,
+        "sha256": "182758828656f3f275b10d15618fb7c7df76736b7cbfa4dd2d6f40cf01366c3c",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/RESULTS.json",
+        "bytes": 48198,
+        "sha256": "0ff509aca796b3beff69c91290442b3eb721a0f6a0d6370cec4abbb20f2e2b64",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/execution-receipt.json",
+        "bytes": 1995,
+        "sha256": "720b66fe2716dbdb3566aa5a1a65ff847ca44b11a2f2cc22bdae25eed585b7bb",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/input-and-code.json",
+        "bytes": 9670,
+        "sha256": "92c86dbc1660f6ad91f654b1ac3a3831c4a80e700eecd21ed60bfd5aa05d6904",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "run/stdout.log",
+        "bytes": 1768,
+        "sha256": "97f766d2cf61f89e8e1358f907954529c288fbb736e9741edbae891548fcd80d",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": []
+  },
+  "cumulative_preservation_bindings": {
+    "matched_payloads_or_aliases": [
+      {
+        "path": "original/base12_ecg_codec_stage_a.tar.xz",
+        "bytes": 26232,
+        "sha256": "f544cd17b8dd4ba5f5643c340c3b6aad92c9d7d501dec9d2bbac6119157e80bd",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "ATTRIBUTION.md",
+        "bytes": 1547,
+        "sha256": "88ff6a269b07d20c579f1995d8dc0a32ac5f458aa9e4421b7d276af04a5eea6e",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "DOT_HANDOFF.md",
+        "bytes": 3815,
+        "sha256": "9b916f5ba61fc0011b8c3d74b9197a8289df5a465dbd05c012ece6325c8266f4",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "MANIFEST.json",
+        "bytes": 2355,
+        "sha256": "c3b47cba704aae8224e594308e1bf9cfdafc56a78ac8ad5f5e140f26bb2e215c",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "PROTOCOL.md",
+        "bytes": 6042,
+        "sha256": "9e1e43b3845e69f65c3e3fd0862783ae36027e6ea52a44fe59d1a937b7f19c32",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "README.md",
+        "bytes": 7078,
+        "sha256": "8f36537de81478cd2b5078ff49725b25fe0aaa5e0e28c2392bd41da1998aa1b3",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "REVIEW_AND_ALIGNMENT.md",
+        "bytes": 4830,
+        "sha256": "0f6ee595e271db2fd5e98655aadd1878dd181bfe0a3ec2713fc50a544d621bb8",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "WIRE.md",
+        "bytes": 1877,
+        "sha256": "8eda125db6fd6f275146e2a186bb665b6170f2681cdbb97616d99079d6023a3c",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "check.py",
+        "bytes": 7708,
+        "sha256": "ce97f82b37b4e03d1c1caffbd37e551d5ef75583917d84b7e315c377ae920d32",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "codec.py",
+        "bytes": 9208,
+        "sha256": "3cbd016e38a306ed9cb4cfb38eebb61a431c4b4a91cc1b014794921b5fa0d158",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "native_signal.py",
+        "bytes": 3719,
+        "sha256": "f686d91bbae2d220ad1e05d243afa6a9fe05177655568ffeda56dfba4e34131d",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "record100.py",
+        "bytes": 8874,
+        "sha256": "c9c3bc878477652a9f1ba327f661647b9388e1151852fa5bef2711575cfcb09a",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/checks.json",
+        "bytes": 5723,
+        "sha256": "41b83b7442e3fdeb44f609ddd3e45cccf906f0134d26aff4c33f4a7fcfd2eb7a",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/design-freeze.json",
+        "bytes": 829,
+        "sha256": "07e07c6c96bf7630385a033bdb9af63355d1efcfbcabdf5ecc22869745295c38",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/development-corrections.json",
+        "bytes": 460,
+        "sha256": "f833ac171aa0487333e5c9eb82489aed1dd72f84575caa5c80f8bc26d6a3ac6b",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/external-wrapper-checks.json",
+        "bytes": 1532,
+        "sha256": "634f98bae30a9b16c0e8e91f0a5c20e7a16a3eaf23802e44046ebe1feabb59e7",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/published-pins.json",
+        "bytes": 946,
+        "sha256": "d3b45f9d93093c5fb92fc958fb52ec7fd4b4a8bc7d957c3892fe7c0b6420601e",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "records/source-freeze.json",
+        "bytes": 959,
+        "sha256": "c01e758dd99c2b88c8b2c617d2516a9f186875c92ab8be5fa8966ab485df50f4",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "vendor/isa.py",
+        "bytes": 6390,
+        "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "vendor/runtime.py",
+        "bytes": 2647,
+        "sha256": "2382f92bc33ca03381490fc95359517b159d4adb27ccc210ba61296227db975f",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/original/stage-a-record100-evidence.tar.xz",
+        "bytes": 80492,
+        "sha256": "c764a88794752df21df1324c8529fda31405f2e179973caa82d8f85a9fc81dc0",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/DELIVERY_MANIFEST.json",
+        "bytes": 4440,
+        "sha256": "5eb299e73be9eed52cf43f24ce9f88fbee27168b6338e9780e9987c3cd3477cf",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/README.md",
+        "bytes": 11184,
+        "sha256": "6c8a65c0f758538a983200b8fa756c62795cbae01e1cbaaf892407621347d1f2",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/frozen-source/base12_ecg_codec_stage_a.tar.xz",
+        "bytes": 26232,
+        "sha256": "f544cd17b8dd4ba5f5643c340c3b6aad92c9d7d501dec9d2bbac6119157e80bd",
+        "method": "pinned_identical_blob_alias",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/intake/acquisition-receipt.json",
+        "bytes": 1783,
+        "sha256": "c7885006c693acbcd3fc693eade47de057ae822bbecf941ab8af9c5ed884fa30",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/REVIEW_MANIFEST.json",
+        "bytes": 1289,
+        "sha256": "d0d11f85201c138ddde51518bfce0d026878bb38b22f8d79865d489021748ebc",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/claude-review-evidence.json",
+        "bytes": 18592,
+        "sha256": "9730a9b53f83164dd4d003cd41fd4aeb62e57a42d082411f99b0f2cd6ce46b7b",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/ecg-stage-a-source-review-evidence.tar.xz",
+        "bytes": 11348,
+        "sha256": "4d9b7a9c69482060ad0a7f99e8bc94384592b627c5a9ee4fe9cabd5dbb9e2b06",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/parent-source-review/static-source-review.md",
+        "bytes": 11620,
+        "sha256": "ac48a5d24832dc59405ded69395759ae8c319f2d4214d02971db05ed311a14a4",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/RESULT.md",
+        "bytes": 11184,
+        "sha256": "6c8a65c0f758538a983200b8fa756c62795cbae01e1cbaaf892407621347d1f2",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/acquire_record100.py",
+        "bytes": 5181,
+        "sha256": "b1390cec949624e5155fee6b9758d7b5571031a34bb93dc5994b70df23224e66",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/environment.json",
+        "bytes": 1499,
+        "sha256": "ca0180af3cb4b01ff70bcfb1ed2ca80b3252882f293bf5b7ea5bc3c40375bb12",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/intake-verification.json",
+        "bytes": 1214,
+        "sha256": "4b0ada40b9c699c408459a4804763ae3674e7f55927610dc0e29767c19e692f8",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-freeze.json",
+        "bytes": 314,
+        "sha256": "2c7910c815fc5c990947e16dfc215dbded0ec4cd9442cfac9d9d00f1efbbde7e",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/launcher-review.md",
+        "bytes": 5862,
+        "sha256": "ccd894903b688a0cf1a1a1535f8a1ca43246c693bec5746668b5bc1e3f94b5cf",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/native-static-review.md",
+        "bytes": 12751,
+        "sha256": "5cc5165c50565fb861003043f4550cdd5a1fbd96f6360bb933fb833acf16f664",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/packet-verification.json",
+        "bytes": 745,
+        "sha256": "9c5a3d233cf900da6ca2bbcd1383ce472412c5f454c21bfe123dc9cf27a91808",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/parent-clearance.json",
+        "bytes": 651,
+        "sha256": "c9f1ac885cb58ac064d162c89f3bdc617c6f682ead6ec0e559e514da8abd6ed6",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/parent-review-verification.json",
+        "bytes": 360,
+        "sha256": "c4e852253e14bcc8c932ed0bff9f65e2ea7ab0603b6dfcf20004f4cbb4ab0307",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/postrun-verification.json",
+        "bytes": 2363,
+        "sha256": "312069ab62770f29593b21a095fe3942a82ad0720613ca562293a4492773b9c9",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/record100-attempt.json",
+        "bytes": 1753,
+        "sha256": "4a08d8cc5203ae0a2eabf82f95216ebbeaf3961b993b1a1274144075cb103ad4",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/result-static-verification.md",
+        "bytes": 8091,
+        "sha256": "6eb724453805eab621a8dc4a2d6385a0bf75bce6a689449bc74447a349d026f9",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/run_once.py",
+        "bytes": 6890,
+        "sha256": "5ca2e22a77ff4519c3890d84f789bab57bdd7da2ce54ea6399d7b33a3903f36f",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/review/wire-static-review.md",
+        "bytes": 14007,
+        "sha256": "182758828656f3f275b10d15618fb7c7df76736b7cbfa4dd2d6f40cf01366c3c",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/RESULTS.json",
+        "bytes": 48198,
+        "sha256": "0ff509aca796b3beff69c91290442b3eb721a0f6a0d6370cec4abbb20f2e2b64",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/execution-receipt.json",
+        "bytes": 1995,
+        "sha256": "720b66fe2716dbdb3566aa5a1a65ff847ca44b11a2f2cc22bdae25eed585b7bb",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/input-and-code.json",
+        "bytes": 9670,
+        "sha256": "92c86dbc1660f6ad91f654b1ac3a3831c4a80e700eecd21ed60bfd5aa05d6904",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "method": "acquired_payload",
+        "matched": true
+      },
+      {
+        "path": "aum-run-2026-10-16/evidence/run/stdout.log",
+        "bytes": 1768,
+        "sha256": "97f766d2cf61f89e8e1358f907954529c288fbb736e9741edbae891548fcd80d",
+        "method": "acquired_payload",
+        "matched": true
+      }
+    ],
+    "outside_acquired_scope_not_checked": []
+  },
+  "stdout_projection": {
+    "source": "run/RESULTS.json",
+    "excluded_top_level_keys": [
+      "owned_receipt"
+    ],
+    "parsed_values_equal": true,
+    "formatted_bytes_equal": true,
+    "new_independent_observation": false
+  },
+  "no_upstream_execution": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/INTEGRATION.md",
+      "bytes": 5109
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/PRESERVATION.json",
+      "bytes": 4486
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/README.md",
+      "bytes": 1339
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/RESULT.md",
+      "bytes": 4275
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/MANIFEST.json",
+      "bytes": 3138
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/source/reference_decode.py",
+      "bytes": 7753
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-codec-stage-a/aum-reference-decode-2026-10-16/evidence/review/source-review.md",
+      "bytes": 7815
+    }
+  ],
+  "next_scope_bytes": 33915,
+  "public_contribution_checks": [
+    "JSON parsing and cumulative arithmetic passed",
+    "relative Markdown links resolve",
+    "private Library identifiers and absolute operational paths excluded",
+    "git diff --check passed"
+  ]
+}

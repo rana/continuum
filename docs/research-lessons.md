@@ -255,6 +255,8 @@ The [Gate-A result-acceptance return](source-review/base12-gate-a-result-accepta
 
 The [Gate-A inventory return](source-review/base12-gate-a-private-inventory.md) fully reconciles saved output metadata through an exact reconstructible view while preserving missing-payload, live-filesystem and on-host observation dependencies. A complete expected path/hash set can support accepted evidence without becoming current absence, file-type or syscall-behavior proof.
 
+The [decoder B1 boundary return](source-review/base12-decoder-b1-boundary-claims.md) keeps a small fixed-profile prerequisite separate from full decoder fit and native build-path maturity. Value identities do not complete flags/register-safe lowerings, and source-based fixed-cost predictions remain predictions until built. Record the exact obstruction removed and every remaining bound rather than promoting a useful intermediate result into the intended application milestone.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

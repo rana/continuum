@@ -1,0 +1,20 @@
+{
+  "source_baseline": "5dda7dccbd12fc82fb0d07223a65b5383ea2792a",
+  "files": [
+    {
+      "path": "docs/source-review/base12-decoder-b1-boundary-claims.md",
+      "bytes": 6848,
+      "sha256": "b84d7f0d52afbd81c520562151e293608d9e2bad9c4631ae3cec3acb275e78c6"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-decoder-b1-boundary-claims.json",
+      "bytes": 5271,
+      "sha256": "e76849e894f1799dfd25049899af13f021891b21994f8d3c866745884399f73a"
+    },
+    {
+      "path": "research/runs/base12-decoder-b1-boundary-claims/validation.json",
+      "bytes": 5082,
+      "sha256": "08f31e628c3f29afdeb8a2d2bb78463ff85cf2a2c440fafec291597f2b4da1e9"
+    }
+  ]
+}

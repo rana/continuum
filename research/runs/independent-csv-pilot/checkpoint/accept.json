@@ -1,0 +1,7 @@
+{
+  "acceptor": "project-checkpoint",
+  "target": "work",
+  "operation_id": "initial-checkpoint",
+  "expected": null,
+  "candidate": "sha256:8595f62d72e0eda9696145a47601c754ff8535b9d45de210c4af954ecdfc4f91"
+}

@@ -1,0 +1,206 @@
+{
+  "passed": true,
+  "observations": [
+    {
+      "options": [],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 4, \"missing\": 1}, {\"name\": \"b\", \"present\": 4, \"missing\": 1}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 4,
+            "missing": 1
+          },
+          {
+            "name": "b",
+            "present": 4,
+            "missing": 1
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        "NA"
+      ],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 3, \"missing\": 2}, {\"name\": \"b\", \"present\": 3, \"missing\": 2}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 3,
+            "missing": 2
+          },
+          {
+            "name": "b",
+            "present": 3,
+            "missing": 2
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        "NA",
+        "--missing-value",
+        "null"
+      ],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 3, \"missing\": 2}, {\"name\": \"b\", \"present\": 1, \"missing\": 4}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 3,
+            "missing": 2
+          },
+          {
+            "name": "b",
+            "present": 1,
+            "missing": 4
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        "NA",
+        "--missing-value",
+        "NA"
+      ],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 3, \"missing\": 2}, {\"name\": \"b\", \"present\": 3, \"missing\": 2}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 3,
+            "missing": 2
+          },
+          {
+            "name": "b",
+            "present": 3,
+            "missing": 2
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        ""
+      ],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 4, \"missing\": 1}, {\"name\": \"b\", \"present\": 4, \"missing\": 1}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 4,
+            "missing": 1
+          },
+          {
+            "name": "b",
+            "present": 4,
+            "missing": 1
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        "na",
+        "--missing-value",
+        " NA "
+      ],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 3, \"missing\": 2}, {\"name\": \"b\", \"present\": 3, \"missing\": 2}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 3,
+            "missing": 2
+          },
+          {
+            "name": "b",
+            "present": 3,
+            "missing": 2
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        " "
+      ],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 3, \"missing\": 2}, {\"name\": \"b\", \"present\": 4, \"missing\": 1}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 3,
+            "missing": 2
+          },
+          {
+            "name": "b",
+            "present": 4,
+            "missing": 1
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        "a,\nb"
+      ],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 3, \"missing\": 2}, {\"name\": \"b\", \"present\": 4, \"missing\": 1}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 3,
+            "missing": 2
+          },
+          {
+            "name": "b",
+            "present": 4,
+            "missing": 1
+          }
+        ]
+      }
+    },
+    {
+      "case": "ragged input under options",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "{\"error\": \"record 1 has 1 cells; expected 2\"}\n"
+    }
+  ]
+}

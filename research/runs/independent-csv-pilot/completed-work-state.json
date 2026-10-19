@@ -1,0 +1,40 @@
+{
+  "schema": "continuum.work_state.v1",
+  "id": "csv-completed-work",
+  "source_snapshot": null,
+  "objective": {
+    "id": "csv-goal",
+    "statement": "Retain the completed independent CSV requirement change and its actual verification for the next useful Continuum improvement.",
+    "done_when": "The successor implementation, coordinator checks, source identities and research observation are published.",
+    "constraints": [
+      "Public standard-library sample; do not treat a successful handoff as a model-performance comparison.",
+      "Stores are disposable; no backup/upgrade or persistent workstation installation claim."
+    ]
+  },
+  "attempts": [],
+  "decisions": [
+    {
+      "id": "csv-policy",
+      "state": "active",
+      "statement": "The actual successor returned source/tests/docs. Applied unchanged, they passed 11 tests, the independent nine-scenario CLI oracle and concrete sample checks. Exact request/reply/validation bytes are separate run evidence; this is an authored summary, not instrumented execution provenance.",
+      "basis_attempt_ids": [],
+      "reopen_when": "An actual user requirement changes matching semantics."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "csv-retrieval",
+      "question": "How should the checkpoint adapter carry already-recorded request/receipt object closure when continuing an actual attempt?",
+      "why_it_matters": "This pilot again left attempts empty because a fresh store cannot import existing referenced blobs/snapshots. Exact execution history is preserved outside native WorkState; a useful next unit should test a small import mechanism rather than add a new runner."
+    }
+  ],
+  "handoff": {
+    "id": "csv-followup-offer",
+    "from_worker": "codex-coordinator",
+    "to_worker": "claude-successor",
+    "scope": "Next active implementation owner should scope and test minimal explicit object-closure import for recorded attempts. This is an offer; no recipient acceptance is claimed.",
+    "required_decision_ids": [
+      "csv-policy"
+    ]
+  }
+}

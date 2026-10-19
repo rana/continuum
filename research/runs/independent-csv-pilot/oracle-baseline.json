@@ -1,0 +1,50 @@
+{
+  "passed": false,
+  "observations": [
+    {
+      "options": [],
+      "returncode": 0,
+      "stdout": "{\"rows\": 5, \"columns\": [{\"name\": \"a\", \"present\": 4, \"missing\": 1}, {\"name\": \"b\", \"present\": 4, \"missing\": 1}]}\n",
+      "stderr": "",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 4,
+            "missing": 1
+          },
+          {
+            "name": "b",
+            "present": 4,
+            "missing": 1
+          }
+        ]
+      }
+    },
+    {
+      "options": [
+        "--missing-value",
+        "NA"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: inspect_csv.py [-h] input\ninspect_csv.py: error: unrecognized arguments: --missing-value NA\n",
+      "expected": {
+        "rows": 5,
+        "columns": [
+          {
+            "name": "a",
+            "present": 3,
+            "missing": 2
+          },
+          {
+            "name": "b",
+            "present": 3,
+            "missing": 2
+          }
+        ]
+      }
+    }
+  ]
+}

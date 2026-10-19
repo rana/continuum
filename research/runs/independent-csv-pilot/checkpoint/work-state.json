@@ -1,0 +1,42 @@
+{
+  "schema": "continuum.work_state.v1",
+  "id": "csv-pilot-work",
+  "source_snapshot": "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491",
+  "objective": {
+    "id": "csv-goal",
+    "statement": "Continue the independent CSV inspection sample by implementing repeatable --missing-value TOKEN options. Exact empty string is always missing; listed tokens add exact case-sensitive matches, with no trimming. Duplicate tokens never double-count. Default output and validation remain unchanged.",
+    "done_when": "Return implementable source and meaningful tests; the coordinator must execute them and record the result, not infer execution from your reply.",
+    "constraints": [
+      "Public standard-library Python sample, not a new product or native Continuum feature.",
+      "The captured source contains README.md, inspect_csv.py, test_inspect_csv.py and sample.csv. Request the exact files needed before implementation; receiver has supplied text only, no filesystem tools.",
+      "Preserve quoted commas/newlines, unique nonempty headers, rectangular records, UTF-8 errors and no partial stdout on error.",
+      "Whitespace, case variants and padded tokens are present unless each is explicitly listed; --missing-value with an empty argument is valid and adds nothing beyond default."
+    ]
+  },
+  "attempts": [],
+  "decisions": [
+    {
+      "id": "csv-policy",
+      "state": "active",
+      "statement": "Use explicit opt-in exact missing tokens; do not infer common NA spellings or change output schema. Baseline four CLI integration tests passed in the coordinator environment; raw output is separate evidence, not authenticated by this authored decision.",
+      "basis_attempt_ids": [],
+      "reopen_when": "An actual user requirement changes matching semantics."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "csv-retrieval",
+      "question": "Which source and test context does a fresh receiver need beyond this pack to implement the change correctly?",
+      "why_it_matters": "The previous self-development pilot required extra source. This independent workload tests that boundary with different vocabulary."
+    }
+  ],
+  "handoff": {
+    "id": "csv-requirement-handoff",
+    "from_worker": "codex-coordinator",
+    "to_worker": "claude-successor",
+    "scope": "First request the necessary retained source files. After receiving them, implement the requirement and report needed/missing/unused context and extra retrieval. Do not claim execution.",
+    "required_decision_ids": [
+      "csv-policy"
+    ]
+  }
+}

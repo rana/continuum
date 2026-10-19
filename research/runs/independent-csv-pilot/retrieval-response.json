@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "**Next action:** Retrieve the source before implementing anything. I have not run or changed anything, and I hold no file contents.\n\n**Files I need, verbatim:**\n1. `inspect_csv.py`: the CLI, parsing, validation, output and error paths. The change goes here.\n2. `test_inspect_csv.py`: the four baseline CLI integration tests, so I can match their harness and add tests for the new option.\n3. `README.md`: the documented usage and output, so I can document `--missing-value` without changing the stated defaults.\n\nI don't need `sample.csv` unless the tests or README depend on it. If they do, I'll request it with the reason.\n\n**Missing facts that block correct implementation:**\n- **What \"missing\" already does.** The pack implies empty values are counted as missing, but not where. I need to know whether a matched token also affects other statistics, such as type inference, distinct or unique counts, or min/max. The source should answer this. If it doesn't, the coordinator must decide.\n- **Test conventions.** I need the Python version and test framework (unittest or pytest). The test file should show both.\n\n\"Duplicate tokens never double-count\" I'll read as: repeated `--missing-value X` options form a set, and each cell is counted at most once."
+    }
+  ],
+  "structuredContent": {
+    "status": "OK",
+    "text": "**Next action:** Retrieve the source before implementing anything. I have not run or changed anything, and I hold no file contents.\n\n**Files I need, verbatim:**\n1. `inspect_csv.py`: the CLI, parsing, validation, output and error paths. The change goes here.\n2. `test_inspect_csv.py`: the four baseline CLI integration tests, so I can match their harness and add tests for the new option.\n3. `README.md`: the documented usage and output, so I can document `--missing-value` without changing the stated defaults.\n\nI don't need `sample.csv` unless the tests or README depend on it. If they do, I'll request it with the reason.\n\n**Missing facts that block correct implementation:**\n- **What \"missing\" already does.** The pack implies empty values are counted as missing, but not where. I need to know whether a matched token also affects other statistics, such as type inference, distinct or unique counts, or min/max. The source should answer this. If it doesn't, the coordinator must decide.\n- **Test conventions.** I need the Python version and test framework (unittest or pytest). The test file should show both.\n\n\"Duplicate tokens never double-count\" I'll read as: repeated `--missing-value X` options form a set, and each cell is counted at most once.",
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 1926,
+      "output_tokens": 863,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none",
+    "image_count": 0,
+    "images": []
+  },
+  "isError": false
+}

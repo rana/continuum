@@ -1,0 +1,9 @@
+test_exact_empty_cells_and_quoted_records (test_inspect_csv.CsvTests.test_exact_empty_cells_and_quoted_records) ... ok
+test_header_only (test_inspect_csv.CsvTests.test_header_only) ... ok
+test_invalid_inputs_fail_without_partial_report (test_inspect_csv.CsvTests.test_invalid_inputs_fail_without_partial_report) ... ok
+test_whitespace_and_na_are_present (test_inspect_csv.CsvTests.test_whitespace_and_na_are_present) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.325s
+
+OK

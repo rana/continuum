@@ -32,7 +32,7 @@ This method adapts the established Base12 research/implementation bridge. It car
 5. Preserve the Research Delta and meaningful evidence in the repository, using the existing [Research Record](../../protocols/research-record.md) method. Publish a coherent scoped change under existing authority, verify the resulting remote state, and inspect applicable CI.
 6. Reconcile the selected next action in `CURRENT.md` when it materially changes. Leave a sufficient partial-work checkpoint at an interruption. Continue another ready unit when the active execution environment allows it, or let the configured continuation mechanism resume later.
 
-Roughly 15 minutes is a checkpoint target within active work, not a command to launch another worker. Finish at a coherent boundary; do not create an empty checkpoint commit just because time elapsed. The currently exposed recurring scheduler supports hourly wakeups. A shorter recurring interval requires a separately verified capable host; this repository does not install one.
+Roughly 15 minutes is a checkpoint target within active work, not a command to launch another worker. Finish at a coherent boundary; do not create an empty checkpoint commit just because time elapsed. Choose a cadence supported by the actual current host. The initial cloud setup exposed hourly wakeups; a later local desktop same-chat minute-based heartbeat is recorded in CURRENT.md with its actual confirmation and limits. This repository does not itself install a scheduler.
 
 ## Research Delta
 

@@ -1,0 +1,12 @@
+{
+  "injection": "Only a scratch oracle invokes an off-fixture path; original source unchanged.",
+  "driver_returncode": 1,
+  "driver_stderr_utf8": "Traceback (most recent call last):\n  File \"/tmp/tmpo2ncyzn4/research/runs/source-bound-verification/capture.py\", line 293, in <module>\n    sys.exit(main())\n             ~~~~^^\n  File \"/tmp/tmpo2ncyzn4/research/runs/source-bound-verification/capture.py\", line 288, in main\n    capture(args)\n    ~~~~~~~^^^^^^\n  File \"/tmp/tmpo2ncyzn4/research/runs/source-bound-verification/capture.py\", line 230, in capture\n    raise RuntimeError('verification failed; request, receipt and diagnostics retained')\nRuntimeError: verification failed; request, receipt and diagnostics retained\n",
+  "failed_receipt_native_id": "sha256:fa03de64912b33322ff381d5e2c6e845d0cc0f9e9fbb456c533f303ba84f66c2",
+  "failed_receipt_restored_byte_for_byte": true,
+  "missing_worker_result_preserved_as_absent": true,
+  "oracle_traceback_preserved_in_receipt": true,
+  "no_success_checkpoint": true,
+  "original_oracle_sha256_before": "85c39607732567b6ecbc1a5478546799323adee53e6534f334285051264e2d59",
+  "original_oracle_sha256_after": "85c39607732567b6ecbc1a5478546799323adee53e6534f334285051264e2d59"
+}

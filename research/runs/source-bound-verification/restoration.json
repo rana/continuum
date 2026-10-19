@@ -1,0 +1,5 @@
+{
+  "same_context_pack": true,
+  "context_pack": "sha256:4cf78c9e2ee123e7ab1ed1b971491054179e3e0478f99aa7b2be7b64ae6df688",
+  "scope": "Same recorded request/receipt restored into a fresh store; tests not repeated during restoration."
+}

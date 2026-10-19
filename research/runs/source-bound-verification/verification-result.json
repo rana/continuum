@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "tests": 11,
+  "oracle_cases": 9,
+  "retained_actual_child_inputs": 37,
+  "failed_receipt_custody_verified": true,
+  "same_pack_restored": true,
+  "new_execution": false
+}

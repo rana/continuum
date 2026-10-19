@@ -1,0 +1,21 @@
+{
+  "type": "snapshot",
+  "entries": [
+    {
+      "path": "README.md",
+      "blob": "sha256:a75d9b86792a9b8289599052e766a2658a0cb41093f8ab278ba0cd65d30c8648"
+    },
+    {
+      "path": "inspect_csv.py",
+      "blob": "sha256:86b3465ad7081f99e7163a9abc31c9b60d9f8884decc74a4ee7da76119204077"
+    },
+    {
+      "path": "sample.csv",
+      "blob": "sha256:7ace13ec5c61121ca65c38cb35ced0fd4ab758ecda35d6bfbfda463c513c2fab"
+    },
+    {
+      "path": "test_inspect_csv.py",
+      "blob": "sha256:7691505969a264f43f1e079ba2532d7ab16e126b6da07fd1be53ce1e5dde605c"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "continuum.project_checkpoint.v1",
+  "created_utc": "2026-10-19T06:40:42.985271+00:00",
+  "source": {
+    "commit": "27e03a7ffd90260fc9545d89e11434d341043110",
+    "git_tree": "1341bc75c14ffca8f26affa2f25a5fea1d40437d",
+    "snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+    "files": [
+      {
+        "path": "README.md",
+        "git_mode": "100644",
+        "git_blob": "fe05b1caecb72544df1b9ce94147e9ed0ed77768",
+        "sha256": "aa0c26af955c53b420c7774cfe90615d88eb397357896f2a2d0a8484a39e4339",
+        "bytes": 2071,
+        "blob": "sha256:a75d9b86792a9b8289599052e766a2658a0cb41093f8ab278ba0cd65d30c8648"
+      },
+      {
+        "path": "inspect_csv.py",
+        "git_mode": "100644",
+        "git_blob": "575f4f1a49289bf48a8f05c9c8bf5b91e160737c",
+        "sha256": "f5f997878d4f61f28f79c4d19fdcbd9c18023fa68617cbb8bf43a1b246e7a092",
+        "bytes": 1720,
+        "blob": "sha256:86b3465ad7081f99e7163a9abc31c9b60d9f8884decc74a4ee7da76119204077"
+      },
+      {
+        "path": "sample.csv",
+        "git_mode": "100644",
+        "git_blob": "cfcf8504c0a3ca09c89d41c7007f0b49ded3bac8",
+        "sha256": "af0ebbaeba721099ca10742b81b77cf4236307c343300b94b064ff3f90c6e4be",
+        "bytes": 67,
+        "blob": "sha256:7ace13ec5c61121ca65c38cb35ced0fd4ab758ecda35d6bfbfda463c513c2fab"
+      },
+      {
+        "path": "test_inspect_csv.py",
+        "git_mode": "100644",
+        "git_blob": "aae1dc6bb8fdb4bfa57a60c1deda551fd683a331",
+        "sha256": "94f1a5a8c24ef0a72b9cc4ee460dabb5deb6324528f330cf93233a632b369167",
+        "bytes": 4523,
+        "blob": "sha256:7691505969a264f43f1e079ba2532d7ab16e126b6da07fd1be53ce1e5dde605c"
+      }
+    ]
+  },
+  "work_state": "sha256:f8bda67df65bc7d64684d01750c14e68c964a6678ace575ac232908c292945e1",
+  "context_pack": "sha256:4cf78c9e2ee123e7ab1ed1b971491054179e3e0478f99aa7b2be7b64ae6df688",
+  "imports": {
+    "bundle_sha256": "805f71299dab19833cf952e3d7f08e83f3687dc5f15111f8ecc39a0f1f89b3cc",
+    "objects": [
+      {
+        "id": "sha256:012c05c16cc40f26716ca25d809cdb4dd5325d60e39c9abdaf0c4796e97197ba",
+        "type": "blob",
+        "preexisting_in_source_capture": false
+      },
+      {
+        "id": "sha256:05709906745226db8cafc9eb6b427b905e2d657d16dba8e91f1a8630859dd3f5",
+        "type": "blob",
+        "preexisting_in_source_capture": false
+      },
+      {
+        "id": "sha256:260b8cac2a2634acba84fbfa5c0b0616e99219ccb62f1c1dcae0f3708e18a538",
+        "type": "blob",
+        "preexisting_in_source_capture": false
+      },
+      {
+        "id": "sha256:6157b34a7685e19b62df6c18924137ea67b7beab1b57cd7696d1190a22416a75",
+        "type": "blob",
+        "preexisting_in_source_capture": false
+      },
+      {
+        "id": "sha256:7ace13ec5c61121ca65c38cb35ced0fd4ab758ecda35d6bfbfda463c513c2fab",
+        "type": "blob",
+        "preexisting_in_source_capture": true
+      },
+      {
+        "id": "sha256:947cf469f0d2662e942e5edf01d1bea2920926452bfb143dec99d1f100063f02",
+        "type": "blob",
+        "preexisting_in_source_capture": false
+      },
+      {
+        "id": "sha256:a154770b60c56750d76dcb2b2d0ce8cb378caf9e55077ea267d8b12a8655d234",
+        "type": "blob",
+        "preexisting_in_source_capture": false
+      },
+      {
+        "id": "sha256:a1c15fd80f97e53c7cbadeb3e1f13ad811360ad767fbd2ecf61d9d5c45e940a9",
+        "type": "blob",
+        "preexisting_in_source_capture": false
+      },
+      {
+        "id": "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491",
+        "type": "snapshot",
+        "preexisting_in_source_capture": false
+      }
+    ],
+    "limits": {
+      "max_bundle_bytes": 16777216,
+      "max_objects": 256
+    }
+  },
+  "binary_sha256": "81dd3a7e25c3d00714f42e127ae114118001720148eb5719110e79fa98a22eb9",
+  "build_provenance_sha256": "99bea2e52e8bac60fe50d33cf97c4528e9d065ddbd2fa7bb68a4d0b74651be51",
+  "adapter_sha256": "ad761e9f1f529d1a837e45b399efd3a25d7c99ea264cf6cdeeb7135736e7bb12",
+  "environment": {
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]"
+  },
+  "limits": [
+    "Committed regular UTF-8 paths only; working-tree edits and untracked files are excluded.",
+    "NFC/casefold path aliases and file/directory aliases are conservatively rejected; retained bytes are rechecked.",
+    "Git executable modes are inventoried but not represented by native Snapshot v1.",
+    "Build provenance is caller-authored; digest binding is checked, build truth is not.",
+    "Disposable store: no upgrade, backup, workstation installation or recipient effect claimed.",
+    "Context coverage describes WorkState records, not source-file reading coverage."
+  ]
+}

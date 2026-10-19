@@ -1,6 +1,6 @@
 # Execution, context, and model evolution
 
-Status: portable design contract; live model invocation and automatic context preparation are not implemented in the first Rust slice.
+Status: the broader execution and model-evolution design remains a portable contract. Bounded deterministic context preparation, exact projection verification, acceptance-anchor observation, and explicit acknowledgement-reference checks are implemented in [context and handoff v1](context-handoff-v1.md). A native provider runner is not implemented.
 
 ## A model name is not an execution identity
 
@@ -57,6 +57,8 @@ A context pack has a stable exact-byte identity and structured selection metadat
 Store exact rendered bytes when permitted. A hash of a summary alone does not show that its claims are faithful. Typed extracts can be checked mechanically; arbitrary prose needs source review. A stale-context detector works only over declared or discoverable dependency relations. It should emit a review candidate, not invalidate a decision automatically.
 
 The high-value first experiment is context recovery: can a fresh agent identify the accepted state, most important uncertainty, and next action without rereading the entire project or duplicating completed work?
+
+The current selector implements a deliberately small part of this design. It preserves whole mandatory records and may omit optional historical decisions under an explicit byte budget. It does not discover relevance, redact private information, estimate token counts, or certify arbitrary authored statements. Currentness is observed against an optional exact accepted-state anchor; it is not a lock or authority to perform a later action.
 
 ## Collaboration as a controlled method
 

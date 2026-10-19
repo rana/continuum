@@ -4,6 +4,7 @@
 //! names are namespaces, not authenticated identities. Recorded evidence is a
 //! caller's declaration, not a trusted verification result.
 
+pub mod context;
 mod object;
 mod store;
 

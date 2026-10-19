@@ -1,8 +1,20 @@
-# Source review checkpoint
+# Source review checkpoints
 
 This directory records what was actually inspected while designing Continuum. It preserves the remaining reading task alongside the completed work. A source review, a byte-identity check, a saved experimental result, and a fresh execution are different kinds of evidence.
 
-The architecture lessons are in [research-lessons.md](../research-lessons.md). The detailed [Base12 coverage ledger](base12-coverage.json) contains aggregate coverage and metadata for the 88 directly read files. It contains source paths, content identities, byte counts, and review status. The complete private-tree inventory is retained separately; it is not needed in the public implementation.
+The architecture lessons are in [research-lessons.md](../research-lessons.md). The [initial Base12 ledger](base12-coverage.json) preserves the original 88-file checkpoint; the [extended cumulative ledger](base12-coverage-extended.json) records 161 directly read distinct blobs. They contain aggregate coverage, reviewed source paths, content identities, byte counts, and review status. The complete private-tree inventory is retained separately; it is not needed in the public implementation.
+
+## Later completed review groups
+
+The [rounded-operation and native-launch follow-up](base12-followup.md) adds 47 new semantic readings; the [immediate native research-loop review](base12-research-loop.md) adds 26. Together with the initial 88, this gives 161 distinct fully read blobs, totaling 1,226,434 bytes. Another 46 paths contain byte-identical content. Exact local acquisition now covers 539 paths, 530 distinct blobs, and 4,536,603 bytes across paths. These cumulative counts were reconciled against the pinned tree and local byte identities.
+
+The remaining 5,386 paths, representing 4,268 distinct blobs, have no complete semantic-review claim. The generated 144,160-byte native static inventory received full mechanical relation checks, which remain separate from semantic reading. Source reading, binary inspection, numerical evidence interpretation, and reproduction are still distinct tasks.
+
+The [Prime follow-up](prime-followup.md) records complete reading of all eight retained dialogue captures, eight associated receipts, and three prose reports. Combined kit coverage is 76 complete semantic readings and seven separate historical source diff reviews. The report classifies the remaining 110 files explicitly, including authored structured material among the gaps. The live checkout remains unavailable.
+
+## Initial checkpoint retained below
+
+The following counts describe the original checkpoint, not the later cumulative review. They remain useful for reconstructing how coverage advanced.
 
 ## Base12 at the pinned commit
 

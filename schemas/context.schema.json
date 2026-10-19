@@ -1,0 +1,541 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Continuum context records, version1",
+  "description": "Structural projection of the WorkState, PrepareContextRequest, ContextPack manifest, and ContextAcknowledgement records in src/context.rs. CLI response envelopes and rendered JSON-lines records are outside this schema's top-level union. Native validation also checks recursive duplicate JSON keys before decoding, total input and UTF-8 byte limits, aggregate record count, identity uniqueness, cross-record links, exact object custody/kinds, anchor membership/freshness, selector reproducibility, and acknowledgement-reference consistency. This schema alone establishes none of those checks or real-world truth.",
+  "$defs": {
+    "stable_id": {
+      "type": "string",
+      "pattern": "^(?!sha256:)[A-Za-z0-9_.:-]{1,128}(?![\\s\\S])"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}(?![\\s\\S])"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 8192,
+      "pattern": "^[^\\u0000]*$",
+      "description": "Runtime additionally rejects whitespace-only text and limits length to8192 UTF-8 bytes, not Unicode characters."
+    },
+    "id_list": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/stable_id"
+      },
+      "maxItems": 256,
+      "uniqueItems": true
+    },
+    "head": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "root": {
+          "$ref": "#/$defs/object_id"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9223372036854775807
+        }
+      },
+      "required": [
+        "root",
+        "generation"
+      ]
+    },
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "acceptor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expected": {
+          "$ref": "#/$defs/head"
+        },
+        "work_state_path": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "acceptor",
+        "target",
+        "expected",
+        "work_state_path"
+      ]
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "statement": {
+          "$ref": "#/$defs/text"
+        },
+        "done_when": {
+          "$ref": "#/$defs/text"
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          },
+          "maxItems": 32
+        }
+      },
+      "required": [
+        "id",
+        "statement",
+        "done_when",
+        "constraints"
+      ]
+    },
+    "attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "source_snapshot": {
+          "$ref": "#/$defs/object_id"
+        },
+        "summary": {
+          "$ref": "#/$defs/text"
+        },
+        "dispatch_state": {
+          "enum": [
+            "never_dispatched",
+            "may_have_been_sent",
+            "receipt_recorded"
+          ]
+        },
+        "request": {
+          "$ref": "#/$defs/object_id"
+        },
+        "receipt": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/object_id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "outcome_note": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "id",
+        "operation_id",
+        "source_snapshot",
+        "summary",
+        "dispatch_state",
+        "request",
+        "outcome_note"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "dispatch_state": {
+                "const": "receipt_recorded"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "receipt"
+            ],
+            "properties": {
+              "receipt": {
+                "$ref": "#/$defs/object_id"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "receipt": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "state": {
+          "enum": [
+            "active",
+            "historical"
+          ]
+        },
+        "statement": {
+          "$ref": "#/$defs/text"
+        },
+        "basis_attempt_ids": {
+          "$ref": "#/$defs/id_list"
+        },
+        "reopen_when": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "id",
+        "state",
+        "statement",
+        "basis_attempt_ids",
+        "reopen_when"
+      ]
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "question": {
+          "$ref": "#/$defs/text"
+        },
+        "why_it_matters": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "id",
+        "question",
+        "why_it_matters"
+      ]
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "from_worker": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "to_worker": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "scope": {
+          "$ref": "#/$defs/text"
+        },
+        "required_decision_ids": {
+          "$ref": "#/$defs/id_list"
+        }
+      },
+      "required": [
+        "id",
+        "from_worker",
+        "to_worker",
+        "scope",
+        "required_decision_ids"
+      ]
+    },
+    "work_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "continuum.work_state.v1"
+        },
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "source_snapshot": {
+          "$ref": "#/$defs/object_id"
+        },
+        "objective": {
+          "$ref": "#/$defs/objective"
+        },
+        "attempts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/attempt"
+          },
+          "maxItems": 253
+        },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/decision"
+          },
+          "maxItems": 253
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uncertainty"
+          },
+          "maxItems": 253
+        },
+        "handoff": {
+          "$ref": "#/$defs/handoff"
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "source_snapshot",
+        "objective",
+        "attempts",
+        "decisions",
+        "uncertainties",
+        "handoff"
+      ]
+    },
+    "prepare_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "continuum.prepare_context.v1"
+        },
+        "work_state": {
+          "$ref": "#/$defs/object_id"
+        },
+        "max_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262144
+        },
+        "anchor": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/anchor"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "work_state",
+        "max_bytes"
+      ]
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "kind": {
+          "enum": [
+            "work_state",
+            "objective",
+            "attempt",
+            "decision",
+            "uncertainty",
+            "handoff"
+          ]
+        },
+        "reason": {
+          "enum": [
+            "work_identity",
+            "objective_and_constraints",
+            "attempt_recovery",
+            "active_decision",
+            "handoff_dependency",
+            "unresolved_uncertainty",
+            "offered_handoff",
+            "optional_history"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "reason"
+      ]
+    },
+    "omission": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "kind": {
+          "const": "decision"
+        },
+        "reason": {
+          "const": "byte_budget_optional_history"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "reason"
+      ]
+    },
+    "context_pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "continuum.context_pack.v1"
+        },
+        "work_state": {
+          "$ref": "#/$defs/object_id"
+        },
+        "work_state_id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "source_snapshot": {
+          "$ref": "#/$defs/object_id"
+        },
+        "handoff_id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "selector_revision": {
+          "const": "continuum.whole_records.v1"
+        },
+        "budget_method": {
+          "const": "utf8_bytes_including_newlines"
+        },
+        "max_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262144
+        },
+        "rendered": {
+          "$ref": "#/$defs/object_id"
+        },
+        "rendered_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262144
+        },
+        "included": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/selection"
+          },
+          "maxItems": 256
+        },
+        "omitted": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/omission"
+          },
+          "maxItems": 256
+        },
+        "anchor": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/anchor"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "limits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 256
+        }
+      },
+      "required": [
+        "schema",
+        "work_state",
+        "work_state_id",
+        "source_snapshot",
+        "handoff_id",
+        "selector_revision",
+        "budget_method",
+        "max_bytes",
+        "rendered",
+        "rendered_bytes",
+        "included",
+        "omitted",
+        "anchor",
+        "limits"
+      ]
+    },
+    "context_acknowledgement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "continuum.context_acknowledgement.v1"
+        },
+        "id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "context_pack": {
+          "$ref": "#/$defs/object_id"
+        },
+        "handoff_id": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "recipient_worker": {
+          "$ref": "#/$defs/stable_id"
+        },
+        "included_ids": {
+          "$ref": "#/$defs/id_list"
+        },
+        "omitted_ids": {
+          "$ref": "#/$defs/id_list"
+        },
+        "note": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "context_pack",
+        "handoff_id",
+        "recipient_worker",
+        "included_ids",
+        "omitted_ids",
+        "note"
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/work_state"
+    },
+    {
+      "$ref": "#/$defs/prepare_context"
+    },
+    {
+      "$ref": "#/$defs/context_pack"
+    },
+    {
+      "$ref": "#/$defs/context_acknowledgement"
+    }
+  ]
+}

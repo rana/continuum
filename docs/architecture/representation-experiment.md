@@ -1,6 +1,6 @@
 # Research experiment: is a context sufficient for the next decision?
 
-Status: proposed experiment, not an implemented automatic detector.
+Status: the local distinction-preservation example is implemented; the controlled model-performance comparison below remains a proposed experiment. There is no automatic universal sufficiency detector.
 
 Prime Radiant's available research kit treats state representation, observability, and information loss as research questions. Continuum can borrow that method without borrowing a physical theory: investigate whether a project representation preserves what a future decision actually needs.
 
@@ -16,6 +16,8 @@ A source-only summary maps both histories to the same context. The next action s
 A repository that remembers only source state loses this distinction. A work graph retaining the operation identity and receipt state can preserve it.
 
 The current Rust acceptance experiment is a local concrete witness: process death after commit but before acknowledgement leaves a recoverable receipt, so a fresh process can return the existing result.
+
+The [context example](../../examples/context_handoff.py) now constructs the same-source pair with different authored dispatch states. Separate CLI processes prepare, inspect, verify, and acknowledge each exact pack. One case renders conditional first-request guidance; the other renders reconciliation guidance. Both explicitly state that dispatch claims are not independently verified. After an accepted head advances, historical verification still succeeds while current-context verification rejects the old anchor. These are correctness checks on retained distinctions; different hashes or generated guidance alone do not demonstrate a model's better decision.
 
 ## General test
 
@@ -38,6 +40,8 @@ Potential hidden distinctions include:
 Compare at least three context conditions: a source-only description, an ordinary narrative handoff, and an exact graph projection with typed state and expandable sources. Hold the task and budget comparable, preserve model/provider exposure, and evaluate against the actual decision contract.
 
 Measure wrong action, duplicated work, missed uncertainty, time to correct orientation, and context size. Collect failure cases as preserved fixtures. Improvement is an empirical question.
+
+Claude's third design review adds a useful control: compare raw facts with facts plus derived guidance, use the same neutral action menu, and hold prose and budget comparable. Keep the expected answer outside the model exposure. Remove one decisive field at a time to test whether it changes the result. One successful fresh-session continuation is a demonstration, not a substitute for this controlled comparison.
 
 This is the central research opening: context preparation can become a tested engineering function rather than an ever-longer summary prompt.
 

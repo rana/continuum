@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "record_kind": "context_verification",
+  "recorded_at": "2026-10-19T02:55:21.682672+00:00",
+  "verifier": "coordinating agent; independent rerun after implementer froze code",
+  "toolchain": {
+    "rust": "1.99.1",
+    "host": "x86_64-unknown-linux-gnu",
+    "profile": "debug/test"
+  },
+  "source_files_sha256": {
+    "Cargo.toml": "5739f85b75d23eb83b81c22b41bf8ef83425d0b2e5c4da325a7e810ba6d0762b",
+    "Cargo.lock": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb",
+    "src/context.rs": "0d371595ddcff87c119ea29a568e50cc0de111e25b3c9d0920d5d4d9a3f03539",
+    "src/lib.rs": "0e6b4506d7b1b5d2b0b3ee81f89144b6205ebadfca6b41e5935425d3fe76e66b",
+    "src/main.rs": "6daa02817a955514cf3a3c56a9bcd9291fdb7efd428d2fb39c746742e9f9ede6",
+    "src/object.rs": "3c97e27383410a004be5d263e61b66d976be6dcc00983f361b64ba37d04d36ad",
+    "src/store.rs": "4a22be3dc5cf87918501a20137bb0963b94d8cbe9375a82313ec7da1d82b8b83",
+    "tests/context_handoff.rs": "73691f007e96fc0cbc8f8039ff84543ce0892d5583928543222a2617afc958e5",
+    "tests/crash_recovery.rs": "c2edcd04bf7caff61b63a4a7205c429e409a262a5fa712642afe19326dff3322",
+    "tests/invariants.rs": "8c72cc3cc969232cf893936f7ffcfe30de6a063ea17f20e365cc44ae7f28b475",
+    "examples/context_handoff.py": "d93c54bbe4457a0570bc24291eec2dba3e84a4ed73171cb2078fb8b748f4e044"
+  },
+  "checks": [
+    {
+      "command": "cargo fmt --check",
+      "result": "passed",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo clippy --locked --offline --all-targets --all-features -- -D warnings",
+      "result": "passed",
+      "exit_code": 0
+    },
+    {
+      "command": "cargo test --locked --offline --all-features",
+      "result": "passed",
+      "exit_code": 0,
+      "context_scenarios": 9,
+      "invariants": 9,
+      "subprocess_recovery": 2,
+      "total": 20
+    },
+    {
+      "command": "python3 examples/context_handoff.py --binary target/debug/continuum --output <fresh-output-directory>",
+      "result": "passed",
+      "exit_code": 0,
+      "result_ref": "research/runs/context-example.json",
+      "same_source_different_declared_dispatch_preserved": true,
+      "old_pack_intact_but_stale": true
+    },
+    {
+      "validator": "Python jsonschema 4.26.0 Draft202012Validator",
+      "verifier": "implementation/schema reviewer",
+      "result": "passed",
+      "schema": "schemas/context.schema.json",
+      "actual_example_instances": 9,
+      "regression": "ID patterns reject trailing newline; runtime and schema agree for these examples",
+      "limits": "Structural validation does not replace native byte limits, cross-record checks, custody, or freshness observation."
+    }
+  ],
+  "limits": [
+    "Local same-host correctness scenarios, not physical power-loss certification.",
+    "Source and receipt custody do not establish authored truth, identity, understanding, or action authority.",
+    "No comparative model-performance, throughput, WAN, or high-load claim.",
+    "No provider runner, external dispatch ledger, multi-user service, sandbox, or host synchronization is implemented.",
+    "No upstream Base12 or Prime Radiant program or experiment was executed.",
+    "GitHub Actions has not yet run remotely."
+  ],
+  "schema_sha256": "ce24430aac37d340d658c3350bea06d6c74fe25378359107b62ed200c046aaaf"
+}

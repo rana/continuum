@@ -1,3 +1,4 @@
+use continuum_core::context::{self, PrepareContextRequest};
 use continuum_core::{AcceptRequest, EvidenceOutcome, Object, Outcome, SnapshotEntry, Store};
 use serde::de::DeserializeOwned;
 use serde_json::{Value, json};
@@ -14,11 +15,30 @@ const HELP: &str = "Continuum experimental native core
   continuum accept DB REQUEST.json
   continuum receipt DB ACCEPTOR OPERATION_ID
   continuum events DB ACCEPTOR TARGET
+  continuum prepare-context DB REQUEST.json
+  continuum inspect-context DB CONTEXT_PACK_ID
+  continuum verify-context DB CONTEXT_PACK_ID
+  continuum verify-current-context DB CONTEXT_PACK_ID
+  continuum acknowledge-handoff DB ACKNOWLEDGEMENT.json
+  continuum verify-handoff DB ACKNOWLEDGEMENT_ID
   continuum demo DB
 
 Output is JSON. Acceptance performs a local conditional state transition;
 it does not authenticate the acceptor or validate declared evidence.
+Context commands preserve exact source/rendered Blobs and conditional guidance.
+Handoff acknowledgements validate context references only, not external effects.
 ";
+
+fn read_context_bytes(path: &str) -> CliResult<Vec<u8>> {
+    let mut bytes = Vec::new();
+    fs::File::open(path)?
+        .take(context::MAX_CONTEXT_INPUT_BYTES as u64 + 1)
+        .read_to_end(&mut bytes)?;
+    if bytes.len() > context::MAX_CONTEXT_INPUT_BYTES {
+        return Err("context input exceeds 256 KiB".into());
+    }
+    Ok(bytes)
+}
 
 fn read_json<T: DeserializeOwned>(path: &str) -> CliResult<T> {
     let mut bytes = Vec::new();
@@ -37,7 +57,16 @@ fn run(args: &[String]) -> CliResult<Value> {
     };
     let required_args = match command.as_str() {
         "init" | "demo" => 0,
-        "blob" | "put" | "get" | "accept" => 1,
+        "blob"
+        | "put"
+        | "get"
+        | "accept"
+        | "prepare-context"
+        | "inspect-context"
+        | "verify-context"
+        | "verify-current-context"
+        | "acknowledge-handoff"
+        | "verify-handoff" => 1,
         "head" | "receipt" | "events" => 2,
         _ => return Err(HELP.into()),
     };
@@ -73,6 +102,21 @@ fn run(args: &[String]) -> CliResult<Value> {
         ("accept", [path]) => Ok(json!(store.accept(&read_json::<AcceptRequest>(path)?)?)),
         ("receipt", [acceptor, operation]) => Ok(json!(store.receipt(acceptor, operation)?)),
         ("events", [acceptor, target]) => Ok(json!(store.events(acceptor, target)?)),
+        ("prepare-context", [path]) => {
+            let request: PrepareContextRequest =
+                context::decode_context_json(&read_context_bytes(path)?)?;
+            Ok(json!(context::prepare_context(&mut store, &request)?))
+        }
+        ("inspect-context", [id]) => Ok(json!(context::inspect_context(&store, id.parse()?)?)),
+        ("verify-context", [id]) => Ok(json!(context::verify_context(&store, id.parse()?)?)),
+        ("verify-current-context", [id]) => {
+            Ok(json!(context::verify_current_context(&store, id.parse()?)?))
+        }
+        ("acknowledge-handoff", [path]) => Ok(json!(context::acknowledge_handoff(
+            &mut store,
+            &read_context_bytes(path)?
+        )?)),
+        ("verify-handoff", [id]) => Ok(json!(context::verify_handoff(&store, id.parse()?)?)),
         ("demo", []) => demo(&mut store),
         _ => Err(HELP.into()),
     }

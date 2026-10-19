@@ -4,11 +4,15 @@ Milestones are gated by demonstrated behavior, not promised dates.
 
 ## 0. A reviewable foundation
 
+Status: implemented and verified locally. Public hosting is a separate operation.
+
 Deliver exact-byte objects, a documented snapshot model, transactional acceptance with expected generation, durable operation receipts, a working CLI, and failure-oriented tests. Preserve both historical briefs as faithful Markdown. Add the initial protocol definitions and current design decisions.
 
 Exit: compile and run locally; retries, stale heads, concurrent candidates, and crash boundaries behave as documented. State the limits precisely.
 
 ## 1. Continuing work across two sessions
+
+Status: the bounded native path is implemented and locally verified, including independently started CLI processes. Fresh-model continuation is the next observational trial; a controlled comparison against ordinary handoffs remains open.
 
 Add minimal Objective, Attempt, Decision, Handoff, and ContextPack schemas plus inspection and explicit handoff receipts. Implement one budgeted context query with coverage and source references. Use it on a real project with two separately started sessions.
 

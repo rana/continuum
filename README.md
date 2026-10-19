@@ -6,9 +6,11 @@ Continuum explores how work can survive changes of conversation, model, worker, 
 
 This is an early MIT-licensed research implementation. The working name is provisional. It is an independent design, not an implementation of Anthropic's private Scion and not a claim to know Scion's internals.
 
-## Working foundation
+## Working implementation
 
 The Rust prototype stores exact-byte blobs, source snapshots, and declared evidence records in a content-addressed store. A local SQLite transaction moves an acceptance head only if the expected head and generation still match, and records a durable operation receipt atomically with that outcome. An exact retry returns that receipt.
+
+It also prepares a bounded context pack from an exact work-state record: objective, attempts, decisions, uncertainties, and an offered handoff. A new process can reconstruct and verify the exact selection, distinguish intact historical context from current accepted state, and record a recipient acknowledgement whose references are checked explicitly.
 
 The prototype establishes storage and retry mechanics. It does not yet authenticate acceptors, establish evidence truth, execute protocols or models, sandbox workers, synchronize hosts, or implement a production repository server. See [current status](CURRENT.md) for the verified boundary.
 
@@ -21,6 +23,15 @@ cargo test --locked --all-features
 cargo run --locked -- demo /tmp/continuum-demo.sqlite
 ```
 
+The context example uses several separately started CLI processes. It preserves two histories with the same source but different declared dispatch states, then moves an accepted head and checks that the old pack remains intact while reporting staleness:
+
+```sh
+cargo build --locked
+python3 examples/context_handoff.py --binary target/debug/continuum --output /tmp/continuum-context-example
+```
+
+Use a fresh output directory. This is a reproducible correctness example, not a model-performance or throughput benchmark. The [context contract](docs/architecture/context-handoff-v1.md) states its limits.
+
 Use a fresh local database path for a fresh demo. The CLI help describes individual operations. SQLite WAL databases belong on a local filesystem; multi-host replication is a future protocol, not a shared database file on a network mount.
 
 ## Read the design
@@ -32,10 +43,12 @@ Use a fresh local database path for a fresh demo. The CLI help describes individ
 | What is the native architecture? | [Architecture](docs/architecture/overview.md), [object format](docs/architecture/object-format-v1.md) |
 | How do missions, directives, and work streams relate? | [Coordination](docs/architecture/coordination.md) |
 | How do models, contexts, and reruns work? | [Execution and context](docs/architecture/execution-and-context.md) |
+| What does the implemented context path guarantee? | [Context and handoff v1](docs/architecture/context-handoff-v1.md) |
 | How do releases and high-load operation work? | [Publication and capacity](docs/architecture/publication-and-capacity.md) |
 | How are protocols selected and adapted? | [Protocol design](docs/architecture/protocols.md), [registry](protocols/registry.json) |
 | What did Base12 and Prime Radiant teach us? | [Research lessons and coverage](docs/research-lessons.md) |
 | Why these initial choices? | [Native core decision](docs/decisions/0001-native-core.md) |
+| Which existing systems inform this work? | [Current landscape](docs/landscape.md), [borrowed ideas](docs/borrowed-ideas.md) |
 | Where are the original briefs? | [Faithful Markdown conversions](docs/history/README.md) |
 | What did Claude contribute? | [Collaboration record](docs/collaboration/README.md) |
 | How should agents contribute? | [Project instructions](AGENTS.md) |

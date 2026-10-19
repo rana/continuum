@@ -1,0 +1,79 @@
+{
+  "kind": "local_context_handoff_example",
+  "cases": [
+    {
+      "case": "a",
+      "source_snapshot": "sha256:f17b4f04608de8ceb3f649ea5305054b351dc78a167b2c4e9ce9c12a18576fde",
+      "work_state": "sha256:534ef3aa73f8875b5db3f9cb6b1f40f9ad1b7e8c4952dbe9885de384a79bed9d",
+      "context_pack": "sha256:83a637ebb24f238074462e49b31e1375d2d3e92fbf5b87f6d173917d4ff955fd",
+      "dispatch_state": "never_dispatched",
+      "conditional_next_action": "issue_first_request_if_authorized",
+      "rendered_bytes": 3353,
+      "acknowledgement": {
+        "acknowledgement": "sha256:11ffab6541cb07b8499bcea5329ae7ff3c62e0ad4a32934fd5b829359b553419",
+        "context_pack": "sha256:83a637ebb24f238074462e49b31e1375d2d3e92fbf5b87f6d173917d4ff955fd",
+        "external_effect_verified": false,
+        "freshness": {
+          "observed": {
+            "generation": 1,
+            "root": "sha256:bfcdfab1f537e6ecb69f4012b6859a5adc050f0a3d0f4e4c5054e28bba9b0668"
+          },
+          "status": "matches_at_observation"
+        },
+        "handoff_id": "handoff-17",
+        "recipient_authenticated": false,
+        "recipient_worker": "recipient",
+        "reference_consistency_verified": true,
+        "understanding_verified": false
+      }
+    },
+    {
+      "case": "b",
+      "source_snapshot": "sha256:f17b4f04608de8ceb3f649ea5305054b351dc78a167b2c4e9ce9c12a18576fde",
+      "work_state": "sha256:a6bbf3f6b1f70f2d911836a814c047b2d0dcc3382e82db0ade14ed017d3fa39d",
+      "context_pack": "sha256:1cda625f9f70c6ee92e7e40d988ca3234cf1277b877638e092942210d867a6b4",
+      "dispatch_state": "may_have_been_sent",
+      "conditional_next_action": "reconcile_existing_operation",
+      "rendered_bytes": 3349,
+      "acknowledgement": {
+        "acknowledgement": "sha256:5a9c8c4fefae00e164236cf026ae89e4ebc50d7d0c648c498d7193ce511cab10",
+        "context_pack": "sha256:1cda625f9f70c6ee92e7e40d988ca3234cf1277b877638e092942210d867a6b4",
+        "external_effect_verified": false,
+        "freshness": {
+          "observed": {
+            "generation": 1,
+            "root": "sha256:d052886892f2772c542d3f2d3db8f31d35b429d0a077c5b53fd75d2a2bc5723a"
+          },
+          "status": "matches_at_observation"
+        },
+        "handoff_id": "handoff-17",
+        "recipient_authenticated": false,
+        "recipient_worker": "recipient",
+        "reference_consistency_verified": true,
+        "understanding_verified": false
+      }
+    }
+  ],
+  "historical_verification_after_head_movement": {
+    "action_authority_verified": false,
+    "context_pack": "sha256:83a637ebb24f238074462e49b31e1375d2d3e92fbf5b87f6d173917d4ff955fd",
+    "exact_projection_verified": true,
+    "freshness": {
+      "observed": {
+        "generation": 2,
+        "root": "sha256:f8d728337c95f0f72dcc188eeb43e8f09c3fd65f35e7cec2fe33d47c35d19f54"
+      },
+      "status": "stale_at_observation"
+    },
+    "rendered_bytes": 3353
+  },
+  "current_verification_rejection": {
+    "error": "invalid input: context has no matching current anchor at observation; historical verification remains available"
+  },
+  "limits": [
+    "Synthetic operational declarations; no external request was sent.",
+    "Separate CLI processes demonstrate custody/recovery, not model performance.",
+    "Acknowledgements verify references, not identity, understanding, or effect truth.",
+    "This is a correctness example, not a performance benchmark."
+  ]
+}

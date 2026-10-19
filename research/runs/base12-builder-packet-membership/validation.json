@@ -1,0 +1,1417 @@
+{
+  "schema_version": 1,
+  "source_baseline": "39f2dbb0f0e2920552f09c728cacf8406973ff76",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 3,
+  "verified_source_bytes": 71242,
+  "full_text_paths_read": 3,
+  "new_semantic_files": 3,
+  "new_semantic_bytes": 71242,
+  "both_manifest_roundtrips_byte_exact": true,
+  "manifest_digest_dictionary_entries": 157,
+  "packet_members": 177,
+  "payload_members": 217,
+  "intersection_members": 172,
+  "union_members": 222,
+  "original_lane_dependencies": 45,
+  "fixture_paths_in_packet": 158,
+  "all_members_resolve_to_pinned_regular_mode_blobs": true,
+  "packet_exactly_preparation_tree_except_itself": true,
+  "payload_exact_original_and_nonexcluded_preparation": true,
+  "overlap_hashes_agree": true,
+  "payload_pin_matches_preparation": true,
+  "inert_writer_template_matches_literal_exactly": true,
+  "writer_AST_parses": true,
+  "writer_executed": false,
+  "member_binding_counts": {
+    "held_exact_path": 44,
+    "unheld_declaration": 150,
+    "held_identical_blob": 19,
+    "prior_read_ledger_identity_only": 4,
+    "empty_tree_size_digest_consistency": 5
+  },
+  "member_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CHECKPOINT.json",
+      "sha256": "d7831906494c9b0beb62280085306372f63b426076ea87beaff030fc2e1bd9ca",
+      "bytes": 3228,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CONTRACT.md",
+      "sha256": "d67ba7a720b25b2fb0a6cb5becefbb90fac0cc363c03479a9fa6dc77026f8064",
+      "bytes": 6957,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/CORRECTIONS.md",
+      "sha256": "bc9c2700c6db958d2ce24af65fff84e9230bbeccf7e9d272f63eba256889d501",
+      "bytes": 1220,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DEPENDENCIES.json",
+      "sha256": "394731bbfb37e08162abe598f4b5e3fca83933215115ea194465d0d5edc64730",
+      "bytes": 1737,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/DESIGN_REVIEW.md",
+      "sha256": "1545ec6bbd4a115433fdb7e990a45278f686adc2225acaf58537cec0378c4995",
+      "bytes": 7109,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/MIGRATION.json",
+      "sha256": "4cf9ea02eca2f92a50002890cc3ef00ca1e10f7e31d36bc2ae6178ba7ce649d2",
+      "bytes": 62176,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OPEN.md",
+      "sha256": "0d4ee14bee7bd12f63101d0afcaa505063754e84cdb375a0d306f9ab580655a1",
+      "bytes": 2138,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/OWNER.json",
+      "sha256": "85d6e5e75086bc4c480ed92b8636bcd512473c8b04337bbf158683ef2395df10",
+      "bytes": 1022,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/README.md",
+      "sha256": "82ed3be29f12c62dc5d84c3196a529e0237e2d1704aeac57c56c3700b284aa22",
+      "bytes": 4186,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/SHA256SUMS",
+      "sha256": "54696e7cd4c28d55076d430f540f922b3421a43ce4d6e0defd3e61af22dc1292",
+      "bytes": 3993,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/TEST_PROPOSAL.md",
+      "sha256": "13e10232ec75b21686a74a8de7f5c287ccfde805d7bb370d754549626d405637",
+      "bytes": 5623,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/BUILD.json",
+      "sha256": "020cd302efa549d3c0b1623d6ec521d59a86cdc29a708130964c0a863e5bc5a3",
+      "bytes": 790,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/STATIC_CHECK.json",
+      "sha256": "9249889bba33143d7206755eccc19d95f76016103c412ca8ef8e24a32c9b782d",
+      "bytes": 2123,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/bootstrap.source.py",
+      "sha256": "bf4a268210ea8987594b34a3525953b06ab61cc3547c822f94717807849a71c1",
+      "bytes": 24663,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.code.bin",
+      "sha256": "b22d3d5f9b9d811baf414ff644b64786b98f948fc27b450edcd00666cc58daed",
+      "bytes": 9644,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.disassembly.txt",
+      "sha256": "f83dc80eb48b157d1a01830fdf42a81d6d3552cb24137606d8e4a70f595c4881",
+      "bytes": 118158,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.elf",
+      "sha256": "5fd517cab468619cf6800630c887635fa1f4100cef7842ee256fe7649715e41a",
+      "bytes": 13740,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.instructions.txt",
+      "sha256": "c9bd9356d34e6c19ab0a471fd0c502414307e19e64c88b32184a6f9ee724189b",
+      "bytes": 75434,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.layout.json",
+      "sha256": "836482132b0b4ec8ec34a25ef188cedb8d8d03ce0ad9054341063b9af09f0b73",
+      "bytes": 53163,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r1/builder.readelf.txt",
+      "sha256": "9f7713be741e49a1f98c46a537e4b540afb727ae9a0d7a389bee1b0147151cee",
+      "bytes": 1534,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/BUILD.json",
+      "sha256": "ec807560258c31bda4729512a3e3dfbdf584f21c75668215ddd144a8ca1ec0af",
+      "bytes": 790,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/STATIC_CHECK.json",
+      "sha256": "36bed47cd36b406ccaccf397d06e22e0fb06423cee2fd59ef501dd6c6592b5fe",
+      "bytes": 2123,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/bootstrap.source.py",
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "bytes": 24741,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.code.bin",
+      "sha256": "f1ed3e878d6beaba79c9317147ecace63f8bb2e6e9c2ea811a27fd6be2f6dd96",
+      "bytes": 9644,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.disassembly.txt",
+      "sha256": "965b3665c9fc1fe8ba741bdab7ab8707155bb71e700654df565ed9c624ae4f08",
+      "bytes": 118160,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.elf",
+      "sha256": "2faf4a1c6b03422c2ee213cc8901fcaae7bf7046146efacaa234ebaeb60673ab",
+      "bytes": 13740,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.instructions.txt",
+      "sha256": "01977a73bf4c3f4b9fb01567a34dc40b29925f4315263f65c64c324c370795a7",
+      "bytes": 75436,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.layout.json",
+      "sha256": "ddb22e1423b1853b755f90f7703b21a3bf05a5a8f34cb80c27181e9238678cb0",
+      "bytes": 53163,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/artifact-r2/builder.readelf.txt",
+      "sha256": "9f7713be741e49a1f98c46a537e4b540afb727ae9a0d7a389bee1b0147151cee",
+      "bytes": 1534,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/bootstrap.py",
+      "sha256": "b2479043f1a3227bdd7e4476fc3c55a56df78359847a1747cc2c7b63b49bb614",
+      "bytes": 24741,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/inspect_static.py",
+      "sha256": "5ff70f4a34a918f50113597825b77c27f20fc6499c8ccaeb65a006caccd7ba7d",
+      "bytes": 4615,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/migrate_runner.py",
+      "sha256": "0de7665c13a895a96a2c9bff9368182c97d5cc3525588b4d766bb64783aaf9b7",
+      "bytes": 3321,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CALLER_INVOCATION.md",
+      "sha256": "8abeee977cdd607c1445487b388ac0995b40ed977beb9dca8870f26726cced02",
+      "bytes": 4983,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CASE_MATRIX.md",
+      "sha256": "85231e96e9441c6412c6c5bb6123abef4b59b3f8f46b9fecd5259a77d09f14cd",
+      "bytes": 5442,
+      "status": "prior_read_ledger_identity_only"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/CONTROL_REVIEW.md",
+      "sha256": "426d31b83364ea277c825660460a4ae1b383159922189f8f6ae67840e92fa667",
+      "bytes": 7966,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVELOPE.md",
+      "sha256": "d59edbbaa80f5ecaaee2e431eacf4dfd9daf0200c6893d244e674544e32f0fcf",
+      "bytes": 9985,
+      "status": "prior_read_ledger_identity_only"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/ENVIRONMENT.json",
+      "sha256": "05a3de723093c8fe3d9cc0d836b03ca9b4b9009c74123208fb53ddf1907c6d67",
+      "bytes": 4026,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/FIXTURE_REVIEW.md",
+      "sha256": "58820aadff7d90882fcdb4d68fd6e8d18bd7b752a2120e082e4007f34693278e",
+      "bytes": 9226,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PAYLOAD.sha256",
+      "sha256": "6851d8f100ed38d9af3606bfb58b6f9ee7a209af81cbf56d04d12277e5094ceb",
+      "bytes": 48617,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PLANNED_COMMANDS.json",
+      "sha256": "43432ddeb05db45d6c0228c66f443c1699d2518245c8168148de160b234e7c70",
+      "bytes": 71425,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PREPARATION.json",
+      "sha256": "7be90fca7d777a0e0af57b88067c27a79fe4b5f0f017759cc27d5f1524997b90",
+      "bytes": 3950,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/PROVENANCE.json",
+      "sha256": "fe2d887e0daca8927149f5691ca75e432fe5655e8db426115f31e0f4387bee23",
+      "bytes": 826,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/README.md",
+      "sha256": "7c8e4ff94a06bf1c597f765462ca39495de9e0eebec49cc0b5fb22a387a47388",
+      "bytes": 3833,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/REVIEW_REQUEST.md",
+      "sha256": "f84940dea62e59cb7d8f318bea750e2544c18104e297b5740d77691c38adb4ea",
+      "bytes": 4012,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/STATIC_REVIEW.json",
+      "sha256": "31d1c13e4e5314e90f0f32ef29c1703da3316325e6c297e61a2c6cc94a4cd302",
+      "bytes": 3003,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/caller.py",
+      "sha256": "b3bca1451ad4e8e4249dcb19eadc05c42c5a443b04a755143594219ffe3372ac",
+      "bytes": 11056,
+      "status": "prior_read_ledger_identity_only"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/driver.py",
+      "sha256": "be2477ab56e86ef940fa64c05cf499d73e0a68a65eab2a6edad754f6cf435396",
+      "bytes": 14211,
+      "status": "prior_read_ledger_identity_only"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/PROVENANCE.json",
+      "sha256": "b94f7c842df28122f06c4462db640f8421f2908f93d015ca24e975170d8ab557",
+      "bytes": 2204,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/SHA256SUMS",
+      "sha256": "9a1d09b5a292081697065a641a051c132e1991fbdfa5356bbf94abf8b0113c73",
+      "bytes": 13072,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/cases.json",
+      "sha256": "2c4feb10a2133cda533417f5b30d77b20f0ab4a1a778a18a3e1c5a13c04ebd1b",
+      "bytes": 140815,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.elf",
+      "sha256": "12fd50a2fa3ff18a1b615557246cbcdb13dc93214f075dba238be34f7f40e543",
+      "bytes": 6930,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.layout.json",
+      "sha256": "5e434b2498e1225d398929f01b8cabb51a9da70f40915d04dd2cb948c6e11a77",
+      "bytes": 45963,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/01.map",
+      "sha256": "48a4f80ab464ccfee23f7bd69df03dc5e40cd5e9ad2dfdbedeac94cea2332c4d",
+      "bytes": 16608,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.elf",
+      "sha256": "0464ee6d8faf6bc6166bc3a6d141b453f6a1e47f073fe40056e038a29ac08217",
+      "bytes": 4634,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.layout.json",
+      "sha256": "b9b10e0df79aa2be567e8d4f6c531acb8fdef2630b47e148bbeb4d5508432348",
+      "bytes": 27040,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/02.map",
+      "sha256": "4d1572b66d8ca4db7a24c694dbe253a8b4e6d615a7d6a5e2b31252407f478111",
+      "bytes": 7200,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/03.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.elf",
+      "sha256": "30b0f857faedd8900c8c724b2e117781b1a3f9be93efde357814d9d5587600c3",
+      "bytes": 4154,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.layout.json",
+      "sha256": "15a5efd7ac4fd5bfdc5b447346dd8e3d750942dbcce7f4b15b88e186133ea4ae",
+      "bytes": 1756,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/04.map",
+      "sha256": "c7803799095199253c422bfcfd0501998ffa98ade9aa3ea3a64376e6a5e7aefa",
+      "bytes": 416,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.elf",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "bytes": 4097,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.layout.json",
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "bytes": 691,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/05.map",
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.elf",
+      "sha256": "a72ef0fdfc63ff2955307c4bf7832ae4ec0d28364c322ea16744f2a726ed6258",
+      "bytes": 5120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.layout.json",
+      "sha256": "282599d930877f24d37a23e2ab2b84377a80b2a350945c8a767192a69407218f",
+      "bytes": 65928,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/07.map",
+      "sha256": "e2d2e30ac0d6c03d30d0b6686e471c94ba9506ea3b677f790beafbfb16c4a287",
+      "bytes": 36896,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.elf",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "bytes": 4097,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.layout.json",
+      "sha256": "546ea0bf6e4d6cf9a7ac3d8015334f706475f4b40f0e745ccefbb3a7e4d5e4c2",
+      "bytes": 9502,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/09.map",
+      "sha256": "f42492a6380df1d4073f66c343d69e8a5f0c7297c439c27ee9c4e97eee2a7358",
+      "bytes": 4160,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.elf",
+      "sha256": "e82248a44973eb4f8c99ff7ce0d46ba43b90a7575655f1a6271ebbe2f33d1f1e",
+      "bytes": 5376,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.layout.json",
+      "sha256": "88573c21e46682f6d345dccecf707eaf30b32756ae4740ee078eb3d3309e76d4",
+      "bytes": 42054,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/11.map",
+      "sha256": "93fc878c82ba7f3d946e72087edd8d8a8860e20967f5a7feabdab6a0d93eb3d7",
+      "bytes": 8256,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.elf",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "bytes": 4097,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.layout.json",
+      "sha256": "ef299d157f367f4c75901e96239e03d95e9943a511d443e3f6dbb250b240a3b1",
+      "bytes": 788,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/13.map",
+      "sha256": "59d6ac9a169c840d349a6ed202c4d1d18f63695f70f4bb6d23284e1d8815a0af",
+      "bytes": 128,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.elf",
+      "sha256": "8b12b28fac8b344ae96c7a8a4930c1269715d5c59f91a65f8eb2da4f01f7a1b7",
+      "bytes": 4106,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.layout.json",
+      "sha256": "41d051f4f5641474802b5de63f1136f562c3ceef6a1a5775529a26f0d2130e9f",
+      "bytes": 711,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/31.map",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.elf",
+      "sha256": "e5f6572849584ec41ec8d32ebd64e40fdd058030df3834d42f79a1d80c359187",
+      "bytes": 4097,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.layout.json",
+      "sha256": "614ccef886c4a483397dfdb7d93cedef3823148082813b4d66fea266f33a0f1a",
+      "bytes": 691,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/32.map",
+      "sha256": "278d8ac65a1d6578747eb385855f6063bdeb55efe89040276ca924e595edd080",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.elf",
+      "sha256": "8e8e8bc8c2b377ecf6c1934cd8171e2249b24ee7fd2ab681f1f13c80386cc71e",
+      "bytes": 4106,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.layout.json",
+      "sha256": "26f0c1296ce741dba453f8e5955ac54cca42981ccabf1069909a753e6a3a07f0",
+      "bytes": 711,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/33.map",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.elf",
+      "sha256": "ee10bea8f55dca18448f744567e0d3ea8704b1bd77aa22c64f41cf27d72c73bb",
+      "bytes": 4106,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.layout.json",
+      "sha256": "e9d9828e9c2ead453f2fe6b829ee94ccab3c25aab6e27d3f3193087d0c7116fe",
+      "bytes": 711,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/35.map",
+      "sha256": "b971d14e78d1d0b6be0dd31a5035df6d85f3738dd91cd444f52aba80f7c172a8",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.elf",
+      "sha256": "a2211e69a1465cc364638c80634c3670e5aebfe8e95938d4ad18f17a3338d17b",
+      "bytes": 4103,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.layout.json",
+      "sha256": "a1afee113def7d64fdfe0d950f8d116b32c8310120c1386415365fd426968b59",
+      "bytes": 703,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/37.map",
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.elf",
+      "sha256": "97e4adb5e9df8f8af90ef6462a95020e264e9d9cce6a70bd5f84552a63780f7c",
+      "bytes": 4103,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.layout.json",
+      "sha256": "3bcd3fdd40d2ac03ebc6bba9d6020a9eb5493d5e22509308f0152b788b1e8d44",
+      "bytes": 703,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/39.map",
+      "sha256": "2b1be0277f323ab46fb0ec70004c89d224909d544a1409bf48a81fc63f3b78cb",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.elf",
+      "sha256": "d53e9c2cb5957760db939df93349f16da415d3119989ed6272117f84f200613b",
+      "bytes": 4100,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.layout.json",
+      "sha256": "cbd16205e4d423064dfbe003b3d27c25b3efe79e599cb38354f097a1b82f0cb3",
+      "bytes": 697,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/41.map",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.elf",
+      "sha256": "a1619a954a1f09b653cdc741742f5dbdc3344b55a503cb2b69dbaf42f1688637",
+      "bytes": 4100,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.layout.json",
+      "sha256": "9bac01512fd33fe4285ff5d23f59e1a49d4d671fae4d2931ffea3a28499381bd",
+      "bytes": 697,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/43.map",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.elf",
+      "sha256": "ae3cbd16d93613e239b9aa9b189c3b4c12ab17ed8f60044a65c3082a07c788bc",
+      "bytes": 4100,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.layout.json",
+      "sha256": "eb36117e5bd3ec5c5c825830d9f029faca5040c927cd2c59dff8d8a8c6d375db",
+      "bytes": 697,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/45.map",
+      "sha256": "6672f340e3b5604987edf70251689a1f31ccee21174b973a0cf0073782eb5702",
+      "bytes": 96,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.elf",
+      "sha256": "26e9f2ba5bf7e560452c5c5a373e09eb47daa4833ecc8c352e1859d8ddf50fe5",
+      "bytes": 25,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/49.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.elf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "status": "empty_tree_size_digest_consistency"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/50.map",
+      "sha256": "6e8b74df8442e1766456d22957ca17dd1b5aae07a6f015b3516d2b987fa9c47c",
+      "bytes": 25,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/53.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/54.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/55.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/56.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.elf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "status": "empty_tree_size_digest_consistency"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/57.map",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "status": "empty_tree_size_digest_consistency"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/58.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/59.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.elf",
+      "sha256": "75c8d2b3e9761105ede89e8c87a1409974846bd6547539791522c8c3bc97ffd8",
+      "bytes": 4096,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/60.map",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "status": "empty_tree_size_digest_consistency"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/61.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/62.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/63.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.elf",
+      "sha256": "5c251863455de49de68931a53e2c136b32e08a43521652976334f6c921a7007c",
+      "bytes": 4120,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.layout.json",
+      "sha256": "63b42d5566a02937537851949035c45778b002463bc970da58268b0ed9b2b8d3",
+      "bytes": 894,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/expected/64.map",
+      "sha256": "4c4080d5fe53eff8c01e2250b1e9cc6c2af2da64b5dc939948cdc109444411d5",
+      "bytes": 192,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/01.b12s",
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+      "bytes": 7463,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/02.b12s",
+      "sha256": "1e6b201da0a06933d6dfb5a0194f2813acfce36c1bd6dc76d5a0d2b685c74351",
+      "bytes": 3614,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/03.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/04.b12s",
+      "sha256": "d013c9f79eb65d91f329d0f1375bd5683321a7867143067242a3b526778c86a5",
+      "bytes": 206,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/05.b12s",
+      "sha256": "9f62e5a0a49e41c1ccd1026f730a36a31d18e959e3b4f0572065d3f4db613ca5",
+      "bytes": 65536,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/06.b12s",
+      "sha256": "ea2f2ee06bb50424c16ecfb8477d8992615e6167b07db5ea365cdceb3809a668",
+      "bytes": 65537,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/07.b12s",
+      "sha256": "055c80251575880a9e832f8654ddcff9bc44a149f9161dd817b33d5cf3feb334",
+      "bytes": 5398,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/08.b12s",
+      "sha256": "f59e3e9b9af274b0fd219b5d924307892a2a095b8273885e87666916c5d4986d",
+      "bytes": 5402,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/09.b12s",
+      "sha256": "9c067d3e672123bfcef3cd6d17aedc38b6df056746d11981abeeb2472d0a1376",
+      "bytes": 1306,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/10.b12s",
+      "sha256": "1d7f645acd101be04901d473704b97cbf296885f619032ebb6e541f40627391e",
+      "bytes": 1317,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/11.b12s",
+      "sha256": "04c517717d25230d4379ef16491ecf85d6373229954f4d56f26ff6187b2fdce5",
+      "bytes": 3853,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/12.b12s",
+      "sha256": "576c9778f711651a28272077f419d84b4dee5f8e464e436bcb222535551416fe",
+      "bytes": 3868,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/13.b12s",
+      "sha256": "8c3974f0933803c0f6bead40f6a46f037366f8d6d60086023180f28595b248e1",
+      "bytes": 55,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/14.b12s",
+      "sha256": "94a5e0a27c839ae152ed47568d0323f219b40c9fed29c0f785d76f167eb0feb1",
+      "bytes": 56,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/15.b12s",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "status": "empty_tree_size_digest_consistency"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/16.b12s",
+      "sha256": "3f9632f02df5f4467c097e34655ffd50623fde9348a214fa03846e16104c74f8",
+      "bytes": 13,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/17.b12s",
+      "sha256": "23848e399bcfc7f9912a1d5fc2aa1267e816dc0b1e32f1297381c07a0439a4fc",
+      "bytes": 16,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/18.b12s",
+      "sha256": "ccb16b1ca8c2d8df6068b8ea0c3039050c2d8f077319fb54612a49fa097e61a1",
+      "bytes": 21,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/19.b12s",
+      "sha256": "54529b4196e1514b599c71db9fa397ba8799747c55ca036b096aeab238a48668",
+      "bytes": 30,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/20.b12s",
+      "sha256": "e0f3cecdb9be6af66d341475cce089a67221e5d86b3de2363819c4311b3fa362",
+      "bytes": 29,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/21.b12s",
+      "sha256": "cfa9764177ea5081313e8e6949d216b5a6dce6b074b4ced844be6494b5bc298e",
+      "bytes": 28,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/22.b12s",
+      "sha256": "c6116ce5219abdbf510c85dde1594d661696691af78e1d88a7d70d0f8a76dcc4",
+      "bytes": 32,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/23.b12s",
+      "sha256": "1b7da9cd88d3e9493303a5f8633f86f9104800e51e1e80401210822fc70fb5d6",
+      "bytes": 17,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/24.b12s",
+      "sha256": "527dd6f84e26c353f20b6e84458ca7a49d476d2a8c61997da96e864742859727",
+      "bytes": 25,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/25.b12s",
+      "sha256": "c0111e134a9d272764ad11039d558c19c7e292b91d9d588779af08e0ce08f19f",
+      "bytes": 19,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/26.b12s",
+      "sha256": "c8f6a097f898ac0a8c5dc2634bd8811c56f1d3d9c5a2958021369d6ece6b582f",
+      "bytes": 36,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/27.b12s",
+      "sha256": "13533d66723cad6bd63f0b90ca510f346068d5df8e074b8cbb94ff96d39bb9d4",
+      "bytes": 24,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/28.b12s",
+      "sha256": "b39fcd98dd4ebf3c7f9d6521e52ae174b5b4330d11acbc41f6432148b34bcab9",
+      "bytes": 18,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/29.b12s",
+      "sha256": "bd4954515e1584c8a0d9fb36e6e565ce5babb51a31d9d5fd1f5f22f0c7aa1bc9",
+      "bytes": 18,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/30.b12s",
+      "sha256": "bc82781f47682e4f806bd8cfe400d8ceaafcc86d9b79cc4a2da4472411a2ef4e",
+      "bytes": 28,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/31.b12s",
+      "sha256": "ae4daad8b2dd05fe836196ca686e2e50e8ace97495a3defc02ce26b672070907",
+      "bytes": 31,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/32.b12s",
+      "sha256": "93cc2cf3f957a7effbb6a9ac9c649d5f7353f33d231bb80ea90132bb1cc575fd",
+      "bytes": 16,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/33.b12s",
+      "sha256": "fb6354463e33fb2e57cb4fa6c7bc3f4d3a72b803b8fb5bc11150ebbf2962ee89",
+      "bytes": 41,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/34.b12s",
+      "sha256": "0d9ba36564e55f0864a7d39fb7672199c52bed7582add7187bb1062897203324",
+      "bytes": 41,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/35.b12s",
+      "sha256": "a68c28fdb2c7c1cfc9559462a4f964039303afdce5d66eb1b132ae6617c132a4",
+      "bytes": 42,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/36.b12s",
+      "sha256": "80773fe95adc1af6fd7859ef7df061dab41bb0c512d333297b0554eb6cffd30f",
+      "bytes": 42,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/37.b12s",
+      "sha256": "63a515eafb519c33886d9eae01a32d91562ce0ff77c87f72e0dfeeb2815f0ddb",
+      "bytes": 39,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/38.b12s",
+      "sha256": "b73440d23bc44c18724c27ddb0b190768cec0a1e2c84e08fea3c3560ff75cfc3",
+      "bytes": 39,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/39.b12s",
+      "sha256": "bf54b12fc40489d1dbb6a80714808c7b30c3887f0505ee3e5f57173bb31d5899",
+      "bytes": 38,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/40.b12s",
+      "sha256": "35555473ebd3b8edbfb3482c270c7b8849f07c5d933b7c2fe102a05a0232efff",
+      "bytes": 38,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/41.b12s",
+      "sha256": "56aa5132504b143793b2b03204ee9ecca3e78ba87dff4fd1456e5c5125e55731",
+      "bytes": 29,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/42.b12s",
+      "sha256": "494dbb581395a67de3e7dc52a513d2e0de7e43ab120ab887aaa22088f5e65468",
+      "bytes": 29,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/43.b12s",
+      "sha256": "eb3f91e225f9fee07c247311b9884c498fa0b545d79ae94b6c59ddc8991e88ce",
+      "bytes": 28,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/44.b12s",
+      "sha256": "4d3e01256fe75e92561f1b1cb8c1bbf1b78d412efb92892de03438ce189d9e07",
+      "bytes": 28,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/45.b12s",
+      "sha256": "594547e331bfa5ce3a0593c61497837455ff61706069d0d9f24696bc83c6c8ce",
+      "bytes": 24,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/46.b12s",
+      "sha256": "88d5875aa3029a09d35cf925f2c7546c15ebf2e3c2f88a0ff5d81d90e6ee9c8c",
+      "bytes": 24,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/47.b12s",
+      "sha256": "0dfba9ccdaa989195531f8881e0c22e15feb2b10e17b0e56f1c1a7620b8c64e4",
+      "bytes": 24,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/48.b12s",
+      "sha256": "17990ca919833dc850c1462eb7817c1c9c72b4a6afb79c7965fad818911c6750",
+      "bytes": 24,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/49.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/50.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/53-target.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/54.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/55.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/56.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/57.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/58.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/59.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/60.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/61.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/62.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/63.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/inputs/64.b12s",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_identical_blob"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/49.bin",
+      "sha256": "26e9f2ba5bf7e560452c5c5a373e09eb47daa4833ecc8c352e1859d8ddf50fe5",
+      "bytes": 25,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/sentinels/50.bin",
+      "sha256": "6e8b74df8442e1766456d22957ca17dd1b5aae07a6f015b3516d2b987fa9c47c",
+      "bytes": 25,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/freeze_review_packet.py",
+      "sha256": "d2da4f112e184f63ff24ac9e49be51e18138f2ce700911f85a49ec1adad7210b",
+      "bytes": 6495,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/guard.sh",
+      "sha256": "458039911ae06e6c534be144f61c0a04a311f28249da2de8549a2a4b2a05064f",
+      "bytes": 1507,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/launch.sh",
+      "sha256": "c3d7d795f6927cb08418809e58a12de9499c61004e4b764f4e61c032b92e2793",
+      "bytes": 7141,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/materialize_fixtures.py",
+      "sha256": "44c2caa932b72c8037c92c49f0f5b9a3d67bd47eafa74e3a368cbce1bd7eb1b4",
+      "bytes": 30074,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/runner.b12s",
+      "sha256": "4232817dd96e60a231f12ef27bcc752f58204d235b41d4a885aac6b0372335a8",
+      "bytes": 7463,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/vendor/isa.py",
+      "sha256": "615a813813ac551c1c6a23b7a8f8a9c0fd1794e70a2929644eead402f58011ae",
+      "bytes": 6390,
+      "status": "unheld_declaration"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/README.md",
+      "sha256": "220b264d7b6f2fc2dfa2c710571f394aa7996939587675a5f1b4d09ae17cafbb",
+      "bytes": 5864,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SHA256SUMS",
+      "sha256": "e64330b00b0e2cf2035f8062d6dde97837da741f4b29bdd8b64c46803529586c",
+      "bytes": 864,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/SOURCE_REVIEW.md",
+      "sha256": "150a5b2cd11ff6cfb07be445505ff5f0279c2a1ebef0c09e446ebd7e8484d525",
+      "bytes": 8501,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/branch42.b12asm",
+      "sha256": "d013c9f79eb65d91f329d0f1375bd5683321a7867143067242a3b526778c86a5",
+      "bytes": 206,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/contract-cases.json",
+      "sha256": "319fa6bb115a79bed0e4104414e6fd6536cbd1dd74edd0cdb1b790627375ff87",
+      "bytes": 21758,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/encoding-vectors.json",
+      "sha256": "387d904dec24c976512cff187749e021e253b4bc3535cc43bb742dc7bfb48930",
+      "bytes": 15052,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/exit17.b12asm",
+      "sha256": "f6e99040826d2a7e6784d4dffe51b3f286266c1b8ee8d3ecfcba9f5b54919bf0",
+      "bytes": 138,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/historical-comparison.json",
+      "sha256": "a7187e160b081e32bccd46211570922e56404cf9397f54983390aa5596bbff46",
+      "bytes": 8798,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/program-expectations.json",
+      "sha256": "ecdf2200ba3b49acacdfe1390b5f5598c23254d77b444388096ecb5283435231",
+      "bytes": 4238,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/r2-static-observations.json",
+      "sha256": "901748c67e1436b76cb1627b5b05705c18c2f4cec531d75e057e7b42e744d880",
+      "bytes": 4957,
+      "status": "held_exact_path"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/witnesses/relocation-vectors.json",
+      "sha256": "d97b15509b1b0dd768668aeccac97a5587ecc191b706bf82c289678509ab66b3",
+      "bytes": 5341,
+      "status": "held_exact_path"
+    }
+  ],
+  "predicted_runner_map_identity_matches_manifest": true,
+  "actual_runner_map_payload_acquired": false,
+  "candidate_binary_acquired": false,
+  "native_builder_or_program_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three texts fully read; both complete lists reconstructed byte-exact through full digest dictionary and lossless path projections.",
+    "Membership closure and pinned tree modes checked; present historical workstation regular-file/mode/canonical-path claims not reobserved.",
+    "Held exact/identical bytes, prior ledger identities, zero-size consistency and unheld declarations are separate per-member classes. No binary downloaded or executed.",
+    "Packet writer AST parsed and inert literal template rendered as data only; no upstream module imported, writer main called or output file generated by it.",
+    "Predicted complete runner-map hash agrees with declared expected map; actual map remains unheld, so no observed native output is established.",
+    "Payload intentionally excludes later freeze/review documents; packet includes them but excludes itself. These layers bind content under externally trusted identities, not execution authority."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/materialize_fixtures.py",
+      "bytes": 30074,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/FIXTURE_REVIEW.md",
+      "bytes": 9226,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/PROVENANCE.json",
+      "bytes": 2204,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/native-builder-slice/preparation-01/fixtures/SHA256SUMS",
+      "bytes": 13072,
+      "intended_review": "full_text_or_metadata_read_without_execution"
+    }
+  ],
+  "next_scope_bytes": 54576,
+  "public_contribution_checks": [
+    "three pinned identities and complete writer/list readings passed",
+    "both manifests reconstruct exactly; all memberships, overlap and exclusions reconcile",
+    "inert writer template matches saved literal without upstream evaluation",
+    "222 per-member custody classes retain held, prior-ledger, empty-size and unheld distinctions",
+    "predicted runner-map identity matches expected-map declaration",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

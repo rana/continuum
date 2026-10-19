@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "source_baseline": "bc51d523386508d79d6cd0db51eba4fe15abaf7b",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_files": 3,
+  "verified_source_bytes": 366815,
+  "complete_1677_row_field_view_reconstructs_original_bytes": true,
+  "journal_rows": 1677,
+  "declared_monitor_sample_count": 33526,
+  "invocation_equals_terminal_limits": true,
+  "acquire_switch_present": true,
+  "effective_limits_and_root_identity_match": true,
+  "wrapper_identity_matches_acquired_source": true,
+  "outcome_embedded_acquisition_equals_terminal_receipt": true,
+  "outcome_six_artifact_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/receipt.json",
+      "bytes": 1837,
+      "sha256": "20e1ec2169e3fd4f9b0910c3842c8702487f4fd43f34c1713167293654440e61",
+      "matched": true,
+      "semantic_credit_from_binding": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched": true,
+      "semantic_credit_from_binding": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/invocation.json",
+      "bytes": 1001,
+      "sha256": "03fa8517a89a6e6b2803f15f64dce189d1dce3f5fc968a56ce6ed73f11dd3bdd",
+      "matched": true,
+      "semantic_credit_from_binding": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched": true,
+      "semantic_credit_from_binding": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/effective-before-exec.json",
+      "bytes": 240,
+      "sha256": "cba6a74186abb2a2090bc243e802183df90df30bec914883be71d2d6094a33b3",
+      "matched": true,
+      "semantic_credit_from_binding": false
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/accounting.jsonl",
+      "bytes": 365574,
+      "sha256": "d40f2eaa49ba98ef8bee9542687dfbc1bcd0fb4ec2a4455fb11b3fc696a7c435",
+      "matched": true,
+      "semantic_credit_from_binding": false
+    }
+  ],
+  "all_root_identities_match": true,
+  "root_state_counts": {
+    "R": 1,
+    "S": 1676
+  },
+  "own_ticks_first": 0,
+  "own_ticks_last": 218,
+  "reaped_ticks_all_zero": true,
+  "descendants_all_empty": true,
+  "elapsed_and_own_ticks_monotone": true,
+  "upper_CPU_downsteps": 752,
+  "journal_first_elapsed_seconds": 0.0022485620002044016,
+  "journal_last_elapsed_seconds": 1699.7301431780002,
+  "journal_interval_min_seconds": 1.0088292609998462,
+  "journal_interval_max_seconds": 1.0208118559999093,
+  "journal_interval_mean_seconds": 1.0141574550214796,
+  "journal_max_upper_CPU_seconds": 2.2007480079993913,
+  "terminal_monitor_max_upper_CPU_seconds": 2.200880724999661,
+  "terminal_wait4_CPU_seconds": 2.1965820000000003,
+  "terminal_guarded_max_minus_wait4_CPU_seconds": 0.004298724999660664,
+  "termination_request_seconds": 1700.000181684,
+  "terminal_wall_seconds": 1700.050689102,
+  "request_lateness_over_wall_bound_seconds": 0.000181683999926463,
+  "termination_request_to_terminal_seconds": 0.050507418000051985,
+  "last_journal_to_termination_request_seconds": 0.2700385059997643,
+  "root_maxrss_kib": 32400,
+  "recorded_stop_reason": "wall_limit",
+  "recorded_root_exitcode": -9,
+  "cleanup_complete": true,
+  "acquisition_success": false,
+  "process_violation_list_empty": true,
+  "initial_CPU_backstop_seconds": 1800,
+  "initial_aggregate_early_stop_seconds": 1660,
+  "recovery_CPU_backstop_seconds": 120,
+  "recovery_aggregate_early_stop_seconds": 110,
+  "universal_guarded_max_to_exit_CPU_ordering_claimed": false,
+  "network_bottleneck_identified": false,
+  "file_progress_times_identified": false,
+  "source_executed": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Three texts fully read; complete 1677-row view reconstructs original journal bytes without omissions.",
+    "Journal rows remain a sparse subset of 33526 declared monitor samples, not syscall or network progress telemetry.",
+    "Stable sampled root identity and no sampled descendants are scoped monitor evidence, not proof against every transient event.",
+    "Instantaneous guarded CPU bounds and final wait4 CPU have different margins and time boundaries; neither universal numerical ordering is required.",
+    "Clean forced-stop cleanup and an empty process-violation list do not make the acquisition complete.",
+    "The journal does not associate file progress, received bytes or network operations with elapsed instants; no bottleneck or file-finish timing is inferred.",
+    "No acquisition, scientific retry, signal-byte access, new inference or crash experiment ran.",
+    "Historical global acquisition overlap remains unknown; empty-stream binding gives no semantic credit."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/pre-synthetic-gate.json",
+      "bytes": 640,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-verification.json",
+      "bytes": 1575,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/invocation.json",
+      "bytes": 1002,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/effective-before-exec.json",
+      "bytes": 226,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/receipt.json",
+      "bytes": 1825,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/accounting.jsonl",
+      "bytes": 206,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/synthetic-envelope-v1/stdout.txt",
+      "bytes": 24,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/invocation.json",
+      "bytes": 775,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/effective-before-exec.json",
+      "bytes": 224,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/transport-fixture-envelope-v1/accounting.jsonl",
+      "bytes": 206,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 6703,
+  "public_contribution_checks": [
+    "three source identities and complete 1677-row byte reconstruction passed",
+    "all sampled root/tick/interval/bound checks and timeout/control bindings passed",
+    "six outcome artifact identities and embedded terminal equality passed",
+    "coverage, next-scope arithmetic, relative links and privacy checks passed",
+    "git diff --check passed"
+  ]
+}

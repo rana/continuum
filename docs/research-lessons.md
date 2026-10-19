@@ -227,6 +227,8 @@ The [transport-recovery return](source-review/base12-transport-recovery.md) reco
 
 The [recovery/intake accounting return](source-review/base12-recovery-intake-accounting.md) separates sparse journal rows, unlogged monitor samples, instantaneous guard estimates, running maxima and exit CPU. A falling bound margin does not imply falling cumulative work. Intake test-lock output describes allowed accesses rather than proving directory-wide absence. Continuum should type each observation by its boundary and coverage; no historical operation was replayed.
 
+The [initial-acquisition accounting return](source-review/base12-initial-acquisition-accounting.md) binds all 1,677 retained timeout rows while preserving cleanup, stop reason and task success as distinct facts. A conservative sampled maximum may be above final exit CPU in one attempt and below it in another because margins and timing boundaries differ. Continuum should validate definitions before imposing numerical ordering or retrying an incomplete external effect. No acquisition was repeated.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

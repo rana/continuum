@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-recovery-intake-accounting.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/invocation.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/effective-before-exec.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/accounting.jsonl"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/invocation.json",
+      "bytes": 1001,
+      "git_blob_sha": "cdd1ba4ba4347e5d6e036dcf49609ad3cd20b5f3",
+      "sha256": "03fa8517a89a6e6b2803f15f64dce189d1dce3f5fc968a56ce6ed73f11dd3bdd",
+      "lines": 31,
+      "semantic_review": "full_direct_read",
+      "review_lane": "initial-acquisition-timeout-resource-history",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 1677-row field-preserving accounting view with exact byte reconstruction; invocation/effective JSON fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/effective-before-exec.json",
+      "bytes": 240,
+      "git_blob_sha": "7624fe856f6f17807ead43deb2ca808e510b3c55",
+      "sha256": "cba6a74186abb2a2090bc243e802183df90df30bec914883be71d2d6094a33b3",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "initial-acquisition-timeout-resource-history",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 1677-row field-preserving accounting view with exact byte reconstruction; invocation/effective JSON fully read directly"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/acquisition-envelope-v1/accounting.jsonl",
+      "bytes": 365574,
+      "git_blob_sha": "b064b206b35736496134a5d4d1ce20c8e10e8db4",
+      "sha256": "d40f2eaa49ba98ef8bee9542687dfbc1bcd0fb4ec2a4455fb11b3fc696a7c435",
+      "lines": 1677,
+      "semantic_review": "full_direct_read",
+      "review_lane": "initial-acquisition-timeout-resource-history",
+      "acquisition": "previously_archive_custodied_payload_reverified",
+      "programmatic_inspection": {
+        "method": "Complete 1677-row field-preserving accounting view with exact byte reconstruction; invocation/effective JSON fully read directly"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 3,
+      "unique_blobs": 3,
+      "bytes": 366815
+    },
+    "cumulative_direct_read": {
+      "paths": 374,
+      "unique_blobs": 374,
+      "bytes": 3111724
+    },
+    "additional_identical_blob_paths": 52,
+    "alias_distinct_blobs": 22,
+    "semantic_covered_paths_including_aliases": 426,
+    "remaining_paths_without_full_semantic_read_or_alias": 5167,
+    "remaining_distinct_blobs_without_full_semantic_read": 4055,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 3,
+    "this_review_verified_bytes": 366815,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Three texts fully read; complete 1677-row view reconstructs original journal bytes without omissions.",
+    "Journal rows remain a sparse subset of 33526 declared monitor samples, not syscall or network progress telemetry.",
+    "Stable sampled root identity and no sampled descendants are scoped monitor evidence, not proof against every transient event.",
+    "Instantaneous guarded CPU bounds and final wait4 CPU have different margins and time boundaries; neither universal numerical ordering is required.",
+    "Clean forced-stop cleanup and an empty process-violation list do not make the acquisition complete.",
+    "The journal does not associate file progress, received bytes or network operations with elapsed instants; no bottleneck or file-finish timing is inferred.",
+    "No acquisition, scientific retry, signal-byte access, new inference or crash experiment ran.",
+    "Historical global acquisition overlap remains unknown; empty-stream binding gives no semantic credit."
+  ],
+  "review_report": "base12-initial-acquisition-accounting.md"
+}

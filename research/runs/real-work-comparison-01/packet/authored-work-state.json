@@ -1,0 +1,39 @@
+{
+  "schema": "continuum.work_state.v1",
+  "id": "read-availability-recovery",
+  "source_snapshot": null,
+  "objective": {
+    "id": "read-availability",
+    "statement": "Continue the CLI read-availability investigation in the supplied frozen repository.",
+    "done_when": "Select a supported next engineering action and the concrete evidence or check needed.",
+    "constraints": [
+      "This is retrospective frozen public-source replay, not live implementation authority."
+    ]
+  },
+  "attempts": [],
+  "decisions": [
+    {
+      "id": "opening-route",
+      "state": "active",
+      "statement": "The recorded reservation probe found three CLI reads blocked while a read-only SQL control succeeded. A separate existing-only read route is the proposed next implementation boundary; preserve writable initialization and validation.",
+      "basis_attempt_ids": [],
+      "reopen_when": "Current source or evidence changes the implementation need."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "current-state",
+      "question": "What is the current state of the supplied repository and what evidence supports the next action?",
+      "why_it_matters": "An intact historical checkpoint need not describe current source."
+    }
+  ],
+  "handoff": {
+    "id": "resume-read-investigation",
+    "from_worker": "packet-author",
+    "to_worker": "fresh-receiver",
+    "scope": "Determine current state and a useful next action with evidence and limits.",
+    "required_decision_ids": [
+      "opening-route"
+    ]
+  }
+}

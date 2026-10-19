@@ -1,0 +1,9 @@
+{
+  "type": "snapshot",
+  "entries": [
+    {
+      "path": "work-state.json",
+      "blob": "sha256:cb63e53ee52900f4a92e8c7e59255052c7e943ff91661c7249c54a7f8b4fa702"
+    }
+  ]
+}

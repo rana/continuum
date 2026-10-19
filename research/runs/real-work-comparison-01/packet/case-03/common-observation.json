@@ -1,0 +1,7 @@
+{
+  "exact_projection_verified": true,
+  "local_anchor": "stale_at_observation",
+  "action_authority_verified": false,
+  "repository_revision": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+  "limits": "Local anchor is not a remote Git freshness observation. Facts are supplied equally to every arm."
+}

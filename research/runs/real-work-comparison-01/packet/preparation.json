@@ -1,0 +1,34 @@
+{
+  "schema": "continuum.comparison_packet.v1",
+  "cases": [
+    {
+      "case": "case-01",
+      "source_revision": "cedade61fbc377519dce68829679c954399bc854",
+      "local_anchor": "matches_at_observation"
+    },
+    {
+      "case": "case-02",
+      "source_revision": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+      "local_anchor": "matches_at_observation"
+    },
+    {
+      "case": "case-03",
+      "source_revision": "f00b13562398c7fc61775c49b6c2fad882d0bf2f",
+      "local_anchor": "stale_at_observation"
+    }
+  ],
+  "binary_sha256": "eb68d686807b73b2b386fe6b9b4d3a4e2784ff4561e429c8587fccd876e97d3e",
+  "adapter_sha256": "ad761e9f1f529d1a837e45b399efd3a25d7c99ea264cf6cdeeb7135736e7bb12",
+  "native_additional_processes": 13,
+  "adapter_processes": 13,
+  "preparation_elapsed_seconds": 0.2109408300020732,
+  "model_receivers_invoked": 0,
+  "author_hindsight_exposure": true,
+  "receiver_dispatch_ready": false,
+  "limitations": [
+    "Selected-source temporary Git tree is a fixture, not the original repository checkout.",
+    "Two historical result JSONs are explicitly path-redacted projections bound to original source hashes. Exact adapter/native invocation logs with temporary paths remain local; published native observations retain command roles, input bytes and raw stdout/stderr.",
+    "Author/model attention cost before timing is unavailable. Measured elapsed time covers preparation execution only.",
+    "Retrieval bridge, neutral baseline audit and independent rating procedure must be frozen before any model run."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "**Main trap: unverified closure and receipt bytes.** Content identity proves each object is self-consistent, not that it is the right object. Two gaps could let a validated context carry laundered or padded history.\n\n**Change 1: Require exact closure equality before any `put`.**\n- From the WorkState being accepted, compute the required set: each attempt's `source_snapshot`, `request`, optional `receipt`, plus every Blob listed in the bundle's Snapshot entries.\n- Require bundle IDs = required set − objects already present from current source capture.\n- Reject both missing IDs and extra, unreferenced objects. Today the bundle can add arbitrary objects that native `context` never examines.\n- Record any overlap with the current capture as \"preexisting\" in the manifest.\n- If WorkState acceptance fails after imports, discard the whole disposable store. Orphaned imported objects must not survive into a retry.\n\n**Change 2: Bind the authored receipt to its retained source artifacts.**\n- The request and receipt Blobs must be byte-identical to the preserved pilot files: the exact call bytes and the tool response. Re-serialization, pretty-printing or trimming is not allowed.\n- The manifest records each source path and its sha256.\n- The harness compares `get` bytes against those files.\n- Native checks don't bind request to receipt, so the manifest and summary must label this attempt \"authored reconstruction.\"\n- Assert that the receipt is not a handoff acknowledgement.\n\n**Failure tests** (each must leave no success manifest and a discarded store):\n- An extra unreferenced Blob.\n- A Snapshot entry whose Blob is absent.\n- An expected ID that differs from the returned ID.\n- A duplicate ID.\n- `format_version` given as `1.0`, `true` or `\"1\"`.\n- Duplicate JSON keys.\n- 16 MiB + 1 byte, enforced by a bounded read rather than read-then-check.\n- 257 objects.\n- A non-Blob/Snapshot object type.\n- WorkState rejected after all imports succeed.\n\n**Reconstruction tests:**\n- Replay the preserved bundle bytes and command log into a fresh store. Expect identical IDs and identical `context` validation.\n- Run `get` on each ID. The output must equal its bundle envelope.\n- Shuffle the bundle order. The result must be the same.\n- Request/receipt bytes must equal the retained pilot files' sha256.\n- The original source snapshot ID must be unchanged, with failed attempts still separate."
+    }
+  ],
+  "structuredContent": {
+    "status": "OK",
+    "text": "**Main trap: unverified closure and receipt bytes.** Content identity proves each object is self-consistent, not that it is the right object. Two gaps could let a validated context carry laundered or padded history.\n\n**Change 1: Require exact closure equality before any `put`.**\n- From the WorkState being accepted, compute the required set: each attempt's `source_snapshot`, `request`, optional `receipt`, plus every Blob listed in the bundle's Snapshot entries.\n- Require bundle IDs = required set − objects already present from current source capture.\n- Reject both missing IDs and extra, unreferenced objects. Today the bundle can add arbitrary objects that native `context` never examines.\n- Record any overlap with the current capture as \"preexisting\" in the manifest.\n- If WorkState acceptance fails after imports, discard the whole disposable store. Orphaned imported objects must not survive into a retry.\n\n**Change 2: Bind the authored receipt to its retained source artifacts.**\n- The request and receipt Blobs must be byte-identical to the preserved pilot files: the exact call bytes and the tool response. Re-serialization, pretty-printing or trimming is not allowed.\n- The manifest records each source path and its sha256.\n- The harness compares `get` bytes against those files.\n- Native checks don't bind request to receipt, so the manifest and summary must label this attempt \"authored reconstruction.\"\n- Assert that the receipt is not a handoff acknowledgement.\n\n**Failure tests** (each must leave no success manifest and a discarded store):\n- An extra unreferenced Blob.\n- A Snapshot entry whose Blob is absent.\n- An expected ID that differs from the returned ID.\n- A duplicate ID.\n- `format_version` given as `1.0`, `true` or `\"1\"`.\n- Duplicate JSON keys.\n- 16 MiB + 1 byte, enforced by a bounded read rather than read-then-check.\n- 257 objects.\n- A non-Blob/Snapshot object type.\n- WorkState rejected after all imports succeed.\n\n**Reconstruction tests:**\n- Replay the preserved bundle bytes and command log into a fresh store. Expect identical IDs and identical `context` validation.\n- Run `get` on each ID. The output must equal its bundle envelope.\n- Shuffle the bundle order. The result must be the same.\n- Request/receipt bytes must equal the retained pilot files' sha256.\n- The original source snapshot ID must be unchanged, with failed attempts still separate.",
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 1047,
+      "output_tokens": 2085,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none",
+    "image_count": 0,
+    "images": []
+  },
+  "isError": false
+}

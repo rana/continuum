@@ -1,0 +1,53 @@
+{
+  "schema": "continuum.work_state.v1",
+  "id": "csv-recorded-attempt-work",
+  "source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "objective": {
+    "id": "csv-goal",
+    "statement": "Retain the completed independent CSV requirement change and its actual verification for the next useful Continuum improvement.",
+    "done_when": "The successor implementation, coordinator checks, source identities and research observation are published.",
+    "constraints": [
+      "Public standard-library sample; do not treat a successful handoff as a model-performance comparison.",
+      "Stores are disposable; no backup/upgrade or persistent workstation installation claim."
+    ]
+  },
+  "attempts": [
+    {
+      "id": "csv-visible-turn",
+      "operation_id": "csv-visible-turn-retrospective-1",
+      "source_snapshot": "sha256:f8c7cf0fd524dae647896c782af239d29d5dd0c033371cf95a909d6f34092491",
+      "summary": "Actual CSV successor turn reconstructed from retained visible request/response files.",
+      "dispatch_state": "receipt_recorded",
+      "request": "sha256:6157b34a7685e19b62df6c18924137ea67b7beab1b57cd7696d1190a22416a75",
+      "receipt": "sha256:947cf469f0d2662e942e5edf01d1bea2920926452bfb143dec99d1f100063f02",
+      "outcome_note": "Authored retrospective: exact local projections, not provider wire bytes or an authenticated request-response binding. The earlier coordinator executed the returned code and checks; this run performs no inference."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "csv-policy",
+      "state": "active",
+      "statement": "The actual successor returned source/tests/docs. Applied unchanged, they passed 11 tests, the independent nine-scenario CLI oracle and concrete sample checks. Exact request/reply/validation bytes are separate run evidence; this is an authored summary, not instrumented execution provenance.",
+      "basis_attempt_ids": [
+        "csv-visible-turn"
+      ],
+      "reopen_when": "An actual user requirement changes matching semantics."
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "record-scope",
+      "question": "Which evidence can a future receiver reuse for a new decision?",
+      "why_it_matters": "Exact custody and an authored recorded receipt do not establish semantic truth or authorize another dispatch."
+    }
+  ],
+  "handoff": {
+    "id": "recorded-attempt-followup-offer",
+    "from_worker": "codex-coordinator",
+    "to_worker": "claude-successor",
+    "scope": "Inspect the retained historical attempt and its receipt; do not reissue the model call. No recipient acceptance is claimed.",
+    "required_decision_ids": [
+      "csv-policy"
+    ]
+  }
+}

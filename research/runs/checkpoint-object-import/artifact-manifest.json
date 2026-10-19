@@ -1,0 +1,190 @@
+{
+  "scope": "Exact public run projection, excluding this manifest. Repeated runtime/import/source outputs omitted as described in README.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8791,
+      "sha256": "6408dfcca4b5bdc3edf6467b031111dae8d12e0c7aad7dadc54f644c374d6b65"
+    },
+    {
+      "path": "adapter-tests.log",
+      "bytes": 1890,
+      "sha256": "0524be155e74b231344e94903617b788b2f7631e7c087ae158b800ae4cdfff80"
+    },
+    {
+      "path": "authored-work-state.json",
+      "bytes": 2617,
+      "sha256": "a512e2819acfb0ae657f05a4e7856b5a16a4b026d4f8ff7502aa3824f757c414"
+    },
+    {
+      "path": "build-provenance.json",
+      "bytes": 485,
+      "sha256": "99bea2e52e8bac60fe50d33cf97c4528e9d065ddbd2fa7bb68a4d0b74651be51"
+    },
+    {
+      "path": "claude-request.json",
+      "bytes": 2789,
+      "sha256": "9749a062c4d02e4266d78017ef552f2c70eb49b4338d24395c7317abdd5c51ee"
+    },
+    {
+      "path": "claude-response.json",
+      "bytes": 5486,
+      "sha256": "4d7b000ea1d71ad6053246284e42d68776e223f952fd800ebe3bd3665523e264"
+    },
+    {
+      "path": "first/accept.json",
+      "bytes": 209,
+      "sha256": "25bd53210d6debc62958f67e5f92ef9642d53bdd61516957f15e1a28784fe0eb"
+    },
+    {
+      "path": "first/authored-work-state.json",
+      "bytes": 2617,
+      "sha256": "a512e2819acfb0ae657f05a4e7856b5a16a4b026d4f8ff7502aa3824f757c414"
+    },
+    {
+      "path": "first/build-provenance.json",
+      "bytes": 485,
+      "sha256": "99bea2e52e8bac60fe50d33cf97c4528e9d065ddbd2fa7bb68a4d0b74651be51"
+    },
+    {
+      "path": "first/checkpoint.json",
+      "bytes": 4385,
+      "sha256": "1ecda078afb7d1bb75466b1019b0969a0491eec16b78832f4a25da4985fa7be9"
+    },
+    {
+      "path": "first/cli-log.jsonl",
+      "bytes": 20241,
+      "sha256": "4501a49b89ccdc92833316ac1402b31065b22c1eb333f1df21a59c64ed2a9486"
+    },
+    {
+      "path": "first/context.jsonl",
+      "bytes": 3974,
+      "sha256": "290c62e534112af9aeb7b4b1969eb7f17cbd028e665e810f100828a914074021"
+    },
+    {
+      "path": "first/coverage.json",
+      "bytes": 2244,
+      "sha256": "5b7a8a7fdb0ca47e9e5610c48fe244dc21a2883092115112b9e6e5e8c7ae1223"
+    },
+    {
+      "path": "first/prepare.json",
+      "bytes": 416,
+      "sha256": "11455a6376645cd1460b31ff873bf3300e8772f6a1ac13fcb9d397699191d13a"
+    },
+    {
+      "path": "first/source-snapshot.json",
+      "bytes": 572,
+      "sha256": "d60095d3bf5e520ec4c454b065b317b5ed67002f3aba6d25f9d79cb2ef1cad60"
+    },
+    {
+      "path": "first/state-snapshot.json",
+      "bytes": 178,
+      "sha256": "52deb5397a2a7e371e86e243527c0ff50112f8cc8ef5434ef72e57ae0caafe5a"
+    },
+    {
+      "path": "first/verification.json",
+      "bytes": 394,
+      "sha256": "35a39c3034897e03583ac05f0f7a01c1a57536d0d415ca7a00681df4a0b3f970"
+    },
+    {
+      "path": "first/work-state.json",
+      "bytes": 2686,
+      "sha256": "a2692fe962ca2808cd47c64ca056a647d161ac1a0d3e25c03a652515028e145e"
+    },
+    {
+      "path": "first-command.json",
+      "bytes": 1245,
+      "sha256": "3683959047ff4dd755e679283fbd290834787e9e7ebf53c78234e7698e8ab79e"
+    },
+    {
+      "path": "import-objects.json",
+      "bytes": 603139,
+      "sha256": "d5872821d9663d5d9a069601b5cb7b94dd332d1670919692308b3568de8864d6"
+    },
+    {
+      "path": "native-seed-log.jsonl.gz",
+      "bytes": 117262,
+      "sha256": "a151b363f02c6000eceaa23b36d7314eae65fbb08d7aa0d8e0742dd272852adc"
+    },
+    {
+      "path": "reconstructed/accept.json",
+      "bytes": 209,
+      "sha256": "25bd53210d6debc62958f67e5f92ef9642d53bdd61516957f15e1a28784fe0eb"
+    },
+    {
+      "path": "reconstructed/authored-work-state.json",
+      "bytes": 2617,
+      "sha256": "a512e2819acfb0ae657f05a4e7856b5a16a4b026d4f8ff7502aa3824f757c414"
+    },
+    {
+      "path": "reconstructed/build-provenance.json",
+      "bytes": 485,
+      "sha256": "99bea2e52e8bac60fe50d33cf97c4528e9d065ddbd2fa7bb68a4d0b74651be51"
+    },
+    {
+      "path": "reconstructed/checkpoint.json",
+      "bytes": 4385,
+      "sha256": "60ddaf3627a45650fdf2cf6ec3be14300fa2a4b49c83313cbb85132978986864"
+    },
+    {
+      "path": "reconstructed/cli-log.jsonl",
+      "bytes": 20681,
+      "sha256": "b45de8ef124920dab226a4eb21dc0d0e4bc626ed3abb0cb52905087a539c5832"
+    },
+    {
+      "path": "reconstructed/context.jsonl",
+      "bytes": 3974,
+      "sha256": "290c62e534112af9aeb7b4b1969eb7f17cbd028e665e810f100828a914074021"
+    },
+    {
+      "path": "reconstructed/coverage.json",
+      "bytes": 2244,
+      "sha256": "5b7a8a7fdb0ca47e9e5610c48fe244dc21a2883092115112b9e6e5e8c7ae1223"
+    },
+    {
+      "path": "reconstructed/prepare.json",
+      "bytes": 416,
+      "sha256": "11455a6376645cd1460b31ff873bf3300e8772f6a1ac13fcb9d397699191d13a"
+    },
+    {
+      "path": "reconstructed/source-snapshot.json",
+      "bytes": 572,
+      "sha256": "d60095d3bf5e520ec4c454b065b317b5ed67002f3aba6d25f9d79cb2ef1cad60"
+    },
+    {
+      "path": "reconstructed/state-snapshot.json",
+      "bytes": 178,
+      "sha256": "52deb5397a2a7e371e86e243527c0ff50112f8cc8ef5434ef72e57ae0caafe5a"
+    },
+    {
+      "path": "reconstructed/verification.json",
+      "bytes": 394,
+      "sha256": "35a39c3034897e03583ac05f0f7a01c1a57536d0d415ca7a00681df4a0b3f970"
+    },
+    {
+      "path": "reconstructed/work-state.json",
+      "bytes": 2686,
+      "sha256": "a2692fe962ca2808cd47c64ca056a647d161ac1a0d3e25c03a652515028e145e"
+    },
+    {
+      "path": "reconstructed-command.json",
+      "bytes": 1261,
+      "sha256": "619833147633e6b0add9310c352305c86ccf2534e8a9139f2470678d6e4062f5"
+    },
+    {
+      "path": "reproduce.py",
+      "bytes": 7187,
+      "sha256": "41f6060487d80d7fb0ad118c27395e4370fc812db80a4d5eae2013864d6dbce1"
+    },
+    {
+      "path": "result.json",
+      "bytes": 1242,
+      "sha256": "0962822c139f8520cebec2ac4168082ae8e138206ca48b7a3bc91ea1d10864af"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 5997,
+      "sha256": "61d3e52bdb094656bfc65ddb2f7c691da9907125d68ef59c903aba94d79f83b9"
+    }
+  ]
+}

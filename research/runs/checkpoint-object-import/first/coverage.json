@@ -1,0 +1,62 @@
+{
+  "anchor": {
+    "acceptor": "project-checkpoint",
+    "expected": {
+      "generation": 1,
+      "root": "sha256:37c8380b19541bf93c3d18251ac38ffd60b7df0a74994ad1f9c34b5ddc3e1e1c"
+    },
+    "target": "work",
+    "work_state_path": "work-state.json"
+  },
+  "budget_method": "utf8_bytes_including_newlines",
+  "handoff_id": "recorded-attempt-followup-offer",
+  "included": [
+    {
+      "id": "csv-recorded-attempt-work",
+      "kind": "work_state",
+      "reason": "work_identity"
+    },
+    {
+      "id": "csv-goal",
+      "kind": "objective",
+      "reason": "objective_and_constraints"
+    },
+    {
+      "id": "csv-visible-turn",
+      "kind": "attempt",
+      "reason": "attempt_recovery"
+    },
+    {
+      "id": "csv-policy",
+      "kind": "decision",
+      "reason": "active_decision"
+    },
+    {
+      "id": "record-scope",
+      "kind": "uncertainty",
+      "reason": "unresolved_uncertainty"
+    },
+    {
+      "id": "recorded-attempt-followup-offer",
+      "kind": "handoff",
+      "reason": "offered_handoff"
+    }
+  ],
+  "limits": [
+    "Authored claims are unverified; current action authority and external-effect truth are not established.",
+    "Conditional guidance assumes the authored dispatch state is accurate; this store is not an external dispatch ledger.",
+    "Only this WorkState's declared records and direct object references are checked; source files are not materialized.",
+    "Whole records only; unrequired historical decisions may be omitted; no truncation or token estimate.",
+    "Head freshness is observed once; later effects need action-time authority and expected-head checks.",
+    "Context acknowledgements check references, not authenticated authorship, delivery, understanding, acceptance, or completion."
+  ],
+  "max_bytes": 16384,
+  "omitted": [],
+  "rendered": "sha256:f61b4df83df0d3c7d847eea21e3ad5b1473a26b84d4244e16a54a0b4c9174815",
+  "rendered_bytes": 3974,
+  "schema": "continuum.context_pack.v1",
+  "selector_revision": "continuum.whole_records.v1",
+  "source_snapshot": "sha256:5a6627294ea680ff162ce01723f88d8e7cb7b8c4c6fbb54e76e202ea7726b209",
+  "work_state": "sha256:c2882a1666b2dc96a5b2b7d3e83fb32982a605f7e21746a9e5802cfb6d81b50a",
+  "work_state_id": "csv-recorded-attempt-work"
+}

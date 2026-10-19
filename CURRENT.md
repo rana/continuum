@@ -15,13 +15,14 @@ Continuum is a native work and evidence engine for continuing AI engineering. Th
 - Local SQLite expected-root/generation acceptance, operation identity binding, durable retries, and receipt queries.
 - Four agent-guided protocols: Progress Brief, Holographic Walk, Research Record, Bounded Research Loop.
 - Versioned digest-pinned registry, protocol schemas and fixtures, and a proposed execution-metadata schema.
-- Seven further actual Claude Opus 5.5 exchanges, with supplied-input custody, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the fifth and sixth review unattended work and the Base12 continuity pattern; the seventh selects a real-use pilot. Private cross-project context in requests five and six is explicitly redacted from the public projections and retained privately. The original briefs also retain their historical exchanges.
+- Eight numbered further actual Claude Opus 5.5 exchanges, with supplied-input custody, visible responses, metadata, adopted proposals, and retained corrections. The fourth uses only a generated context pack for a fresh continuation of this project; the fifth and sixth review unattended work and the Base12 continuity pattern; the seventh selects a real-use pilot; the eighth reviews embedded storage alternatives. The project pilots also retain their own actual successor exchanges. Private cross-project context in requests five and six is explicitly redacted from the public projections and retained privately. The original briefs also retain their historical exchanges.
 - Exact WorkState records, bounded whole-record context selection, retained rendered packs, historical and current-anchor verification, and explicit handoff acknowledgement-reference checks.
 - A reproducible context example using independently started CLI processes.
 - One actual fresh Claude continuation from an 8,321-byte pack, with an exact model-authored acknowledgement whose references passed native verification.
 - Current architecture, native-core decision, research experiment, and phased roadmap.
 - A reproducible release-build workload covering nine core operation groups, with raw results from three separately started processes, 100 samples per group in each run, and identical deterministic semantic fingerprints.
 - A [continuing work method and ready Codex prompt](docs/operations/continuation.md) for preserving research movement across Chat and implementation tasks through GitHub.
+- A [storage feature matrix and evaluation design](docs/experiments/embedded-storage-evaluation.md), grounded in the actual schema and current redb, Fjall, and Turso documentation. SQLite remains the baseline; no alternative-engine execution, performance comparison, or dependency migration is claimed.
 
 ## Validation
 

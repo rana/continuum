@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "record_kind": "model-collaboration",
+  "attempt_id": "claude-08",
+  "recorded_at": "2026-10-19",
+  "started_at": {
+    "current_time": "2026-10-19 05:55:31 UTC"
+  },
+  "finished_at": {
+    "current_time": "2026-10-19 05:56:09 UTC"
+  },
+  "executor": "supplied-context Claude Collaborator",
+  "requested": {
+    "model": "opus",
+    "effort": "medium"
+  },
+  "observed": {
+    "actual_model": "claude-opus-5-5",
+    "configured_model": "us.anthropic.claude-opus-5-5",
+    "configured_effort": "medium",
+    "thinking": "adaptive",
+    "usage": {
+      "input_tokens": 1930,
+      "output_tokens": 2949,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "stop_reason": "end_turn",
+    "truncated": false,
+    "input_modality": "text-only",
+    "server_memory": "none"
+  },
+  "inputs": [
+    {
+      "path": "docs/collaboration/requests/claude-08.json",
+      "exposure": "Complete latest user request and coordinator-supplied source/documentation summaries; no direct repository or browser access."
+    }
+  ],
+  "status": "completed",
+  "output_ref": "docs/collaboration/2026-10-19-claude-08.md",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "# Continuum storage: should SQLite be replaced?\n\n## Decisive requirements\n\nSpeed is not the main question. These properties decide the choice:\n\n1. **One atomic acceptance step.** Binding the request identity, checking the head, generation and candidate, updating the head, and inserting the receipt must succeed or fail together.\n2. **Durable acknowledgement.** A receipt must not be reported until it survives power loss. The current setting is WAL with FULL sync.\n3. **Exact-retry semantics.** The historical result must be recoverable after the head moves, and a changed request reusing an operation ID must be rejected.\n4. **Safe sharing across independent CLI processes**, with bounded waiting (currently a 5-second busy timeout).\n5. **Engine-enforced invariants.** STRICT tables, CHECK, foreign keys, and triggers that make tables immutable.\n6. **Recovery and inspection.** Crash recovery, online backup, and the ability to inspect the database with independent tools.\n7. **Format stability and build footprint.**\n\n## Strongest case for changing\n\n- **Turso** is a real Rust implementation of SQLite-style SQL, not a wrapper. It could keep the schema-as-contract approach while dropping the C engine. It also offers MVCC and `BEGIN CONCURRENT`.\n- **redb** is a different kind of thing: a Rust key-value store with no SQL. Its typed tables and copy-on-write ACID design are simple, and its file format is stable.\n- Removing C would simplify cross-compilation and give one memory-safety story.\n\n## Strongest case for keeping SQLite\n\n- SQLite's process sharing, durability and recovery are mature, and the current tests already exercise them, including two process-crash cases.\n- The invariants live declaratively in the schema, not in scattered Rust code.\n\n## Is removing the C engine valuable in itself?\n\nMostly not.\n\n- redb on Linux still uses libc locks, so a Rust engine does not mean no C ABI.\n- SQLite's C is arguably among the most heavily tested code available.\n- Removal becomes valuable only for a concrete reason: a target without a C toolchain, WASM, an audit or policy requirement, or measured build cost. None of these is evidenced yet.\n\n## Storage ownership is the real fork\n\n- **Fjall** prohibits opening the database from more than one process.\n- **redb's** multiprocess support is experimental.\n- **Turso's** multiprocess `.tshm` is experimental.\n\nAdopting any of them, as things stand, means changing the architecture as well as the engine. Continuum would need either a single owning daemon (with lifecycle, IPC and upgrade concerns) or fail-fast exclusive locking that serializes all CLI use. That is a product decision, not a storage swap, and it should not happen during the handoff pilot.\n\n## Overlooked integration and semantic risks\n\n**Invariants silently move into application code.** With a key-value store, FK checks, CHECK constraints, immutability triggers and conflict-update behaviour become Rust logic. Every current and future write path must re-enforce them. The existing tests largely observe outcomes rather than prove that no bypass path exists.\n\n**Default durability differs.** Fjall's default write reaches OS buffers, not stable disk. Using it without an explicit `SyncAll` per acceptance would break the retry guarantee: a receipt could be reported and then lost.\n\n**Turso's partial compatibility carries its own risks.**\n- Its documentation lists the features we use, but compound primary keys combined with triggers have not been run.\n- File compatibility is only partial, so opening the same file with the `sqlite3` tool is unsafe.\n- `sqlite3_backup` is stubbed, which leaves `VACUUM INTO` as the backup path.\n\n**One issue is independent of the engine.** `Store::open` takes `BEGIN IMMEDIATE` even for read commands. Every read briefly holds the writer lock, so concurrent reads contend with acceptances. Switching engines will not fix this, and it may matter more than engine choice.\n\n## Smallest informative next comparison\n\nThis should not be a benchmark or a migration. Proceed in this order:\n\n1. **Engine-neutral acceptance contract (no execution).** Write the invariants and failure semantics above as a short document. Map each one to the current enforcement point: schema, transaction, or code. This fits the existing R&D and documentation authorization.\n2. **Paper feature matrix.** Rate SQLite, Turso, redb and Fjall against that contract as \"documented\", \"unexecuted\", \"absent\" or \"requires architectural change\". Do not claim anything about speed.\n3. **Turso conformance spike, only if separately authorized.** Run the existing DDL and acceptance transaction against Turso, with two concurrent processes and a kill partway through. This is the cheapest decisive test, because it reuses the schema unchanged.\n4. **Fix `Store::open` under SQLite in parallel.** Use a read-only path or deferred transactions for reads, and measure the contention before and after.\n\n## Recommendation\n\n**Keep bundled SQLite through the real-use pilot.** Then:\n\n- **If** a concrete reason to drop C appears, evaluate Turso first using the conformance spike above. Adopt it only once compound primary keys, triggers, `BEGIN IMMEDIATE`, busy handling, crash recovery and the `VACUUM INTO` backup path pass under multiple processes.\n- **If** Continuum deliberately moves to a single owning service process, redb becomes a credible candidate, with invariants reimplemented and tested in Rust. Fjall is only viable with `SyncAll` on every acceptance.\n- **Otherwise**, there is no evidenced reason to change."
+      }
+    ],
+    "structuredContent": {
+      "status": "OK",
+      "text": "# Continuum storage: should SQLite be replaced?\n\n## Decisive requirements\n\nSpeed is not the main question. These properties decide the choice:\n\n1. **One atomic acceptance step.** Binding the request identity, checking the head, generation and candidate, updating the head, and inserting the receipt must succeed or fail together.\n2. **Durable acknowledgement.** A receipt must not be reported until it survives power loss. The current setting is WAL with FULL sync.\n3. **Exact-retry semantics.** The historical result must be recoverable after the head moves, and a changed request reusing an operation ID must be rejected.\n4. **Safe sharing across independent CLI processes**, with bounded waiting (currently a 5-second busy timeout).\n5. **Engine-enforced invariants.** STRICT tables, CHECK, foreign keys, and triggers that make tables immutable.\n6. **Recovery and inspection.** Crash recovery, online backup, and the ability to inspect the database with independent tools.\n7. **Format stability and build footprint.**\n\n## Strongest case for changing\n\n- **Turso** is a real Rust implementation of SQLite-style SQL, not a wrapper. It could keep the schema-as-contract approach while dropping the C engine. It also offers MVCC and `BEGIN CONCURRENT`.\n- **redb** is a different kind of thing: a Rust key-value store with no SQL. Its typed tables and copy-on-write ACID design are simple, and its file format is stable.\n- Removing C would simplify cross-compilation and give one memory-safety story.\n\n## Strongest case for keeping SQLite\n\n- SQLite's process sharing, durability and recovery are mature, and the current tests already exercise them, including two process-crash cases.\n- The invariants live declaratively in the schema, not in scattered Rust code.\n\n## Is removing the C engine valuable in itself?\n\nMostly not.\n\n- redb on Linux still uses libc locks, so a Rust engine does not mean no C ABI.\n- SQLite's C is arguably among the most heavily tested code available.\n- Removal becomes valuable only for a concrete reason: a target without a C toolchain, WASM, an audit or policy requirement, or measured build cost. None of these is evidenced yet.\n\n## Storage ownership is the real fork\n\n- **Fjall** prohibits opening the database from more than one process.\n- **redb's** multiprocess support is experimental.\n- **Turso's** multiprocess `.tshm` is experimental.\n\nAdopting any of them, as things stand, means changing the architecture as well as the engine. Continuum would need either a single owning daemon (with lifecycle, IPC and upgrade concerns) or fail-fast exclusive locking that serializes all CLI use. That is a product decision, not a storage swap, and it should not happen during the handoff pilot.\n\n## Overlooked integration and semantic risks\n\n**Invariants silently move into application code.** With a key-value store, FK checks, CHECK constraints, immutability triggers and conflict-update behaviour become Rust logic. Every current and future write path must re-enforce them. The existing tests largely observe outcomes rather than prove that no bypass path exists.\n\n**Default durability differs.** Fjall's default write reaches OS buffers, not stable disk. Using it without an explicit `SyncAll` per acceptance would break the retry guarantee: a receipt could be reported and then lost.\n\n**Turso's partial compatibility carries its own risks.**\n- Its documentation lists the features we use, but compound primary keys combined with triggers have not been run.\n- File compatibility is only partial, so opening the same file with the `sqlite3` tool is unsafe.\n- `sqlite3_backup` is stubbed, which leaves `VACUUM INTO` as the backup path.\n\n**One issue is independent of the engine.** `Store::open` takes `BEGIN IMMEDIATE` even for read commands. Every read briefly holds the writer lock, so concurrent reads contend with acceptances. Switching engines will not fix this, and it may matter more than engine choice.\n\n## Smallest informative next comparison\n\nThis should not be a benchmark or a migration. Proceed in this order:\n\n1. **Engine-neutral acceptance contract (no execution).** Write the invariants and failure semantics above as a short document. Map each one to the current enforcement point: schema, transaction, or code. This fits the existing R&D and documentation authorization.\n2. **Paper feature matrix.** Rate SQLite, Turso, redb and Fjall against that contract as \"documented\", \"unexecuted\", \"absent\" or \"requires architectural change\". Do not claim anything about speed.\n3. **Turso conformance spike, only if separately authorized.** Run the existing DDL and acceptance transaction against Turso, with two concurrent processes and a kill partway through. This is the cheapest decisive test, because it reuses the schema unchanged.\n4. **Fix `Store::open` under SQLite in parallel.** Use a read-only path or deferred transactions for reads, and measure the contention before and after.\n\n## Recommendation\n\n**Keep bundled SQLite through the real-use pilot.** Then:\n\n- **If** a concrete reason to drop C appears, evaluate Turso first using the conformance spike above. Adopt it only once compound primary keys, triggers, `BEGIN IMMEDIATE`, busy handling, crash recovery and the `VACUUM INTO` backup path pass under multiple processes.\n- **If** Continuum deliberately moves to a single owning service process, redb becomes a credible candidate, with invariants reimplemented and tested in Rust. Fjall is only viable with `SyncAll` on every acceptance.\n- **Otherwise**, there is no evidenced reason to change.",
+      "actual_model": "claude-opus-5-5",
+      "configured_model": "us.anthropic.claude-opus-5-5",
+      "configured_effort": "medium",
+      "thinking": "adaptive",
+      "usage": {
+        "input_tokens": 1930,
+        "output_tokens": 2949,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_modality": "text-only",
+      "server_memory": "none",
+      "image_count": 0,
+      "images": []
+    },
+    "isError": false
+  },
+  "limitations": [
+    "No alternative database was executed or benchmarked in this consultation.",
+    "Current upstream documentation and released-crate behavior are not interchangeable.",
+    "The request preceded inspection of Turso's auxiliary native dependencies and a concurrent checkpoint-pilot merge.",
+    "Coordinator corrections are retained in docs/collaboration/README.md, including prior authorization, conditional durability, and compatibility overclaims."
+  ]
+}

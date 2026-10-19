@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "record_kind": "storage-source-survey",
+  "observed_date_utc": "2026-10-19",
+  "observed_date_user": "2026-10-18",
+  "user_timezone": "America/Los_Angeles",
+  "initial_source_revision": "3d15a37fa7faeb53dde9f7ad517c72d99b9b771b",
+  "reconciled_source_revision": "6f2a11465bc610276495de636c85071e2424d1c9",
+  "core_changes_between_revisions": [],
+  "source_files": [
+    {
+      "path": "src/store.rs",
+      "bytes": 13735,
+      "sha256": "4a22be3dc5cf87918501a20137bb0963b94d8cbe9375a82313ec7da1d82b8b83"
+    },
+    {
+      "path": "src/object.rs",
+      "bytes": 10446,
+      "sha256": "3c97e27383410a004be5d263e61b66d976be6dcc00983f361b64ba37d04d36ad"
+    },
+    {
+      "path": "src/context.rs",
+      "bytes": 32224,
+      "sha256": "0d371595ddcff87c119ea29a568e50cc0de111e25b3c9d0920d5d4d9a3f03539"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 7587,
+      "sha256": "6daa02817a955514cf3a3c56a9bcd9291fdb7efd428d2fb39c746742e9f9ede6"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 563,
+      "sha256": "5739f85b75d23eb83b81c22b41bf8ef83425d0b2e5c4da325a7e810ba6d0762b"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 13180,
+      "sha256": "7121da7ee7f1b013bbb82e950ba17a22da81354eaeb72bb90358c4ceac083ddb"
+    },
+    {
+      "path": "tests/invariants.rs",
+      "bytes": 11078,
+      "sha256": "8c72cc3cc969232cf893936f7ffcfe30de6a063ea17f20e365cc44ae7f28b475"
+    },
+    {
+      "path": "tests/crash_recovery.rs",
+      "bytes": 3369,
+      "sha256": "c2edcd04bf7caff61b63a4a7205c429e409a262a5fa712642afe19326dff3322"
+    },
+    {
+      "path": "tests/context_handoff.rs",
+      "bytes": 21629,
+      "sha256": "73691f007e96fc0cbc8f8039ff84543ce0892d5583928543222a2617afc958e5"
+    },
+    {
+      "path": "examples/measure_workloads.rs",
+      "bytes": 16686,
+      "sha256": "e7e310a76d4f9ee0152e89e0e1096b0ff178c6fa2aa674a627138ae0b9c1f149"
+    }
+  ],
+  "sqlite_bundled_source": {
+    "libsqlite3_sys": "0.38.2",
+    "header_path": "/tmp/continuum-rust-toolchain/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libsqlite3-sys-0.38.2/sqlite3/sqlite3.h",
+    "sqlite_version": "\"3.53.2\"",
+    "sqlite_source_id": "\"2026-06-03 19:12:13 d6e03d8c777cfa2d35e3b60d8ec3e0187f3e9f99d8e2ee9cac695fd6fcdf1a24\"",
+    "header_sha256": "9e69a1353a4288450b0d5239ede11fc7f1f4c8e5eb07491fc8317eacb5b7de7e",
+    "evidence_boundary": "Cached locked dependency source inspection; no fresh runtime sqlite_version query."
+  },
+  "method": [
+    "Read-only repository audit",
+    "Primary upstream documentation and release/manifest inspection",
+    "Actual supplied-context Claude consultation",
+    "Reconciled concurrently merged checkpoint pilot; no native source change"
+  ],
+  "alternative_engine_executions": 0,
+  "new_performance_measurements": 0,
+  "native_dependency_changes": false,
+  "actual_collaboration": {
+    "record": "research/runs/claude-08.json",
+    "request_path": "docs/collaboration/requests/claude-08.json",
+    "request_bytes": 4906,
+    "request_sha256": "f88b2ab7bc3d4a9ef03fdf39d820aaaa7735e2ecdd443b061dbe9ad23f43e2f4"
+  },
+  "primary_source_urls": [
+    "https://docs.rs/aegis/latest/aegis/",
+    "https://docs.rs/crate/fjall/latest",
+    "https://docs.rs/crate/redb/latest/source/Cargo.toml.orig",
+    "https://docs.rs/crate/turso_core/latest/source/Cargo.toml",
+    "https://docs.rs/fjall/latest/fjall/enum.PersistMode.html",
+    "https://docs.rs/heed/latest/heed/",
+    "https://docs.rs/heed/latest/heed/struct.Env.html",
+    "https://docs.rs/redb/latest/redb/enum.Durability.html",
+    "https://docs.rs/redb/latest/redb/struct.WriteTransaction.html",
+    "https://duckdb.org/why_duckdb",
+    "https://github.com/cberner/redb",
+    "https://github.com/cberner/redb/blob/master/CHANGELOG.md",
+    "https://github.com/fjall-rs/fjall/issues/52",
+    "https://github.com/rust-rocksdb/rust-rocksdb",
+    "https://github.com/spacejam/sled",
+    "https://github.com/tursodatabase/libsql",
+    "https://github.com/tursodatabase/turso",
+    "https://github.com/tursodatabase/turso/blob/main/COMPAT.md",
+    "https://github.com/tursodatabase/turso/blob/main/docs/manual.md",
+    "https://www.sqlite.org/backup.html",
+    "https://www.sqlite.org/wal.html"
+  ],
+  "report": "docs/experiments/embedded-storage-evaluation.md",
+  "limitations": [
+    "Moving upstream main and latest documentation do not establish identical released-crate behavior.",
+    "No comparative binary size, RSS, throughput, startup, durability or recovery result was measured.",
+    "No persistent-store migration or workstation installation was performed.",
+    "Original SQLite measurements remain under their own retained environment and method."
+  ]
+}

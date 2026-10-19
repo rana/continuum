@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "project": "Base12",
+  "review_date_utc": "2026-10-19",
+  "commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "previous_checkpoint": "base12-coverage-training-costs.json",
+  "selected_scope": {
+    "files": [
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_pr13_saved_results.py",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/independent-full-accounting-audit-v1.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/effective-before-exec.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/audit-logic/audit_pr13_saved_results.py",
+      "bytes": 24661,
+      "git_blob_sha": "700e50228c0aea1bd4b1f18d36a014f572c8b79d",
+      "sha256": "0bc1755878a1b45149cb131e9588c2c5b98c6ee2707b2a34afc53733ee739cb9",
+      "lines": 327,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-full-accounting-and-envelope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_text_read_and_AST_parse_without_execution"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/independent-full-accounting-audit-v1.json",
+      "bytes": 19297,
+      "git_blob_sha": "49cf4c698c2cef980dab046e3584ba8acd4228a7",
+      "sha256": "c4083c41d719018480bc5693420ac714092805c2e2cc7a667b644829c55dd56e",
+      "lines": 604,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-full-accounting-and-envelope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/receipt.json",
+      "bytes": 2048,
+      "git_blob_sha": "da6ed1db6f61d9bdac6ef62638c22cac70a47572",
+      "sha256": "fbcca657434ebf6348416afd5453498d716f65b3ac6767f6773bfbade8149ba3",
+      "lines": 69,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-full-accounting-and-envelope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    },
+    {
+      "path": "research/owned-stack/2026-10-15/ecg-lossless-preservation/aum-20261016-reviewed/packet/receipts/full-envelope-v1/effective-before-exec.json",
+      "bytes": 228,
+      "git_blob_sha": "ef9352a99c8c1d6b2627d6eb806fab25d09042c1",
+      "sha256": "bf71c2d435be6aee8e4f9d8503fea28aef3e0b57910a8933a0dc82b1ab90d9a2",
+      "lines": 21,
+      "semantic_review": "full_direct_read",
+      "review_lane": "saved-full-accounting-and-envelope",
+      "acquisition": "exact_bytes_hash_verified",
+      "programmatic_inspection": {
+        "method": "full_JSON_text_read_and_duplicate_key_checked_parse"
+      }
+    }
+  ],
+  "summary": {
+    "new_direct_read": {
+      "paths": 4,
+      "unique_blobs": 4,
+      "bytes": 46234
+    },
+    "cumulative_direct_read": {
+      "paths": 306,
+      "unique_blobs": 306,
+      "bytes": 2217456
+    },
+    "additional_identical_blob_paths": 51,
+    "alias_distinct_blobs": 21,
+    "semantic_covered_paths_including_aliases": 357,
+    "remaining_paths_without_full_semantic_read_or_alias": 5236,
+    "remaining_distinct_blobs_without_full_semantic_read": 4123,
+    "pinned_inventory": {
+      "paths": 5593,
+      "unique_blobs": 4429,
+      "path_bytes": 180332790
+    }
+  },
+  "acquisition_scope": {
+    "this_review_verified_paths": 4,
+    "this_review_verified_bytes": 46234,
+    "historical_global_acquisition": {
+      "paths": 539,
+      "unique_blobs": 530,
+      "path_bytes": 4536603
+    },
+    "cumulative_global_acquisition_recomputed": false,
+    "reason": "Earlier complete private acquisition index was not recovered; these fetches may overlap previously acquired unread blobs."
+  },
+  "limits": [
+    "Nine of fifteen audit input bindings match acquired payloads, including one explicit intake alias; six input payloads remain unacquired.",
+    "Eighty-two passed checks are historical record entries, not a new upstream audit execution or independent trials.",
+    "Source/report already qualify per-process limits, polling, root-inclusive wait4, nonaggregate memory and missing payload attestation.",
+    "No live host measurement, wrapper inspection/execution, journal replay, signal decoding or inference occurred."
+  ],
+  "review_report": "base12-full-accounting.md"
+}

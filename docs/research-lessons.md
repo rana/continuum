@@ -249,6 +249,8 @@ The [Gate-A artifact-records return](source-review/base12-gate-a-artifact-record
 
 The [Gate-A decoder-review return](source-review/base12-gate-a-decoder-review.md) shows why approval must retain exact reviewed identities and conditions. An unchanged decoder can keep a static recommendation while revised launch controls require separate acceptance. Historical parent byte verification also remains distinct from this session’s missing executable custody; current access limits should not be projected backward onto a different reviewer.
 
+The [Gate-A envelope-review return](source-review/base12-gate-a-envelope-review.md) recovers four concrete review conditions, their narrow control corrections and eight later clearance conditions. A static PASS and packet-byte agreement remain distinct from live preflight, execution authority and observed completion. Signal exit, original failure cause and incomplete waited-child accounting must also survive as separate facts.
+
 ## Initial adaptations and the next research return
 
 The initial package contains [Progress Brief](../protocols/progress-brief.md), [Holographic Walk](../protocols/holographic-walk.md), [Research Record](../protocols/research-record.md), and [Bounded Research Loop](../protocols/bounded-research-loop.md). Their registry, invocation, and receipt contracts distinguish method from skill adapter, prompt, and policy authority. See [protocol architecture](architecture/protocols.md).

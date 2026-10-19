@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "source_baseline": "c32ab726ef3c7df7de435d1c065a4ad6963b2e2e",
+  "repository": "rana/base-12-ai",
+  "source_commit": "88382e793b65c84fd8e223840c27f6bb8682864a",
+  "tree_sha": "5cf96129bdcb0dde075f6f5800ae0c68a95c4b82",
+  "tree_truncated": false,
+  "verified_source_paths": 5,
+  "verified_source_bytes": 37141,
+  "full_text_paths_read": 5,
+  "new_semantic_files": 5,
+  "new_semantic_bytes": 37141,
+  "all_three_current_control_payload_bindings": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/launch-once.sh",
+      "bytes": 6051,
+      "sha256": "7a0ea68a9343b96171a658f842de86b597b3acb4b5bb7fdd99136a2b5e876b6d",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/run-cases.sh",
+      "bytes": 6241,
+      "sha256": "1ca8e5d8c618e444fd5873112786eaecf35b6788d2189c3ec7772a686360acd6",
+      "matched": true
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/FREEZE.sha256",
+      "bytes": 1830,
+      "sha256": "a6b562eba1c1591f2930cddddc56c8696cad5ab1176f74e8a35123fe4ba687d6",
+      "matched": true
+    }
+  ],
+  "delegated_envelope_review_payload_digest_matches_static_record": true,
+  "original_delegated_review_digest_matches_revision_review": true,
+  "three_old_to_current_control_hash_pairs_match_prior_review": true,
+  "original_parent_conditions": 4,
+  "revised_parent_PASS_conditions": 4,
+  "parent_clearance_conditions": 8,
+  "revised_review_is_not_execution_authorization": true,
+  "packet_equivalence_distinguished_from_live_path_verification": true,
+  "unchanged_prior_file_declarations": 16,
+  "held_unchanged_text_paths": 12,
+  "unheld_unchanged_paths": [
+    "artifact-r2/decoder.elf",
+    "artifact-r2/instructions.txt",
+    "artifact-r2/code.bin",
+    "artifact-r2/disassembly.txt"
+  ],
+  "prior_packet_equality_newly_verified": false,
+  "synthetic_manifest_total_archive_bytes": 6764879,
+  "max_native_invocations": 79,
+  "static_zero_execution_unused_attempt_fields_are_historical": true,
+  "parent_prior_TSV_reconstruction_and_later_actual_verification_attributed": true,
+  "exit137_alone_does_not_identify_timeout_cause": true,
+  "current_ELF_or_listing_payload_acquired": false,
+  "native_execution_repeated": false,
+  "no_new_model_invocation": true,
+  "raw_source_publication": false,
+  "global_acquisition_overlap_known": false,
+  "limits": [
+    "Five full envelope/revision/static texts read; no script, native artifact, control test or new inference executed.",
+    "Three current controls and delegated review digest bind actual held payloads; sixteen unchanged-file entries remain historical cross-revision declarations.",
+    "Twelve listed unchanged texts are held; ELF, code and two instruction-text artifacts remain unacquired.",
+    "Parent original review already used case-table reconstruction and later actual TSV verification; current reconstruction is independently repeated, not a novel method attributed to this session.",
+    "All four original conditions have scoped revised static PASS; eight parent-clearance conditions remain separate from an execution grant, live preflight or fresh acceptance.",
+    "Exit 137, post-return process snapshot and waited-child resource accounting have distinct limits; no dynamic failure/timeout coverage inferred from later normal success.",
+    "Private Library IDs, task identities, absolute paths and raw private review bytes are not published."
+  ],
+  "next_scope": [
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/OPEN.md",
+      "bytes": 1125,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/OWNER.json",
+      "bytes": 1115,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/LIBRARY_PROVENANCE.json",
+      "bytes": 1095,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/LIBRARY_PROVENANCE.json",
+      "bytes": 1469,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review.md",
+      "bytes": 10466,
+      "intended_review": "full_text_read"
+    },
+    {
+      "path": "research/owned-stack/2026-10-16/gate-a-native-decoder/parent-review/accepted/result-review-checks.json",
+      "bytes": 1593,
+      "intended_review": "full_text_read"
+    }
+  ],
+  "next_scope_bytes": 16863,
+  "public_contribution_checks": [
+    "five pinned blob identities and complete text/JSON reading passed",
+    "three current control payload hashes and delegated review hash bind",
+    "four original conditions, four revised static passes and eight clearance conditions scoped",
+    "synthetic byte total, invocation bound and held/unheld inventory counts reconcile",
+    "prior TSV reconstruction and failure-accounting qualifications attributed",
+    "coverage, next-scope arithmetic, links and private identifier exclusion passed",
+    "git diff --check passed"
+  ]
+}

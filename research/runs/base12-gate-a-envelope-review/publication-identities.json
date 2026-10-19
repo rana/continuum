@@ -1,0 +1,20 @@
+{
+  "source_baseline": "c32ab726ef3c7df7de435d1c065a4ad6963b2e2e",
+  "files": [
+    {
+      "path": "docs/source-review/base12-gate-a-envelope-review.md",
+      "bytes": 7093,
+      "sha256": "e9af09dd9f7caf6fb9bacf546a518d5ca6fdbd48e587766fa70a48a7b72b35d0"
+    },
+    {
+      "path": "docs/source-review/base12-coverage-gate-a-envelope-review.json",
+      "bytes": 5370,
+      "sha256": "b7ec57311ecf14339c860830b37b1ee9eb8bb7a67f36d608c14085bd4b0a753f"
+    },
+    {
+      "path": "research/runs/base12-gate-a-envelope-review/validation.json",
+      "bytes": 5175,
+      "sha256": "51d2559946dc0deb233ab6078f46d1926d4340c8dbd616eb305562b00dbc0278"
+    }
+  ]
+}
